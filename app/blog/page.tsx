@@ -5,6 +5,49 @@ import { FAQSchema } from "@/components/seo/Schema";
 import { getAllBlogPosts } from "@/data/blog-posts";
 import type { FAQItem } from "@/lib/seo";
 
+const supportingDogFoodPosts = [
+  {
+    slug: "homemade-chicken-dog-food-recipes-vet-approved",
+    title: "Homemade Chicken Dog Food Recipes Vet Approved",
+    category: "Dogs",
+    publishedDate: "2026-04-25",
+    readingTime: "7 min read",
+    metaDescription:
+      "Vet-informed guidance for homemade chicken dog food with practical prep ideas, portion tips, and safe feeding reminders.",
+    href: "/blog/homemade-chicken-dog-food-recipes-vet-approved",
+  },
+  {
+    slug: "vet-approved-homemade-dog-food-recipes-for-large-dogs",
+    title: "Vet Approved Homemade Dog Food Recipes for Large Dogs",
+    category: "Dogs",
+    publishedDate: "2026-04-25",
+    readingTime: "7 min read",
+    metaDescription:
+      "A practical large-breed homemade feeding guide with vet-informed calorie and portion control principles.",
+    href: "/blog/vet-approved-homemade-dog-food-recipes-for-large-dogs",
+  },
+  {
+    slug: "how-to-portion-homemade-dog-food",
+    title: "How to Portion Homemade Dog Food",
+    category: "Dogs",
+    publishedDate: "2026-04-25",
+    readingTime: "6 min read",
+    metaDescription:
+      "Learn how to portion homemade dog food using body condition, weight trend, and activity with a safer adjustment process.",
+    href: "/blog/how-to-portion-homemade-dog-food",
+  },
+  {
+    slug: "how-much-homemade-dog-food-should-i-feed-my-dog",
+    title: "How Much Homemade Dog Food Should I Feed My Dog",
+    category: "Dogs",
+    publishedDate: "2026-04-25",
+    readingTime: "7 min read",
+    metaDescription:
+      "A vet-informed estimate framework for how much homemade dog food to feed, with practical monitoring and safety notes.",
+    href: "/blog/how-much-homemade-dog-food-should-i-feed-my-dog",
+  },
+] as const;
+
 export const metadata: Metadata = {
   title: "Pet Health & Probiotics Blog",
   description:
@@ -50,7 +93,7 @@ const blogFaqs: FAQItem[] = [
 ];
 
 export default function BlogPage() {
-  const blogPosts = getAllBlogPosts();
+  const blogPosts = [...supportingDogFoodPosts, ...getAllBlogPosts()];
 
   return (
     <>
@@ -106,7 +149,7 @@ export default function BlogPage() {
                 <p className="mt-2 text-xs font-medium text-gray-500">Published {post.publishedDate}</p>
                 <p className="mt-3 text-sm leading-6 text-gray-600">{post.metaDescription}</p>
                 <Link
-                  href={`/blog/${post.slug}`}
+                  href={"href" in post ? post.href : `/blog/${post.slug}`}
                   className="mt-5 inline-flex items-center rounded-full border border-brand-200 bg-brand-50 px-4 py-2 text-sm font-semibold text-brand-700 transition hover:border-brand-300 hover:bg-brand-100"
                 >
                   Read full post &rarr;

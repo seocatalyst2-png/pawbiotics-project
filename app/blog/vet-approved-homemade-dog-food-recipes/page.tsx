@@ -445,7 +445,10 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
           </p>
 
           <div className="mt-6 grid gap-6 sm:grid-cols-2">
-            <article className="rounded-2xl border border-brand-100 bg-brand-50/50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
+            <Link
+              href="/blog/homemade-chicken-dog-food-recipes-vet-approved"
+              className="block rounded-2xl border border-brand-100 bg-brand-50/50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+            >
               <h3 className="flex items-center gap-2 font-serif text-[1.35rem] font-semibold leading-snug text-gray-900">
                 <span aria-hidden>🐔</span>
                 <span>Homemade chicken dog food recipes vet approved</span>
@@ -453,31 +456,27 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
               <p className="mt-3 text-sm leading-7 text-gray-700">
                 Chicken-based homemade recipes are popular because they are simple and often easy to
                 digest. They should still be part of a balanced plan and reviewed by a veterinarian.
-                If you&apos;re early in your transition, the{" "}
-                <Link href="/contact" className="font-semibold text-brand-700">
-                  contact page
-                </Link>{" "}
-                can help you reach our team for educational guidance before your vet visit.
               </p>
-            </article>
+            </Link>
 
-            <article className="rounded-2xl border border-amber-100 bg-amber-50/50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
+            <Link
+              href="/blog/vet-approved-homemade-dog-food-recipes-for-large-dogs"
+              className="block rounded-2xl border border-amber-100 bg-amber-50/50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+            >
               <h3 className="flex items-center gap-2 font-serif text-[1.35rem] font-semibold leading-snug text-gray-900">
                 <span aria-hidden>🐕‍🦺</span>
                 <span>Vet approved homemade dog food recipes for large dogs</span>
               </h3>
               <p className="mt-3 text-sm leading-7 text-gray-700">
                 Large dogs may need tighter calorie and growth monitoring. Use measured portions and
-                reassess body condition routinely to avoid gradual overfeeding. For city-based
-                support, use local resources like{" "}
-                <Link href="/vets/houston-tx" className="font-semibold text-brand-700">
-                  vets in Houston
-                </Link>
-                .
+                reassess body condition routinely to avoid gradual overfeeding.
               </p>
-            </article>
+            </Link>
 
-            <article className="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
+            <Link
+              href="/blog/how-to-portion-homemade-dog-food"
+              className="block rounded-2xl border border-emerald-100 bg-emerald-50/50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+            >
               <h3 className="flex items-center gap-2 font-serif text-[1.35rem] font-semibold leading-snug text-gray-900">
                 <span aria-hidden>📏</span>
                 <span>How to portion homemade dog food</span>
@@ -486,9 +485,12 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
                 Start with a conservative estimated range, then adjust slowly based on weight trend,
                 stool quality, appetite, and activity. Recheck every 1-2 weeks during transitions.
               </p>
-            </article>
+            </Link>
 
-            <article className="rounded-2xl border border-sky-100 bg-sky-50/50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
+            <Link
+              href="/blog/how-much-homemade-dog-food-should-i-feed-my-dog"
+              className="block rounded-2xl border border-sky-100 bg-sky-50/50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+            >
               <h3 className="flex items-center gap-2 font-serif text-[1.35rem] font-semibold leading-snug text-gray-900">
                 <span aria-hidden>🥣</span>
                 <span>How much homemade dog food should I feed my dog</span>
@@ -498,7 +500,7 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
                 amount. Calories vary by recipe, so portioning should be paired with
                 brand/ingredient calorie checks and veterinary guidance.
               </p>
-            </article>
+            </Link>
           </div>
         </Container>
       </section>
