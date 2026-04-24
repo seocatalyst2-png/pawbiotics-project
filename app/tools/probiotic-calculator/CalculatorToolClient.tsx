@@ -28,13 +28,19 @@ function getTypicalSupportRange(weightBand: string) {
 }
 
 function getStatus(concern: Concern, ageGroup: AgeGroup) {
-  if (concern === "diarrhea-support" || concern === "post-antibiotic-support") {
-    return { label: "Closer monitoring recommended", tone: "amber" as const };
+  if (
+    concern === "diarrhea-support" ||
+    (concern === "post-antibiotic-support" && (ageGroup === "puppy" || ageGroup === "senior"))
+  ) {
+    return { label: "Monitor closely", tone: "amber" as const };
+  }
+  if (concern === "allergy-skin-support" && ageGroup === "senior") {
+    return { label: "Consult vet if persistent", tone: "red" as const };
   }
   if (ageGroup === "puppy" || ageGroup === "senior") {
-    return { label: "Go extra slowly", tone: "blue" as const };
+    return { label: "Mild support", tone: "green" as const };
   }
-  return { label: "General support planning", tone: "green" as const };
+  return { label: "Mild support", tone: "green" as const };
 }
 
 export default function CalculatorToolClient() {
@@ -68,8 +74,11 @@ export default function CalculatorToolClient() {
 
     return {
       status,
+      weightBand,
       guidance:
         `For a ${ageLabelMap[ageGroup]} dog focused on ${concernLabelMap[concern]}, a safe starting point is ${supportRange}.`,
+      keyRecommendation:
+        "Use label-based guidance, start low, and adjust only with veterinary input if symptoms continue.",
       bullets: [
         "Start low and follow product instructions exactly",
         "Introduce one new supplement at a time",
@@ -80,49 +89,54 @@ export default function CalculatorToolClient() {
   }, [ageGroup, concern, hasCalculated, parsedWeight]);
 
   return (
-    <section className="py-12">
-      <div className="mx-auto w-full max-w-6xl px-4">
-        <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-          <article className="rounded-3xl border border-[#2c1f0e]/10 bg-white p-6 shadow-sm sm:p-8">
-            <h2 className="text-2xl font-semibold text-[#2c1f0e]">Calculator</h2>
-            <p className="mt-2 text-sm leading-6 text-[#5a4535]">
-              This tool gives general guidance only. Product instructions vary, and veterinary
-              advice should always guide final decisions.
-            </p>
+    <section className="border-y border-[#2c1f0e]/10 bg-[#faf6f0] py-14">
+      <div className="mx-auto w-full max-w-4xl px-4">
+        <article className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-6 shadow-[0_8px_30px_rgba(44,31,14,0.08)] sm:p-8">
+          <h2 className="font-serif text-3xl font-semibold text-[#2c1f0e]">
+            Estimate Your Dog&apos;s Probiotic Needs
+          </h2>
+          <p className="mt-2 text-sm leading-7 text-[#5a4535]">
+            Use this dashboard-style tool to get general guidance based on your dog&apos;s weight,
+            age group, and digestive concern. Educational only.
+          </p>
 
-            <form
-              className="mt-6 space-y-4"
-              onSubmit={(event) => {
-                event.preventDefault();
-                setHasCalculated(true);
-              }}
-            >
-              <div>
-                <label htmlFor="weight" className="block text-sm font-medium text-[#2c1f0e]">
-                  Dog weight (lbs)
-                </label>
-                <input
-                  id="weight"
-                  name="weight"
-                  type="number"
-                  min="1"
-                  step="0.1"
-                  value={weightLbs}
-                  onChange={(e) => setWeightLbs(e.target.value)}
-                  placeholder="Example: 32"
-                  className="mt-1 w-full rounded-xl border border-[#2c1f0e]/15 px-4 py-2.5 text-sm text-[#2c1f0e] outline-none transition focus:border-[#e8734a]/50 focus:ring-2 focus:ring-[#e8734a]/20"
-                />
-              </div>
+          <form
+            className="mt-6 space-y-5"
+            onSubmit={(event) => {
+              event.preventDefault();
+              setHasCalculated(true);
+            }}
+          >
+            <div>
+              <label htmlFor="weight" className="block text-xs font-semibold uppercase tracking-wider text-[#8a7060]">
+                Dog Weight (lbs)
+              </label>
+              <input
+                id="weight"
+                name="weight"
+                type="number"
+                min="1"
+                step="0.1"
+                value={weightLbs}
+                onChange={(e) => setWeightLbs(e.target.value)}
+                placeholder="Example: 32"
+                className="mt-2 w-full rounded-xl border border-[#2c1f0e]/15 bg-white px-4 py-2.5 text-sm text-[#2c1f0e] outline-none transition focus:border-[#e8734a]/50 focus:ring-2 focus:ring-[#e8734a]/20"
+              />
+            </div>
 
+            <div className="grid gap-4 md:grid-cols-2">
               <div>
-                <label htmlFor="age-group" className="block text-sm font-medium text-[#2c1f0e]">
-                  Dog age group
+                <label
+                  htmlFor="age-group"
+                  className="block text-xs font-semibold uppercase tracking-wider text-[#8a7060]"
+                >
+                  Age Group
                 </label>
                 <select
                   id="age-group"
                   value={ageGroup}
                   onChange={(e) => setAgeGroup(e.target.value as AgeGroup)}
-                  className="mt-1 w-full rounded-xl border border-[#2c1f0e]/15 bg-white px-4 py-2.5 text-sm text-[#2c1f0e] outline-none transition focus:border-[#e8734a]/50 focus:ring-2 focus:ring-[#e8734a]/20"
+                  className="mt-2 w-full rounded-xl border border-[#2c1f0e]/15 bg-white px-4 py-2.5 text-sm text-[#2c1f0e] outline-none transition focus:border-[#e8734a]/50 focus:ring-2 focus:ring-[#e8734a]/20"
                 >
                   <option value="puppy">Puppy</option>
                   <option value="adult">Adult</option>
@@ -131,14 +145,14 @@ export default function CalculatorToolClient() {
               </div>
 
               <div>
-                <label htmlFor="concern" className="block text-sm font-medium text-[#2c1f0e]">
-                  Main concern
+                <label htmlFor="concern" className="block text-xs font-semibold uppercase tracking-wider text-[#8a7060]">
+                  Main Concern
                 </label>
                 <select
                   id="concern"
                   value={concern}
                   onChange={(e) => setConcern(e.target.value as Concern)}
-                  className="mt-1 w-full rounded-xl border border-[#2c1f0e]/15 bg-white px-4 py-2.5 text-sm text-[#2c1f0e] outline-none transition focus:border-[#e8734a]/50 focus:ring-2 focus:ring-[#e8734a]/20"
+                  className="mt-2 w-full rounded-xl border border-[#2c1f0e]/15 bg-white px-4 py-2.5 text-sm text-[#2c1f0e] outline-none transition focus:border-[#e8734a]/50 focus:ring-2 focus:ring-[#e8734a]/20"
                 >
                   <option value="general-gut-health">General gut health</option>
                   <option value="diarrhea-support">Diarrhea support</option>
@@ -147,76 +161,101 @@ export default function CalculatorToolClient() {
                   <option value="post-antibiotic-support">Post-antibiotic support</option>
                 </select>
               </div>
+            </div>
 
-              <button
-                type="submit"
-                className="inline-flex rounded-full bg-[#e8734a] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#d6633b]"
+            <button
+              type="submit"
+              className="w-full rounded-xl bg-gradient-to-r from-[#e8734a] to-[#d6633b] px-5 py-3 text-sm font-semibold text-white transition hover:brightness-95"
+            >
+              Calculate Guidance
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setWeightLbs("");
+                setAgeGroup("adult");
+                setConcern("general-gut-health");
+                setHasCalculated(false);
+              }}
+              className="w-full rounded-xl border border-[#2c1f0e]/15 bg-white px-5 py-3 text-sm font-semibold text-[#5a4535] transition hover:border-[#e8734a]/30 hover:text-[#e8734a]"
+            >
+              Reset
+            </button>
+          </form>
+
+          <div className="my-6 border-t border-[#2c1f0e]/10" />
+
+          {!result ? null : (
+            <article className="animate-pulse [animation-duration:450ms] [animation-iteration-count:1] rounded-2xl border border-[#2c1f0e]/10 bg-[#fffdfb] p-5">
+              <h3 className="font-serif text-2xl font-semibold text-[#2c1f0e]">Your Guidance</h3>
+              <div
+                className={`mt-4 rounded-2xl border p-4 ${
+                  result.status.tone === "amber"
+                    ? "border-amber-200 bg-amber-50"
+                    : result.status.tone === "red"
+                      ? "border-rose-200 bg-rose-50"
+                      : "border-emerald-200 bg-emerald-50"
+                }`}
               >
-                Get general guidance
-              </button>
-            </form>
-          </article>
-
-          <article className="rounded-3xl border border-[#2c1f0e]/10 bg-[#faf6f0] p-6 shadow-sm sm:p-8">
-            <h3 className="text-xl font-semibold text-[#2c1f0e]">Your result</h3>
-
-            {!result ? (
-              <p className="mt-3 text-sm leading-6 text-[#5a4535]">
-                Enter your dog&apos;s details and click <strong>Get general guidance</strong> to view
-                a typical support approach.
-              </p>
-            ) : (
-              <>
                 <p
-                  className={`mt-3 inline-flex rounded-full px-3 py-1 text-xs font-semibold ${
+                  className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ${
                     result.status.tone === "amber"
                       ? "bg-amber-100 text-amber-800"
-                      : result.status.tone === "blue"
-                        ? "bg-blue-100 text-blue-800"
-                        : "bg-green-100 text-green-800"
+                      : result.status.tone === "red"
+                        ? "bg-rose-100 text-rose-800"
+                        : "bg-emerald-100 text-emerald-800"
                   }`}
                 >
                   {result.status.label}
                 </p>
-                <p className="mt-3 text-sm leading-6 text-[#5a4535]">{result.guidance}</p>
-                <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-[#5a4535]">
-                  {result.bullets.map((bullet) => (
-                    <li key={bullet}>{bullet}</li>
-                  ))}
-                </ul>
-              </>
-            )}
+                <p className="mt-3 text-sm leading-7 text-[#5a4535]">{result.guidance}</p>
+                <p className="mt-3 rounded-xl bg-white/80 px-3 py-2 text-sm font-medium text-[#2c1f0e]">
+                  Key recommendation: {result.keyRecommendation}
+                </p>
+              </div>
 
-            <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
-              <p className="font-semibold">When to call a vet</p>
-              <p className="mt-1">
-                Seek veterinary care quickly for blood in stool, repeated vomiting, refusal to eat,
-                severe lethargy, dehydration, or symptoms lasting beyond 24-48 hours.
-              </p>
-            </div>
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-[#5a4535]">
+                {result.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
 
-            <div className="mt-5 flex flex-wrap gap-2">
-              <Link
-                href="/dogs/probiotics/diarrhea"
-                className="rounded-full border border-[#2c1f0e]/15 bg-white px-3 py-1.5 text-xs font-medium text-[#5a4535] hover:text-[#e8734a]"
-              >
-                Dog diarrhea support
-              </Link>
-              <Link
-                href="/blog/do-dogs-need-probiotics"
-                className="rounded-full border border-[#2c1f0e]/15 bg-white px-3 py-1.5 text-xs font-medium text-[#5a4535] hover:text-[#e8734a]"
-              >
-                Do dogs need probiotics?
-              </Link>
-              <Link
-                href="/contact"
-                className="rounded-full border border-[#2c1f0e]/15 bg-white px-3 py-1.5 text-xs font-medium text-[#5a4535] hover:text-[#e8734a]"
-              >
-                Ask our team
-              </Link>
-            </div>
-          </article>
-        </div>
+              <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+                <p className="font-semibold">When to call a vet</p>
+                <p className="mt-1">
+                  Seek veterinary care quickly for blood in stool, repeated vomiting, refusal to
+                  eat, severe lethargy, dehydration, or symptoms lasting beyond 24-48 hours.
+                </p>
+              </div>
+
+              <div className="mt-5">
+                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#8a7060]">
+                  Next step
+                </p>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  <Link
+                    href="/blog/do-dogs-need-probiotics"
+                    className="rounded-full border border-[#2c1f0e]/15 bg-[#faf6f0] px-3 py-1.5 text-xs font-medium text-[#5a4535] hover:text-[#e8734a]"
+                  >
+                    Read related guide
+                  </Link>
+                  <Link
+                    href="/vets/houston-tx"
+                    className="rounded-full border border-[#2c1f0e]/15 bg-[#faf6f0] px-3 py-1.5 text-xs font-medium text-[#5a4535] hover:text-[#e8734a]"
+                  >
+                    Find a vet
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="rounded-full border border-[#2c1f0e]/15 bg-[#faf6f0] px-3 py-1.5 text-xs font-medium text-[#5a4535] hover:text-[#e8734a]"
+                  >
+                    Contact support
+                  </Link>
+                </div>
+              </div>
+            </article>
+          )}
+        </article>
       </div>
     </section>
   );
