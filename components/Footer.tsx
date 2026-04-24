@@ -25,6 +25,7 @@ export default function Footer() {
               <li><Link href="/dogs" className="hover:text-brand-700">Dogs</Link></li>
               <li><Link href="/cats" className="hover:text-brand-700">Cats</Link></li>
               <li><Link href="/probiotics" className="hover:text-brand-700">Probiotics</Link></li>
+              <li><Link href="/tools/puppy-feeding-schedule" className="hover:text-brand-700">Puppy Feeding Schedule</Link></li>
               <li><Link href="/tools/dog-food-calculator" className="hover:text-brand-700">Dog Food Calculator</Link></li>
               <li><Link href="/tools/probiotic-calculator" className="hover:text-brand-700">Dosage Calculator</Link></li>
               <li><Link href="/health-conditions" className="hover:text-brand-700">Health Conditions</Link></li>

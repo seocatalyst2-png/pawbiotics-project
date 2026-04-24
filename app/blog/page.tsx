@@ -163,6 +163,12 @@ export default function BlogPage() {
             >
               Dog Food Calculator
             </Link>
+            <Link
+              href="/tools/puppy-feeding-schedule"
+              className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700"
+            >
+              Puppy Feeding Schedule
+            </Link>
           </div>
         </Container>
       </section>

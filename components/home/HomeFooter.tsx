@@ -26,6 +26,7 @@ export default function HomeFooter() {
             <li><Link href="/dogs" className="hover:text-white">Dog Health Guides</Link></li>
             <li><Link href="/dogs/probiotics/diarrhea" className="hover:text-white">Signs Your Dog Needs Help</Link></li>
             <li><Link href="/dogs/probiotics/food-allergy" className="hover:text-white">Best Probiotic Strains</Link></li>
+            <li><Link href="/tools/puppy-feeding-schedule" className="hover:text-white">Puppy Feeding Schedule</Link></li>
             <li><Link href="/tools/dog-food-calculator" className="hover:text-white">Dog Food Calculator</Link></li>
             <li><Link href="/tools/probiotic-calculator" className="hover:text-white">Dosage Calculator Tool</Link></li>
           </ul>
