@@ -79,6 +79,7 @@ const faqs: FAQItem[] = [
 const recipes = [
   {
     title: "Homemade chicken dog food recipe (vet-informed)",
+    cardClass: "bg-brand-50/30 border-brand-100",
     ingredients: [
       "Lean cooked chicken (boneless, skinless)",
       "Cooked white or brown rice",
@@ -93,11 +94,14 @@ const recipes = [
     ],
     feedingNote:
       "Use as a general starting meal structure and adjust portions based on your dog's size, weight trend, and food-label/vet guidance.",
+    tipNote:
+      "Tip: batch-cook and pre-portion meals to keep transitions consistent and easier to monitor.",
     safetyNote:
       "Do not include onion, garlic, heavy seasoning, or cooked bones. Ask your veterinarian about long-term nutrient balance.",
   },
   {
     title: "Ground turkey + rice recipe",
+    cardClass: "bg-amber-50/30 border-amber-100",
     ingredients: [
       "Lean ground turkey",
       "Cooked rice",
@@ -112,11 +116,14 @@ const recipes = [
     ],
     feedingNote:
       "This can be a useful rotation option for dogs that tolerate turkey well, but calorie density still varies by ingredient ratios.",
+    tipNote:
+      "Tip: rotate protein sources slowly over time rather than changing meals abruptly.",
     safetyNote:
       "Portion gradually during transitions. Monitor stool quality and appetite during the first week.",
   },
   {
     title: "Beef + vegetable recipe",
+    cardClass: "bg-emerald-50/30 border-emerald-100",
     ingredients: [
       "Lean ground beef",
       "Cooked sweet potato or oats",
@@ -131,11 +138,14 @@ const recipes = [
     ],
     feedingNote:
       "Beef-based meals may be higher in calories depending on cut, so start with conservative portions and reassess weekly.",
+    tipNote:
+      "Tip: keep a weekly weight log so you can spot gradual calorie mismatch early.",
     safetyNote:
       "Fat level matters. Dogs with sensitive digestion may need lower-fat options under veterinary guidance.",
   },
   {
     title: "Large breed dog recipe (adjusted portions)",
+    cardClass: "bg-sky-50/30 border-sky-100",
     ingredients: [
       "Lean turkey or chicken",
       "Cooked rice or barley",
@@ -150,6 +160,8 @@ const recipes = [
     ],
     feedingNote:
       "Large breeds often benefit from careful portion consistency and slower calorie adjustments to protect long-term body condition.",
+    tipNote:
+      "Tip: measure portions by weight when possible for better consistency than cup-only estimates.",
     safetyNote:
       "For large dogs, rapid weight gain can increase joint stress. Recheck portions with your veterinarian regularly.",
   },
@@ -196,10 +208,11 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
             Vet Approved Homemade Dog Food Recipes
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600">
-            Many pet owners choose homemade food for ingredient transparency, flexibility, and better
-            control over what goes into their dog&apos;s bowl. The key is nutritional balance. This
-            guide shares vet-informed recipe patterns and practical feeding tips, but every long-term
-            plan should be reviewed with your veterinarian.
+            If you are switching to homemade food, the biggest risk is not ingredient quality - it is
+            nutritional imbalance over time. Many pet owners choose homemade food for ingredient
+            transparency, flexibility, and better control over what goes into their dog&apos;s bowl.
+            This guide shares vet-informed recipe patterns and practical feeding tips, but every
+            long-term plan should be reviewed with your veterinarian.
           </p>
         </Container>
       </section>
@@ -223,12 +236,31 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
         <Container className="space-y-5">
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
             <h2 className="font-serif text-2xl font-semibold text-gray-900">
+              homemade dog food recipes vet approved
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-gray-600">
+              The phrase &quot;vet approved&quot; is best treated as a quality standard, not a guarantee.
+              Recipes should be balanced, practical, and adjusted to your dog&apos;s profile. For
+              portion planning, use our{" "}
+              <Link href="/tools/dog-food-calculator" className="font-semibold text-brand-700">
+                dog food calculator
+              </Link>{" "}
+              as a starting tool and then confirm with your veterinarian.
+            </p>
+          </article>
+
+          <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
               Why pet owners choose homemade dog food
             </h2>
             <p className="mt-3 text-sm leading-7 text-gray-600">
               Homemade diets can help pet owners understand ingredients more clearly and avoid foods
               their dog does not tolerate well. They can also support routine consistency for dogs
-              with sensitive digestion.
+              with sensitive digestion, especially when paired with gut-support strategies like our{" "}
+              <Link href="/dogs/probiotics/digestion" className="font-semibold text-brand-700">
+                digestion guide
+              </Link>
+              .
             </p>
           </article>
 
@@ -261,9 +293,31 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
             <p className="mt-3 text-sm leading-7 text-gray-600">
               Balanced homemade meals generally need protein, healthy fats, digestible carbohydrate
               sources, and micronutrient support. The exact ratio varies by dog, so avoid assuming
-              one universal formula works for all.
+              one universal formula works for all. If your dog also has recurring loose stool, review
+              our{" "}
+              <Link href="/health-conditions/diarrhea" className="font-semibold text-brand-700">
+                diarrhea health condition guide
+              </Link>{" "}
+              and consult a veterinarian before major diet changes.
             </p>
           </article>
+        </Container>
+      </section>
+
+      <div className="mx-auto my-4 h-px w-full max-w-6xl bg-gray-100" />
+
+      <section className="py-6">
+        <Container>
+          <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
+              Quick answer: How much homemade dog food should I feed my dog?
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-gray-700">
+              Start with an estimated range based on weight, activity, and body condition. Then adjust
+              gradually using weight trend and stool quality. Calories vary by recipe, so check label
+              or ingredient calorie density and ask your veterinarian for personalization.
+            </p>
+          </div>
         </Container>
       </section>
 
@@ -274,7 +328,7 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
             {recipes.map((recipe) => (
               <article
                 key={recipe.title}
-                className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm"
+                className={`rounded-2xl border p-6 shadow-sm ${recipe.cardClass}`}
               >
                 <h3 className="font-serif text-xl font-semibold text-gray-900">{recipe.title}</h3>
                 <div className="mt-4">
@@ -300,7 +354,10 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
                 <p className="mt-4 text-sm leading-6 text-gray-700">
                   <span className="font-semibold text-gray-900">Feeding note:</span> {recipe.feedingNote}
                 </p>
-                <p className="mt-2 rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-sm leading-6 text-amber-900">
+                <p className="mt-2 rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm leading-6 text-emerald-900">
+                  <span className="font-semibold">Tip:</span> {recipe.tipNote}
+                </p>
+                <p className="mt-2 rounded-xl border border-rose-200 bg-rose-50 px-3 py-2 text-sm leading-6 text-rose-900">
                   <span className="font-semibold">Safety note:</span> {recipe.safetyNote}
                 </p>
               </article>
@@ -308,6 +365,33 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
           </div>
         </Container>
       </section>
+
+      <section className="border-t border-gray-100 bg-white py-12">
+        <Container>
+          <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Key Takeaways</h2>
+            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-gray-700">
+              <li>Homemade diets can work well, but only when nutrition is balanced long-term.</li>
+              <li>Use recipe frameworks as starting points, not universal prescriptions.</li>
+              <li>Portions should be adjusted gradually using body condition and weight trend.</li>
+              <li>
+                Pair feeding updates with practical tools like the{" "}
+                <Link href="/tools/dog-food-calculator" className="font-semibold text-brand-700">
+                  dog food calculator
+                </Link>{" "}
+                and{" "}
+                <Link href="/tools/probiotic-calculator" className="font-semibold text-brand-700">
+                  probiotic calculator
+                </Link>
+                .
+              </li>
+              <li>When in doubt, consult a licensed veterinarian before major diet changes.</li>
+            </ul>
+          </div>
+        </Container>
+      </section>
+
+      <div className="mx-auto my-4 h-px w-full max-w-6xl bg-gray-100" />
 
       <section className="border-t border-gray-100 py-12">
         <Container className="space-y-5">
@@ -318,6 +402,11 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
             <p className="mt-3 text-sm leading-7 text-gray-600">
               Chicken-based homemade recipes are popular because they are simple and often easy to
               digest. They should still be part of a balanced plan and reviewed by a veterinarian.
+              If you&apos;re early in your transition, the{" "}
+              <Link href="/contact" className="font-semibold text-brand-700">
+                contact page
+              </Link>{" "}
+              can help you reach our team for educational guidance before your vet visit.
             </p>
           </article>
 
@@ -327,7 +416,12 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
             </h2>
             <p className="mt-3 text-sm leading-7 text-gray-600">
               Large dogs may need tighter calorie and growth monitoring. Use measured portions and
-              reassess body condition routinely to avoid gradual overfeeding.
+              reassess body condition routinely to avoid gradual overfeeding. For city-based support,
+              use local resources like{" "}
+              <Link href="/vets/houston-tx" className="font-semibold text-brand-700">
+                vets in Houston
+              </Link>
+              .
             </p>
           </article>
 
@@ -356,6 +450,30 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
 
       <section className="border-t border-gray-100 bg-brand-50/40 py-12">
         <Container>
+          <div className="mb-6 rounded-2xl border border-brand-100 bg-white p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
+              Build your plan with our tools
+            </h2>
+            <p className="mt-2 text-sm leading-7 text-gray-600">
+              For faster next steps, estimate portions and support routines with our practical feeding
+              tools.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Link
+                href="/tools/dog-food-calculator"
+                className="rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white hover:bg-brand-700"
+              >
+                Open Dog Food Calculator
+              </Link>
+              <Link
+                href="/tools/probiotic-calculator"
+                className="rounded-full border border-brand-200 bg-white px-4 py-2 text-sm font-semibold text-brand-700 hover:border-brand-300"
+              >
+                Open Probiotic Calculator
+              </Link>
+            </div>
+          </div>
+
           <h2 className="font-serif text-2xl font-semibold text-gray-900">Helpful links</h2>
           <div className="mt-4 flex flex-wrap gap-3">
             <Link
@@ -404,6 +522,10 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
             <h2 className="font-serif text-2xl font-semibold text-gray-900">
               Talk to a local vet before changing your dog&apos;s diet
             </h2>
+            <p className="mt-2 text-sm leading-7 text-gray-600">
+              A local veterinarian can help tailor portions, ingredient choices, and supplement needs
+              for your dog&apos;s exact health profile.
+            </p>
             <div className="mt-4 flex flex-wrap gap-3">
               <Link
                 href="/vets/houston-tx"
