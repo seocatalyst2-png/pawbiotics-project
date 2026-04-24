@@ -99,46 +99,68 @@ const webApplicationSchema = {
 
 const educationalSections = [
   {
+    icon: "🐶",
+    cardClass: "bg-brand-50/60 border-brand-100",
     heading: "How this puppy feeding schedule works",
     body: "This tool uses age stage, breed size, activity, and food type to suggest a general starting schedule. It does not replace food-label instructions or veterinary advice.",
   },
   {
+    icon: "📅",
+    cardClass: "bg-amber-50/60 border-amber-100",
     heading: "Puppy feeding schedule by age",
     body: "Very young puppies often need more frequent meals, while older puppies may gradually shift toward fewer meals. Growth needs vary by size and breed.",
   },
   {
+    icon: "🍽️",
+    cardClass: "bg-emerald-50/60 border-emerald-100",
     heading: "How often should puppies eat?",
     body: "Many puppies eat more frequently than adult dogs. Meal timing should be consistent and adjusted using body condition, appetite trends, and label guidance.",
   },
   {
+    icon: "🍼",
+    cardClass: "bg-sky-50/60 border-sky-100",
     heading: "8 week puppy feeding schedule",
     body: "At around 8 weeks, many puppies do well with 3 to 4 small meals spaced through the day, with close monitoring of appetite and stool quality.",
   },
   {
+    icon: "📅",
+    cardClass: "bg-orange-50/60 border-orange-100",
     heading: "3 month puppy feeding schedule",
     body: "At 3 months, many puppies continue with about 3 meals daily, though some routines vary by breed size and activity level.",
   },
   {
+    icon: "📅",
+    cardClass: "bg-violet-50/60 border-violet-100",
     heading: "6 month puppy feeding schedule",
     body: "Around 6 months, some puppies move toward a more structured routine with fewer daily meals. Transition gradually and reassess body condition.",
   },
   {
+    icon: "⚖️",
+    cardClass: "bg-teal-50/60 border-teal-100",
     heading: "Small breed vs large breed puppy feeding",
     body: "Small breeds may benefit from steadier meal timing, while large breeds often need careful growth management to avoid overfeeding.",
   },
   {
+    icon: "🔄",
+    cardClass: "bg-lime-50/60 border-lime-100",
     heading: "When to switch from puppy food to adult food",
     body: "Transition timing depends on breed size and growth pace. Your veterinarian can help decide when your puppy is ready for adult formulas.",
   },
   {
+    icon: "⚠️",
+    cardClass: "bg-rose-50/60 border-rose-100",
     heading: "Signs your puppy may be eating too much",
     body: "Rapid weight gain, reduced waist shape, or lower activity may signal overfeeding. Re-check label guidance and discuss concerns with your vet.",
   },
   {
+    icon: "📉",
+    cardClass: "bg-indigo-50/60 border-indigo-100",
     heading: "Signs your puppy may not be eating enough",
     body: "Poor weight gain, low energy, and persistent hunger can suggest underfeeding. Compare with label guidance and seek veterinary input.",
   },
   {
+    icon: "🩺",
+    cardClass: "bg-cyan-50/60 border-cyan-100",
     heading: "When to call your veterinarian",
     body: "Call your vet for ongoing appetite issues, frequent vomiting, persistent diarrhea, poor growth, or sudden body condition changes.",
   },
@@ -258,14 +280,17 @@ export default function PuppyFeedingSchedulePage() {
 
       <section className="border-t border-gray-100 bg-white py-12">
         <Container>
-          <div className="mx-auto grid max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {educationalSections.map((section) => (
               <article
                 key={section.heading}
-                className="rounded-2xl border border-gray-100 bg-white p-5 shadow-sm"
+                className={`group rounded-2xl border p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-md ${section.cardClass}`}
               >
-                <h2 className="font-serif text-xl font-semibold text-gray-900">{section.heading}</h2>
-                <p className="mt-3 text-sm leading-7 text-gray-600">{section.body}</p>
+                <h2 className="flex items-start gap-2 font-serif text-[1.35rem] font-semibold leading-snug text-gray-900">
+                  <span aria-hidden>{section.icon}</span>
+                  <span>{section.heading}</span>
+                </h2>
+                <p className="mt-4 text-sm leading-7 text-gray-700">{section.body}</p>
               </article>
             ))}
           </div>
