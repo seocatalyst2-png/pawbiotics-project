@@ -157,6 +157,12 @@ export default function BlogPage() {
             >
               Dosage Calculator
             </Link>
+            <Link
+              href="/tools/dog-food-calculator"
+              className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700"
+            >
+              Dog Food Calculator
+            </Link>
           </div>
         </Container>
       </section>
