@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/Container";
-import FAQ from "@/components/seo/FAQ";
 import { FAQSchema } from "@/components/seo/Schema";
 import { getAllBlogPosts } from "@/data/blog-posts";
 import type { FAQItem } from "@/lib/seo";
@@ -156,9 +155,19 @@ export default function BlogPage() {
         </Container>
       </section>
 
-      <section className="bg-gray-50 py-12">
+      <section className="border-t border-gray-100 bg-gray-50 py-12">
         <Container>
-          <FAQ items={blogFaqs} />
+          <div className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="text-2xl font-bold text-gray-900">Frequently Asked Questions</h2>
+            <div className="mt-6 space-y-5">
+              {blogFaqs.map((faq) => (
+                <article key={faq.question} className="rounded-xl border border-gray-100 p-4">
+                  <h3 className="text-base font-semibold text-gray-900">{faq.question}</h3>
+                  <p className="mt-2 text-sm leading-6 text-gray-600">{faq.answer}</p>
+                </article>
+              ))}
+            </div>
+          </div>
         </Container>
       </section>
     </>
