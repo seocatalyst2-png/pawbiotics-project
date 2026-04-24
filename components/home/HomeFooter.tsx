@@ -26,6 +26,7 @@ export default function HomeFooter() {
             <li><Link href="/dogs" className="hover:text-white">Dog Health Guides</Link></li>
             <li><Link href="/dogs/probiotics/diarrhea" className="hover:text-white">Signs Your Dog Needs Help</Link></li>
             <li><Link href="/dogs/probiotics/food-allergy" className="hover:text-white">Best Probiotic Strains</Link></li>
+            <li><Link href="/tools/probiotic-calculator" className="hover:text-white">Dosage Calculator Tool</Link></li>
           </ul>
         </div>
 
@@ -45,8 +46,8 @@ export default function HomeFooter() {
             Company
           </h3>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link href="/" className="hover:text-white">About</Link></li>
-            <li><Link href="/" className="hover:text-white">Contact</Link></li>
+            <li><Link href="/about" className="hover:text-white">About</Link></li>
+            <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
             <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
           </ul>
         </div>
@@ -55,9 +56,9 @@ export default function HomeFooter() {
       <div className="mx-auto mt-10 flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 border-t border-white/10 px-4 pt-6 text-xs text-white/50">
         <span>&copy; {new Date().getFullYear()} Pawbiotics. All rights reserved.</span>
         <div className="flex gap-4">
-          <Link href="/" className="hover:text-white">Privacy</Link>
-          <Link href="/" className="hover:text-white">Contact</Link>
-          <Link href="/" className="hover:text-white">About</Link>
+          <Link href="#" className="hover:text-white">Privacy</Link>
+          <Link href="/contact" className="hover:text-white">Contact</Link>
+          <Link href="/about" className="hover:text-white">About</Link>
         </div>
       </div>
     </footer>

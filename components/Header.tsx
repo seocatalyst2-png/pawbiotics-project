@@ -4,6 +4,7 @@ const navLinks = [
   { href: "/dogs", label: "Dogs" },
   { href: "/cats", label: "Cats" },
   { href: "/probiotics", label: "Probiotics" },
+  { href: "/tools/probiotic-calculator", label: "Tools" },
   { href: "/health-conditions", label: "Health Conditions" },
   { href: "/vets/houston-tx", label: "Local Vets" },
 ];

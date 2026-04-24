@@ -151,6 +151,12 @@ export default function BlogPage() {
             >
               Local Vets
             </Link>
+            <Link
+              href="/tools/probiotic-calculator"
+              className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700"
+            >
+              Dosage Calculator
+            </Link>
           </div>
         </Container>
       </section>
