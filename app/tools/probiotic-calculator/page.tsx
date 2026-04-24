@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/Container";
-import FAQ from "@/components/seo/FAQ";
 import { BreadcrumbSchema, FAQSchema } from "@/components/seo/Schema";
 import type { FAQItem } from "@/lib/seo";
 import CalculatorToolClient from "./CalculatorToolClient";
@@ -99,70 +98,30 @@ const webApplicationSchema = {
   },
 };
 
-const learningSections = [
+const educationalCards = [
   {
-    heading: "How to use this calculator",
-    body: [
-      "Enter your dog's weight, age group, and main gut-health concern. The tool then gives a typical support direction using safe, educational language.",
-      "It does not output a medical dose and it does not replace professional diagnosis. Always compare any result with product instructions and vet guidance.",
-    ],
-    bullets: [
-      "Use current weight for best estimate quality",
-      "Choose the concern that matches today's symptom pattern",
-      "Review output with your product label before starting",
-    ],
+    heading: "How This Calculator Works",
+    body: "The tool uses weight bands, age group, and your main concern to generate general guidance. It is not a prescription and does not replace veterinary care.",
   },
   {
-    heading: "What affects probiotic needs in dogs",
-    body: [
-      "Probiotic needs can vary by life stage, digestive sensitivity, stress level, diet changes, and recovery after antibiotics.",
-      "Two dogs with similar weight may still respond differently, so start conservatively and monitor response over time.",
-    ],
-    bullets: [
-      "Body size and age group",
-      "Symptom severity and duration",
-      "Current food, treats, and medication changes",
-      "Product strain blend and label instructions",
-    ],
+    heading: "When Probiotics May Help Dogs",
+    body: "Probiotics may support gut balance during mild digestive changes, occasional gas, or post-antibiotic transitions when used carefully.",
   },
   {
-    heading: "Common mistakes pet owners make",
-    body: [
-      "Most probiotic setbacks happen when products are introduced too fast or when multiple new supplements are started at once.",
-      "Another common issue is waiting too long before seeking veterinary care when symptoms are worsening.",
-    ],
-    bullets: [
-      "Starting at a full label amount on day one",
-      "Changing diet and supplement at the same time",
-      "Ignoring hydration during diarrhea episodes",
-      "Delaying vet care for persistent symptoms",
-    ],
+    heading: "When Probiotics Are Not Enough",
+    body: "If symptoms are severe, persistent, or worsening, probiotics should not delay diagnosis. Prompt veterinary evaluation is the safer path.",
   },
   {
-    heading: "Signs probiotics are working",
-    body: [
-      "Look for small improvements before expecting major changes. In many dogs, progress appears as steadier stool quality and better daily comfort.",
-      "Track trends over several days instead of judging from one meal or one bowel movement.",
-    ],
-    bullets: [
-      "More consistent stool pattern",
-      "Reduced gas or bloating discomfort",
-      "Stable appetite and energy",
-      "Fewer digestion-related flare-ups",
-    ],
+    heading: "How to Introduce Probiotics Safely",
+    body: "Start with a low, label-based approach, add changes gradually, and monitor stool quality, appetite, and comfort over several days.",
   },
   {
-    heading: "Signs you should stop and call a vet",
-    body: [
-      "If symptoms become severe, probiotics should not be used as a delay strategy. Fast veterinary assessment is the safer option.",
-      "For diarrhea-specific guidance, review our dedicated support page and escalate quickly when red flags appear.",
-    ],
-    bullets: [
-      "Blood in stool or black stool",
-      "Repeated vomiting or refusal to drink",
-      "Marked lethargy or weakness",
-      "No improvement after 24 to 48 hours",
-    ],
+    heading: "What to Look for in a Dog Probiotic",
+    body: "Choose products with clear strain details, species-appropriate labeling, storage guidance, and instructions matched to your dog's size.",
+  },
+  {
+    heading: "Probiotics by Dog Size",
+    body: "Small, medium, and large dogs may need different typical label ranges. Product instructions vary, so compare labels and ask your veterinarian.",
   },
 ];
 
@@ -197,15 +156,37 @@ export default function ProbioticCalculatorPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webApplicationSchema) }}
       />
 
-      <section className="border-b border-[#2c1f0e]/10 bg-gradient-to-b from-[#faf6f0] to-white py-14">
+      <section className="border-b border-[#2c1f0e]/10 bg-[#f8f3ea] py-6">
         <Container>
-          <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+          <nav aria-label="Breadcrumb" className="text-sm text-[#8a7060]">
+            <ol className="flex flex-wrap items-center gap-2">
+              <li>
+                <Link href="/" className="hover:text-[#e8734a]">
+                  Home
+                </Link>
+              </li>
+              <li aria-hidden>›</li>
+              <li>
+                <Link href="/tools/probiotic-calculator" className="hover:text-[#e8734a]">
+                  Tools
+                </Link>
+              </li>
+              <li aria-hidden>›</li>
+              <li className="font-medium text-[#5a4535]">Probiotic Calculator</li>
+            </ol>
+          </nav>
+        </Container>
+      </section>
+
+      <section className="border-b border-[#2c1f0e]/10 bg-gradient-to-b from-[#faf6f0] to-[#f8f3ea] py-14">
+        <Container>
+          <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div>
-              <p className="inline-flex rounded-full border border-[#e8734a]/30 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#e8734a]">
-                Free Pet Health Tool
+              <p className="inline-flex rounded-full border border-[#e8734a]/30 bg-white px-4 py-1.5 text-xs font-semibold tracking-wide text-[#e8734a]">
+                🌿 Free Pet Health Tool
               </p>
               <h1 className="mt-4 font-serif text-3xl font-bold text-[#2c1f0e] sm:text-4xl">
-                Dog Probiotic Dosage Calculator
+                Dog Probiotic <span className="text-[#2f8f9d]">Dosage</span> Calculator
               </h1>
               <p className="mt-4 max-w-3xl text-base leading-7 text-[#5a4535]">
                 Estimate general probiotic guidance for your dog based on weight, digestion needs,
@@ -217,56 +198,36 @@ export default function ProbioticCalculatorPage() {
               </p>
             </div>
 
-            <div className="space-y-3">
-              <article className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-4 shadow-sm">
-                <div className="flex items-center justify-between">
-                  <p className="text-3xl">🐶</p>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-[#8a7060]">
-                    visual preview
-                  </p>
-                </div>
-                <p className="mt-2 text-sm font-semibold text-[#2c1f0e]">Dog-friendly guidance</p>
-                <p className="mt-1 text-xs text-[#8a7060]">
-                  Built for practical daily decisions, not hard medical dosing.
-                </p>
-              </article>
-
-              <div className="grid grid-cols-2 gap-3">
-                <article className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-3 shadow-sm">
-                  <p className="text-xl">🦠</p>
-                  <p className="mt-1 text-xs font-semibold text-[#2c1f0e]">Gut health</p>
+            <div className="grid grid-cols-2 gap-3">
+              {[
+                { label: "Small Dogs", note: "Up to 20 lbs" },
+                { label: "Medium Dogs", note: "21 to 60 lbs" },
+                { label: "Large Dogs", note: "61+ lbs" },
+                { label: "All Breeds", note: "General guidance" },
+              ].map((item) => (
+                <article
+                  key={item.label}
+                  className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-4 shadow-sm"
+                >
+                  <p className="text-sm font-semibold text-[#2c1f0e]">{item.label}</p>
+                  <p className="mt-1 text-xs text-[#8a7060]">{item.note}</p>
                 </article>
-                <article className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-3 shadow-sm">
-                  <p className="text-xl">🛡️</p>
-                  <p className="mt-1 text-xs font-semibold text-[#2c1f0e]">Immunity</p>
-                </article>
-                <article className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-3 shadow-sm">
-                  <p className="text-xl">🍽️</p>
-                  <p className="mt-1 text-xs font-semibold text-[#2c1f0e]">Digestion</p>
-                </article>
-                <article className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-3 shadow-sm">
-                  <p className="text-xl">✨</p>
-                  <p className="mt-1 text-xs font-semibold text-[#2c1f0e]">Allergies</p>
-                </article>
-              </div>
+              ))}
             </div>
           </div>
         </Container>
       </section>
 
-      <section className="py-8">
+      <section className="bg-[#f8f3ea] py-8">
         <Container>
-          <div className="rounded-2xl border border-[#e8734a]/20 bg-[#fff8f3] p-5">
-            <h2 className="font-serif text-2xl font-semibold text-[#2c1f0e]">
-              Quick answer
-            </h2>
-            <p className="mt-2 text-sm leading-7 text-[#5a4535]">
-              There is no single probiotic dose for every dog. The right amount depends on weight,
-              age, symptoms, product label, and vet guidance.
-            </p>
-            <p className="mt-2 text-sm leading-7 text-[#5a4535]">
-              Start with a low, label-based approach, monitor your dog closely, and involve your
-              veterinarian if symptoms continue or worsen.
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#1f6f78] via-[#246f74] to-[#1f6f78] p-6 text-white shadow-lg">
+            <div className="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full bg-white/10" />
+            <div className="pointer-events-none absolute -bottom-10 left-1/3 h-32 w-32 rounded-full bg-white/10" />
+            <p className="text-sm font-semibold tracking-wide text-white/90">⚡ Quick Answer</p>
+            <h2 className="mt-2 font-serif text-2xl font-semibold">No single dose fits every dog.</h2>
+            <p className="mt-2 max-w-3xl text-sm leading-7 text-white/90">
+              The right amount depends on your dog&apos;s weight, age, symptoms, product label, and
+              veterinary guidance. Use this tool for general guidance only.
             </p>
           </div>
         </Container>
@@ -275,99 +236,31 @@ export default function ProbioticCalculatorPage() {
       <CalculatorToolClient />
 
       <section className="border-t border-[#2c1f0e]/10 bg-white py-12">
-        <Container className="space-y-5">
-          {learningSections.map((section) => (
-            <article
-              key={section.heading}
-              className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-6 shadow-sm"
-            >
-              <h2 className="font-serif text-2xl font-semibold text-[#2c1f0e]">{section.heading}</h2>
-              <div className="mt-3 space-y-3">
-                {section.body.map((paragraph) => (
-                  <p key={paragraph} className="text-sm leading-7 text-[#5a4535]">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-              {"bullets" in section && Array.isArray(section.bullets) && (
-                <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-[#5a4535]">
-                  {section.bullets.map((bullet: string) => (
-                    <li key={bullet}>{bullet}</li>
-                  ))}
-                </ul>
-              )}
-              {section.heading === "Signs you should stop and call a vet" && (
-                <p className="mt-4 text-sm leading-7 text-[#5a4535]">
-                  Learn more in our{" "}
-                  <Link href="/dogs/probiotics/diarrhea" className="font-semibold text-[#e8734a]">
-                    dog diarrhea support guide
-                  </Link>
-                  , read{" "}
-                  <Link href="/blog/do-dogs-need-probiotics" className="font-semibold text-[#e8734a]">
-                    do dogs need probiotics
-                  </Link>
-                  , or review our{" "}
-                  <Link href="/health-conditions/diarrhea" className="font-semibold text-[#e8734a]">
-                    diarrhea health conditions page
-                  </Link>
-                  .
-                </p>
-              )}
-            </article>
-          ))}
-        </Container>
-      </section>
-
-      <section className="border-t border-[#2c1f0e]/10 bg-white py-12">
         <Container>
-          <div className="rounded-2xl border border-[#2c1f0e]/10 bg-[#faf6f0] p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-[#2c1f0e]">
-              Reviewed &amp; written for educational use
-            </h2>
-            <p className="mt-3 text-sm leading-7 text-[#5a4535]">
-              This calculator is designed from general pet health guidance patterns and written for
-              educational use by pet owners. It is not a diagnostic or treatment tool, and it should
-              not replace veterinary care.
-            </p>
-            <p className="mt-2 text-sm leading-7 text-[#5a4535]">
-              For persistent digestive symptoms, skin flare-ups, or repeated discomfort, consult a
-              licensed veterinarian.
-            </p>
-          </div>
-        </Container>
-      </section>
-
-      <section className="border-t border-[#2c1f0e]/10 bg-[#faf6f0] py-12">
-        <Container>
-          <h2 className="font-serif text-2xl font-semibold text-[#2c1f0e]">Helpful resources</h2>
-          <div className="mt-4 flex flex-wrap gap-3">
-            {resourceLinks.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-full border border-[#2c1f0e]/15 bg-white px-4 py-2 text-sm font-medium text-[#5a4535] hover:border-[#e8734a]/30 hover:text-[#e8734a]"
+          <div className="mx-auto grid max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {educationalCards.map((section) => (
+              <article
+                key={section.heading}
+                className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-5 shadow-sm"
               >
-                {item.label}
-              </Link>
+                <h2 className="font-serif text-xl font-semibold text-[#2c1f0e]">{section.heading}</h2>
+                <p className="mt-3 text-sm leading-7 text-[#5a4535]">{section.body}</p>
+              </article>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="border-t border-[#2c1f0e]/10 bg-[#faf6f0] pb-12">
+      <section className="border-t border-[#d9b788] bg-[#fff3df] py-12">
         <Container>
-          <div className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-[#2c1f0e]">Need a vet&apos;s opinion?</h2>
-            <p className="mt-2 text-sm text-[#5a4535]">
-              Browse local vet resources and speak with a licensed professional for personalized
-              care advice.
-            </p>
+          <div className="mx-auto max-w-5xl">
+            <h2 className="font-serif text-2xl font-semibold text-[#2c1f0e]">Related guides</h2>
             <div className="mt-4 flex flex-wrap gap-3">
-              {localVetLinks.map((item) => (
+              {resourceLinks.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="rounded-full border border-[#2c1f0e]/15 bg-[#faf6f0] px-4 py-2 text-sm font-medium text-[#5a4535] hover:border-[#e8734a]/30 hover:text-[#e8734a]"
+                  className="rounded-full border border-[#d9b788] bg-white px-4 py-2 text-sm font-medium text-[#5a4535] hover:border-[#e8734a]/40 hover:text-[#e8734a]"
                 >
                   {item.label}
                 </Link>
@@ -377,9 +270,64 @@ export default function ProbioticCalculatorPage() {
         </Container>
       </section>
 
-      <section className="bg-[#f2ece2] py-12">
+      <section className="border-t border-[#2c1f0e]/10 bg-[#f8f3ea] py-12">
         <Container>
-          <FAQ items={faqs} />
+          <div className="mx-auto max-w-4xl">
+            <h2 className="font-serif text-2xl font-semibold text-[#2c1f0e]">
+              Frequently Asked Questions
+            </h2>
+            <div className="mt-5 space-y-3">
+              {faqs.map((faq) => (
+                <details
+                  key={faq.question}
+                  className="group rounded-2xl border border-[#2c1f0e]/10 bg-white p-4 shadow-sm"
+                >
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-left text-sm font-semibold text-[#2c1f0e]">
+                    {faq.question}
+                    <span className="text-[#8a7060] transition group-open:rotate-45">+</span>
+                  </summary>
+                  <p className="mt-3 text-sm leading-7 text-[#5a4535]">{faq.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-t border-[#2f8f9d]/20 bg-[#eaf6f7] py-12">
+        <Container>
+          <div className="mx-auto max-w-5xl rounded-2xl border border-[#2f8f9d]/20 bg-white p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-[#1f6f78]">Need a Vet&apos;s Opinion?</h2>
+            <p className="mt-2 text-sm leading-7 text-[#3f5f62]">
+              For personalized care decisions, connect with a licensed veterinarian in your area.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              {localVetLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="rounded-full border border-[#2f8f9d]/25 bg-[#f4fbfc] px-4 py-2 text-sm font-medium text-[#2a6d74] hover:border-[#2f8f9d]/45"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-t border-[#2c1f0e]/10 bg-[#f8f3ea] pb-14 pt-10">
+        <Container>
+          <div className="mx-auto max-w-3xl rounded-2xl border border-[#2c1f0e]/10 bg-white p-6 text-center shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-[#2c1f0e]">
+              Reviewed &amp; written for educational use
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-[#5a4535]">
+              This calculator provides educational guidance only. It does not diagnose, treat, or
+              prescribe. Product instructions vary, and a licensed veterinarian should guide final
+              decisions.
+            </p>
+          </div>
         </Container>
       </section>
     </>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 
 type AgeGroup = "puppy" | "adult" | "senior";
@@ -13,17 +13,15 @@ type Concern =
 
 function getWeightBand(weightLbs: number) {
   if (weightLbs <= 0) return "unknown";
-  if (weightLbs <= 15) return "small";
-  if (weightLbs <= 45) return "medium";
-  if (weightLbs <= 80) return "large";
-  return "x-large";
+  if (weightLbs <= 20) return "small";
+  if (weightLbs <= 60) return "medium";
+  return "large";
 }
 
 function getTypicalSupportRange(weightBand: string) {
-  if (weightBand === "small") return "typically a low-label range for small dogs";
-  if (weightBand === "medium") return "typically a moderate-label range for medium dogs";
-  if (weightBand === "large") return "typically a moderate-to-higher label range for large dogs";
-  if (weightBand === "x-large") return "typically a higher label range for very large dogs";
+  if (weightBand === "small") return "typical label range for small dogs";
+  if (weightBand === "medium") return "typical label range for medium dogs";
+  if (weightBand === "large") return "typical label range for large dogs";
   return "a label-based range matched to your dog's size";
 }
 
@@ -48,6 +46,8 @@ export default function CalculatorToolClient() {
   const [ageGroup, setAgeGroup] = useState<AgeGroup>("adult");
   const [concern, setConcern] = useState<Concern>("general-gut-health");
   const [hasCalculated, setHasCalculated] = useState(false);
+  const [weightError, setWeightError] = useState<string>("");
+  const resultRef = useRef<HTMLElement | null>(null);
 
   const parsedWeight = Number(weightLbs);
 
@@ -75,6 +75,7 @@ export default function CalculatorToolClient() {
     return {
       status,
       weightBand,
+      supportRange,
       guidance:
         `For a ${ageLabelMap[ageGroup]} dog focused on ${concernLabelMap[concern]}, a safe starting point is ${supportRange}.`,
       keyRecommendation:
@@ -87,6 +88,14 @@ export default function CalculatorToolClient() {
       ],
     };
   }, [ageGroup, concern, hasCalculated, parsedWeight]);
+
+  useEffect(() => {
+    if (!result || !resultRef.current) return;
+    resultRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [result]);
+
+  const isConcernCoral =
+    concern === "diarrhea-support" || concern === "post-antibiotic-support";
 
   return (
     <section className="border-y border-[#2c1f0e]/10 bg-[#faf6f0] py-14">
@@ -104,6 +113,12 @@ export default function CalculatorToolClient() {
             className="mt-6 space-y-5"
             onSubmit={(event) => {
               event.preventDefault();
+              if (!Number.isFinite(parsedWeight) || parsedWeight <= 0) {
+                setWeightError("Please enter a valid weight above 0 lbs.");
+                setHasCalculated(false);
+                return;
+              }
+              setWeightError("");
               setHasCalculated(true);
             }}
           >
@@ -118,10 +133,14 @@ export default function CalculatorToolClient() {
                 min="1"
                 step="0.1"
                 value={weightLbs}
-                onChange={(e) => setWeightLbs(e.target.value)}
+                onChange={(e) => {
+                  setWeightLbs(e.target.value);
+                  if (weightError) setWeightError("");
+                }}
                 placeholder="Example: 32"
                 className="mt-2 w-full rounded-xl border border-[#2c1f0e]/15 bg-white px-4 py-2.5 text-sm text-[#2c1f0e] outline-none transition focus:border-[#e8734a]/50 focus:ring-2 focus:ring-[#e8734a]/20"
               />
+              {!!weightError && <p className="mt-2 text-xs text-rose-700">{weightError}</p>}
             </div>
 
             <div className="grid gap-4 md:grid-cols-2">
@@ -167,7 +186,7 @@ export default function CalculatorToolClient() {
               type="submit"
               className="w-full rounded-xl bg-gradient-to-r from-[#e8734a] to-[#d6633b] px-5 py-3 text-sm font-semibold text-white transition hover:brightness-95"
             >
-              Calculate Guidance
+              Get My Dog&apos;s Guidance &rarr;
             </button>
             <button
               type="button"
@@ -186,15 +205,16 @@ export default function CalculatorToolClient() {
           <div className="my-6 border-t border-[#2c1f0e]/10" />
 
           {!result ? null : (
-            <article className="animate-pulse [animation-duration:450ms] [animation-iteration-count:1] rounded-2xl border border-[#2c1f0e]/10 bg-[#fffdfb] p-5">
+            <article
+              ref={resultRef}
+              className="animate-pulse [animation-duration:500ms] [animation-iteration-count:1] rounded-2xl border border-[#2c1f0e]/10 bg-[#fffdfb] p-5"
+            >
               <h3 className="font-serif text-2xl font-semibold text-[#2c1f0e]">Your Guidance</h3>
               <div
                 className={`mt-4 rounded-2xl border p-4 ${
-                  result.status.tone === "amber"
-                    ? "border-amber-200 bg-amber-50"
-                    : result.status.tone === "red"
-                      ? "border-rose-200 bg-rose-50"
-                      : "border-emerald-200 bg-emerald-50"
+                  isConcernCoral
+                    ? "border-[#f2b59b] bg-[#fff2ec]"
+                    : "border-[#9dcfd6] bg-[#eef9fb]"
                 }`}
               >
                 <p
@@ -207,6 +227,17 @@ export default function CalculatorToolClient() {
                   }`}
                 >
                   {result.status.label}
+                </p>
+                <p
+                  className={`mt-3 text-sm font-semibold ${
+                    isConcernCoral ? "text-[#d6633b]" : "text-[#1f6f78]"
+                  }`}
+                >
+                  {isConcernCoral ? "🧡 Digestive Caution Focus" : "🩵 Digestive Wellness Focus"}
+                </p>
+                <p className="mt-2 text-sm text-[#5a4535]">
+                  Typical product range:{" "}
+                  <span className="font-semibold capitalize">{result.supportRange}</span>
                 </p>
                 <p className="mt-3 text-sm leading-7 text-[#5a4535]">{result.guidance}</p>
                 <p className="mt-3 rounded-xl bg-white/80 px-3 py-2 text-sm font-medium text-[#2c1f0e]">
