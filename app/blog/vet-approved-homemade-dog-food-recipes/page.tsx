@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/Container";
-import FAQ from "@/components/seo/FAQ";
 import { ArticleSchema, BreadcrumbSchema, FAQSchema } from "@/components/seo/Schema";
 import type { FAQItem } from "@/lib/seo";
+import FaqAccordionClient from "./FaqAccordionClient";
 
 const PAGE_URL = "https://pawbiotics.us/blog/vet-approved-homemade-dog-food-recipes";
 
@@ -167,6 +167,45 @@ const recipes = [
   },
 ];
 
+const basicsCards = [
+  {
+    icon: "🐾",
+    cardClass: "bg-brand-50/50 border-brand-100",
+    title: "Why pet owners choose homemade dog food",
+    content:
+      "Homemade diets can help pet owners understand ingredients more clearly and avoid foods their dog does not tolerate well. They can also support routine consistency for dogs with sensitive digestion, especially when paired with gut-support strategies like our digestion guide.",
+  },
+  {
+    icon: "✅",
+    cardClass: "bg-amber-50/50 border-amber-100",
+    title: 'What makes a dog food recipe "vet approved"',
+    bullets: [
+      "Balanced nutrients for long-term feeding, not just short-term relief diets",
+      "Portions adjusted for body condition, age, and activity level",
+      "Safe preparation and ingredient handling practices",
+      "Veterinary review for ongoing monitoring and updates",
+    ],
+  },
+  {
+    icon: "⚠️",
+    cardClass: "bg-emerald-50/50 border-emerald-100",
+    title: "Common mistakes in homemade dog food",
+    bullets: [
+      "Using one recipe for every dog regardless of size or condition",
+      "Skipping long-term nutrient planning or supplement discussion",
+      "Overfeeding calorie-dense ingredients without portion tracking",
+      "Introducing major diet changes too quickly",
+    ],
+  },
+  {
+    icon: "🍽️",
+    cardClass: "bg-sky-50/50 border-sky-100",
+    title: "Nutritional basics",
+    content:
+      "Balanced homemade meals generally need protein, healthy fats, digestible carbohydrate sources, and micronutrient support. The exact ratio varies by dog, so avoid assuming one universal formula works for all. If your dog also has recurring loose stool, review our diarrhea health condition guide and consult a veterinarian before major diet changes.",
+  },
+];
+
 export default function VetApprovedHomemadeDogFoodRecipesPage() {
   return (
     <>
@@ -233,7 +272,7 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
       </section>
 
       <section className="border-t border-gray-100 py-12">
-        <Container className="space-y-5">
+        <Container>
           <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
             <h2 className="font-serif text-2xl font-semibold text-gray-900">
               homemade dog food recipes vet approved
@@ -249,58 +288,63 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
             </p>
           </article>
 
-          <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">
-              Why pet owners choose homemade dog food
-            </h2>
-            <p className="mt-3 text-sm leading-7 text-gray-600">
-              Homemade diets can help pet owners understand ingredients more clearly and avoid foods
-              their dog does not tolerate well. They can also support routine consistency for dogs
-              with sensitive digestion, especially when paired with gut-support strategies like our{" "}
-              <Link href="/dogs/probiotics/digestion" className="font-semibold text-brand-700">
-                digestion guide
-              </Link>
-              .
+          <div className="mt-8">
+            <h2 className="font-serif text-3xl font-semibold text-gray-900">Homemade Dog Food Basics</h2>
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-gray-600">
+              Before trying new recipes, understand the core principles that keep homemade meals
+              safer, more balanced, and easier to manage long-term.
             </p>
-          </article>
+          </div>
 
-          <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">
-              What makes a dog food recipe &quot;vet approved&quot;
-            </h2>
-            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-gray-600">
-              <li>Balanced nutrients for long-term feeding, not just short-term relief diets</li>
-              <li>Portions adjusted for body condition, age, and activity level</li>
-              <li>Safe preparation and ingredient handling practices</li>
-              <li>Veterinary review for ongoing monitoring and updates</li>
-            </ul>
-          </article>
-
-          <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">
-              Common mistakes in homemade dog food
-            </h2>
-            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-gray-600">
-              <li>Using one recipe for every dog regardless of size or condition</li>
-              <li>Skipping long-term nutrient planning or supplement discussion</li>
-              <li>Overfeeding calorie-dense ingredients without portion tracking</li>
-              <li>Introducing major diet changes too quickly</li>
-            </ul>
-          </article>
-
-          <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">Nutritional basics</h2>
-            <p className="mt-3 text-sm leading-7 text-gray-600">
-              Balanced homemade meals generally need protein, healthy fats, digestible carbohydrate
-              sources, and micronutrient support. The exact ratio varies by dog, so avoid assuming
-              one universal formula works for all. If your dog also has recurring loose stool, review
-              our{" "}
-              <Link href="/health-conditions/diarrhea" className="font-semibold text-brand-700">
-                diarrhea health condition guide
-              </Link>{" "}
-              and consult a veterinarian before major diet changes.
-            </p>
-          </article>
+          <div className="mt-6 grid gap-6 sm:grid-cols-2">
+            {basicsCards.map((card) => (
+              <article
+                key={card.title}
+                className={`rounded-2xl border p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md ${card.cardClass}`}
+              >
+                <h3 className="flex items-center gap-2 font-serif text-xl font-semibold text-gray-900">
+                  <span aria-hidden>{card.icon}</span>
+                  <span>{card.title}</span>
+                </h3>
+                {!!card.content && (
+                  <p className="mt-3 text-sm leading-7 text-gray-700">
+                    {card.content.includes("digestion guide") ? (
+                      <>
+                        Homemade diets can help pet owners understand ingredients more clearly and
+                        avoid foods their dog does not tolerate well. They can also support routine
+                        consistency for dogs with sensitive digestion, especially when paired with
+                        gut-support strategies like our{" "}
+                        <Link href="/dogs/probiotics/digestion" className="font-semibold text-brand-700">
+                          digestion guide
+                        </Link>
+                        .
+                      </>
+                    ) : card.content.includes("diarrhea health condition guide") ? (
+                      <>
+                        Balanced homemade meals generally need protein, healthy fats, digestible
+                        carbohydrate sources, and micronutrient support. The exact ratio varies by
+                        dog, so avoid assuming one universal formula works for all. If your dog also
+                        has recurring loose stool, review our{" "}
+                        <Link href="/health-conditions/diarrhea" className="font-semibold text-brand-700">
+                          diarrhea health condition guide
+                        </Link>{" "}
+                        and consult a veterinarian before major diet changes.
+                      </>
+                    ) : (
+                      card.content
+                    )}
+                  </p>
+                )}
+                {!!card.bullets && (
+                  <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-gray-700">
+                    {card.bullets.map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
+                )}
+              </article>
+            ))}
+          </div>
         </Container>
       </section>
 
@@ -328,11 +372,11 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
             {recipes.map((recipe) => (
               <article
                 key={recipe.title}
-                className={`rounded-2xl border p-6 shadow-sm ${recipe.cardClass}`}
+                className={`rounded-2xl border p-6 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md ${recipe.cardClass}`}
               >
                 <h3 className="font-serif text-xl font-semibold text-gray-900">{recipe.title}</h3>
                 <div className="mt-4">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+                  <p className="inline-flex rounded-full bg-white px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-gray-600">
                     Ingredients
                   </p>
                   <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-gray-600">
@@ -342,7 +386,7 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
                   </ul>
                 </div>
                 <div className="mt-4">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">
+                  <p className="inline-flex rounded-full bg-white px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-gray-600">
                     Preparation steps
                   </p>
                   <ol className="mt-2 list-decimal space-y-1.5 pl-5 text-sm text-gray-600">
@@ -558,7 +602,7 @@ export default function VetApprovedHomemadeDogFoodRecipesPage() {
 
       <section className="bg-white py-12">
         <Container>
-          <FAQ items={faqs} />
+          <FaqAccordionClient items={faqs} />
         </Container>
       </section>
     </>
