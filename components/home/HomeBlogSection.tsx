@@ -14,7 +14,7 @@ export default function HomeBlogSection() {
           </h2>
         </div>
         <Link
-          href="/probiotics"
+          href="/blog"
           className="font-semibold text-[#2c1f0e] underline decoration-2 underline-offset-4 hover:text-[#e8734a]"
         >
           All articles

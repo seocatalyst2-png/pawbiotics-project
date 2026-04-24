@@ -47,7 +47,7 @@ export default function HomeFooter() {
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link href="/" className="hover:text-white">About</Link></li>
             <li><Link href="/" className="hover:text-white">Contact</Link></li>
-            <li><Link href="/probiotics" className="hover:text-white">Blog</Link></li>
+            <li><Link href="/blog" className="hover:text-white">Blog</Link></li>
           </ul>
         </div>
       </div>

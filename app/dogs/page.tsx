@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: "Dog Health & Probiotics",
   description:
     "Dog health guides on digestion, skin & coat, immunity, and daily wellness. Learn how probiotics can help your dog feel their best.",
+  alternates: {
+    canonical: "https://pawbiotics.us/dogs",
+  },
+  openGraph: {
+    title: "Dog Health & Probiotics",
+    description:
+      "Dog health guides on digestion, skin & coat, immunity, and daily wellness. Learn how probiotics can help your dog feel their best.",
+    url: "https://pawbiotics.us/dogs",
+    type: "website",
+  },
 };
 
 const topics = [

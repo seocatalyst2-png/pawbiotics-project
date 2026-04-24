@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: "Pet Health Conditions",
   description:
     "Browse common health conditions in dogs and cats. Learn the basics, signs to watch, and supportive care options.",
+  alternates: {
+    canonical: "https://pawbiotics.us/health-conditions",
+  },
+  openGraph: {
+    title: "Pet Health Conditions",
+    description:
+      "Browse common health conditions in dogs and cats. Learn the basics, signs to watch, and supportive care options.",
+    url: "https://pawbiotics.us/health-conditions",
+    type: "website",
+  },
 };
 
 const conditions = [

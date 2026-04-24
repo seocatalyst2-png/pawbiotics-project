@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: "Pet Probiotics Guide",
   description:
     "Learn how probiotics support digestion, immunity, and overall health in dogs and cats. A beginner-friendly guide from Pawbiotics.",
+  alternates: {
+    canonical: "https://pawbiotics.us/probiotics",
+  },
+  openGraph: {
+    title: "Pet Probiotics Guide",
+    description:
+      "Learn how probiotics support digestion, immunity, and overall health in dogs and cats. A beginner-friendly guide from Pawbiotics.",
+    url: "https://pawbiotics.us/probiotics",
+    type: "website",
+  },
 };
 
 const benefits = [

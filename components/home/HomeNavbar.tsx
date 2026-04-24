@@ -7,7 +7,7 @@ const links = [
   { href: "#what-are-probiotics", label: "What Are Probiotics?" },
   { href: "#signs", label: "Signs Your Pet Needs Help" },
   { href: "#strains", label: "Probiotic Strains" },
-  { href: "#blog", label: "Blog" },
+  { href: "/blog", label: "Blog" },
   { href: "#faq", label: "FAQ" },
 ];
 

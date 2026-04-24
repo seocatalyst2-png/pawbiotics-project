@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getBlogPostSlugs } from "@/data/blog-posts";
 import {
   getSupportedCatConditionSlugs,
   getSupportedCitySlugs,
@@ -23,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${SITE_URL}/health-conditions`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/blog`,
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.8,
@@ -62,11 +69,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     }));
 
+  const blogPostRoutes: MetadataRoute.Sitemap = getBlogPostSlugs().map((slug) => ({
+    url: `${SITE_URL}/blog/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
   return [
     ...staticRoutes,
     ...vetCityRoutes,
     ...dogConditionRoutes,
     ...catConditionRoutes,
     ...healthConditionRoutes,
+    ...blogPostRoutes,
   ];
 }

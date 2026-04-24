@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: "Cat Health & Probiotics",
   description:
     "Cat health guides on digestion, hairballs, immunity, and indoor wellness. Learn how probiotics can support your cat's daily health.",
+  alternates: {
+    canonical: "https://pawbiotics.us/cats",
+  },
+  openGraph: {
+    title: "Cat Health & Probiotics",
+    description:
+      "Cat health guides on digestion, hairballs, immunity, and indoor wellness. Learn how probiotics can support your cat's daily health.",
+    url: "https://pawbiotics.us/cats",
+    type: "website",
+  },
 };
 
 const topics = [
