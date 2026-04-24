@@ -94,17 +94,14 @@ export default function CalculatorToolClient() {
     resultRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
   }, [result]);
 
-  const isConcernCoral =
-    concern === "diarrhea-support" || concern === "post-antibiotic-support";
-
   return (
-    <section className="border-y border-[#2c1f0e]/10 bg-[#faf6f0] py-14">
+    <section className="border-y border-gray-100 bg-white py-14">
       <div className="mx-auto w-full max-w-4xl px-4">
-        <article className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-6 shadow-[0_8px_30px_rgba(44,31,14,0.08)] sm:p-8">
-          <h2 className="font-serif text-3xl font-semibold text-[#2c1f0e]">
+        <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8">
+          <h2 className="font-serif text-3xl font-semibold text-gray-900">
             Estimate Your Dog&apos;s Probiotic Needs
           </h2>
-          <p className="mt-2 text-sm leading-7 text-[#5a4535]">
+          <p className="mt-2 text-sm leading-7 text-gray-600">
             Use this dashboard-style tool to get general guidance based on your dog&apos;s weight,
             age group, and digestive concern. Educational only.
           </p>
@@ -123,7 +120,7 @@ export default function CalculatorToolClient() {
             }}
           >
             <div>
-              <label htmlFor="weight" className="block text-xs font-semibold uppercase tracking-wider text-[#8a7060]">
+              <label htmlFor="weight" className="block text-xs font-semibold uppercase tracking-wider text-gray-500">
                 Dog Weight (lbs)
               </label>
               <input
@@ -138,7 +135,7 @@ export default function CalculatorToolClient() {
                   if (weightError) setWeightError("");
                 }}
                 placeholder="Example: 32"
-                className="mt-2 w-full rounded-xl border border-[#2c1f0e]/15 bg-white px-4 py-2.5 text-sm text-[#2c1f0e] outline-none transition focus:border-[#e8734a]/50 focus:ring-2 focus:ring-[#e8734a]/20"
+                className="mt-2 w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-900 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
               />
               {!!weightError && <p className="mt-2 text-xs text-rose-700">{weightError}</p>}
             </div>
@@ -147,7 +144,7 @@ export default function CalculatorToolClient() {
               <div>
                 <label
                   htmlFor="age-group"
-                  className="block text-xs font-semibold uppercase tracking-wider text-[#8a7060]"
+                  className="block text-xs font-semibold uppercase tracking-wider text-gray-500"
                 >
                   Age Group
                 </label>
@@ -155,7 +152,7 @@ export default function CalculatorToolClient() {
                   id="age-group"
                   value={ageGroup}
                   onChange={(e) => setAgeGroup(e.target.value as AgeGroup)}
-                  className="mt-2 w-full rounded-xl border border-[#2c1f0e]/15 bg-white px-4 py-2.5 text-sm text-[#2c1f0e] outline-none transition focus:border-[#e8734a]/50 focus:ring-2 focus:ring-[#e8734a]/20"
+                  className="mt-2 w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-900 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
                 >
                   <option value="puppy">Puppy</option>
                   <option value="adult">Adult</option>
@@ -164,14 +161,14 @@ export default function CalculatorToolClient() {
               </div>
 
               <div>
-                <label htmlFor="concern" className="block text-xs font-semibold uppercase tracking-wider text-[#8a7060]">
+                <label htmlFor="concern" className="block text-xs font-semibold uppercase tracking-wider text-gray-500">
                   Main Concern
                 </label>
                 <select
                   id="concern"
                   value={concern}
                   onChange={(e) => setConcern(e.target.value as Concern)}
-                  className="mt-2 w-full rounded-xl border border-[#2c1f0e]/15 bg-white px-4 py-2.5 text-sm text-[#2c1f0e] outline-none transition focus:border-[#e8734a]/50 focus:ring-2 focus:ring-[#e8734a]/20"
+                  className="mt-2 w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-900 outline-none transition focus:border-brand-500 focus:ring-2 focus:ring-brand-100"
                 >
                   <option value="general-gut-health">General gut health</option>
                   <option value="diarrhea-support">Diarrhea support</option>
@@ -184,7 +181,7 @@ export default function CalculatorToolClient() {
 
             <button
               type="submit"
-              className="w-full rounded-xl bg-gradient-to-r from-[#e8734a] to-[#d6633b] px-5 py-3 text-sm font-semibold text-white transition hover:brightness-95"
+              className="w-full rounded-xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-brand-700"
             >
               Get My Dog&apos;s Guidance &rarr;
             </button>
@@ -196,25 +193,27 @@ export default function CalculatorToolClient() {
                 setConcern("general-gut-health");
                 setHasCalculated(false);
               }}
-              className="w-full rounded-xl border border-[#2c1f0e]/15 bg-white px-5 py-3 text-sm font-semibold text-[#5a4535] transition hover:border-[#e8734a]/30 hover:text-[#e8734a]"
+              className="w-full rounded-xl border border-gray-200 bg-white px-5 py-3 text-sm font-semibold text-gray-700 transition hover:border-brand-200 hover:text-brand-700"
             >
               Reset
             </button>
           </form>
 
-          <div className="my-6 border-t border-[#2c1f0e]/10" />
+          <div className="my-6 border-t border-gray-100" />
 
           {!result ? null : (
             <article
               ref={resultRef}
-              className="animate-pulse [animation-duration:500ms] [animation-iteration-count:1] rounded-2xl border border-[#2c1f0e]/10 bg-[#fffdfb] p-5"
+              className="animate-pulse [animation-duration:500ms] [animation-iteration-count:1] rounded-2xl border border-gray-100 bg-white p-5"
             >
-              <h3 className="font-serif text-2xl font-semibold text-[#2c1f0e]">Your Guidance</h3>
+              <h3 className="font-serif text-2xl font-semibold text-gray-900">Your Guidance</h3>
               <div
                 className={`mt-4 rounded-2xl border p-4 ${
-                  isConcernCoral
-                    ? "border-[#f2b59b] bg-[#fff2ec]"
-                    : "border-[#9dcfd6] bg-[#eef9fb]"
+                  result.status.tone === "amber"
+                    ? "border-amber-200 bg-amber-50"
+                    : result.status.tone === "red"
+                      ? "border-rose-200 bg-rose-50"
+                      : "border-emerald-200 bg-emerald-50"
                 }`}
               >
                 <p
@@ -230,22 +229,30 @@ export default function CalculatorToolClient() {
                 </p>
                 <p
                   className={`mt-3 text-sm font-semibold ${
-                    isConcernCoral ? "text-[#d6633b]" : "text-[#1f6f78]"
+                    result.status.tone === "amber"
+                      ? "text-amber-800"
+                      : result.status.tone === "red"
+                        ? "text-rose-800"
+                        : "text-emerald-800"
                   }`}
                 >
-                  {isConcernCoral ? "🧡 Digestive Caution Focus" : "🩵 Digestive Wellness Focus"}
+                  {result.status.tone === "amber"
+                    ? "Digestive Caution Focus"
+                    : result.status.tone === "red"
+                      ? "Veterinary Review Recommended"
+                      : "Digestive Wellness Focus"}
                 </p>
-                <p className="mt-2 text-sm text-[#5a4535]">
+                <p className="mt-2 text-sm text-gray-700">
                   Typical product range:{" "}
                   <span className="font-semibold capitalize">{result.supportRange}</span>
                 </p>
-                <p className="mt-3 text-sm leading-7 text-[#5a4535]">{result.guidance}</p>
-                <p className="mt-3 rounded-xl bg-white/80 px-3 py-2 text-sm font-medium text-[#2c1f0e]">
+                <p className="mt-3 text-sm leading-7 text-gray-700">{result.guidance}</p>
+                <p className="mt-3 rounded-xl bg-white/80 px-3 py-2 text-sm font-medium text-gray-900">
                   Key recommendation: {result.keyRecommendation}
                 </p>
               </div>
 
-              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-[#5a4535]">
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-gray-700">
                 {result.bullets.map((bullet) => (
                   <li key={bullet}>{bullet}</li>
                 ))}
@@ -260,25 +267,25 @@ export default function CalculatorToolClient() {
               </div>
 
               <div className="mt-5">
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#8a7060]">
+                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-gray-500">
                   Next step
                 </p>
                 <div className="mt-2 flex flex-wrap gap-2">
                   <Link
                     href="/blog/do-dogs-need-probiotics"
-                    className="rounded-full border border-[#2c1f0e]/15 bg-[#faf6f0] px-3 py-1.5 text-xs font-medium text-[#5a4535] hover:text-[#e8734a]"
+                    className="rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700"
                   >
                     Read related guide
                   </Link>
                   <Link
                     href="/vets/houston-tx"
-                    className="rounded-full border border-[#2c1f0e]/15 bg-[#faf6f0] px-3 py-1.5 text-xs font-medium text-[#5a4535] hover:text-[#e8734a]"
+                    className="rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700"
                   >
                     Find a vet
                   </Link>
                   <Link
                     href="/contact"
-                    className="rounded-full border border-[#2c1f0e]/15 bg-[#faf6f0] px-3 py-1.5 text-xs font-medium text-[#5a4535] hover:text-[#e8734a]"
+                    className="rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700"
                   >
                     Contact support
                   </Link>

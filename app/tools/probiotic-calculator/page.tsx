@@ -156,43 +156,43 @@ export default function ProbioticCalculatorPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webApplicationSchema) }}
       />
 
-      <section className="border-b border-[#2c1f0e]/10 bg-[#f8f3ea] py-6">
+      <section className="border-b border-gray-100 bg-white py-6">
         <Container>
-          <nav aria-label="Breadcrumb" className="text-sm text-[#8a7060]">
+          <nav aria-label="Breadcrumb" className="text-sm text-gray-500">
             <ol className="flex flex-wrap items-center gap-2">
               <li>
-                <Link href="/" className="hover:text-[#e8734a]">
+                <Link href="/" className="hover:text-brand-700">
                   Home
                 </Link>
               </li>
               <li aria-hidden>›</li>
               <li>
-                <Link href="/tools/probiotic-calculator" className="hover:text-[#e8734a]">
+                <Link href="/tools/probiotic-calculator" className="hover:text-brand-700">
                   Tools
                 </Link>
               </li>
               <li aria-hidden>›</li>
-              <li className="font-medium text-[#5a4535]">Probiotic Calculator</li>
+              <li className="font-medium text-gray-700">Probiotic Calculator</li>
             </ol>
           </nav>
         </Container>
       </section>
 
-      <section className="border-b border-[#2c1f0e]/10 bg-gradient-to-b from-[#faf6f0] to-[#f8f3ea] py-14">
+      <section className="border-b border-gray-100 bg-brand-50/40 py-14">
         <Container>
           <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div>
-              <p className="inline-flex rounded-full border border-[#e8734a]/30 bg-white px-4 py-1.5 text-xs font-semibold tracking-wide text-[#e8734a]">
+              <p className="inline-flex rounded-full border border-brand-200 bg-white px-4 py-1.5 text-xs font-semibold tracking-wide text-brand-700">
                 🌿 Free Pet Health Tool
               </p>
-              <h1 className="mt-4 font-serif text-3xl font-bold text-[#2c1f0e] sm:text-4xl">
-                Dog Probiotic <span className="text-[#2f8f9d]">Dosage</span> Calculator
+              <h1 className="mt-4 font-serif text-3xl font-bold text-gray-900 sm:text-4xl">
+                Dog Probiotic <span className="text-brand-700">Dosage</span> Calculator
               </h1>
-              <p className="mt-4 max-w-3xl text-base leading-7 text-[#5a4535]">
+              <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600">
                 Estimate general probiotic guidance for your dog based on weight, digestion needs,
                 and wellness goals.
               </p>
-              <p className="mt-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+              <p className="mt-3 rounded-xl border border-brand-100 bg-white px-4 py-3 text-sm text-gray-700">
                 Educational only. Always consult your vet for diarrhea, vomiting, allergies, or
                 ongoing symptoms.
               </p>
@@ -207,10 +207,10 @@ export default function ProbioticCalculatorPage() {
               ].map((item) => (
                 <article
                   key={item.label}
-                  className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-4 shadow-sm"
+                  className="rounded-2xl border border-gray-100 bg-white p-4 shadow-sm"
                 >
-                  <p className="text-sm font-semibold text-[#2c1f0e]">{item.label}</p>
-                  <p className="mt-1 text-xs text-[#8a7060]">{item.note}</p>
+                  <p className="text-sm font-semibold text-gray-900">{item.label}</p>
+                  <p className="mt-1 text-xs text-gray-500">{item.note}</p>
                 </article>
               ))}
             </div>
@@ -218,14 +218,14 @@ export default function ProbioticCalculatorPage() {
         </Container>
       </section>
 
-      <section className="bg-[#f8f3ea] py-8">
+      <section className="bg-white py-8">
         <Container>
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#1f6f78] via-[#246f74] to-[#1f6f78] p-6 text-white shadow-lg">
-            <div className="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full bg-white/10" />
-            <div className="pointer-events-none absolute -bottom-10 left-1/3 h-32 w-32 rounded-full bg-white/10" />
-            <p className="text-sm font-semibold tracking-wide text-white/90">⚡ Quick Answer</p>
-            <h2 className="mt-2 font-serif text-2xl font-semibold">No single dose fits every dog.</h2>
-            <p className="mt-2 max-w-3xl text-sm leading-7 text-white/90">
+          <div className="relative overflow-hidden rounded-3xl border border-brand-100 bg-brand-50 p-6 shadow-sm">
+            <div className="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full bg-brand-100/40" />
+            <div className="pointer-events-none absolute -bottom-10 left-1/3 h-32 w-32 rounded-full bg-brand-100/30" />
+            <p className="text-sm font-semibold tracking-wide text-brand-700">⚡ Quick Answer</p>
+            <h2 className="mt-2 font-serif text-2xl font-semibold text-gray-900">No single dose fits every dog.</h2>
+            <p className="mt-2 max-w-3xl text-sm leading-7 text-gray-700">
               The right amount depends on your dog&apos;s weight, age, symptoms, product label, and
               veterinary guidance. Use this tool for general guidance only.
             </p>
@@ -235,32 +235,32 @@ export default function ProbioticCalculatorPage() {
 
       <CalculatorToolClient />
 
-      <section className="border-t border-[#2c1f0e]/10 bg-white py-12">
+      <section className="border-t border-gray-100 bg-white py-12">
         <Container>
           <div className="mx-auto grid max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {educationalCards.map((section) => (
               <article
                 key={section.heading}
-                className="rounded-2xl border border-[#2c1f0e]/10 bg-white p-5 shadow-sm"
+                className="rounded-2xl border border-gray-100 bg-white p-5 shadow-sm"
               >
-                <h2 className="font-serif text-xl font-semibold text-[#2c1f0e]">{section.heading}</h2>
-                <p className="mt-3 text-sm leading-7 text-[#5a4535]">{section.body}</p>
+                <h2 className="font-serif text-xl font-semibold text-gray-900">{section.heading}</h2>
+                <p className="mt-3 text-sm leading-7 text-gray-600">{section.body}</p>
               </article>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="border-t border-[#d9b788] bg-[#fff3df] py-12">
+      <section className="border-t border-gray-100 bg-brand-50/40 py-12">
         <Container>
           <div className="mx-auto max-w-5xl">
-            <h2 className="font-serif text-2xl font-semibold text-[#2c1f0e]">Related guides</h2>
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Related guides</h2>
             <div className="mt-4 flex flex-wrap gap-3">
               {resourceLinks.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="rounded-full border border-[#d9b788] bg-white px-4 py-2 text-sm font-medium text-[#5a4535] hover:border-[#e8734a]/40 hover:text-[#e8734a]"
+                  className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700"
                 >
                   {item.label}
                 </Link>
@@ -270,23 +270,23 @@ export default function ProbioticCalculatorPage() {
         </Container>
       </section>
 
-      <section className="border-t border-[#2c1f0e]/10 bg-[#f8f3ea] py-12">
+      <section className="border-t border-gray-100 bg-white py-12">
         <Container>
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-serif text-2xl font-semibold text-[#2c1f0e]">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
               Frequently Asked Questions
             </h2>
             <div className="mt-5 space-y-3">
               {faqs.map((faq) => (
                 <details
                   key={faq.question}
-                  className="group rounded-2xl border border-[#2c1f0e]/10 bg-white p-4 shadow-sm"
+                  className="group rounded-2xl border border-gray-100 bg-white p-4 shadow-sm"
                 >
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-left text-sm font-semibold text-[#2c1f0e]">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-left text-sm font-semibold text-gray-900">
                     {faq.question}
-                    <span className="text-[#8a7060] transition group-open:rotate-45">+</span>
+                    <span className="text-gray-500 transition group-open:rotate-45">+</span>
                   </summary>
-                  <p className="mt-3 text-sm leading-7 text-[#5a4535]">{faq.answer}</p>
+                  <p className="mt-3 text-sm leading-7 text-gray-600">{faq.answer}</p>
                 </details>
               ))}
             </div>
@@ -294,11 +294,11 @@ export default function ProbioticCalculatorPage() {
         </Container>
       </section>
 
-      <section className="border-t border-[#2f8f9d]/20 bg-[#eaf6f7] py-12">
+      <section className="border-t border-gray-100 bg-brand-50/40 py-12">
         <Container>
-          <div className="mx-auto max-w-5xl rounded-2xl border border-[#2f8f9d]/20 bg-white p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-[#1f6f78]">Need a Vet&apos;s Opinion?</h2>
-            <p className="mt-2 text-sm leading-7 text-[#3f5f62]">
+          <div className="mx-auto max-w-5xl rounded-2xl border border-brand-100 bg-white p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Need a Vet&apos;s Opinion?</h2>
+            <p className="mt-2 text-sm leading-7 text-gray-600">
               For personalized care decisions, connect with a licensed veterinarian in your area.
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
@@ -306,7 +306,7 @@ export default function ProbioticCalculatorPage() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="rounded-full border border-[#2f8f9d]/25 bg-[#f4fbfc] px-4 py-2 text-sm font-medium text-[#2a6d74] hover:border-[#2f8f9d]/45"
+                  className="rounded-full border border-brand-200 bg-brand-50 px-4 py-2 text-sm font-medium text-brand-700 hover:border-brand-300"
                 >
                   {item.label}
                 </Link>
@@ -316,13 +316,13 @@ export default function ProbioticCalculatorPage() {
         </Container>
       </section>
 
-      <section className="border-t border-[#2c1f0e]/10 bg-[#f8f3ea] pb-14 pt-10">
+      <section className="border-t border-gray-100 bg-white pb-14 pt-10">
         <Container>
-          <div className="mx-auto max-w-3xl rounded-2xl border border-[#2c1f0e]/10 bg-white p-6 text-center shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-[#2c1f0e]">
+          <div className="mx-auto max-w-3xl rounded-2xl border border-gray-100 bg-white p-6 text-center shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
               Reviewed &amp; written for educational use
             </h2>
-            <p className="mt-3 text-sm leading-7 text-[#5a4535]">
+            <p className="mt-3 text-sm leading-7 text-gray-600">
               This calculator provides educational guidance only. It does not diagnose, treat, or
               prescribe. Product instructions vary, and a licensed veterinarian should guide final
               decisions.
