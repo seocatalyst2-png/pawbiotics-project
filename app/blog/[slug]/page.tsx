@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { ReactNode } from "react";
 import Container from "@/components/Container";
 import FaqAccordion from "@/components/seo/FaqAccordion";
 import {
@@ -46,6 +47,41 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     openGraph: meta.openGraph,
   };
+}
+
+function renderParagraphWithLinks(paragraph: string) {
+  const markdownLinkRegex = /\[([^\]]+)\]\((\/[^)]+)\)/g;
+  const nodes: ReactNode[] = [];
+  let cursor = 0;
+  let match: RegExpExecArray | null = markdownLinkRegex.exec(paragraph);
+
+  while (match) {
+    const [fullMatch, label, href] = match;
+    const start = match.index;
+
+    if (start > cursor) {
+      nodes.push(paragraph.slice(cursor, start));
+    }
+
+    nodes.push(
+      <Link
+        key={`${href}-${start}`}
+        href={href}
+        className="font-medium text-brand-700 underline decoration-brand-300 underline-offset-2 transition-colors hover:text-brand-800"
+      >
+        {label}
+      </Link>
+    );
+
+    cursor = start + fullMatch.length;
+    match = markdownLinkRegex.exec(paragraph);
+  }
+
+  if (cursor < paragraph.length) {
+    nodes.push(paragraph.slice(cursor));
+  }
+
+  return nodes.length ? nodes : paragraph;
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
@@ -134,7 +170,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <h3 className="text-base font-semibold text-gray-800">What this means</h3>
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph} className="text-sm leading-7 text-gray-600">
-                    {paragraph}
+                    {renderParagraphWithLinks(paragraph)}
                   </p>
                 ))}
               </div>
@@ -152,6 +188,30 @@ export default async function BlogPostPage({ params }: PageProps) {
           ))}
         </Container>
       </section>
+
+      {!!post.relatedGuides?.length && (
+        <section className="border-t border-gray-100 bg-gradient-to-b from-white to-brand-50/20 py-10">
+          <Container>
+            <h2 className="text-2xl font-semibold text-gray-900">
+              {post.relatedGuidesTitle ?? "Related Guides"}
+            </h2>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {post.relatedGuides.map((item) => (
+                <Link
+                  key={item.href + item.label}
+                  href={item.href}
+                  className="rounded-xl border border-gray-200 bg-white px-4 py-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300"
+                >
+                  <p className="text-sm font-semibold text-gray-900">{item.label}</p>
+                  {!!item.description && (
+                    <p className="mt-1 text-xs leading-5 text-gray-600">{item.description}</p>
+                  )}
+                </Link>
+              ))}
+            </div>
+          </Container>
+        </section>
+      )}
 
       {!!post.internalLinks.length && (
         <section className="border-t border-gray-100 bg-gradient-to-b from-white to-brand-50/20 py-10">

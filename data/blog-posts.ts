@@ -9,6 +9,7 @@ export type BlogSection = {
 export type BlogInternalLink = {
   label: string;
   href: string;
+  description?: string;
 };
 
 export type BlogPost = {
@@ -23,6 +24,8 @@ export type BlogPost = {
   sections: BlogSection[];
   faqs: FAQItem[];
   internalLinks: BlogInternalLink[];
+  relatedGuides?: BlogInternalLink[];
+  relatedGuidesTitle?: string;
 };
 
 const blogPosts: BlogPost[] = [
@@ -720,7 +723,7 @@ const blogPosts: BlogPost[] = [
       {
         heading: "Quick answer: why is my dog coughing?",
         paragraphs: [
-          "Dogs cough for many reasons, including airway irritation, infection, tracheal sensitivity, heart-lung disease, or foreign material irritation. Repeated cough or breathing change should be assessed by a veterinarian.",
+          "Dogs cough for many reasons, including airway irritation, infection, tracheal sensitivity, heart-lung disease, or foreign material irritation. Repeated cough or breathing change should be assessed by a veterinarian. If cough comes with gagging, review [dog gagging cough](\/blog\/dog-gagging-cough), and if breathing effort rises, review [why is my dog breathing heavy](\/blog\/why-is-my-dog-breathing-heavy).",
         ],
       },
       {
@@ -841,8 +844,33 @@ const blogPosts: BlogPost[] = [
       { label: "Dog health guides", href: "/dogs" },
       { label: "Can dogs lose their voice?", href: "/blog/can-dogs-lose-their-voice" },
       { label: "Dog won't stop sneezing", href: "/blog/dog-wont-stop-sneezing" },
+      { label: "Dog gagging cough guide", href: "/blog/dog-gagging-cough" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
       { label: "Contact Pawbiotics", href: "/contact" },
       { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Dog gagging cough",
+        href: "/blog/dog-gagging-cough",
+        description: "Understand cough plus gagging sequence and urgency.",
+      },
+      {
+        label: "Why is my dog breathing heavy?",
+        href: "/blog/why-is-my-dog-breathing-heavy",
+        description: "Know when breathing patterns become urgent.",
+      },
+      {
+        label: "Dog won't stop sneezing",
+        href: "/blog/dog-wont-stop-sneezing",
+        description: "Learn sneezing triggers and red-flag signs.",
+      },
+      {
+        label: "Can dogs lose their voice?",
+        href: "/blog/can-dogs-lose-their-voice",
+        description: "Track hoarseness with airway symptoms.",
+      },
     ],
   },
   {
@@ -1000,7 +1028,7 @@ const blogPosts: BlogPost[] = [
       {
         heading: "Quick answer: dog won't stop sneezing",
         paragraphs: [
-          "Repeated sneezing can be caused by environmental triggers, allergy inflammation, nasal irritation, infection, or less common structural issues. Ongoing sneezing with discharge, bleeding, or discomfort needs veterinary review.",
+          "Repeated sneezing can be caused by environmental triggers, allergy inflammation, nasal irritation, infection, or less common structural issues. Ongoing sneezing with discharge, bleeding, or discomfort needs veterinary review. If sneezing comes with cough, see [why is my dog coughing](\/blog\/why-is-my-dog-coughing), and if eye irritation appears, check [why is my dog's eye red](\/blog\/why-is-my-dogs-eye-red).",
         ],
       },
       {
@@ -1121,8 +1149,33 @@ const blogPosts: BlogPost[] = [
       { label: "Dog health guides", href: "/dogs" },
       { label: "Why is my dog coughing?", href: "/blog/why-is-my-dog-coughing" },
       { label: "Can dogs lose their voice?", href: "/blog/can-dogs-lose-their-voice" },
+      { label: "Why is my dog's eye red?", href: "/blog/why-is-my-dogs-eye-red" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
       { label: "Talk to local vets", href: "/vets/houston-tx" },
       { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Why is my dog coughing?",
+        href: "/blog/why-is-my-dog-coughing",
+        description: "Compare cough patterns with nasal symptoms.",
+      },
+      {
+        label: "Why is my dog's eye red?",
+        href: "/blog/why-is-my-dogs-eye-red",
+        description: "Check when sneezing overlaps with eye irritation.",
+      },
+      {
+        label: "Can dogs lose their voice?",
+        href: "/blog/can-dogs-lose-their-voice",
+        description: "Identify upper-airway symptom overlap.",
+      },
+      {
+        label: "Why is my dog gagging?",
+        href: "/blog/why-is-my-dog-gagging",
+        description: "Learn when airway signs progress to gagging.",
+      },
     ],
   },
   {
@@ -1449,7 +1502,7 @@ const blogPosts: BlogPost[] = [
       {
         heading: "Quick answer: can dogs lose their voice?",
         paragraphs: [
-          "Yes. Dogs can become hoarse from heavy barking, throat irritation, infection, or airway inflammation. A short episode may improve with rest, but persistent change needs veterinary review.",
+          "Yes. Dogs can become hoarse from heavy barking, throat irritation, infection, or airway inflammation. A short episode may improve with rest, but persistent change needs veterinary review. If hoarseness comes with repeated cough, see [why is my dog coughing](\/blog\/why-is-my-dog-coughing).",
         ],
       },
       {
@@ -1560,10 +1613,35 @@ const blogPosts: BlogPost[] = [
     internalLinks: [
       { label: "Why is my dog coughing?", href: "/blog/why-is-my-dog-coughing" },
       { label: "Dog won't stop sneezing", href: "/blog/dog-wont-stop-sneezing" },
+      { label: "Dog gagging cough guide", href: "/blog/dog-gagging-cough" },
       { label: "Dog health guides", href: "/dogs" },
       { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
       { label: "Local vet support", href: "/vets/houston-tx" },
       { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Why is my dog coughing?",
+        href: "/blog/why-is-my-dog-coughing",
+        description: "Understand cough and hoarseness together.",
+      },
+      {
+        label: "Dog gagging cough",
+        href: "/blog/dog-gagging-cough",
+        description: "Review cough-gag sequence severity guidance.",
+      },
+      {
+        label: "Dog won't stop sneezing",
+        href: "/blog/dog-wont-stop-sneezing",
+        description: "Differentiate nasal vs throat symptoms.",
+      },
+      {
+        label: "Why is my dog breathing heavy?",
+        href: "/blog/why-is-my-dog-breathing-heavy",
+        description: "Escalate quickly if breathing effort rises.",
+      },
     ],
   },
   {
@@ -2573,7 +2651,7 @@ const blogPosts: BlogPost[] = [
       {
         heading: "Quick answer: why is my dog gagging?",
         paragraphs: [
-          "Dogs may gag because of throat irritation, coughing fits, nausea, reflux-like episodes, or airway problems. If gagging repeats often or appears with breathing changes, your dog needs veterinary review.",
+          "Dogs may gag because of throat irritation, coughing fits, nausea, reflux-like episodes, or airway problems. If gagging repeats often or appears with breathing changes, your dog needs veterinary review. When cough appears first, read [dog gagging cough](\/blog\/dog-gagging-cough).",
         ],
       },
       {
@@ -2712,9 +2790,35 @@ const blogPosts: BlogPost[] = [
     internalLinks: [
       { label: "Dog gagging with cough guide", href: "/blog/dog-gagging-cough" },
       { label: "Why is my dog coughing?", href: "/blog/why-is-my-dog-coughing" },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy" },
       { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Diarrhea condition guide", href: "/health-conditions/diarrhea" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
       { label: "Contact Pawbiotics", href: "/contact" },
       { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Dog gagging cough",
+        href: "/blog/dog-gagging-cough",
+        description: "Focus on cough-then-gag episode patterns.",
+      },
+      {
+        label: "Why is my dog coughing?",
+        href: "/blog/why-is-my-dog-coughing",
+        description: "Compare airway and infection-style cough signs.",
+      },
+      {
+        label: "Why is my dog breathing heavy?",
+        href: "/blog/why-is-my-dog-breathing-heavy",
+        description: "Escalate quickly when breathing effort appears.",
+      },
+      {
+        label: "Can dogs lose their voice?",
+        href: "/blog/can-dogs-lose-their-voice",
+        description: "Track throat irritation and hoarseness overlap.",
+      },
     ],
   },
   {
@@ -2732,7 +2836,7 @@ const blogPosts: BlogPost[] = [
       {
         heading: "Quick answer: dog gagging cough",
         paragraphs: [
-          "A cough followed by gagging can happen with airway irritation, infectious cough syndromes, throat sensitivity, or other chest and throat conditions. Repeating episodes should be checked by a veterinarian.",
+          "A cough followed by gagging can happen with airway irritation, infectious cough syndromes, throat sensitivity, or other chest and throat conditions. Repeating episodes should be checked by a veterinarian. If breathing effort rises, review [why is my dog breathing heavy](\/blog\/why-is-my-dog-breathing-heavy).",
         ],
       },
       {
@@ -2870,8 +2974,33 @@ const blogPosts: BlogPost[] = [
       { label: "Why is my dog coughing?", href: "/blog/why-is-my-dog-coughing" },
       { label: "Can dogs lose their voice?", href: "/blog/can-dogs-lose-their-voice" },
       { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
       { label: "Talk to Houston vets", href: "/vets/houston-tx" },
       { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Why is my dog gagging?",
+        href: "/blog/why-is-my-dog-gagging",
+        description: "General gagging causes and home monitoring.",
+      },
+      {
+        label: "Why is my dog coughing?",
+        href: "/blog/why-is-my-dog-coughing",
+        description: "Differentiate cough sounds and trigger patterns.",
+      },
+      {
+        label: "Why is my dog breathing heavy?",
+        href: "/blog/why-is-my-dog-breathing-heavy",
+        description: "Know emergency respiratory warning signs.",
+      },
+      {
+        label: "Can dogs lose their voice?",
+        href: "/blog/can-dogs-lose-their-voice",
+        description: "Review upper-airway symptom overlap.",
+      },
     ],
   },
   {
@@ -2889,7 +3018,7 @@ const blogPosts: BlogPost[] = [
       {
         heading: "Quick answer: why is my dog breathing heavy?",
         paragraphs: [
-          "Dogs may breathe heavily from heat, stress, pain, airway issues, or heart-lung disease. If breathing stays fast or effortful at rest, call a vet quickly.",
+          "Dogs may breathe heavily from heat, stress, pain, airway issues, or heart-lung disease. If breathing stays fast or effortful at rest, call a vet quickly. If your dog also coughs or gags, review [dog gagging cough](\/blog\/dog-gagging-cough).",
         ],
       },
       {
@@ -3027,9 +3156,35 @@ const blogPosts: BlogPost[] = [
     internalLinks: [
       { label: "Why is my cat breathing heavy?", href: "/blog/why-is-my-cat-breathing-heavy" },
       { label: "Dog gagging cough guide", href: "/blog/dog-gagging-cough" },
+      { label: "Why is my dog gagging?", href: "/blog/why-is-my-dog-gagging" },
       { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Anxiety and stress condition guide", href: "/health-conditions/anxiety-stress" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
       { label: "Talk to Houston vets", href: "/vets/houston-tx" },
       { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Dog gagging cough",
+        href: "/blog/dog-gagging-cough",
+        description: "Compare breathing effort with cough-gag fits.",
+      },
+      {
+        label: "Why is my dog gagging?",
+        href: "/blog/why-is-my-dog-gagging",
+        description: "Track airway and reflux-like symptom overlap.",
+      },
+      {
+        label: "Why is my dog coughing?",
+        href: "/blog/why-is-my-dog-coughing",
+        description: "Understand cough timing and severity.",
+      },
+      {
+        label: "What color should dogs' gums be?",
+        href: "/blog/what-color-should-dogs-gums-be",
+        description: "Use gum color checks during breathing triage.",
+      },
     ],
   },
   {
@@ -3047,7 +3202,7 @@ const blogPosts: BlogPost[] = [
       {
         heading: "Quick answer: why is my dog's eye red?",
         paragraphs: [
-          "Red eye can happen from irritation, allergies, dryness, infection, injury, or other eye disease. If redness is paired with pain, squinting, or discharge, your dog should be seen by a vet quickly.",
+          "Red eye can happen from irritation, allergies, dryness, infection, injury, or other eye disease. If redness is paired with pain, squinting, or discharge, your dog should be seen by a vet quickly. If eye redness comes with frequent sneezing, review [dog won't stop sneezing](\/blog/dog-wont-stop-sneezing).",
         ],
       },
       {
@@ -3185,8 +3340,34 @@ const blogPosts: BlogPost[] = [
       { label: "Dog health guides", href: "/dogs" },
       { label: "Health conditions hub", href: "/health-conditions" },
       { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Dog won't stop sneezing", href: "/blog/dog-wont-stop-sneezing" },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
       { label: "Talk to Houston vets", href: "/vets/houston-tx" },
       { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Dog won't stop sneezing",
+        href: "/blog/dog-wont-stop-sneezing",
+        description: "Check nasal triggers when eye irritation appears.",
+      },
+      {
+        label: "Why is my dog breathing heavy?",
+        href: "/blog/why-is-my-dog-breathing-heavy",
+        description: "Escalate quickly if eye and breathing signs overlap.",
+      },
+      {
+        label: "Swollen dog paw",
+        href: "/blog/swollen-dog-paw",
+        description: "Compare localized swelling triage methods.",
+      },
+      {
+        label: "What color should dogs' gums be?",
+        href: "/blog/what-color-should-dogs-gums-be",
+        description: "Add gum checks during urgent symptom triage.",
+      },
     ],
   },
   {
@@ -3204,7 +3385,7 @@ const blogPosts: BlogPost[] = [
       {
         heading: "Quick answer: dog dragging butt on floor",
         paragraphs: [
-          "Dogs often scoot because of irritation around the rear area. Common triggers include anal gland discomfort, skin irritation, parasites, or stool-related issues.",
+          "Dogs often scoot because of irritation around the rear area. Common triggers include anal gland discomfort, skin irritation, parasites, or stool-related issues. If loose stool is part of the pattern, the [probiotic calculator](\/tools/probiotic-calculator) may help you discuss gut support ranges with your vet.",
         ],
       },
       {
@@ -3328,11 +3509,37 @@ const blogPosts: BlogPost[] = [
     ],
     internalLinks: [
       { label: "Bad breath and illness risk guide", href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness" },
+      { label: "Swollen dog paw guide", href: "/blog/swollen-dog-paw" },
+      { label: "Why is my dog gagging?", href: "/blog/why-is-my-dog-gagging" },
       { label: "Allergies condition guide", href: "/health-conditions/allergies" },
       { label: "Health conditions hub", href: "/health-conditions" },
       { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
       { label: "Talk to Houston vets", href: "/vets/houston-tx" },
       { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Swollen dog paw",
+        href: "/blog/swollen-dog-paw",
+        description: "Compare local irritation and inflammation clues.",
+      },
+      {
+        label: "Why is my dog gagging?",
+        href: "/blog/why-is-my-dog-gagging",
+        description: "Review broader symptom-triage workflow.",
+      },
+      {
+        label: "Dog's breath smells",
+        href: "/blog/dogs-breath-smells",
+        description: "Another practical symptom-monitoring guide.",
+      },
+      {
+        label: "Is bad breath in dogs a sign of illness?",
+        href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness",
+        description: "Learn when symptom combinations raise urgency.",
+      },
     ],
   },
   {
@@ -3350,7 +3557,7 @@ const blogPosts: BlogPost[] = [
       {
         heading: "Quick answer: swollen dog paw",
         paragraphs: [
-          "Paw swelling may come from cuts, stings, foreign material, infection, sprain, or allergy irritation. If swelling is painful, hot, or worsening, call your vet quickly.",
+          "Paw swelling may come from cuts, stings, foreign material, infection, sprain, or allergy irritation. If swelling is painful, hot, or worsening, call your vet quickly. If your dog also breathes hard from pain or stress, see [why is my dog breathing heavy](\/blog/why-is-my-dog-breathing-heavy).",
         ],
       },
       {
@@ -3473,12 +3680,38 @@ const blogPosts: BlogPost[] = [
       },
     ],
     internalLinks: [
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy" },
+      { label: "Why is my dog's eye red?", href: "/blog/why-is-my-dogs-eye-red" },
       { label: "Allergies condition guide", href: "/health-conditions/allergies" },
       { label: "Itchy skin condition guide", href: "/health-conditions/itchy-skin" },
       { label: "Health conditions hub", href: "/health-conditions" },
       { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
       { label: "Talk to Houston vets", href: "/vets/houston-tx" },
       { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Why is my dog's eye red?",
+        href: "/blog/why-is-my-dogs-eye-red",
+        description: "Compare local inflammation and pain signals.",
+      },
+      {
+        label: "Dog dragging butt on floor",
+        href: "/blog/dog-dragging-butt-on-floor",
+        description: "Review irritation-based symptom patterns.",
+      },
+      {
+        label: "Why is my dog breathing heavy?",
+        href: "/blog/why-is-my-dog-breathing-heavy",
+        description: "Escalate fast when whole-body stress appears.",
+      },
+      {
+        label: "What color should dogs' gums be?",
+        href: "/blog/what-color-should-dogs-gums-be",
+        description: "Use gum color checks during urgent triage.",
+      },
     ],
   },
   {
@@ -3496,7 +3729,7 @@ const blogPosts: BlogPost[] = [
       {
         heading: "Quick answer: what color should dogs' gums be?",
         paragraphs: [
-          "For many dogs, healthy gums look bubblegum pink and moist. Pale, blue, gray, very bright red, or yellow tones can be warning signs and should be evaluated quickly.",
+          "For many dogs, healthy gums look bubblegum pink and moist. Pale, blue, gray, very bright red, or yellow tones can be warning signs and should be evaluated quickly. If abnormal gum color appears with fast breathing, review [why is my dog breathing heavy](\/blog/why-is-my-dog-breathing-heavy).",
         ],
       },
       {
@@ -3625,9 +3858,35 @@ const blogPosts: BlogPost[] = [
     ],
     internalLinks: [
       { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy" },
+      { label: "Dog gagging cough guide", href: "/blog/dog-gagging-cough" },
       { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Weight management condition guide", href: "/health-conditions/weight-management" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
       { label: "Talk to Houston vets", href: "/vets/houston-tx" },
       { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Why is my dog breathing heavy?",
+        href: "/blog/why-is-my-dog-breathing-heavy",
+        description: "Pair gum checks with breathing triage signs.",
+      },
+      {
+        label: "Dog gagging cough",
+        href: "/blog/dog-gagging-cough",
+        description: "Compare respiratory signs across symptom patterns.",
+      },
+      {
+        label: "Why is my dog gagging?",
+        href: "/blog/why-is-my-dog-gagging",
+        description: "Use when gagging appears with abnormal gum color.",
+      },
+      {
+        label: "Is bad breath in dogs a sign of illness?",
+        href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness",
+        description: "Assess mouth signs with whole-body symptom clues.",
+      },
     ],
   },
   {
@@ -3645,7 +3904,7 @@ const blogPosts: BlogPost[] = [
       {
         heading: "Quick answer: dog's breath smells",
         paragraphs: [
-          "Bad breath often starts with plaque and gum disease, but it can also be linked to diet, oral infection, or other health issues. Persistent strong odor should be checked by a vet.",
+          "Bad breath often starts with plaque and gum disease, but it can also be linked to diet, oral infection, or other health issues. Persistent strong odor should be checked by a vet. If you are worried it may be systemic, see [is bad breath in dogs a sign of illness](\/blog/is-bad-breath-in-dogs-a-sign-of-illness).",
         ],
       },
       {
@@ -3780,11 +4039,36 @@ const blogPosts: BlogPost[] = [
     ],
     internalLinks: [
       { label: "Is bad breath a sign of illness?", href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness" },
+      { label: "What color should dogs' gums be?", href: "/blog/what-color-should-dogs-gums-be" },
       { label: "Bad breath health condition page", href: "/health-conditions/bad-breath" },
       { label: "Health conditions hub", href: "/health-conditions" },
       { label: "Dog health guides", href: "/dogs" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
       { label: "Talk to Houston vets", href: "/vets/houston-tx" },
       { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Is bad breath in dogs a sign of illness?",
+        href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness",
+        description: "Risk-triage guide for systemic red flags.",
+      },
+      {
+        label: "What color should dogs' gums be?",
+        href: "/blog/what-color-should-dogs-gums-be",
+        description: "Use gum checks when mouth odor worsens.",
+      },
+      {
+        label: "Dog dragging butt on floor",
+        href: "/blog/dog-dragging-butt-on-floor",
+        description: "Another common symptom-tracking workflow.",
+      },
+      {
+        label: "Why is my dog gagging?",
+        href: "/blog/why-is-my-dog-gagging",
+        description: "Spot mouth-throat symptom overlap early.",
+      },
     ],
   },
   {
@@ -3802,7 +4086,7 @@ const blogPosts: BlogPost[] = [
       {
         heading: "Quick answer: is bad breath in dogs a sign of illness?",
         paragraphs: [
-          "Sometimes yes. Bad breath often starts with dental disease, but persistent or unusual odor with other symptoms can be linked to broader illness and should be evaluated by a vet.",
+          "Sometimes yes. Bad breath often starts with dental disease, but persistent or unusual odor with other symptoms can be linked to broader illness and should be evaluated by a vet. Start with [dog's breath smells](\/blog/dogs-breath-smells) for daily oral-care basics.",
         ],
       },
       {
@@ -3936,11 +4220,36 @@ const blogPosts: BlogPost[] = [
     ],
     internalLinks: [
       { label: "Dog's breath smells guide", href: "/blog/dogs-breath-smells" },
+      { label: "What color should dogs' gums be?", href: "/blog/what-color-should-dogs-gums-be" },
       { label: "Bad breath health condition page", href: "/health-conditions/bad-breath" },
       { label: "Kidney failure in cats signs", href: "/blog/signs-of-kidney-failure-in-cats" },
       { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
       { label: "Talk to Houston vets", href: "/vets/houston-tx" },
       { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Dog's breath smells",
+        href: "/blog/dogs-breath-smells",
+        description: "Start with everyday oral-care and odor tracking.",
+      },
+      {
+        label: "What color should dogs' gums be?",
+        href: "/blog/what-color-should-dogs-gums-be",
+        description: "Use gum color checks for risk triage.",
+      },
+      {
+        label: "Why is my dog breathing heavy?",
+        href: "/blog/why-is-my-dog-breathing-heavy",
+        description: "Escalate quickly when systemic signs overlap.",
+      },
+      {
+        label: "Why is my dog gagging?",
+        href: "/blog/why-is-my-dog-gagging",
+        description: "Compare throat and mouth-related symptom patterns.",
+      },
     ],
   },
 ];
