@@ -1,5 +1,5 @@
 import Container from "@/components/Container";
-import FAQ from "@/components/seo/FAQ";
+import FaqAccordion from "@/components/seo/FaqAccordion";
 import {
   ArticleSchema,
   BreadcrumbSchema,
@@ -25,6 +25,7 @@ type SEOPageTemplateProps = {
   schemaType: "article" | "local-business";
   pageUrl: string;
   cityName?: string;
+  disclaimer?: string;
 };
 
 export default function SEOPageTemplate({
@@ -42,6 +43,7 @@ export default function SEOPageTemplate({
   schemaType,
   pageUrl,
   cityName,
+  disclaimer,
 }: SEOPageTemplateProps) {
   return (
     <>
@@ -78,6 +80,11 @@ export default function SEOPageTemplate({
             {h1}
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-[#5a4535]">{intro}</p>
+          {disclaimer ? (
+            <p className="mt-4 max-w-3xl rounded-xl border border-[#2c1f0e]/10 bg-white px-4 py-3 text-sm text-[#5a4535]">
+              {disclaimer}
+            </p>
+          ) : null}
           <div className="mt-6 inline-flex rounded-full border border-[#2c1f0e]/10 bg-white px-3 py-1 text-xs text-[#8a7060]">
             Focus topic: {mainKeyword}
           </div>
@@ -190,7 +197,7 @@ export default function SEOPageTemplate({
 
       <section className="bg-[#f2ece2] py-12">
         <Container>
-          <FAQ items={faqs} />
+          <FaqAccordion items={faqs} />
         </Container>
       </section>
     </>

@@ -21,49 +21,49 @@ export const metadata: Metadata = {
 
 const conditions = [
   {
-    href: "/health-conditions",
+    href: "/health-conditions/diarrhea",
     title: "Diarrhea & Upset Stomach",
     description: "Common causes, when to see a vet, and supportive care.",
     icon: "💧",
   },
   {
-    href: "/health-conditions",
+    href: "/health-conditions/allergies",
     title: "Allergies",
     description: "Food, skin, and environmental allergies explained simply.",
     icon: "🌾",
   },
   {
-    href: "/health-conditions",
+    href: "/health-conditions/itchy-skin",
     title: "Itchy Skin",
     description: "Causes of itching and how to calm irritated skin.",
     icon: "✨",
   },
   {
-    href: "/health-conditions",
+    href: "/health-conditions/yeast-imbalance",
     title: "Yeast Imbalance",
     description: "Signs of yeast overgrowth and supportive steps.",
     icon: "🍃",
   },
   {
-    href: "/health-conditions",
+    href: "/health-conditions/urinary-health",
     title: "Urinary Health",
     description: "UTIs, hydration, and urinary support for pets.",
     icon: "🫧",
   },
   {
-    href: "/health-conditions",
+    href: "/health-conditions/bad-breath",
     title: "Bad Breath",
     description: "Dental hygiene and gut factors behind pet breath.",
     icon: "🦷",
   },
   {
-    href: "/health-conditions",
+    href: "/health-conditions/weight-management",
     title: "Weight Management",
     description: "Practical tips for healthy weight in pets.",
     icon: "⚖️",
   },
   {
-    href: "/health-conditions",
+    href: "/health-conditions/anxiety-stress",
     title: "Anxiety & Stress",
     description: "Calming strategies and the gut-brain connection.",
     icon: "🧘",

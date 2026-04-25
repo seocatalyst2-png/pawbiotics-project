@@ -60,6 +60,7 @@ export default async function HealthConditionDetailPage({ params }: PageProps) {
       eyebrow="Pet Health Condition"
       schemaType={data.schemaType}
       pageUrl={`https://pawbiotics.us/health-conditions/${data.slug}`}
+      disclaimer="Educational information only. This page is not a diagnosis or treatment plan. Always consult a licensed veterinarian for persistent or severe symptoms."
     />
   );
 }
