@@ -25,37 +25,37 @@ const faqs: FAQItem[] = [
   {
     question: "How do I portion homemade dog food safely?",
     answer:
-      "Use a structured process: estimate a starting amount, measure by weight, monitor body condition weekly, and adjust gradually. Small controlled changes are easier to evaluate than large jumps.",
+      "Use a repeatable system instead of intuition alone: start from an estimate, measure by weight, track response, and adjust gradually. This is especially helpful when appetite changes from day to day. Keep each adjustment small so you can observe cause and effect clearly. Consistency usually improves results more than frequent recipe changes.",
   },
   {
     question: "Why are cups less accurate than weight?",
     answer:
-      "One cup can hold very different calories depending on moisture and ingredient density. A food scale gives more consistent daily intake and better trend tracking.",
+      "Cup volume can look consistent while calorie load changes because moisture and density vary by recipe. Two meals that fill the same cup can still feed very differently. Measuring in grams improves precision and makes trend tracking easier. It also helps multiple family members feed the same amount consistently.",
   },
   {
     question: "How often should I adjust homemade portions?",
     answer:
-      "Most dogs do well with reevaluation every 1 to 2 weeks during transitions and monthly once stable. Adjust in small steps and reassess before changing again.",
+      "Most dogs do well with review every 1 to 2 weeks during transitions, then monthly after stabilization. Quick changes every day can hide what is working. Make one adjustment at a time and hold it long enough to assess stool, weight, and energy. Record your changes so you can make evidence-based refinements.",
   },
   {
     question: "What is body condition scoring in simple terms?",
     answer:
-      "It is a practical visual-and-touch check: look for a waist from above, a slight abdominal tuck from the side, and ribs that are easy to feel but not prominently visible.",
+      "Body condition scoring is a practical check of shape and feel, not just scale number. You want a visible waist from above, a gentle abdominal tuck from the side, and ribs that are easy to feel with light pressure. If these signs drift, adjust portions gradually rather than immediately overcorrecting. Combine this check with weekly weight trend notes.",
   },
   {
     question: "Can I use example scenarios to guide portion decisions?",
     answer:
-      "Yes, scenarios help you choose safer adjustments. For example, stable stool with mild weight gain may suggest a small calorie reduction, while low energy with weight loss may suggest careful increase.",
+      "Yes, scenario thinking makes portion decisions safer and more practical. For example, stable stool plus mild weight gain often suggests a small calorie reduction. Low energy plus gradual weight loss can suggest a careful increase and closer monitoring. This approach helps you avoid emotional overcorrections after one unusual day.",
   },
   {
     question: "What should I track during a transition checklist?",
     answer:
-      "Track meal weight, stool quality, appetite, energy, treats, and weekly body weight. Logging these together helps you see patterns and avoid guesswork.",
+      "Track meal weight, stool quality, appetite, energy, treats, and weekly body weight in one place. Seeing these together reveals patterns that isolated notes miss. For instance, soft stool with low energy after a recipe change may point to transition speed. A simple weekly log often prevents repeated trial-and-error cycles.",
   },
   {
     question: "When should I ask a vet about portioning?",
     answer:
-      "Ask your veterinarian early if your dog has chronic digestive issues, major weight changes, low appetite, or underlying medical conditions.",
+      "Ask your veterinarian early when your dog has chronic digestive symptoms, major weight shifts, low appetite, or known medical conditions. Professional input is especially helpful when home adjustments are not producing stable results. Bring your log so decisions are based on real observations. Early review can prevent long periods of mismatched intake.",
   },
 ];
 
@@ -81,6 +81,9 @@ export default function HowToPortionHomemadeDogFoodPage() {
           <h1 className="font-serif text-3xl font-bold text-gray-900 sm:text-4xl">
             How to Portion Homemade Dog Food
           </h1>
+          <p className="mt-2 text-xs font-medium uppercase tracking-wide text-gray-500">
+            Last updated: April 2026
+          </p>
           <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600">
             Portioning is one of the most important parts of homemade feeding. This guide gives a
             vet-informed framework to set a starting range, monitor response, and adjust safely.
@@ -170,6 +173,104 @@ export default function HowToPortionHomemadeDogFoodPage() {
                   how much to feed your dog
                 </Link>{" "}
                 guide.
+              </p>
+            </div>
+          </article>
+
+          <article className="rounded-2xl border border-cyan-100 bg-cyan-50/60 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Real Feeding Example</h2>
+            <p className="mt-3 text-sm leading-7 text-gray-700">
+              <span className="font-semibold">Example dog:</span> 22 lb, 6-year-old indoor mixed breed,
+              low-to-moderate activity. <span className="font-semibold">Daily intake:</span> two
+              measured meals in grams with fixed treat allowance. This works because stool remains
+              consistent, the dog keeps steady energy, and body condition checks stay stable for
+              multiple weeks.
+            </p>
+          </article>
+
+          <article className="rounded-2xl border border-indigo-100 bg-indigo-50/60 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
+              How to Apply This in Real Life
+            </h2>
+            <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm leading-7 text-gray-700">
+              <li>Step 1: Estimate a starting daily amount from weight and activity.</li>
+              <li>Step 2: Weigh meals and split into a predictable schedule.</li>
+              <li>Step 3: Track stool, appetite, treats, and body condition weekly.</li>
+              <li>
+                Step 4: If uncertain about totals, compare with{" "}
+                <Link href="/blog/how-much-homemade-dog-food-should-i-feed-my-dog" className="font-semibold text-brand-700">
+                  how much to feed your dog
+                </Link>{" "}
+                benchmarks.
+              </li>
+              <li>
+                Step 5: Keep the plan aligned with core{" "}
+                <Link href="/blog/vet-approved-homemade-dog-food-recipes" className="font-semibold text-brand-700">
+                  homemade dog food recipes
+                </Link>{" "}
+                practices.
+              </li>
+            </ol>
+          </article>
+
+          <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
+              Comparison Table: Overfeeding vs Underfeeding Signals
+            </h2>
+            <div className="mt-4 overflow-x-auto">
+              <table className="min-w-full border-collapse text-left text-sm">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th className="border border-gray-200 px-3 py-2 font-semibold text-gray-900">Category</th>
+                    <th className="border border-gray-200 px-3 py-2 font-semibold text-gray-900">Overfeeding pattern</th>
+                    <th className="border border-gray-200 px-3 py-2 font-semibold text-gray-900">Underfeeding pattern</th>
+                  </tr>
+                </thead>
+                <tbody className="text-gray-700">
+                  <tr>
+                    <td className="border border-gray-200 px-3 py-2">Body shape</td>
+                    <td className="border border-gray-200 px-3 py-2">Waist becomes less visible</td>
+                    <td className="border border-gray-200 px-3 py-2">Ribs/hips become more prominent</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-200 px-3 py-2">Energy</td>
+                    <td className="border border-gray-200 px-3 py-2">Heavier movement, lower stamina</td>
+                    <td className="border border-gray-200 px-3 py-2">Low endurance and persistent hunger</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-200 px-3 py-2">Adjustment direction</td>
+                    <td className="border border-gray-200 px-3 py-2">Small controlled reduction</td>
+                    <td className="border border-gray-200 px-3 py-2">Small controlled increase</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article className="rounded-2xl border border-lime-100 bg-lime-50/60 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Quick Checklist</h2>
+            <ul className="mt-3 space-y-2 text-sm leading-7 text-gray-700">
+              <li>✔ Portion measured in grams daily</li>
+              <li>✔ Stool pattern remains normal</li>
+              <li>✔ Energy stays stable across the week</li>
+              <li>✔ Weight and body condition stay stable</li>
+            </ul>
+          </article>
+
+          <article className="rounded-2xl border border-teal-100 bg-teal-50/60 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">What if...</h2>
+            <div className="mt-3 space-y-3 text-sm leading-7 text-gray-700">
+              <p>
+                <span className="font-semibold">What if my dog refuses food?</span> Warm meals
+                slightly, simplify ingredients, and slow the transition pace.
+              </p>
+              <p>
+                <span className="font-semibold">What if weight increases?</span> Reduce daily grams
+                modestly and recheck after 10 to 14 days.
+              </p>
+              <p>
+                <span className="font-semibold">What if diarrhea starts?</span> Pause new ingredients,
+                return to a simpler formula, and call your veterinarian if it does not resolve.
               </p>
             </div>
           </article>

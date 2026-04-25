@@ -25,37 +25,37 @@ const faqs: FAQItem[] = [
   {
     question: "How much homemade dog food should I feed my dog?",
     answer:
-      "Use a framework, not a fixed number: estimate a starting range, check calorie density, then adjust with body condition and weight trend data. Dogs of the same size can need very different amounts.",
+      "Use a framework rather than a fixed cup amount: estimate a start point, verify recipe calories, and adjust from trend data. Two dogs with the same body weight can still need different intake based on activity and metabolism. Reassess weekly during transitions and monthly after stabilization. Treat early numbers as drafts, not permanent targets.",
   },
   {
     question: "Which factors change feeding amount the most?",
     answer:
-      "Age, activity, metabolism, reproductive status, health conditions, and recipe calories all affect total intake. That is why one-size feeding charts are only rough starting points.",
+      "Age, activity level, metabolism, reproductive status, health status, and food calorie density all influence intake. A highly active adult may need a noticeably different amount than a sedentary adult of similar weight. Medication and chronic conditions can also shift appetite and needs. Use these factors together instead of relying on one variable.",
   },
   {
     question: "How can I estimate a safe starting range?",
     answer:
-      "Start conservative, split into regular meals, and reassess after 7 to 14 days using stool quality, appetite, and weight trend. Adjust in small steps instead of large jumps.",
+      "Start with a conservative range, split into regular meals, and track stool, appetite, and weekly weight for 7 to 14 days. If response is stable, maintain; if not, adjust in small steps. Avoid making multiple major changes simultaneously. Pair this process with your veterinarian's guidance for long-term reliability.",
   },
   {
     question: "What are common signs of overfeeding?",
     answer:
-      "Overfeeding signs can include reduced waist definition, gradual weight gain, lower stamina, and increased stool volume. Review total calories including treats and toppers.",
+      "Common signs include gradually reduced waist definition, steady weight gain, lower stamina, and sometimes larger stool volume. Review total intake, including treats and toppers, before changing main meals too aggressively. Small consistent calorie reductions usually work better than abrupt cuts. Recheck condition after 1 to 2 weeks.",
   },
   {
     question: "What are common signs of underfeeding?",
     answer:
-      "Underfeeding signs may include visible rib prominence, low energy, persistent hunger behaviors, and slow recovery after activity. Reassess recipe calories and portion size promptly.",
+      "Underfeeding may show as increasing rib/hip prominence, low energy, persistent hunger cues, and poor recovery after activity. Confirm whether recipe calories are lower than expected before assuming appetite behavior alone. Increase cautiously and monitor stool and weight response. Early correction is easier than catching up after prolonged underfeeding.",
   },
   {
     question: "Can I use calculators for homemade feeding amounts?",
     answer:
-      "Yes. Calculators are useful for initial estimates, but final plans should account for actual recipe calories and your dog's health profile with veterinary review.",
+      "Yes, calculators are useful starting tools, especially when you need a structured estimate quickly. They become more accurate when paired with real recipe calorie checks and body condition monitoring. Use them as guidance, not as a stand-alone prescription. Confirm long-term feeding decisions with your veterinarian.",
   },
   {
     question: "When should I ask a vet before changing amounts?",
     answer:
-      "Ask your veterinarian before major changes and immediately for persistent GI signs, rapid weight changes, chronic disease, or medication-related appetite shifts.",
+      "Ask before major changes and immediately if GI signs persist, weight shifts rapidly, or appetite changes unexpectedly with medication or illness. Veterinary review is also important for puppies, seniors, and dogs with chronic disease. Bring your feeding log for better decision-making. Early intervention reduces trial-and-error time.",
   },
 ];
 
@@ -81,6 +81,9 @@ export default function HowMuchHomemadeDogFoodShouldIFeedMyDogPage() {
           <h1 className="font-serif text-3xl font-bold text-gray-900 sm:text-4xl">
             How Much Homemade Dog Food Should I Feed My Dog
           </h1>
+          <p className="mt-2 text-xs font-medium uppercase tracking-wide text-gray-500">
+            Last updated: April 2026
+          </p>
           <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600">
             Portion questions are one of the biggest homemade feeding challenges. This page gives a
             safer, vet-informed method to estimate a starting range and adjust with confidence.
@@ -182,6 +185,108 @@ export default function HowMuchHomemadeDogFoodShouldIFeedMyDogPage() {
               </ul>
             </article>
           </section>
+
+          <article className="rounded-2xl border border-cyan-100 bg-cyan-50/60 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Real Feeding Example</h2>
+            <p className="mt-3 text-sm leading-7 text-gray-700">
+              <span className="font-semibold">Example dog:</span> 48 lb, 5-year-old neutered mixed
+              breed, moderate activity. <span className="font-semibold">Daily intake:</span> two
+              measured homemade meals plus a fixed low-calorie treat budget. This works because weight
+              remains steady over several weeks, stool quality is consistent, and energy is stable on
+              normal walk days.
+            </p>
+          </article>
+
+          <article className="rounded-2xl border border-indigo-100 bg-indigo-50/60 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
+              How to Apply This in Real Life
+            </h2>
+            <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm leading-7 text-gray-700">
+              <li>Step 1: Start with a conservative estimate from weight and activity.</li>
+              <li>Step 2: Confirm recipe calorie density before locking meal size.</li>
+              <li>Step 3: Feed on a stable schedule and track weekly trend data.</li>
+              <li>
+                Step 4: Refine with the{" "}
+                <Link href="/blog/how-to-portion-homemade-dog-food" className="font-semibold text-brand-700">
+                  portion homemade dog food
+                </Link>{" "}
+                process.
+              </li>
+              <li>
+                Step 5: Compare with core{" "}
+                <Link href="/blog/vet-approved-homemade-dog-food-recipes" className="font-semibold text-brand-700">
+                  homemade dog food recipes
+                </Link>{" "}
+                guidance and use the{" "}
+                <Link href="/tools/dog-food-calculator" className="font-semibold text-brand-700">
+                  dog food calculator
+                </Link>{" "}
+                for estimate checks.
+              </li>
+            </ol>
+          </article>
+
+          <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
+              Comparison Table: Homemade vs Commercial Feeding
+            </h2>
+            <div className="mt-4 overflow-x-auto">
+              <table className="min-w-full border-collapse text-left text-sm">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th className="border border-gray-200 px-3 py-2 font-semibold text-gray-900">Category</th>
+                    <th className="border border-gray-200 px-3 py-2 font-semibold text-gray-900">Homemade routine</th>
+                    <th className="border border-gray-200 px-3 py-2 font-semibold text-gray-900">Commercial routine</th>
+                  </tr>
+                </thead>
+                <tbody className="text-gray-700">
+                  <tr>
+                    <td className="border border-gray-200 px-3 py-2">Portion precision</td>
+                    <td className="border border-gray-200 px-3 py-2">Depends on measuring habits and recipe consistency</td>
+                    <td className="border border-gray-200 px-3 py-2">Often easier to estimate from label guidance</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-200 px-3 py-2">Ingredient control</td>
+                    <td className="border border-gray-200 px-3 py-2">High control for custom needs</td>
+                    <td className="border border-gray-200 px-3 py-2">Less custom but simpler day-to-day</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-200 px-3 py-2">Monitoring need</td>
+                    <td className="border border-gray-200 px-3 py-2">Higher tracking importance early on</td>
+                    <td className="border border-gray-200 px-3 py-2">Still important, but usually less variable</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article className="rounded-2xl border border-lime-100 bg-lime-50/60 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Quick Checklist</h2>
+            <ul className="mt-3 space-y-2 text-sm leading-7 text-gray-700">
+              <li>✔ Portion measured and logged</li>
+              <li>✔ Stool quality remains normal</li>
+              <li>✔ Energy remains stable day to day</li>
+              <li>✔ Weekly weight trend remains stable</li>
+            </ul>
+          </article>
+
+          <article className="rounded-2xl border border-teal-100 bg-teal-50/60 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">What if...</h2>
+            <div className="mt-3 space-y-3 text-sm leading-7 text-gray-700">
+              <p>
+                <span className="font-semibold">What if my dog refuses food?</span> Check freshness,
+                simplify recipe variation, and avoid introducing multiple new ingredients together.
+              </p>
+              <p>
+                <span className="font-semibold">What if weight increases?</span> Reduce total intake
+                in small steps and reassess after 1 to 2 weeks before further changes.
+              </p>
+              <p>
+                <span className="font-semibold">What if diarrhea starts?</span> Return to a simpler
+                meal structure, hydrate, and seek veterinary help if symptoms persist or worsen.
+              </p>
+            </div>
+          </article>
 
           <article className="rounded-2xl border border-sky-100 bg-sky-50/50 p-6 shadow-sm">
             <h2 className="font-serif text-2xl font-semibold text-gray-900">Key takeaways</h2>

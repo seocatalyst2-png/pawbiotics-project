@@ -25,37 +25,37 @@ const faqs: FAQItem[] = [
   {
     question: "Are homemade chicken dog food recipes vet approved?",
     answer:
-      "Many homemade chicken dog food recipes are used as vet-informed starting points, but no single recipe is universally appropriate. Safety depends on calorie balance, mineral balance, your dog's health history, and regular monitoring.",
+      "Many homemade chicken dog food recipes are used as vet-informed starting points, but no single recipe fits every dog. A young active dog and a less active senior may need very different portions even with the same ingredients. Review calories, mineral balance, and stool response over time. Use the plan as a framework, then personalize with your veterinarian.",
   },
   {
     question: "Can I feed chicken and rice daily?",
     answer:
-      "Chicken and rice is often useful short-term for digestive rest, but daily long-term feeding may be incomplete without additional nutrients. Ask your veterinarian before using it as a permanent plan.",
+      "Chicken and rice often works as a short-term recovery pattern when digestion is sensitive. For long-term daily feeding, most dogs need broader nutrient coverage and more variety. If your dog does well on chicken and rice, treat that as phase one, then build a fuller plan with your veterinarian. Track energy, stool, and weekly weight as you expand the recipe.",
   },
   {
     question: "When is chicken not ideal for a dog?",
     answer:
-      "Chicken may not be ideal for dogs with suspected poultry sensitivity, chronic itchy skin linked to diet, or repeated GI flares after chicken meals. In those cases, your veterinarian may suggest a different protein trial.",
+      "Chicken may be a poor fit if your dog repeatedly shows itchiness, ear irritation, or loose stool after poultry-based meals. In that scenario, a vet-guided elimination trial can clarify whether protein sensitivity is involved. Keep recipes simple during testing so responses are easier to interpret. Switch proteins gradually instead of making abrupt multi-ingredient changes.",
   },
   {
     question: "What safety ingredients should I avoid in chicken recipes?",
     answer:
-      "Avoid onions, garlic, heavy salt, spicy seasoning, xylitol-containing products, and cooked bones. Keep ingredients simple and measured so digestive response is easier to track.",
+      "Avoid onions, garlic, xylitol products, heavily salted seasoning mixes, and cooked bones. A common mistake is adding flavorful leftovers that look harmless but disrupt digestion or increase sodium. Keep ingredient lists short and measured during transitions. If symptoms start after adding a new ingredient, remove it and monitor before introducing anything else.",
   },
   {
     question: "How long can homemade chicken food stay in the fridge?",
     answer:
-      "Use refrigerated portions within 2 to 3 days and freeze the rest in pre-portioned containers. Labeling with date and meal size reduces waste and improves consistency.",
+      "Most homemade chicken meals are best used within 2 to 3 days in the refrigerator. Freeze extra portions in meal-sized containers to keep daily intake consistent and reduce guesswork. Label with prep date and portion grams so anyone feeding your dog can stay accurate. Reheat gently to warm, not hot, and avoid repeated reheating cycles.",
   },
   {
     question: "How should I transition to homemade chicken meals?",
     answer:
-      "Most dogs do better with a gradual transition over 5 to 7 days. Start with a small mix-in amount, then increase only if stool quality, appetite, and energy remain stable.",
+      "Most dogs transition better over 5 to 7 days than with a same-day switch. Start with a smaller mix-in portion and increase only when stool, appetite, and energy remain steady. If stool softens, pause progression for a day or two before increasing again. Use a tracking note so you can see what changed and when.",
   },
   {
     question: "When should I call my veterinarian during the transition?",
     answer:
-      "Call your vet for vomiting, persistent diarrhea, appetite drop lasting more than a day, or any sudden behavior change. Ask early if your dog has chronic disease, is a puppy, or is a senior.",
+      "Call your veterinarian if vomiting appears, diarrhea persists, appetite drops for more than a day, or behavior changes suddenly. Do not wait if your dog is a puppy, senior, or has chronic disease. A quick review can prevent prolonged mismatch between diet and needs. Bring your ingredient list and portion notes to make the visit more useful.",
   },
 ];
 
@@ -81,6 +81,9 @@ export default function HomemadeChickenDogFoodRecipesVetApprovedPage() {
           <h1 className="font-serif text-3xl font-bold text-gray-900 sm:text-4xl">
             Homemade Chicken Dog Food Recipes Vet Approved
           </h1>
+          <p className="mt-2 text-xs font-medium uppercase tracking-wide text-gray-500">
+            Last updated: April 2026
+          </p>
           <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600">
             Chicken-based homemade meals are popular because they are practical, digestible, and easy
             to prepare. This guide uses vet-informed principles and safety-first feeding language to
@@ -183,6 +186,108 @@ export default function HomemadeChickenDogFoodRecipesVetApprovedPage() {
                 to estimate starting amounts before finalizing with your vet.
               </li>
             </ul>
+          </article>
+
+          <article className="rounded-2xl border border-cyan-100 bg-cyan-50/60 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Real Feeding Example</h2>
+            <p className="mt-3 text-sm leading-7 text-gray-700">
+              <span className="font-semibold">Example dog:</span> 32 lb, 4-year-old neutered mixed
+              breed, moderate activity (two walks daily).{" "}
+              <span className="font-semibold">Daily intake:</span> two meals of cooked chicken,
+              measured carb base, and vegetable mix, with one small treat budget. This amount works
+              because stool stays formed, energy is stable, and weekly weight trend remains steady.
+            </p>
+          </article>
+
+          <article className="rounded-2xl border border-indigo-100 bg-indigo-50/60 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
+              How to Apply This in Real Life
+            </h2>
+            <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm leading-7 text-gray-700">
+              <li>Step 1: Pick one chicken variation and keep ingredients simple for one week.</li>
+              <li>Step 2: Measure daily food by portion size, not visual guess.</li>
+              <li>Step 3: Track stool, appetite, and weekly body weight.</li>
+              <li>
+                Step 4: If stable, review{" "}
+                <Link href="/blog/how-to-portion-homemade-dog-food" className="font-semibold text-brand-700">
+                  portion homemade dog food
+                </Link>{" "}
+                tactics to refine.
+              </li>
+              <li>
+                Step 5: Align long-term plan with the main{" "}
+                <Link href="/blog/vet-approved-homemade-dog-food-recipes" className="font-semibold text-brand-700">
+                  homemade dog food recipes
+                </Link>{" "}
+                guide.
+              </li>
+            </ol>
+          </article>
+
+          <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
+              Comparison Table: Chicken vs Beef
+            </h2>
+            <div className="mt-4 overflow-x-auto">
+              <table className="min-w-full border-collapse text-left text-sm">
+                <thead>
+                  <tr className="bg-gray-50">
+                    <th className="border border-gray-200 px-3 py-2 font-semibold text-gray-900">Factor</th>
+                    <th className="border border-gray-200 px-3 py-2 font-semibold text-gray-900">Chicken</th>
+                    <th className="border border-gray-200 px-3 py-2 font-semibold text-gray-900">Beef</th>
+                  </tr>
+                </thead>
+                <tbody className="text-gray-700">
+                  <tr>
+                    <td className="border border-gray-200 px-3 py-2">Digestive tolerance</td>
+                    <td className="border border-gray-200 px-3 py-2">Often easier for simple transitions</td>
+                    <td className="border border-gray-200 px-3 py-2">Can work well but may feel heavier for some dogs</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-200 px-3 py-2">Fat variability</td>
+                    <td className="border border-gray-200 px-3 py-2">Easier to keep lean with skinless cuts</td>
+                    <td className="border border-gray-200 px-3 py-2">Cut selection matters more for calorie control</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-gray-200 px-3 py-2">Best use case</td>
+                    <td className="border border-gray-200 px-3 py-2">Starter homemade routine</td>
+                    <td className="border border-gray-200 px-3 py-2">Protein alternative when poultry is not ideal</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article className="rounded-2xl border border-lime-100 bg-lime-50/60 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Quick Checklist</h2>
+            <ul className="mt-3 space-y-2 text-sm leading-7 text-gray-700">
+              <li>✔ Portion measured consistently</li>
+              <li>✔ Stool quality normal most days</li>
+              <li>✔ Energy level stable through the week</li>
+              <li>✔ Weight trend stable on weekly checks</li>
+            </ul>
+          </article>
+
+          <article className="rounded-2xl border border-teal-100 bg-teal-50/60 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">What if...</h2>
+            <div className="mt-3 space-y-3 text-sm leading-7 text-gray-700">
+              <p>
+                <span className="font-semibold">What if my dog refuses food?</span> Warm the meal
+                slightly, reduce novelty ingredients, and transition slower before switching proteins.
+              </p>
+              <p>
+                <span className="font-semibold">What if weight increases?</span> Reduce daily portion
+                modestly and compare with{" "}
+                <Link href="/blog/how-much-homemade-dog-food-should-i-feed-my-dog" className="font-semibold text-brand-700">
+                  how much to feed your dog
+                </Link>{" "}
+                guidance.
+              </p>
+              <p>
+                <span className="font-semibold">What if diarrhea starts?</span> Pause new additions,
+                simplify ingredients, hydrate, and seek veterinary input if symptoms persist.
+              </p>
+            </div>
           </article>
 
           <article className="rounded-2xl border border-violet-100 bg-violet-50/50 p-6 shadow-sm">
