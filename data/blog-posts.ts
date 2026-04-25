@@ -6824,6 +6824,327 @@ const blogPosts: BlogPost[] = [
       { label: "Why does my cat's breath smell so bad?", href: "/blog/why-does-my-cats-breath-smell-so-bad", description: "Differential causes and escalation cues in cats." },
     ],
   },
+  {
+    slug: "symptoms-of-kidney-disease-in-cats",
+    title: "Symptoms of Kidney Disease in Cats",
+    metaTitle: "Symptoms of Kidney Disease in Cats: Early vs Advanced Signs and Urgent Red Flags",
+    metaDescription:
+      "Learn symptoms of kidney disease in cats, early vs advanced warning signs, drinking and urination changes, and when to call a vet.",
+    category: "Cats",
+    publishedDate: "2026-04-28",
+    readingTime: "12 min read",
+    intro:
+      "Kidney symptoms in cats can start quietly. This page helps you spot early changes, recognize advanced signs, and know when symptoms need urgent care.",
+    sections: [
+      {
+        heading: "Quick answer: symptoms of kidney disease in cats",
+        paragraphs: [
+          "Common symptoms include drinking and urination changes, gradual weight loss, appetite decline, low energy, and vomiting. Early signs can be subtle. Advanced signs often need urgent veterinary care.",
+        ],
+      },
+      {
+        heading: "Safety note",
+        paragraphs: [
+          "This page is for symptom recognition only. It cannot diagnose disease. If your cat looks unwell, weak, dehydrated, or stops eating, contact a veterinarian quickly.",
+        ],
+      },
+      {
+        heading: "Early vs advanced symptoms",
+        paragraphs: [
+          "Early signs may be mild and easy to miss during daily routines. Advanced signs are more obvious and usually happen more often.",
+        ],
+        bullets: [
+          "Early: subtle thirst or litter box pattern shifts",
+          "Early: mild appetite drop and slower activity",
+          "Advanced: repeated vomiting or severe nausea signs",
+          "Advanced: marked weakness, weight loss, and dehydration signs",
+        ],
+      },
+      {
+        heading: "Drinking and urination changes",
+        paragraphs: [
+          "Many cats show increased thirst and larger urine clumps early in kidney disease patterns. Some cats may drink less when they feel very unwell in later stages.",
+          "Persistent shifts in water and litter habits should be logged and discussed with your vet.",
+        ],
+      },
+      {
+        heading: "Weight loss, appetite, and coat quality changes",
+        paragraphs: [
+          "Gradual weight loss, pickier eating, and poor coat quality can appear over weeks to months. Appetite changes that continue should not be dismissed as normal aging.",
+        ],
+      },
+      {
+        heading: "Behavior changes pet parents notice",
+        paragraphs: [
+          "Cats may hide more, play less, or seem less interactive. These behavior changes can be subtle but important when they appear with hydration or appetite changes.",
+        ],
+      },
+      {
+        heading: "Real-world example: slow pattern that became serious",
+        paragraphs: [
+          "A cat may first show bigger litter clumps and mild weight loss, then develop appetite decline and vomiting later. Early logging and earlier testing often helps safer care planning.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these mistakes when symptoms begin."],
+        bullets: [
+          "Assuming increased thirst is always normal aging",
+          "Waiting for severe weakness before booking tests",
+          "Tracking only one symptom instead of the full pattern",
+          "Starting unapproved supplements without veterinary advice",
+        ],
+      },
+      {
+        heading: "Practical checklist before a vet visit",
+        paragraphs: ["Bring this information to help diagnosis faster."],
+        bullets: [
+          "Drinking and urination trend over recent days",
+          "Weight trend and appetite notes",
+          "Vomiting frequency and timing",
+          "Behavior changes (hiding, sleep, activity)",
+          "Current diet and medications",
+        ],
+      },
+      {
+        heading: "When symptoms become serious",
+        paragraphs: [
+          "Treat symptoms as urgent if your cat has repeated vomiting, severe lethargy, dehydration signs, no appetite, collapse signs, or no urine output. These can worsen quickly.",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call your vet early for persistent water, litter, appetite, or weight changes. Call urgent care immediately for severe weakness, repeated vomiting, dehydration signs, or collapse-like episodes.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Kidney symptom patterns are easier to manage when recognized early."],
+        bullets: [
+          "Track drinking, urination, appetite, and weight together",
+          "Use this page for symptom recognition, not diagnosis",
+          "Use the condition guide for deeper medical context",
+          "Escalate quickly when red flags appear",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What are the earliest kidney disease symptoms in cats?",
+        answer:
+          "Early signs often include subtle thirst changes, litter box differences, mild appetite shifts, and gradual weight loss. These signs can be easy to miss. Pattern tracking helps you act earlier.",
+      },
+      {
+        question: "Do all cats with kidney disease drink more water?",
+        answer:
+          "Many do, but not every cat shows the same pattern at every stage. Some cats can look different when nausea or weakness becomes severe. Persistent hydration changes should still be evaluated.",
+      },
+      {
+        question: "Can behavior changes be part of kidney symptoms?",
+        answer:
+          "Yes. Some cats become quieter, hide more, and engage less with normal routines. Behavior changes matter more when paired with appetite, weight, or litter-box changes.",
+      },
+      {
+        question: "How is this page different from the kidney condition page?",
+        answer:
+          "This page focuses on symptom recognition and triage timing. The kidney condition page provides broader medical context and care planning. Use both with your veterinarian's guidance.",
+      },
+      {
+        question: "When should kidney symptoms be treated as urgent?",
+        answer:
+          "Treat as urgent when you see repeated vomiting, severe lethargy, dehydration signs, no eating, collapse signs, or no urine output. These signs can become emergencies quickly.",
+      },
+      {
+        question: "What should I track before the appointment?",
+        answer:
+          "Track water intake, litter output, appetite, vomiting episodes, weight trend, and behavior changes. Short daily notes can greatly improve triage and treatment planning.",
+      },
+      {
+        question: "Which related guide should I read next?",
+        answer:
+          "Read [kidney failure in cats](/health-conditions/kidney-failure-cats) for deeper medical understanding and [cat not drinking water](/blog/cat-not-drinking-water) for hydration-focused monitoring.",
+      },
+    ],
+    internalLinks: [
+      { label: "Kidney failure in cats condition guide", href: "/health-conditions/kidney-failure-cats" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Signs of kidney failure in cats", href: "/blog/signs-of-kidney-failure-in-cats" },
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water" },
+      { label: "Why is my cat breathing heavy?", href: "/blog/why-is-my-cat-breathing-heavy" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Pet Health Guides",
+    relatedGuides: [
+      { label: "Signs of kidney failure in cats", href: "/blog/signs-of-kidney-failure-in-cats", description: "Broader warning-sign page for progression awareness." },
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water", description: "Hydration-focused triage guide for daily monitoring." },
+      { label: "Why is my cat breathing heavy?", href: "/blog/why-is-my-cat-breathing-heavy", description: "Urgency cues when whole-body symptoms overlap." },
+      { label: "How many weeks are cats pregnant?", href: "/blog/how-many-weeks-are-cats-pregnant", description: "Life-stage cat health planning resource." },
+    ],
+  },
+  {
+    slug: "dog-coughing-and-gagging",
+    title: "Dog Coughing and Gagging: What It Means",
+    metaTitle: "Dog Coughing and Gagging: Causes, Difference, and Emergency Signs",
+    metaDescription:
+      "Learn the difference between dog coughing and gagging, why they happen together, common causes, and when symptoms need urgent vet care.",
+    category: "Dogs",
+    publishedDate: "2026-04-28",
+    readingTime: "12 min read",
+    intro:
+      "When a dog coughs and gags together, it can be confusing and stressful. This guide explains how to tell the sounds apart, what combined patterns can mean, and when to seek urgent care.",
+    sections: [
+      {
+        heading: "Quick answer: dog coughing and gagging",
+        paragraphs: [
+          "Coughing comes from the airway. Gagging is a retching or throat-clearing motion. Dogs can show both in the same episode when irritation, infection, airway disease, or foreign material is involved.",
+        ],
+      },
+      {
+        heading: "Safety note",
+        paragraphs: [
+          "This page is educational and not a diagnosis. If your dog has breathing effort, gum color change, severe weakness, or collapse signs, seek emergency veterinary care now.",
+        ],
+      },
+      {
+        heading: "Cough vs gag: quick difference",
+        paragraphs: [
+          "A cough sounds like forceful air from the chest or throat. A gag often looks like a retch with neck extension and little or no vomit.",
+          "Video clips help vets separate these patterns quickly.",
+        ],
+      },
+      {
+        heading: "When both happen together",
+        paragraphs: [
+          "Some dogs cough first and then gag. Others gag after drinking, excitement, or airway irritation and then cough. Episode order and frequency are key triage clues.",
+        ],
+      },
+      {
+        heading: "Common causes of cough-gag episodes",
+        paragraphs: [
+          "There is no single cause for every dog. Multiple patterns can overlap.",
+        ],
+        bullets: [
+          "Infectious respiratory irritation",
+          "Airway inflammation or throat irritation",
+          "Foreign material concerns",
+          "GI irritation with retching overlap",
+        ],
+      },
+      {
+        heading: "Infection vs irritation vs choking risk",
+        paragraphs: [
+          "Infection-style patterns often involve repeated episodes with fatigue or exposure history. Irritation may follow smoke, pulling, or sprays. Choking risk is higher when distress appears suddenly with breathing trouble.",
+        ],
+      },
+      {
+        heading: "Real-world example: cough-gag episodes after boarding",
+        paragraphs: [
+          "A dog may return from boarding with dry cough that ends in gagging fits. In mild cases, early veterinary guidance and monitoring helps recovery. In severe cases, breathing effort can rise and needs urgent review.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these mistakes during cough-gag episodes."],
+        bullets: [
+          "Assuming every gag is vomiting",
+          "Using human cough medicine",
+          "Ignoring symptom progression over 24 to 48 hours",
+          "Delaying care when breathing changes appear",
+        ],
+      },
+      {
+        heading: "Practical checklist before calling your vet",
+        paragraphs: ["Have this information ready for triage."],
+        bullets: [
+          "Episode frequency and time of day",
+          "Whether cough or gag happens first",
+          "Any triggers like activity, water, or leash pulling",
+          "Breathing effort and gum color observations",
+          "Recent exposure to other dogs",
+        ],
+      },
+      {
+        heading: "When it becomes urgent",
+        paragraphs: [
+          "Urgent signs include breathing effort at rest, blue or pale gums, repeated collapse-like weakness, nonstop retching, or severe distress. These signs require immediate care.",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call promptly if episodes are repeating daily or if appetite and energy are declining. Call emergency care immediately for breathing distress, gum color changes, weakness, or sudden worsening.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Pattern timing and severity help guide safer decisions."],
+        bullets: [
+          "Coughing and gagging are related but not identical signs",
+          "Combined episodes should be tracked, not guessed",
+          "Use vet triage early when symptoms repeat",
+          "Escalate fast for breathing red flags",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is coughing and gagging the same as vomiting in dogs?",
+        answer:
+          "Not always. Coughing and gagging can happen without stomach contents. Vomiting usually involves stomach material. Distinguishing these patterns helps your vet identify likely causes faster.",
+      },
+      {
+        question: "Why does my dog cough and then gag?",
+        answer:
+          "This sequence can happen with respiratory irritation, infection-style cough patterns, or throat sensitivity. It can also happen after trigger events like excitement or pulling on a collar.",
+      },
+      {
+        question: "Can kennel cough cause gagging too?",
+        answer:
+          "Yes, some infectious cough patterns can end with gagging or retching. If episodes repeat or your dog seems tired or uncomfortable, contact your veterinarian for guidance.",
+      },
+      {
+        question: "How do I know if choking is possible?",
+        answer:
+          "Sudden distress, severe breathing effort, pawing at the mouth, and inability to settle can raise concern for choking or obstruction. These signs should be treated as urgent.",
+      },
+      {
+        question: "Should I give over-the-counter cough medication?",
+        answer:
+          "Do not give human medications unless your vet has advised a specific product and dose. Some ingredients are unsafe for dogs and may hide important symptoms.",
+      },
+      {
+        question: "When should I go to emergency care?",
+        answer:
+          "Go immediately for breathing distress, blue or pale gums, collapse signs, nonstop retching, or rapid worsening. Emergency care is safest in these situations.",
+      },
+      {
+        question: "Which related guides should I read next?",
+        answer:
+          "Use [why is my dog coughing](/blog/why-is-my-dog-coughing), [why is my dog gagging](/blog/why-is-my-dog-gagging), and [why is my dog breathing heavy](/blog/why-is-my-dog-breathing-heavy) for deeper symptom-specific guidance.",
+      },
+    ],
+    internalLinks: [
+      { label: "Why is my dog coughing?", href: "/blog/why-is-my-dog-coughing" },
+      { label: "Why is my dog gagging?", href: "/blog/why-is-my-dog-gagging" },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy" },
+      { label: "Dog gagging cough guide", href: "/blog/dog-gagging-cough" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Anxiety and stress condition guide", href: "/health-conditions/anxiety-stress" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Pet Health Guides",
+    relatedGuides: [
+      { label: "Why is my dog coughing?", href: "/blog/why-is-my-dog-coughing", description: "Cough-focused causes and escalation steps." },
+      { label: "Why is my dog gagging?", href: "/blog/why-is-my-dog-gagging", description: "Gagging pattern and trigger interpretation." },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy", description: "Emergency breathing signs and triage." },
+      { label: "Dog gagging cough", href: "/blog/dog-gagging-cough", description: "Episode-pattern guide for cough-then-gag events." },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {

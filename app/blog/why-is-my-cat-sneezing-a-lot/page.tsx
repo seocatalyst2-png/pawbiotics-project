@@ -25,53 +25,75 @@ export const metadata: Metadata = {
 
 const faqs: FAQItem[] = [
   {
-    question: "Why is my cat sneezing a lot?",
+    question: "Why is my cat sneezing so much all of a sudden?",
     answer:
-      "Cats can sneeze more from dust, scent sprays, mild infections, or allergy triggers. A few sneezes may be normal. But if sneezing keeps happening for days, your cat should be checked by a veterinarian. Ongoing patterns usually need a closer look.",
+      "Sudden sneezing can happen from irritants like dust, sprays, litter changes, or mild upper airway infections. Sometimes it settles quickly. If sneezing continues or other signs appear, your cat should be examined.",
   },
   {
-    question: "Why is my cat sneezing and eyes watering?",
+    question: "What does frequent sneezing in episodes mean?",
     answer:
-      "Sneezing with watery eyes can happen with upper respiratory irritation, allergy triggers, or infection. It may start mild and then increase. If eye discharge becomes thick or your cat seems low energy, call your vet. Early care often helps faster recovery.",
+      "Episode sneezing often means the nose is repeatedly irritated. Triggers can be environmental or infection-related. Track timing and associated signs to help your vet identify likely causes.",
   },
   {
-    question: "Is cat sneezing a sign of illness?",
+    question: "Is occasional sneezing normal in cats?",
     answer:
-      "Sometimes yes, sometimes no. A short sneeze burst can happen from temporary irritation in the air. Repeated sneezing with other signs like eye discharge, appetite drop, or fever can point to illness. Pattern plus symptoms matters more than one sneeze.",
+      "Yes, occasional sneezing can happen in healthy cats. Concern rises when sneezing becomes daily, lasts for days, or appears with eye discharge, appetite changes, or low energy.",
   },
   {
-    question: "Why does my cat sneeze multiple times in a row?",
+    question: "When does cat sneezing become serious?",
     answer:
-      "Cats keep sneezing in a row when the nose is irritated and trying to clear triggers. Dust, scents, mild infections, or inflammation can all cause this. If this happens often, note timing and environment. That record helps your vet find likely causes.",
+      "Treat sneezing as more serious when discharge turns thick or colored, appetite drops, breathing looks harder, or your cat becomes weak. Kittens and seniors should be checked sooner.",
   },
   {
-    question: "Can allergies cause cat sneezing?",
+    question: "Can allergies cause frequent sneezing patterns?",
     answer:
-      "Yes, allergies can be one reason why cats sneeze. Triggers can include dust, litter changes, perfumes, and cleaning products. Some cats also show skin or eye symptoms at the same time. If triggers keep repeating, your vet can help with a safer long-term plan.",
+      "Yes. Allergies can cause repeating sneezing episodes, especially with environmental triggers. But recurring sneezing still needs veterinary review to rule out infection or dental causes.",
   },
   {
-    question: "What should I do if my cat keeps sneezing?",
+    question: "What should I track before a vet visit?",
     answer:
-      "Start by reducing irritants at home and keeping your cat calm, hydrated, and comfortable. Avoid strong sprays or sudden litter changes. Track how often sneezing happens and whether other symptoms appear. If it continues, schedule a veterinary exam.",
+      "Track frequency, episode timing, discharge type, appetite, energy, and any trigger changes at home. Short notes and videos can speed diagnosis and treatment planning.",
   },
   {
-    question: "When should I see a vet?",
+    question: "Can I treat frequent sneezing at home only?",
     answer:
-      "See a vet sooner if sneezing is constant, eye or nose discharge worsens, your cat stops eating, or fever signs appear. Kittens, seniors, and chronically ill cats should be seen early. If your cat seems weak or breathing looks harder, seek urgent care.",
-  },
-  {
-    question: "Can I treat cat sneezing at home?",
-    answer:
-      "You can support mild cases by reducing irritants and monitoring closely, but home care is limited. Do not use human medicine unless your vet says it is safe. If symptoms continue or worsen, your cat needs professional evaluation. Early care prevents delays.",
+      "Home support can help mild irritation, but persistent patterns should not rely on home care alone. Avoid human medications unless your vet approves them for your cat.",
   },
 ];
 
 export default function WhyIsMyCatSneezingALotPage() {
+  const relatedGuides = [
+    {
+      label: "Cat cold symptoms",
+      href: "/blog/cat-cold-symptoms",
+      description: "Compare sneezing episodes with cold-style symptom patterns.",
+      cardClass: "border-teal-100 bg-teal-50/70",
+    },
+    {
+      label: "Why is my cat breathing heavy?",
+      href: "/blog/why-is-my-cat-breathing-heavy",
+      description: "Escalate faster when sneezing overlaps breathing concerns.",
+      cardClass: "border-amber-100 bg-amber-50/70",
+    },
+    {
+      label: "Why is my cat drooling?",
+      href: "/blog/why-is-my-cat-drooling",
+      description: "Cross-check oral and upper-airway symptom overlap.",
+      cardClass: "border-violet-100 bg-violet-50/70",
+    },
+    {
+      label: "Cat not drinking water",
+      href: "/blog/cat-not-drinking-water",
+      description: "Hydration tracking when illness signs continue.",
+      cardClass: "border-rose-100 bg-rose-50/70",
+    },
+  ];
+
   return (
     <>
       <ArticleSchema
         headline="Why Is My Cat Sneezing a Lot?"
-        description="Simple guide to cat sneezing causes, warning signs, and practical next steps."
+        description="Learn frequent cat sneezing patterns, episode clues, serious warning signs, and when to call your vet."
         pageUrl={PAGE_URL}
       />
       <BreadcrumbSchema
@@ -86,32 +108,32 @@ export default function WhyIsMyCatSneezingALotPage() {
       <section className="border-b border-gray-100 bg-gradient-to-b from-brand-50/60 to-white py-14">
         <Container>
           <p className="inline-flex rounded-full border border-brand-200 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-brand-700">
-            Cat Health Guide
+            Cat Symptom Guide
           </p>
           <h1 className="mt-4 font-serif text-3xl font-bold text-gray-900 sm:text-4xl">
             Why Is My Cat Sneezing a Lot?
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-8 text-gray-600">
-            Sneezing in cats can be normal sometimes. Dust or mild irritation may trigger short bursts.
-            But if cats keep sneezing often, or other symptoms appear, it needs attention. This guide
-            explains simple next steps.
+            Frequent sneezing can come from mild irritation, but it can also point to upper-airway illness.
+            This page explains why your cat may be sneezing so much, what episode patterns mean, and when
+            frequent sneezing becomes serious.
           </p>
           <p className="mt-5 max-w-3xl rounded-2xl border border-brand-100 bg-white px-4 py-3 text-sm leading-7 text-gray-700 shadow-sm">
-            This content is for educational purposes. Always consult a veterinarian for medical advice.
+            This content is educational only. It is not a diagnosis. Talk to a veterinarian for treatment decisions.
           </p>
         </Container>
       </section>
 
-      <section className="py-12">
+      <section className="py-10">
         <Container>
           <article className="rounded-3xl border border-brand-100 bg-brand-50/50 p-6 shadow-sm">
             <h2 className="font-serif text-2xl font-semibold text-gray-900">
-              Why is my cat sneezing a lot?
+              Quick answer: why is my cat sneezing so much?
             </h2>
             <p className="mt-3 text-sm leading-7 text-gray-700">
-              Many cats sneeze more from dust, allergy triggers, mild infections, or nose irritation.
-              One short episode may pass. Ongoing sneezing or extra symptoms like watery eyes, no
-              appetite, or fever signs should be checked by a vet.
+              Cats can sneeze frequently because of dust, scent triggers, allergy inflammation, mild infection,
+              or other nasal irritation. Repeated sneezing episodes with discharge, appetite loss, or low energy
+              need early veterinary review.
             </p>
           </article>
         </Container>
@@ -120,99 +142,57 @@ export default function WhyIsMyCatSneezingALotPage() {
       <section className="py-6">
         <Container className="space-y-5">
           <article className="rounded-3xl border border-teal-100 bg-teal-50/40 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">
-              Is it normal for cats to sneeze?
-            </h2>
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Frequent sneezing patterns</h2>
             <p className="mt-3 text-sm leading-7 text-gray-700">
-              Yes, an occasional sneeze can be normal. It can happen after brief dust exposure or
-              strong smells. Trouble starts when sneezing becomes frequent, repeated, or paired with
-              eye and appetite changes.
+              Pattern matters more than one sneeze. Daily sneezing, multi-day clusters, or repeat episodes at
+              certain times can help identify triggers and urgency.
             </p>
           </article>
 
           <article className="rounded-3xl border border-amber-100 bg-amber-50/40 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">
-              Common causes of cat sneezing
-            </h2>
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Sneezing in episodes</h2>
+            <p className="mt-3 text-sm leading-7 text-gray-700">
+              Sneezing in a row can mean the nose is trying to clear irritation. If episodes become longer,
+              more frequent, or include thick discharge, your cat should be checked soon.
+            </p>
+          </article>
+
+          <article className="rounded-3xl border border-emerald-100 bg-emerald-50/40 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Common causes to consider</h2>
             <ul className="mt-3 space-y-2">
               {[
-                "Allergies and environmental triggers",
-                "Dust or strong scents",
-                "Mild respiratory infections",
-                "Cold-like upper airway irritation",
-                "Dental issues affecting nearby sinus areas",
+                "Dust, litter, sprays, or smoke exposure",
+                "Allergy-related nasal irritation",
+                "Upper respiratory infection patterns",
+                "Dental or oral issues affecting nearby tissues",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm leading-7 text-gray-700">
-                  <span className="mt-1 text-brand-700">▸</span>
+                  <span className="mt-1 text-brand-700">-</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </article>
 
-          <article className="rounded-3xl border border-emerald-100 bg-emerald-50/40 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">
-              Why is my cat sneezing a lot and eyes watering?
-            </h2>
+          <article className="rounded-3xl border border-cyan-100 bg-cyan-50/40 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Real-world example: repeated evening episodes</h2>
             <p className="mt-3 text-sm leading-7 text-gray-700">
-              This combination can happen with mild infection or allergy irritation. If discharge stays
-              clear and your cat acts normal, monitor closely. If discharge thickens or appetite drops,
-              call your veterinarian early.
+              A cat may sneeze mostly at night after litter cleaning or room spray use. Pattern logging helped
+              the owner identify triggers and get earlier veterinary guidance when symptoms continued.
             </p>
           </article>
 
-          <div className="grid gap-5 md:grid-cols-2">
-            <article className="rounded-3xl border border-sky-100 bg-sky-50/40 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-              <h2 className="font-serif text-2xl font-semibold text-gray-900">
-                Cat sneezing in a row (what it means)
-              </h2>
-              <p className="mt-3 text-sm leading-7 text-gray-700">
-                A burst of sneezes means the nose is irritated and trying to clear particles or mucus.
-                It may be short and mild, or part of a recurring pattern. Repeating bursts should be
-                logged and discussed with your vet.
-              </p>
-            </article>
-
-            <article className="rounded-3xl border border-cyan-100 bg-cyan-50/40 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-              <h2 className="font-serif text-2xl font-semibold text-gray-900">
-                Cat coughing and sneezing (difference)
-              </h2>
-              <p className="mt-3 text-sm leading-7 text-gray-700">
-                Sneezing comes from the nose. Coughing comes from lower airways or throat. Cats can
-                show both in some respiratory problems, so pattern tracking is useful for diagnosis.
-              </p>
-            </article>
-          </div>
-
-          <div className="grid gap-5 md:grid-cols-2">
-            <article className="rounded-3xl border border-lime-100 bg-lime-50/40 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-              <h2 className="font-serif text-2xl font-semibold text-gray-900">When it is not serious</h2>
-              <p className="mt-3 text-sm leading-7 text-gray-700">
-                A brief sneeze burst with normal appetite, normal energy, and no strong discharge may be
-                less urgent. Still watch closely for change.
-              </p>
-            </article>
-
-            <article className="rounded-3xl border border-rose-100 bg-rose-50/40 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-              <h2 className="font-serif text-2xl font-semibold text-gray-900">When it becomes serious</h2>
-              <p className="mt-3 text-sm leading-7 text-gray-700">
-                Constant sneezing, thick eye or nose discharge, fever signs, no eating, or low energy
-                need fast veterinary review.
-              </p>
-            </article>
-          </div>
-
           <article className="rounded-3xl border border-indigo-100 bg-indigo-50/40 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">What you can do at home</h2>
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Common mistakes</h2>
             <ul className="mt-3 space-y-2">
               {[
-                "Reduce dust and strong scents",
-                "Keep litter area clean and low-irritant",
-                "Offer fresh water and monitor appetite",
-                "Track sneezing frequency and discharge changes",
+                "Assuming frequent sneezing is always harmless",
+                "Waiting too long when discharge gets thicker",
+                "Using human medicine without veterinary advice",
+                "Ignoring appetite and energy changes",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm leading-7 text-gray-700">
-                  <span className="mt-1 text-brand-700">✔</span>
+                  <span className="mt-1 text-brand-700">-</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -220,34 +200,17 @@ export default function WhyIsMyCatSneezingALotPage() {
           </article>
 
           <article className="rounded-3xl border border-violet-100 bg-violet-50/40 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">
-              Should I take my cat to the vet?
-            </h2>
-            <p className="mt-3 text-sm leading-7 text-gray-700">
-              Yes, if sneezing keeps happening or extra symptoms appear. It is safer to check early
-              than to wait. For related cross-pet digestive reading, you can also view{" "}
-              <Link href="/blog/dog-spewing-yellow" className="font-semibold text-brand-700">
-                dog spewing yellow
-              </Link>{" "}
-              for symptom-pattern tracking ideas.
-            </p>
-          </article>
-        </Container>
-      </section>
-
-      <section className="py-4">
-        <Container>
-          <article className="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">Key Takeaways</h2>
-            <ul className="mt-4 space-y-2">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Practical checklist</h2>
+            <ul className="mt-3 space-y-2">
               {[
-                "Cat sneezing a lot can be mild or serious depending on pattern.",
-                "Dust, allergies, and infections are common reasons cats keep sneezing.",
-                "Eye discharge, no eating, and fever signs need faster vet care.",
-                "Simple home steps can help mild cases while you monitor.",
+                "How often episodes happen each day",
+                "Whether sneezing is isolated or in bursts",
+                "Eye or nose discharge type and color",
+                "Appetite, water intake, and energy trend",
+                "Any new environmental triggers",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm leading-7 text-gray-700">
-                  <span className="mt-1 text-brand-700">✔</span>
+                  <span className="mt-1 text-brand-700">-</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -262,13 +225,34 @@ export default function WhyIsMyCatSneezingALotPage() {
             <h2 className="font-serif text-2xl font-semibold text-amber-900">When to Call a Vet</h2>
             <ul className="mt-4 space-y-2">
               {[
-                "Eye discharge becomes thick or colored",
-                "Fever signs or low energy appear",
-                "Your cat stops eating or drinks less",
-                "Sneezing stays constant for days",
+                "Frequent sneezing for several days with no improvement",
+                "Thick yellow or green eye or nose discharge",
+                "Appetite drop, low energy, or fever-like behavior",
+                "Breathing effort, open-mouth breathing, or weakness",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2 text-sm leading-7 text-amber-900">
-                  <span className="mt-1">⚠</span>
+                  <span className="mt-1">!</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </article>
+        </Container>
+      </section>
+
+      <section className="py-4">
+        <Container>
+          <article className="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Key Takeaways</h2>
+            <ul className="mt-4 space-y-2">
+              {[
+                "Frequent sneezing patterns are more important than one isolated sneeze.",
+                "Episode tracking helps vets diagnose faster.",
+                "Sneezing with appetite or energy decline needs earlier care.",
+                "Do not rely on home treatment alone when symptoms persist.",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2 text-sm leading-7 text-gray-700">
+                  <span className="mt-1 text-brand-700">-</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -282,48 +266,51 @@ export default function WhyIsMyCatSneezingALotPage() {
           <article className="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
             <h2 className="font-serif text-2xl font-semibold text-gray-900">Helpful links</h2>
             <div className="mt-4 flex flex-wrap gap-3">
+              <Link href="/blog/cat-cold-symptoms" className="rounded-full border border-gray-200 bg-brand-50/30 px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
+                Cat cold symptoms
+              </Link>
+              <Link href="/blog/why-is-my-cat-breathing-heavy" className="rounded-full border border-gray-200 bg-brand-50/30 px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
+                Why is my cat breathing heavy?
+              </Link>
+              <Link href="/blog/why-is-my-cat-drooling" className="rounded-full border border-gray-200 bg-brand-50/30 px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
+                Why is my cat drooling?
+              </Link>
               <Link href="/health-conditions/allergies" className="rounded-full border border-gray-200 bg-brand-50/30 px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
-                Allergy guide
+                Allergy condition guide
               </Link>
               <Link href="/health-conditions/itchy-skin" className="rounded-full border border-gray-200 bg-brand-50/30 px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
-                Itchy skin guide
+                Itchy skin condition guide
               </Link>
               <Link href="/tools/probiotic-calculator" className="rounded-full border border-gray-200 bg-brand-50/30 px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
                 Probiotic calculator
               </Link>
-              <Link href="/blog/dog-spewing-yellow" className="rounded-full border border-gray-200 bg-brand-50/30 px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
-                Dog spewing yellow
+              <Link href="/vets/houston-tx" className="rounded-full border border-gray-200 bg-brand-50/30 px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
+                Houston vets
               </Link>
               <Link href="/contact" className="rounded-full border border-gray-200 bg-brand-50/30 px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
                 Contact Pawbiotics
-              </Link>
-              <Link href="/vets/houston-tx" className="rounded-full border border-gray-200 bg-brand-50/30 px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
-                Houston vets
               </Link>
             </div>
           </article>
         </Container>
       </section>
 
-      <section className="py-4">
+      <section className="py-6">
         <Container>
-          <article className="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">Talk to a local vet</h2>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <Link href="/vets/houston-tx" className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
-                Houston
+          <h2 className="font-serif text-2xl font-semibold text-gray-900">Related Pet Health Guides</h2>
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
+            {relatedGuides.map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className={`group block rounded-3xl border p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${guide.cardClass}`}
+              >
+                <h3 className="font-serif text-xl font-semibold text-gray-900 group-hover:text-brand-700">{guide.label}</h3>
+                <p className="mt-2 text-sm leading-7 text-gray-700">{guide.description}</p>
+                <p className="mt-3 text-sm font-semibold text-brand-700">Read guide {"->"}</p>
               </Link>
-              <Link href="/vets/dallas-tx" className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
-                Dallas
-              </Link>
-              <Link href="/vets/austin-tx" className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
-                Austin
-              </Link>
-              <Link href="/vets/miami-fl" className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">
-                Miami
-              </Link>
-            </div>
-          </article>
+            ))}
+          </div>
         </Container>
       </section>
 
