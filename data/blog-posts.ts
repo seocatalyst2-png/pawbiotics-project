@@ -4252,6 +4252,860 @@ const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "cat-cold-symptoms",
+    title: "Cat Cold Symptoms: What to Watch and What to Do",
+    metaTitle: "Cat Cold Symptoms: Early Signs, Home Care, and Vet Red Flags",
+    metaDescription:
+      "Learn common cat cold symptoms, what to monitor at home, practical care tips, and when your cat needs veterinary care.",
+    category: "Cats",
+    publishedDate: "2026-04-27",
+    readingTime: "11 min read",
+    intro:
+      "Cats can get upper respiratory symptoms that look like a mild cold. Some cats recover with supportive care, while others need faster treatment. This guide helps you tell the difference.",
+    sections: [
+      {
+        heading: "Quick answer: cat cold symptoms",
+        paragraphs: [
+          "Common signs include sneezing, nasal discharge, watery eyes, low appetite, and tired behavior. Mild cases may improve with supportive care, but persistent or worsening symptoms need veterinary review.",
+        ],
+      },
+      {
+        heading: "What cat cold symptoms look like day to day",
+        paragraphs: [
+          "Many cats show subtle signs first, such as less play or quieter behavior. Sneezing and eye discharge may appear before appetite drops.",
+        ],
+        bullets: [
+          "Frequent sneezing episodes",
+          "Runny nose or noisy breathing",
+          "Watery or sticky eye discharge",
+          "Lower interest in food",
+        ],
+      },
+      {
+        heading: "Common causes and spread risk",
+        paragraphs: [
+          "Upper respiratory illness in cats can be linked to contagious viral patterns, stress, or reduced immunity. Multi-cat homes may see faster spread.",
+        ],
+      },
+      {
+        heading: "Real-world example: mild sneezing that progressed",
+        paragraphs: [
+          "A cat may start with a few sneezes and seem normal, then eat less after two days and hide more. This pattern often means it is time to stop monitoring and call your vet.",
+          "If your cat also has ongoing sneezing, see [why is my cat sneezing a lot](/blog/why-is-my-cat-sneezing-a-lot).",
+        ],
+      },
+      {
+        heading: "What to monitor",
+        paragraphs: [
+          "Track symptoms twice daily to spot progression early.",
+        ],
+        bullets: [
+          "Appetite and water intake",
+          "Nasal and eye discharge changes",
+          "Breathing noise at rest",
+          "Energy level and grooming behavior",
+          "Litter box output",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these common home-care mistakes."],
+        bullets: [
+          "Waiting too long when appetite drops",
+          "Using human cold medicine",
+          "Skipping hydration support",
+          "Ignoring breathing effort",
+        ],
+      },
+      {
+        heading: "What to do at home",
+        paragraphs: [
+          "Keep your cat warm, calm, and hydrated. Offer strong-smelling wet food in small portions. Clean eye or nose discharge gently with a soft damp cloth.",
+          "If drooling or mouth discomfort appears, review [why is my cat drooling](/blog/why-is-my-cat-drooling).",
+        ],
+      },
+      {
+        heading: "Practical checklist before your vet call",
+        paragraphs: ["Have these details ready for triage."],
+        bullets: [
+          "Symptom start date",
+          "Current appetite level",
+          "Breathing pattern at rest",
+          "Discharge color and thickness",
+          "Any recent new-cat exposure",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call promptly for low appetite beyond a short period, breathing effort, thick eye or nose discharge, dehydration signs, or major behavior decline. Kittens and seniors need earlier escalation.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Cat cold-like symptoms can look mild but still worsen fast."],
+        bullets: [
+          "Track appetite and breathing every day",
+          "Use supportive care early",
+          "Escalate quickly for breathing or appetite red flags",
+          "Keep symptom notes for your vet",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can cats catch a cold like humans?",
+        answer:
+          "Cats can develop upper respiratory illness with symptoms that look like a cold, but causes are not always the same as in people. Signs can range from mild sneezing to appetite decline and discharge. If symptoms persist, a veterinary exam is safest.",
+      },
+      {
+        question: "How long should mild cat cold symptoms last?",
+        answer:
+          "Some mild cases improve within a short window, but there is no one timeline for every cat. If symptoms worsen or appetite drops, do not wait too long. Early veterinary support can prevent complications.",
+      },
+      {
+        question: "What should I feed a cat with cold symptoms?",
+        answer:
+          "Offer wet food with stronger smell and soft texture to encourage eating. Small, frequent meals can help. If your cat refuses food or water, contact your veterinarian promptly.",
+      },
+      {
+        question: "Is sneezing alone always serious?",
+        answer:
+          "Not always. Occasional sneezing can be mild irritation, but frequent sneezing with discharge, low appetite, or low energy is more concerning. Track pattern and seek care if signs continue.",
+      },
+      {
+        question: "Can I give my cat human cold medicine?",
+        answer:
+          "No. Human cold medicines may be unsafe for cats and can delay proper care. Use only treatments recommended by your veterinarian.",
+      },
+      {
+        question: "When is a cat cold an emergency?",
+        answer:
+          "Treat it as urgent if your cat has breathing effort, severe lethargy, no eating, dehydration signs, or collapse behavior. These patterns need immediate veterinary care.",
+      },
+      {
+        question: "How do I prevent spread in a multi-cat home?",
+        answer:
+          "Use temporary separation, separate bowls and litter boxes, and better cleaning routines. Wash hands between cat handling. Ask your vet for home management guidance based on symptom severity.",
+      },
+    ],
+    internalLinks: [
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot" },
+      { label: "Why is my cat drooling?", href: "/blog/why-is-my-cat-drooling" },
+      { label: "Why does my cat drool?", href: "/blog/why-does-my-cat-drool" },
+      { label: "Cat health guides", href: "/cats" },
+      { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      {
+        label: "Why is my cat sneezing a lot?",
+        href: "/blog/why-is-my-cat-sneezing-a-lot",
+        description: "See when sneezing pattern needs escalation.",
+      },
+      {
+        label: "Why is my cat drooling?",
+        href: "/blog/why-is-my-cat-drooling",
+        description: "Review serious drooling causes and red flags.",
+      },
+      {
+        label: "Why does my cat drool?",
+        href: "/blog/why-does-my-cat-drool",
+        description: "Understand normal vs abnormal drooling behavior.",
+      },
+      {
+        label: "Why does my cat's breath smell so bad?",
+        href: "/blog/why-does-my-cats-breath-smell-so-bad",
+        description: "Check oral symptoms that may suggest illness.",
+      },
+    ],
+  },
+  {
+    slug: "why-is-my-cat-drooling",
+    title: "Why Is My Cat Drooling?",
+    metaTitle: "Why Is My Cat Drooling? Causes, Warning Signs, and Vet Guidance",
+    metaDescription:
+      "Learn why your cat may be drooling, common causes, serious warning signs, and when to call a veterinarian.",
+    category: "Cats",
+    publishedDate: "2026-04-27",
+    readingTime: "11 min read",
+    intro:
+      "Cat drooling can be harmless in some moments, but it can also be a warning sign. This page focuses on causes, associated symptoms, and when drooling becomes serious.",
+    sections: [
+      {
+        heading: "Quick answer: why is my cat drooling?",
+        paragraphs: [
+          "Cats may drool from dental pain, nausea, mouth irritation, stress, or toxin exposure. If drooling is heavy, repeated, or paired with behavior change, veterinary care is important.",
+        ],
+      },
+      {
+        heading: "Common causes",
+        paragraphs: [
+          "Drooling has many possible causes, so pattern and associated signs matter.",
+        ],
+        bullets: [
+          "Dental or gum disease",
+          "Mouth ulcers or injury",
+          "Nausea and GI upset",
+          "Stress or toxin exposure",
+        ],
+      },
+      {
+        heading: "Symptoms that make drooling more concerning",
+        paragraphs: [
+          "Drooling is more serious when it appears with appetite loss, mouth pawing, vomiting, weakness, or breathing changes.",
+          "If drooling appears during upper respiratory signs, review [cat cold symptoms](/blog/cat-cold-symptoms).",
+        ],
+      },
+      {
+        heading: "Real-world example: sudden drooling after chewing plant leaves",
+        paragraphs: [
+          "A cat may start drooling heavily after chewing unknown leaves or chemicals. This pattern is higher risk than occasional mild drool and needs quick triage.",
+        ],
+      },
+      {
+        heading: "What to monitor",
+        paragraphs: [
+          "Track both mouth signs and whole-body behavior.",
+        ],
+        bullets: [
+          "Amount and frequency of drool",
+          "Mouth odor, bleeding, or pawing",
+          "Appetite and drinking behavior",
+          "Vomiting or nausea signs",
+          "Energy and hiding behavior",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these during drooling episodes."],
+        bullets: [
+          "Assuming all drooling is just stress",
+          "Waiting too long despite appetite decline",
+          "Trying human oral products",
+          "Ignoring possible toxin exposure",
+        ],
+      },
+      {
+        heading: "What to do next at home",
+        paragraphs: [
+          "Move your cat away from possible irritants and keep the environment calm. Offer water and monitor appetite. Do not force oral treatments.",
+          "For normal-behavior drooling patterns, compare with [why does my cat drool](/blog/why-does-my-cat-drool).",
+        ],
+      },
+      {
+        heading: "Practical checklist before your vet visit",
+        paragraphs: ["Bring these notes for faster diagnosis."],
+        bullets: [
+          "When drooling started",
+          "Any recent plants, chemicals, or food exposure",
+          "Appetite and hydration trend",
+          "Mouth odor, bleeding, or chewing change",
+          "Video of drooling episode if possible",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call urgently for heavy drooling with pain, repeated vomiting, toxin concern, no eating, severe lethargy, or breathing difficulty. These signs need fast medical care.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Drooling can be mild or serious depending on context."],
+        bullets: [
+          "Look for symptoms around drooling, not drool alone",
+          "Mouth pain and appetite loss raise urgency",
+          "Possible toxin exposure needs immediate action",
+          "Early vet review prevents delays in treatment",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is cat drooling always a bad sign?",
+        answer:
+          "Not always. Some cats drool briefly when relaxed or very content. But persistent or heavy drooling is not normal and should be checked, especially with appetite or behavior changes.",
+      },
+      {
+        question: "Can dental disease cause drooling in cats?",
+        answer:
+          "Yes. Dental pain and gum inflammation are common reasons for drooling. You may also notice bad breath, food dropping, or mouth pawing. A veterinary oral exam is usually needed.",
+      },
+      {
+        question: "What if my cat is drooling and not eating?",
+        answer:
+          "This is concerning and should be treated promptly. Mouth pain, nausea, or systemic illness may be involved. Contact your veterinarian quickly for triage.",
+      },
+      {
+        question: "Can stress make cats drool?",
+        answer:
+          "Some cats may drool briefly under stress, but repeated or heavy drooling should not be blamed on stress alone. If symptoms persist, a medical check is safer.",
+      },
+      {
+        question: "Could toxin exposure cause sudden drooling?",
+        answer:
+          "Yes, sudden heavy drooling can occur after exposure to plants, chemicals, or other irritants. If exposure is possible, seek urgent veterinary guidance immediately.",
+      },
+      {
+        question: "Should I clean my cat's mouth at home?",
+        answer:
+          "Avoid forceful mouth handling when your cat is drooling and uncomfortable. This can increase stress or pain. Let your veterinarian assess the cause first.",
+      },
+      {
+        question: "When is drooling an emergency?",
+        answer:
+          "Emergency signs include heavy drooling with weakness, breathing trouble, severe vomiting, toxin concern, or inability to eat. These patterns can become emergencies quickly.",
+      },
+    ],
+    internalLinks: [
+      { label: "Why does my cat drool?", href: "/blog/why-does-my-cat-drool" },
+      { label: "Cat cold symptoms", href: "/blog/cat-cold-symptoms" },
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot" },
+      { label: "Why does my cat's breath smell so bad?", href: "/blog/why-does-my-cats-breath-smell-so-bad" },
+      { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      {
+        label: "Why does my cat drool?",
+        href: "/blog/why-does-my-cat-drool",
+        description: "Normal vs abnormal drooling behavior patterns.",
+      },
+      {
+        label: "Cat cold symptoms",
+        href: "/blog/cat-cold-symptoms",
+        description: "Respiratory signs that can overlap with drooling.",
+      },
+      {
+        label: "Why does my cat's breath smell so bad?",
+        href: "/blog/why-does-my-cats-breath-smell-so-bad",
+        description: "Assess oral red flags with illness risk.",
+      },
+      {
+        label: "Why is my cat sneezing a lot?",
+        href: "/blog/why-is-my-cat-sneezing-a-lot",
+        description: "Track related upper-airway symptom patterns.",
+      },
+    ],
+  },
+  {
+    slug: "why-does-my-cat-drool",
+    title: "Why Does My Cat Drool?",
+    metaTitle: "Why Does My Cat Drool? Normal vs Abnormal Drooling Explained",
+    metaDescription:
+      "Learn normal vs abnormal cat drooling, common triggers like stress or food excitement, and when drooling needs vet care.",
+    category: "Cats",
+    publishedDate: "2026-04-27",
+    readingTime: "10 min read",
+    intro:
+      "Some cats drool in specific moments and stay perfectly fine. Other cats drool because of pain or illness. This page focuses on behavior patterns so you can tell what is more likely normal and what is not.",
+    sections: [
+      {
+        heading: "Quick answer: why does my cat drool?",
+        paragraphs: [
+          "Cats can drool from contentment, food anticipation, stress, motion discomfort, or medical causes. The key is pattern: occasional predictable drooling is different from new, persistent drooling.",
+        ],
+      },
+      {
+        heading: "Normal vs abnormal drooling",
+        paragraphs: [
+          "Normal drooling is brief, predictable, and not linked to illness signs. Abnormal drooling is new, frequent, heavy, or paired with appetite or behavior changes.",
+        ],
+      },
+      {
+        heading: "Common triggers by situation",
+        paragraphs: [
+          "Behavior context helps explain many mild drooling patterns.",
+        ],
+        bullets: [
+          "Happy kneading or purring episodes",
+          "Food anticipation before meals",
+          "Travel or stress reactions",
+          "Taste or smell triggers",
+        ],
+      },
+      {
+        heading: "Real-world example: happy drool vs problem drool",
+        paragraphs: [
+          "One cat drools only while purring on a lap and stops quickly. Another starts drooling throughout the day and eats less. The second pattern is more concerning and needs evaluation.",
+        ],
+      },
+      {
+        heading: "What to monitor",
+        paragraphs: [
+          "Track trigger context and symptom changes over several days.",
+        ],
+        bullets: [
+          "When drooling starts and stops",
+          "Whether drooling is linked to specific events",
+          "Any appetite, weight, or energy changes",
+          "Mouth odor or chewing discomfort",
+          "Sneezing, congestion, or other symptom overlap",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these interpretation mistakes."],
+        bullets: [
+          "Assuming all drooling is cute behavior",
+          "Ignoring new daily drooling pattern",
+          "Missing appetite and mouth pain clues",
+          "Waiting too long before calling your vet",
+        ],
+      },
+      {
+        heading: "What to do next",
+        paragraphs: [
+          "If drooling is brief and clearly trigger-based, keep tracking. If it becomes frequent or unexplained, move to medical review.",
+          "For cause-and-severity focus, see [why is my cat drooling](/blog/why-is-my-cat-drooling).",
+        ],
+      },
+      {
+        heading: "Practical checklist for pattern tracking",
+        paragraphs: ["Use this simple checklist before deciding next steps."],
+        bullets: [
+          "Predictable trigger present (yes or no)",
+          "Drooling duration under a few minutes",
+          "No appetite or energy change",
+          "No mouth pain signs",
+          "No progression over days",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call your vet if drooling is new and frequent, appears with no clear trigger, or is paired with mouth pain, appetite loss, vomiting, or breathing concerns.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Pattern and context separate normal drool from problem drool."],
+        bullets: [
+          "Brief trigger-based drooling may be normal",
+          "New persistent drooling needs evaluation",
+          "Watch appetite and behavior closely",
+          "Escalate when drooling pattern changes fast",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can cats drool when they are happy?",
+        answer:
+          "Yes, some cats drool lightly while purring or kneading and remain otherwise normal. This pattern is usually brief and predictable. If drooling starts happening outside those moments, reassess and monitor for other symptoms.",
+      },
+      {
+        question: "Is drooling before food normal in cats?",
+        answer:
+          "Mild drooling before meals can happen in food-motivated cats. It should stop quickly after feeding and should not come with discomfort. Persistent drooling needs closer review.",
+      },
+      {
+        question: "Can stress cause temporary drooling?",
+        answer:
+          "Yes, travel and stress can trigger brief drooling in some cats. But repeated stress-related drooling should still be monitored for progression. If signs persist or worsen, consult your vet.",
+      },
+      {
+        question: "How do I tell normal drool from a medical issue?",
+        answer:
+          "Look at frequency, trigger consistency, and associated signs. Medical concern is higher with appetite change, mouth pain, vomiting, or fatigue. Pattern tracking helps your vet decide faster.",
+      },
+      {
+        question: "Should I worry if drooling is new?",
+        answer:
+          "A new pattern always deserves attention. Not every case is urgent, but new persistent drooling should be evaluated, especially if your cat seems unwell. Early review is safer.",
+      },
+      {
+        question: "Can upper respiratory illness cause drooling?",
+        answer:
+          "Yes, some cats with upper respiratory discomfort can drool more, especially when congested or nauseated. If cold-like signs appear, monitor intake and breathing closely and call your vet if worsening.",
+      },
+      {
+        question: "When is immediate care needed?",
+        answer:
+          "Immediate care is needed for heavy drooling with toxin concern, severe weakness, breathing distress, repeated vomiting, or inability to eat. These patterns can become emergencies quickly.",
+      },
+    ],
+    internalLinks: [
+      { label: "Why is my cat drooling?", href: "/blog/why-is-my-cat-drooling" },
+      { label: "Cat cold symptoms", href: "/blog/cat-cold-symptoms" },
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot" },
+      { label: "Cat breath stinks", href: "/blog/cat-breath-stinks" },
+      { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      {
+        label: "Why is my cat drooling?",
+        href: "/blog/why-is-my-cat-drooling",
+        description: "Cause-based guide with serious warning signs.",
+      },
+      {
+        label: "Cat cold symptoms",
+        href: "/blog/cat-cold-symptoms",
+        description: "See respiratory symptom overlap and escalation.",
+      },
+      {
+        label: "Why is my cat sneezing a lot?",
+        href: "/blog/why-is-my-cat-sneezing-a-lot",
+        description: "Track sneezing alongside drooling patterns.",
+      },
+      {
+        label: "Cat breath stinks",
+        href: "/blog/cat-breath-stinks",
+        description: "Review oral hygiene-related symptom basics.",
+      },
+    ],
+  },
+  {
+    slug: "cat-breath-stinks",
+    title: "Cat Breath Stinks: Common Causes and Daily Fixes",
+    metaTitle: "Cat Breath Stinks? Oral Hygiene Causes and Home Care Tips",
+    metaDescription:
+      "Cat breath stinks? Learn common hygiene and food-related causes, dental routine basics, and when to book a vet visit.",
+    category: "Cats",
+    publishedDate: "2026-04-27",
+    readingTime: "10 min read",
+    intro:
+      "Mild odor can happen in cats, but strong persistent breath smell is often a sign that oral care needs attention. This guide focuses on practical daily habits and basic prevention.",
+    sections: [
+      {
+        heading: "Quick answer: cat breath stinks",
+        paragraphs: [
+          "Bad breath in cats often comes from plaque, tartar, gum irritation, or food debris. Better oral care can help mild cases, but persistent strong odor still needs veterinary review.",
+        ],
+      },
+      {
+        heading: "Basic hygiene causes",
+        paragraphs: [
+          "Most day-to-day breath odor starts in the mouth and gums.",
+        ],
+        bullets: [
+          "Plaque and tartar buildup",
+          "Gum inflammation",
+          "Food particles trapped in teeth",
+          "Limited routine oral cleaning",
+        ],
+      },
+      {
+        heading: "Food and feeding habits",
+        paragraphs: [
+          "Some diets and feeding patterns can worsen odor if oral hygiene is inconsistent. Hydration and food texture may also affect mouth comfort.",
+        ],
+      },
+      {
+        heading: "Real-world example: odor improved after routine changes",
+        paragraphs: [
+          "One cat with mild odor improved after regular vet-approved oral products and consistent care. Another with very strong smell needed a dental exam first.",
+          "If odor feels unusually strong, check [why does my cat's breath smell so bad](/blog/why-does-my-cats-breath-smell-so-bad).",
+        ],
+      },
+      {
+        heading: "What to monitor",
+        paragraphs: [
+          "Track odor and oral comfort signs over time.",
+        ],
+        bullets: [
+          "Odor intensity trend",
+          "Gum redness or bleeding",
+          "Drooling or mouth pawing",
+          "Chewing preference changes",
+          "Appetite shifts",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these oral-care mistakes."],
+        bullets: [
+          "Masking odor with treats only",
+          "Using human toothpaste",
+          "Skipping routine oral checks",
+          "Ignoring mouth pain signs",
+        ],
+      },
+      {
+        heading: "What to do next at home",
+        paragraphs: [
+          "Use cat-safe oral care products and consistent routines. Offer vet-approved options your cat tolerates. Schedule a dental-focused exam if odor does not improve.",
+          "If your cat also drools, see [why is my cat drooling](/blog/why-is-my-cat-drooling).",
+        ],
+      },
+      {
+        heading: "Practical oral-care checklist",
+        paragraphs: ["Use this checklist each week."],
+        bullets: [
+          "Breath odor checked at similar times",
+          "Gums reviewed for redness",
+          "Chewing behavior monitored",
+          "Oral-care routine followed",
+          "Vet exam scheduled if no improvement",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call sooner if breath odor is very strong, worsening, or paired with drooling, pain signs, appetite drop, or gum bleeding. These signs usually need clinical care.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Breath odor often starts with oral hygiene, but persistent odor needs a full check."],
+        bullets: [
+          "Start with consistent oral-care basics",
+          "Track odor with appetite and behavior",
+          "Do not ignore drooling or gum pain",
+          "Escalate if odor persists or worsens",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is bad breath normal in cats?",
+        answer:
+          "A mild smell can happen, but strong persistent odor is not normal and should be reviewed. It often signals dental or gum issues. If odor worsens over time, schedule a veterinary exam.",
+      },
+      {
+        question: "Can food type make cat breath worse?",
+        answer:
+          "Food texture and residue can influence odor, especially when oral hygiene is limited. Diet is only one factor, though. Persistent strong odor still needs an oral exam.",
+      },
+      {
+        question: "Do dental treats alone fix bad breath?",
+        answer:
+          "They may help some cats, but they usually do not solve moderate dental disease on their own. If odor stays strong, your cat may need professional dental evaluation.",
+      },
+      {
+        question: "Can gum disease cause strong breath odor?",
+        answer:
+          "Yes, gum inflammation and infection are common reasons for persistent bad breath. You may also see bleeding gums or chewing discomfort. A veterinary dental check is recommended.",
+      },
+      {
+        question: "Should I brush my cat's teeth?",
+        answer:
+          "Regular cat-safe brushing can support oral health in many cats. Introduce gradually and use only veterinary-approved products. If your cat has pain signs, get an exam before starting.",
+      },
+      {
+        question: "When should I call the vet for breath odor?",
+        answer:
+          "Call sooner when odor is worsening or appears with drooling, appetite loss, mouth pain, bleeding gums, or lethargy. These signs suggest more than simple hygiene issues.",
+      },
+      {
+        question: "What should I track before the appointment?",
+        answer:
+          "Track odor trend, chewing changes, gum appearance, appetite, and drooling frequency. These notes help your vet decide next steps quickly.",
+      },
+    ],
+    internalLinks: [
+      { label: "Why does my cat's breath smell so bad?", href: "/blog/why-does-my-cats-breath-smell-so-bad" },
+      { label: "Why is my cat drooling?", href: "/blog/why-is-my-cat-drooling" },
+      { label: "Why does my cat drool?", href: "/blog/why-does-my-cat-drool" },
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot" },
+      { label: "Bad breath condition guide", href: "/health-conditions/bad-breath" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      {
+        label: "Why does my cat's breath smell so bad?",
+        href: "/blog/why-does-my-cats-breath-smell-so-bad",
+        description: "Illness-focused bad breath risk guide.",
+      },
+      {
+        label: "Why is my cat drooling?",
+        href: "/blog/why-is-my-cat-drooling",
+        description: "Check oral symptom overlap and severity.",
+      },
+      {
+        label: "Why does my cat drool?",
+        href: "/blog/why-does-my-cat-drool",
+        description: "Normal vs abnormal drooling behavior.",
+      },
+      {
+        label: "Why is my cat sneezing a lot?",
+        href: "/blog/why-is-my-cat-sneezing-a-lot",
+        description: "Track upper-airway signs with oral symptoms.",
+      },
+    ],
+  },
+  {
+    slug: "why-does-my-cats-breath-smell-so-bad",
+    title: "Why Does My Cat's Breath Smell So Bad?",
+    metaTitle: "Why Does My Cat's Breath Smell So Bad? Illness Clues and Vet Red Flags",
+    metaDescription:
+      "Learn when very bad cat breath may be linked to illness, infection clues, what to monitor, and when to seek vet care.",
+    category: "Cats",
+    publishedDate: "2026-04-27",
+    readingTime: "11 min read",
+    intro:
+      "This page focuses on high-risk breath odor patterns. It explains when bad breath may point to illness, not just hygiene, and when medical care should happen quickly.",
+    sections: [
+      {
+        heading: "Quick answer: why does my cat's breath smell so bad?",
+        paragraphs: [
+          "Very strong or unusual breath odor can be linked to dental infection, oral disease, or broader health issues. Odor with appetite loss, drooling, or behavior change should be evaluated by a vet.",
+        ],
+      },
+      {
+        heading: "When odor may indicate illness",
+        paragraphs: [
+          "Illness risk is higher when breath changes appear with whole-body symptoms, not odor alone.",
+        ],
+        bullets: [
+          "Drooling with mouth discomfort",
+          "Low appetite or weight loss",
+          "Lethargy and reduced grooming",
+          "Vomiting or hydration changes",
+        ],
+      },
+      {
+        heading: "Infection-related clues",
+        paragraphs: [
+          "Oral infections can produce strong odor with gum redness, swelling, or pain behavior. Cats may hide discomfort, so subtle changes matter.",
+        ],
+      },
+      {
+        heading: "Real-world example: sudden severe odor plus food refusal",
+        paragraphs: [
+          "A cat may go from mild odor to very strong smell and stop eating dry food. This pattern often indicates pain or infection and should be triaged quickly.",
+        ],
+      },
+      {
+        heading: "What to monitor",
+        paragraphs: [
+          "Track odor changes and associated illness signs together.",
+        ],
+        bullets: [
+          "Odor intensity and pattern",
+          "Drooling or mouth pawing",
+          "Appetite and chewing behavior",
+          "Weight trend and activity level",
+          "Water intake and litter changes",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these when odor is severe."],
+        bullets: [
+          "Treating severe odor as cosmetic only",
+          "Using flavored products to mask symptoms",
+          "Delaying care when eating drops",
+          "Ignoring dehydration and lethargy signs",
+        ],
+      },
+      {
+        heading: "What to do next",
+        paragraphs: [
+          "Book a vet exam promptly when odor is strong and persistent. Keep notes on appetite, drooling, and behavior before the visit.",
+          "For hygiene-first guidance, see [cat breath stinks](/blog/cat-breath-stinks).",
+        ],
+      },
+      {
+        heading: "Practical checklist for urgent vet calls",
+        paragraphs: ["Share this on triage calls."],
+        bullets: [
+          "How quickly odor worsened",
+          "Current food and water intake",
+          "Drooling, bleeding, or pain signs",
+          "Weight or behavior change",
+          "Any known toxin or plant exposure",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call urgently for very bad breath with no eating, repeated vomiting, severe drooling, weakness, or dehydration signs. These patterns need timely medical evaluation.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Severe bad breath can be a health warning, not just a dental nuisance."],
+        bullets: [
+          "Watch for appetite and behavior changes",
+          "Severe odor plus drooling increases concern",
+          "Use fast triage when symptoms cluster",
+          "Early veterinary care helps prevent progression",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is very bad breath in cats always dental disease?",
+        answer:
+          "Dental disease is common, but very strong odor can also appear with broader illness. Odor should be interpreted with appetite, weight, and behavior changes. A veterinary exam is needed for accurate diagnosis.",
+      },
+      {
+        question: "Can infection cause sudden severe breath odor?",
+        answer:
+          "Yes. Oral infections and painful gum disease can cause strong odor quickly. If your cat also drools, avoids food, or seems uncomfortable, seek care promptly.",
+      },
+      {
+        question: "What if my cat has bad breath and is not eating?",
+        answer:
+          "This is a higher-risk pattern and should be treated urgently. Pain, infection, nausea, or systemic disease may be involved. Contact your vet as soon as possible.",
+      },
+      {
+        question: "Can kidney problems affect breath smell in cats?",
+        answer:
+          "In some cats, systemic disease can influence breath odor. Odor alone is not diagnostic, so your vet may recommend tests when risk signs are present. Persistent strong odor should not be ignored.",
+      },
+      {
+        question: "Should I try home remedies first?",
+        answer:
+          "For mild odor, basic oral care may help. But severe or worsening odor with other symptoms should not be managed with home remedies alone. Early exam is safer.",
+      },
+      {
+        question: "When is emergency care needed?",
+        answer:
+          "Emergency care is needed when bad breath appears with severe lethargy, no eating, repeated vomiting, dehydration signs, or collapse-like behavior. These signs can worsen fast.",
+      },
+      {
+        question: "What helps the vet most at first visit?",
+        answer:
+          "A short timeline of odor change, appetite pattern, drooling, weight trend, and any possible exposures helps your vet triage quickly and choose the right tests.",
+      },
+    ],
+    internalLinks: [
+      { label: "Cat breath stinks", href: "/blog/cat-breath-stinks" },
+      { label: "Why is my cat drooling?", href: "/blog/why-is-my-cat-drooling" },
+      { label: "Why does my cat drool?", href: "/blog/why-does-my-cat-drool" },
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot" },
+      { label: "Bad breath condition guide", href: "/health-conditions/bad-breath" },
+      { label: "Kidney failure in cats condition guide", href: "/health-conditions/kidney-failure-cats" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      {
+        label: "Cat breath stinks",
+        href: "/blog/cat-breath-stinks",
+        description: "Basic hygiene and dental routine guide.",
+      },
+      {
+        label: "Why is my cat drooling?",
+        href: "/blog/why-is-my-cat-drooling",
+        description: "Serious drooling causes and escalation signs.",
+      },
+      {
+        label: "Why does my cat drool?",
+        href: "/blog/why-does-my-cat-drool",
+        description: "Behavior pattern interpretation for drooling.",
+      },
+      {
+        label: "Why is my cat sneezing a lot?",
+        href: "/blog/why-is-my-cat-sneezing-a-lot",
+        description: "Upper-airway symptom overlap for triage.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
