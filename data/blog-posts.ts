@@ -6503,6 +6503,327 @@ const blogPosts: BlogPost[] = [
       { label: "Why is my dog coughing?", href: "/blog/why-is-my-dog-coughing", description: "Cough patterns and escalation framework." },
     ],
   },
+  {
+    slug: "how-to-tell-if-your-cat-is-pregnant",
+    title: "How to Tell If Your Cat Is Pregnant",
+    metaTitle: "How to Tell If Your Cat Is Pregnant: Early Signs, Timeline, and Vet Confirmation",
+    metaDescription:
+      "Learn how to tell if your cat is pregnant, early behavior and physical signs, pregnancy timeline, and when vet confirmation is needed.",
+    category: "Cats",
+    publishedDate: "2026-04-28",
+    readingTime: "12 min read",
+    intro:
+      "If your cat may be pregnant, it is normal to feel unsure at first. This guide explains early signs, timeline clues, and when you can be more certain after vet confirmation.",
+    sections: [
+      {
+        heading: "Quick answer: how to tell if your cat is pregnant",
+        paragraphs: [
+          "Early clues can include behavior changes, appetite shifts, and body changes, but these signs are not always definitive. The most reliable answer comes from a veterinary exam at the right time.",
+        ],
+      },
+      {
+        heading: "Safety note",
+        paragraphs: [
+          "This page is educational and not a diagnosis. If your cat seems unwell, has vaginal bleeding, severe lethargy, or stops eating, contact your veterinarian promptly.",
+        ],
+      },
+      {
+        heading: "Early behavior changes to watch",
+        paragraphs: [
+          "Some cats become more affectionate or seek quiet hiding spaces. Others may show mild appetite or sleep changes during early pregnancy stages.",
+          "Behavior alone does not confirm pregnancy, but it can be an early clue when paired with timeline context.",
+        ],
+      },
+      {
+        heading: "Physical signs that can appear",
+        paragraphs: [
+          "Common physical signs may include gradual belly enlargement later in the timeline and changes around the nipples. Some cats may also have mild appetite fluctuations.",
+          "These signs can overlap with other conditions, so confirmation by exam is important.",
+        ],
+      },
+      {
+        heading: "Pregnancy timeline: when signs usually appear",
+        paragraphs: [
+          "In very early days, signs are often subtle. More visible body changes tend to appear later. This is why timing matters when deciding whether to monitor or schedule confirmation.",
+          "If you need a fuller timeline overview, read [how many weeks are cats pregnant](/blog/how-many-weeks-are-cats-pregnant).",
+        ],
+      },
+      {
+        heading: "Vet confirmation and when to be sure",
+        paragraphs: [
+          "You can be more certain after a veterinary check at the correct stage. Your vet may use exam findings and imaging based on timing and your cat's health status.",
+          "Waiting for a clear confirmation window helps avoid false assumptions.",
+        ],
+      },
+      {
+        heading: "Real-world example: uncertain early signs at home",
+        paragraphs: [
+          "A pet parent may notice appetite changes and nesting behavior but no clear body changes yet. In this case, tracking signs for a few days and booking a vet visit gives a safer answer than guessing.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these common errors during early pregnancy concerns."],
+        bullets: [
+          "Assuming one behavior change confirms pregnancy",
+          "Waiting too long to get veterinary confirmation",
+          "Making major diet changes without guidance",
+          "Ignoring signs of illness because pregnancy is suspected",
+        ],
+      },
+      {
+        heading: "Practical checklist before your vet visit",
+        paragraphs: ["Bring this information for a clearer consultation."],
+        bullets: [
+          "Date of possible mating exposure",
+          "Behavior changes noticed and when they started",
+          "Appetite, water intake, and litter box trend",
+          "Any vomiting, discharge, or unusual discomfort",
+          "Photos of physical changes over time",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call quickly if your cat has bleeding, severe vomiting, major weakness, refusal to eat, or signs of pain. These are not routine signs and need fast evaluation.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Use signs as clues, not proof, until confirmation is done."],
+        bullets: [
+          "Early signs can be subtle and non-specific",
+          "Timeline context is important",
+          "Veterinary confirmation is the safest way to be sure",
+          "Escalate quickly for illness red flags",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How soon can I tell if my cat is pregnant?",
+        answer:
+          "Very early signs can be subtle and easy to miss. Many owners are unsure in the first part of the timeline. A veterinary exam at the right stage gives a more reliable answer than home observation alone.",
+      },
+      {
+        question: "Are behavior changes enough to confirm cat pregnancy?",
+        answer:
+          "No. Behavior changes are useful clues, but they are not proof by themselves. Similar changes can happen with stress or other health issues. Pair behavior with timeline and vet confirmation.",
+      },
+      {
+        question: "What physical signs are most common?",
+        answer:
+          "Some cats show gradual body shape changes and nipple changes later in pregnancy. Appetite and activity can also shift. These signs vary by cat and are not always consistent.",
+      },
+      {
+        question: "When should I schedule a vet visit if pregnancy is possible?",
+        answer:
+          "Book a visit as soon as you suspect pregnancy and have possible timeline details. Your vet can guide when confirmation is most accurate and how to plan next steps safely.",
+      },
+      {
+        question: "Can I confuse pregnancy with weight gain?",
+        answer:
+          "Yes, this confusion is common. Body shape changes can overlap with normal weight gain or other conditions. That is why professional confirmation is important.",
+      },
+      {
+        question: "What should I avoid doing at home?",
+        answer:
+          "Avoid guessing based on one sign, sudden unplanned diet changes, or delaying care when your cat looks unwell. Keep routines calm and seek veterinary advice early.",
+      },
+      {
+        question: "Which related page should I read next?",
+        answer:
+          "For a broader stage-by-stage window, read [how many weeks are cats pregnant](/blog/how-many-weeks-are-cats-pregnant). If you are planning spay timing questions, read [can a cat in heat be spayed](/blog/can-a-cat-in-heat-be-spayed).",
+      },
+    ],
+    internalLinks: [
+      { label: "How many weeks are cats pregnant?", href: "/blog/how-many-weeks-are-cats-pregnant" },
+      { label: "Can a cat in heat be spayed?", href: "/blog/can-a-cat-in-heat-be-spayed" },
+      { label: "What age does a cat stop growing?", href: "/blog/what-age-does-a-cat-stop-growing" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Anxiety and stress condition guide", href: "/health-conditions/anxiety-stress" },
+      { label: "Weight management condition guide", href: "/health-conditions/weight-management" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Pet Health Guides",
+    relatedGuides: [
+      { label: "How many weeks are cats pregnant?", href: "/blog/how-many-weeks-are-cats-pregnant", description: "Pregnancy length and stage timeline guide." },
+      { label: "Can a cat in heat be spayed?", href: "/blog/can-a-cat-in-heat-be-spayed", description: "Timing and safety discussion with your vet." },
+      { label: "What age does a cat stop growing?", href: "/blog/what-age-does-a-cat-stop-growing", description: "Body development signs and age context." },
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water", description: "Hydration checks for changing health patterns." },
+    ],
+  },
+  {
+    slug: "canine-cavity",
+    title: "Canine Cavity: Signs, Treatment, and Prevention",
+    metaTitle: "Canine Cavity in Dogs: Symptoms, Tooth Decay vs Gum Disease, and Prevention",
+    metaDescription:
+      "Learn what canine cavities are, how common they are in dogs, symptoms to watch, cavity vs gum disease differences, treatment options, and prevention.",
+    category: "Dogs",
+    publishedDate: "2026-04-28",
+    readingTime: "11 min read",
+    intro:
+      "Many pet parents ask if dogs can get cavities. They can, but cavities are less common than gum disease in dogs. This guide helps you spot signs and choose the right next step.",
+    sections: [
+      {
+        heading: "Quick answer: canine cavity",
+        paragraphs: [
+          "A canine cavity is a damaged area in a tooth caused by decay. In dogs, gum disease is usually more common than cavities, so oral symptoms need a full exam instead of guesswork.",
+        ],
+      },
+      {
+        heading: "Safety note",
+        paragraphs: [
+          "This page is educational and not a diagnosis. If your dog has oral pain, bleeding, facial swelling, or cannot eat normally, seek veterinary care quickly.",
+        ],
+      },
+      {
+        heading: "What cavities in dogs are and how common they are",
+        paragraphs: [
+          "A cavity is localized tooth decay. Dogs can develop cavities, but many dental cases are instead plaque buildup, tartar, and gum disease.",
+          "Because signs overlap, your vet needs to examine the full mouth before deciding treatment.",
+        ],
+      },
+      {
+        heading: "Common symptoms to watch",
+        paragraphs: [
+          "Oral symptoms are often subtle at first. Owners may notice breath changes or chewing changes before visible tooth damage.",
+        ],
+        bullets: [
+          "Persistent bad breath",
+          "Chewing on one side or dropping food",
+          "Pawing at the mouth",
+          "Visible tooth discoloration or pits",
+          "Red or bleeding gums",
+        ],
+      },
+      {
+        heading: "Tooth decay vs gum disease",
+        paragraphs: [
+          "Tooth decay affects the tooth structure directly. Gum disease affects the tissues around teeth and is more common in dogs.",
+          "Both can cause pain and bad breath. They may also occur together.",
+        ],
+      },
+      {
+        heading: "Treatment options your vet may discuss",
+        paragraphs: [
+          "Treatment depends on exam findings and severity. Your vet may discuss cleaning, local repair options, extraction in severe cases, and home-care plans.",
+          "The best plan is individualized after oral assessment.",
+        ],
+      },
+      {
+        heading: "Real-world example: bad breath that was not just tartar",
+        paragraphs: [
+          "A dog with chronic bad breath and slower eating was assumed to have simple tartar. Vet exam found a painful tooth lesion and gum inflammation. Early treatment improved comfort and appetite.",
+        ],
+      },
+      {
+        heading: "How to prevent future dental problems",
+        paragraphs: [
+          "Prevention combines daily oral care, regular dental checks, and diet/habit review.",
+        ],
+        bullets: [
+          "Use vet-approved dental hygiene routines",
+          "Schedule routine oral checks",
+          "Watch for early chewing or odor changes",
+          "Follow home-care instructions consistently",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these frequent dental-care mistakes."],
+        bullets: [
+          "Assuming all bad breath is minor",
+          "Waiting for obvious pain before booking care",
+          "Using unsafe human dental products",
+          "Stopping oral care after one improvement period",
+        ],
+      },
+      {
+        heading: "Practical checklist before dental appointment",
+        paragraphs: ["Bring these details to your visit."],
+        bullets: [
+          "When breath odor or chewing changes started",
+          "Any visible gum bleeding or swelling",
+          "Diet and chew-item history",
+          "Current oral products used at home",
+          "Photos of visible mouth changes if possible",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call promptly for oral pain, bleeding gums, facial swelling, inability to chew, sudden appetite drop, or strong persistent odor. These signs need timely dental evaluation.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Cavities are possible in dogs, but gum disease is often the bigger issue."],
+        bullets: [
+          "Do not self-diagnose cavity vs gum disease",
+          "Persistent bad breath deserves evaluation",
+          "Early dental care prevents deeper pain",
+          "Daily prevention habits improve long-term oral health",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Do dogs really get cavities?",
+        answer:
+          "Yes, dogs can get cavities, but they are less common than gum disease. Many oral symptoms look similar at home. A veterinary dental exam is the best way to confirm the cause.",
+      },
+      {
+        question: "How can I tell cavity vs gum disease?",
+        answer:
+          "It is difficult to separate them by home observation alone. Cavities affect the tooth itself, while gum disease affects surrounding tissue. Both can exist together and both need care.",
+      },
+      {
+        question: "Is bad breath always a cavity sign?",
+        answer:
+          "No. Bad breath can come from plaque, gum inflammation, oral infection, diet issues, or other health causes. Persistent odor should still be evaluated.",
+      },
+      {
+        question: "What treatments are used for canine cavities?",
+        answer:
+          "Treatment depends on severity and full-mouth findings. Your vet may discuss cleaning, repair, extraction in advanced cases, and long-term prevention steps.",
+      },
+      {
+        question: "Can cavities heal on their own in dogs?",
+        answer:
+          "Tooth decay does not usually reverse without proper treatment. Waiting often allows pain or damage to progress. Early evaluation is safer and often simpler.",
+      },
+      {
+        question: "How often should my dog have dental checks?",
+        answer:
+          "Frequency depends on age, breed factors, oral history, and current signs. Many dogs benefit from routine checks during wellness visits plus earlier review when symptoms appear.",
+      },
+      {
+        question: "Which related guide should I read next?",
+        answer:
+          "Read [is bad breath in dogs a sign of illness](/blog/is-bad-breath-in-dogs-a-sign-of-illness) for system-level red flags, and [dogs breath smells](/blog/dogs-breath-smells) for practical home monitoring.",
+      },
+    ],
+    internalLinks: [
+      { label: "Is bad breath in dogs a sign of illness?", href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness" },
+      { label: "Dog's breath smells", href: "/blog/dogs-breath-smells" },
+      { label: "Cat breath stinks", href: "/blog/cat-breath-stinks" },
+      { label: "Bad breath condition guide", href: "/health-conditions/bad-breath" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Pet Health Guides",
+    relatedGuides: [
+      { label: "Is bad breath in dogs a sign of illness?", href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness", description: "When breath odor may signal deeper health issues." },
+      { label: "Dog's breath smells", href: "/blog/dogs-breath-smells", description: "Everyday bad-breath monitoring and home routines." },
+      { label: "Cat breath stinks", href: "/blog/cat-breath-stinks", description: "Cross-pet oral symptom comparisons for owners." },
+      { label: "Why does my cat's breath smell so bad?", href: "/blog/why-does-my-cats-breath-smell-so-bad", description: "Differential causes and escalation cues in cats." },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
