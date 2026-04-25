@@ -132,6 +132,51 @@ export const blogCards = [
   },
 ];
 
+export const popularPetHealthGuides = [
+  {
+    href: "/blog/why-is-my-dog-breathing-heavy",
+    title: "Dog Breathing Heavy",
+    description:
+      "Learn when heavy breathing is normal and when it needs fast veterinary care.",
+    emoji: "🐶",
+  },
+  {
+    href: "/blog/why-is-my-dog-gagging",
+    title: "Dog Gagging",
+    description:
+      "Understand common gagging triggers, what to monitor, and urgent red flags.",
+    emoji: "🤧",
+  },
+  {
+    href: "/blog/why-is-my-cat-sneezing-a-lot",
+    title: "Cat Sneezing a Lot",
+    description:
+      "See why cats sneeze repeatedly and how to decide when to call your vet.",
+    emoji: "🐱",
+  },
+  {
+    href: "/blog/why-is-my-cat-drooling",
+    title: "Cat Drooling",
+    description:
+      "Compare mild drooling patterns with warning signs that need quick review.",
+    emoji: "💧",
+  },
+  {
+    href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness",
+    title: "Dog Bad Breath",
+    description:
+      "Find out when bad breath is a dental issue and when illness risk is higher.",
+    emoji: "🦷",
+  },
+  {
+    href: "/blog/puppy-vaccination-schedule-chart",
+    title: "Puppy Vaccination Schedule",
+    description:
+      "Use a simple week-by-week vaccine timeline for early puppy preventive care.",
+    emoji: "💉",
+  },
+];
+
 export const popularVetCities = [
   { city: "Houston", slug: "houston-tx" },
   { city: "Dallas", slug: "dallas-tx" },

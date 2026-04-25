@@ -9,6 +9,7 @@ import HomeHero from "@/components/home/HomeHero";
 import HomeIntentStrip from "@/components/home/HomeIntentStrip";
 import HomeLocalSeoSection from "@/components/home/HomeLocalSeoSection";
 import HomeNavbar from "@/components/home/HomeNavbar";
+import HomePopularGuidesSection from "@/components/home/HomePopularGuidesSection";
 import HomeSignsSection from "@/components/home/HomeSignsSection";
 import HomeStrainsSection from "@/components/home/HomeStrainsSection";
 import HomepageSchema from "@/components/seo/HomepageSchema";
@@ -51,6 +52,7 @@ export default function HomePage() {
         <HomeStrainsSection />
         <HomeComparisonSection />
         <HomeBlogSection />
+        <HomePopularGuidesSection />
         <HomeLocalSeoSection />
         <HomeFaqSection items={homeFaqItems} />
         <HomeCtaSection />
