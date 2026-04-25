@@ -228,6 +228,24 @@ export default function DogSpewingYellowPage() {
               </Link>{" "}
               and discuss changes with your veterinarian.
             </p>
+            <p className="mt-3 text-sm leading-7 text-gray-700">
+              If you want a deeper breakdown, read{" "}
+              <Link href="/blog/dog-vomiting-yellow-bile" className="font-semibold text-brand-700">
+                Dog Vomiting Yellow Bile
+              </Link>
+              ,{" "}
+              <Link href="/blog/dog-throwing-up-yellow-foam" className="font-semibold text-brand-700">
+                Dog Throwing Up Yellow Foam
+              </Link>
+              , and{" "}
+              <Link
+                href="/blog/dog-vomiting-yellow-in-the-morning"
+                className="font-semibold text-brand-700"
+              >
+                Dog Vomiting Yellow in the Morning
+              </Link>{" "}
+              for symptom-specific guidance.
+            </p>
           </article>
         </Container>
       </section>
@@ -330,6 +348,55 @@ export default function DogSpewingYellowPage() {
               </Link>
             </div>
           </article>
+        </Container>
+      </section>
+
+      <section className="py-4">
+        <Container>
+          <h2 className="font-serif text-2xl font-semibold text-gray-900">
+            Related Guides About Yellow Dog Vomit
+          </h2>
+          <div className="mt-5 grid gap-4 md:grid-cols-3">
+            <Link
+              href="/blog/dog-vomiting-yellow-bile"
+              className="group block rounded-2xl border border-teal-100 bg-teal-50/50 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-teal-200 hover:shadow-md"
+            >
+              <h3 className="font-serif text-xl font-semibold text-gray-900 transition group-hover:text-brand-700">
+                Dog Vomiting Yellow Bile
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-gray-700">
+                Learn what bile is, why it comes up, and when yellow bile vomiting needs vet care.
+              </p>
+              <p className="mt-3 text-sm font-semibold text-brand-700">Open guide &rarr;</p>
+            </Link>
+
+            <Link
+              href="/blog/dog-throwing-up-yellow-foam"
+              className="group block rounded-2xl border border-amber-100 bg-amber-50/50 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-amber-200 hover:shadow-md"
+            >
+              <h3 className="font-serif text-xl font-semibold text-gray-900 transition group-hover:text-brand-700">
+                Dog Throwing Up Yellow Foam
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-gray-700">
+                Understand the difference between yellow liquid and yellow foam, plus what it may mean.
+              </p>
+              <p className="mt-3 text-sm font-semibold text-brand-700">Open guide &rarr;</p>
+            </Link>
+
+            <Link
+              href="/blog/dog-vomiting-yellow-in-the-morning"
+              className="group block rounded-2xl border border-violet-100 bg-violet-50/50 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-violet-200 hover:shadow-md"
+            >
+              <h3 className="font-serif text-xl font-semibold text-gray-900 transition group-hover:text-brand-700">
+                Dog Vomiting Yellow in the Morning
+              </h3>
+              <p className="mt-2 text-sm leading-7 text-gray-700">
+                Learn why dogs may vomit yellow bile early in the morning and how feeding schedule
+                changes may help.
+              </p>
+              <p className="mt-3 text-sm font-semibold text-brand-700">Open guide &rarr;</p>
+            </Link>
+          </div>
         </Container>
       </section>
 
