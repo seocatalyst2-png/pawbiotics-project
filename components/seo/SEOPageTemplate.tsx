@@ -56,7 +56,7 @@ export default function SEOPageTemplate({
   h1,
   intro,
   bulletPoints,
-  keywordVariations,
+  keywordVariations: _keywordVariations,
   internalLinks,
   quickAnswer,
   sections,
@@ -158,27 +158,6 @@ export default function SEOPageTemplate({
                     <span>{point}</span>
                   </p>
                 </article>
-              ))}
-            </div>
-          </div>
-        </Container>
-      </section>
-
-      <section className="py-4">
-        <Container>
-          <div className="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">Related search intent</h2>
-            <p className="mt-2 text-sm text-gray-500">
-              This section keeps natural wording for SEO, NLP, and AI Overview.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {keywordVariations.map((keyword) => (
-                <span
-                  key={keyword}
-                  className="rounded-full border border-gray-200 bg-brand-50/30 px-3 py-1 text-xs text-gray-700"
-                >
-                  {keyword}
-                </span>
               ))}
             </div>
           </div>
