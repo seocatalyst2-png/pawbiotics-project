@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Container from "@/components/Container";
-import FAQ from "@/components/seo/FAQ";
+import FaqAccordion from "@/components/seo/FaqAccordion";
 import {
   ArticleSchema,
   BreadcrumbSchema,
@@ -60,6 +60,17 @@ export default async function BlogPostPage({ params }: PageProps) {
     { label: "Blog", href: "https://pawbiotics.us/blog" },
     { label: post.title, href: postUrl },
   ];
+  const cardTones = [
+    "border-teal-100 bg-teal-50/60",
+    "border-amber-100 bg-amber-50/70",
+    "border-emerald-100 bg-emerald-50/60",
+    "border-sky-100 bg-sky-50/70",
+    "border-orange-100 bg-orange-50/65",
+    "border-violet-100 bg-violet-50/65",
+    "border-rose-100 bg-rose-50/65",
+    "border-lime-100 bg-lime-50/65",
+  ] as const;
+  const sectionIcons = ["🩺", "📌", "✅", "🧠", "🍽️", "🐾", "📋", "🚨"] as const;
 
   return (
     <>
@@ -106,13 +117,21 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       <section className="py-12">
         <Container className="space-y-6">
-          {post.sections.map((section) => (
+          <div className="rounded-2xl border border-brand-100 bg-brand-50/50 p-4 text-sm text-brand-900">
+            Educational guide only. This article does not replace a veterinary exam, diagnosis, or emergency care.
+          </div>
+          {post.sections.map((section, index) => (
             <article
               key={section.heading}
-              className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm"
+              className={`rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${cardTones[index % cardTones.length]}`}
             >
+              <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-gray-700">
+                <span aria-hidden>{sectionIcons[index % sectionIcons.length]}</span>
+                Section {index + 1}
+              </div>
               <h2 className="text-2xl font-semibold text-gray-900">{section.heading}</h2>
               <div className="mt-3 space-y-3">
+                <h3 className="text-base font-semibold text-gray-800">What this means</h3>
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph} className="text-sm leading-7 text-gray-600">
                     {paragraph}
@@ -120,11 +139,14 @@ export default async function BlogPostPage({ params }: PageProps) {
                 ))}
               </div>
               {!!section.bullets?.length && (
-                <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-gray-600">
-                  {section.bullets.map((bullet) => (
-                    <li key={bullet}>{bullet}</li>
-                  ))}
-                </ul>
+                <div className="mt-4">
+                  <h3 className="text-base font-semibold text-gray-800">Checklist</h3>
+                  <ul className="mt-2 list-disc space-y-2 pl-5 text-sm text-gray-700">
+                    {section.bullets.map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
+                </div>
               )}
             </article>
           ))}
@@ -132,15 +154,15 @@ export default async function BlogPostPage({ params }: PageProps) {
       </section>
 
       {!!post.internalLinks.length && (
-        <section className="border-t border-gray-100 bg-gray-50 py-10">
+        <section className="border-t border-gray-100 bg-gradient-to-b from-white to-brand-50/20 py-10">
           <Container>
-            <h2 className="text-2xl font-semibold text-gray-900">Related pages</h2>
-            <div className="mt-4 flex flex-wrap gap-3">
+            <h2 className="text-2xl font-semibold text-gray-900">Related Guides</h2>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {post.internalLinks.map((item) => (
                 <Link
                   key={item.href + item.label}
                   href={item.href}
-                  className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700"
+                  className="rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm font-medium text-gray-700 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-md hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300"
                 >
                   {item.label}
                 </Link>
@@ -153,7 +175,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       {!!post.faqs.length && (
         <section className="bg-gray-50 py-12">
           <Container>
-            <FAQ items={post.faqs} />
+            <FaqAccordion items={post.faqs} />
           </Container>
         </section>
       )}
