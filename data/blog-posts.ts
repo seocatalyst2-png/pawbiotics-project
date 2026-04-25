@@ -616,58 +616,246 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "hair-falling-out-dog",
-    title: "Hair Falling Out Dog: What It Can Mean",
-    metaTitle: "Hair Falling Out Dog? Common Causes and Next Steps",
+    title: "Hair Falling Out Dog: Pattern and Cause Guide",
+    metaTitle: "Hair Falling Out Dog? Pattern-Based Diagnosis Guide",
     metaDescription:
-      "Hair falling out in dogs can happen for many reasons. Learn common causes, warning signs, and what to do next.",
+      "Hair falling out in dogs? Learn patchy vs symmetrical, itchy vs non-itchy patterns, and what each hair-loss pattern may mean.",
     category: "Dogs",
     publishedDate: "2026-04-26",
-    readingTime: "7 min read",
+    readingTime: "9 min read",
     intro:
-      "Hair loss in dogs can be patchy or wide-spread. Some causes are mild, while others need treatment. This guide helps you assess what to do.",
+      "This page is a diagnosis-style guide. It helps you read hair-loss patterns before your vet visit. We focus on what the pattern may suggest, not self-treatment.",
     sections: [
-      { heading: "Quick answer: hair falling out dog", paragraphs: ["Hair loss can come from allergies, parasites, infections, hormonal issues, or overgrooming. If patches spread or skin becomes red and sore, see your vet."] },
-      { heading: "Common causes", paragraphs: ["Many cases need skin and history review."], bullets: ["Allergy irritation", "Fleas or mites", "Skin infection", "Hormonal imbalance"] },
-      { heading: "Symptoms to watch", paragraphs: ["Look at skin quality, itch level, and spread speed."], bullets: ["Patchy or symmetrical hair loss", "Red skin or odor", "Excess scratching", "Scabs or thickened skin"] },
-      { heading: "When serious", paragraphs: ["Open sores, infection smell, and rapid spread need quick veterinary care."] },
-      { heading: "What to do", paragraphs: ["Do not self-medicate with human creams. Book vet care and track changes with photos and dates."] },
+      {
+        heading: "Quick answer: hair falling out dog",
+        paragraphs: [
+          "Hair loss in dogs can come from allergies, parasites, infection, hormones, or stress-related overgrooming. The pattern often gives the first clue. Patchy and itchy patterns suggest different causes than smooth, symmetrical loss.",
+        ],
+      },
+      {
+        heading: "Types of Hair Loss in Dogs",
+        paragraphs: [
+          "Start by naming the pattern. This helps you and your vet narrow causes faster.",
+        ],
+        bullets: [
+          "Patchy hair loss: one or multiple irregular bald spots",
+          "Symmetrical hair loss: similar pattern on both body sides",
+          "Itchy hair loss: licking, chewing, scratching with coat loss",
+          "Non-itchy hair loss: coat thinning without strong scratch behavior",
+        ],
+      },
+      {
+        heading: "What the Pattern Tells You",
+        paragraphs: [
+          "Patchy, red, itchy areas can point to allergy or parasite irritation. Symmetrical non-itchy thinning can raise hormonal questions. Thick skin, odor, and crusting can suggest infection.",
+          "One pattern does not confirm one diagnosis. But pattern + timeline gives your vet a better starting point.",
+        ],
+      },
+      {
+        heading: "Common Causes Explained",
+        paragraphs: [
+          "Hair loss is a sign, not one disease. Dogs often need exam, skin checks, and history review.",
+        ],
+        bullets: [
+          "Allergies: often itchy with paw licking, ear flare, or seasonal repeat",
+          "Parasites: fleas or mites can cause fast patchy coat damage",
+          "Infections: yeast or bacterial skin disease may add odor and redness",
+          "Hormonal causes: may show slower, symmetrical, non-itchy thinning",
+        ],
+      },
+      {
+        heading: "How to identify the cause",
+        paragraphs: [
+          "Use a simple tracking method before your appointment. Take weekly photos in the same lighting. Note itch level, odor, appetite, and new products or foods.",
+          "Bring this timeline to your vet. It often shortens trial-and-error and improves treatment targeting.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Pattern first, treatment second. Do not guess from one symptom alone."],
+        bullets: [
+          "Patchy vs symmetrical is an important clue",
+          "Itchy vs non-itchy changes diagnostic direction",
+          "Photos and notes improve vet decision speed",
+          "Early care prevents deeper skin complications",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Contact a veterinarian quickly for painful skin, bleeding, strong odor, rapid spread, or behavior decline. These signs usually need medical treatment, not home-only care.",
+        ],
+      },
     ],
     faqs: [
-      { question: "Can stress cause dog hair loss?", answer: "Stress can contribute in some dogs, but many medical causes are also possible. A vet check helps avoid missing treatable conditions." },
-      { question: "Should I change food immediately?", answer: "Do not make frequent random diet switches. Structured food trials should be vet-guided to avoid confusion." },
-      { question: "When is skin hair loss urgent?", answer: "Urgent signs include bleeding skin, severe pain, rapid spread, and strong odor. Seek care quickly." },
+      {
+        question: "What does patchy hair loss usually mean in dogs?",
+        answer:
+          "Patchy hair loss often points to local skin irritation, parasites, or infection patterns. You may see redness, itch, or uneven coat edges in specific areas. Patch shape and speed of spread are useful clues. Your vet can confirm causes with skin-focused testing.",
+      },
+      {
+        question: "Is symmetrical hair loss more serious?",
+        answer:
+          "Symmetrical hair loss can suggest systemic causes such as hormonal imbalance, but it is not automatically severe. It often progresses slowly and may be less itchy at first. Because pattern alone is not diagnostic, veterinary assessment is still needed. Early testing helps guide treatment sooner.",
+      },
+      {
+        question: "Can a dog lose hair without itching?",
+        answer:
+          "Yes. Some dogs have non-itchy coat thinning, especially in hormonal or metabolic patterns. This can be mistaken for normal shedding if you only watch one area. Compare both body sides and track gradual changes. If thinning continues, schedule a veterinary exam.",
+      },
+      {
+        question: "How can I tell allergy hair loss from parasite hair loss?",
+        answer:
+          "Both can itch, but flea and mite patterns may progress quickly in specific zones. Allergy patterns often repeat with seasonal or trigger cycles and may include ear or paw signs. History matters as much as appearance. Your veterinarian can distinguish these with targeted checks.",
+      },
+      {
+        question: "What should I track before a vet visit?",
+        answer:
+          "Track location, itch level, redness, odor, spread speed, and new products or diet changes. Take photos every few days in similar lighting. This record helps your vet compare progression objectively. Better history usually means faster diagnosis.",
+      },
+      {
+        question: "Can over-bathing cause or worsen hair loss?",
+        answer:
+          "Yes, frequent harsh bathing can irritate skin barrier and worsen coat quality in some dogs. This can increase dryness and scratching, which then increases breakage and loss. Use vet-appropriate skin products only. If symptoms persist, medical review is needed.",
+      },
+      {
+        question: "When is dog hair loss urgent?",
+        answer:
+          "Urgent signs include open sores, bleeding, strong skin odor, severe pain, fever signs, or rapid spread with low energy. These patterns can indicate infection or deeper skin disease. Seek same-day veterinary care when these signs appear. Do not wait for home care alone to work.",
+      },
     ],
     internalLinks: [
+      { label: "Action plan: dog losing hair", href: "/blog/dog-losing-hair" },
       { label: "Itchy skin condition guide", href: "/health-conditions/itchy-skin" },
       { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
       { label: "Local vet help", href: "/vets/houston-tx" },
     ],
   },
   {
     slug: "dog-losing-hair",
-    title: "Dog Losing Hair: Causes and What To Do",
-    metaTitle: "Dog Losing Hair? Signs, Causes, and Vet Guidance",
+    title: "Dog Losing Hair: Step-by-Step Action Plan",
+    metaTitle: "Dog Losing Hair? What To Do Step by Step",
     metaDescription:
-      "If your dog is losing hair, learn likely causes, when to worry, and how to support skin health safely.",
+      "Dog losing hair? Follow a clear step-by-step action plan for home care, vet timing, diagnosis, and treatment options.",
     category: "Dogs",
     publishedDate: "2026-04-26",
-    readingTime: "7 min read",
+    readingTime: "9 min read",
     intro:
-      "Dog losing hair can look mild at first, then worsen quickly. This guide helps you understand pattern, triggers, and when to get veterinary support.",
+      "This page is an action guide. It focuses on what to do next if your dog is losing hair. It gives practical steps from first observation to veterinary treatment planning.",
     sections: [
-      { heading: "Quick answer: dog losing hair", paragraphs: ["Common causes include allergy flares, parasites, infection, and hormonal imbalance. Persistent hair loss should be evaluated by a veterinarian."] },
-      { heading: "Common causes", paragraphs: ["Hair loss is a symptom, not one diagnosis."], bullets: ["Seasonal and environmental allergies", "Parasites and flea reactions", "Skin infections", "Endocrine and metabolic causes"] },
-      { heading: "Symptoms to watch", paragraphs: ["Use photos to compare changes weekly."], bullets: ["Patch shape and spread", "Itch intensity", "Skin redness, flakes, or odor", "Energy or appetite changes"] },
-      { heading: "When serious", paragraphs: ["If skin is painful, bleeding, or infected, get same-day care."] },
-      { heading: "What to do now", paragraphs: ["Avoid harsh shampoos and unverified home remedies. Schedule a vet exam and bring a timeline of changes."] },
+      {
+        heading: "Quick answer: dog losing hair",
+        paragraphs: [
+          "Start with structured observation, safe home support, and early veterinary planning. Hair loss can worsen if you delay action. A step-by-step plan prevents random changes that confuse diagnosis.",
+        ],
+      },
+      {
+        heading: "What To Do If Your Dog Is Losing Hair",
+        paragraphs: [
+          "Pause guesswork and create a simple care baseline. Keep diet stable, avoid new skin products, and document coat changes.",
+          "This first step protects skin barrier and gives clearer data to your veterinarian.",
+        ],
+      },
+      {
+        heading: "Step-by-Step Action Plan",
+        paragraphs: ["Use this order to avoid trial-and-error chaos."],
+        bullets: [
+          "Step 1: Photograph affected areas every 2-3 days",
+          "Step 2: Record itch level, odor, and behavior changes",
+          "Step 3: Remove likely irritants (new sprays, harsh shampoos)",
+          "Step 4: Schedule veterinary review if no early improvement",
+          "Step 5: Follow one treatment plan at a time",
+        ],
+      },
+      {
+        heading: "What to do at home",
+        paragraphs: [
+          "Keep skin clean with vet-safe products only. Prevent over-licking where possible. Keep flea prevention current and avoid frequent random diet changes.",
+          "If symptoms intensify, escalate to veterinary care immediately.",
+        ],
+      },
+      {
+        heading: "When Treatment Is Needed",
+        paragraphs: [
+          "Treatment is usually needed if coat loss persists beyond a short period, spreads quickly, or appears with redness, odor, or pain. Home care alone is often not enough in these cases.",
+        ],
+      },
+      {
+        heading: "How Vets Diagnose Hair Loss",
+        paragraphs: [
+          "Veterinarians may use skin exam, history review, parasite checks, cytology, and targeted lab testing. The goal is to identify the root cause before long-term treatment.",
+          "Clear owner notes and photo timelines make this process faster.",
+        ],
+      },
+      {
+        heading: "Treatment options overview",
+        paragraphs: ["Treatment depends on confirmed cause and may include skin therapy, parasite control, infection treatment, diet strategy, or endocrine management."],
+        bullets: [
+          "Allergy-focused plans for recurrent itch patterns",
+          "Antiparasitic protocols when fleas/mites are involved",
+          "Antimicrobial skin plans for infection",
+          "Long-term monitoring for hormone-linked causes",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Action order matters more than guessing a cause on day one."],
+        bullets: [
+          "Track first, treat second",
+          "Use one plan at a time",
+          "Escalate early for pain, odor, or spread",
+          "Vet diagnostics reduce repeated setbacks",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call fast for bleeding skin, severe itch with pain, foul odor, appetite drop, or rapid spread. These signs often need medical treatment, not monitoring alone.",
+        ],
+      },
     ],
     faqs: [
-      { question: "Is shedding the same as hair loss?", answer: "Not always. Normal shedding is more even and seasonal. Patchy bald spots or inflamed skin are different and need evaluation." },
-      { question: "Can parasites cause sudden hair loss?", answer: "Yes. Fleas and mites can trigger intense itch and fast coat damage in some dogs. Parasite control is important." },
-      { question: "How fast should I seek help?", answer: "Seek help early if symptoms persist or worsen over days, especially with redness, odor, or discomfort." },
+      {
+        question: "What is the first thing I should do when my dog is losing hair?",
+        answer:
+          "Start by documenting the pattern with photos and notes before changing many variables. Keep diet and routine stable for a short observation window. Remove obvious irritants such as harsh shampoos or new sprays. Then plan veterinary review if pattern continues.",
+      },
+      {
+        question: "Should I try home treatment before seeing a vet?",
+        answer:
+          "Mild cases can be monitored briefly with safe skin-support habits, but persistent or worsening loss should not be delayed. Home care works best as support, not replacement, for diagnosis. If pain, odor, or redness appears, book care quickly.",
+      },
+      {
+        question: "How long should I monitor before booking a visit?",
+        answer:
+          "Short monitoring can be reasonable for mild stable cases, but not for rapidly spreading or inflamed skin. If no early improvement appears within days, schedule a veterinary exam. Earlier review is safer for dogs with recurring skin history.",
+      },
+      {
+        question: "What tests may my vet run for hair loss?",
+        answer:
+          "Your vet may use skin exam, parasite checks, cytology, and bloodwork depending on pattern. Some dogs also need diet or allergy strategy planning. Testing helps avoid wrong treatment cycles. It is often the fastest route to effective care.",
+      },
+      {
+        question: "Can I switch food right away if my dog is losing hair?",
+        answer:
+          "Avoid frequent random food changes. Sudden switching can complicate symptom tracking and may worsen GI tolerance. If diet is suspected, use a structured vet-guided approach. Controlled changes are more useful than quick guesses.",
+      },
+      {
+        question: "What treatment options are common?",
+        answer:
+          "Treatment depends on cause and may include parasite control, skin infection care, allergy support, or hormonal management. Some dogs need multi-step plans with rechecks. Consistent follow-up improves long-term results.",
+      },
+      {
+        question: "When is dog hair loss an urgent problem?",
+        answer:
+          "Treat as urgent when there is bleeding, severe pain, strong odor, fast spread, or major behavior decline. These signs may indicate active infection or serious inflammation. Same-day veterinary care is the safest step.",
+      },
     ],
     internalLinks: [
+      { label: "Diagnosis guide: hair falling out dog", href: "/blog/hair-falling-out-dog" },
       { label: "Itchy skin condition guide", href: "/health-conditions/itchy-skin" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
       { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
       { label: "Contact Pawbiotics", href: "/contact" },
     ],
