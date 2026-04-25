@@ -26,27 +26,37 @@ const faqs: FAQItem[] = [
   {
     question: "Are homemade diets safe for large dogs?",
     answer:
-      "They can be safe when balanced and monitored carefully. Large and giant breeds usually need tighter calorie and growth tracking than smaller dogs.",
+      "They can be safe when properly balanced and reviewed over time. Large dogs need tighter calorie control, structured monitoring, and regular plan updates as body condition changes.",
   },
   {
-    question: "Why is portion control important for large breeds?",
+    question: "Why do large dogs need different feeding planning?",
     answer:
-      "Large breeds can gain weight quickly when portions are too generous. Slower, controlled adjustments support better long-term body condition and mobility.",
+      "Large-breed dogs can gain or lose body condition gradually without obvious visual change. Their meal planning should include measured portions, growth-safe adjustments, and frequent rechecks.",
   },
   {
-    question: "Do large dogs need different recipe planning?",
+    question: "How does weight gain affect large dogs?",
     answer:
-      "Yes, often. Ingredient balance, calorie density, and feeding frequency may need to be tailored more carefully for larger body size and growth pattern.",
+      "Extra weight often increases load on hips, knees, and spine. Preventing gradual overfeeding is one of the most practical ways to support long-term comfort and mobility.",
   },
   {
-    question: "Can I use one homemade recipe forever?",
+    question: "Why are calcium and phosphorus important in large-breed homemade diets?",
     answer:
-      "Not usually. Most dogs benefit from periodic review and adjustments as activity, age, and body condition change over time.",
+      "Calcium and phosphorus balance matters for bone support, especially in large-breed growth periods. Homemade plans should be reviewed so mineral ratios are not unintentionally off.",
+  },
+  {
+    question: "How often should large dogs eat homemade meals?",
+    answer:
+      "Many adult large dogs do well with two measured meals daily. Puppies and high-needs dogs may require different frequency based on veterinary guidance.",
+  },
+  {
+    question: "How can I monitor body condition at home?",
+    answer:
+      "Check for a visible waist from above, a gentle abdominal tuck from the side, and easy rib feel without pressing hard. Review these signs monthly with weight trend notes.",
   },
   {
     question: "When should I involve a veterinarian?",
     answer:
-      "Before major diet changes and whenever your dog has rapid weight shifts, digestive issues, joint concerns, or chronic health conditions.",
+      "Before major diet changes, and anytime you notice limping, rapid weight shifts, recurring GI symptoms, or low stamina.",
   },
 ];
 
@@ -93,32 +103,107 @@ export default function VetApprovedHomemadeDogFoodRecipesForLargeDogsPage() {
 
       <section className="border-t border-gray-100 py-12">
         <Container className="space-y-5">
-          <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">Meal planning priorities</h2>
-            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-gray-600">
-              <li>Keep portions consistent and measured</li>
-              <li>Use balanced protein/carb/fat ratios from vet-informed templates</li>
-              <li>Track body condition monthly, not just appetite</li>
-            </ul>
-          </article>
-
-          <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-gray-900">Portion adjustment strategy</h2>
-            <p className="mt-3 text-sm leading-7 text-gray-600">
-              Use a conservative starting range, then make small adjustments every 1-2 weeks. For
-              quick planning support, try the{" "}
-              <Link href="/tools/dog-food-calculator" className="font-semibold text-brand-700">
-                dog food calculator
+          <article className="rounded-2xl border border-brand-100 bg-brand-50/50 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
+              Why large dogs need a different feeding strategy
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-gray-700">
+              Large dogs often look stable even when calories drift too high. That is why structured
+              portion measurement, regular weigh-ins, and body condition checks are more important than
+              feeding by appetite alone. For a broader foundation, review the main{" "}
+              <Link href="/blog/vet-approved-homemade-dog-food-recipes" className="font-semibold text-brand-700">
+                homemade dog food recipes
               </Link>{" "}
-              before finalizing with your veterinarian.
+              page first.
             </p>
           </article>
 
+          <section className="grid gap-5 md:grid-cols-2">
+            <article className="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-6 shadow-sm">
+              <h2 className="font-serif text-xl font-semibold text-gray-900">Joint support considerations</h2>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-gray-700">
+                <li>Keep body condition lean to reduce long-term joint load.</li>
+                <li>Avoid frequent high-calorie extras that push weight up slowly.</li>
+                <li>Discuss mobility-support nutrients with your veterinarian when needed.</li>
+              </ul>
+            </article>
+            <article className="rounded-2xl border border-amber-100 bg-amber-50/50 p-6 shadow-sm">
+              <h2 className="font-serif text-xl font-semibold text-gray-900">Calorie and mineral caution</h2>
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-gray-700">
+                <li>Calorie density varies by recipe, even when portions look similar.</li>
+                <li>Calcium/phosphorus imbalance can be a risk in unreviewed homemade plans.</li>
+                <li>Use vet-reviewed balancing steps before long-term feeding.</li>
+              </ul>
+            </article>
+          </section>
+
+          <article className="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Large-breed recipe examples</h2>
+            <div className="mt-3 grid gap-4 md:grid-cols-3">
+              <div className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+                <p className="text-sm font-semibold text-gray-900">Lean turkey + rice + zucchini</p>
+                <p className="mt-2 text-sm leading-6 text-gray-600">
+                  Simple low-irritation base for dogs needing predictable digestion.
+                </p>
+              </div>
+              <div className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+                <p className="text-sm font-semibold text-gray-900">Chicken + sweet potato + green beans</p>
+                <p className="mt-2 text-sm leading-6 text-gray-600">
+                  Practical for measured portions with moderate fiber support.
+                </p>
+              </div>
+              <div className="rounded-xl border border-gray-100 bg-gray-50 p-4">
+                <p className="text-sm font-semibold text-gray-900">Beef + pumpkin + oats (vet-reviewed)</p>
+                <p className="mt-2 text-sm leading-6 text-gray-600">
+                  Example framework when chicken is not ideal for a specific dog.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article className="rounded-2xl border border-sky-100 bg-sky-50/50 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
+              Feeding frequency and monitoring routine
+            </h2>
+            <p className="mt-3 text-sm leading-7 text-gray-700">
+              Most adult large dogs do well on two measured meals daily. Reassess body condition every
+              2 to 4 weeks, track stool quality, and use the{" "}
+              <Link href="/tools/dog-food-calculator" className="font-semibold text-brand-700">
+                dog food calculator
+              </Link>{" "}
+              for estimate checks before discussing updates with your veterinarian. If portions keep
+              drifting, use our{" "}
+              <Link href="/blog/how-to-portion-homemade-dog-food" className="font-semibold text-brand-700">
+                portion homemade dog food
+              </Link>{" "}
+              walkthrough for tighter control.
+            </p>
+          </article>
+
+          <article className="rounded-2xl border border-violet-100 bg-violet-50/50 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Key takeaways</h2>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-gray-700">
+              <li>Large dogs need slower, measured calorie adjustments.</li>
+              <li>Joint health is closely tied to body condition management.</li>
+              <li>Calcium/phosphorus balance should be reviewed in homemade plans.</li>
+            </ul>
+          </article>
+
+          <article className="rounded-2xl border border-orange-100 bg-orange-50/50 p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">Common mistakes</h2>
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-7 text-gray-700">
+              <li>Increasing portions too quickly after high-activity days.</li>
+              <li>Skipping regular body condition checks because appetite seems normal.</li>
+              <li>Using unbalanced recipes long-term without professional review.</li>
+            </ul>
+          </article>
+
           <article className="rounded-2xl border border-rose-200 bg-rose-50 p-6 shadow-sm">
-            <h2 className="font-serif text-2xl font-semibold text-rose-900">Safety reminder</h2>
+            <h2 className="font-serif text-2xl font-semibold text-rose-900">When to call a vet</h2>
             <p className="mt-3 text-sm leading-7 text-rose-900">
-              Educational only. Large-breed nutrition should be personalized with veterinary input,
-              especially during growth or weight changes.
+              Ask your veterinarian if your large dog shows limping, decreased stamina, repeated GI
+              symptoms, or noticeable weight shifts. This article is educational and should not replace
+              individualized veterinary planning.
             </p>
           </article>
         </Container>
@@ -126,6 +211,14 @@ export default function VetApprovedHomemadeDogFoodRecipesForLargeDogsPage() {
 
       <section className="border-t border-gray-100 bg-brand-50/40 py-12">
         <Container>
+          <h2 className="font-serif text-2xl font-semibold text-gray-900">Related guides</h2>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link href="/blog/vet-approved-homemade-dog-food-recipes" className="rounded-full border border-brand-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-300 hover:text-brand-700">Homemade dog food recipes</Link>
+            <Link href="/blog/homemade-chicken-dog-food-recipes-vet-approved" className="rounded-full border border-brand-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-300 hover:text-brand-700">Chicken homemade recipes</Link>
+            <Link href="/blog/how-to-portion-homemade-dog-food" className="rounded-full border border-brand-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-300 hover:text-brand-700">Portion homemade dog food</Link>
+            <Link href="/blog/how-much-homemade-dog-food-should-i-feed-my-dog" className="rounded-full border border-brand-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-300 hover:text-brand-700">How much to feed your dog</Link>
+          </div>
+
           <div className="flex flex-wrap gap-3">
             <Link href="/blog/vet-approved-homemade-dog-food-recipes" className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">Main homemade dog food guide</Link>
             <Link href="/tools/dog-food-calculator" className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:border-brand-200 hover:text-brand-700">Dog food calculator</Link>
