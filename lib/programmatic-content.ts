@@ -1,4 +1,4 @@
-import { ContentSection, FAQItem, QuickAnswer, VetClinicListing, slugToWords } from "@/lib/seo";
+import { ContentSection, FAQItem, QuickAnswer, slugToWords } from "@/lib/seo";
 import { programmaticContentOverrides } from "@/data/programmatic-overrides";
 
 type TopicType = "dog-probiotics" | "cat-health" | "health-condition";
@@ -1053,59 +1053,6 @@ function getDisplayCityName(citySlug: string): string {
   return `${city}, ${state}`;
 }
 
-function getCityAreas(citySlug: string): string[] {
-  const cityAreaMap: Record<string, string[]> = {
-    "houston-tx": ["The Heights", "Midtown", "Katy Area"],
-    "dallas-tx": ["Uptown", "Lakewood", "Oak Lawn"],
-    "austin-tx": ["South Congress", "North Loop", "Round Rock Area"],
-    "miami-fl": ["Brickell", "Coral Gables", "Kendall"],
-    "phoenix-az": ["Arcadia", "Downtown", "North Mountain"],
-  };
-  return cityAreaMap[citySlug] ?? ["Downtown", "North Side", "West Side"];
-}
-
-function buildCityClinicListings(citySlug: string, cityName: string): VetClinicListing[] {
-  const [areaA, areaB, areaC] = getCityAreas(citySlug);
-  const names = [
-    `${cityName.split(",")[0]} Pet Wellness Clinic`,
-    `${cityName.split(",")[0]} Family Animal Hospital`,
-    `${cityName.split(",")[0]} Urgent Vet & Surgery Center`,
-  ];
-
-  return [
-    {
-      name: names[0],
-      area: `${areaA}, ${cityName}`,
-      description:
-        "A friendly veterinary clinic for routine exams, vaccines, and preventive care. Good fit for pet parents searching vet near me with clear communication.",
-      services: ["Wellness exams", "Vaccinations", "Lab tests", "Senior pet checks"],
-      rating: "4.7/5",
-      viewHref: `/vets/${citySlug}`,
-      callHref: "/contact",
-    },
-    {
-      name: names[1],
-      area: `${areaB}, ${cityName}`,
-      description:
-        "Known as an affordable vet option with practical care plans for ongoing needs. This animal hospital style clinic also handles dental and diagnostics.",
-      services: ["Affordable wellness plans", "Dental care", "X-rays", "Skin and ear care"],
-      rating: "4.6/5",
-      viewHref: `/vets/${citySlug}`,
-      callHref: "/contact",
-    },
-    {
-      name: names[2],
-      area: `${areaC}, ${cityName}`,
-      description:
-        "Focused on same-day urgent triage and emergency vet referrals when symptoms escalate. Helpful for cough, injury, vomiting, and breathing concern visits.",
-      services: ["Urgent care", "Emergency stabilization", "Surgery consults", "After-hours guidance"],
-      rating: "4.8/5",
-      viewHref: `/vets/${citySlug}`,
-      callHref: "/contact",
-    },
-  ];
-}
-
 function mergeUniqueSections(baseSections: ContentSection[], overrideSections?: ContentSection[]) {
   if (!overrideSections?.length) return baseSections;
   const merged = [...baseSections];
@@ -1152,7 +1099,6 @@ export function generateVetCityPageContent(citySlug: string): SEOPageData {
   const slug = citySlug.toLowerCase().trim();
   const cityName = getDisplayCityName(slug);
   const cityLower = cityName.toLowerCase();
-  const topClinicListings = buildCityClinicListings(slug, cityName);
   const keywordVariations = [
     `vet near me ${cityLower}`,
     `affordable vet in ${cityLower}`,
@@ -1209,14 +1155,6 @@ export function generateVetCityPageContent(citySlug: string): SEOPageData {
           "Use an affordable vet clinic for preventive care, routine checks, and non-urgent symptoms. Use an emergency vet or animal hospital when your pet has breathing trouble, collapse signs, nonstop vomiting, or severe injury.",
           "Knowing this difference helps avoid delays and supports better outcomes.",
         ],
-      },
-      {
-        title: `Top Veterinary Clinics in ${cityName}`,
-        body: [
-          "Listings are for informational purposes and should be verified directly with each clinic before booking.",
-          "These example summaries are original editorial references to help you compare local options quickly.",
-        ],
-        listings: topClinicListings,
       },
       {
         title: "When to visit a vet",

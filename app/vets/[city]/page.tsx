@@ -9,6 +9,8 @@ import {
 import { programmaticContentOverrides } from "@/data/programmatic-overrides";
 import { generateVetCityMeta } from "@/lib/meta";
 import { normalizeCitySlug, slugToWords } from "@/lib/seo";
+import { getVetCityLabel } from "@/lib/vet-city";
+import LiveVetListings from "@/components/vets/LiveVetListings";
 
 type PageProps = {
   params: Promise<{ city: string }>;
@@ -50,22 +52,25 @@ export default async function VetCityPage({ params }: PageProps) {
   const { city } = await params;
   const citySlug = normalizeCitySlug(decodeURIComponent(city));
   if (!isSupportedCitySlug(citySlug)) notFound();
-  const cityName = slugToWords(citySlug);
+  const cityName = getVetCityLabel(citySlug) ?? slugToWords(citySlug);
   const data = generateVetCityPageContent(citySlug);
 
   return (
-    <SEOPageTemplate
-      {...data}
-      breadcrumbs={[
-        { label: "Home", href: "https://pawbiotics.us/" },
-        { label: "Local Vets", href: "https://pawbiotics.us/" },
-        { label: cityName, href: `https://pawbiotics.us/vets/${data.slug}` },
-      ]}
-      eyebrow="Local Vet Guide"
-      schemaType={data.schemaType}
-      cityName={cityName}
-      pageUrl={`https://pawbiotics.us/vets/${data.slug}`}
-      disclaimer="Listings are for informational purposes and should be verified directly with each clinic before booking."
-    />
+    <>
+      <SEOPageTemplate
+        {...data}
+        breadcrumbs={[
+          { label: "Home", href: "https://pawbiotics.us/" },
+          { label: "Local Vets", href: "https://pawbiotics.us/" },
+          { label: cityName, href: `https://pawbiotics.us/vets/${data.slug}` },
+        ]}
+        eyebrow="Local Vet Guide"
+        schemaType={data.schemaType}
+        cityName={cityName}
+        pageUrl={`https://pawbiotics.us/vets/${data.slug}`}
+        disclaimer="Listings are for informational purposes and should be verified directly with each clinic before booking."
+      />
+      <LiveVetListings citySlug={citySlug} fallbackCityName={cityName} />
+    </>
   );
 }
