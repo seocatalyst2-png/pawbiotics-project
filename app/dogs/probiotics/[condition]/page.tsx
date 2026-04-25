@@ -6,6 +6,8 @@ import {
   generateDogProbioticConditionContent,
   isSupportedDogConditionSlug,
 } from "@/lib/programmatic-content";
+import { programmaticContentOverrides } from "@/data/programmatic-overrides";
+import { generateDogProbioticMeta } from "@/lib/meta";
 
 type PageProps = {
   params: Promise<{ condition: string }>;
@@ -20,19 +22,22 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { condition } = await params;
   const data = generateDogProbioticConditionContent(condition);
+  const override = programmaticContentOverrides.dogProbiotics[data.slug];
+  const meta = generateDogProbioticMeta(data.slug, {
+    manualTitle: override?.metaTitle,
+    manualDescription: override?.metaDescription,
+    canonicalPath: `/dogs/probiotics/${data.slug}`,
+    openGraphTitle: data.title,
+    openGraphType: "article",
+  });
 
   return {
-    title: data.metaTitle,
-    description: data.metaDescription,
+    title: meta.title,
+    description: meta.description,
     alternates: {
-      canonical: `https://pawbiotics.us/dogs/probiotics/${data.slug}`,
+      canonical: meta.canonical,
     },
-    openGraph: {
-      title: data.title,
-      description: data.metaDescription,
-      url: `https://pawbiotics.us/dogs/probiotics/${data.slug}`,
-      type: "article",
-    },
+    openGraph: meta.openGraph,
   };
 }
 

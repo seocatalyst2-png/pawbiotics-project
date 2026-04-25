@@ -6,6 +6,8 @@ import {
   generateVetCityPageContent,
   isSupportedCitySlug,
 } from "@/lib/programmatic-content";
+import { programmaticContentOverrides } from "@/data/programmatic-overrides";
+import { generateVetCityMeta } from "@/lib/meta";
 import { normalizeCitySlug, slugToWords } from "@/lib/seo";
 
 type PageProps = {
@@ -22,19 +24,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { city } = await params;
   const citySlug = normalizeCitySlug(decodeURIComponent(city));
   const data = generateVetCityPageContent(citySlug);
+  const cityParts = data.slug.split("-");
+  const state = cityParts.at(-1)?.toUpperCase() ?? "TX";
+  const cityName = slugToWords(cityParts.slice(0, -1).join("-") || data.slug);
+  const override = programmaticContentOverrides.vets[data.slug];
+  const meta = generateVetCityMeta(cityName, state, {
+    manualTitle: override?.metaTitle,
+    manualDescription: override?.metaDescription,
+    canonicalPath: `/vets/${data.slug}`,
+    openGraphTitle: data.title,
+    openGraphType: "website",
+  });
 
   return {
-    title: data.metaTitle,
-    description: data.metaDescription,
+    title: meta.title,
+    description: meta.description,
     alternates: {
-      canonical: `https://pawbiotics.us/vets/${data.slug}`,
+      canonical: meta.canonical,
     },
-    openGraph: {
-      title: data.title,
-      description: data.metaDescription,
-      url: `https://pawbiotics.us/vets/${data.slug}`,
-      type: "website",
-    },
+    openGraph: meta.openGraph,
   };
 }
 

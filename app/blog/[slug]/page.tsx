@@ -9,6 +9,7 @@ import {
   FAQSchema,
 } from "@/components/seo/Schema";
 import { getBlogPostBySlug, getBlogPostSlugs } from "@/data/blog-posts";
+import { generateBlogMeta } from "@/lib/meta";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -31,20 +32,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
-  const postUrl = `https://pawbiotics.us/blog/${post.slug}`;
+  const meta = generateBlogMeta(post, {
+    canonicalPath: `/blog/${post.slug}`,
+    openGraphTitle: post.title,
+    openGraphType: "article",
+  });
 
   return {
-    title: post.metaTitle,
-    description: post.metaDescription,
+    title: meta.title,
+    description: meta.description,
     alternates: {
-      canonical: postUrl,
+      canonical: meta.canonical,
     },
-    openGraph: {
-      title: post.title,
-      description: post.metaDescription,
-      url: postUrl,
-      type: "article",
-    },
+    openGraph: meta.openGraph,
   };
 }
 
