@@ -353,15 +353,23 @@ export default function DogSpewingYellowPage() {
 
       <section className="py-4">
         <Container>
-          <h2 className="font-serif text-2xl font-semibold text-gray-900">
-            Related Guides About Yellow Dog Vomit
-          </h2>
-          <div className="mt-5 grid gap-4 md:grid-cols-3">
+          <article className="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
+            <h2 className="font-serif text-2xl font-semibold text-gray-900">
+              Related Guides About Yellow Dog Vomit
+            </h2>
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-gray-600">
+              If your dog&apos;s yellow vomit looks different or happens at a specific time, these guides
+              explain the next most common situations.
+            </p>
+            <div className="mt-5 grid gap-4 md:grid-cols-3">
             <Link
               href="/blog/dog-vomiting-yellow-bile"
               className="group block rounded-2xl border border-teal-100 bg-teal-50/50 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-teal-200 hover:shadow-md"
             >
               <h3 className="font-serif text-xl font-semibold text-gray-900 transition group-hover:text-brand-700">
+                <span className="mr-2" aria-hidden>
+                  🟡
+                </span>
                 Dog Vomiting Yellow Bile
               </h3>
               <p className="mt-2 text-sm leading-7 text-gray-700">
@@ -375,6 +383,9 @@ export default function DogSpewingYellowPage() {
               className="group block rounded-2xl border border-amber-100 bg-amber-50/50 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-amber-200 hover:shadow-md"
             >
               <h3 className="font-serif text-xl font-semibold text-gray-900 transition group-hover:text-brand-700">
+                <span className="mr-2" aria-hidden>
+                  🫧
+                </span>
                 Dog Throwing Up Yellow Foam
               </h3>
               <p className="mt-2 text-sm leading-7 text-gray-700">
@@ -388,6 +399,9 @@ export default function DogSpewingYellowPage() {
               className="group block rounded-2xl border border-violet-100 bg-violet-50/50 p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-violet-200 hover:shadow-md"
             >
               <h3 className="font-serif text-xl font-semibold text-gray-900 transition group-hover:text-brand-700">
+                <span className="mr-2" aria-hidden>
+                  🌅
+                </span>
                 Dog Vomiting Yellow in the Morning
               </h3>
               <p className="mt-2 text-sm leading-7 text-gray-700">
@@ -396,7 +410,8 @@ export default function DogSpewingYellowPage() {
               </p>
               <p className="mt-3 text-sm font-semibold text-brand-700">Open guide &rarr;</p>
             </Link>
-          </div>
+            </div>
+          </article>
         </Container>
       </section>
 
