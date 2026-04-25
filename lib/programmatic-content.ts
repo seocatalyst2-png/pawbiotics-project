@@ -875,6 +875,174 @@ const healthConditionProfiles: Record<string, HealthConditionProfile> = {
       },
     ],
   },
+  "urinary-blockage-cats": {
+    slug: "urinary-blockage-cats",
+    label: "Urinary Blockage in Cats",
+    metaTitle: "Urinary Blockage in Cats | Emergency Signs and Fast Action",
+    metaDescription:
+      "Learn urgent signs of urinary blockage in cats, why it is serious, and what pet parents should do immediately.",
+    intro:
+      "Urinary blockage in cats is a high-risk emergency. A blocked cat may try to urinate but produce little or no urine. Fast treatment is critical for safety.",
+    quickQuestion: "Is urinary blockage in cats an emergency?",
+    quickAnswer:
+      "Yes. Urinary blockage can become life-threatening quickly. If your cat strains, cries in the litter box, or cannot pass urine, seek emergency veterinary care now.",
+    causes: [
+      "Urinary crystals or stones",
+      "Urethral plugs and inflammation",
+      "Severe bladder irritation",
+      "Stress-linked lower urinary tract flare patterns",
+    ],
+    symptoms: [
+      "Repeated litter box visits with little output",
+      "Straining or vocalizing while trying to urinate",
+      "Blood-tinged urine",
+      "Lethargy, vomiting, or collapse signs",
+    ],
+    supportiveCare: [
+      "Treat as urgent and seek immediate veterinary care",
+      "Keep the cat calm during transport",
+      "Do not delay with extended home experiments",
+      "Share timeline of urine behavior with the vet team",
+    ],
+    prevention: [
+      "Maintain hydration-focused routines",
+      "Use vet-guided urinary nutrition plans where needed",
+      "Reduce stress in litter and home environment",
+      "Follow recheck plans after any urinary event",
+    ],
+    commonMistakes: [
+      "Assuming repeated straining is only constipation",
+      "Waiting overnight when urine output drops",
+      "Treating severe signs as minor behavior issues",
+    ],
+    whenToCallVet: [
+      "No urine output or very tiny output",
+      "Repeated straining with pain signs",
+      "Vomiting, weakness, or collapse behavior",
+      "Any sudden urinary decline in male cats",
+    ],
+    keyTakeaways: [
+      "Urinary blockage in cats is an emergency, not a watch-and-wait condition.",
+      "No or minimal urine output is a critical warning sign.",
+      "Fast veterinary treatment can save life and reduce complications.",
+    ],
+    faqs: [
+      {
+        question: "How do I know if my cat has a urinary blockage?",
+        answer:
+          "Common warning signs include frequent litter box trips, straining, crying, and very little urine output. Some cats also hide, vomit, or become very weak. These signs can worsen quickly. Seek emergency veterinary care immediately if you suspect blockage.",
+      },
+      {
+        question: "Is urinary blockage more common in male cats?",
+        answer:
+          "Yes, male cats are generally at higher risk because of a narrower urethra. Even partial blockage can progress quickly. Any sudden change in urine output should be treated as urgent. Early intervention is safer than waiting.",
+      },
+      {
+        question: "Can I treat a blocked cat at home first?",
+        answer:
+          "No. A true blockage is an emergency and cannot be safely managed at home. Delays increase risk of severe illness and death. Transport your cat to emergency care as soon as possible. Home remedies are not enough in this situation.",
+      },
+      {
+        question: "What causes urinary blockage in cats?",
+        answer:
+          "Causes can include crystals, stones, urethral plugs, and inflammation in the lower urinary tract. Stress and hydration patterns may contribute in some cats. Because causes vary, veterinary diagnostics are important. Treatment plans must be individualized.",
+      },
+      {
+        question: "Can blockage happen again after treatment?",
+        answer:
+          "Yes, recurrence can happen in some cats without preventive follow-up. Long-term management may include diet planning, hydration support, stress reduction, and routine rechecks. Follow your vet's plan closely. Prevention is ongoing, not one-time.",
+      },
+      {
+        question: "When should I go to emergency care?",
+        answer:
+          "Go immediately if your cat cannot pass urine, strains repeatedly, seems painful, vomits, or becomes weak. Do not wait for symptoms to improve on their own. This is a time-sensitive emergency. Early care saves lives.",
+      },
+    ],
+  },
+  "kidney-failure-cats": {
+    slug: "kidney-failure-cats",
+    label: "Kidney Failure in Cats",
+    metaTitle: "Kidney Failure in Cats | Signs, Stages, and Vet Guidance",
+    metaDescription:
+      "Understand kidney failure signs in cats, when symptoms are serious, and how veterinary care supports quality of life.",
+    intro:
+      "Kidney failure in cats can be acute or chronic. Early signs may look mild at first, like extra thirst or appetite change. Prompt veterinary evaluation helps with safer long-term planning.",
+    quickQuestion: "What are early signs of kidney failure in cats?",
+    quickAnswer:
+      "Early signs can include increased thirst, more urination, appetite drop, weight loss, and lower energy. These signs should be checked early because kidney disease can progress quietly.",
+    causes: [
+      "Age-related chronic kidney disease",
+      "Acute kidney injury from toxins or severe illness",
+      "Infections or inflammatory conditions",
+      "Underlying metabolic and blood pressure factors",
+    ],
+    symptoms: [
+      "Increased drinking and urination",
+      "Weight loss and reduced appetite",
+      "Low energy and poor coat quality",
+      "Vomiting, bad breath, or dehydration in later stages",
+    ],
+    supportiveCare: [
+      "Seek veterinary diagnostics and staging",
+      "Use prescribed kidney-support nutrition plans",
+      "Support hydration and monitor intake",
+      "Follow recheck blood and urine plans",
+    ],
+    prevention: [
+      "Routine wellness labs for senior cats",
+      "Fast response to appetite and hydration changes",
+      "Avoid toxin exposure in the home",
+      "Use structured long-term monitoring with your vet",
+    ],
+    commonMistakes: [
+      "Assuming increased thirst is always normal aging",
+      "Delaying bloodwork when weight drops",
+      "Stopping renal support plans too early",
+    ],
+    whenToCallVet: [
+      "Refusal to eat or drink",
+      "Repeated vomiting or severe lethargy",
+      "Sudden weakness or collapse signs",
+      "Rapid decline in urination or hydration status",
+    ],
+    keyTakeaways: [
+      "Kidney failure signs can be subtle in early stages.",
+      "Early lab testing and staging improve treatment planning.",
+      "Consistent follow-up can support comfort and quality of life.",
+    ],
+    faqs: [
+      {
+        question: "How can I tell if my cat may have kidney failure?",
+        answer:
+          "Common signs include increased thirst, frequent urination, appetite decline, and weight loss. Some cats also become less active and groom less. These changes can progress slowly, so they are easy to miss. A veterinary exam with blood and urine tests is needed for diagnosis.",
+      },
+      {
+        question: "Is kidney failure in cats always fatal right away?",
+        answer:
+          "Not always. Outcomes depend on whether the issue is acute or chronic and how early treatment starts. Many cats can be managed for meaningful periods with proper veterinary care. Fast evaluation gives the best chance for stability. Delayed care reduces options.",
+      },
+      {
+        question: "Can diet really help cats with kidney disease?",
+        answer:
+          "Yes, renal-focused nutrition is a key part of many care plans. Diet changes can support metabolic balance and reduce kidney workload in many cats. Plans should be customized by your veterinarian. Avoid random food changes without guidance.",
+      },
+      {
+        question: "What should I monitor at home?",
+        answer:
+          "Track drinking, urination, appetite, body weight, energy, and vomiting pattern. These trends help your vet adjust treatment earlier. Keep notes weekly so changes are easy to compare. Monitoring improves care quality.",
+      },
+      {
+        question: "When should kidney symptoms be treated as urgent?",
+        answer:
+          "Urgent signs include refusal to eat or drink, repeated vomiting, severe weakness, collapse, or sudden major behavior change. These can signal dangerous progression. Seek veterinary care quickly. Do not wait for spontaneous improvement.",
+      },
+      {
+        question: "Can chronic kidney disease be managed long-term?",
+        answer:
+          "In many cats, yes, with regular veterinary follow-up and consistent home care. Management may include diet, hydration support, and staged monitoring. Progress varies by cat and disease severity. Early and steady care usually improves comfort.",
+      },
+    ],
+  },
 };
 
 export function generateVetCityPageContent(citySlug: string): SEOPageData {
