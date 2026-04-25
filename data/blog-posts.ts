@@ -2106,6 +2106,458 @@ const blogPosts: BlogPost[] = [
       { label: "Contact Pawbiotics", href: "/contact" },
     ],
   },
+  {
+    slug: "how-to-tell-if-my-dog-has-an-ear-infection",
+    title: "How to Tell If My Dog Has an Ear Infection",
+    metaTitle: "How to Tell If My Dog Has an Ear Infection: Signs and Next Steps",
+    metaDescription:
+      "Learn how to tell if your dog has an ear infection, common signs, what to do at home, what to avoid, and when to call a vet.",
+    category: "Dogs",
+    publishedDate: "2026-04-27",
+    readingTime: "11 min read",
+    intro:
+      "If your dog keeps shaking their head or scratching one ear, an ear problem may be starting. This guide helps you spot common signs early and know when home monitoring is not enough.",
+    sections: [
+      {
+        heading: "Quick answer: how to tell if my dog has an ear infection",
+        paragraphs: [
+          "Common clues include repeated head shaking, ear scratching, bad smell from the ear, redness, and discomfort when the ear is touched. Some dogs also show dark discharge or seem less playful.",
+        ],
+      },
+      {
+        heading: "Most common signs pet parents notice first",
+        paragraphs: [
+          "Many dogs show behavior changes before owners see clear discharge. Watching routine habits can help you act sooner.",
+        ],
+        bullets: [
+          "Frequent head shaking",
+          "Pawing or rubbing one ear",
+          "Tilting head to one side",
+          "Pulling away when ear is touched",
+        ],
+      },
+      {
+        heading: "Ear smell, redness, scratching, and head shaking",
+        paragraphs: [
+          "A sour or strong odor can be an early warning sign. Red skin inside the ear flap, moisture, and repeated scratching often appear together.",
+          "Head shaking that repeats several times a day should not be ignored, especially if one side is worse.",
+        ],
+      },
+      {
+        heading: "Why ear infections happen",
+        paragraphs: [
+          "Ear infections often happen when the ear canal stays warm and moist, or when irritation from allergies or wax buildup is present.",
+        ],
+        bullets: [
+          "Allergy-related inflammation",
+          "Moisture after bathing or swimming",
+          "Wax buildup and poor airflow",
+          "Underlying skin conditions",
+        ],
+      },
+      {
+        heading: "Real-world example: after-bath flare",
+        paragraphs: [
+          "A dog may seem normal after a bath, then start head shaking the next day. If moisture is trapped and irritation starts, symptoms can grow quickly over 24 to 48 hours.",
+          "Early cleaning with the wrong product can make irritation worse, so product choice matters.",
+        ],
+      },
+      {
+        heading: "What to do at home",
+        paragraphs: [
+          "Keep your dog calm and prevent heavy scratching when possible. Gently observe the outer ear, but avoid deep cleaning tools.",
+          "If signs stay mild, book a regular vet visit soon. If signs worsen quickly, move to urgent care.",
+        ],
+        bullets: [
+          "Track symptoms by day with photos and notes",
+          "Keep ears dry after outdoor play or bathing",
+          "Use only vet-approved ear products",
+          "Avoid adding multiple new treatments at once",
+        ],
+      },
+      {
+        heading: "What not to do",
+        paragraphs: [
+          "Home mistakes are common and can delay recovery or hide serious problems.",
+        ],
+        bullets: [
+          "Do not use cotton swabs deep inside the ear canal",
+          "Do not use human ear drops without veterinary advice",
+          "Do not ignore bad smell plus pain signs",
+          "Do not keep repeating random over-the-counter products",
+        ],
+      },
+      {
+        heading: "Practical checklist before a vet visit",
+        paragraphs: ["Bring this checklist to make diagnosis faster and clearer."],
+        bullets: [
+          "Which ear is affected (left, right, or both)",
+          "How often head shaking happens each day",
+          "Whether odor or discharge is present",
+          "Recent swimming, baths, or grooming events",
+          "Current diet, allergy history, and skin symptoms",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call your vet quickly for severe pain, swelling, bleeding, thick discharge, balance trouble, or sudden behavior decline. These signs may need fast treatment and should not be managed at home alone.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Early pattern recognition can prevent deeper ear problems."],
+        bullets: [
+          "Head shaking plus odor is a strong warning combo",
+          "Use only pet-safe, vet-guided ear care",
+          "Avoid deep ear cleaning tools at home",
+          "Escalate quickly for pain, discharge, or balance changes",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can my dog have an ear infection without discharge?",
+        answer:
+          "Yes. Some dogs show early signs like scratching, odor, and head shaking before discharge is obvious. Behavior changes can appear first. If these signs persist, schedule a veterinary ear check. Early treatment is usually easier than late treatment.",
+      },
+      {
+        question: "Is a bad ear smell always an infection?",
+        answer:
+          "A bad smell is a warning sign, but not a full diagnosis by itself. It may come from yeast overgrowth, bacteria, wax buildup, or inflammation. Your vet can identify the cause with an ear exam and sample testing. Avoid guessing treatment from odor alone.",
+      },
+      {
+        question: "Can I clean my dog's ear at home if it looks red?",
+        answer:
+          "Use caution. If the ear is painful, very red, or has discharge, home cleaning may irritate it more. Gentle outer-ear wiping can be okay, but deep cleaning should wait for veterinary advice. Correct product and technique matter.",
+      },
+      {
+        question: "What if my dog keeps shaking their head after ear cleaning?",
+        answer:
+          "Frequent shaking after cleaning may mean irritation is still active or product choice is not suitable. Stop repeated cleaning and monitor for worsening signs like pain or discharge. Contact your vet if symptoms continue. Persistent shaking deserves medical review.",
+      },
+      {
+        question: "Can allergies cause repeat ear infections in dogs?",
+        answer:
+          "Yes, allergies are a common background trigger for recurring ear problems in many dogs. If infections keep returning, your dog may need a broader skin and allergy plan. Treating only the ear each time may not solve the root issue.",
+      },
+      {
+        question: "When should ear symptoms be treated as urgent?",
+        answer:
+          "Seek urgent care for severe pain, swelling, bleeding, head tilt with balance issues, or sudden distress. These signs may indicate deeper ear involvement. Fast treatment helps reduce complications and discomfort.",
+      },
+      {
+        question: "Can swimming increase ear infection risk?",
+        answer:
+          "Yes. Moisture trapped in the ear canal can increase irritation and microbial growth in some dogs. Drying ears gently and using vet-approved prevention plans may reduce risk. If your dog is a frequent swimmer, discuss routine ear care with your vet.",
+      },
+    ],
+    internalLinks: [
+      { label: "Pet health conditions", href: "/health-conditions" },
+      { label: "Itchy skin condition guide", href: "/health-conditions/itchy-skin" },
+      { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Dog health guides", href: "/dogs" },
+    ],
+  },
+  {
+    slug: "cat-not-drinking-water",
+    title: "Cat Not Drinking Water: What It Means and What To Do",
+    metaTitle: "Cat Not Drinking Water: Hydration Signs, Tips, and Vet Red Flags",
+    metaDescription:
+      "Cat not drinking water? Learn common reasons, dehydration signs, wet food hydration tips, home steps, and when to call a vet.",
+    category: "Cats",
+    publishedDate: "2026-04-27",
+    readingTime: "11 min read",
+    intro:
+      "Cats naturally drink less than dogs, so hydration changes can be easy to miss. This guide helps you spot low water intake early and take practical, safe next steps.",
+    sections: [
+      {
+        heading: "Quick answer: cat not drinking water",
+        paragraphs: [
+          "A cat may drink less because of stress, food changes, bowl preferences, or illness. If low intake continues, dehydration risk rises and veterinary review is important.",
+        ],
+      },
+      {
+        heading: "Why cats stop drinking water",
+        paragraphs: [
+          "Low water intake is often multi-factor. Environment and health can both play a role.",
+        ],
+        bullets: [
+          "Stress from routine or home changes",
+          "Dislike of bowl location or bowl type",
+          "Preference for moving water",
+          "Pain, nausea, or systemic illness",
+        ],
+      },
+      {
+        heading: "Dehydration signs to watch",
+        paragraphs: [
+          "Early signs can be subtle. Watching behavior and litter habits is often more useful than one snapshot.",
+        ],
+        bullets: [
+          "Dry gums or sticky mouth feel",
+          "Low energy or more hiding behavior",
+          "Reduced urine output in litter box",
+          "Reduced appetite with low drinking",
+        ],
+      },
+      {
+        heading: "Wet food and hydration tips that help",
+        paragraphs: [
+          "Many cats take in more moisture through food than from bowls. This can be a practical first step for mild low-intake patterns.",
+        ],
+        bullets: [
+          "Offer wet food as part of daily meals",
+          "Add a small amount of water to wet food if tolerated",
+          "Use multiple clean water stations",
+          "Try a quiet water fountain for cats that prefer flow",
+        ],
+      },
+      {
+        heading: "Real-world example: bowl aversion vs illness",
+        paragraphs: [
+          "Some cats stop drinking from a bowl near the litter box but drink normally after bowl placement changes. Others keep avoiding water even with bowl changes, which can suggest a medical reason.",
+          "If practical fixes fail quickly, medical review is the safer path.",
+        ],
+      },
+      {
+        heading: "What to do at home",
+        paragraphs: [
+          "Track how much your cat drinks over 24 hours and note appetite, urine output, and behavior. Use simple adjustments one at a time so you can see what helps.",
+        ],
+        bullets: [
+          "Refresh water frequently",
+          "Move bowls away from loud areas",
+          "Offer separate bowls in multiple rooms",
+          "Keep a short daily hydration log",
+        ],
+      },
+      {
+        heading: "When it is serious",
+        paragraphs: [
+          "Low water intake becomes more serious when it appears with vomiting, severe lethargy, no urine output, or ongoing appetite refusal. These signs may indicate a condition that needs immediate care.",
+        ],
+      },
+      {
+        heading: "Practical hydration checklist",
+        paragraphs: ["Use this quick checklist before deciding your next step."],
+        bullets: [
+          "Drinking less for more than a short window",
+          "Urine output clearly reduced",
+          "Wet food intake also dropping",
+          "Energy lower than normal",
+          "No improvement after simple bowl/environment changes",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call your vet promptly if your cat is not drinking and also shows vomiting, weakness, no urine, or very low appetite. These signs can worsen quickly, so early care is safer.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Small hydration changes matter in cats and should be tracked early."],
+        bullets: [
+          "Low water intake has both behavior and medical causes",
+          "Wet food can help hydration in many cats",
+          "Track drinking, appetite, and urine together",
+          "Escalate quickly if red flags appear",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is it normal for cats to drink very little water?",
+        answer:
+          "Cats may drink less than dogs, especially when eating wet food. But a clear drop from your cat's normal pattern should still be watched. If low intake continues with low appetite or behavior change, veterinary guidance is recommended.",
+      },
+      {
+        question: "How can I encourage my cat to drink more water?",
+        answer:
+          "Try multiple bowl locations, fresh water changes, and a quiet fountain if your cat likes moving water. Some cats prefer glass or ceramic bowls over plastic. Wet food can also increase moisture intake. Use one change at a time and track response.",
+      },
+      {
+        question: "Can stress make a cat stop drinking?",
+        answer:
+          "Yes. Home changes, noise, travel, or new pets can reduce drinking in sensitive cats. If stress seems likely, reduce environmental pressure and monitor closely. Persistent low intake still needs medical review to rule out illness.",
+      },
+      {
+        question: "How do I check for dehydration at home?",
+        answer:
+          "Look for dry gums, lower energy, reduced urine output, and appetite decline. These signs are useful clues but do not replace a veterinary exam. If several signs appear together, contact your vet quickly.",
+      },
+      {
+        question: "Should I force water with a syringe?",
+        answer:
+          "Do not force fluids unless your veterinarian has given clear instructions. Forced water can stress the cat and may create aspiration risk in some situations. Safer first steps are wet food support and prompt veterinary advice.",
+      },
+      {
+        question: "When is low water intake an emergency?",
+        answer:
+          "Treat it as urgent when your cat is not drinking and also has vomiting, severe lethargy, collapse signs, or no urine output. These combinations can become dangerous quickly. Seek urgent veterinary care.",
+      },
+      {
+        question: "Could kidney disease cause low water intake?",
+        answer:
+          "Kidney disease more often causes increased drinking, but every cat can present differently depending on stage and other conditions. Any persistent hydration change should be checked medically. Your vet may run urine and blood tests to identify causes.",
+      },
+    ],
+    internalLinks: [
+      { label: "Pet health conditions", href: "/health-conditions" },
+      { label: "Kidney failure in cats guide", href: "/health-conditions/kidney-failure-cats" },
+      { label: "Cat health guides", href: "/cats" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+    ],
+  },
+  {
+    slug: "signs-of-kidney-failure-in-cats",
+    title: "Signs of Kidney Failure in Cats: Early and Advanced Clues",
+    metaTitle: "Signs of Kidney Failure in Cats: Early Signs, Urgent Symptoms, and Vet Checks",
+    metaDescription:
+      "Learn the early and advanced signs of kidney failure in cats, hydration and appetite changes, urgent warning signs, and what vets may check.",
+    category: "Cats",
+    publishedDate: "2026-04-27",
+    readingTime: "12 min read",
+    intro:
+      "Kidney disease in cats can start with subtle signs. This guide uses cautious, simple language to help you notice patterns early and know when urgent veterinary care is needed.",
+    sections: [
+      {
+        heading: "Quick answer: signs of kidney failure in cats",
+        paragraphs: [
+          "Common signs include drinking and urination changes, weight loss, appetite decline, low energy, and vomiting. Some cats show subtle early changes, while others worsen quickly.",
+        ],
+      },
+      {
+        heading: "Important safety note",
+        paragraphs: [
+          "This page is educational and cannot diagnose kidney disease. If your cat looks unwell, seek veterinary care quickly. Early testing improves decision-making and support options.",
+        ],
+      },
+      {
+        heading: "Early signs to watch",
+        paragraphs: [
+          "Early signs are often mild and easy to miss in busy routines.",
+        ],
+        bullets: [
+          "Drinking more or less than normal pattern",
+          "Subtle appetite decline",
+          "Slight weight loss over weeks",
+          "Lower play or social activity",
+        ],
+      },
+      {
+        heading: "Advanced signs that need fast attention",
+        paragraphs: [
+          "As disease progresses, signs may become more obvious and frequent.",
+        ],
+        bullets: [
+          "Persistent vomiting or nausea signs",
+          "Marked lethargy and weakness",
+          "Noticeable muscle and body weight loss",
+          "Poor coat quality and dehydration signs",
+        ],
+      },
+      {
+        heading: "Drinking and urination changes",
+        paragraphs: [
+          "Many cats with kidney issues show increased thirst and larger urine clumps. Some severe or mixed presentations may show reduced intake when the cat feels very unwell.",
+          "Any persistent shift in water and litter pattern should be logged and discussed with your vet.",
+        ],
+      },
+      {
+        heading: "Weight loss and appetite changes",
+        paragraphs: [
+          "Gradual weight loss, pickier eating, and reduced meal completion can appear early. In later stages, appetite loss may become severe and affect hydration and energy quickly.",
+        ],
+      },
+      {
+        heading: "Real-world example: subtle pattern over one month",
+        paragraphs: [
+          "An owner may first notice bigger litter clumps, then slower eating and mild weight drop. Because signs are gradual, many cats are presented late.",
+          "A simple weekly log can help owners and vets identify progression sooner.",
+        ],
+      },
+      {
+        heading: "What vets may check",
+        paragraphs: [
+          "Veterinarians often use exam findings, bloodwork, urinalysis, blood pressure checks, and trend history to assess kidney function and stage concerns.",
+          "Testing supports safer treatment planning and realistic home-care goals.",
+        ],
+      },
+      {
+        heading: "What to do next at home while arranging care",
+        paragraphs: [
+          "Keep fresh water available, offer familiar food, and reduce stress. Do not give human medications or supplements unless prescribed for your cat.",
+          "Prepare notes on appetite, drinking, urination, weight trend, and vomiting frequency.",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call urgently for repeated vomiting, severe weakness, no eating, no urine, collapse signs, or signs of dehydration. These can become emergencies and need prompt medical care.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Kidney disease signs can be slow, but action should be early."],
+        bullets: [
+          "Track drinking, urination, appetite, and weight together",
+          "Do not wait for severe signs before testing",
+          "Use veterinary diagnostics for clear direction",
+          "Escalate quickly when urgent symptoms appear",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What is the earliest sign of kidney failure in cats?",
+        answer:
+          "There is no single early sign for every cat, but many owners first notice water and litter box changes. Mild appetite shifts and small weight loss can also appear early. Because signs overlap with other illnesses, veterinary testing is needed for confirmation.",
+      },
+      {
+        question: "Do all cats with kidney disease drink more water?",
+        answer:
+          "Many do, but not all patterns look the same in every stage. Some cats may seem to drink less when nausea or weakness becomes severe. Any sustained hydration change should be discussed with your veterinarian promptly.",
+      },
+      {
+        question: "Can kidney failure cause weight loss even if my cat still eats?",
+        answer:
+          "Yes, this can happen in some cats as disease progresses. Cats may eat but still lose body condition over time. Weight trends are important and should be tracked weekly or monthly. Share this data with your vet.",
+      },
+      {
+        question: "What tests do vets usually run for suspected kidney issues?",
+        answer:
+          "Vets may check blood values, urine concentration, blood pressure, and clinical history. These tests help determine severity and guide safe treatment planning. Follow-up trends are often as important as one test date.",
+      },
+      {
+        question: "Is kidney failure in cats always an emergency?",
+        answer:
+          "Not every case presents as an emergency, especially in earlier chronic stages. But worsening appetite, repeated vomiting, severe lethargy, or dehydration signs can become urgent quickly. If your cat looks unwell, seek prompt veterinary advice.",
+      },
+      {
+        question: "What can I do at home while waiting for an appointment?",
+        answer:
+          "Keep your cat calm, maintain easy access to water, and offer familiar food in small portions. Track hydration, urination, appetite, and behavior changes. Avoid starting unapproved medications or supplements before veterinary guidance.",
+      },
+      {
+        question: "Where can I read a broader kidney care guide?",
+        answer:
+          "Use Pawbiotics' kidney condition page for a broader overview of causes, care planning, and vet decision points. You can find it at the kidney health condition route and use it with your veterinarian's guidance.",
+      },
+    ],
+    internalLinks: [
+      { label: "Kidney failure condition page", href: "/health-conditions/kidney-failure-cats" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water" },
+      { label: "Cat health guides", href: "/cats" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
