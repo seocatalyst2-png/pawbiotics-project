@@ -5107,6 +5107,1033 @@ const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "what-injections-do-cats-need",
+    title: "What Injections Do Cats Need?",
+    metaTitle: "What Injections Do Cats Need? Core and Non-Core Vaccine Guide",
+    metaDescription:
+      "Learn what injections cats need, including FVRCP and rabies, plus optional vaccines and kitten vs adult schedule basics.",
+    category: "Cats",
+    publishedDate: "2026-04-27",
+    readingTime: "11 min read",
+    intro:
+      "Cat vaccine plans can feel confusing at first. This guide explains core shots, optional shots, and how schedules differ for kittens and adult cats.",
+    sections: [
+      {
+        heading: "Quick answer: what injections do cats need?",
+        paragraphs: [
+          "Most cats need core vaccines, usually FVRCP and rabies, based on age and local guidance. Some cats also need non-core vaccines depending on lifestyle and risk.",
+        ],
+      },
+      {
+        heading: "Core cat vaccines in simple terms",
+        paragraphs: [
+          "Core means vaccines usually recommended for most cats. These are considered the foundation of preventive care.",
+        ],
+        bullets: [
+          "FVRCP: common upper-respiratory and panleukopenia protection",
+          "Rabies: widely required by law in many areas",
+          "Timing depends on age, health status, and prior records",
+        ],
+      },
+      {
+        heading: "FVRCP and rabies basics",
+        paragraphs: [
+          "FVRCP is usually started early in life and then boosted on schedule. Rabies timing depends on local regulations and your veterinarian's plan.",
+          "For detailed FVRCP explanation, see [fvrcp meaning](/blog/fvrcp-meaning).",
+        ],
+      },
+      {
+        heading: "Optional or non-core vaccines",
+        paragraphs: [
+          "Some vaccines are used for cats with higher exposure risk, such as outdoor cats or multi-cat environments.",
+        ],
+        bullets: [
+          "Lifestyle and exposure history guide decisions",
+          "Indoor-only vs outdoor access can change recommendations",
+          "Your vet adjusts plan based on local disease patterns",
+        ],
+      },
+      {
+        heading: "Kitten vs adult schedule differences",
+        paragraphs: [
+          "Kittens often need a series of visits, while adults usually follow booster intervals based on previous history. Missed records may require a restart plan.",
+        ],
+      },
+      {
+        heading: "Real-world example: rescued adult with unknown records",
+        paragraphs: [
+          "A rescued adult cat may arrive with no documented vaccine history. In this case, your vet often creates a safe catch-up plan instead of guessing prior protection.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these vaccine planning mistakes."],
+        bullets: [
+          "Assuming indoor cats never need vaccine review",
+          "Skipping boosters because cat looks healthy",
+          "Using internet schedules instead of vet schedule",
+          "Forgetting to keep vaccine records organized",
+        ],
+      },
+      {
+        heading: "Practical checklist for vaccine visit",
+        paragraphs: ["Bring this checklist to your appointment."],
+        bullets: [
+          "Current vaccine records or adoption paperwork",
+          "Indoor/outdoor lifestyle details",
+          "Travel or boarding plans",
+          "Current medications and health history",
+          "Questions about booster timing",
+        ],
+      },
+      {
+        heading: "When to ask your vet",
+        paragraphs: [
+          "Ask your vet whenever schedule timing is unclear, records are missing, or your cat's lifestyle changes. Personalized plans are safer than generic timelines.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Core vaccines are the base, and non-core choices depend on risk."],
+        bullets: [
+          "FVRCP and rabies are central in most plans",
+          "Lifestyle drives non-core decisions",
+          "Kitten and adult schedules are not the same",
+          "Use your veterinarian to personalize timing",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Do indoor cats still need vaccines?",
+        answer:
+          "Many indoor cats still need core vaccine planning because risk is not always zero. Household changes, emergency exposures, and legal requirements can still apply. Your vet can tailor timing based on your cat's real lifestyle.",
+      },
+      {
+        question: "What is the most important shot for kittens?",
+        answer:
+          "Core series vaccines are usually the main priority in kittens, including FVRCP and rabies timing based on local guidance. Kittens need multiple visits, not one shot only. Your veterinarian sets the safest sequence.",
+      },
+      {
+        question: "Can I delay cat vaccines by a few months?",
+        answer:
+          "Delays can create gaps in protection, especially in kittens or cats with uncertain records. If delay happens, contact your vet for a catch-up plan rather than guessing next steps. Structured timing is important.",
+      },
+      {
+        question: "Are non-core vaccines always needed?",
+        answer:
+          "No. Non-core vaccines are usually based on exposure risk, environment, and lifestyle. Some cats need them and others do not. A risk-based plan with your vet avoids over- or under-vaccinating.",
+      },
+      {
+        question: "What if I adopted a cat with no records?",
+        answer:
+          "This is common. Your veterinarian can build a practical restart or catch-up schedule based on age and health. Bring all available adoption notes to make planning easier.",
+      },
+      {
+        question: "How often do adult cats need boosters?",
+        answer:
+          "Booster timing varies by vaccine type, age, and risk profile. There is no single schedule for all adult cats. Review timing at each wellness visit.",
+      },
+      {
+        question: "When should I call the vet after vaccination?",
+        answer:
+          "Call your vet if you notice unusual weakness, repeated vomiting, breathing concerns, facial swelling, or symptoms that worry you. Your clinic can guide what is expected and what needs recheck.",
+      },
+    ],
+    internalLinks: [
+      { label: "FVRCP meaning", href: "/blog/fvrcp-meaning" },
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot" },
+      { label: "Cat cold symptoms", href: "/blog/cat-cold-symptoms" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Immunity condition guide", href: "/health-conditions/immunity" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      { label: "FVRCP meaning", href: "/blog/fvrcp-meaning", description: "Full breakdown of what FVRCP means." },
+      { label: "Cat cold symptoms", href: "/blog/cat-cold-symptoms", description: "Common respiratory signs in cats." },
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot", description: "Track sneezing severity and triggers." },
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water", description: "Hydration support and warning signs." },
+    ],
+  },
+  {
+    slug: "fvrcp-meaning",
+    title: "FVRCP Meaning: What It Stands For and Why It Matters",
+    metaTitle: "FVRCP Meaning: What It Protects Against and Vaccine Basics",
+    metaDescription:
+      "Understand FVRCP meaning, what it protects against, schedule basics, and when to talk to your vet about vaccine planning.",
+    category: "Cats",
+    publishedDate: "2026-04-27",
+    readingTime: "10 min read",
+    intro:
+      "FVRCP is one of the most common cat vaccines, but the letters are not always clear to pet parents. This guide explains what it means and how it fits into routine cat care.",
+    sections: [
+      {
+        heading: "Quick answer: FVRCP meaning",
+        paragraphs: [
+          "FVRCP is a combination cat vaccine. It is commonly used to protect against several serious feline infectious diseases, especially in kitten and preventive care plans.",
+        ],
+      },
+      {
+        heading: "What FVRCP stands for",
+        paragraphs: [
+          "The letters refer to major disease groups covered by this combination vaccine. Your vet explains exact coverage and timing based on your cat's age and risk.",
+        ],
+      },
+      {
+        heading: "What it helps protect against",
+        paragraphs: [
+          "FVRCP supports prevention against common and potentially severe feline viral risks seen in many practice settings.",
+        ],
+      },
+      {
+        heading: "Why cats need it",
+        paragraphs: [
+          "Even lower-risk cats may still benefit from a core vaccine foundation. Exposure can happen through new pets, visitors, travel, or rescue situations.",
+          "For full vaccine overview, see [what injections do cats need](/blog/what-injections-do-cats-need).",
+        ],
+      },
+      {
+        heading: "Schedule basics",
+        paragraphs: [
+          "Kittens often receive a series, while adults follow booster timing based on prior records and veterinary guidance.",
+        ],
+      },
+      {
+        heading: "Real-world example: indoor kitten with early sneezing",
+        paragraphs: [
+          "Some indoor kittens still develop respiratory signs despite low outdoor exposure. This is one reason core vaccine planning is discussed early.",
+        ],
+      },
+      {
+        heading: "Side effects and vet guidance",
+        paragraphs: [
+          "Most cats do well after vaccination. If you notice concerning signs, contact your veterinary team for advice and next steps.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these common vaccine misunderstandings."],
+        bullets: [
+          "Thinking one vaccine visit completes all needs",
+          "Ignoring booster timing",
+          "Skipping records after moving clinics",
+          "Using online timing only without vet confirmation",
+        ],
+      },
+      {
+        heading: "Practical checklist for FVRCP discussion",
+        paragraphs: ["Bring this checklist to your next visit."],
+        bullets: [
+          "Current vaccine dates",
+          "Cat age and lifestyle details",
+          "Any recent respiratory symptoms",
+          "Travel or boarding plans",
+          "Questions about booster intervals",
+        ],
+      },
+      {
+        heading: "When to ask your vet",
+        paragraphs: [
+          "Ask when records are unclear, if shots were delayed, or if your cat's risk profile changed. Personalized schedules are best.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["FVRCP is a core part of many cat prevention plans."],
+        bullets: [
+          "FVRCP is a combination vaccine",
+          "Schedules differ for kittens and adults",
+          "Booster timing matters",
+          "Use your vet for risk-based planning",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What does FVRCP stand for exactly?",
+        answer:
+          "FVRCP refers to a multi-disease feline vaccine grouping commonly used in preventive care. Your veterinarian can explain each component in plain terms and how it applies to your cat's age and lifestyle.",
+      },
+      {
+        question: "Is FVRCP required for indoor cats?",
+        answer:
+          "Requirements vary, but many indoor cats are still advised to have core vaccine coverage. Risk can still exist through household and incidental exposures. Discuss your cat's profile with your vet.",
+      },
+      {
+        question: "How often is FVRCP given?",
+        answer:
+          "Timing depends on whether your cat is a kitten, adult, or has unknown records. Kittens often need a series, while adults follow booster plans. Your clinic sets the schedule.",
+      },
+      {
+        question: "Can FVRCP be delayed if my cat missed an appointment?",
+        answer:
+          "Yes, appointments can be missed, but your cat may need a catch-up plan. Contact your vet for the safest restart timing rather than guessing.",
+      },
+      {
+        question: "What side effects should I watch for?",
+        answer:
+          "Mild short-term changes can occur in some cats, but concerning signs should be reported quickly. Your vet can tell you what is expected and when recheck is needed.",
+      },
+      {
+        question: "Should sick cats get FVRCP on schedule?",
+        answer:
+          "This depends on current health and exam findings. If your cat is unwell, your veterinarian may adjust timing. Never self-decide vaccine timing during illness.",
+      },
+      {
+        question: "Where can I learn about full cat vaccine planning?",
+        answer:
+          "You can use the full planning guide at [what injections do cats need](/blog/what-injections-do-cats-need) and discuss details with your veterinary clinic.",
+      },
+    ],
+    internalLinks: [
+      { label: "What injections do cats need?", href: "/blog/what-injections-do-cats-need" },
+      { label: "Cat cold symptoms", href: "/blog/cat-cold-symptoms" },
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Immunity condition guide", href: "/health-conditions/immunity" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      { label: "What injections do cats need?", href: "/blog/what-injections-do-cats-need", description: "Core and non-core vaccine planning overview." },
+      { label: "Cat cold symptoms", href: "/blog/cat-cold-symptoms", description: "Respiratory symptom awareness and care steps." },
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot", description: "Sneezing trigger and severity guide." },
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water", description: "Hydration monitoring during illness." },
+    ],
+  },
+  {
+    slug: "puppy-vaccination-schedule-chart",
+    title: "Puppy Vaccination Schedule Chart: Week-by-Week Basics",
+    metaTitle: "Puppy Vaccination Schedule Chart: 6-8, 10-12, 14-16 Weeks",
+    metaDescription:
+      "See a simple puppy vaccination schedule chart with age windows, booster basics, and why final timing may vary by vet.",
+    category: "Dogs",
+    publishedDate: "2026-04-27",
+    readingTime: "11 min read",
+    intro:
+      "Puppy vaccine timing can feel overwhelming. This guide gives a simple week-by-week framework and explains why your veterinarian may adjust dates.",
+    sections: [
+      {
+        heading: "Quick answer: puppy vaccination schedule chart",
+        paragraphs: [
+          "Many puppies start vaccines around 6-8 weeks, continue around 10-12 weeks and 14-16 weeks, then move to booster planning. Your vet confirms exact timing based on risk and history.",
+        ],
+      },
+      {
+        heading: "Safety note",
+        paragraphs: [
+          "This chart is educational, not a replacement for veterinary scheduling. Your puppy's plan may differ based on local risk and health status.",
+        ],
+      },
+      {
+        heading: "6-8 weeks window",
+        paragraphs: [
+          "Early visits often start core vaccine planning and baseline wellness checks.",
+        ],
+      },
+      {
+        heading: "10-12 weeks window",
+        paragraphs: [
+          "This stage commonly continues the series and confirms how the puppy tolerated prior visits.",
+        ],
+      },
+      {
+        heading: "14-16 weeks window",
+        paragraphs: [
+          "Later puppy-stage doses support stronger schedule completion before broader social exposure.",
+        ],
+      },
+      {
+        heading: "Booster basics after puppy stage",
+        paragraphs: [
+          "After early series completion, booster timing is reviewed at follow-up wellness visits.",
+        ],
+      },
+      {
+        heading: "Real-world example: rescue puppy with unknown history",
+        paragraphs: [
+          "Rescue puppies may arrive with incomplete records. In this situation, vets usually create a practical catch-up schedule instead of guessing prior protection.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these schedule mistakes."],
+        bullets: [
+          "Skipping one visit and not rescheduling quickly",
+          "Assuming all puppies use one fixed timeline",
+          "Mixing internet timelines with no vet review",
+          "Ignoring booster reminders",
+        ],
+      },
+      {
+        heading: "Practical checklist for each vaccine visit",
+        paragraphs: ["Use this checklist before appointments."],
+        bullets: [
+          "Bring current vaccine record",
+          "Note any recent illness signs",
+          "Track appetite and stool changes",
+          "List travel/daycare plans",
+          "Ask about next due date before leaving",
+        ],
+      },
+      {
+        heading: "When to call your vet",
+        paragraphs: [
+          "Call your clinic if scheduling windows were missed, records are unclear, or your puppy shows concerning signs after a visit. Your vet will guide safe next steps.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["A clear timeline plus vet adjustments gives the best plan."],
+        bullets: [
+          "Use week windows as guideposts",
+          "Expect schedule personalization",
+          "Keep records organized",
+          "Stay consistent with boosters",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Do all puppies follow the same vaccine chart?",
+        answer:
+          "No. Most puppies follow similar age windows, but exact timing can vary by local risk, prior records, and health status. Your vet decides the safest schedule for your puppy.",
+      },
+      {
+        question: "What happens if my puppy misses a vaccine visit?",
+        answer:
+          "Missed visits are common and can usually be corrected with a catch-up plan. Contact your vet quickly rather than waiting for the next routine check.",
+      },
+      {
+        question: "Why are multiple puppy visits needed?",
+        answer:
+          "Early-life immunity timing is one reason schedules are spread across visits. Multiple visits help build and verify coverage safely over time.",
+      },
+      {
+        question: "When do boosters start after puppy shots?",
+        answer:
+          "Booster timing depends on the vaccine type and your vet's protocol. Ask for your next due date before leaving each visit.",
+      },
+      {
+        question: "Should sick puppies be vaccinated on schedule?",
+        answer:
+          "If your puppy is unwell, your vet may adjust timing after examination. Always ask before proceeding with planned vaccines during illness.",
+      },
+      {
+        question: "Can I use a chart online without a vet visit?",
+        answer:
+          "No. Charts are helpful for planning, but they do not replace an exam and personalized recommendations. Veterinary guidance is essential.",
+      },
+      {
+        question: "Which related guide should I read next?",
+        answer:
+          "If your puppy has seasonal itch or sneezing signs, read [puppy seasonal allergies](/blog/puppy-seasonal-allergies) for symptom-focused next steps.",
+      },
+    ],
+    internalLinks: [
+      { label: "Puppy seasonal allergies", href: "/blog/puppy-seasonal-allergies" },
+      { label: "Why is my dog coughing?", href: "/blog/why-is-my-dog-coughing" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Immunity condition guide", href: "/health-conditions/immunity" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "Puppy seasonal allergies", href: "/blog/puppy-seasonal-allergies", description: "Itching and seasonal trigger guide for puppies." },
+      { label: "Why is my dog coughing?", href: "/blog/why-is-my-dog-coughing", description: "Respiratory symptom triage basics." },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy", description: "Urgency signs for breathing changes." },
+      { label: "Dog won't stop sneezing", href: "/blog/dog-wont-stop-sneezing", description: "Nasal symptom patterns and red flags." },
+    ],
+  },
+  {
+    slug: "puppy-seasonal-allergies",
+    title: "Puppy Seasonal Allergies: Signs, Triggers, and Home Steps",
+    metaTitle: "Puppy Seasonal Allergies: Itching, Sneezing, and When to Call a Vet",
+    metaDescription:
+      "Learn puppy seasonal allergy signs, common triggers, home care steps, and when allergy symptoms need veterinary support.",
+    category: "Dogs",
+    publishedDate: "2026-04-27",
+    readingTime: "10 min read",
+    intro:
+      "Seasonal allergies can start early in some puppies. This guide helps you recognize common patterns and decide when home care is enough and when your vet should step in.",
+    sections: [
+      {
+        heading: "Quick answer: puppy seasonal allergies",
+        paragraphs: [
+          "Puppies with seasonal allergies may show itching, sneezing, watery eyes, ear irritation, or paw licking during certain times of year. Repeating flares should be reviewed with your vet.",
+        ],
+      },
+      {
+        heading: "Common signs in puppies",
+        paragraphs: [
+          "Allergy signs often affect skin, eyes, and upper airway together.",
+        ],
+        bullets: [
+          "Frequent scratching or nibbling skin",
+          "Sneezing and watery eyes",
+          "Red paws or repeated licking",
+          "Mild ear irritation",
+        ],
+      },
+      {
+        heading: "Seasonal triggers",
+        paragraphs: [
+          "Pollen, grasses, dust, and outdoor exposure windows are common trigger categories. Trigger timing often repeats each season.",
+        ],
+      },
+      {
+        heading: "Real-world example: spring flare pattern",
+        paragraphs: [
+          "A puppy may be fine in winter but start scratching and sneezing in spring walks. Repeated yearly patterns are helpful clues for your vet.",
+        ],
+      },
+      {
+        heading: "What to monitor",
+        paragraphs: [
+          "Track flare timing and symptom combination to guide your next visit.",
+        ],
+        bullets: [
+          "Itch intensity by day",
+          "Indoor vs outdoor symptom differences",
+          "Eye and nose discharge pattern",
+          "Ear rubbing or head shaking",
+          "Sleep and appetite changes",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these during allergy flares."],
+        bullets: [
+          "Changing many products at once",
+          "Using human antihistamines without vet advice",
+          "Ignoring skin infections from scratching",
+          "Waiting through repeated flare seasons",
+        ],
+      },
+      {
+        heading: "What to do at home",
+        paragraphs: [
+          "Use gentle cleanup after outdoor walks, keep bedding clean, and reduce known triggers where possible. Home steps support comfort but do not replace diagnosis in persistent cases.",
+        ],
+      },
+      {
+        heading: "Practical checklist",
+        paragraphs: ["Use this checklist before your vet call."],
+        bullets: [
+          "Flare start date and season",
+          "Main symptom list",
+          "Photo of skin areas if visible",
+          "Products used in last two weeks",
+          "Any response to home adjustments",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call your vet for persistent itching, skin sores, ear pain, breathing concern, or sleep-disrupting symptoms. Puppies can worsen quickly with repeated scratching.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Seasonal pattern plus symptom tracking gives better allergy care decisions."],
+        bullets: [
+          "Watch itch, sneeze, and eye signs together",
+          "Track seasons and triggers",
+          "Use home care as support only",
+          "Escalate early for persistent discomfort",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can puppies get seasonal allergies this early?",
+        answer:
+          "Yes, some puppies can show allergy patterns early. Signs may start mild and repeat seasonally. If symptoms continue, your vet can help confirm pattern and plan safe management.",
+      },
+      {
+        question: "Do seasonal allergies cause sneezing in puppies?",
+        answer:
+          "They can. Sneezing may appear with itching or watery eyes in seasonal flares. Persistent sneezing still needs evaluation to rule out infection or other causes.",
+      },
+      {
+        question: "What is the first home step for puppy allergies?",
+        answer:
+          "Start with trigger reduction and gentle cleaning routines after outdoor exposure. Keep notes on what improves symptoms. If no improvement, schedule veterinary review.",
+      },
+      {
+        question: "Can seasonal allergies affect puppy ears?",
+        answer:
+          "Yes, ear irritation can happen in allergy-prone puppies. Watch for head shaking, ear scratching, or odor. These signs should be checked before they worsen.",
+      },
+      {
+        question: "Should I use over-the-counter allergy medicine?",
+        answer:
+          "Do not start medication without veterinary guidance. Dosing and product safety vary, especially in young puppies. Your vet can suggest a safer plan.",
+      },
+      {
+        question: "How do I know if it is urgent?",
+        answer:
+          "Urgent signs include severe facial swelling, breathing effort, persistent vomiting, or major behavior decline. Seek immediate veterinary care if these appear.",
+      },
+      {
+        question: "What related page should I read next?",
+        answer:
+          "Use [puppy vaccination schedule chart](/blog/puppy-vaccination-schedule-chart) for routine preventive planning, especially if you are new to puppy care.",
+      },
+    ],
+    internalLinks: [
+      { label: "Puppy vaccination schedule chart", href: "/blog/puppy-vaccination-schedule-chart" },
+      { label: "Dog won't stop sneezing", href: "/blog/dog-wont-stop-sneezing" },
+      { label: "Why is my dog coughing?", href: "/blog/why-is-my-dog-coughing" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "Puppy vaccination schedule chart", href: "/blog/puppy-vaccination-schedule-chart", description: "Age-window vaccine planning for puppies." },
+      { label: "Dog won't stop sneezing", href: "/blog/dog-wont-stop-sneezing", description: "Nasal symptom differential guide." },
+      { label: "Why is my dog coughing?", href: "/blog/why-is-my-dog-coughing", description: "Cough severity and escalation cues." },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy", description: "Breathing urgency signs in simple language." },
+    ],
+  },
+  {
+    slug: "cat-spay-recovery",
+    title: "Cat Spay Recovery: Practical Day-by-Day Owner Guide",
+    metaTitle: "Cat Spay Recovery: First 24 Hours, Incision Care, and Warning Signs",
+    metaDescription:
+      "Learn practical cat spay recovery steps, first 24-hour care, incision checks, activity limits, and when to call your vet.",
+    category: "Cats",
+    publishedDate: "2026-04-27",
+    readingTime: "11 min read",
+    intro:
+      "This page is a practical owner timeline for cat spay recovery. It focuses on home care steps you can follow day by day.",
+    sections: [
+      {
+        heading: "Quick answer: cat spay recovery",
+        paragraphs: [
+          "Most cats recover well with calm rest, incision monitoring, and restricted activity. The first 24 hours and the first week are the most important for safe healing.",
+        ],
+      },
+      {
+        heading: "First 24 hours",
+        paragraphs: [
+          "Your cat may be sleepy or quieter after surgery. Offer a calm, warm recovery area and small food and water portions if advised by your clinic.",
+        ],
+      },
+      {
+        heading: "Incision care basics",
+        paragraphs: [
+          "Check the incision daily for swelling, redness progression, discharge, or opening. Do not apply creams unless your vet prescribed them.",
+        ],
+      },
+      {
+        heading: "Activity restriction",
+        paragraphs: [
+          "Jumping and rough play can strain healing tissue. Keep activity low during the recovery window recommended by your clinic.",
+        ],
+      },
+      {
+        heading: "Real-world example: playful cat on day 3",
+        paragraphs: [
+          "Some cats feel better quickly and try to jump early. Owners often need temporary room restriction to keep recovery safe.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these during recovery."],
+        bullets: [
+          "Allowing jumping too early",
+          "Skipping daily incision checks",
+          "Removing protective cone too soon",
+          "Giving unapproved pain medication",
+        ],
+      },
+      {
+        heading: "Practical daily checklist",
+        paragraphs: ["Use this short checklist each day."],
+        bullets: [
+          "Incision checked in good light",
+          "Eating and drinking tracked",
+          "Litter box use monitored",
+          "Activity kept low",
+          "Medication schedule followed",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call your vet for incision opening, persistent bleeding, foul discharge, repeated vomiting, severe lethargy, no eating, or obvious pain behavior.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Consistent simple home care helps most cats recover smoothly."],
+        bullets: [
+          "First day is mostly rest and monitoring",
+          "Check incision daily",
+          "Restrict jumping until cleared",
+          "Escalate quickly for wound or behavior red flags",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How long does cat spay recovery usually take?",
+        answer:
+          "Many cats improve quickly in behavior, but full healing still needs a structured recovery window. Follow your clinic's timeline even if your cat looks active early.",
+      },
+      {
+        question: "Is mild swelling around incision normal?",
+        answer:
+          "Mild early swelling can happen, but swelling that increases, becomes hot, or leaks discharge is concerning. Track daily changes and call your vet if unsure.",
+      },
+      {
+        question: "Can my cat jump on furniture after spay?",
+        answer:
+          "It is better to restrict jumping during early recovery to protect the incision. Use room setup changes to reduce climbing opportunities.",
+      },
+      {
+        question: "When can I remove the cone?",
+        answer:
+          "Keep the cone on as directed by your vet, especially if your cat licks the incision. Early removal increases wound irritation risk.",
+      },
+      {
+        question: "What if my cat will not eat after surgery?",
+        answer:
+          "Small appetite changes can happen at first, but persistent refusal is concerning. Contact your clinic if intake does not improve in the expected window.",
+      },
+      {
+        question: "What are urgent spay recovery signs?",
+        answer:
+          "Urgent signs include wound opening, heavy bleeding, repeated vomiting, severe weakness, fever-like behavior, or intense pain signs. Seek veterinary care promptly.",
+      },
+      {
+        question: "How is this page different from feline spay recovery?",
+        answer:
+          "This page is practical day-by-day owner care. The feline spay recovery page focuses more on medical stages and follow-up expectations with your vet.",
+      },
+    ],
+    internalLinks: [
+      { label: "Feline spay recovery", href: "/blog/feline-spay-recovery" },
+      { label: "Can a cat in heat be spayed?", href: "/blog/can-a-cat-in-heat-be-spayed" },
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      { label: "Feline spay recovery", href: "/blog/feline-spay-recovery", description: "Medical recovery stage and recheck guide." },
+      { label: "Can a cat in heat be spayed?", href: "/blog/can-a-cat-in-heat-be-spayed", description: "Heat-cycle scheduling and vet decision basics." },
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water", description: "Hydration monitoring during recovery." },
+      { label: "Why is my cat drooling?", href: "/blog/why-is-my-cat-drooling", description: "Oral symptom guidance if new signs appear." },
+    ],
+  },
+  {
+    slug: "feline-spay-recovery",
+    title: "Feline Spay Recovery: Medical Stages and Follow-Up Guide",
+    metaTitle: "Feline Spay Recovery: Healing Stages, Rechecks, and Complications",
+    metaDescription:
+      "Learn feline spay recovery stages, healing expectations, vet recheck planning, complications to watch, and recovery environment tips.",
+    category: "Cats",
+    publishedDate: "2026-04-27",
+    readingTime: "11 min read",
+    intro:
+      "This page is a medical-stage recovery guide. It explains healing phases, follow-up expectations, and how vets evaluate recovery progression after spay surgery.",
+    sections: [
+      {
+        heading: "Quick answer: feline spay recovery",
+        paragraphs: [
+          "Feline spay recovery usually moves through early sedation recovery, incision stabilization, and short-term tissue healing phases. Veterinary follow-up confirms progress and addresses complications early.",
+        ],
+      },
+      {
+        heading: "Recovery stage 1: immediate post-op phase",
+        paragraphs: [
+          "Early hours focus on safe wake-up, pain control, hydration, and stability checks. Mild tiredness is common, but severe decline is not.",
+        ],
+      },
+      {
+        heading: "Recovery stage 2: incision stabilization phase",
+        paragraphs: [
+          "This stage focuses on keeping the incision protected from tension, licking, or contamination while tissue edges settle.",
+        ],
+      },
+      {
+        heading: "Recovery stage 3: active healing phase",
+        paragraphs: [
+          "In this phase, activity restriction and daily incision review remain important even if your cat seems much better.",
+        ],
+      },
+      {
+        heading: "Vet recheck expectations",
+        paragraphs: [
+          "Recheck visits help confirm wound healing, comfort level, and recovery trajectory. Your vet can adjust care if progress is slower or signs are unusual.",
+        ],
+      },
+      {
+        heading: "Potential complications to watch",
+        paragraphs: [
+          "Complications are not expected in most cats, but early detection matters.",
+        ],
+        bullets: [
+          "Incision swelling that worsens",
+          "Drainage, odor, or wound opening",
+          "Persistent appetite loss",
+          "Marked lethargy or pain behavior",
+        ],
+      },
+      {
+        heading: "Recovery environment setup",
+        paragraphs: [
+          "A low-stress environment supports healing quality. Quiet space, easy litter access, and controlled movement reduce setbacks.",
+        ],
+      },
+      {
+        heading: "Real-world example: normal energy return but delayed wound healing",
+        paragraphs: [
+          "Some cats regain normal behavior quickly but still need strict activity limits because incision healing is not complete. Behavior alone is not the healing marker.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these during stage-based recovery."],
+        bullets: [
+          "Using behavior as the only recovery indicator",
+          "Skipping scheduled recheck visits",
+          "Stopping medications early",
+          "Ignoring mild but persistent wound changes",
+        ],
+      },
+      {
+        heading: "Practical follow-up checklist",
+        paragraphs: ["Use this checklist before each recheck call or visit."],
+        bullets: [
+          "Incision photo timeline",
+          "Daily appetite and litter notes",
+          "Medication adherence record",
+          "Activity and jumping history",
+          "Any new abnormal signs",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call quickly for wound opening, worsening swelling, discharge, no eating, repeated vomiting, severe lethargy, or uncontrolled pain signs. Early intervention is safer.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Stage-based monitoring and rechecks improve recovery confidence."],
+        bullets: [
+          "Recovery has phases, not one moment",
+          "Recheck visits are part of treatment",
+          "Wound trends matter more than one snapshot",
+          "Escalate early if healing deviates",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How is feline spay recovery different from owner timeline guides?",
+        answer:
+          "This guide focuses on medical healing stages and veterinary follow-up expectations. Owner timeline guides focus on daily home tasks. Both are useful, but this page emphasizes stage-based clinical monitoring.",
+      },
+      {
+        question: "Are recheck visits always necessary after spay?",
+        answer:
+          "Rechecks are often recommended to confirm healing quality and address concerns early. Even when behavior looks normal, wound progression may need professional review.",
+      },
+      {
+        question: "What are signs of delayed healing?",
+        answer:
+          "Delayed healing may include persistent swelling, ongoing redness, discharge, or incision changes that do not improve. Appetite and energy decline can also signal concern.",
+      },
+      {
+        question: "Can a cat look normal but still have recovery issues?",
+        answer:
+          "Yes. Cats can hide pain and return to activity before tissues are fully healed. This is why staged monitoring and recheck planning remain important.",
+      },
+      {
+        question: "When should complications be treated as urgent?",
+        answer:
+          "Urgent signs include wound opening, bleeding, severe lethargy, repeated vomiting, and strong pain behavior. Contact your clinic or emergency service promptly.",
+      },
+      {
+        question: "How long should activity stay restricted?",
+        answer:
+          "Restriction duration depends on your veterinarian's protocol and healing progress at recheck. Follow your clinic's guidance rather than using fixed internet timelines.",
+      },
+      {
+        question: "Which related page should I read for home care steps?",
+        answer:
+          "Use [cat spay recovery](/blog/cat-spay-recovery) for practical day-by-day owner tasks and simple home-care reminders.",
+      },
+    ],
+    internalLinks: [
+      { label: "Cat spay recovery", href: "/blog/cat-spay-recovery" },
+      { label: "Can a cat in heat be spayed?", href: "/blog/can-a-cat-in-heat-be-spayed" },
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      { label: "Cat spay recovery", href: "/blog/cat-spay-recovery", description: "Practical day-by-day owner care timeline." },
+      { label: "Can a cat in heat be spayed?", href: "/blog/can-a-cat-in-heat-be-spayed", description: "Scheduling and risk discussion guide." },
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water", description: "Hydration checks during recovery." },
+      { label: "Why is my cat drooling?", href: "/blog/why-is-my-cat-drooling", description: "Mouth-related signs that may need review." },
+    ],
+  },
+  {
+    slug: "can-a-cat-in-heat-be-spayed",
+    title: "Can a Cat in Heat Be Spayed?",
+    metaTitle: "Can a Cat in Heat Be Spayed? Timing, Risk, and Vet Guidance",
+    metaDescription:
+      "Can a cat in heat be spayed? Learn the simple answer, timing considerations, possible risk and cost differences, and what vets may recommend.",
+    category: "Cats",
+    publishedDate: "2026-04-27",
+    readingTime: "10 min read",
+    intro:
+      "Many cat owners ask this during a noisy and stressful heat cycle. This guide gives a clear answer and explains why surgical timing may differ based on veterinary judgment.",
+    sections: [
+      {
+        heading: "Quick answer: can a cat in heat be spayed?",
+        paragraphs: [
+          "Yes, a cat in heat can often be spayed, but timing decisions may vary by clinic and individual risk factors. Your veterinarian decides safest scheduling based on exam and operating conditions.",
+        ],
+      },
+      {
+        heading: "Why surgery can be different during heat",
+        paragraphs: [
+          "During heat, tissue blood flow can increase, which may change surgical complexity for some cases. This is why clinics may discuss timing options.",
+        ],
+      },
+      {
+        heading: "Risk and cost considerations",
+        paragraphs: [
+          "Some clinics may explain potential differences in procedure time, planning, or fees when surgery is done during heat. Policies vary by practice.",
+        ],
+      },
+      {
+        heading: "What vets may recommend",
+        paragraphs: [
+          "Recommendations depend on your cat's condition, clinic protocol, and scheduling practicality. Your vet may proceed now or suggest a short timing adjustment.",
+        ],
+      },
+      {
+        heading: "Real-world example: urgent scheduling decision",
+        paragraphs: [
+          "An owner with repeated heat cycles may need earlier surgery due to behavior stress at home. Another cat may be scheduled after a brief delay based on clinic preference.",
+        ],
+      },
+      {
+        heading: "How to decide when to schedule",
+        paragraphs: [
+          "Discuss current heat signs, household stress, and any prior medical history with your clinic. A direct risk-benefit conversation is best.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these scheduling mistakes."],
+        bullets: [
+          "Assuming all clinics use one identical policy",
+          "Delaying discussion until last minute",
+          "Relying on forum advice over exam findings",
+          "Ignoring follow-up recovery planning",
+        ],
+      },
+      {
+        heading: "Practical checklist before booking",
+        paragraphs: ["Use this checklist when calling your vet."],
+        bullets: [
+          "Current heat-cycle timing notes",
+          "Behavior and appetite status",
+          "Medical history and medications",
+          "Transport and recovery setup readiness",
+          "Questions about cost and follow-up",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call promptly if your cat appears unwell, stops eating, shows unusual lethargy, or has signs that worry you during heat. Your vet can triage and adjust plan safely.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Cats in heat can often be spayed, but timing is individualized."],
+        bullets: [
+          "The short answer is often yes",
+          "Clinic protocol and risk profile guide timing",
+          "Discuss cost and follow-up expectations early",
+          "Use vet advice over generic online rules",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is it safe to spay a cat in heat?",
+        answer:
+          "It can be safe in many cases, but safety planning depends on your cat and your clinic's protocol. Your veterinarian assesses whether to proceed now or adjust timing.",
+      },
+      {
+        question: "Why might surgery cost more during heat?",
+        answer:
+          "Some clinics may charge differently if surgery is technically more complex during heat. Fee policies vary by practice, so ask your clinic directly.",
+      },
+      {
+        question: "Should I wait until heat ends before scheduling?",
+        answer:
+          "Not always. In many cases, vets can proceed during heat if appropriate. The best choice depends on exam findings and clinic recommendations.",
+      },
+      {
+        question: "Can repeated heat cycles affect planning?",
+        answer:
+          "Yes, repeated cycles can increase home stress and influence timing decisions. Share cycle pattern details with your vet when discussing scheduling.",
+      },
+      {
+        question: "What should I ask the clinic before booking?",
+        answer:
+          "Ask about timing options, pre-op instructions, expected recovery steps, recheck plan, and any cost differences. Clear questions improve decision confidence.",
+      },
+      {
+        question: "What if my cat acts unwell during heat?",
+        answer:
+          "If your cat seems weak, stops eating, or shows unusual signs, call your vet promptly. Your clinic can assess urgency and adjust the plan safely.",
+      },
+      {
+        question: "Which recovery guide should I read next?",
+        answer:
+          "Use [cat spay recovery](/blog/cat-spay-recovery) for daily home care and [feline spay recovery](/blog/feline-spay-recovery) for medical-stage follow-up expectations.",
+      },
+    ],
+    internalLinks: [
+      { label: "Cat spay recovery", href: "/blog/cat-spay-recovery" },
+      { label: "Feline spay recovery", href: "/blog/feline-spay-recovery" },
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      { label: "Cat spay recovery", href: "/blog/cat-spay-recovery", description: "Owner-focused day-by-day recovery plan." },
+      { label: "Feline spay recovery", href: "/blog/feline-spay-recovery", description: "Medical-stage healing and recheck focus." },
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water", description: "Hydration warning signs after procedures." },
+      { label: "Why is my cat drooling?", href: "/blog/why-is-my-cat-drooling", description: "Oral symptom checks when behavior changes." },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
