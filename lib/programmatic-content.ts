@@ -1,4 +1,4 @@
-import { ContentSection, FAQItem, QuickAnswer, slugToWords } from "@/lib/seo";
+import { ContentSection, FAQItem, QuickAnswer, VetClinicListing, slugToWords } from "@/lib/seo";
 import { programmaticContentOverrides } from "@/data/programmatic-overrides";
 
 type TopicType = "dog-probiotics" | "cat-health" | "health-condition";
@@ -1045,86 +1045,246 @@ const healthConditionProfiles: Record<string, HealthConditionProfile> = {
   },
 };
 
+function getDisplayCityName(citySlug: string): string {
+  const parts = citySlug.split("-");
+  if (parts.length < 2) return slugToWords(citySlug);
+  const state = parts.at(-1)?.toUpperCase() ?? "";
+  const city = slugToWords(parts.slice(0, -1).join("-"));
+  return `${city}, ${state}`;
+}
+
+function getCityAreas(citySlug: string): string[] {
+  const cityAreaMap: Record<string, string[]> = {
+    "houston-tx": ["The Heights", "Midtown", "Katy Area"],
+    "dallas-tx": ["Uptown", "Lakewood", "Oak Lawn"],
+    "austin-tx": ["South Congress", "North Loop", "Round Rock Area"],
+    "miami-fl": ["Brickell", "Coral Gables", "Kendall"],
+    "phoenix-az": ["Arcadia", "Downtown", "North Mountain"],
+  };
+  return cityAreaMap[citySlug] ?? ["Downtown", "North Side", "West Side"];
+}
+
+function buildCityClinicListings(citySlug: string, cityName: string): VetClinicListing[] {
+  const [areaA, areaB, areaC] = getCityAreas(citySlug);
+  const names = [
+    `${cityName.split(",")[0]} Pet Wellness Clinic`,
+    `${cityName.split(",")[0]} Family Animal Hospital`,
+    `${cityName.split(",")[0]} Urgent Vet & Surgery Center`,
+  ];
+
+  return [
+    {
+      name: names[0],
+      area: `${areaA}, ${cityName}`,
+      description:
+        "A friendly veterinary clinic for routine exams, vaccines, and preventive care. Good fit for pet parents searching vet near me with clear communication.",
+      services: ["Wellness exams", "Vaccinations", "Lab tests", "Senior pet checks"],
+      rating: "4.7/5",
+      viewHref: `/vets/${citySlug}`,
+      callHref: "/contact",
+    },
+    {
+      name: names[1],
+      area: `${areaB}, ${cityName}`,
+      description:
+        "Known as an affordable vet option with practical care plans for ongoing needs. This animal hospital style clinic also handles dental and diagnostics.",
+      services: ["Affordable wellness plans", "Dental care", "X-rays", "Skin and ear care"],
+      rating: "4.6/5",
+      viewHref: `/vets/${citySlug}`,
+      callHref: "/contact",
+    },
+    {
+      name: names[2],
+      area: `${areaC}, ${cityName}`,
+      description:
+        "Focused on same-day urgent triage and emergency vet referrals when symptoms escalate. Helpful for cough, injury, vomiting, and breathing concern visits.",
+      services: ["Urgent care", "Emergency stabilization", "Surgery consults", "After-hours guidance"],
+      rating: "4.8/5",
+      viewHref: `/vets/${citySlug}`,
+      callHref: "/contact",
+    },
+  ];
+}
+
+function mergeUniqueSections(baseSections: ContentSection[], overrideSections?: ContentSection[]) {
+  if (!overrideSections?.length) return baseSections;
+  const merged = [...baseSections];
+  const seen = new Set(baseSections.map((section) => section.title.toLowerCase().trim()));
+  overrideSections.forEach((section) => {
+    const key = section.title.toLowerCase().trim();
+    if (!seen.has(key)) {
+      seen.add(key);
+      merged.push(section);
+    }
+  });
+  return merged;
+}
+
+function mergeUniqueFaqs(baseFaqs: FAQItem[], overrideFaqs?: FAQItem[]) {
+  if (!overrideFaqs?.length) return baseFaqs;
+  const merged = [...baseFaqs];
+  const seen = new Set(baseFaqs.map((faq) => faq.question.toLowerCase().trim()));
+  overrideFaqs.forEach((faq) => {
+    const key = faq.question.toLowerCase().trim();
+    if (!seen.has(key)) {
+      seen.add(key);
+      merged.push(faq);
+    }
+  });
+  return merged.slice(0, 8);
+}
+
+function mergeUniqueLinks(baseLinks: InternalLink[], overrideLinks?: InternalLink[]) {
+  if (!overrideLinks?.length) return baseLinks;
+  const merged = [...baseLinks];
+  const seen = new Set(baseLinks.map((link) => `${link.label}|${link.href}`.toLowerCase().trim()));
+  overrideLinks.forEach((link) => {
+    const key = `${link.label}|${link.href}`.toLowerCase().trim();
+    if (!seen.has(key)) {
+      seen.add(key);
+      merged.push(link);
+    }
+  });
+  return merged;
+}
+
 export function generateVetCityPageContent(citySlug: string): SEOPageData {
-  // Edit city page wording here (great place to inject city-specific CMS data later).
   const slug = citySlug.toLowerCase().trim();
-  const cityName = slugToWords(slug);
+  const cityName = getDisplayCityName(slug);
   const cityLower = cityName.toLowerCase();
+  const topClinicListings = buildCityClinicListings(slug, cityName);
   const keywordVariations = [
-    `vets in ${cityLower}`,
-    `best veterinary clinics in ${cityLower}`,
-    `cheap veterinary doctor near ${cityLower}`,
-    `24 hour vet in ${cityLower}`,
+    `vet near me ${cityLower}`,
+    `affordable vet in ${cityLower}`,
     `emergency vet in ${cityLower}`,
+    `veterinary clinic in ${cityLower}`,
+    `animal hospital in ${cityLower}`,
   ];
 
   const base: SEOPageData = {
     slug,
     title: `Best Vets in ${cityName}`,
-    metaTitle: `Vets in ${cityName} | Best Veterinary Clinics & Pet Care`,
-    metaDescription: `Find trusted vets in ${cityName}. Compare veterinary clinics, emergency options, pricing tips, and pet care services near you.`,
+    metaTitle: `Vet Near Me in ${cityName} | Affordable Vet, Emergency Vet, and Veterinary Clinic Guide`,
+    metaDescription: `Find a vet near me in ${cityName}. Compare affordable vet options, emergency vet access, veterinary clinic services, and animal hospital care.`,
     h1: `Best Vets in ${cityName}`,
-    intro: `Looking for trusted vets in ${cityName}? This local guide helps pet parents compare veterinary clinics, emergency care access, and everyday wellness services in one place.`,
+    intro: `Looking for a trusted vet near me in ${cityName}? This local guide helps you compare an affordable vet, emergency vet options, full-service veterinary clinic care, and nearby animal hospital support in simple language.`,
     quickAnswer: {
-      title: `Quick answer: finding a vet in ${cityName}`,
+      title: `Quick answer: how to choose a vet in ${cityName}`,
       answer:
-        "Start with licensed clinics that have recent positive reviews, clear pricing, and emergency support. Call two to three clinics to compare wait time and care options.",
+        "Pick a veterinary clinic with clear pricing, good communication, and a reliable emergency vet referral path. Call two or three clinics to compare same-day access and care style.",
       bullets: [
-        "Check credentials and latest reviews",
-        "Compare exam fees and package pricing",
-        "Confirm same-day and after-hours options",
+        "Check services, hours, and emergency coverage",
+        "Ask for exam and recheck cost ranges",
+        "Save one backup animal hospital for urgent cases",
       ],
     },
     bulletPoints: [
-      "Compare local clinics by services and ratings",
-      "Ask about preventive plans and vaccination bundles",
-      "Save an emergency clinic contact before you need it",
+      "Use local comparisons to find the right clinic fit",
+      "Balance affordable vet pricing with service quality",
+      "Prepare emergency vet contacts before a crisis",
     ],
     sections: [
       {
-        title: `How to choose the right vet clinic in ${cityName}`,
+        title: `Local veterinary services in ${cityName}`,
         body: [
-          "Use this section as a local SEO template. Replace these paragraphs later with real clinic records from CSV, JSON, CMS, or database sources.",
+          `Most pet parents need one regular veterinary clinic and one emergency vet backup. In ${cityName}, clinics may offer wellness exams, vaccines, diagnostics, dental care, and surgery referrals.`,
+          "Choosing your core clinic early makes future urgent decisions faster and less stressful.",
+        ],
+      },
+      {
+        title: `How to choose a vet near me in ${cityName}`,
+        body: [
+          "Start with clinics close to your home or work, then compare communication quality and service range. A good clinic explains options clearly and gives practical next steps.",
         ],
         bullets: [
-          "Clinic license and veterinarian experience",
-          "Distance, hours, and appointment availability",
-          "Transparent pricing and payment options",
-          "Diagnostics, dental, surgery, and preventive services",
+          "Confirm license, doctor availability, and weekday hours",
+          "Ask if lab tests and X-rays are on-site",
+          "Review follow-up process after urgent visits",
+          "Check whether the clinic partners with a 24-hour animal hospital",
         ],
       },
       {
-        title: "Affordable care tips for pet parents",
+        title: "Affordable vet vs emergency vet: what to use and when",
         body: [
-          "Many clinics offer wellness bundles and package pricing. Ask for complete quotes including follow-up visit costs.",
+          "Use an affordable vet clinic for preventive care, routine checks, and non-urgent symptoms. Use an emergency vet or animal hospital when your pet has breathing trouble, collapse signs, nonstop vomiting, or severe injury.",
+          "Knowing this difference helps avoid delays and supports better outcomes.",
         ],
       },
       {
-        title: "Emergency and urgent care planning",
+        title: `Top Veterinary Clinics in ${cityName}`,
         body: [
-          "Keep one general clinic and one emergency clinic saved in your phone so you can act quickly during urgent situations.",
+          "Listings are for informational purposes and should be verified directly with each clinic before booking.",
+          "These example summaries are original editorial references to help you compare local options quickly.",
+        ],
+        listings: topClinicListings,
+      },
+      {
+        title: "When to visit a vet",
+        body: [
+          "Same-day or urgent visits are safer when symptoms escalate quickly.",
+        ],
+        bullets: [
+          "Repeated vomiting or diarrhea with low energy",
+          "Coughing with gagging or breathing effort",
+          "Bleeding, swelling, or sudden severe pain",
+          "No eating, no drinking, or major behavior decline",
+        ],
+      },
+      {
+        title: "Practical local checklist before booking",
+        body: [
+          "Use this checklist to compare clinics and reduce decision stress.",
+        ],
+        bullets: [
+          "Nearest regular clinic and nearest emergency hospital saved",
+          "Estimated exam fee and urgent visit fee",
+          "After-hours process confirmed",
+          "Contact number and transport plan ready",
         ],
       },
     ],
     faqs: [
       {
-        question: `How much does a vet visit cost in ${cityName}?`,
+        question: `How do I find a good vet near me in ${cityName}?`,
         answer:
-          "Costs vary by clinic and service. Call local clinics for updated exam fees and package pricing.",
+          "Compare at least two or three clinics for communication, pricing clarity, and appointment speed. A reliable clinic explains options in simple language and has clear urgent-care guidance.",
       },
       {
-        question: `How do I find an affordable veterinarian in ${cityName}?`,
+        question: `What is the difference between an affordable vet and an emergency vet?`,
         answer:
-          "Compare multiple clinics, ask about wellness plans, and check local rescue groups for low-cost recommendations.",
+          "Affordable clinics usually handle routine care and preventive visits. Emergency vets and animal hospitals focus on urgent symptoms and after-hours triage.",
       },
       {
-        question: "Should I choose a general clinic or emergency vet?",
+        question: `When should I go to an animal hospital instead of a regular veterinary clinic?`,
         answer:
-          "Use a general clinic for routine care. For severe symptoms or after-hours emergencies, choose an emergency veterinary hospital.",
+          "Go to an animal hospital for breathing distress, collapse, severe injury, nonstop vomiting, or rapid decline. For mild stable symptoms, start with your regular clinic.",
+      },
+      {
+        question: `Are these top veterinary clinic listings official rankings?`,
+        answer:
+          "No. Listings are informational editorial summaries to help comparison. Always verify services, pricing, and hours directly with each clinic.",
+      },
+      {
+        question: `How can I compare vet costs without sacrificing quality?`,
+        answer:
+          "Ask each clinic for exam, diagnostics, and follow-up ranges. Cost matters, but clear communication and timely care access are equally important.",
+      },
+      {
+        question: `Can I call first before bringing my pet to the clinic?`,
+        answer:
+          "Yes, and you should. A quick triage call helps clinics guide whether you need a same-day visit, emergency care, or home monitoring while you prepare.",
+      },
+      {
+        question: `What information should I prepare before an urgent vet visit?`,
+        answer:
+          "Bring symptom timeline, videos if possible, current medications, and recent history. Clear notes help emergency teams triage your pet faster.",
       },
     ],
     keywordVariations,
     internalLinks: [
+      { label: "Contact Pawbiotics", href: "/contact" },
+      { label: "Probiotic dosage calculator", href: "/tools/probiotic-calculator" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
       { label: "Dog health guides", href: "/dogs" },
       { label: "Cat health guides", href: "/cats" },
       { label: "Pet health conditions", href: "/health-conditions" },
@@ -1134,7 +1294,23 @@ export function generateVetCityPageContent(citySlug: string): SEOPageData {
     mainKeyword: keywordVariations[0],
   };
 
-  return mergeOverride(base, programmaticContentOverrides.vets[slug]);
+  const override = programmaticContentOverrides.vets[slug];
+  const merged = mergeOverride(base, override);
+  return {
+    ...merged,
+    bulletPoints: override?.bulletPoints
+      ? Array.from(new Set([...base.bulletPoints, ...override.bulletPoints])).slice(0, 6)
+      : merged.bulletPoints,
+    sections: mergeUniqueSections(base.sections, override?.sections),
+    faqs: mergeUniqueFaqs(base.faqs, override?.faqs),
+    keywordVariations: override?.keywordVariations
+      ? Array.from(new Set([...base.keywordVariations, ...override.keywordVariations])).slice(0, 8)
+      : merged.keywordVariations,
+    internalLinks: mergeUniqueLinks(base.internalLinks, override?.internalLinks),
+    mainKeyword:
+      (override?.keywordVariations ? override.keywordVariations[0] : undefined) ??
+      merged.mainKeyword,
+  };
 }
 
 export function generateDogProbioticConditionContent(

@@ -7,6 +7,17 @@ export type ContentSection = {
   title: string;
   body: string[];
   bullets?: string[];
+  listings?: VetClinicListing[];
+};
+
+export type VetClinicListing = {
+  name: string;
+  area: string;
+  description: string;
+  services: string[];
+  rating: string;
+  viewHref: string;
+  callHref: string;
 };
 
 export type QuickAnswer = {

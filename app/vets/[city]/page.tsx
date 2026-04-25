@@ -65,6 +65,7 @@ export default async function VetCityPage({ params }: PageProps) {
       schemaType={data.schemaType}
       cityName={cityName}
       pageUrl={`https://pawbiotics.us/vets/${data.slug}`}
+      disclaimer="Listings are for informational purposes and should be verified directly with each clinic before booking."
     />
   );
 }

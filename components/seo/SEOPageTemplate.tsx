@@ -5,9 +5,10 @@ import {
   BreadcrumbSchema,
   FAQSchema,
   LocalBusinessSchema,
+  WebPageSchema,
 } from "@/components/seo/Schema";
 import type { InternalLink } from "@/lib/programmatic-content";
-import { ContentSection, FAQItem, QuickAnswer } from "@/lib/seo";
+import { ContentSection, FAQItem, QuickAnswer, VetClinicListing } from "@/lib/seo";
 import Link from "next/link";
 
 type SEOPageTemplateProps = {
@@ -37,6 +38,13 @@ const sectionCardClasses = [
   "border-rose-100 bg-rose-50/40",
 ];
 
+const listingCardClasses = [
+  "border-teal-100 bg-teal-50/70",
+  "border-amber-100 bg-amber-50/70",
+  "border-violet-100 bg-violet-50/70",
+  "border-rose-100 bg-rose-50/70",
+];
+
 function getSectionIcon(title: string): string {
   const lower = title.toLowerCase();
   if (lower.includes("cause")) return "🧩";
@@ -47,6 +55,49 @@ function getSectionIcon(title: string): string {
   if (lower.includes("vet")) return "🩺";
   if (lower.includes("local")) return "📍";
   return "📘";
+}
+
+function ListingCard({ listing, index }: { listing: VetClinicListing; index: number }) {
+  const cardClass = listingCardClasses[index % listingCardClasses.length];
+  return (
+    <article
+      className={`rounded-3xl border p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${cardClass}`}
+    >
+      <h3 className="font-serif text-xl font-semibold text-gray-900">{listing.name}</h3>
+      <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-gray-500">{listing.area}</p>
+      <p className="mt-3 text-sm leading-7 text-gray-700">{listing.description}</p>
+
+      <div className="mt-3">
+        <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">Services</p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {listing.services.map((service) => (
+            <span
+              key={service}
+              className="rounded-full border border-white/80 bg-white px-3 py-1 text-xs font-medium text-gray-700"
+            >
+              {service}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <p className="mt-3 text-sm font-semibold text-gray-800">Rating: {listing.rating}</p>
+      <div className="mt-4 flex flex-wrap gap-2">
+        <Link
+          href={listing.viewHref}
+          className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-all duration-300 hover:border-brand-200 hover:text-brand-700"
+        >
+          View
+        </Link>
+        <Link
+          href={listing.callHref}
+          className="rounded-full border border-brand-200 bg-brand-50/70 px-4 py-2 text-sm font-semibold text-brand-700 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm"
+        >
+          Call
+        </Link>
+      </div>
+    </article>
+  );
 }
 
 export default function SEOPageTemplate({
@@ -75,6 +126,7 @@ export default function SEOPageTemplate({
 
   return (
     <>
+      <WebPageSchema title={h1} description={intro} pageUrl={pageUrl} />
       {schemaType === "article" ? (
         <ArticleSchema headline={h1} description={intro} pageUrl={pageUrl} />
       ) : (
@@ -182,6 +234,17 @@ export default function SEOPageTemplate({
                   </p>
                 ))}
               </div>
+              {!!section.listings?.length && (
+                <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                  {section.listings.map((listing, listingIndex) => (
+                    <ListingCard
+                      key={`${listing.name}-${listing.area}`}
+                      listing={listing}
+                      index={listingIndex}
+                    />
+                  ))}
+                </div>
+              )}
               {!!section.bullets?.length && (
                 <ul className="mt-4 space-y-2">
                   {section.bullets.map((bullet) => (

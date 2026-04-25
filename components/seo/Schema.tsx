@@ -15,6 +15,12 @@ type ArticleSchemaProps = {
   pageUrl: string;
 };
 
+type WebPageSchemaProps = {
+  title: string;
+  description: string;
+  pageUrl: string;
+};
+
 type BreadcrumbItem = {
   label: string;
   href: string;
@@ -82,6 +88,23 @@ export function LocalBusinessSchema({ cityName, pageUrl }: LocalBusinessSchemaPr
     url: pageUrl,
     provider: {
       "@type": "Organization",
+      name: "Pawbiotics",
+      url: "https://pawbiotics.us",
+    },
+  };
+
+  return <JsonLd data={schema} />;
+}
+
+export function WebPageSchema({ title, description, pageUrl }: WebPageSchemaProps) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: title,
+    description,
+    url: pageUrl,
+    isPartOf: {
+      "@type": "WebSite",
       name: "Pawbiotics",
       url: "https://pawbiotics.us",
     },
