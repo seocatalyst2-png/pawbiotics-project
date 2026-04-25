@@ -11,6 +11,7 @@ const GOOGLE_FIELD_MASK = [
   "places.websiteUri",
   "places.googleMapsUri",
   "places.types",
+  "places.photos",
 ].join(",");
 
 type GooglePlace = {
@@ -22,6 +23,7 @@ type GooglePlace = {
   websiteUri?: string;
   googleMapsUri?: string;
   types?: string[];
+  photos?: Array<{ name?: string }>;
 };
 
 export async function GET(request: Request) {
@@ -69,14 +71,15 @@ export async function GET(request: Request) {
 
     const payload = (await response.json()) as { places?: GooglePlace[] };
     const listings = (payload.places ?? []).slice(0, 3).map((place) => ({
-      name: place.displayName?.text ?? "Veterinary Clinic",
-      address: place.formattedAddress ?? "Address unavailable",
+      name: place.displayName?.text ?? null,
+      address: place.formattedAddress ?? null,
       rating: place.rating ?? null,
       reviewCount: place.userRatingCount ?? null,
       phone: place.nationalPhoneNumber ?? null,
       website: place.websiteUri ?? null,
       googleMapsUrl: place.googleMapsUri ?? null,
       types: place.types ?? [],
+      photoName: place.photos?.[0]?.name ?? null,
     }));
 
     return NextResponse.json(

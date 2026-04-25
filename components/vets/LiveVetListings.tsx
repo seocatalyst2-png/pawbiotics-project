@@ -5,14 +5,15 @@ import { useEffect, useMemo, useState } from "react";
 import Container from "@/components/Container";
 
 type VetListing = {
-  name: string;
-  address: string;
+  name: string | null;
+  address: string | null;
   rating: number | null;
   reviewCount: number | null;
   phone: string | null;
   website: string | null;
   googleMapsUrl: string | null;
   types: string[];
+  photoName: string | null;
 };
 
 type VetApiResponse = {
@@ -34,15 +35,6 @@ const cardClasses = [
 
 const FALLBACK_MESSAGE =
   "Live clinic listings are temporarily unavailable. Please check Google Maps or contact a local veterinarian directly.";
-
-function formatTypeLabel(value: string): string {
-  return value
-    .replace(/_/g, " ")
-    .split(" ")
-    .filter(Boolean)
-    .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
-    .join(" ");
-}
 
 export default function LiveVetListings({ citySlug, fallbackCityName }: LiveVetListingsProps) {
   const [data, setData] = useState<VetApiResponse | null>(null);
@@ -108,52 +100,56 @@ export default function LiveVetListings({ citySlug, fallbackCityName }: LiveVetL
     return (
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {listings.map((listing, index) => {
-          const displayTypes = listing.types.slice(0, 4).map(formatTypeLabel);
           const mapsHref =
             listing.googleMapsUrl ??
             `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-              `${listing.name} ${listing.address}`
+              `${listing.name ?? "Veterinary clinic"} ${listing.address ?? cityName}`
             )}`;
+          const displayName = listing.name ?? "Name unavailable";
+          const displayAddress = listing.address ?? "Address unavailable";
+          const photoUrl = listing.photoName
+            ? `/api/vets/photo?name=${encodeURIComponent(listing.photoName)}&maxHeightPx=300`
+            : null;
+          const ratingText =
+            listing.rating !== null
+              ? `⭐ ${listing.rating.toFixed(1)}${
+                  listing.reviewCount !== null ? ` (${listing.reviewCount} reviews)` : ""
+                }`
+              : "⭐ Rating unavailable";
 
           return (
             <article
-              key={`${listing.name}-${listing.address}-${index}`}
+              key={`${listing.name ?? "clinic"}-${listing.address ?? "address"}-${index}`}
               className={`rounded-3xl border p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${cardClasses[index % cardClasses.length]}`}
             >
-              <h3 className="font-serif text-xl font-semibold text-gray-900">{listing.name}</h3>
-              <p className="mt-2 text-sm leading-7 text-gray-700">{listing.address}</p>
-              <p className="mt-2 text-sm font-semibold text-gray-800">
-                Rating: {listing.rating ?? "N/A"}
-                {listing.reviewCount ? ` (${listing.reviewCount} reviews)` : ""}
-              </p>
-              {listing.phone ? (
-                <p className="mt-2 text-sm text-gray-700">
-                  Phone:{" "}
-                  <Link href={`tel:${listing.phone}`} className="font-semibold text-brand-700">
-                    {listing.phone}
-                  </Link>
-                </p>
-              ) : (
-                <p className="mt-2 text-sm text-gray-500">Phone unavailable</p>
-              )}
-
-              {!!displayTypes.length && (
-                <div className="mt-3">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">Services</p>
-                  <div className="mt-2 flex flex-wrap gap-2">
-                    {displayTypes.map((type) => (
-                      <span
-                        key={type}
-                        className="rounded-full border border-white/70 bg-white px-3 py-1 text-xs font-medium text-gray-700"
-                      >
-                        {type}
-                      </span>
-                    ))}
+              <div className="overflow-hidden rounded-2xl border border-white/70 bg-white/80">
+                {photoUrl ? (
+                  <img
+                    src={photoUrl}
+                    alt={`${displayName} clinic`}
+                    className="h-44 w-full object-cover"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="flex h-44 w-full items-center justify-center bg-gradient-to-br from-brand-50 to-teal-50 text-center text-sm font-semibold text-gray-500">
+                    Photo unavailable
                   </div>
-                </div>
-              )}
+                )}
+              </div>
+
+              <h3 className="mt-4 font-serif text-xl font-semibold text-gray-900">{displayName}</h3>
+              <p className="mt-2 text-sm leading-7 text-gray-700">{displayAddress}</p>
+              <p className="mt-2 text-sm font-semibold text-gray-800">{ratingText}</p>
 
               <div className="mt-4 flex flex-wrap gap-2">
+                <Link
+                  href={mapsHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-brand-200 bg-brand-50/70 px-4 py-2 text-sm font-semibold text-brand-700 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm"
+                >
+                  View on Maps
+                </Link>
                 {listing.website ? (
                   <Link
                     href={listing.website}
@@ -161,17 +157,17 @@ export default function LiveVetListings({ citySlug, fallbackCityName }: LiveVetL
                     rel="noopener noreferrer"
                     className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-all duration-300 hover:border-brand-200 hover:text-brand-700"
                   >
-                    Website
+                    Visit Website
                   </Link>
                 ) : null}
-                <Link
-                  href={mapsHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full border border-brand-200 bg-brand-50/70 px-4 py-2 text-sm font-semibold text-brand-700 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm"
-                >
-                  Google Maps
-                </Link>
+                {listing.phone ? (
+                  <Link
+                    href={`tel:${listing.phone}`}
+                    className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-all duration-300 hover:border-brand-200 hover:text-brand-700"
+                  >
+                    Call Now
+                  </Link>
+                ) : null}
               </div>
             </article>
           );
