@@ -5,20 +5,30 @@ export default function CategoryCard({
   title,
   description,
   icon,
+  cardClassName,
+  iconClassName,
 }: {
   href: string;
   title: string;
   description: string;
   icon?: string;
+  cardClassName?: string;
+  iconClassName?: string;
 }) {
   return (
     <Link
       href={href}
-      className="group block cursor-pointer rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300"
+      className={`group block cursor-pointer rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300 ${
+        cardClassName ?? "border-gray-100 bg-white hover:border-brand-200"
+      }`}
       aria-label={`Open ${title} guide`}
     >
       {icon && (
-        <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-brand-50 text-2xl">
+        <div
+          className={`mb-4 flex h-11 w-11 items-center justify-center rounded-xl text-2xl ${
+            iconClassName ?? "bg-brand-50"
+          }`}
+        >
           {icon}
         </div>
       )}
