@@ -10,6 +10,7 @@ import {
 import type { InternalLink } from "@/lib/programmatic-content";
 import { ContentSection, FAQItem, QuickAnswer, VetClinicListing } from "@/lib/seo";
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 type SEOPageTemplateProps = {
   breadcrumbs?: Array<{ label: string; href: string }>;
@@ -27,6 +28,7 @@ type SEOPageTemplateProps = {
   pageUrl: string;
   cityName?: string;
   disclaimer?: string;
+  afterQuickAnswer?: ReactNode;
 };
 
 const sectionCardClasses = [
@@ -116,6 +118,7 @@ export default function SEOPageTemplate({
   pageUrl,
   cityName,
   disclaimer,
+  afterQuickAnswer,
 }: SEOPageTemplateProps) {
   const emergencySection = sections.find((section) =>
     /when to call a vet|when to see a vet|urgent/i.test(section.title)
@@ -191,6 +194,7 @@ export default function SEOPageTemplate({
           </div>
         </Container>
       </section>
+      {afterQuickAnswer}
 
       <section className="py-4">
         <Container>

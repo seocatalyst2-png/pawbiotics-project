@@ -69,8 +69,8 @@ export default async function VetCityPage({ params }: PageProps) {
         cityName={cityName}
         pageUrl={`https://pawbiotics.us/vets/${data.slug}`}
         disclaimer="Listings are for informational purposes and should be verified directly with each clinic before booking."
+        afterQuickAnswer={<LiveVetListings citySlug={citySlug} fallbackCityName={cityName} />}
       />
-      <LiveVetListings citySlug={citySlug} fallbackCityName={cityName} />
     </>
   );
 }
