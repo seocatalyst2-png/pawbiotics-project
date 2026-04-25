@@ -2195,7 +2195,7 @@ const blogPosts: BlogPost[] = [
     publishedDate: "2026-04-27",
     readingTime: "11 min read",
     intro:
-      "If your dog keeps shaking their head or scratching one ear, an ear problem may be starting. This guide helps you spot common signs early and know when home monitoring is not enough.",
+      "If your dog keeps shaking their head or scratching one ear, an ear infection may be starting. This guide helps you spot mild and advanced signs and know when vet care is needed.",
     sections: [
       {
         heading: "Quick answer: how to tell if my dog has an ear infection",
@@ -2204,7 +2204,7 @@ const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Most common signs pet parents notice first",
+        heading: "Common Signs of Ear Infection in Dogs",
         paragraphs: [
           "Many dogs show behavior changes before owners see clear discharge. Watching routine habits can help you act sooner.",
         ],
@@ -2216,10 +2216,10 @@ const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Ear smell, redness, scratching, and head shaking",
+        heading: "What Ear Discharge Means",
         paragraphs: [
-          "A sour or strong odor can be an early warning sign. Red skin inside the ear flap, moisture, and repeated scratching often appear together.",
-          "Head shaking that repeats several times a day should not be ignored, especially if one side is worse.",
+          "Discharge color and smell can give useful clues, but color alone is not a diagnosis. Clear moisture may be mild irritation, while thick yellow, brown, or green discharge is more concerning.",
+          "A sour or strong odor with discharge and repeated scratching often suggests inflammation or infection that needs veterinary treatment.",
         ],
       },
       {
@@ -2232,6 +2232,13 @@ const blogPosts: BlogPost[] = [
           "Moisture after bathing or swimming",
           "Wax buildup and poor airflow",
           "Underlying skin conditions",
+        ],
+      },
+      {
+        heading: "Early vs Advanced Symptoms",
+        paragraphs: [
+          "Early signs include mild head shaking, occasional scratching, and light redness. Advanced signs include thick discharge, strong odor, severe pain, swelling, and balance changes.",
+          "If symptoms move from occasional to daily, treat the case as higher priority.",
         ],
       },
       {
@@ -2335,9 +2342,34 @@ const blogPosts: BlogPost[] = [
       { label: "Pet health conditions", href: "/health-conditions" },
       { label: "Itchy skin condition guide", href: "/health-conditions/itchy-skin" },
       { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Why is my dog's eye red?", href: "/blog/why-is-my-dogs-eye-red" },
+      { label: "Swollen dog paw", href: "/blog/swollen-dog-paw" },
       { label: "Contact Pawbiotics", href: "/contact" },
       { label: "Talk to Houston vets", href: "/vets/houston-tx" },
       { label: "Dog health guides", href: "/dogs" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      {
+        label: "Why is my dog's eye red?",
+        href: "/blog/why-is-my-dogs-eye-red",
+        description: "Eye redness, discharge, and urgency guide.",
+      },
+      {
+        label: "Swollen dog paw",
+        href: "/blog/swollen-dog-paw",
+        description: "Inflammation and infection-style symptom checks.",
+      },
+      {
+        label: "Why is my dog coughing?",
+        href: "/blog/why-is-my-dog-coughing",
+        description: "Respiratory symptom triage in simple language.",
+      },
+      {
+        label: "Dog won't stop sneezing",
+        href: "/blog/dog-wont-stop-sneezing",
+        description: "Nasal irritation and infection-style patterns.",
+      },
     ],
   },
   {
@@ -3198,7 +3230,7 @@ const blogPosts: BlogPost[] = [
     publishedDate: "2026-04-27",
     readingTime: "11 min read",
     intro:
-      "A red eye in dogs can come from mild irritation, but it can also mean a painful eye problem. This guide helps you spot severity and avoid mistakes that can delay care.",
+      "A red eye in dogs can come from mild irritation, but it can also mean a painful eye problem. This guide covers discharge types, infection clues, and when red eye becomes urgent.",
     sections: [
       {
         heading: "Quick answer: why is my dog's eye red?",
@@ -3225,9 +3257,17 @@ const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "What might cause red eye",
+        heading: "Types of Eye Discharge in Dogs",
         paragraphs: [
-          "Different conditions can look similar from outside. Exam tools are often needed for clear diagnosis.",
+          "Discharge type helps triage urgency. Clear watery discharge can appear with irritation or allergy patterns. Yellow or green discharge is more concerning for infection-style cases.",
+          "Thick discharge plus swelling, pain, or squinting should be checked quickly.",
+        ],
+      },
+      {
+        heading: "Dog Eye Infection vs Irritation",
+        paragraphs: [
+          "Irritation may be short-term and improve quickly once trigger exposure stops. Infection-style patterns often involve thicker discharge, increasing redness, and ongoing discomfort.",
+          "Because symptoms overlap, exam tools are often needed for diagnosis.",
         ],
         bullets: [
           "Dust, shampoo, or minor irritant exposure",
@@ -3237,9 +3277,9 @@ const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: "Severity guidance",
+        heading: "When Red Eye Is an Emergency",
         paragraphs: [
-          "Mild redness without pain may allow short monitoring. Redness with pain, cloudiness, or sudden behavior change should be treated as urgent.",
+          "Mild redness without pain may allow short monitoring. Redness with swelling, severe pain, cloudiness, yellow-green discharge, or sudden behavior change should be treated as urgent.",
         ],
       },
       {
@@ -3341,6 +3381,7 @@ const blogPosts: BlogPost[] = [
       { label: "Dog health guides", href: "/dogs" },
       { label: "Health conditions hub", href: "/health-conditions" },
       { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "How to tell if my dog has an ear infection", href: "/blog/how-to-tell-if-my-dog-has-an-ear-infection" },
       { label: "Dog won't stop sneezing", href: "/blog/dog-wont-stop-sneezing" },
       { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy" },
       { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
@@ -6132,6 +6173,334 @@ const blogPosts: BlogPost[] = [
       { label: "Feline spay recovery", href: "/blog/feline-spay-recovery", description: "Medical-stage healing and recheck focus." },
       { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water", description: "Hydration warning signs after procedures." },
       { label: "Why is my cat drooling?", href: "/blog/why-is-my-cat-drooling", description: "Oral symptom checks when behavior changes." },
+    ],
+  },
+  {
+    slug: "my-dog-is-having-diarrhea",
+    title: "My Dog Is Having Diarrhea: What to Do Now",
+    metaTitle: "My Dog Is Having Diarrhea: Mild vs Emergency Signs and Home Steps",
+    metaDescription:
+      "My dog is having diarrhea? Learn mild vs severe signs, stomach upset differences, common causes, home care, and when to call a vet.",
+    category: "Dogs",
+    publishedDate: "2026-04-28",
+    readingTime: "12 min read",
+    intro:
+      "Diarrhea in dogs is common, but not every case is mild. This guide helps you separate short-term stomach upset from higher-risk diarrhea that needs urgent care.",
+    sections: [
+      {
+        heading: "Quick answer: my dog is having diarrhea",
+        paragraphs: [
+          "Many mild diarrhea cases improve with monitoring and supportive care, but persistent diarrhea, blood, vomiting, or low energy can signal a more serious issue. Early triage helps avoid dehydration and complications.",
+        ],
+      },
+      {
+        heading: "Safety note",
+        paragraphs: [
+          "This page is educational and does not replace a veterinary diagnosis. If your dog looks weak, dehydrated, or rapidly worse, contact your veterinarian immediately.",
+        ],
+      },
+      {
+        heading: "Dog Diarrhea vs Upset Stomach",
+        paragraphs: [
+          "Upset stomach may include one soft stool and quick recovery. Diarrhea usually means repeated loose stool and can include urgency, mucus, or stool frequency changes.",
+          "When vomiting and diarrhea appear together, escalation should happen faster.",
+        ],
+      },
+      {
+        heading: "Common Causes (Food, Infection, Stress)",
+        paragraphs: [
+          "Many causes are possible, so pattern and context are important.",
+        ],
+        bullets: [
+          "Food change or dietary indiscretion",
+          "Infection-style GI irritation",
+          "Stress-related digestive flare",
+          "Parasites or chronic GI sensitivity",
+        ],
+      },
+      {
+        heading: "Mild vs severe diarrhea signs",
+        paragraphs: [
+          "Mild cases may have normal energy and appetite with short duration. Severe cases may include repeated watery stool, blood, vomiting, pain signs, or dehydration risk.",
+        ],
+      },
+      {
+        heading: "Real-world example: weekend food-trigger diarrhea",
+        paragraphs: [
+          "A dog may have loose stool after table scraps and improve by next day with rest and hydration support. A different dog with repeated watery stool and low energy needs same-day clinical review.",
+        ],
+      },
+      {
+        heading: "What to monitor",
+        paragraphs: [
+          "Use short logs to guide safer decisions.",
+        ],
+        bullets: [
+          "Stool frequency and consistency",
+          "Blood or mucus presence",
+          "Water intake and urine output",
+          "Vomiting, appetite, and energy trend",
+          "Behavior signs of abdominal discomfort",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these during diarrhea episodes."],
+        bullets: [
+          "Changing foods repeatedly in one day",
+          "Using human anti-diarrheal medication",
+          "Ignoring dehydration signs",
+          "Waiting too long when blood appears",
+        ],
+      },
+      {
+        heading: "Practical checklist before calling the vet",
+        paragraphs: ["Have these details ready for triage."],
+        bullets: [
+          "Symptom start time",
+          "Stool photo and description",
+          "Any recent food change or scavenging event",
+          "Vomiting count and appetite level",
+          "Current medications and known conditions",
+        ],
+      },
+      {
+        heading: "When Diarrhea Becomes an Emergency",
+        paragraphs: [
+          "Seek urgent care for repeated watery stool with weakness, blood, vomiting, dehydration signs, severe pain behavior, or collapse-like signs. Puppies and seniors need earlier escalation.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Early monitoring and clear escalation decisions improve safety."],
+        bullets: [
+          "Short mild cases can improve quickly",
+          "Track stool plus whole-body signs together",
+          "Do not self-medicate with human products",
+          "Escalate quickly for red-flag symptoms",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How long can I monitor diarrhea at home?",
+        answer:
+          "Short monitoring may be reasonable for mild cases with normal energy and hydration. If symptoms persist, worsen, or include blood or vomiting, call your veterinarian promptly. Delays can increase dehydration risk.",
+      },
+      {
+        question: "What if my dog has diarrhea but is still active?",
+        answer:
+          "That can happen in mild cases, but activity alone does not rule out risk. Continue monitoring stool pattern, appetite, and water intake closely. Seek care if there is no clear improvement.",
+      },
+      {
+        question: "Can stress cause dog diarrhea?",
+        answer:
+          "Yes, stress can trigger temporary digestive upset in some dogs. But persistent or severe diarrhea still needs medical review to rule out infection or other causes.",
+      },
+      {
+        question: "Should I stop feeding completely during diarrhea?",
+        answer:
+          "Feeding decisions should be guided by your veterinarian and your dog's condition. Sudden, unstructured fasting or repeated food changes can complicate recovery in some cases.",
+      },
+      {
+        question: "When is blood in stool urgent?",
+        answer:
+          "Blood in stool should be taken seriously, especially with weakness, vomiting, or repeated diarrhea. Contact your vet quickly for triage and next-step guidance.",
+      },
+      {
+        question: "Can probiotics help mild diarrhea cases?",
+        answer:
+          "Some dogs may benefit from gut-support strategies in mild cases, but probiotics are not a substitute for urgent care when red flags are present. Discuss product and dose with your vet.",
+      },
+      {
+        question: "What signs suggest dehydration?",
+        answer:
+          "Low energy, dry gums, reduced urine output, and persistent GI losses can suggest dehydration risk. If these signs appear, seek veterinary care promptly.",
+      },
+    ],
+    internalLinks: [
+      { label: "Dog diarrhea support condition page", href: "/health-conditions/diarrhea" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Why is my dog gagging?", href: "/blog/why-is-my-dog-gagging" },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy" },
+      { label: "What to do if dog eats chicken bones", href: "/blog/what-to-do-if-dog-eats-chicken-bones" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "What to do if dog eats chicken bones", href: "/blog/what-to-do-if-dog-eats-chicken-bones", description: "Urgent ingestion and GI risk triage guide." },
+      { label: "Why is my dog gagging?", href: "/blog/why-is-my-dog-gagging", description: "Track gagging with GI and airway symptoms." },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy", description: "Escalation cues when diarrhea affects overall state." },
+      { label: "Dog won't stop sneezing", href: "/blog/dog-wont-stop-sneezing", description: "Another symptom triage workflow for dog owners." },
+    ],
+  },
+  {
+    slug: "what-to-do-if-dog-eats-chicken-bones",
+    title: "What to Do If Dog Eats Chicken Bones",
+    metaTitle: "What to Do If Dog Eats Chicken Bones: Immediate Steps and Vet Red Flags",
+    metaDescription:
+      "Learn what to do if your dog eats chicken bones, immediate steps, risks, what not to do, and when to seek urgent veterinary care.",
+    category: "Dogs",
+    publishedDate: "2026-04-28",
+    readingTime: "11 min read",
+    intro:
+      "If your dog ate chicken bones, quick calm action matters. This guide explains immediate steps, choking and blockage risks, and when emergency vet care is needed.",
+    sections: [
+      {
+        heading: "Quick answer: what to do if dog eats chicken bones",
+        paragraphs: [
+          "Stay calm, remove access to more bones, and monitor closely for choking, vomiting, pain, or stool changes. Call your vet for case-specific advice, especially if your dog is small or symptomatic.",
+        ],
+      },
+      {
+        heading: "Immediate steps",
+        paragraphs: [
+          "Act in a simple, safe order to reduce risk and improve triage quality.",
+        ],
+        bullets: [
+          "Remove remaining bones right away",
+          "Keep your dog calm and restrict activity",
+          "Note what type and how much was eaten",
+          "Call your vet or emergency clinic for guidance",
+        ],
+      },
+      {
+        heading: "Main risks to understand",
+        paragraphs: [
+          "Chicken bones can create different risks depending on size, cooking state, and amount.",
+        ],
+        bullets: [
+          "Choking or airway obstruction",
+          "Sharp fragment irritation",
+          "GI blockage risk",
+          "Vomiting, pain, or stool complications",
+        ],
+      },
+      {
+        heading: "What NOT to do",
+        paragraphs: [
+          "Some home reactions increase risk and should be avoided.",
+        ],
+        bullets: [
+          "Do not induce vomiting unless your vet instructs it",
+          "Do not force food or oils without guidance",
+          "Do not wait passively through red-flag symptoms",
+          "Do not use human medications",
+        ],
+      },
+      {
+        heading: "Real-world example: small dog with cooked bone ingestion",
+        paragraphs: [
+          "A small dog that eats cooked chicken bones may look normal at first, then show vomiting or pain later. Early vet triage can prevent delayed complications.",
+        ],
+      },
+      {
+        heading: "What to monitor after ingestion",
+        paragraphs: [
+          "Observation should focus on breathing, GI signs, and behavior.",
+        ],
+        bullets: [
+          "Coughing, gagging, or breathing effort",
+          "Vomiting or retching",
+          "Stool changes, blood, or straining",
+          "Low appetite or abdominal discomfort",
+          "Energy decline or restlessness",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these frequent errors."],
+        bullets: [
+          "Assuming no symptoms means no risk",
+          "Skipping vet call because dog seems fine initially",
+          "Trying internet remedies first",
+          "Ignoring delayed signs over next day",
+        ],
+      },
+      {
+        heading: "Practical checklist for your vet call",
+        paragraphs: ["Have this info ready for fast guidance."],
+        bullets: [
+          "Bone type (cooked/raw) and estimated amount",
+          "Time of ingestion",
+          "Dog size and weight",
+          "Current symptoms",
+          "Any prior GI history",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call immediately for choking signs, repeated vomiting, severe abdominal pain behavior, blood in stool, weakness, or breathing difficulty. These signs need urgent care.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Fast triage and symptom monitoring are safer than guesswork."],
+        bullets: [
+          "Call your vet early after bone ingestion",
+          "Do not induce vomiting without instructions",
+          "Watch for delayed GI and breathing signs",
+          "Seek emergency care for red flags",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Should I make my dog vomit after eating chicken bones?",
+        answer:
+          "Do not induce vomiting unless your veterinarian specifically instructs you. This can increase risk in some situations. Call your clinic first for case-specific guidance.",
+      },
+      {
+        question: "Are cooked chicken bones more dangerous?",
+        answer:
+          "Cooked bones can be more brittle and may splinter more easily. Risk still depends on amount, dog size, and symptoms. Early veterinary triage is the safest step.",
+      },
+      {
+        question: "What if my dog seems normal right now?",
+        answer:
+          "Some dogs look normal at first but develop symptoms later. Continue monitoring and contact your vet for advice even if your dog appears fine immediately.",
+      },
+      {
+        question: "How long should I watch for delayed symptoms?",
+        answer:
+          "Your vet can give a better timeline for your dog's case. In general, monitor closely for delayed vomiting, pain, stool changes, or behavior decline after ingestion.",
+      },
+      {
+        question: "When is this an emergency?",
+        answer:
+          "Treat it as emergency if your dog has choking signs, breathing difficulty, repeated vomiting, severe abdominal pain, collapse signs, or blood in stool.",
+      },
+      {
+        question: "Can chicken bones cause diarrhea?",
+        answer:
+          "GI irritation can occur in some cases, including stool changes. If diarrhea appears with pain, vomiting, or blood, seek veterinary care quickly.",
+      },
+      {
+        question: "Which related guide should I read next?",
+        answer:
+          "If GI signs begin, read [my dog is having diarrhea](/blog/my-dog-is-having-diarrhea) for symptom severity and emergency escalation guidance.",
+      },
+    ],
+    internalLinks: [
+      { label: "My dog is having diarrhea", href: "/blog/my-dog-is-having-diarrhea" },
+      { label: "Why is my dog gagging?", href: "/blog/why-is-my-dog-gagging" },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy" },
+      { label: "Dog diarrhea condition page", href: "/health-conditions/diarrhea" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "My dog is having diarrhea", href: "/blog/my-dog-is-having-diarrhea", description: "Mild vs emergency diarrhea triage guide." },
+      { label: "Why is my dog gagging?", href: "/blog/why-is-my-dog-gagging", description: "Airway and retching symptom guidance." },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy", description: "Urgency signs when overall status worsens." },
+      { label: "Why is my dog coughing?", href: "/blog/why-is-my-dog-coughing", description: "Cough patterns and escalation framework." },
     ],
   },
 ];
