@@ -26,6 +26,7 @@ export type BlogPost = {
   internalLinks: BlogInternalLink[];
   relatedGuides?: BlogInternalLink[];
   relatedGuidesTitle?: string;
+  relatedConditions?: BlogInternalLink[];
 };
 
 const blogPosts: BlogPost[] = [

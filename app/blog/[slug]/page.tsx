@@ -9,7 +9,12 @@ import {
   BreadcrumbSchema,
   FAQSchema,
 } from "@/components/seo/Schema";
-import { getBlogPostBySlug, getBlogPostSlugs } from "@/data/blog-posts";
+import {
+  getBlogPostBySlug,
+  getBlogPostSlugs,
+  type BlogInternalLink,
+  type BlogPost,
+} from "@/data/blog-posts";
 import { generateBlogMeta } from "@/lib/meta";
 
 type PageProps = {
@@ -84,6 +89,189 @@ function renderParagraphWithLinks(paragraph: string) {
   return nodes.length ? nodes : paragraph;
 }
 
+function isSymptomPost(post: BlogPost): boolean {
+  if (!["Dogs", "Cats"].includes(post.category)) return false;
+  const marker = `${post.slug} ${post.title}`.toLowerCase();
+  return [
+    "why-is-my",
+    "symptom",
+    "cough",
+    "gag",
+    "breath",
+    "drool",
+    "sneez",
+    "swollen",
+    "red",
+    "dragging",
+    "cold",
+    "gums",
+  ].some((keyword) => marker.includes(keyword));
+}
+
+function uniqueLinks(links: BlogInternalLink[]): BlogInternalLink[] {
+  const seen = new Set<string>();
+  return links.filter((link) => {
+    const key = `${link.href}|${link.label}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+function getCrossPetLinks(post: BlogPost): BlogInternalLink[] {
+  if (!isSymptomPost(post)) return [];
+  const key = `${post.slug} ${post.title}`.toLowerCase();
+
+  if (post.category === "Dogs") {
+    if (key.includes("breath") || key.includes("gums")) {
+      return [
+        {
+          label: "Cat breath illness guide",
+          href: "/blog/why-does-my-cats-breath-smell-so-bad",
+          description: "Compare oral and illness warning signs in cats.",
+        },
+        {
+          label: "Cat breath basics",
+          href: "/blog/cat-breath-stinks",
+          description: "Simple hygiene-first breath guide for cats.",
+        },
+      ];
+    }
+    if (key.includes("breath") || key.includes("cough") || key.includes("gag")) {
+      return [
+        {
+          label: "Why is my cat breathing heavy?",
+          href: "/blog/why-is-my-cat-breathing-heavy",
+          description: "Cross-check respiratory urgency patterns in cats.",
+        },
+        {
+          label: "Cat cold symptoms",
+          href: "/blog/cat-cold-symptoms",
+          description: "Review upper-airway symptom overlap.",
+        },
+      ];
+    }
+    return [
+      {
+        label: "Why is my cat sneezing a lot?",
+        href: "/blog/why-is-my-cat-sneezing-a-lot",
+        description: "Compare common symptom progression in cats.",
+      },
+      {
+        label: "Why is my cat drooling?",
+        href: "/blog/why-is-my-cat-drooling",
+        description: "Cross-check oral symptom escalation signals.",
+      },
+    ];
+  }
+
+  if (key.includes("breath") || key.includes("drool")) {
+    return [
+      {
+        label: "Dog bad breath illness guide",
+        href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness",
+        description: "Compare when breath odor suggests wider illness.",
+      },
+      {
+        label: "Dog breath basics",
+        href: "/blog/dogs-breath-smells",
+        description: "See dog oral-care routine and monitoring tips.",
+      },
+    ];
+  }
+
+  return [
+    {
+      label: "Why is my dog breathing heavy?",
+      href: "/blog/why-is-my-dog-breathing-heavy",
+      description: "Compare respiratory urgency cues across species.",
+    },
+    {
+      label: "Why is my dog coughing?",
+      href: "/blog/why-is-my-dog-coughing",
+      description: "Review cough severity guidance in dogs.",
+    },
+  ];
+}
+
+function getAutoRelatedConditions(post: BlogPost): BlogInternalLink[] {
+  const key = `${post.slug} ${post.title}`.toLowerCase();
+  if (key.includes("breath") || key.includes("gag") || key.includes("cough") || key.includes("cold") || key.includes("sneez")) {
+    return [
+      {
+        label: "Allergies condition guide",
+        href: "/health-conditions/allergies",
+        description: "Track inflammatory triggers linked to airway symptoms.",
+      },
+      {
+        label: "Immunity condition guide",
+        href: "/health-conditions/immunity",
+        description: "Understand baseline resilience and recovery support.",
+      },
+      {
+        label: "Diarrhea condition guide",
+        href: "/health-conditions/diarrhea",
+        description: "Useful when symptoms overlap with digestive stress.",
+      },
+    ];
+  }
+  if (key.includes("paw") || key.includes("itch") || key.includes("red") || key.includes("dragging")) {
+    return [
+      {
+        label: "Allergies condition guide",
+        href: "/health-conditions/allergies",
+        description: "Common skin and irritation-related trigger overview.",
+      },
+      {
+        label: "Itchy skin condition guide",
+        href: "/health-conditions/itchy-skin",
+        description: "Skin discomfort patterns and care reminders.",
+      },
+      {
+        label: "Diarrhea condition guide",
+        href: "/health-conditions/diarrhea",
+        description: "Helpful for stool-linked symptom clusters.",
+      },
+    ];
+  }
+  if (key.includes("drool") || key.includes("breath")) {
+    return [
+      {
+        label: "Bad breath condition guide",
+        href: "/health-conditions/bad-breath",
+        description: "Oral-health causes and escalation cues.",
+      },
+      {
+        label: "Allergies condition guide",
+        href: "/health-conditions/allergies",
+        description: "Inflammation triggers that may affect mouth and airway.",
+      },
+      {
+        label: "Diarrhea condition guide",
+        href: "/health-conditions/diarrhea",
+        description: "Cross-symptom digestive pattern reference.",
+      },
+    ];
+  }
+  return [
+    {
+      label: "Health conditions hub",
+      href: "/health-conditions",
+      description: "Explore condition overviews by symptom type.",
+    },
+    {
+      label: "Allergies condition guide",
+      href: "/health-conditions/allergies",
+      description: "Common trigger map for recurring symptoms.",
+    },
+    {
+      label: "Diarrhea condition guide",
+      href: "/health-conditions/diarrhea",
+      description: "Digestive companion page for mixed symptom cases.",
+    },
+  ];
+}
+
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const post = getBlogPostBySlug(slug);
@@ -107,6 +295,10 @@ export default async function BlogPostPage({ params }: PageProps) {
     "border-lime-100 bg-lime-50/65",
   ] as const;
   const sectionIcons = ["🩺", "📌", "✅", "🧠", "🍽️", "🐾", "📋", "🚨"] as const;
+  const relatedConditions = uniqueLinks(post.relatedConditions ?? getAutoRelatedConditions(post));
+  const crossPetLinks = getCrossPetLinks(post);
+  const displayedInternalLinks = uniqueLinks([...post.internalLinks, ...crossPetLinks]).slice(0, 12);
+  const crossPetContextLinks = crossPetLinks.slice(0, 2);
 
   return (
     <>
@@ -148,6 +340,23 @@ export default async function BlogPostPage({ params }: PageProps) {
             Published {post.publishedDate} • {post.readingTime}
           </p>
           <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600">{post.intro}</p>
+          {!!(isSymptomPost(post) && crossPetContextLinks.length) && (
+            <p className="mt-3 max-w-3xl text-sm leading-7 text-gray-600">
+              Compare with similar{" "}
+              {post.category === "Dogs" ? "cat" : "dog"} symptom guides:{" "}
+              {crossPetContextLinks.map((item, index) => (
+                <span key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="font-medium text-brand-700 underline decoration-brand-300 underline-offset-2 transition-colors hover:text-brand-800"
+                  >
+                    {item.label}
+                  </Link>
+                  {index < crossPetContextLinks.length - 1 ? ", " : "."}
+                </span>
+              ))}
+            </p>
+          )}
         </Container>
       </section>
 
@@ -213,12 +422,34 @@ export default async function BlogPostPage({ params }: PageProps) {
         </section>
       )}
 
-      {!!post.internalLinks.length && (
+      {!!relatedConditions.length && (
+        <section className="border-t border-gray-100 bg-gradient-to-b from-white to-brand-50/20 py-10">
+          <Container>
+            <h2 className="text-2xl font-semibold text-gray-900">Related Health Conditions</h2>
+            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedConditions.map((item) => (
+                <Link
+                  key={item.href + item.label}
+                  href={item.href}
+                  className="rounded-xl border border-gray-200 bg-white px-4 py-4 transition-all duration-300 hover:-translate-y-1 hover:border-brand-200 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-300"
+                >
+                  <p className="text-sm font-semibold text-gray-900">{item.label}</p>
+                  {!!item.description && (
+                    <p className="mt-1 text-xs leading-5 text-gray-600">{item.description}</p>
+                  )}
+                </Link>
+              ))}
+            </div>
+          </Container>
+        </section>
+      )}
+
+      {!!displayedInternalLinks.length && (
         <section className="border-t border-gray-100 bg-gradient-to-b from-white to-brand-50/20 py-10">
           <Container>
             <h2 className="text-2xl font-semibold text-gray-900">Related Guides</h2>
             <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {post.internalLinks.map((item) => (
+              {displayedInternalLinks.map((item) => (
                 <Link
                   key={item.href + item.label}
                   href={item.href}
