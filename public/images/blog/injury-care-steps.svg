@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Pet injury care steps visual</title>
+  <desc id="desc">Step-by-step guidance visual for immediate pet injury response and safe vet follow-up.</desc>
+  <defs>
+    <linearGradient id="bg4" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#fff8ef" />
+      <stop offset="100%" stop-color="#f3f8ff" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg4)" rx="28" />
+  <rect x="110" y="150" width="300" height="340" rx="22" fill="#ffffff" stroke="#f0c59a" stroke-width="4" />
+  <rect x="450" y="150" width="300" height="340" rx="22" fill="#ffffff" stroke="#f0c59a" stroke-width="4" />
+  <rect x="790" y="150" width="300" height="340" rx="22" fill="#ffffff" stroke="#f0c59a" stroke-width="4" />
+  <text x="260" y="205" text-anchor="middle" fill="#8c5a2c" font-size="34" font-family="Arial, sans-serif" font-weight="700">1. Stay Calm</text>
+  <text x="260" y="255" text-anchor="middle" fill="#5f5f5f" font-size="24" font-family="Arial, sans-serif">Limit movement</text>
+  <text x="600" y="205" text-anchor="middle" fill="#8c5a2c" font-size="34" font-family="Arial, sans-serif" font-weight="700">2. Observe</text>
+  <text x="600" y="255" text-anchor="middle" fill="#5f5f5f" font-size="24" font-family="Arial, sans-serif">Check bleeding and pain</text>
+  <text x="940" y="205" text-anchor="middle" fill="#8c5a2c" font-size="34" font-family="Arial, sans-serif" font-weight="700">3. Call Vet</text>
+  <text x="940" y="255" text-anchor="middle" fill="#5f5f5f" font-size="24" font-family="Arial, sans-serif">Share symptoms clearly</text>
+  <text x="600" y="585" text-anchor="middle" fill="#5f5f5f" font-size="24" font-family="Arial, sans-serif">First aid supports care, but does not replace a veterinary exam</text>
+</svg>

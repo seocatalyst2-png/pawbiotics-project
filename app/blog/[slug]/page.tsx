@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
@@ -87,6 +88,157 @@ function renderParagraphWithLinks(paragraph: string) {
   }
 
   return nodes.length ? nodes : paragraph;
+}
+
+type SectionImage = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
+const IMAGE_LIBRARY = {
+  normalVsAbnormal: "/images/blog/normal-vs-abnormal.svg",
+  symptomOverview: "/images/blog/symptom-overview.svg",
+  practicalChecklist: "/images/blog/practical-checklist.svg",
+  injuryCareSteps: "/images/blog/injury-care-steps.svg",
+  oralHealthComparison: "/images/blog/oral-health-comparison.svg",
+  hydrationMonitoring: "/images/blog/hydration-monitoring.svg",
+} as const;
+
+function createSectionImages(post: BlogPost, sectionHeading: string): SectionImage[] {
+  const heading = sectionHeading.toLowerCase();
+  const topic = post.title.toLowerCase();
+  const images: SectionImage[] = [];
+
+  if (
+    heading.includes("quick answer") ||
+    heading.includes("early vs") ||
+    heading.includes("normal vs") ||
+    heading.includes("difference") ||
+    heading.includes("comparison") ||
+    heading.includes("vs ")
+  ) {
+    images.push({
+      src: IMAGE_LIBRARY.normalVsAbnormal,
+      alt: `${post.title} normal versus warning sign comparison chart`,
+      caption: "Normal patterns compared with warning signs.",
+    });
+  }
+
+  if (
+    heading.includes("symptom") ||
+    heading.includes("signs") ||
+    heading.includes("what it looks like") ||
+    heading.includes("appearance") ||
+    heading.includes("example")
+  ) {
+    images.push({
+      src: IMAGE_LIBRARY.symptomOverview,
+      alt: `${post.title} symptom overview with common physical and behavior changes`,
+      caption: "What to look for when symptoms start changing.",
+    });
+  }
+
+  if (
+    heading.includes("injury") ||
+    heading.includes("what to do") ||
+    heading.includes("first") ||
+    heading.includes("immediate") ||
+    heading.includes("care steps")
+  ) {
+    images.push({
+      src: IMAGE_LIBRARY.injuryCareSteps,
+      alt: `${post.title} first response steps for a possible pet injury`,
+      caption: "Safe first-response steps before veterinary evaluation.",
+    });
+  }
+
+  if (heading.includes("checklist") || heading.includes("monitor") || heading.includes("track")) {
+    images.push({
+      src: IMAGE_LIBRARY.practicalChecklist,
+      alt: `${post.title} practical at-home monitoring checklist for pet parents`,
+      caption: "Simple checklist for symptom tracking and vet updates.",
+    });
+  }
+
+  if (
+    heading.includes("mouth") ||
+    heading.includes("teeth") ||
+    heading.includes("oral") ||
+    heading.includes("breath") ||
+    heading.includes("gum") ||
+    topic.includes("cavity")
+  ) {
+    images.push({
+      src: IMAGE_LIBRARY.oralHealthComparison,
+      alt: `${post.title} oral health comparison showing healthy versus concerning signs`,
+      caption: "Healthy oral signs compared with dental warning signs.",
+    });
+  }
+
+  if (
+    heading.includes("drinking") ||
+    heading.includes("water") ||
+    heading.includes("hydration") ||
+    heading.includes("urination")
+  ) {
+    images.push({
+      src: IMAGE_LIBRARY.hydrationMonitoring,
+      alt: `${post.title} hydration and urination monitoring tracker example`,
+      caption: "Hydration trend tracking to support a clearer vet visit.",
+    });
+  }
+
+  return images.slice(0, 2);
+}
+
+function buildSectionImageMap(post: BlogPost): Map<number, SectionImage[]> {
+  const sectionImageMap = new Map<number, SectionImage[]>();
+  let imageCount = 0;
+  const maxImagesPerPost = 4;
+
+  post.sections.forEach((section, index) => {
+    if (imageCount >= maxImagesPerPost) return;
+    const candidates = createSectionImages(post, section.heading);
+    if (!candidates.length) return;
+
+    const remaining = maxImagesPerPost - imageCount;
+    const selected = candidates.slice(0, Math.min(2, remaining));
+    if (selected.length) {
+      sectionImageMap.set(index, selected);
+      imageCount += selected.length;
+    }
+  });
+
+  // Ensure meaningful visual support on posts with fewer matching headings.
+  if (imageCount < 2 && post.sections.length) {
+    const fallbackSectionIndex = Math.min(1, post.sections.length - 1);
+    const existing = sectionImageMap.get(fallbackSectionIndex) ?? [];
+    const fallbackImages: SectionImage[] = [];
+
+    if (!existing.some((item) => item.src === IMAGE_LIBRARY.symptomOverview)) {
+      fallbackImages.push({
+        src: IMAGE_LIBRARY.symptomOverview,
+        alt: `${post.title} symptom examples and visual warning cues`,
+        caption: "Visual cue guide for common symptom patterns.",
+      });
+    }
+    if (!existing.some((item) => item.src === IMAGE_LIBRARY.practicalChecklist)) {
+      fallbackImages.push({
+        src: IMAGE_LIBRARY.practicalChecklist,
+        alt: `${post.title} at-home checklist for daily symptom observations`,
+        caption: "Use this checklist while monitoring day-to-day changes.",
+      });
+    }
+
+    const needed = 2 - imageCount;
+    const selectedFallbacks = fallbackImages.slice(0, needed);
+    if (selectedFallbacks.length) {
+      sectionImageMap.set(fallbackSectionIndex, [...existing, ...selectedFallbacks].slice(0, 2));
+    }
+  }
+
+  return sectionImageMap;
 }
 
 function isSymptomPost(post: BlogPost): boolean {
@@ -299,6 +451,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   const crossPetLinks = getCrossPetLinks(post);
   const displayedInternalLinks = uniqueLinks([...post.internalLinks, ...crossPetLinks]).slice(0, 12);
   const crossPetContextLinks = crossPetLinks.slice(0, 2);
+  const sectionImageMap = buildSectionImageMap(post);
 
   return (
     <>
@@ -383,6 +536,34 @@ export default async function BlogPostPage({ params }: PageProps) {
                   </p>
                 ))}
               </div>
+              {!!sectionImageMap.get(index)?.length && (
+                <div
+                  className={`mt-5 grid gap-3 ${
+                    (sectionImageMap.get(index) ?? []).length > 1 ? "sm:grid-cols-2" : "grid-cols-1"
+                  }`}
+                >
+                  {(sectionImageMap.get(index) ?? []).map((image) => (
+                    <figure
+                      key={`${section.heading}-${image.src}`}
+                      className="overflow-hidden rounded-2xl border border-white/70 bg-white/70 shadow-sm"
+                    >
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        width={1200}
+                        height={675}
+                        sizes="(min-width: 1024px) 32rem, (min-width: 640px) 50vw, 100vw"
+                        className="h-auto w-full object-cover"
+                      />
+                      {!!image.caption && (
+                        <figcaption className="border-t border-gray-100 px-3 py-2 text-xs leading-5 text-gray-600">
+                          {image.caption}
+                        </figcaption>
+                      )}
+                    </figure>
+                  ))}
+                </div>
+              )}
               {!!section.bullets?.length && (
                 <div className="mt-4">
                   <h3 className="text-base font-semibold text-gray-800">Checklist</h3>

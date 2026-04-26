@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Pet hydration monitoring chart</title>
+  <desc id="desc">Hydration tracking visual for watching water intake and related warning signs in pets.</desc>
+  <defs>
+    <linearGradient id="bg6" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eefaff" />
+      <stop offset="100%" stop-color="#f5f2ff" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg6)" rx="28" />
+  <rect x="170" y="110" width="860" height="460" rx="26" fill="#ffffff" stroke="#9fcbe9" stroke-width="4" />
+  <text x="600" y="175" text-anchor="middle" fill="#356a94" font-size="42" font-family="Arial, sans-serif" font-weight="700">Hydration and Urination Tracking</text>
+  <line x1="300" y1="250" x2="300" y2="510" stroke="#d6e7f2" stroke-width="2" />
+  <line x1="470" y1="250" x2="470" y2="510" stroke="#d6e7f2" stroke-width="2" />
+  <line x1="640" y1="250" x2="640" y2="510" stroke="#d6e7f2" stroke-width="2" />
+  <line x1="810" y1="250" x2="810" y2="510" stroke="#d6e7f2" stroke-width="2" />
+  <text x="220" y="240" fill="#4d6b82" font-size="24" font-family="Arial, sans-serif">Day</text>
+  <text x="345" y="240" fill="#4d6b82" font-size="24" font-family="Arial, sans-serif">Water Intake</text>
+  <text x="530" y="240" fill="#4d6b82" font-size="24" font-family="Arial, sans-serif">Urination</text>
+  <text x="700" y="240" fill="#4d6b82" font-size="24" font-family="Arial, sans-serif">Appetite</text>
+  <text x="860" y="240" fill="#4d6b82" font-size="24" font-family="Arial, sans-serif">Energy</text>
+  <text x="205" y="295" fill="#3f5f77" font-size="22" font-family="Arial, sans-serif">Mon</text>
+  <text x="205" y="350" fill="#3f5f77" font-size="22" font-family="Arial, sans-serif">Tue</text>
+  <text x="205" y="405" fill="#3f5f77" font-size="22" font-family="Arial, sans-serif">Wed</text>
+  <text x="205" y="460" fill="#3f5f77" font-size="22" font-family="Arial, sans-serif">Thu</text>
+  <text x="205" y="515" fill="#3f5f77" font-size="22" font-family="Arial, sans-serif">Fri</text>
+  <text x="600" y="610" text-anchor="middle" fill="#5f5f5f" font-size="24" font-family="Arial, sans-serif">Share this record with your veterinarian for faster assessment</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Practical pet care checklist</title>
+  <desc id="desc">A practical checklist board with simple action items for tracking pet symptoms at home.</desc>
+  <defs>
+    <linearGradient id="bg3" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7fff4" />
+      <stop offset="100%" stop-color="#f0f8ff" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg3)" rx="28" />
+  <rect x="220" y="80" width="760" height="515" rx="24" fill="#ffffff" stroke="#b5d7a8" stroke-width="4" />
+  <text x="600" y="145" text-anchor="middle" fill="#2f5b2e" font-size="42" font-family="Arial, sans-serif" font-weight="700">Daily Monitoring Checklist</text>
+  <rect x="290" y="190" width="40" height="40" rx="8" fill="#d6f3d3" stroke="#84bf7f" />
+  <rect x="290" y="255" width="40" height="40" rx="8" fill="#d6f3d3" stroke="#84bf7f" />
+  <rect x="290" y="320" width="40" height="40" rx="8" fill="#d6f3d3" stroke="#84bf7f" />
+  <rect x="290" y="385" width="40" height="40" rx="8" fill="#d6f3d3" stroke="#84bf7f" />
+  <text x="360" y="220" fill="#355b35" font-size="30" font-family="Arial, sans-serif">Track appetite, water, and stool changes</text>
+  <text x="360" y="285" fill="#355b35" font-size="30" font-family="Arial, sans-serif">Note exact timing of symptoms</text>
+  <text x="360" y="350" fill="#355b35" font-size="30" font-family="Arial, sans-serif">Take photos for your vet if needed</text>
+  <text x="360" y="415" fill="#355b35" font-size="30" font-family="Arial, sans-serif">Call emergency care for severe signs</text>
+  <text x="600" y="560" text-anchor="middle" fill="#5f5f5f" font-size="24" font-family="Arial, sans-serif">Keep records clear for faster and safer vet decisions</text>
+</svg>
