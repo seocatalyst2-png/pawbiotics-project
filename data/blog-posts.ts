@@ -7145,6 +7145,1017 @@ const blogPosts: BlogPost[] = [
       { label: "Dog gagging cough", href: "/blog/dog-gagging-cough", description: "Episode-pattern guide for cough-then-gag events." },
     ],
   },
+  {
+    slug: "my-dogs-ears-stink",
+    title: "My Dog's Ears Stink: What It Means and What To Do",
+    metaTitle: "My Dog's Ears Stink: Causes, Infection Signs, and Vet Warning Flags",
+    metaDescription:
+      "My dog's ears stink? Learn common causes, smell patterns, ear infection clues, home-care limits, and when to see a vet.",
+    category: "Dogs",
+    publishedDate: "2026-04-29",
+    readingTime: "11 min read",
+    intro:
+      "A strong ear odor in dogs is common, but it should not be ignored. This guide helps you read smell patterns, spot possible infection signs, and decide when vet care is needed.",
+    sections: [
+      {
+        heading: "Quick answer: my dog's ears stink",
+        paragraphs: [
+          "Ear odor often comes from wax buildup, moisture, yeast overgrowth, or infection. If smell appears with redness, scratching, or discharge, your dog should be examined soon.",
+        ],
+      },
+      {
+        heading: "Safety note",
+        paragraphs: [
+          "This page is educational and not a diagnosis. Do not use human ear products in dogs unless your veterinarian instructs you.",
+        ],
+      },
+      {
+        heading: "What different ear smells can suggest",
+        paragraphs: [
+          "Mild wax odor can happen in some dogs. Sour, musty, or foul odor with discomfort is more concerning and often needs treatment.",
+        ],
+      },
+      {
+        heading: "Common causes",
+        paragraphs: ["Ear odor can have more than one trigger at the same time."],
+        bullets: [
+          "Moisture after bathing or swimming",
+          "Allergy-related ear inflammation",
+          "Wax and debris buildup",
+          "Yeast or bacterial overgrowth patterns",
+        ],
+      },
+      {
+        heading: "Real-world example",
+        paragraphs: [
+          "A dog may smell fine most days, then develop strong odor after repeated pool days. If this repeats with head shaking, vet-guided ear care is safer than random products.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these mistakes when ear odor starts."],
+        bullets: [
+          "Deep cleaning with cotton swabs",
+          "Using leftover old medication",
+          "Waiting weeks despite odor and pain signs",
+          "Ignoring recurring allergy patterns",
+        ],
+      },
+      {
+        heading: "Practical checklist",
+        paragraphs: ["Track these details before your appointment."],
+        bullets: [
+          "Which ear smells worse",
+          "Discharge color and amount",
+          "Head shaking frequency",
+          "Recent bath or swim history",
+          "Any skin or allergy flare signs",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call quickly for severe odor, pain, thick discharge, swelling, bleeding, or balance changes. These signs should not be managed at home alone.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Ear odor is a signal, not just a cosmetic issue."],
+        bullets: [
+          "Smell plus discomfort usually means inflammation",
+          "Early treatment is often easier and safer",
+          "Avoid deep or harsh DIY cleaning",
+          "Recurring cases often need root-cause planning",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Is bad ear smell always an infection in dogs?",
+        answer:
+          "Not always, but infection is a common cause when odor is strong and persistent. Wax and moisture can also contribute. If your dog has pain, discharge, or scratching, your vet should check the ear soon.",
+      },
+      {
+        question: "Can I clean smelly dog ears at home?",
+        answer:
+          "You can clean the outer ear gently with vet-approved products, but avoid deep cleaning. If the ear is painful or has discharge, home cleaning can worsen irritation. Seek veterinary guidance first.",
+      },
+      {
+        question: "Why do my dog's ears smell after swimming?",
+        answer:
+          "Trapped moisture can support irritation and microbial overgrowth in some dogs. Repeated wet ear canals increase risk. Drying and prevention routines should be discussed with your veterinarian.",
+      },
+      {
+        question: "What color discharge is concerning?",
+        answer:
+          "Yellow, green, brown-black, or bloody discharge can be concerning, especially with odor and discomfort. These patterns should be examined rather than self-treated repeatedly.",
+      },
+      {
+        question: "Can allergies cause smelly ears?",
+        answer:
+          "Yes. Allergies often inflame ear canals and make recurring odor more likely. If your dog has repeat episodes, your vet may assess skin and allergy triggers too.",
+      },
+      {
+        question: "Which page should I read next?",
+        answer:
+          "Read [how to tell if my dog has an ear infection](/blog/how-to-tell-if-my-dog-has-an-ear-infection) for symptom progression and urgent warning signs.",
+      },
+    ],
+    internalLinks: [
+      { label: "How to tell if my dog has an ear infection", href: "/blog/how-to-tell-if-my-dog-has-an-ear-infection" },
+      { label: "Dog won't stop sneezing", href: "/blog/dog-wont-stop-sneezing" },
+      { label: "Swollen dog paw", href: "/blog/swollen-dog-paw" },
+      { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "How to tell if my dog has an ear infection", href: "/blog/how-to-tell-if-my-dog-has-an-ear-infection", description: "Early vs advanced ear signs." },
+      { label: "Dog won't stop sneezing", href: "/blog/dog-wont-stop-sneezing", description: "Upper airway symptom overlap." },
+      { label: "Why is my dog's eye red?", href: "/blog/why-is-my-dogs-eye-red", description: "Nearby irritation and infection clues." },
+      { label: "Swollen dog paw", href: "/blog/swollen-dog-paw", description: "Inflammation triage approach in simple language." },
+    ],
+  },
+  {
+    slug: "neurological-symptoms-in-dogs",
+    title: "Neurological Symptoms in Dogs: Early Red Flags",
+    metaTitle: "Neurological Symptoms in Dogs: Warning Signs and Emergency Thresholds",
+    metaDescription:
+      "Learn early neurological symptoms in dogs, possible causes, what to track, and when urgent veterinary care is required.",
+    category: "Dogs",
+    publishedDate: "2026-04-29",
+    readingTime: "12 min read",
+    intro:
+      "Neurological signs in dogs can look mild at first, then worsen quickly. This guide helps you recognize warning patterns and know when emergency care is safest.",
+    sections: [
+      {
+        heading: "Quick answer: neurological symptoms in dogs",
+        paragraphs: [
+          "Neurological symptoms can include head tilt, unsteady walking, tremors, seizures, sudden weakness, or behavior change. Persistent or sudden severe signs need urgent veterinary evaluation.",
+        ],
+      },
+      {
+        heading: "Safety note",
+        paragraphs: [
+          "This page is educational and does not diagnose your dog. Neurological symptoms can be emergencies. If signs worsen rapidly, seek immediate care.",
+        ],
+      },
+      {
+        heading: "Early vs urgent signs",
+        paragraphs: [
+          "Early signs may be subtle. Urgent signs include seizures, collapse, severe disorientation, or inability to stand.",
+        ],
+      },
+      {
+        heading: "Possible causes",
+        paragraphs: ["Many causes are possible and need veterinary diagnostics."],
+        bullets: [
+          "Inner-ear or vestibular disorders",
+          "Toxin exposure or metabolic disturbance",
+          "Inflammation or infection affecting the nervous system",
+          "Brain, spinal, or trauma-related events",
+        ],
+      },
+      {
+        heading: "Real-world example",
+        paragraphs: [
+          "A dog may first show mild wobbling at night and seem normal by morning. Recurrent episodes, even if brief, should still be examined before they escalate.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these delays during neurological events."],
+        bullets: [
+          "Waiting for another episode before calling",
+          "Attributing sudden disorientation to age alone",
+          "Giving unapproved medication",
+          "Skipping video capture of episodes",
+        ],
+      },
+      {
+        heading: "Practical checklist",
+        paragraphs: ["Prepare these details for triage."],
+        bullets: [
+          "Episode start time and duration",
+          "Video of gait, tremor, or behavior change",
+          "Any toxin or medication exposure risk",
+          "Eating, drinking, urination, and stool status",
+          "Prior neurological history",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call emergency care now for seizures, collapse, severe imbalance, sudden blindness, repeated vomiting with neurological signs, or rapid worsening behavior.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Fast recognition and triage improve outcomes."],
+        bullets: [
+          "Neurological signs can progress quickly",
+          "Video evidence helps diagnosis",
+          "Do not delay for severe or repeated episodes",
+          "Emergency thresholds should be treated seriously",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "What are common neurological signs in dogs?",
+        answer:
+          "Common signs include wobbling, head tilt, tremors, seizures, sudden weakness, confusion, or unusual behavior. One sign can have many causes. Persistent signs need veterinary evaluation.",
+      },
+      {
+        question: "Is a single seizure always an emergency?",
+        answer:
+          "A first seizure should be discussed urgently with a veterinarian, especially if recovery is slow or more seizures follow. Emergency care is safest if episodes repeat, last long, or involve severe distress.",
+      },
+      {
+        question: "Can inner-ear disease look neurological?",
+        answer:
+          "Yes. Vestibular problems can cause head tilt and imbalance that look neurological. Your vet may need exams and tests to separate causes accurately.",
+      },
+      {
+        question: "Should I wait if my dog seems better after an episode?",
+        answer:
+          "Improvement after an episode does not rule out serious problems. Recurrence risk can remain. Prompt veterinary assessment is still recommended.",
+      },
+      {
+        question: "What should I do during a neurological episode?",
+        answer:
+          "Keep your dog safe from stairs and hard edges, reduce stimulation, and record video if safe. Contact emergency care for guidance right away.",
+      },
+      {
+        question: "Which related page should I read next?",
+        answer:
+          "Read [why is my dog breathing heavy](/blog/why-is-my-dog-breathing-heavy) and [what color should dogs gums be](/blog/what-color-should-dogs-gums-be) for emergency triage support.",
+      },
+    ],
+    internalLinks: [
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy" },
+      { label: "What color should dogs gums be?", href: "/blog/what-color-should-dogs-gums-be" },
+      { label: "Why is my dog gagging?", href: "/blog/why-is-my-dog-gagging" },
+      { label: "Anxiety and stress condition guide", href: "/health-conditions/anxiety-stress" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy", description: "Emergency breathing triage cues." },
+      { label: "What color should dogs gums be?", href: "/blog/what-color-should-dogs-gums-be", description: "Circulation warning signs at home." },
+      { label: "Dog coughing and gagging", href: "/blog/dog-coughing-and-gagging", description: "Symptom overlap with distress episodes." },
+      { label: "Why is my dog gagging?", href: "/blog/why-is-my-dog-gagging", description: "Track trigger patterns before vet visit." },
+    ],
+  },
+  {
+    slug: "salmonella-symptoms-in-dogs",
+    title: "Salmonella Symptoms in Dogs: What to Watch",
+    metaTitle: "Salmonella Symptoms in Dogs: Signs, Risk, and When to Call a Vet",
+    metaDescription:
+      "Learn salmonella symptoms in dogs, exposure risks, stool and fever warning signs, and when urgent veterinary care is needed.",
+    category: "Dogs",
+    publishedDate: "2026-04-29",
+    readingTime: "11 min read",
+    intro:
+      "Dogs can be exposed to salmonella from contaminated food, raw diets, or environmental sources. This guide explains symptom patterns and urgent warning signs.",
+    sections: [
+      {
+        heading: "Quick answer: salmonella symptoms in dogs",
+        paragraphs: [
+          "Possible symptoms include diarrhea, vomiting, fever signs, low appetite, and lethargy. Severe or persistent symptoms need prompt veterinary care.",
+        ],
+      },
+      {
+        heading: "Safety note",
+        paragraphs: [
+          "This page is educational and not a diagnosis. GI symptoms can have many causes. Veterinary testing is needed to confirm salmonella-related illness.",
+        ],
+      },
+      {
+        heading: "How dogs are exposed",
+        paragraphs: ["Exposure can happen through food, surfaces, or fecal contamination."],
+        bullets: [
+          "Raw or undercooked food handling",
+          "Contaminated treats or food batches",
+          "Contact with contaminated stool or water",
+          "Poor food-bowl and prep hygiene",
+        ],
+      },
+      {
+        heading: "Common symptom patterns",
+        paragraphs: [
+          "Many dogs show GI upset first, then energy and appetite changes. Some cases are mild, while others progress quickly.",
+        ],
+      },
+      {
+        heading: "Real-world example",
+        paragraphs: [
+          "A dog may develop loose stool and low appetite after a new food source. If symptoms continue or worsen, same-day vet review is safer than waiting.",
+        ],
+      },
+      {
+        heading: "Common mistakes",
+        paragraphs: ["Avoid these errors in potential salmonella cases."],
+        bullets: [
+          "Using human anti-diarrheal medicines",
+          "Delaying care despite fever-like behavior",
+          "Not isolating symptomatic pets from shared bowls",
+          "Ignoring dehydration risk",
+        ],
+      },
+      {
+        heading: "Practical checklist",
+        paragraphs: ["Have this information ready for your vet."],
+        bullets: [
+          "Food and treat history in last 7 days",
+          "Vomiting and stool frequency",
+          "Any blood in stool",
+          "Hydration and energy changes",
+          "Other pets in home with similar signs",
+        ],
+      },
+      {
+        heading: "When to Call a Vet",
+        paragraphs: [
+          "Call urgently for repeated vomiting, bloody diarrhea, severe lethargy, fever-like signs, dehydration, or no improvement within a short monitoring window.",
+        ],
+      },
+      {
+        heading: "Key Takeaways",
+        paragraphs: ["Early GI triage and hygiene reduce risk."],
+        bullets: [
+          "Symptom overlap is common with many GI diseases",
+          "Testing and exam are needed for confirmation",
+          "Hydration and escalation timing are critical",
+          "Good hygiene helps protect people and pets",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can dogs get salmonella poisoning?",
+        answer:
+          "Yes, dogs can become sick after salmonella exposure, though severity varies. GI symptoms can range from mild to severe. Veterinary evaluation is important when symptoms persist or worsen.",
+      },
+      {
+        question: "What are early salmonella signs in dogs?",
+        answer:
+          "Early signs can include loose stool, vomiting, reduced appetite, and low energy. These signs are not specific to one disease, so diagnosis needs vet assessment.",
+      },
+      {
+        question: "Can salmonella cause bloody diarrhea in dogs?",
+        answer:
+          "It can in some cases, but many other conditions can also cause blood in stool. Bloody diarrhea should be treated as urgent and reviewed quickly.",
+      },
+      {
+        question: "How is salmonella diagnosed in dogs?",
+        answer:
+          "Diagnosis can involve clinical exam, stool testing, and supportive history. Your veterinarian chooses the best test plan for symptom severity.",
+      },
+      {
+        question: "Should I isolate my dog from other pets?",
+        answer:
+          "If your dog has active diarrhea or vomiting, separation and strict hygiene can reduce spread risk while you arrange veterinary care.",
+      },
+      {
+        question: "Which related page should I read next?",
+        answer:
+          "Read [my dog is having diarrhea](/blog/my-dog-is-having-diarrhea) for severity triage and emergency escalation steps.",
+      },
+    ],
+    internalLinks: [
+      { label: "My dog is having diarrhea", href: "/blog/my-dog-is-having-diarrhea" },
+      { label: "What to do if dog eats chicken bones", href: "/blog/what-to-do-if-dog-eats-chicken-bones" },
+      { label: "Why is my dog gagging?", href: "/blog/why-is-my-dog-gagging" },
+      { label: "Diarrhea condition guide", href: "/health-conditions/diarrhea" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "My dog is having diarrhea", href: "/blog/my-dog-is-having-diarrhea", description: "Mild vs emergency stool-change triage." },
+      { label: "What to do if dog eats chicken bones", href: "/blog/what-to-do-if-dog-eats-chicken-bones", description: "GI risk response steps." },
+      { label: "Dog coughing and gagging", href: "/blog/dog-coughing-and-gagging", description: "Whole-body symptom escalation clues." },
+      { label: "Why is my dog gagging?", href: "/blog/why-is-my-dog-gagging", description: "Retching symptom workflow." },
+    ],
+  },
+  {
+    slug: "dog-chattering-teeth",
+    title: "Dog Chattering Teeth: Causes and Warning Signs",
+    metaTitle: "Dog Chattering Teeth: Common Causes and When to Worry",
+    metaDescription:
+      "Learn why dogs chatter their teeth, common triggers, oral and neurological concerns, and when to call a vet.",
+    category: "Dogs",
+    publishedDate: "2026-04-29",
+    readingTime: "10 min read",
+    intro:
+      "Teeth chattering in dogs can be brief and harmless, or it can signal discomfort. This guide helps you read patterns and spot red flags early.",
+    sections: [
+      { heading: "Quick answer: dog chattering teeth", paragraphs: ["Dogs may chatter teeth from excitement, cold, smell response, oral pain, nausea, or neurological events. Repeated episodes should be evaluated."] },
+      { heading: "Safety note", paragraphs: ["This content is educational and not a diagnosis. If chattering appears with collapse, disorientation, or pain signs, seek urgent care."] },
+      { heading: "Common triggers", paragraphs: ["Trigger context often helps separate mild from concerning cases."], bullets: ["Cold or stress response", "Strong scent/flavor stimulation", "Dental pain", "GI nausea or neurological irritation"] },
+      { heading: "Oral pain vs behavioral chatter", paragraphs: ["Pain-related chatter may include drooling, bad breath, or food avoidance. Brief excitement chatter is usually short and self-limited."] },
+      { heading: "Real-world example", paragraphs: ["A dog that chatters mainly while sniffing outdoors may be scent-triggered, but a dog that chatters while avoiding food should be checked for oral pain."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these delays."], bullets: ["Ignoring repeated episodes", "Missing dental signs", "Using human pain medicine", "Not tracking timing and triggers"] },
+      { heading: "Practical checklist", paragraphs: ["Bring these notes to your vet."], bullets: ["Episode duration", "Trigger activities", "Eating behavior", "Drooling or mouth odor", "Any neurological signs"] },
+      { heading: "When to Call a Vet", paragraphs: ["Call quickly for persistent episodes, appetite decline, oral pain signs, weakness, tremors, or behavior change."] },
+      { heading: "Key Takeaways", paragraphs: ["Pattern and associated signs determine urgency."], bullets: ["Some cases are mild and brief", "Repeated or painful cases need exams", "Oral and neurological causes both matter", "Video helps diagnosis"] },
+    ],
+    faqs: [
+      { question: "Is dog teeth chattering always serious?", answer: "No, but repeated or painful episodes should be checked. Context and associated signs matter most." },
+      { question: "Can dental disease cause teeth chattering?", answer: "Yes. Oral pain can trigger jaw movement and chattering in some dogs, especially during meals." },
+      { question: "Can nausea cause teeth chattering?", answer: "It can in some dogs, especially with drooling or lip licking. Persistent GI signs need veterinary review." },
+      { question: "Should I worry if it happens only sometimes?", answer: "Occasional brief episodes can be mild, but increasing frequency or added symptoms should be assessed." },
+      { question: "Can neurological problems cause this sign?", answer: "Yes, neurological irritation can be a cause in some cases. Seek urgent care if severe signs appear." },
+      { question: "Which related guide should I read next?", answer: "Read [canine cavity](/blog/canine-cavity) and [neurological symptoms in dogs](/blog/neurological-symptoms-in-dogs) for oral and neuro red flags." },
+    ],
+    internalLinks: [
+      { label: "Canine cavity", href: "/blog/canine-cavity" },
+      { label: "Neurological symptoms in dogs", href: "/blog/neurological-symptoms-in-dogs" },
+      { label: "Dogs breath smells", href: "/blog/dogs-breath-smells" },
+      { label: "Bad breath condition guide", href: "/health-conditions/bad-breath" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "Canine cavity", href: "/blog/canine-cavity", description: "Tooth and gum discomfort signs." },
+      { label: "Dog's breath smells", href: "/blog/dogs-breath-smells", description: "Oral symptom daily checks." },
+      { label: "Neurological symptoms in dogs", href: "/blog/neurological-symptoms-in-dogs", description: "Escalation for neuro red flags." },
+      { label: "What color should dogs gums be?", href: "/blog/what-color-should-dogs-gums-be", description: "Urgent circulation checks." },
+    ],
+  },
+  {
+    slug: "canine-toenail-injury",
+    title: "Canine Toenail Injury: First Steps and Vet Red Flags",
+    metaTitle: "Canine Toenail Injury: What to Do, Bleeding Control, and Vet Care",
+    metaDescription:
+      "Learn how to manage a canine toenail injury, control minor bleeding, prevent infection, and know when vet care is urgent.",
+    category: "Dogs",
+    publishedDate: "2026-04-29",
+    readingTime: "10 min read",
+    intro:
+      "Toenail injuries are painful and can bleed heavily. This guide gives practical first steps, common mistakes to avoid, and escalation signs.",
+    sections: [
+      { heading: "Quick answer: canine toenail injury", paragraphs: ["Keep your dog calm, control bleeding with gentle pressure, protect the paw, and contact your vet if pain or bleeding persists."] },
+      { heading: "Safety note", paragraphs: ["This guide is educational. Severe bleeding, exposed nail bed, swelling, or ongoing pain should be treated by a veterinarian."] },
+      { heading: "How toenail injuries happen", paragraphs: ["Common causes include rough play, snagging on surfaces, overgrown nails, and sudden twists."] },
+      { heading: "Immediate first steps", paragraphs: ["Use calm restraint and gentle pressure. Keep the paw clean and dry while arranging care if needed."], bullets: ["Apply clean gauze pressure", "Limit movement", "Prevent licking", "Monitor bleeding duration"] },
+      { heading: "Real-world example", paragraphs: ["A dog catches a nail on carpet and starts bleeding after limping. Early pressure control and same-day vet guidance can reduce complications."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these mistakes after injury."], bullets: ["Pulling broken nail pieces", "Using harsh disinfectants", "Ignoring ongoing bleeding", "Allowing long walks immediately"] },
+      { heading: "Practical checklist", paragraphs: ["Track these before your call."], bullets: ["How long bleeding lasts", "Limp severity", "Nail appearance", "Swelling or discharge", "Pain reaction when paw touched"] },
+      { heading: "When to Call a Vet", paragraphs: ["Call urgently for uncontrolled bleeding, severe pain, deep nail break, swelling, foul odor, or inability to bear weight."] },
+      { heading: "Key Takeaways", paragraphs: ["Early calm care improves comfort."], bullets: ["Protect the nail bed", "Control bleeding safely", "Escalate quickly for deep injuries", "Follow aftercare to prevent infection"] },
+    ],
+    faqs: [
+      { question: "Is a broken dog nail an emergency?", answer: "It can be urgent if bleeding is heavy, pain is severe, or the break is deep. Many cases need same-day vet care." },
+      { question: "How long should nail bleeding last?", answer: "Minor bleeding may settle quickly with pressure. If it persists, call your vet promptly." },
+      { question: "Can I trim the broken part at home?", answer: "Do not trim deeply painful nails without guidance. Incorrect trimming can worsen pain and bleeding." },
+      { question: "Should I bandage my dog's paw?", answer: "A light clean wrap may help short term, but overly tight wraps can cause problems. Veterinary guidance is best." },
+      { question: "Can nail injuries get infected?", answer: "Yes. Watch for swelling, odor, discharge, and persistent limping. These signs need medical review." },
+      { question: "Which related page should I read next?", answer: "Read [swollen dog paw](/blog/swollen-dog-paw) for additional paw inflammation triage guidance." },
+    ],
+    internalLinks: [
+      { label: "Swollen dog paw", href: "/blog/swollen-dog-paw" },
+      { label: "Dog dragging butt on floor", href: "/blog/dog-dragging-butt-on-floor" },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy" },
+      { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "Swollen dog paw", href: "/blog/swollen-dog-paw", description: "Paw swelling triage and warning signs." },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy", description: "Pain-related breathing escalation cues." },
+      { label: "Dog dragging butt on floor", href: "/blog/dog-dragging-butt-on-floor", description: "Another irritation-pattern symptom guide." },
+      { label: "What color should dogs gums be?", href: "/blog/what-color-should-dogs-gums-be", description: "Circulation checks during urgent events." },
+    ],
+  },
+  {
+    slug: "female-dog-peeing-blood",
+    title: "Female Dog Peeing Blood: What It Can Mean",
+    metaTitle: "Female Dog Peeing Blood: Common Causes, UTI Clues, and Urgent Signs",
+    metaDescription:
+      "Learn why a female dog may pee blood, common urinary causes, what to monitor, and when emergency veterinary care is needed.",
+    category: "Dogs",
+    publishedDate: "2026-04-29",
+    readingTime: "11 min read",
+    intro:
+      "Blood in urine in female dogs should always be taken seriously. This guide helps you separate possible mild causes from urgent urinary red flags.",
+    sections: [
+      { heading: "Quick answer: female dog peeing blood", paragraphs: ["Blood in urine can be linked to urinary tract infection, inflammation, stones, trauma, heat-cycle factors, or other medical issues. Prompt vet evaluation is recommended."] },
+      { heading: "Safety note", paragraphs: ["This guide is educational only. Blood in urine is not a symptom to ignore or self-treat with human medication."] },
+      { heading: "Possible causes", paragraphs: ["More than one urinary issue can look similar at home."], bullets: ["Urinary tract inflammation or infection", "Bladder stones or irritation", "Trauma or reproductive tract bleeding", "Systemic conditions affecting urinary health"] },
+      { heading: "Signs that increase urgency", paragraphs: ["Urgency rises when blood appears with pain, straining, very low urine output, vomiting, or weakness."] },
+      { heading: "Real-world example", paragraphs: ["An owner may notice pink urine spots during walks. Same-day urine testing helps identify whether infection or other causes are present."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these delays and risks."], bullets: ["Waiting multiple days", "Using leftover antibiotics", "Ignoring straining behavior", "Not collecting symptom timeline"] },
+      { heading: "Practical checklist", paragraphs: ["Bring these details to your vet."], bullets: ["Urine color trend", "Urination frequency", "Any straining or pain signs", "Water intake changes", "Heat-cycle status if relevant"] },
+      { heading: "When to Call a Vet", paragraphs: ["Call urgently for blood with straining, no urine output, severe pain, vomiting, low energy, or rapid worsening signs."] },
+      { heading: "Key Takeaways", paragraphs: ["Urinary blood needs prompt evaluation."], bullets: ["Home observation has limits", "Urine testing guides safer treatment", "Straining and low output are urgent", "Early care reduces complications"] },
+    ],
+    faqs: [
+      { question: "Is blood in dog urine always an emergency?", answer: "It is always concerning and should be evaluated promptly. Some cases are urgent, especially with pain or low urine output." },
+      { question: "Can a UTI cause blood in urine?", answer: "Yes, UTIs can cause blood in urine in some dogs. Testing is needed because other causes can look similar." },
+      { question: "Could heat cycle cause blood near urination?", answer: "Some reproductive bleeding can be confused with urinary blood. A veterinary exam helps separate sources safely." },
+      { question: "Should I collect a urine sample?", answer: "If you can collect a clean sample safely, it may help your vet, but do not delay urgent care while trying repeatedly." },
+      { question: "Can dehydration worsen urinary symptoms?", answer: "Yes, low hydration can make urinary irritation worse in some cases. Water intake should still be tracked and discussed." },
+      { question: "Which page should I read next?", answer: "Read [my dog is having diarrhea](/blog/my-dog-is-having-diarrhea) for broader emergency symptom triage principles." },
+    ],
+    internalLinks: [
+      { label: "My dog is having diarrhea", href: "/blog/my-dog-is-having-diarrhea" },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy" },
+      { label: "Dog coughing and gagging", href: "/blog/dog-coughing-and-gagging" },
+      { label: "Urinary health condition guide", href: "/health-conditions/urinary-health" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "My dog is having diarrhea", href: "/blog/my-dog-is-having-diarrhea", description: "Emergency threshold framework for GI signs." },
+      { label: "Why is my dog breathing heavy?", href: "/blog/why-is-my-dog-breathing-heavy", description: "Whole-body decline warning signals." },
+      { label: "What color should dogs gums be?", href: "/blog/what-color-should-dogs-gums-be", description: "Circulation checks in urgent cases." },
+      { label: "Dog coughing and gagging", href: "/blog/dog-coughing-and-gagging", description: "Additional triage support for symptom overlap." },
+    ],
+  },
+  {
+    slug: "treating-hyperkeratosis-dogs",
+    title: "Treating Hyperkeratosis in Dogs: Practical Care Guide",
+    metaTitle: "Treating Hyperkeratosis in Dogs: Paw and Nose Care, Mistakes, and Vet Signs",
+    metaDescription:
+      "Learn practical care options for hyperkeratosis in dogs, paw and nose support steps, and when veterinary treatment is needed.",
+    category: "Dogs",
+    publishedDate: "2026-04-29",
+    readingTime: "10 min read",
+    intro:
+      "Hyperkeratosis can make a dog's nose or paw pads thick, dry, and uncomfortable. This guide explains practical home support and when treatment should be escalated.",
+    sections: [
+      { heading: "Quick answer: treating hyperkeratosis dogs", paragraphs: ["Treatment usually combines moisture support, gentle surface care, trigger management, and veterinary follow-up when cracks or pain appear."] },
+      { heading: "Safety note", paragraphs: ["This guide is educational. Deep cracks, bleeding, infection signs, or pain need veterinary evaluation rather than home-only care."] },
+      { heading: "What hyperkeratosis looks like", paragraphs: ["Signs can include rough thickened pads, crusty nose texture, and discomfort while walking."] },
+      { heading: "Practical care options", paragraphs: ["Use gentle routines and avoid harsh products."], bullets: ["Regular paw/nose moisturizing with vet-safe products", "Short soaks when advised", "Surface protection during walks", "Routine rechecks for chronic cases"] },
+      { heading: "Real-world example", paragraphs: ["A dog with dry cracked pads improved after a consistent moisturizing routine and reduced hot pavement exposure, but needed vet care once cracks deepened."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these common issues."], bullets: ["Picking thick skin manually", "Using fragranced human creams", "Ignoring bleeding cracks", "Stopping care once signs look slightly better"] },
+      { heading: "Practical checklist", paragraphs: ["Track these signs weekly."], bullets: ["Pad/nose texture changes", "Walking comfort", "Crack depth", "Any bleeding or discharge", "Response to moisture support"] },
+      { heading: "When to Call a Vet", paragraphs: ["Call for pain, limping, bleeding cracks, swelling, discharge, or signs that fail to improve with simple care."] },
+      { heading: "Key Takeaways", paragraphs: ["Consistency matters more than aggressive treatment."], bullets: ["Gentle support works best", "Pain and cracks raise urgency", "Veterinary guidance improves long-term outcomes", "Do not self-medicate with harsh products"] },
+    ],
+    faqs: [
+      { question: "Can hyperkeratosis in dogs be cured permanently?", answer: "Some dogs need long-term management rather than one-time cure. Consistent care and vet follow-up are often needed." },
+      { question: "Is paw hyperkeratosis painful?", answer: "It can become painful, especially when cracks form or walking is affected. Pain signs need veterinary review." },
+      { question: "Can I trim thick keratin at home?", answer: "Do not trim aggressively at home. Improper trimming can cause bleeding and infection risk." },
+      { question: "What moisturizer is safe for dogs?", answer: "Use vet-approved products designed for canine skin and pads. Avoid scented or medicated human creams unless advised." },
+      { question: "When is hyperkeratosis urgent?", answer: "Urgent signs include bleeding, deep cracks, limping, foul odor, and discharge. These signs need prompt treatment." },
+      { question: "Which related page should I read next?", answer: "Read [swollen dog paw](/blog/swollen-dog-paw) for additional paw triage and escalation cues." },
+    ],
+    internalLinks: [
+      { label: "Swollen dog paw", href: "/blog/swollen-dog-paw" },
+      { label: "Home remedy for a dog with itchy skin", href: "/blog/home-remedy-for-a-dog-with-itchy-skin" },
+      { label: "Dog dragging butt on floor", href: "/blog/dog-dragging-butt-on-floor" },
+      { label: "Itchy skin condition guide", href: "/health-conditions/itchy-skin" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "Swollen dog paw", href: "/blog/swollen-dog-paw", description: "Paw pain and swelling red flags." },
+      { label: "Home remedy for a dog with itchy skin", href: "/blog/home-remedy-for-a-dog-with-itchy-skin", description: "Skin comfort steps and limits." },
+      { label: "Dog dragging butt on floor", href: "/blog/dog-dragging-butt-on-floor", description: "Irritation-based symptom tracking." },
+      { label: "Why is my dog's eye red?", href: "/blog/why-is-my-dogs-eye-red", description: "Inflammation triage principles." },
+    ],
+  },
+  {
+    slug: "home-remedy-for-a-dog-with-itchy-skin",
+    title: "Home Remedy for a Dog With Itchy Skin: Safe First Steps",
+    metaTitle: "Home Remedy for a Dog With Itchy Skin: What Helps and What to Avoid",
+    metaDescription:
+      "Learn safe home remedy steps for a dog with itchy skin, common mistakes, and when itching needs veterinary treatment.",
+    category: "Dogs",
+    publishedDate: "2026-04-29",
+    readingTime: "11 min read",
+    intro:
+      "Many pet parents ask about home remedies for itchy skin. This page explains what can help safely, what to avoid, and when to move from home support to veterinary care.",
+    sections: [
+      { heading: "Quick answer: home remedy for itchy skin in dogs", paragraphs: ["Simple steps can help mild itching: reduce triggers, keep skin clean, and monitor closely. Persistent itch still needs veterinary diagnosis."] },
+      { heading: "Safety note", paragraphs: ["Itching has many causes. This guide does not diagnose allergy, infection, parasites, or other skin disease."] },
+      { heading: "Safe first-step home support", paragraphs: ["Start with low-risk, simple routines."], bullets: ["Gentle skin hygiene", "Reduce fragrance and irritant exposure", "Keep nails trimmed", "Track flare timing and body areas"] },
+      { heading: "What usually does not help", paragraphs: ["Some DIY treatments can worsen skin irritation and delay diagnosis."] },
+      { heading: "Real-world example", paragraphs: ["A dog with mild seasonal itching improved after trigger reduction and routine skin care, but later needed vet treatment when ear irritation and sores appeared."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these common errors."], bullets: ["Trying many products at once", "Using essential oils without guidance", "Ignoring ear symptoms", "Waiting despite open sores"] },
+      { heading: "Practical checklist", paragraphs: ["Bring this to your vet if symptoms continue."], bullets: ["Itch location map", "Flare season/timing", "Products already tried", "Food changes", "Ear or paw involvement"] },
+      { heading: "When to Call a Vet", paragraphs: ["Call quickly for open sores, bleeding, odor, severe scratching, sleep disruption, or no improvement after short home support."] },
+      { heading: "Key Takeaways", paragraphs: ["Home remedies support mild cases, but diagnosis matters."], bullets: ["Keep routines simple", "Track patterns for better care", "Escalate early for worsening signs", "Avoid harsh or unapproved products"] },
+    ],
+    faqs: [
+      { question: "Can I treat itchy dog skin only at home?", answer: "Mild short flares may improve with simple support, but persistent or severe itch needs veterinary diagnosis." },
+      { question: "Do oatmeal baths help dogs with itch?", answer: "Some dogs get short-term comfort from gentle products, but this does not replace diagnosis for recurring itch." },
+      { question: "Can food cause itchy skin?", answer: "Yes, food sensitivity can be one cause. Structured vet-guided diet evaluation is safer than random frequent food switches." },
+      { question: "Should I use human anti-itch creams?", answer: "No, unless your veterinarian specifically approves a product. Some human ingredients are unsafe for dogs." },
+      { question: "When is itchy skin urgent?", answer: "Urgent signs include open wounds, bleeding, swelling, pain, and strong odor. Seek veterinary care promptly." },
+      { question: "Which related page should I read next?", answer: "Read [treating hyperkeratosis dogs](/blog/treating-hyperkeratosis-dogs) and [puppy seasonal allergies](/blog/puppy-seasonal-allergies)."},
+    ],
+    internalLinks: [
+      { label: "Treating hyperkeratosis dogs", href: "/blog/treating-hyperkeratosis-dogs" },
+      { label: "Puppy seasonal allergies", href: "/blog/puppy-seasonal-allergies" },
+      { label: "Swollen dog paw", href: "/blog/swollen-dog-paw" },
+      { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "Puppy seasonal allergies", href: "/blog/puppy-seasonal-allergies", description: "Seasonal trigger and itch patterns." },
+      { label: "Treating hyperkeratosis dogs", href: "/blog/treating-hyperkeratosis-dogs", description: "Dry thick skin support options." },
+      { label: "Swollen dog paw", href: "/blog/swollen-dog-paw", description: "Localized inflammation and injury cues." },
+      { label: "Dog won't stop sneezing", href: "/blog/dog-wont-stop-sneezing", description: "Allergy-style overlap symptoms." },
+    ],
+  },
+  {
+    slug: "why-is-my-cat-drinking-so-much-water",
+    title: "Why Is My Cat Drinking So Much Water?",
+    metaTitle: "Why Is My Cat Drinking So Much Water? Causes and Vet Warning Signs",
+    metaDescription:
+      "Learn why cats may drink more water, common causes, what to monitor at home, and when increased thirst needs urgent vet care.",
+    category: "Cats",
+    publishedDate: "2026-04-29",
+    readingTime: "11 min read",
+    intro:
+      "If your cat suddenly drinks much more water, it can be an early health clue. This guide explains common reasons and when increased thirst becomes urgent.",
+    sections: [
+      { heading: "Quick answer: why is my cat drinking so much water?", paragraphs: ["Increased thirst can be linked to diet, heat, stress, kidney issues, diabetes patterns, or other conditions. Persistent change should be checked by a vet."] },
+      { heading: "Safety note", paragraphs: ["This guide is educational and not diagnostic. Ongoing thirst changes with weight loss, vomiting, or lethargy need medical evaluation."] },
+      { heading: "Common causes of increased thirst", paragraphs: ["Polydipsia can have simple or serious causes."], bullets: ["Dry-food heavy diets", "Environmental heat changes", "Kidney-related patterns", "Hormonal or metabolic disorders"] },
+      { heading: "What to monitor at home", paragraphs: ["Track water intake together with litter output and behavior changes."] },
+      { heading: "Real-world example", paragraphs: ["An owner notices frequent bowl refills and larger litter clumps over two weeks. Early testing helps identify whether this is hydration habit or medical disease."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these delays."], bullets: ["Assuming it's just weather for weeks", "Not tracking urine/litter changes", "Changing multiple diet factors at once", "Waiting for severe weakness"] },
+      { heading: "Practical checklist", paragraphs: ["Bring these notes to your vet."], bullets: ["Daily water intake estimate", "Litter clump size/frequency", "Appetite and weight trend", "Vomiting episodes", "Energy and social behavior changes"] },
+      { heading: "When to Call a Vet", paragraphs: ["Call promptly for persistent increased thirst, especially with weight loss, appetite changes, vomiting, weakness, or dehydration signs."] },
+      { heading: "Key Takeaways", paragraphs: ["Increased thirst is a useful early signal."], bullets: ["Track trend, not one day", "Combine water and litter observations", "Early testing is safer", "Escalate with red-flag symptoms"] },
+    ],
+    faqs: [
+      { question: "Is it normal for cats to drink more water sometimes?", answer: "Short-term increases can happen, but persistent clear change from baseline should be evaluated." },
+      { question: "Can kidney disease cause increased drinking?", answer: "Yes, kidney-related conditions are a common cause of increased thirst and urine output in cats." },
+      { question: "Can diabetes cause excessive thirst in cats?", answer: "It can. Increased thirst with weight loss or appetite changes should be checked quickly by your veterinarian." },
+      { question: "How can I track water intake at home?", answer: "Use measured bowl refills and daily notes, then compare with litter clump changes and behavior trends." },
+      { question: "When is increased thirst urgent?", answer: "Urgent concern rises when increased thirst appears with vomiting, weakness, no appetite, or severe behavior decline." },
+      { question: "Which page should I read next?", answer: "Read [cat not drinking water](/blog/cat-not-drinking-water) and [symptoms of kidney disease in cats](/blog/symptoms-of-kidney-disease-in-cats)."},
+    ],
+    internalLinks: [
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water" },
+      { label: "Symptoms of kidney disease in cats", href: "/blog/symptoms-of-kidney-disease-in-cats" },
+      { label: "Signs of kidney failure in cats", href: "/blog/signs-of-kidney-failure-in-cats" },
+      { label: "Kidney failure in cats condition guide", href: "/health-conditions/kidney-failure-cats" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water", description: "Low-intake hydration warning signs." },
+      { label: "Symptoms of kidney disease in cats", href: "/blog/symptoms-of-kidney-disease-in-cats", description: "Early vs advanced symptom recognition." },
+      { label: "Signs of kidney failure in cats", href: "/blog/signs-of-kidney-failure-in-cats", description: "Progression red flags in simple language." },
+      { label: "Why is my cat breathing heavy?", href: "/blog/why-is-my-cat-breathing-heavy", description: "Urgent whole-body symptom overlap." },
+    ],
+  },
+  {
+    slug: "cat-mouth-blisters",
+    title: "Cat Mouth Blisters: Causes and Care Steps",
+    metaTitle: "Cat Mouth Blisters: Common Causes, Pain Signs, and When to See a Vet",
+    metaDescription:
+      "Learn what cat mouth blisters may look like, possible causes, feeding support tips, and when urgent vet care is needed.",
+    category: "Cats",
+    publishedDate: "2026-04-29",
+    readingTime: "10 min read",
+    intro:
+      "Mouth blisters or sores in cats can make eating painful and stressful. This guide covers common causes, safe home support, and urgent red flags.",
+    sections: [
+      { heading: "Quick answer: cat mouth blisters", paragraphs: ["Mouth blisters can appear from infections, inflammation, trauma, dental disease, or immune-related conditions. Painful mouth signs need veterinary examination."] },
+      { heading: "Safety note", paragraphs: ["This content is educational only. Do not use human oral gels or medications without veterinary advice."] },
+      { heading: "What mouth blisters can look like", paragraphs: ["Signs may include visible sores, drooling, bad breath, food avoidance, and pawing at the mouth."] },
+      { heading: "Possible causes", paragraphs: ["Different causes can look similar."], bullets: ["Oral inflammation and stomatitis patterns", "Viral or infectious causes", "Dental and gum disease", "Chemical or trauma irritation"] },
+      { heading: "Real-world example", paragraphs: ["A cat with sudden food refusal and drooling may have painful oral lesions. Early exam helps prevent dehydration and weight loss."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these risky actions."], bullets: ["Delaying exam for painful eating", "Forcing hard dry food", "Using human mouth products", "Ignoring rapid weight loss"] },
+      { heading: "Practical checklist", paragraphs: ["Prepare these notes for your vet."], bullets: ["Eating pattern changes", "Drooling severity", "Visible lesion location", "Breath odor changes", "Recent food or household exposure"] },
+      { heading: "When to Call a Vet", paragraphs: ["Call promptly for refusal to eat, severe drooling, mouth bleeding, weight loss, fever-like signs, or pain behavior."] },
+      { heading: "Key Takeaways", paragraphs: ["Oral pain should be treated early."], bullets: ["Mouth blisters can worsen quickly", "Eating changes are high-value clues", "Avoid unapproved oral products", "Prompt care protects hydration and nutrition"] },
+    ],
+    faqs: [
+      { question: "Are cat mouth blisters serious?", answer: "They can be, especially when eating and hydration are affected. Veterinary evaluation is recommended." },
+      { question: "Can dental disease cause mouth sores?", answer: "Yes, oral inflammation from dental disease can cause painful lesions in some cats." },
+      { question: "What should I feed while my cat has mouth pain?", answer: "Soft, easier-to-eat food may help temporarily. Your vet should guide a full treatment plan." },
+      { question: "Can viruses cause mouth blisters in cats?", answer: "Some viral conditions can contribute to oral lesions. Exam and testing help clarify the cause." },
+      { question: "Should I clean my cat's mouth at home?", answer: "Do not attempt aggressive cleaning when your cat is painful. This can increase stress and injury risk." },
+      { question: "Which page should I read next?", answer: "Read [cat breath stinks](/blog/cat-breath-stinks) and [why does my cat drool](/blog/why-does-my-cat-drool) for related oral signs." },
+    ],
+    internalLinks: [
+      { label: "Cat breath stinks", href: "/blog/cat-breath-stinks" },
+      { label: "Why does my cat drool?", href: "/blog/why-does-my-cat-drool" },
+      { label: "Why is my cat drooling?", href: "/blog/why-is-my-cat-drooling" },
+      { label: "Bad breath condition guide", href: "/health-conditions/bad-breath" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      { label: "Cat breath stinks", href: "/blog/cat-breath-stinks", description: "Oral odor and dental warning patterns." },
+      { label: "Why does my cat drool?", href: "/blog/why-does-my-cat-drool", description: "Drooling differential guide." },
+      { label: "Why is my cat drooling?", href: "/blog/why-is-my-cat-drooling", description: "Urgency and trigger checks." },
+      { label: "Why does my cat's breath smell so bad?", href: "/blog/why-does-my-cats-breath-smell-so-bad", description: "When oral signs suggest illness." },
+    ],
+  },
+  {
+    slug: "best-food-for-elderly-cats",
+    title: "Best Food for Elderly Cats: Practical Nutrition Guide",
+    metaTitle: "Best Food for Elderly Cats: Senior Nutrition Basics and Feeding Tips",
+    metaDescription:
+      "Learn how to choose the best food for elderly cats, key nutrition priorities, feeding mistakes, and when to ask your vet for diet changes.",
+    category: "Cats",
+    publishedDate: "2026-04-29",
+    readingTime: "10 min read",
+    intro:
+      "Senior cats often need nutrition adjustments for weight, hydration, and comfort. This guide helps you choose practical food options without overcomplicating feeding.",
+    sections: [
+      { heading: "Quick answer: best food for elderly cats", paragraphs: ["The best food supports healthy weight, hydration, digestibility, and medical needs. A vet-guided plan is safest for senior cats with chronic conditions."] },
+      { heading: "Safety note", paragraphs: ["This guide is educational only. Diet changes should be individualized, especially if your cat has kidney, dental, or metabolic disease."] },
+      { heading: "Senior cat nutrition priorities", paragraphs: ["Aging cats benefit from careful balance, not one universal formula."], bullets: ["High-quality protein", "Hydration support", "Stable calorie intake", "Digestive tolerance"] },
+      { heading: "Wet vs dry food for older cats", paragraphs: ["Wet food can support hydration in many seniors. Some cats still do well on mixed feeding based on preference and medical needs."] },
+      { heading: "Real-world example", paragraphs: ["An elderly cat with low appetite improved when meals were split into smaller, warmer wet-food portions with closer weight tracking."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these feeding errors."], bullets: ["Switching foods too fast", "Ignoring weight trend", "Over-treating with calorie-dense snacks", "Not adjusting for dental discomfort"] },
+      { heading: "Practical checklist", paragraphs: ["Use this weekly senior feeding checklist."], bullets: ["Body weight trend", "Meal completion rate", "Water intake", "Stool quality", "Energy and grooming changes"] },
+      { heading: "When to Call a Vet", paragraphs: ["Call for persistent appetite decline, weight loss, vomiting, severe stool change, or sudden drinking/urination shifts."] },
+      { heading: "Key Takeaways", paragraphs: ["Senior feeding should be simple and data-driven."], bullets: ["Track intake and weight consistently", "Hydration is a core priority", "Adjust slowly and monitor response", "Use vet guidance for medical diets"] },
+    ],
+    faqs: [
+      { question: "What is the best diet for elderly cats?", answer: "There is no one best diet for every senior cat. The best plan matches age, health status, appetite, and hydration needs." },
+      { question: "Should senior cats eat wet food?", answer: "Many benefit from wet food for hydration, but some do well with mixed approaches. Individual tolerance matters." },
+      { question: "How often should I feed an elderly cat?", answer: "Smaller, consistent meals often work well, especially for cats with lower appetite or digestive sensitivity." },
+      { question: "When should I change senior cat food?", answer: "Change when weight, appetite, digestion, or medical status shifts. Use gradual transition and monitoring." },
+      { question: "Can senior food prevent kidney disease?", answer: "No diet can guarantee prevention. Nutrition supports health, but routine vet checks are still essential." },
+      { question: "Which related page should I read next?", answer: "Read [why is my cat drinking so much water](/blog/why-is-my-cat-drinking-so-much-water) for hydration-related monitoring." },
+    ],
+    internalLinks: [
+      { label: "Why is my cat drinking so much water?", href: "/blog/why-is-my-cat-drinking-so-much-water" },
+      { label: "What age does a cat stop growing?", href: "/blog/what-age-does-a-cat-stop-growing" },
+      { label: "When do cats reach full size?", href: "/blog/when-do-cats-reach-full-size" },
+      { label: "Weight management condition guide", href: "/health-conditions/weight-management" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      { label: "What age does a cat stop growing?", href: "/blog/what-age-does-a-cat-stop-growing", description: "Age-stage nutrition timing context." },
+      { label: "When do cats reach full size?", href: "/blog/when-do-cats-reach-full-size", description: "Growth timeline and body condition context." },
+      { label: "Why is my cat drinking so much water?", href: "/blog/why-is-my-cat-drinking-so-much-water", description: "Hydration changes in senior cats." },
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water", description: "Low intake warning signs." },
+    ],
+  },
+  {
+    slug: "best-cats-for-allergies",
+    title: "Best Cats for Allergies: What Actually Helps",
+    metaTitle: "Best Cats for Allergies: Low-Allergen Myths, Breeds, and Home Strategies",
+    metaDescription:
+      "Learn what 'best cats for allergies' really means, low-allergen myths, practical home strategies, and how to reduce symptoms.",
+    category: "Cats",
+    publishedDate: "2026-04-29",
+    readingTime: "10 min read",
+    intro:
+      "Many people search for allergy-friendly cats. This guide explains realistic expectations, breed myths, and practical ways to reduce symptoms at home.",
+    sections: [
+      { heading: "Quick answer: best cats for allergies", paragraphs: ["No cat is completely allergy-free. Some cats may trigger fewer symptoms for certain people, but home management remains essential."] },
+      { heading: "Safety note", paragraphs: ["This guide is educational and does not provide medical allergy diagnosis or treatment for humans."] },
+      { heading: "Why cat allergies happen", paragraphs: ["Allergy reactions are often linked to proteins in dander, saliva, and skin flakes, not fur length alone."] },
+      { heading: "Breed expectations vs reality", paragraphs: ["Some breeds are marketed as lower-allergen, but individual response varies greatly. Trial exposure is often more useful than breed lists alone."] },
+      { heading: "Real-world example", paragraphs: ["A family tolerated one cat better than another of the same breed. Cleaning routine and bedroom boundaries made a bigger difference than breed label alone."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these assumptions."], bullets: ["Expecting zero allergy symptoms", "Choosing based on fur length only", "Skipping home cleaning strategy", "Ignoring ventilation and grooming routine"] },
+      { heading: "Practical checklist", paragraphs: ["Use this before adoption decisions."], bullets: ["Trial time around the cat", "HEPA filtration planning", "Bedroom access rules", "Cleaning and grooming routine", "Family symptom tracking"] },
+      { heading: "When to Call a Vet", paragraphs: ["For the cat: call your vet for skin irritation, overgrooming, ear issues, or recurrent respiratory signs."] },
+      { heading: "Key Takeaways", paragraphs: ["Management matters more than marketing."], bullets: ["No truly hypoallergenic cat", "Individual response differs", "Home routine can reduce symptom load", "Responsible adoption planning helps long-term success"] },
+    ],
+    faqs: [
+      { question: "Are there truly hypoallergenic cats?", answer: "No cat is fully hypoallergenic. Some may trigger fewer symptoms for some people, but reactions vary." },
+      { question: "Do short-haired cats cause fewer allergies?", answer: "Not always. Allergens are linked to skin and saliva proteins, not only hair length." },
+      { question: "Can cleaning routines reduce cat allergy symptoms?", answer: "Yes, environmental management often helps reduce allergen load in many homes." },
+      { question: "Should I test exposure before adopting?", answer: "Yes, trial exposure is practical and can help set realistic expectations." },
+      { question: "Does bathing cats solve allergy issues?", answer: "Bathing alone rarely solves symptoms and may stress some cats. A broader home plan works better." },
+      { question: "Which page should I read next?", answer: "Read [cat-cold-symptoms](/blog/cat-cold-symptoms) and [why-is-my-cat-sneezing-a-lot](/blog/why-is-my-cat-sneezing-a-lot) for respiratory-style symptom context." },
+    ],
+    internalLinks: [
+      { label: "Cat cold symptoms", href: "/blog/cat-cold-symptoms" },
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot" },
+      { label: "Cat not drinking water", href: "/blog/cat-not-drinking-water" },
+      { label: "Allergies condition guide", href: "/health-conditions/allergies" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Cat Health Guides",
+    relatedGuides: [
+      { label: "Cat cold symptoms", href: "/blog/cat-cold-symptoms", description: "Upper-airway symptom guidance for cat owners." },
+      { label: "Why is my cat sneezing a lot?", href: "/blog/why-is-my-cat-sneezing-a-lot", description: "Frequent sneeze pattern and urgency checks." },
+      { label: "Why is my cat drooling?", href: "/blog/why-is-my-cat-drooling", description: "Oral and inflammation symptom overlap." },
+      { label: "Why does my cat drool?", href: "/blog/why-does-my-cat-drool", description: "Drooling differential in simple language." },
+    ],
+  },
+  {
+    slug: "are-dogs-mouths-cleaner-than-humans",
+    title: "Are Dogs' Mouths Cleaner Than Humans?",
+    metaTitle: "Are Dogs' Mouths Cleaner Than Humans? Myth vs Reality",
+    metaDescription:
+      "Learn whether dogs' mouths are cleaner than humans, what oral bacteria means, bite and lick hygiene basics, and practical safety tips.",
+    category: "Dogs",
+    publishedDate: "2026-04-29",
+    readingTime: "9 min read",
+    intro:
+      "This is a common pet myth. Dogs and humans both have oral bacteria, but not the same types. This guide explains what that means in practical terms.",
+    sections: [
+      { heading: "Quick answer: are dogs' mouths cleaner than humans?", paragraphs: ["No. Dogs are not universally 'cleaner' than humans. They carry different oral bacteria, and hygiene risk depends on context."] },
+      { heading: "Safety note", paragraphs: ["This page is educational and does not provide personal medical advice for people."] },
+      { heading: "Myth vs reality", paragraphs: ["The myth is popular, but oral microbiomes differ by species and behavior. 'Cleaner' is not an accurate scientific comparison."] },
+      { heading: "Why context matters", paragraphs: ["Licking open wounds, face contact, and oral disease all influence risk patterns."] },
+      { heading: "Real-world example", paragraphs: ["A healthy dog with good dental care may still have bacteria different from human oral flora. Hygiene habits are still important."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these assumptions."], bullets: ["Assuming all dog saliva is harmless", "Ignoring dental disease signs", "Skipping routine oral care", "Letting myths replace hygiene basics"] },
+      { heading: "Practical checklist", paragraphs: ["Use these practical habits."], bullets: ["Routine dental checks", "Daily oral hygiene where possible", "Avoid saliva contact with wounds", "Clean bowls and oral-care tools regularly"] },
+      { heading: "When to Call a Vet", paragraphs: ["Call your vet for persistent bad breath, mouth pain, bleeding gums, or difficulty eating."] },
+      { heading: "Key Takeaways", paragraphs: ["Different does not mean cleaner."], bullets: ["Myth is oversimplified", "Dental care still matters", "Context drives risk", "Use practical hygiene habits"] },
+    ],
+    faqs: [
+      { question: "Is dog saliva antiseptic?", answer: "Dog saliva has some natural components but is not a substitute for medical antiseptic care." },
+      { question: "Can licking spread bacteria?", answer: "Yes, saliva contact can transfer bacteria. Risk depends on contact site and health context." },
+      { question: "Should I worry if my dog licks my face?", answer: "Occasional licking is common, but basic hygiene is still recommended." },
+      { question: "Does oral health change this risk?", answer: "Yes. Dogs with dental disease can have higher oral bacterial load and odor/pain signs." },
+      { question: "How do I keep my dog's mouth healthier?", answer: "Use regular dental routines, veterinary checks, and diet practices that support oral health." },
+      { question: "Which page should I read next?", answer: "Read [canine-cavity](/blog/canine-cavity) and [dogs-breath-smells](/blog/dogs-breath-smells) for practical oral care guidance." },
+    ],
+    internalLinks: [
+      { label: "Canine cavity", href: "/blog/canine-cavity" },
+      { label: "Dog's breath smells", href: "/blog/dogs-breath-smells" },
+      { label: "Is bad breath in dogs a sign of illness?", href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness" },
+      { label: "Bad breath condition guide", href: "/health-conditions/bad-breath" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "Canine cavity", href: "/blog/canine-cavity", description: "Tooth decay vs gum disease basics." },
+      { label: "Dog's breath smells", href: "/blog/dogs-breath-smells", description: "Daily oral symptom monitoring." },
+      { label: "Is bad breath in dogs a sign of illness?", href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness", description: "System-level risk clues." },
+      { label: "What color should dogs gums be?", href: "/blog/what-color-should-dogs-gums-be", description: "Quick oral and circulation checks." },
+    ],
+  },
+  {
+    slug: "how-many-teeth-does-a-dog-have",
+    title: "How Many Teeth Does a Dog Have?",
+    metaTitle: "How Many Teeth Does a Dog Have? Puppy vs Adult Tooth Count",
+    metaDescription:
+      "Learn how many teeth dogs have, puppy vs adult counts, teething timeline, and when tooth loss or oral signs need a vet.",
+    category: "Dogs",
+    publishedDate: "2026-04-29",
+    readingTime: "9 min read",
+    intro:
+      "Dog tooth count questions are common for new pet parents. This guide explains puppy and adult counts, eruption timeline, and oral warning signs.",
+    sections: [
+      { heading: "Quick answer: how many teeth does a dog have?", paragraphs: ["Puppies usually have 28 baby teeth. Adult dogs typically have 42 permanent teeth."] },
+      { heading: "Safety note", paragraphs: ["Tooth count is educational context only. Mouth pain, bleeding, or broken teeth should be examined by your veterinarian."] },
+      { heading: "Puppy teeth vs adult teeth", paragraphs: ["Puppy teeth are temporary and are replaced during development. Adult teeth should be complete by the end of teething stages."] },
+      { heading: "Teething timeline basics", paragraphs: ["Tooth eruption timing can vary slightly by dog. Monitoring chewing comfort and oral health is important during transitions."] },
+      { heading: "Real-world example", paragraphs: ["A puppy owner notices a missing tooth during teething. In many cases this is normal, but retained baby teeth need veterinary review."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these oral-care mistakes."], bullets: ["Ignoring retained baby teeth", "No routine oral checks", "Using unsafe chew items", "Waiting for severe odor or pain"] },
+      { heading: "Practical checklist", paragraphs: ["Use this for routine oral tracking."], bullets: ["Tooth count progress in puppies", "Chewing comfort", "Breath odor trend", "Gum redness/bleeding", "Any fractured tooth"] },
+      { heading: "When to Call a Vet", paragraphs: ["Call for retained baby teeth, broken teeth, mouth pain, bleeding gums, foul odor, or appetite change from oral discomfort."] },
+      { heading: "Key Takeaways", paragraphs: ["Knowing tooth count helps spot abnormal patterns early."], bullets: ["Puppies and adults have different counts", "Teething transition needs observation", "Dental pain should not be delayed", "Routine checks improve long-term oral health"] },
+    ],
+    faqs: [
+      { question: "How many baby teeth do puppies have?", answer: "Most puppies have 28 deciduous teeth before adult eruption completes." },
+      { question: "How many teeth should an adult dog have?", answer: "Most adult dogs have 42 permanent teeth." },
+      { question: "When do puppies lose baby teeth?", answer: "Teething usually occurs over several months, with some variation by dog." },
+      { question: "What are retained baby teeth?", answer: "Retained baby teeth are teeth that do not fall out when adult teeth erupt, and they often need veterinary attention." },
+      { question: "Can missing teeth be normal?", answer: "Some tooth loss patterns may be normal during teething, but unexplained adult tooth loss is concerning." },
+      { question: "Which page should I read next?", answer: "Read [canine-cavity](/blog/canine-cavity) for tooth-decay and gum disease guidance." },
+    ],
+    internalLinks: [
+      { label: "Canine cavity", href: "/blog/canine-cavity" },
+      { label: "Dog's breath smells", href: "/blog/dogs-breath-smells" },
+      { label: "Is bad breath in dogs a sign of illness?", href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness" },
+      { label: "Bad breath condition guide", href: "/health-conditions/bad-breath" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Talk to Houston vets", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Dog Health Guides",
+    relatedGuides: [
+      { label: "Canine cavity", href: "/blog/canine-cavity", description: "Tooth decay understanding for owners." },
+      { label: "Dog's breath smells", href: "/blog/dogs-breath-smells", description: "Mouth odor monitoring basics." },
+      { label: "Is bad breath in dogs a sign of illness?", href: "/blog/is-bad-breath-in-dogs-a-sign-of-illness", description: "When oral signs indicate broader issues." },
+      { label: "Dog chattering teeth", href: "/blog/dog-chattering-teeth", description: "Oral discomfort and behavior overlap." },
+    ],
+  },
+  {
+    slug: "red-eyed-green-tree-frog-care",
+    title: "Red Eyed Green Tree Frog Care: Beginner Basics",
+    metaTitle: "Red Eyed Green Tree Frog Care: Habitat, Feeding, and Common Mistakes",
+    metaDescription:
+      "Learn red eyed green tree frog care basics, habitat setup, humidity and feeding routines, and common mistakes to avoid.",
+    category: "Health Conditions",
+    publishedDate: "2026-04-29",
+    readingTime: "10 min read",
+    intro:
+      "Red-eyed tree frogs need consistent enclosure care to stay healthy. This guide gives beginner-friendly setup and routine tips in simple language.",
+    sections: [
+      { heading: "Quick answer: red eyed green tree frog care", paragraphs: ["Successful care depends on stable enclosure humidity, safe temperature range, clean water access, and stress-minimizing habitat design."] },
+      { heading: "Safety note", paragraphs: ["This guide is educational. Exotic pet care can vary by species source, local regulation, and veterinary access."] },
+      { heading: "Habitat basics", paragraphs: ["Use vertical space, safe plants, and secure enclosure conditions with proper ventilation."] },
+      { heading: "Humidity and temperature routine", paragraphs: ["Consistency matters. Sudden swings in humidity or heat can stress frogs."] },
+      { heading: "Feeding basics", paragraphs: ["Use appropriate feeder insects and routine schedule suitable for age and condition."] },
+      { heading: "Real-world example", paragraphs: ["A frog with low appetite improved after enclosure humidity and lighting schedule were stabilized."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these beginner mistakes."], bullets: ["Inconsistent humidity", "Unsafe substrate choices", "Overhandling", "Poor cleaning routine"] },
+      { heading: "Practical checklist", paragraphs: ["Weekly care checklist."], bullets: ["Humidity checks", "Temperature checks", "Water and enclosure cleaning", "Feeding response tracking", "Behavior and skin condition notes"] },
+      { heading: "When to Call a Vet", paragraphs: ["Seek exotic-vet help for persistent appetite loss, skin changes, lethargy, or breathing abnormalities."] },
+      { heading: "Key Takeaways", paragraphs: ["Stable environment is the core of frog care."], bullets: ["Humidity control is critical", "Avoid frequent handling stress", "Routine logs improve care quality", "Use exotic-vet support when signs persist"] },
+    ],
+    faqs: [
+      { question: "What humidity do red-eyed tree frogs need?", answer: "They generally need stable tropical-style humidity ranges. Sudden swings should be avoided." },
+      { question: "Can I handle my frog daily?", answer: "Frequent handling usually adds stress. Minimal handling is safer for many frogs." },
+      { question: "What do red-eyed tree frogs eat?", answer: "They usually eat appropriately sized feeder insects, with schedule adjusted by age and condition." },
+      { question: "How often should I clean the enclosure?", answer: "Routine spot cleaning and scheduled deeper cleaning help maintain healthier habitat conditions." },
+      { question: "What are signs of stress in tree frogs?", answer: "Low appetite, reduced activity, skin changes, and unusual posture can suggest stress or illness." },
+      { question: "Which page should I read next?", answer: "Read [contact](/contact) if you need help finding local veterinary guidance resources." },
+    ],
+    internalLinks: [
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Blog home", href: "/blog" },
+      { label: "Find a vet in Houston", href: "/vets/houston-tx" },
+      { label: "Weight management condition guide", href: "/health-conditions/weight-management" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Probiotic calculator", href: "/tools/probiotic-calculator" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Pet Health Guides",
+    relatedGuides: [
+      { label: "Best food for elderly cats", href: "/blog/best-food-for-elderly-cats", description: "Care-routine planning mindset for aging pets." },
+      { label: "Can horses eat chocolate", href: "/blog/can-horses-eat-chocolate", description: "Species-specific food safety fundamentals." },
+      { label: "Health conditions hub", href: "/health-conditions", description: "Broader symptom-care references." },
+      { label: "How to choose a vet in Houston", href: "/blog/how-to-choose-a-vet-in-houston", description: "Finding care for non-routine pet needs." },
+    ],
+  },
+  {
+    slug: "can-horses-eat-chocolate",
+    title: "Can Horses Eat Chocolate?",
+    metaTitle: "Can Horses Eat Chocolate? Safety Risks and What To Do",
+    metaDescription:
+      "Can horses eat chocolate? Learn why chocolate is unsafe for horses, possible signs after exposure, and when to call a veterinarian.",
+    category: "Health Conditions",
+    publishedDate: "2026-04-29",
+    readingTime: "9 min read",
+    intro:
+      "Chocolate is not a safe treat for horses. This guide explains risk basics, practical next steps after accidental exposure, and when to call a vet quickly.",
+    sections: [
+      { heading: "Quick answer: can horses eat chocolate?", paragraphs: ["No. Chocolate is not considered a safe or recommended food for horses."] },
+      { heading: "Safety note", paragraphs: ["This page is educational only and not a diagnosis or emergency protocol. Contact your veterinarian for exposure-specific guidance."] },
+      { heading: "Why chocolate is risky", paragraphs: ["Chocolate contains compounds that can affect different species differently. Horses should not be intentionally fed chocolate products."] },
+      { heading: "Possible signs after accidental exposure", paragraphs: ["Signs can vary by amount, type, and horse factors."], bullets: ["Behavior change", "GI discomfort signs", "Restlessness", "Abnormal vital signs"] },
+      { heading: "Real-world example", paragraphs: ["A horse accidentally accesses sweet snacks in storage. Fast removal of source and immediate vet call gives safer next-step planning."] },
+      { heading: "Common mistakes", paragraphs: ["Avoid these mistakes after exposure."], bullets: ["Waiting to 'see what happens' for long periods", "Giving additional treats", "Ignoring dose uncertainty", "Delaying professional advice"] },
+      { heading: "Practical checklist", paragraphs: ["Share this during your vet call."], bullets: ["What was eaten", "Estimated amount", "Time of ingestion", "Current behavior and signs", "Any previous relevant history"] },
+      { heading: "When to Call a Vet", paragraphs: ["Call your vet promptly after known or suspected chocolate ingestion, especially if symptoms appear."] },
+      { heading: "Key Takeaways", paragraphs: ["Chocolate should be avoided for horses."], bullets: ["Do not intentionally feed chocolate", "Act quickly after accidental ingestion", "Track amount and timing", "Use veterinary guidance for next steps"] },
+    ],
+    faqs: [
+      { question: "Are any chocolate products safe for horses?", answer: "No chocolate products are recommended as horse treats." },
+      { question: "What should I do first if my horse ate chocolate?", answer: "Remove access to the source and call your veterinarian with amount and timing details." },
+      { question: "Does the type of chocolate matter?", answer: "Exposure details matter for risk assessment, so share product type and amount with your vet." },
+      { question: "Can small amounts be ignored?", answer: "Do not assume safety. Contact your vet for case-specific guidance." },
+      { question: "Should I induce anything at home?", answer: "Do not attempt unadvised home interventions. Veterinary direction is safest." },
+      { question: "Which page should I read next?", answer: "Read [red eyed green tree frog care](/blog/red-eyed-green-tree-frog-care) for species-specific care planning principles." },
+    ],
+    internalLinks: [
+      { label: "Red eyed green tree frog care", href: "/blog/red-eyed-green-tree-frog-care" },
+      { label: "Health conditions hub", href: "/health-conditions" },
+      { label: "Blog home", href: "/blog" },
+      { label: "Weight management condition guide", href: "/health-conditions/weight-management" },
+      { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
+      { label: "Find a vet in Houston", href: "/vets/houston-tx" },
+      { label: "Contact Pawbiotics", href: "/contact" },
+    ],
+    relatedGuidesTitle: "Related Pet Health Guides",
+    relatedGuides: [
+      { label: "Red eyed green tree frog care", href: "/blog/red-eyed-green-tree-frog-care", description: "Exotic species care basics in simple language." },
+      { label: "What to do if dog eats chicken bones", href: "/blog/what-to-do-if-dog-eats-chicken-bones", description: "Ingestion response framework." },
+      { label: "My dog is having diarrhea", href: "/blog/my-dog-is-having-diarrhea", description: "GI emergency threshold checklist." },
+      { label: "How to choose a vet in Houston", href: "/blog/how-to-choose-a-vet-in-houston", description: "Find local veterinary support faster." },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
