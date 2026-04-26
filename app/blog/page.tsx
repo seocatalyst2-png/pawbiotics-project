@@ -98,11 +98,26 @@ const blogFaqs: FAQItem[] = [
   },
 ];
 
-export default function BlogPage() {
+type BlogPageProps = {
+  searchParams?: Promise<{ q?: string }>;
+};
+
+export default async function BlogPage({ searchParams }: BlogPageProps) {
+  const resolvedSearchParams = searchParams ? await searchParams : {};
+  const query = resolvedSearchParams.q?.trim() ?? "";
+  const normalizedQuery = query.toLowerCase();
   const blogPosts = [...supportingDogFoodPosts, ...getAllBlogPosts()];
-  const featuredDogGuides = blogPosts.filter((post) => post.category === "Dogs").slice(0, 6);
-  const featuredCatGuides = blogPosts.filter((post) => post.category === "Cats").slice(0, 6);
-  const vaccinationAndCareGuides = blogPosts
+  const searchFilteredPosts = normalizedQuery
+    ? blogPosts.filter((post) =>
+        `${post.title} ${post.slug} ${post.metaDescription} ${post.category}`
+          .toLowerCase()
+          .includes(normalizedQuery)
+      )
+    : blogPosts;
+  const activePosts = normalizedQuery ? searchFilteredPosts : blogPosts;
+  const featuredDogGuides = activePosts.filter((post) => post.category === "Dogs").slice(0, 6);
+  const featuredCatGuides = activePosts.filter((post) => post.category === "Cats").slice(0, 6);
+  const vaccinationAndCareGuides = activePosts
     .filter((post) => {
       const keywords = `${post.slug} ${post.title}`.toLowerCase();
       return ["vaccin", "injection", "fvrcp", "spay", "recovery", "heat"].some((term) =>
@@ -184,6 +199,18 @@ export default function BlogPage() {
               Browse Cat Guides
             </Link>
           </div>
+          {normalizedQuery ? (
+            <div className="mx-auto mt-6 max-w-3xl rounded-2xl border border-brand-100 bg-white px-4 py-3 text-sm leading-7 text-gray-700 shadow-sm">
+              Showing results for <strong>{query}</strong>. Found {activePosts.length} matching{" "}
+              {activePosts.length === 1 ? "article" : "articles"}.
+              <Link
+                href="/blog"
+                className="ml-2 font-semibold text-brand-700 underline underline-offset-2"
+              >
+                Clear search
+              </Link>
+            </div>
+          ) : null}
         </Container>
       </section>
 
@@ -215,7 +242,7 @@ export default function BlogPage() {
             </p>
           </div>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {blogPosts.map((post) => (
+            {activePosts.map((post) => (
               <article
                 key={post.slug}
                 className="group rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-brand-200 hover:shadow-lg"
@@ -240,6 +267,12 @@ export default function BlogPage() {
               </article>
             ))}
           </div>
+          {normalizedQuery && activePosts.length === 0 ? (
+            <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50/70 p-4 text-sm text-amber-900">
+              No articles match your search yet. Try broader terms like <em>dog cough</em>,{" "}
+              <em>cat breathing</em>, or <em>vaccination</em>.
+            </div>
+          ) : null}
         </Container>
       </section>
 

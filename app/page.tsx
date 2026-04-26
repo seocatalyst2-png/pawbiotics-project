@@ -4,11 +4,9 @@ import HomeBlogSection from "@/components/home/HomeBlogSection";
 import HomeComparisonSection from "@/components/home/HomeComparisonSection";
 import HomeCtaSection from "@/components/home/HomeCtaSection";
 import HomeFaqSection from "@/components/home/HomeFaqSection";
-import HomeFooter from "@/components/home/HomeFooter";
 import HomeHero from "@/components/home/HomeHero";
 import HomeIntentStrip from "@/components/home/HomeIntentStrip";
 import HomeLocalSeoSection from "@/components/home/HomeLocalSeoSection";
-import HomeNavbar from "@/components/home/HomeNavbar";
 import HomePopularGuidesSection from "@/components/home/HomePopularGuidesSection";
 import HomeSignsSection from "@/components/home/HomeSignsSection";
 import HomeStrainsSection from "@/components/home/HomeStrainsSection";
@@ -43,7 +41,6 @@ export default function HomePage() {
   return (
     <div className="bg-[#faf6f0] text-[#2c1f0e]">
       <HomepageSchema faqs={homeFaqItems} />
-      <HomeNavbar />
       <main>
         <HomeHero />
         <HomeIntentStrip />
@@ -57,7 +54,6 @@ export default function HomePage() {
         <HomeFaqSection items={homeFaqItems} />
         <HomeCtaSection />
       </main>
-      <HomeFooter />
     </div>
   );
 }

@@ -34,12 +34,26 @@ export default function Header() {
           ))}
         </nav>
 
-        <Link
-          href="/probiotics"
-          className="hidden rounded-full bg-brand-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-brand-700 md:inline-block"
-        >
-          Shop Probiotics
-        </Link>
+        <div className="hidden items-center gap-3 md:flex">
+          <form action="/search" method="get" className="hidden lg:block">
+            <label htmlFor="site-search" className="sr-only">
+              Search site
+            </label>
+            <input
+              id="site-search"
+              name="q"
+              type="search"
+              placeholder="Search guides..."
+              className="w-44 rounded-full border border-gray-200 bg-white px-3 py-2 text-sm text-gray-700 outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+            />
+          </form>
+          <Link
+            href="/probiotics"
+            className="rounded-full bg-brand-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-brand-700"
+          >
+            Shop Probiotics
+          </Link>
+        </div>
       </div>
 
       <nav className="flex gap-5 overflow-x-auto border-t border-gray-100 px-4 py-2 md:hidden">
@@ -53,6 +67,18 @@ export default function Header() {
           </Link>
         ))}
       </nav>
+      <form action="/search" method="get" className="border-t border-gray-100 px-4 py-2 md:hidden">
+        <label htmlFor="site-search-mobile" className="sr-only">
+          Search site
+        </label>
+        <input
+          id="site-search-mobile"
+          name="q"
+          type="search"
+          placeholder="Search guides..."
+          className="w-full rounded-full border border-gray-200 bg-white px-3 py-2 text-sm text-gray-700 outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+        />
+      </form>
     </header>
   );
 }
