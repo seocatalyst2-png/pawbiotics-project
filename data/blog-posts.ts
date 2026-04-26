@@ -12,6 +12,16 @@ export type BlogInternalLink = {
   description?: string;
 };
 
+export type BlogImage = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
+export type BlogSectionImage = BlogImage & {
+  sectionHeadingIncludes: string;
+};
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -27,6 +37,8 @@ export type BlogPost = {
   relatedGuides?: BlogInternalLink[];
   relatedGuidesTitle?: string;
   relatedConditions?: BlogInternalLink[];
+  featuredImage?: BlogImage;
+  sectionImages?: BlogSectionImage[];
 };
 
 const blogPosts: BlogPost[] = [
@@ -7156,6 +7168,19 @@ const blogPosts: BlogPost[] = [
     readingTime: "11 min read",
     intro:
       "A strong ear odor in dogs is common, but it should not be ignored. This guide helps you read smell patterns, spot possible infection signs, and decide when vet care is needed.",
+    featuredImage: {
+      src: "/images/blog/dog-ear-care.jpg",
+      alt: "Dog ear close-up showing redness and discharge signs that may need veterinary care",
+      caption: "Example of ear changes pet parents should monitor closely.",
+    },
+    sectionImages: [
+      {
+        sectionHeadingIncludes: "ear smells",
+        src: "/images/blog/dog-ear-care.jpg",
+        alt: "Different dog ear odor patterns and what they may suggest",
+        caption: "Ear smell pattern context for early monitoring.",
+      },
+    ],
     sections: [
       {
         heading: "Quick answer: my dog's ears stink",
@@ -7602,6 +7627,19 @@ const blogPosts: BlogPost[] = [
     readingTime: "10 min read",
     intro:
       "Toenail injuries are painful and can bleed heavily. This guide gives practical first steps, common mistakes to avoid, and escalation signs.",
+    featuredImage: {
+      src: "/images/blog/dog-paw-injury.jpg",
+      alt: "Dog paw with a toenail injury wrapped for first-aid support",
+      caption: "A calm first-aid setup before veterinary follow-up.",
+    },
+    sectionImages: [
+      {
+        sectionHeadingIncludes: "Immediate first steps",
+        src: "/images/blog/dog-paw-injury.jpg",
+        alt: "Dog paw injury care steps including gentle pressure and paw protection",
+        caption: "Keep pressure gentle and arrange prompt veterinary care if pain persists.",
+      },
+    ],
     sections: [
       { heading: "Quick answer: canine toenail injury", paragraphs: ["Keep your dog calm, control bleeding with gentle pressure, protect the paw, and contact your vet if pain or bleeding persists."] },
       { heading: "Safety note", paragraphs: ["This guide is educational. Severe bleeding, exposed nail bed, swelling, or ongoing pain should be treated by a veterinarian."] },
@@ -7837,6 +7875,19 @@ const blogPosts: BlogPost[] = [
     readingTime: "10 min read",
     intro:
       "Mouth blisters or sores in cats can make eating painful and stressful. This guide covers common causes, safe home support, and urgent red flags.",
+    featuredImage: {
+      src: "/images/blog/cat-mouth-health.jpg",
+      alt: "Cat oral health exam showing mouth sore warning signs around gums and lips",
+      caption: "Oral discomfort signs should be checked early.",
+    },
+    sectionImages: [
+      {
+        sectionHeadingIncludes: "What mouth blisters can look like",
+        src: "/images/blog/cat-mouth-health.jpg",
+        alt: "Cat mouth blister appearance with drooling and food-avoidance warning cues",
+        caption: "Visual context for oral pain signs in cats.",
+      },
+    ],
     sections: [
       { heading: "Quick answer: cat mouth blisters", paragraphs: ["Mouth blisters can appear from infections, inflammation, trauma, dental disease, or immune-related conditions. Painful mouth signs need veterinary examination."] },
       { heading: "Safety note", paragraphs: ["This content is educational only. Do not use human oral gels or medications without veterinary advice."] },

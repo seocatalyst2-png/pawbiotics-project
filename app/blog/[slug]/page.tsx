@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { existsSync } from "node:fs";
+import path from "node:path";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
@@ -13,8 +15,10 @@ import {
 import {
   getBlogPostBySlug,
   getBlogPostSlugs,
+  type BlogImage,
   type BlogInternalLink,
   type BlogPost,
+  type BlogSectionImage,
 } from "@/data/blog-posts";
 import { generateBlogMeta } from "@/lib/meta";
 
@@ -90,155 +94,35 @@ function renderParagraphWithLinks(paragraph: string) {
   return nodes.length ? nodes : paragraph;
 }
 
-type SectionImage = {
-  src: string;
-  alt: string;
-  caption?: string;
-};
+const localImageExistenceCache = new Map<string, boolean>();
 
-const IMAGE_LIBRARY = {
-  normalVsAbnormal: "/images/blog/normal-vs-abnormal.svg",
-  symptomOverview: "/images/blog/symptom-overview.svg",
-  practicalChecklist: "/images/blog/practical-checklist.svg",
-  injuryCareSteps: "/images/blog/injury-care-steps.svg",
-  oralHealthComparison: "/images/blog/oral-health-comparison.svg",
-  hydrationMonitoring: "/images/blog/hydration-monitoring.svg",
-} as const;
+function isRenderableImageSrc(src: string): boolean {
+  if (!src) return false;
+  if (/^https?:\/\//i.test(src)) return true;
+  if (!src.startsWith("/images/blog/")) return false;
 
-function createSectionImages(post: BlogPost, sectionHeading: string): SectionImage[] {
-  const heading = sectionHeading.toLowerCase();
-  const topic = post.title.toLowerCase();
-  const images: SectionImage[] = [];
+  const cached = localImageExistenceCache.get(src);
+  if (typeof cached === "boolean") return cached;
 
-  if (
-    heading.includes("quick answer") ||
-    heading.includes("early vs") ||
-    heading.includes("normal vs") ||
-    heading.includes("difference") ||
-    heading.includes("comparison") ||
-    heading.includes("vs ")
-  ) {
-    images.push({
-      src: IMAGE_LIBRARY.normalVsAbnormal,
-      alt: `${post.title} normal versus warning sign comparison chart`,
-      caption: "Normal patterns compared with warning signs.",
-    });
-  }
-
-  if (
-    heading.includes("symptom") ||
-    heading.includes("signs") ||
-    heading.includes("what it looks like") ||
-    heading.includes("appearance") ||
-    heading.includes("example")
-  ) {
-    images.push({
-      src: IMAGE_LIBRARY.symptomOverview,
-      alt: `${post.title} symptom overview with common physical and behavior changes`,
-      caption: "What to look for when symptoms start changing.",
-    });
-  }
-
-  if (
-    heading.includes("injury") ||
-    heading.includes("what to do") ||
-    heading.includes("first") ||
-    heading.includes("immediate") ||
-    heading.includes("care steps")
-  ) {
-    images.push({
-      src: IMAGE_LIBRARY.injuryCareSteps,
-      alt: `${post.title} first response steps for a possible pet injury`,
-      caption: "Safe first-response steps before veterinary evaluation.",
-    });
-  }
-
-  if (heading.includes("checklist") || heading.includes("monitor") || heading.includes("track")) {
-    images.push({
-      src: IMAGE_LIBRARY.practicalChecklist,
-      alt: `${post.title} practical at-home monitoring checklist for pet parents`,
-      caption: "Simple checklist for symptom tracking and vet updates.",
-    });
-  }
-
-  if (
-    heading.includes("mouth") ||
-    heading.includes("teeth") ||
-    heading.includes("oral") ||
-    heading.includes("breath") ||
-    heading.includes("gum") ||
-    topic.includes("cavity")
-  ) {
-    images.push({
-      src: IMAGE_LIBRARY.oralHealthComparison,
-      alt: `${post.title} oral health comparison showing healthy versus concerning signs`,
-      caption: "Healthy oral signs compared with dental warning signs.",
-    });
-  }
-
-  if (
-    heading.includes("drinking") ||
-    heading.includes("water") ||
-    heading.includes("hydration") ||
-    heading.includes("urination")
-  ) {
-    images.push({
-      src: IMAGE_LIBRARY.hydrationMonitoring,
-      alt: `${post.title} hydration and urination monitoring tracker example`,
-      caption: "Hydration trend tracking to support a clearer vet visit.",
-    });
-  }
-
-  return images.slice(0, 2);
+  const absolutePath = path.join(process.cwd(), "public", src.replace(/^\//, ""));
+  const exists = existsSync(absolutePath);
+  localImageExistenceCache.set(src, exists);
+  return exists;
 }
 
-function buildSectionImageMap(post: BlogPost): Map<number, SectionImage[]> {
-  const sectionImageMap = new Map<number, SectionImage[]>();
-  let imageCount = 0;
-  const maxImagesPerPost = 4;
+function normalizeImage(image?: BlogImage): BlogImage | null {
+  if (!image || !isRenderableImageSrc(image.src)) return null;
+  return image;
+}
 
-  post.sections.forEach((section, index) => {
-    if (imageCount >= maxImagesPerPost) return;
-    const candidates = createSectionImages(post, section.heading);
-    if (!candidates.length) return;
-
-    const remaining = maxImagesPerPost - imageCount;
-    const selected = candidates.slice(0, Math.min(2, remaining));
-    if (selected.length) {
-      sectionImageMap.set(index, selected);
-      imageCount += selected.length;
-    }
-  });
-
-  // Ensure meaningful visual support on posts with fewer matching headings.
-  if (imageCount < 2 && post.sections.length) {
-    const fallbackSectionIndex = Math.min(1, post.sections.length - 1);
-    const existing = sectionImageMap.get(fallbackSectionIndex) ?? [];
-    const fallbackImages: SectionImage[] = [];
-
-    if (!existing.some((item) => item.src === IMAGE_LIBRARY.symptomOverview)) {
-      fallbackImages.push({
-        src: IMAGE_LIBRARY.symptomOverview,
-        alt: `${post.title} symptom examples and visual warning cues`,
-        caption: "Visual cue guide for common symptom patterns.",
-      });
-    }
-    if (!existing.some((item) => item.src === IMAGE_LIBRARY.practicalChecklist)) {
-      fallbackImages.push({
-        src: IMAGE_LIBRARY.practicalChecklist,
-        alt: `${post.title} at-home checklist for daily symptom observations`,
-        caption: "Use this checklist while monitoring day-to-day changes.",
-      });
-    }
-
-    const needed = 2 - imageCount;
-    const selectedFallbacks = fallbackImages.slice(0, needed);
-    if (selectedFallbacks.length) {
-      sectionImageMap.set(fallbackSectionIndex, [...existing, ...selectedFallbacks].slice(0, 2));
-    }
-  }
-
-  return sectionImageMap;
+function getSectionImages(post: BlogPost, sectionHeading: string): BlogImage[] {
+  if (!post.sectionImages?.length) return [];
+  const loweredHeading = sectionHeading.toLowerCase();
+  const matches = post.sectionImages.filter((image: BlogSectionImage) =>
+    loweredHeading.includes(image.sectionHeadingIncludes.toLowerCase())
+  );
+  const validMatches = matches.filter((image) => isRenderableImageSrc(image.src));
+  return validMatches.slice(0, 2).map(({ src, alt, caption }) => ({ src, alt, caption }));
 }
 
 function isSymptomPost(post: BlogPost): boolean {
@@ -451,7 +335,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   const crossPetLinks = getCrossPetLinks(post);
   const displayedInternalLinks = uniqueLinks([...post.internalLinks, ...crossPetLinks]).slice(0, 12);
   const crossPetContextLinks = crossPetLinks.slice(0, 2);
-  const sectionImageMap = buildSectionImageMap(post);
+  const featuredImage = normalizeImage(post.featuredImage);
 
   return (
     <>
@@ -493,6 +377,23 @@ export default async function BlogPostPage({ params }: PageProps) {
             Published {post.publishedDate} • {post.readingTime}
           </p>
           <p className="mt-4 max-w-3xl text-base leading-7 text-gray-600">{post.intro}</p>
+          {!!featuredImage && (
+            <figure className="mt-6 max-w-4xl overflow-hidden rounded-2xl border border-white/80 bg-white shadow-sm">
+              <Image
+                src={featuredImage.src}
+                alt={featuredImage.alt}
+                width={1200}
+                height={700}
+                sizes="(min-width: 1024px) 56rem, 100vw"
+                className="h-auto w-full object-cover"
+              />
+              {!!featuredImage.caption && (
+                <figcaption className="border-t border-gray-100 px-4 py-2 text-xs leading-5 text-gray-600">
+                  {featuredImage.caption}
+                </figcaption>
+              )}
+            </figure>
+          )}
           {!!(isSymptomPost(post) && crossPetContextLinks.length) && (
             <p className="mt-3 max-w-3xl text-sm leading-7 text-gray-600">
               Compare with similar{" "}
@@ -518,64 +419,63 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className="rounded-2xl border border-brand-100 bg-brand-50/50 p-4 text-sm text-brand-900">
             Educational guide only. This article does not replace a veterinary exam, diagnosis, or emergency care.
           </div>
-          {post.sections.map((section, index) => (
-            <article
-              key={section.heading}
-              className={`rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${cardTones[index % cardTones.length]}`}
-            >
-              <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-gray-700">
-                <span aria-hidden>{sectionIcons[index % sectionIcons.length]}</span>
-                Section {index + 1}
-              </div>
-              <h2 className="text-2xl font-semibold text-gray-900">{section.heading}</h2>
-              <div className="mt-3 space-y-3">
-                <h3 className="text-base font-semibold text-gray-800">What this means</h3>
-                {section.paragraphs.map((paragraph) => (
-                  <p key={paragraph} className="text-sm leading-7 text-gray-600">
-                    {renderParagraphWithLinks(paragraph)}
-                  </p>
-                ))}
-              </div>
-              {!!sectionImageMap.get(index)?.length && (
-                <div
-                  className={`mt-5 grid gap-3 ${
-                    (sectionImageMap.get(index) ?? []).length > 1 ? "sm:grid-cols-2" : "grid-cols-1"
-                  }`}
-                >
-                  {(sectionImageMap.get(index) ?? []).map((image) => (
-                    <figure
-                      key={`${section.heading}-${image.src}`}
-                      className="overflow-hidden rounded-2xl border border-white/70 bg-white/70 shadow-sm"
-                    >
-                      <Image
-                        src={image.src}
-                        alt={image.alt}
-                        width={1200}
-                        height={675}
-                        sizes="(min-width: 1024px) 32rem, (min-width: 640px) 50vw, 100vw"
-                        className="h-auto w-full object-cover"
-                      />
-                      {!!image.caption && (
-                        <figcaption className="border-t border-gray-100 px-3 py-2 text-xs leading-5 text-gray-600">
-                          {image.caption}
-                        </figcaption>
-                      )}
-                    </figure>
+          {post.sections.map((section, index) => {
+            const sectionImages = getSectionImages(post, section.heading);
+            return (
+              <article
+                key={section.heading}
+                className={`rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${cardTones[index % cardTones.length]}`}
+              >
+                <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-gray-700">
+                  <span aria-hidden>{sectionIcons[index % sectionIcons.length]}</span>
+                  Section {index + 1}
+                </div>
+                <h2 className="text-2xl font-semibold text-gray-900">{section.heading}</h2>
+                <div className="mt-3 space-y-3">
+                  <h3 className="text-base font-semibold text-gray-800">What this means</h3>
+                  {section.paragraphs.map((paragraph) => (
+                    <p key={paragraph} className="text-sm leading-7 text-gray-600">
+                      {renderParagraphWithLinks(paragraph)}
+                    </p>
                   ))}
                 </div>
-              )}
-              {!!section.bullets?.length && (
-                <div className="mt-4">
-                  <h3 className="text-base font-semibold text-gray-800">Checklist</h3>
-                  <ul className="mt-2 list-disc space-y-2 pl-5 text-sm text-gray-700">
-                    {section.bullets.map((bullet) => (
-                      <li key={bullet}>{bullet}</li>
+                {!!sectionImages.length && (
+                  <div className={`mt-5 grid gap-3 ${sectionImages.length > 1 ? "sm:grid-cols-2" : "grid-cols-1"}`}>
+                    {sectionImages.map((image) => (
+                      <figure
+                        key={`${section.heading}-${image.src}`}
+                        className="overflow-hidden rounded-2xl border border-white/70 bg-white/70 shadow-sm"
+                      >
+                        <Image
+                          src={image.src}
+                          alt={image.alt}
+                          width={1200}
+                          height={675}
+                          sizes="(min-width: 1024px) 32rem, (min-width: 640px) 50vw, 100vw"
+                          className="h-auto w-full object-cover"
+                        />
+                        {!!image.caption && (
+                          <figcaption className="border-t border-gray-100 px-3 py-2 text-xs leading-5 text-gray-600">
+                            {image.caption}
+                          </figcaption>
+                        )}
+                      </figure>
                     ))}
-                  </ul>
-                </div>
-              )}
-            </article>
-          ))}
+                  </div>
+                )}
+                {!!section.bullets?.length && (
+                  <div className="mt-4">
+                    <h3 className="text-base font-semibold text-gray-800">Checklist</h3>
+                    <ul className="mt-2 list-disc space-y-2 pl-5 text-sm text-gray-700">
+                      {section.bullets.map((bullet) => (
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </article>
+            );
+          })}
         </Container>
       </section>
 
