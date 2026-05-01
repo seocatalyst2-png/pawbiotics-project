@@ -11,12 +11,14 @@ import { generateVetCityMeta } from "@/lib/meta";
 import { normalizeCitySlug, slugToWords } from "@/lib/seo";
 import { getVetCityLabel } from "@/lib/vet-city";
 import LiveVetListings from "@/components/vets/LiveVetListings";
+import { getVetListingsForCity } from "@/lib/vet-listings";
 
 type PageProps = {
   params: Promise<{ city: string }>;
 };
 
 export const dynamicParams = false;
+export const dynamic = "force-dynamic";
 
 export async function generateStaticParams() {
   return getSupportedCitySlugs().map((city) => ({ city }));
@@ -54,6 +56,7 @@ export default async function VetCityPage({ params }: PageProps) {
   if (!isSupportedCitySlug(citySlug)) notFound();
   const cityName = getVetCityLabel(citySlug) ?? slugToWords(citySlug);
   const data = generateVetCityPageContent(citySlug);
+  const initialVetListings = await getVetListingsForCity(citySlug);
 
   return (
     <>
@@ -69,7 +72,13 @@ export default async function VetCityPage({ params }: PageProps) {
         cityName={cityName}
         pageUrl={`https://pawbiotics.us/vets/${data.slug}`}
         disclaimer="Listings are for informational purposes and should be verified directly with each clinic before booking."
-        afterQuickAnswer={<LiveVetListings citySlug={citySlug} fallbackCityName={cityName} />}
+        afterQuickAnswer={
+          <LiveVetListings
+            citySlug={citySlug}
+            fallbackCityName={cityName}
+            initialData={initialVetListings}
+          />
+        }
       />
     </>
   );

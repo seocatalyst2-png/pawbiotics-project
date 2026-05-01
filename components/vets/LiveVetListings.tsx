@@ -3,28 +3,12 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import Container from "@/components/Container";
-
-type VetListing = {
-  name: string | null;
-  address: string | null;
-  rating: number | null;
-  reviewCount: number | null;
-  phone: string | null;
-  website: string | null;
-  googleMapsUrl: string | null;
-  types: string[];
-  photoName: string | null;
-};
-
-type VetApiResponse = {
-  city: string;
-  listings: VetListing[];
-  attribution: string;
-};
+import type { VetListingsResult } from "@/lib/vet-listings";
 
 type LiveVetListingsProps = {
   citySlug: string;
   fallbackCityName: string;
+  initialData?: VetListingsResult | null;
 };
 
 const cardClasses = [
@@ -36,10 +20,14 @@ const cardClasses = [
 const FALLBACK_MESSAGE =
   "Live clinic listings are temporarily unavailable. Please check Google Maps or contact a local veterinarian directly.";
 
-export default function LiveVetListings({ citySlug, fallbackCityName }: LiveVetListingsProps) {
-  const [data, setData] = useState<VetApiResponse | null>(null);
+export default function LiveVetListings({
+  citySlug,
+  fallbackCityName,
+  initialData = null,
+}: LiveVetListingsProps) {
+  const [data, setData] = useState<VetListingsResult | null>(initialData);
   const [hasError, setHasError] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(!initialData);
 
   useEffect(() => {
     let isMounted = true;
@@ -53,7 +41,7 @@ export default function LiveVetListings({ citySlug, fallbackCityName }: LiveVetL
         if (!response.ok) {
           throw new Error("Live listings request failed");
         }
-        const payload = (await response.json()) as VetApiResponse;
+        const payload = (await response.json()) as VetListingsResult;
         if (isMounted) {
           setData(payload);
           setHasError(false);
@@ -61,7 +49,7 @@ export default function LiveVetListings({ citySlug, fallbackCityName }: LiveVetL
       } catch {
         if (isMounted) {
           setHasError(true);
-          setData(null);
+          setData(initialData);
         }
       } finally {
         if (isMounted) {
@@ -74,7 +62,7 @@ export default function LiveVetListings({ citySlug, fallbackCityName }: LiveVetL
     return () => {
       isMounted = false;
     };
-  }, [citySlug]);
+  }, [citySlug, initialData]);
 
   const cityName = data?.city ?? fallbackCityName;
   const listings = data?.listings ?? [];
@@ -89,11 +77,40 @@ export default function LiveVetListings({ citySlug, fallbackCityName }: LiveVetL
       );
     }
 
-    if (hasError || !hasListings) {
+    if (hasError && !hasListings) {
       return (
         <p className="rounded-2xl border border-amber-200 bg-amber-50/70 px-4 py-3 text-sm leading-7 text-amber-900">
           {FALLBACK_MESSAGE}
         </p>
+      );
+    }
+
+    if (!hasListings) {
+      return (
+        <div className="grid gap-4 md:grid-cols-3">
+          {[
+            {
+              title: "General veterinary clinic",
+              body: `Use a regular clinic in ${cityName} for wellness exams, vaccines, dental planning, and non-urgent symptom checks.`,
+            },
+            {
+              title: "Emergency animal hospital",
+              body: `Save one after-hours hospital near ${cityName} before breathing trouble, collapse, severe pain, or repeated vomiting happens.`,
+            },
+            {
+              title: "Affordable preventive care",
+              body: `Ask local clinics for exam, vaccine, recheck, and diagnostic ranges so routine care stays easier to budget.`,
+            },
+          ].map((item) => (
+            <article
+              key={item.title}
+              className="rounded-2xl border border-brand-100 bg-brand-50/45 p-5 shadow-sm"
+            >
+              <h3 className="text-lg font-semibold text-gray-900">{item.title}</h3>
+              <p className="mt-2 text-sm leading-7 text-gray-700">{item.body}</p>
+            </article>
+          ))}
+        </div>
       );
     }
 
@@ -183,6 +200,10 @@ export default function LiveVetListings({ citySlug, fallbackCityName }: LiveVetL
           <h2 className="font-serif text-2xl font-semibold text-gray-900">
             Veterinary Clinics Found Near {cityName}
           </h2>
+          <p className="mt-2 text-sm leading-7 text-gray-600">
+            Use these clinic details as a starting point, then verify hours, services,
+            pricing, and appointment availability directly before booking.
+          </p>
           <div className="mt-4">{sectionBody}</div>
           <p className="mt-4 text-xs text-gray-500">
             {data?.attribution ?? "Place information provided by Google."}
