@@ -1095,10 +1095,395 @@ function mergeUniqueLinks(baseLinks: InternalLink[], overrideLinks?: InternalLin
   return merged;
 }
 
+type VetCityProfile = {
+  neighborhoods: string[];
+  localCareFactors: string[];
+  emergencyAccess: string;
+  ownerQuestions: string[];
+  nearbyCitySlugs: string[];
+};
+
+const priorityVetCityProfiles: Record<string, VetCityProfile> = {
+  "new-york-ny": {
+    neighborhoods: ["Manhattan", "Brooklyn", "Queens", "the Bronx", "Staten Island"],
+    localCareFactors: [
+      "Apartment pets may need clinics that are easy to reach by walking, rideshare, or public transit",
+      "Busy borough travel can make emergency hospital distance more important than it looks on a map",
+      "Many owners need clear elevator, carrier, and anxious-pet handling policies before booking",
+    ],
+    emergencyAccess:
+      "In New York City, save an emergency hospital by borough and ask your regular clinic how after-hours transfers work when traffic or late-night travel is a factor.",
+    ownerQuestions: [
+      "Do you handle anxious cats and dogs in small exam rooms?",
+      "Can records and prescriptions be shared quickly if I need an emergency hospital?",
+      "What is the best arrival process for pets coming by carrier, taxi, or rideshare?",
+    ],
+    nearbyCitySlugs: ["jersey-city-nj", "newark-nj", "boston-ma"],
+  },
+  "los-angeles-ca": {
+    neighborhoods: ["Hollywood", "Koreatown", "Silver Lake", "Santa Monica", "the San Fernando Valley"],
+    localCareFactors: [
+      "Long drives across LA can turn routine appointments into half-day plans",
+      "Heat, wildfire smoke, and outdoor activity can affect breathing and skin symptoms",
+      "Owners may need clinics with flexible drop-off, parking clarity, and specialty referral access",
+    ],
+    emergencyAccess:
+      "For Los Angeles pets, choose one regular clinic close to home and one emergency hospital that is realistic to reach during traffic.",
+    ownerQuestions: [
+      "Where do you refer pets for overnight monitoring or specialty imaging?",
+      "Do you offer guidance for heat, smoke, or outdoor exposure concerns?",
+      "Is parking or curbside check-in available for urgent visits?",
+    ],
+    nearbyCitySlugs: ["long-beach-ca", "anaheim-ca", "riverside-ca"],
+  },
+  "chicago-il": {
+    neighborhoods: ["Lincoln Park", "Wicker Park", "Hyde Park", "Logan Square", "the West Loop"],
+    localCareFactors: [
+      "Cold winters can make arthritis, paw irritation, and transport planning more important",
+      "Dense neighborhoods may have many clinics, but emergency and specialty coverage still varies",
+      "High-rise and apartment pets may need low-stress handling and practical appointment timing",
+    ],
+    emergencyAccess:
+      "Chicago owners should save a winter-friendly route to an emergency hospital and ask regular clinics how they handle same-day respiratory or injury cases.",
+    ownerQuestions: [
+      "How do you handle winter paw irritation, limping, or cold-weather injuries?",
+      "Do you have same-day slots for vomiting, coughing, or pain concerns?",
+      "Which emergency hospital do you recommend after hours?",
+    ],
+    nearbyCitySlugs: ["milwaukee-wi", "indianapolis-in", "st-louis-mo"],
+  },
+  "houston-tx": {
+    neighborhoods: ["The Heights", "Montrose", "Midtown", "Katy", "Sugar Land"],
+    localCareFactors: [
+      "Heat and humidity can raise risk for dehydration, parasites, and skin irritation",
+      "Storm season makes emergency planning and medication refills more important",
+      "Large metro travel means a backup clinic may need to be in a different part of town",
+    ],
+    emergencyAccess:
+      "Houston pet parents should keep one nearby clinic and one storm-accessible emergency hospital saved before hurricane season.",
+    ownerQuestions: [
+      "How do you handle heat stress or dehydration triage?",
+      "Can you help plan parasite prevention for Gulf Coast conditions?",
+      "Where should I go during after-hours storms or flooding risk?",
+    ],
+    nearbyCitySlugs: ["dallas-tx", "austin-tx", "san-antonio-tx"],
+  },
+  "philadelphia-pa": {
+    neighborhoods: ["Center City", "Fishtown", "University City", "South Philadelphia", "Manayunk"],
+    localCareFactors: [
+      "Rowhome and apartment pets may need clinics with easy carrier handling and nearby parking",
+      "Urban dog walking can increase exposure to sidewalk irritants and shared outdoor spaces",
+      "Owners may value clinics that coordinate quickly with specialty hospitals when needed",
+    ],
+    emergencyAccess:
+      "In Philadelphia, compare regular clinics by neighborhood access and confirm where they send pets for overnight or specialty emergency care.",
+    ownerQuestions: [
+      "Do you offer low-stress handling for carrier-sensitive cats?",
+      "Can you provide written estimates before diagnostics?",
+      "What emergency hospital do you refer to after hours?",
+    ],
+    nearbyCitySlugs: ["newark-nj", "baltimore-md", "pittsburgh-pa"],
+  },
+  "san-antonio-tx": {
+    neighborhoods: ["Alamo Heights", "Stone Oak", "Downtown", "Medical Center", "Southtown"],
+    localCareFactors: [
+      "Hot weather can make hydration, paw safety, and outdoor activity timing important",
+      "Suburban spread means clinic distance and weekend hours can affect follow-through",
+      "Parasite prevention should match a pet's outdoor exposure and travel habits",
+    ],
+    emergencyAccess:
+      "San Antonio owners should compare northern and central emergency options so urgent care is reachable from both home and work.",
+    ownerQuestions: [
+      "Do you discuss heat-safe exercise plans for dogs?",
+      "What parasite prevention do you recommend for local outdoor pets?",
+      "How fast can urgent vomiting, injury, or heat signs be seen?",
+    ],
+    nearbyCitySlugs: ["austin-tx", "houston-tx", "corpus-christi-tx"],
+  },
+  "san-diego-ca": {
+    neighborhoods: ["North Park", "La Jolla", "Mission Valley", "Chula Vista", "Pacific Beach"],
+    localCareFactors: [
+      "Beach and trail activity can bring paw irritation, ear issues, and foxtail exposure",
+      "Mild weather encourages year-round outdoor time, so parasite and skin checks matter",
+      "Some owners need clinics experienced with active dogs and travel documentation",
+    ],
+    emergencyAccess:
+      "San Diego pet parents should choose a clinic that can advise on beach, trail, and travel-related risks and confirm after-hours hospital access.",
+    ownerQuestions: [
+      "Do you handle foxtail, ear, and paw problems from outdoor activity?",
+      "Can you help with travel certificates or preventive care before trips?",
+      "Which emergency hospital is best from my part of the county?",
+    ],
+    nearbyCitySlugs: ["chula-vista-ca", "anaheim-ca", "los-angeles-ca"],
+  },
+  "dallas-tx": {
+    neighborhoods: ["Uptown", "Oak Lawn", "Lakewood", "Deep Ellum", "North Dallas"],
+    localCareFactors: [
+      "Hot summers and storm seasons make emergency preparation and hydration guidance important",
+      "Large metro distances can affect which clinic is practical during weekday traffic",
+      "Specialty and emergency referrals are useful to confirm before complex care is needed",
+    ],
+    emergencyAccess:
+      "Dallas owners should save one regular clinic and one emergency hospital that is reachable from both home and common work routes.",
+    ownerQuestions: [
+      "Where do you refer for overnight or specialty care?",
+      "Do you provide written estimates for dental work and diagnostics?",
+      "How do you triage heat, storm, or injury-related emergencies?",
+    ],
+    nearbyCitySlugs: ["fort-worth-tx", "arlington-tx", "plano-tx"],
+  },
+  "san-jose-ca": {
+    neighborhoods: ["Willow Glen", "Downtown San Jose", "Almaden Valley", "Berryessa", "Cambrian"],
+    localCareFactors: [
+      "Commuter schedules make extended hours and online records especially useful",
+      "Warm, dry seasons can contribute to allergy, paw, and outdoor exposure concerns",
+      "Owners may need clinics that coordinate well with Bay Area specialty hospitals",
+    ],
+    emergencyAccess:
+      "San Jose pet parents should compare regular clinics by commute access and keep a Bay Area emergency hospital option saved.",
+    ownerQuestions: [
+      "Can appointments and records be managed online for busy schedules?",
+      "Do you coordinate with local specialty hospitals for imaging or surgery?",
+      "How do you handle allergy, paw, or outdoor exposure complaints?",
+    ],
+    nearbyCitySlugs: ["san-francisco-ca", "oakland-ca", "fremont-ca"],
+  },
+  "austin-tx": {
+    neighborhoods: ["South Congress", "East Austin", "Mueller", "Zilker", "North Austin"],
+    localCareFactors: [
+      "Outdoor patios, trails, and water activity can increase exposure to heat and irritants",
+      "Rapid growth means appointment availability may vary sharply by neighborhood",
+      "Owners often need practical guidance for anxious pets in busy clinic settings",
+    ],
+    emergencyAccess:
+      "Austin owners should confirm after-hours pathways and keep a backup hospital saved before weekends, holidays, or travel.",
+    ownerQuestions: [
+      "Do you offer fear-reducing visit options for anxious pets?",
+      "How quickly can you see heat, vomiting, or injury concerns?",
+      "Which emergency hospital do you recommend from my side of Austin?",
+    ],
+    nearbyCitySlugs: ["san-antonio-tx", "houston-tx", "dallas-tx"],
+  },
+  "jacksonville-fl": {
+    neighborhoods: ["Riverside", "San Marco", "Mandarin", "Southside", "the Beaches"],
+    localCareFactors: [
+      "Coastal humidity can make flea, tick, skin, and ear prevention especially important",
+      "Beach and river activity may increase paw, ear, and water-related concerns",
+      "Storm planning should include medication refills and clinic backup options",
+    ],
+    emergencyAccess:
+      "Jacksonville owners should save a clinic near home and an emergency option that remains practical during storms or beach-area traffic.",
+    ownerQuestions: [
+      "What parasite prevention do you recommend for coastal Florida pets?",
+      "How do you handle ear or skin problems after water exposure?",
+      "What is your hurricane-season refill and records process?",
+    ],
+    nearbyCitySlugs: ["orlando-fl", "tampa-fl", "miami-fl"],
+  },
+  "fort-worth-tx": {
+    neighborhoods: ["Downtown", "Cultural District", "Tanglewood", "Arlington Heights", "North Fort Worth"],
+    localCareFactors: [
+      "Suburban and rural-edge pets may have different parasite, livestock, or outdoor exposure risks",
+      "Large dog ownership and active lifestyles can make orthopedic and urgent injury access important",
+      "Metroplex travel makes a separate Dallas-area backup worth considering",
+    ],
+    emergencyAccess:
+      "Fort Worth pet parents should compare west-side and east-side emergency access and keep records ready for cross-metro referrals.",
+    ownerQuestions: [
+      "Do you handle large-breed orthopedic or mobility concerns?",
+      "Which emergency hospital do you recommend in the Metroplex?",
+      "Can you tailor parasite prevention for suburban or rural-edge exposure?",
+    ],
+    nearbyCitySlugs: ["dallas-tx", "arlington-tx", "plano-tx"],
+  },
+  "columbus-oh": {
+    neighborhoods: ["Short North", "German Village", "Clintonville", "Dublin", "Easton"],
+    localCareFactors: [
+      "Seasonal shifts can affect allergies, paw comfort, and exercise routines",
+      "College-town and metro growth create a mix of neighborhood clinics and specialty options",
+      "Owners may need clear urgent-care guidance during winter weather or travel weekends",
+    ],
+    emergencyAccess:
+      "Columbus owners should keep a regular clinic and an after-hours hospital saved, especially before winter travel or holiday weekends.",
+    ownerQuestions: [
+      "How do you handle seasonal allergy or itchy-skin cases?",
+      "Where do you refer for emergency care after hours?",
+      "Do you provide practical winter paw and mobility guidance?",
+    ],
+    nearbyCitySlugs: ["cincinnati-oh", "cleveland-oh", "pittsburgh-pa"],
+  },
+  "charlotte-nc": {
+    neighborhoods: ["Uptown", "South End", "NoDa", "Ballantyne", "Plaza Midwood"],
+    localCareFactors: [
+      "Rapid city growth can make appointment availability and clinic distance important",
+      "Warm seasons can increase allergy, flea, tick, and outdoor activity concerns",
+      "Many owners need clinics that balance preventive care with quick urgent triage",
+    ],
+    emergencyAccess:
+      "Charlotte pet parents should compare clinics by neighborhood access and confirm which emergency hospital handles nights and weekends.",
+    ownerQuestions: [
+      "How quickly can urgent vomiting, limping, or skin issues be seen?",
+      "What flea, tick, and allergy prevention fits Charlotte pets?",
+      "Do you offer clear dental and diagnostic estimates before treatment?",
+    ],
+    nearbyCitySlugs: ["raleigh-nc", "greensboro-nc", "durham-nc"],
+  },
+  "indianapolis-in": {
+    neighborhoods: ["Broad Ripple", "Fountain Square", "Mass Ave", "Meridian-Kessler", "Carmel"],
+    localCareFactors: [
+      "Seasonal weather can affect paw safety, allergies, and travel to urgent care",
+      "Suburban spread means clinic choice should include drive time from home and work",
+      "Owners may value transparent pricing for dental, vaccines, and diagnostics",
+    ],
+    emergencyAccess:
+      "Indianapolis owners should save a central emergency hospital and ask regular clinics about same-day triage for injury or GI signs.",
+    ownerQuestions: [
+      "Do you reserve same-day urgent appointments?",
+      "How do you handle winter paw, limping, or outdoor injury concerns?",
+      "What is included in vaccine, dental, and diagnostic estimates?",
+    ],
+    nearbyCitySlugs: ["louisville-ky", "cincinnati-oh", "chicago-il"],
+  },
+  "san-francisco-ca": {
+    neighborhoods: ["Mission District", "SoMa", "Sunset", "Richmond", "Noe Valley"],
+    localCareFactors: [
+      "Apartment living and dense streets can make low-stress handling and transport planning important",
+      "Foggy coastal weather and park activity can contribute to skin, ear, and outdoor exposure questions",
+      "Owners often need clinics with efficient records, referrals, and appointment communication",
+    ],
+    emergencyAccess:
+      "San Francisco pet parents should choose a nearby regular clinic and confirm cross-bay or city emergency options before urgent care is needed.",
+    ownerQuestions: [
+      "Do you offer low-stress handling for carrier-sensitive cats?",
+      "Can you coordinate quickly with specialty or emergency hospitals?",
+      "How do you advise on park, trail, or coastal exposure risks?",
+    ],
+    nearbyCitySlugs: ["oakland-ca", "san-jose-ca", "fremont-ca"],
+  },
+  "seattle-wa": {
+    neighborhoods: ["Capitol Hill", "Ballard", "Queen Anne", "West Seattle", "Fremont"],
+    localCareFactors: [
+      "Rainy seasons can make skin, paw, and ear monitoring more important",
+      "Outdoor hiking culture can increase injury, tick, and travel-care questions",
+      "Traffic and bridges can affect which emergency hospital is realistic at night",
+    ],
+    emergencyAccess:
+      "Seattle owners should save emergency options by side of town and ask regular clinics how they handle after-hours transfers.",
+    ownerQuestions: [
+      "Do you advise on hiking, tick, or travel-related pet risks?",
+      "How do you handle chronic ear or skin issues linked to wet weather?",
+      "Which emergency hospital is fastest from my neighborhood?",
+    ],
+    nearbyCitySlugs: ["portland-or", "spokane-wa", "boise-id"],
+  },
+  "denver-co": {
+    neighborhoods: ["LoDo", "Capitol Hill", "Cherry Creek", "Highlands", "Washington Park"],
+    localCareFactors: [
+      "Altitude, dry air, and active outdoor lifestyles can influence breathing, hydration, and paw care",
+      "Mountain trips may require travel planning, vaccines, and emergency backup information",
+      "Large active dogs may need clinics comfortable with orthopedic and sports-injury concerns",
+    ],
+    emergencyAccess:
+      "Denver owners should keep an emergency hospital saved before mountain weekends and ask regular clinics about injury and respiratory triage.",
+    ownerQuestions: [
+      "Do you advise on altitude, hiking, and travel readiness for pets?",
+      "How do you handle limping, paw injury, or outdoor exposure cases?",
+      "Where should I go after hours from my side of Denver?",
+    ],
+    nearbyCitySlugs: ["aurora-co", "colorado-springs-co", "omaha-ne"],
+  },
+  "washington-dc": {
+    neighborhoods: ["Capitol Hill", "Dupont Circle", "Georgetown", "Navy Yard", "Petworth"],
+    localCareFactors: [
+      "Apartment pets and busy commuting schedules make location and appointment timing important",
+      "Urban walking can increase exposure to sidewalk irritants and shared dog areas",
+      "Owners may need fast records transfer for travel, boarding, and emergency referrals",
+    ],
+    emergencyAccess:
+      "Washington, DC pet parents should save both a neighborhood clinic and a regional emergency option that is realistic during traffic.",
+    ownerQuestions: [
+      "Can you provide fast vaccine records for boarding or travel?",
+      "How do you handle anxious pets in dense urban clinic settings?",
+      "Where do you refer for overnight or specialty emergency care?",
+    ],
+    nearbyCitySlugs: ["baltimore-md", "philadelphia-pa", "richmond-va"],
+  },
+  "boston-ma": {
+    neighborhoods: ["Back Bay", "South End", "Cambridge", "Somerville", "Jamaica Plain"],
+    localCareFactors: [
+      "Winter weather can affect paw safety, mobility, and urgent-care transport",
+      "Dense neighborhoods make clinic access, parking, and public-transit practicality important",
+      "Many owners need coordinated specialty referrals and clear records sharing",
+    ],
+    emergencyAccess:
+      "Boston owners should compare nearby clinics by transit or parking access and save an emergency hospital before winter storms.",
+    ownerQuestions: [
+      "Is parking, drop-off, or carrier-friendly arrival available?",
+      "How do you handle winter paw, arthritis, or mobility concerns?",
+      "Can you share records quickly with specialty or emergency hospitals?",
+    ],
+    nearbyCitySlugs: ["new-york-ny", "newark-nj", "buffalo-ny"],
+  },
+};
+
+function buildPriorityVetCitySections(cityName: string, profile?: VetCityProfile): ContentSection[] {
+  if (!profile) return [];
+  const neighborhoodList = profile.neighborhoods.join(", ");
+  return [
+    {
+      title: `Local pet-care factors in ${cityName}`,
+      body: [
+        `Pet owners in ${cityName} often compare clinics around areas such as ${neighborhoodList}. The best fit may depend on commute time, appointment availability, parking or drop-off options, and whether a clinic can coordinate emergency or specialty referrals.`,
+        "Use local realities as part of the decision, not just star ratings. A clinic that is practical to reach during a stressful visit is often more useful than a highly rated option across town.",
+      ],
+      bullets: profile.localCareFactors,
+    },
+    {
+      title: `Emergency vet planning in ${cityName}`,
+      body: [
+        profile.emergencyAccess,
+        "Save the clinic name, phone number, map link, and current medication list in one place. During urgent symptoms, this small preparation can make the first call much easier.",
+      ],
+    },
+    {
+      title: `Questions to ask ${cityName} vet clinics`,
+      body: [
+        "Ask practical questions before your first appointment so you know how the clinic handles routine care, urgent visits, and follow-up communication.",
+      ],
+      bullets: profile.ownerQuestions,
+    },
+  ];
+}
+
+function buildPriorityVetCityFaqs(cityName: string, profile?: VetCityProfile): FAQItem[] {
+  if (!profile) return [];
+  const firstNeighborhood = profile.neighborhoods[0] ?? cityName;
+  return [
+    {
+      question: `What should I consider when choosing a vet in ${cityName}?`,
+      answer: `Look beyond distance and reviews. Compare appointment availability, emergency referral process, pricing clarity, and whether the clinic is practical to reach from areas like ${firstNeighborhood}.`,
+    },
+    {
+      question: `How do I prepare for a pet emergency in ${cityName}?`,
+      answer:
+        "Save one regular clinic and one emergency hospital, keep vaccine and medication records accessible, and ask your clinic where they refer after hours before an urgent situation happens.",
+    },
+  ];
+}
+
+function buildPriorityVetCityLinks(profile?: VetCityProfile): InternalLink[] {
+  if (!profile) return [];
+  return profile.nearbyCitySlugs.map((slug) => ({
+    label: `Vets in ${getDisplayCityName(slug)}`,
+    href: `/vets/${slug}`,
+  }));
+}
+
 export function generateVetCityPageContent(citySlug: string): SEOPageData {
   const slug = citySlug.toLowerCase().trim();
   const cityName = getDisplayCityName(slug);
   const cityLower = cityName.toLowerCase();
+  const priorityProfile = priorityVetCityProfiles[slug];
   const keywordVariations = [
     `vet near me ${cityLower}`,
     `affordable vet in ${cityLower}`,
@@ -1234,18 +1619,35 @@ export function generateVetCityPageContent(citySlug: string): SEOPageData {
   };
 
   const override = programmaticContentOverrides.vets[slug];
-  const merged = mergeOverride(base, override);
+  const prioritySections = buildPriorityVetCitySections(cityName, priorityProfile);
+  const priorityFaqs = buildPriorityVetCityFaqs(cityName, priorityProfile);
+  const priorityLinks = buildPriorityVetCityLinks(priorityProfile);
+  const priorityKeywords = priorityProfile
+    ? [
+        `best vets in ${cityLower}`,
+        `emergency animal hospital ${cityLower}`,
+        `veterinary clinic near ${priorityProfile.neighborhoods[0]} ${cityName}`,
+      ]
+    : [];
+  const enrichedBase: SEOPageData = {
+    ...base,
+    sections: mergeUniqueSections(base.sections, prioritySections),
+    faqs: mergeUniqueFaqs(base.faqs, priorityFaqs),
+    keywordVariations: Array.from(new Set([...base.keywordVariations, ...priorityKeywords])),
+    internalLinks: mergeUniqueLinks(base.internalLinks, priorityLinks),
+  };
+  const merged = mergeOverride(enrichedBase, override);
   return {
     ...merged,
     bulletPoints: override?.bulletPoints
-      ? Array.from(new Set([...base.bulletPoints, ...override.bulletPoints])).slice(0, 6)
+      ? Array.from(new Set([...enrichedBase.bulletPoints, ...override.bulletPoints])).slice(0, 6)
       : merged.bulletPoints,
-    sections: mergeUniqueSections(base.sections, override?.sections),
-    faqs: mergeUniqueFaqs(base.faqs, override?.faqs),
+    sections: mergeUniqueSections(enrichedBase.sections, override?.sections),
+    faqs: mergeUniqueFaqs(enrichedBase.faqs, override?.faqs),
     keywordVariations: override?.keywordVariations
-      ? Array.from(new Set([...base.keywordVariations, ...override.keywordVariations])).slice(0, 8)
+      ? Array.from(new Set([...enrichedBase.keywordVariations, ...override.keywordVariations])).slice(0, 8)
       : merged.keywordVariations,
-    internalLinks: mergeUniqueLinks(base.internalLinks, override?.internalLinks),
+    internalLinks: mergeUniqueLinks(enrichedBase.internalLinks, override?.internalLinks),
     mainKeyword:
       (override?.keywordVariations ? override.keywordVariations[0] : undefined) ??
       merged.mainKeyword,
