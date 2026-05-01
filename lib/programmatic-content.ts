@@ -1426,6 +1426,589 @@ const priorityVetCityProfiles: Record<string, VetCityProfile> = {
   },
 };
 
+type RegionalVetProfile = {
+  regionLabel: string;
+  localCareFactors: string[];
+  accessPlanning: string;
+  ownerQuestions: string[];
+};
+
+const regionalVetProfiles: Record<string, RegionalVetProfile> = {
+  AK: {
+    regionLabel: "Alaska",
+    localCareFactors: [
+      "Cold weather and long travel distances can make emergency planning especially important",
+      "Outdoor pets may need guidance for paw protection, wildlife exposure, and winter activity",
+      "Medication refills and records should be easy to access before storms or remote travel",
+    ],
+    accessPlanning:
+      "In Alaska, compare clinics by real travel time, weather accessibility, and how they coordinate urgent referrals when specialty care is not nearby.",
+    ownerQuestions: [
+      "How do you handle after-hours triage during severe weather?",
+      "Can you advise on cold-weather paw, joint, and outdoor exposure risks?",
+      "How quickly can records be sent if referral care is needed?",
+    ],
+  },
+  AZ: {
+    regionLabel: "Arizona",
+    localCareFactors: [
+      "Extreme heat can raise risk for paw burns, dehydration, and heat stress",
+      "Desert allergens and dust may contribute to skin, eye, and breathing complaints",
+      "Outdoor pets need practical parasite, snake, and toxic plant exposure guidance",
+    ],
+    accessPlanning:
+      "In Arizona, choose a clinic that gives clear heat-safety guidance and confirm which emergency hospital is realistic to reach during summer afternoons.",
+    ownerQuestions: [
+      "How do you triage heat stress or dehydration signs?",
+      "Do you advise on desert allergens, paw burns, or outdoor hazards?",
+      "Where should I go after hours from my side of town?",
+    ],
+  },
+  CA: {
+    regionLabel: "California",
+    localCareFactors: [
+      "Traffic, wildfire smoke, and outdoor activity can all affect veterinary access and pet health",
+      "Foxtails, allergies, skin irritation, and ear issues are common questions for active pets",
+      "Owners may need clinics that coordinate with specialty hospitals across a wider metro area",
+    ],
+    accessPlanning:
+      "In California cities, compare the clinic's location against real drive time, parking, smoke-season guidance, and specialty referral process.",
+    ownerQuestions: [
+      "How do you handle foxtail, allergy, or smoke-related concerns?",
+      "Do you coordinate with nearby specialty or emergency hospitals?",
+      "Is parking, drop-off, or digital check-in available for urgent visits?",
+    ],
+  },
+  CO: {
+    regionLabel: "Colorado",
+    localCareFactors: [
+      "Altitude, dry air, and outdoor activity can affect hydration, breathing, and paw comfort",
+      "Mountain travel increases the value of pre-trip vaccine, injury, and emergency planning",
+      "Active dogs may need clinics comfortable with mobility, orthopedic, and sports-injury concerns",
+    ],
+    accessPlanning:
+      "In Colorado, choose a clinic that understands active outdoor pets and keep an emergency option saved before mountain weekends.",
+    ownerQuestions: [
+      "Do you advise on altitude, hiking, and travel readiness?",
+      "How do you handle limping, paw injury, or outdoor exposure?",
+      "Which emergency hospital is most practical after hours?",
+    ],
+  },
+  DC: {
+    regionLabel: "Washington, DC",
+    localCareFactors: [
+      "Apartment living and commuting schedules make appointment timing and transport important",
+      "Urban walking can increase exposure to sidewalk irritants and shared dog spaces",
+      "Fast vaccine records and referral coordination help with boarding, travel, and emergencies",
+    ],
+    accessPlanning:
+      "In DC, compare clinics by neighborhood access, traffic reality, and how quickly records can move during urgent or travel-related care.",
+    ownerQuestions: [
+      "Can you provide fast vaccine records for boarding or travel?",
+      "How do you handle anxious pets in dense urban clinic settings?",
+      "Where do you refer for overnight or specialty care?",
+    ],
+  },
+  FL: {
+    regionLabel: "Florida",
+    localCareFactors: [
+      "Heat, humidity, fleas, ticks, mosquitoes, and storm season all affect preventive care",
+      "Coastal and water activity can increase ear, skin, and paw concerns",
+      "Hurricane planning should include medication refills, vaccine records, and backup clinic options",
+    ],
+    accessPlanning:
+      "In Florida, choose a clinic that gives clear parasite prevention and storm-preparedness guidance, then save an emergency hospital that remains reachable in bad weather.",
+    ownerQuestions: [
+      "What parasite prevention fits local climate and lifestyle?",
+      "How should I prepare medication refills before storm season?",
+      "Do you handle ear or skin issues after water exposure?",
+    ],
+  },
+  GA: {
+    regionLabel: "Georgia",
+    localCareFactors: [
+      "Warm seasons can increase flea, tick, allergy, and skin concerns",
+      "Traffic and suburban sprawl can affect whether a clinic is realistic for urgent visits",
+      "Outdoor dogs may need guidance for heat, hydration, and parasite exposure",
+    ],
+    accessPlanning:
+      "In Georgia cities, compare clinics by same-day access, preventive care planning, and after-hours emergency referral process.",
+    ownerQuestions: [
+      "How do you manage recurring allergy or itchy-skin cases?",
+      "What flea and tick plan fits local exposure?",
+      "Where do you refer pets for emergency care?",
+    ],
+  },
+  HI: {
+    regionLabel: "Hawaii",
+    localCareFactors: [
+      "Island logistics can affect appointment availability, referral care, and travel documentation",
+      "Warm humid conditions can increase skin, ear, and parasite concerns",
+      "Pet travel rules and records are especially important for many households",
+    ],
+    accessPlanning:
+      "In Hawaii, choose a clinic that can help with preventive care, island referral logistics, and travel-document planning when needed.",
+    ownerQuestions: [
+      "Can you help with travel paperwork and vaccine records?",
+      "How do you manage skin, ear, and parasite concerns in humid weather?",
+      "Where do you refer for specialty or emergency care?",
+    ],
+  },
+  ID: {
+    regionLabel: "Idaho",
+    localCareFactors: [
+      "Outdoor recreation can increase paw, injury, tick, and wildlife exposure concerns",
+      "Seasonal weather shifts make travel and emergency planning important",
+      "Some owners need clinics comfortable with suburban, rural-edge, and active pets",
+    ],
+    accessPlanning:
+      "In Idaho, compare clinics by urgent-care access, outdoor-pet experience, and referral pathways for specialty care.",
+    ownerQuestions: [
+      "Do you advise on hiking, ticks, and outdoor injury prevention?",
+      "How do you handle after-hours urgent care?",
+      "Can you support pets with rural-edge or wildlife exposure risks?",
+    ],
+  },
+  IL: {
+    regionLabel: "Illinois",
+    localCareFactors: [
+      "Cold winters can affect paw comfort, arthritis, and transport to urgent care",
+      "Seasonal allergies and urban walking may influence skin, ear, and respiratory concerns",
+      "Owners should confirm which emergency hospital handles nights, weekends, and holidays",
+    ],
+    accessPlanning:
+      "In Illinois cities, save a winter-safe route to urgent care and ask regular clinics how they handle same-day respiratory, injury, or GI cases.",
+    ownerQuestions: [
+      "How do you advise on winter paw and mobility issues?",
+      "Do you reserve same-day urgent appointments?",
+      "Which emergency hospital do you recommend after hours?",
+    ],
+  },
+  IN: {
+    regionLabel: "Indiana",
+    localCareFactors: [
+      "Seasonal weather can affect allergies, paw safety, and travel to care",
+      "Suburban spread makes drive time from home and work worth comparing",
+      "Transparent pricing for vaccines, dental care, and diagnostics helps owners plan",
+    ],
+    accessPlanning:
+      "In Indiana, compare clinics by weekday access, urgent triage process, and clarity around common preventive-care costs.",
+    ownerQuestions: [
+      "Do you offer same-day sick visits?",
+      "How do you handle seasonal allergy or paw concerns?",
+      "What is included in vaccine, dental, and diagnostic estimates?",
+    ],
+  },
+  KS: {
+    regionLabel: "Kansas",
+    localCareFactors: [
+      "Storm season and wide driving distances can affect urgent-care planning",
+      "Outdoor pets may need parasite, allergy, and wildlife exposure guidance",
+      "Owners should confirm where clinics refer after hours or for specialty care",
+    ],
+    accessPlanning:
+      "In Kansas, save emergency contacts before storm season and compare clinics by real drive time and urgent-care process.",
+    ownerQuestions: [
+      "Where do you refer after-hours emergencies?",
+      "How do you plan parasite prevention for local outdoor pets?",
+      "Can records and medications be prepared before severe weather?",
+    ],
+  },
+  KY: {
+    regionLabel: "Kentucky",
+    localCareFactors: [
+      "Seasonal allergies, humidity, and outdoor activity can affect skin and ear health",
+      "Suburban and rural-edge pets may need parasite and wildlife exposure planning",
+      "Owners should compare emergency hospital access before nights and weekends",
+    ],
+    accessPlanning:
+      "In Kentucky, choose a clinic that can support routine prevention and clearly explain after-hours emergency options.",
+    ownerQuestions: [
+      "What flea, tick, and allergy prevention fits local pets?",
+      "Do you handle same-day vomiting, limping, or skin concerns?",
+      "Which emergency hospital should I save?",
+    ],
+  },
+  LA: {
+    regionLabel: "Louisiana",
+    localCareFactors: [
+      "Heat, humidity, mosquitoes, and storm season make preventive care planning important",
+      "Skin, ear, parasite, and hydration concerns may be more common in warm wet months",
+      "Owners should keep records and refill plans ready before severe weather",
+    ],
+    accessPlanning:
+      "In Louisiana, compare clinics by parasite-prevention guidance, storm preparedness, and access to after-hours emergency care.",
+    ownerQuestions: [
+      "How should I plan refills and records before storms?",
+      "What heartworm, flea, and tick prevention do you recommend?",
+      "Where should I go for urgent care after hours?",
+    ],
+  },
+  MA: {
+    regionLabel: "Massachusetts",
+    localCareFactors: [
+      "Winter weather can affect paw safety, mobility, and transport planning",
+      "Dense neighborhoods make parking, drop-off, and appointment timing important",
+      "Specialty referral coordination is useful for complex medical or surgical cases",
+    ],
+    accessPlanning:
+      "In Massachusetts cities, compare clinics by access, record sharing, and emergency hospital referral process before winter storms or urgent needs.",
+    ownerQuestions: [
+      "Is parking, drop-off, or carrier-friendly arrival available?",
+      "How do you handle winter paw or arthritis concerns?",
+      "Can records move quickly to specialty hospitals?",
+    ],
+  },
+  MD: {
+    regionLabel: "Maryland",
+    localCareFactors: [
+      "Urban, suburban, and coastal lifestyles can create different exposure risks",
+      "Warm seasons may increase flea, tick, allergy, and skin concerns",
+      "Owners should confirm emergency access across traffic-heavy corridors",
+    ],
+    accessPlanning:
+      "In Maryland, choose a clinic with practical commute access and a clear emergency referral process for nights and weekends.",
+    ownerQuestions: [
+      "What parasite prevention fits local outdoor exposure?",
+      "How do you handle allergy, skin, or ear flares?",
+      "Which emergency hospital is best from my area?",
+    ],
+  },
+  MI: {
+    regionLabel: "Michigan",
+    localCareFactors: [
+      "Cold winters can affect paw care, mobility, and urgent transport",
+      "Lake and outdoor activity can increase ear, skin, and injury concerns",
+      "Owners should compare routine clinic access with after-hours emergency coverage",
+    ],
+    accessPlanning:
+      "In Michigan, save a winter-ready emergency route and ask regular clinics how they handle urgent pain, vomiting, or respiratory signs.",
+    ownerQuestions: [
+      "How do you advise on winter paw and joint comfort?",
+      "Do you handle ear or skin problems after water exposure?",
+      "Where do you refer for after-hours emergencies?",
+    ],
+  },
+  MN: {
+    regionLabel: "Minnesota",
+    localCareFactors: [
+      "Severe winter weather can affect paws, arthritis, and urgent-care transport",
+      "Outdoor seasons may bring tick, allergy, and lake-related exposure concerns",
+      "Owners should confirm emergency access before storms or holiday weekends",
+    ],
+    accessPlanning:
+      "In Minnesota, compare clinics by winter accessibility and after-hours referral process, especially for senior or mobility-limited pets.",
+    ownerQuestions: [
+      "How do you handle winter paw, arthritis, or mobility issues?",
+      "What tick prevention do you recommend for outdoor pets?",
+      "Which emergency hospital should I save?",
+    ],
+  },
+  MO: {
+    regionLabel: "Missouri",
+    localCareFactors: [
+      "Seasonal allergies, humidity, and storm patterns can affect pet comfort and access",
+      "Outdoor pets may need flea, tick, and wildlife exposure planning",
+      "Emergency care plans should account for city traffic and suburban distance",
+    ],
+    accessPlanning:
+      "In Missouri, choose a clinic that explains preventive care clearly and has a reliable after-hours referral path.",
+    ownerQuestions: [
+      "How do you manage seasonal allergy and itchy-skin cases?",
+      "What parasite plan fits my pet's outdoor routine?",
+      "Where do you send pets for emergency care?",
+    ],
+  },
+  NC: {
+    regionLabel: "North Carolina",
+    localCareFactors: [
+      "Warm seasons can increase flea, tick, allergy, and heat-safety concerns",
+      "Fast-growing metros may have appointment delays, so same-day access matters",
+      "Outdoor and travel lifestyles make preventive care and emergency planning useful",
+    ],
+    accessPlanning:
+      "In North Carolina, compare clinics by urgent availability, parasite guidance, and after-hours referral access.",
+    ownerQuestions: [
+      "How soon can urgent vomiting, limping, or skin issues be seen?",
+      "What flea, tick, and allergy plan fits this area?",
+      "Do you provide clear dental and diagnostic estimates?",
+    ],
+  },
+  NE: {
+    regionLabel: "Nebraska",
+    localCareFactors: [
+      "Weather swings and storms can affect urgent-care travel plans",
+      "Outdoor pets may need parasite, injury, and wildlife exposure guidance",
+      "Owners should confirm after-hours options before holiday weekends or severe weather",
+    ],
+    accessPlanning:
+      "In Nebraska, compare clinics by real travel time, urgent triage, and how they coordinate emergency referrals.",
+    ownerQuestions: [
+      "Where should I go for after-hours emergency care?",
+      "How do you plan parasite prevention for outdoor pets?",
+      "Can records be sent quickly if referral care is needed?",
+    ],
+  },
+  NJ: {
+    regionLabel: "New Jersey",
+    localCareFactors: [
+      "Dense commuter areas make traffic, parking, and appointment timing important",
+      "Seasonal allergies and urban/suburban walking can affect skin and paw comfort",
+      "Owners may need clinics that coordinate with nearby specialty hospitals quickly",
+    ],
+    accessPlanning:
+      "In New Jersey, compare clinics by access from home and work, not just distance, and confirm the after-hours emergency referral path.",
+    ownerQuestions: [
+      "Is parking, drop-off, or online check-in available?",
+      "How do you handle allergy, paw, or skin concerns?",
+      "Which emergency hospital do you recommend nearby?",
+    ],
+  },
+  NM: {
+    regionLabel: "New Mexico",
+    localCareFactors: [
+      "Dry air, heat, and desert terrain can affect paws, hydration, and respiratory comfort",
+      "Outdoor pets may need snake, cactus, and wildlife exposure planning",
+      "Longer travel distances can make emergency planning more important",
+    ],
+    accessPlanning:
+      "In New Mexico, choose a clinic that can advise on desert exposure and confirm the nearest realistic emergency option.",
+    ownerQuestions: [
+      "How do you handle heat, dehydration, or paw injury concerns?",
+      "Do you advise on desert wildlife and plant exposure?",
+      "Where should I go for specialty or emergency care?",
+    ],
+  },
+  NV: {
+    regionLabel: "Nevada",
+    localCareFactors: [
+      "Desert heat can raise risk for paw burns, dehydration, and heat stress",
+      "Dry air and dust may contribute to eye, skin, and breathing complaints",
+      "Owners should compare emergency access by real drive time in hot weather",
+    ],
+    accessPlanning:
+      "In Nevada, choose a clinic with clear heat-safety advice and keep an after-hours emergency hospital saved before summer peaks.",
+    ownerQuestions: [
+      "How do you triage heat stress or dehydration signs?",
+      "Do you advise on paw safety during hot pavement months?",
+      "Which emergency hospital is most practical after hours?",
+    ],
+  },
+  NY: {
+    regionLabel: "New York",
+    localCareFactors: [
+      "Dense housing, traffic, and winter weather can affect clinic access and pet stress",
+      "Urban and suburban pets may face different allergy, paw, and transport challenges",
+      "Owners should confirm emergency referral pathways before urgent symptoms appear",
+    ],
+    accessPlanning:
+      "In New York, compare clinics by real travel time, low-stress handling, and how quickly they coordinate emergency or specialty care.",
+    ownerQuestions: [
+      "Do you support anxious pets or carrier-sensitive cats?",
+      "Can records be shared quickly with emergency hospitals?",
+      "How do you handle winter paw and mobility concerns?",
+    ],
+  },
+  OH: {
+    regionLabel: "Ohio",
+    localCareFactors: [
+      "Seasonal allergies, winter weather, and summer activity can all affect pet health",
+      "Owners should compare routine clinic access with after-hours emergency coverage",
+      "Transparent estimates for dental work, diagnostics, and vaccines help planning",
+    ],
+    accessPlanning:
+      "In Ohio, choose a clinic that can support year-round preventive care and clearly explain urgent referral options.",
+    ownerQuestions: [
+      "How do you handle seasonal allergy or itchy-skin cases?",
+      "What is included in dental and diagnostic estimates?",
+      "Where do you refer after hours?",
+    ],
+  },
+  OK: {
+    regionLabel: "Oklahoma",
+    localCareFactors: [
+      "Storm season can make emergency planning and medication refills important",
+      "Heat and outdoor exposure may increase parasite, paw, and hydration concerns",
+      "Owners should confirm urgent-care access before severe weather",
+    ],
+    accessPlanning:
+      "In Oklahoma, save emergency contacts before storm season and compare clinics by urgent triage and refill process.",
+    ownerQuestions: [
+      "How should I prepare pet records and refills before storms?",
+      "What parasite prevention fits local outdoor exposure?",
+      "Where do you refer emergency cases after hours?",
+    ],
+  },
+  OR: {
+    regionLabel: "Oregon",
+    localCareFactors: [
+      "Wet seasons can affect paws, skin, and ears",
+      "Outdoor hiking and park activity may increase tick, injury, and exposure concerns",
+      "Owners should compare emergency access across bridges, traffic, and weather conditions",
+    ],
+    accessPlanning:
+      "In Oregon, choose a clinic that understands outdoor pets and confirms a practical after-hours emergency route.",
+    ownerQuestions: [
+      "Do you advise on hiking, ticks, and outdoor injury risks?",
+      "How do you handle wet-weather skin, paw, or ear concerns?",
+      "Which emergency hospital should I save from my neighborhood?",
+    ],
+  },
+  PA: {
+    regionLabel: "Pennsylvania",
+    localCareFactors: [
+      "Winter weather, rowhome living, and urban/suburban travel can affect clinic access",
+      "Seasonal allergies and sidewalk exposure may influence skin and paw concerns",
+      "Owners should confirm emergency and specialty referrals before urgent care is needed",
+    ],
+    accessPlanning:
+      "In Pennsylvania, compare clinics by neighborhood access, winter travel practicality, and after-hours referral process.",
+    ownerQuestions: [
+      "How do you handle winter paw or mobility concerns?",
+      "Do you support low-stress handling for anxious pets?",
+      "Where do you refer for emergency or specialty care?",
+    ],
+  },
+  TN: {
+    regionLabel: "Tennessee",
+    localCareFactors: [
+      "Warm seasons can increase flea, tick, allergy, and heat concerns",
+      "Outdoor activity may raise injury, paw, and parasite exposure questions",
+      "Fast-growing metros can make same-day access and clinic distance important",
+    ],
+    accessPlanning:
+      "In Tennessee, compare clinics by urgent availability, preventive care planning, and after-hours emergency referral process.",
+    ownerQuestions: [
+      "What flea, tick, and allergy plan fits local pets?",
+      "How quickly can urgent vomiting or limping be seen?",
+      "Which emergency hospital do you recommend?",
+    ],
+  },
+  TX: {
+    regionLabel: "Texas",
+    localCareFactors: [
+      "Heat, storms, and long metro drive times can affect urgent veterinary access",
+      "Parasite prevention, hydration, and paw safety are important for many outdoor pets",
+      "Owners should keep both a nearby clinic and a realistic emergency hospital saved",
+    ],
+    accessPlanning:
+      "In Texas, choose a clinic that provides heat-safety and parasite guidance, then confirm where to go for nights, weekends, and storm-related urgent needs.",
+    ownerQuestions: [
+      "How do you triage heat stress, dehydration, or storm-related issues?",
+      "What parasite prevention fits local exposure?",
+      "Where should I go for after-hours emergency care?",
+    ],
+  },
+  VA: {
+    regionLabel: "Virginia",
+    localCareFactors: [
+      "Coastal, suburban, and urban areas can create different parasite and access needs",
+      "Warm seasons may increase allergies, ticks, and skin concerns",
+      "Traffic and bridge routes can affect emergency hospital choice",
+    ],
+    accessPlanning:
+      "In Virginia, compare clinics by local travel reality, preventive care guidance, and after-hours referral options.",
+    ownerQuestions: [
+      "What tick and allergy prevention fits local pets?",
+      "How do you handle urgent vomiting, limping, or skin flares?",
+      "Which emergency hospital is most practical from my area?",
+    ],
+  },
+  WA: {
+    regionLabel: "Washington",
+    localCareFactors: [
+      "Rainy seasons can affect paws, ears, and skin",
+      "Outdoor hiking and travel can increase injury, tick, and exposure questions",
+      "Traffic, bridges, and weather can affect which emergency option is realistic",
+    ],
+    accessPlanning:
+      "In Washington, choose a clinic that understands outdoor pets and save emergency options by side of town before urgent symptoms appear.",
+    ownerQuestions: [
+      "Do you advise on hiking, ticks, and travel-related risks?",
+      "How do you handle wet-weather skin, paw, or ear issues?",
+      "Which emergency hospital is fastest from my area?",
+    ],
+  },
+  WI: {
+    regionLabel: "Wisconsin",
+    localCareFactors: [
+      "Cold winters can affect paws, arthritis, and urgent-care transport",
+      "Lake and outdoor activity may raise ear, skin, tick, and injury concerns",
+      "Owners should confirm emergency access before storms and holiday weekends",
+    ],
+    accessPlanning:
+      "In Wisconsin, compare clinics by winter accessibility, outdoor-pet guidance, and after-hours referral process.",
+    ownerQuestions: [
+      "How do you handle winter paw, arthritis, or mobility concerns?",
+      "What tick prevention do you recommend for outdoor pets?",
+      "Where do you refer after hours?",
+    ],
+  },
+};
+
+function getStateFromCitySlug(slug: string): string {
+  return slug.split("-").at(-1)?.toUpperCase() ?? "";
+}
+
+function buildRegionalVetCitySections(cityName: string, profile?: RegionalVetProfile): ContentSection[] {
+  if (!profile) return [];
+  return [
+    {
+      title: `Regional pet-care considerations for ${cityName}`,
+      body: [
+        `Pet-care needs in ${cityName} are shaped by broader ${profile.regionLabel} conditions as well as neighborhood-level access. A useful clinic choice should fit your pet's daily risks, your travel reality, and your backup plan for urgent symptoms.`,
+        "This is why a local vet page should help with practical decisions, not just list a city name and a generic clinic checklist.",
+      ],
+      bullets: profile.localCareFactors,
+    },
+    {
+      title: `Access and emergency planning near ${cityName}`,
+      body: [
+        profile.accessPlanning,
+        "Before you need urgent care, save your preferred clinic, one emergency hospital, your pet's medication list, and a recent photo of vaccine records.",
+      ],
+    },
+    {
+      title: `Local questions for ${cityName} pet owners`,
+      body: [
+        "Use these questions when calling clinics so you can compare real service fit instead of relying only on star ratings.",
+      ],
+      bullets: profile.ownerQuestions,
+    },
+  ];
+}
+
+function buildRegionalVetCityFaqs(cityName: string, profile?: RegionalVetProfile): FAQItem[] {
+  if (!profile) return [];
+  return [
+    {
+      question: `What makes vet care in ${cityName} different from other cities?`,
+      answer: `Local access, climate, travel time, and common regional risks in ${profile.regionLabel} can all affect which clinic is the best fit. Compare emergency options, preventive care guidance, and communication style before choosing.`,
+    },
+    {
+      question: `How can I avoid choosing a thin or generic local vet recommendation in ${cityName}?`,
+      answer:
+        "Look for practical details such as emergency referral process, local preventive-care risks, appointment availability, and clear cost ranges. A useful vet guide should help you take action, not just repeat city keywords.",
+    },
+  ];
+}
+
+function buildNearbyVetCityLinks(currentSlug: string, preferredSlugs: string[] = []): InternalLink[] {
+  const currentState = getStateFromCitySlug(currentSlug);
+  const sameStateSlugs = sampleCitySlugs.filter(
+    (slug) => slug !== currentSlug && getStateFromCitySlug(slug) === currentState
+  );
+  const fallbackSlugs = ["houston-tx", "dallas-tx", "austin-tx", "miami-fl", "new-york-ny"].filter(
+    (slug) => slug !== currentSlug
+  );
+  const slugs = Array.from(new Set([...preferredSlugs, ...sameStateSlugs, ...fallbackSlugs])).slice(0, 4);
+
+  return slugs.map((slug) => ({
+    label: `Vets in ${getDisplayCityName(slug)}`,
+    href: `/vets/${slug}`,
+  }));
+}
+
 function buildPriorityVetCitySections(cityName: string, profile?: VetCityProfile): ContentSection[] {
   if (!profile) return [];
   const neighborhoodList = profile.neighborhoods.join(", ");
@@ -1484,6 +2067,7 @@ export function generateVetCityPageContent(citySlug: string): SEOPageData {
   const cityName = getDisplayCityName(slug);
   const cityLower = cityName.toLowerCase();
   const priorityProfile = priorityVetCityProfiles[slug];
+  const regionalProfile = regionalVetProfiles[getStateFromCitySlug(slug)];
   const keywordVariations = [
     `vet near me ${cityLower}`,
     `affordable vet in ${cityLower}`,
@@ -1621,7 +2205,10 @@ export function generateVetCityPageContent(citySlug: string): SEOPageData {
   const override = programmaticContentOverrides.vets[slug];
   const prioritySections = buildPriorityVetCitySections(cityName, priorityProfile);
   const priorityFaqs = buildPriorityVetCityFaqs(cityName, priorityProfile);
+  const regionalSections = priorityProfile ? [] : buildRegionalVetCitySections(cityName, regionalProfile);
+  const regionalFaqs = priorityProfile ? [] : buildRegionalVetCityFaqs(cityName, regionalProfile);
   const priorityLinks = buildPriorityVetCityLinks(priorityProfile);
+  const nearbyLinks = buildNearbyVetCityLinks(slug, priorityProfile?.nearbyCitySlugs);
   const priorityKeywords = priorityProfile
     ? [
         `best vets in ${cityLower}`,
@@ -1629,12 +2216,27 @@ export function generateVetCityPageContent(citySlug: string): SEOPageData {
         `veterinary clinic near ${priorityProfile.neighborhoods[0]} ${cityName}`,
       ]
     : [];
+  const regionalKeywords = !priorityProfile && regionalProfile
+    ? [
+        `same day vet ${cityLower}`,
+        `${regionalProfile.regionLabel.toLowerCase()} pet clinic ${cityLower}`,
+        `emergency animal hospital ${cityLower}`,
+      ]
+    : [];
   const enrichedBase: SEOPageData = {
     ...base,
-    sections: mergeUniqueSections(base.sections, prioritySections),
-    faqs: mergeUniqueFaqs(base.faqs, priorityFaqs),
-    keywordVariations: Array.from(new Set([...base.keywordVariations, ...priorityKeywords])),
-    internalLinks: mergeUniqueLinks(base.internalLinks, priorityLinks),
+    sections: mergeUniqueSections(
+      mergeUniqueSections(base.sections, prioritySections),
+      regionalSections
+    ),
+    faqs: mergeUniqueFaqs(mergeUniqueFaqs(base.faqs, priorityFaqs), regionalFaqs),
+    keywordVariations: Array.from(
+      new Set([...base.keywordVariations, ...priorityKeywords, ...regionalKeywords])
+    ),
+    internalLinks: mergeUniqueLinks(
+      mergeUniqueLinks(base.internalLinks, priorityLinks),
+      nearbyLinks
+    ),
   };
   const merged = mergeOverride(enrichedBase, override);
   return {
