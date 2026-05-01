@@ -1226,6 +1226,7 @@ export function generateVetCityPageContent(citySlug: string): SEOPageData {
       { label: "Dog health guides", href: "/dogs" },
       { label: "Cat health guides", href: "/cats" },
       { label: "Pet health conditions", href: "/health-conditions" },
+      { label: "Local vet directory", href: "/vets" },
       { label: `Vets in ${cityName}`, href: `/vets/${slug}` },
     ],
     schemaType: "local-business",

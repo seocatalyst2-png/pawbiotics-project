@@ -61,7 +61,7 @@ export default async function VetCityPage({ params }: PageProps) {
         {...data}
         breadcrumbs={[
           { label: "Home", href: "https://pawbiotics.us/" },
-          { label: "Local Vets", href: "https://pawbiotics.us/" },
+          { label: "Local Vets", href: "https://pawbiotics.us/vets" },
           { label: cityName, href: `https://pawbiotics.us/vets/${data.slug}` },
         ]}
         eyebrow="Local Vet Guide"

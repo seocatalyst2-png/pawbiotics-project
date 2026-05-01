@@ -53,7 +53,7 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
-                <Link href="/vets/houston-tx" className="hover:text-white">
+                <Link href="/vets" className="hover:text-white">
                   Find a Vet
                 </Link>
               </li>

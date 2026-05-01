@@ -5,7 +5,7 @@ const navLinks = [
   { href: "/blog", label: "Blog" },
   { href: "/health-conditions", label: "Health Conditions" },
   { href: "/tools", label: "Tools" },
-  { href: "/vets/houston-tx", label: "Find a Vet" },
+  { href: "/vets", label: "Find a Vet" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
