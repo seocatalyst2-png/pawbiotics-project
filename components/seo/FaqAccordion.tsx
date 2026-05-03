@@ -1,7 +1,44 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
+import type { ReactNode } from "react";
 import type { FAQItem } from "@/lib/seo";
+
+function renderAnswerWithLinks(answer: string) {
+  const markdownLinkRegex = /\[([^\]]+)\]\((\/[^)]+)\)/g;
+  const nodes: ReactNode[] = [];
+  let cursor = 0;
+  let match: RegExpExecArray | null = markdownLinkRegex.exec(answer);
+
+  while (match) {
+    const [fullMatch, label, href] = match;
+    const start = match.index;
+
+    if (start > cursor) {
+      nodes.push(answer.slice(cursor, start));
+    }
+
+    nodes.push(
+      <Link
+        key={`${href}-${start}`}
+        href={href}
+        className="font-medium text-brand-700 underline decoration-brand-300 underline-offset-2 transition-colors hover:text-brand-800"
+      >
+        {label}
+      </Link>
+    );
+
+    cursor = start + fullMatch.length;
+    match = markdownLinkRegex.exec(answer);
+  }
+
+  if (cursor < answer.length) {
+    nodes.push(answer.slice(cursor));
+  }
+
+  return nodes.length ? nodes : answer;
+}
 
 export default function FaqAccordion({ items }: { items: FAQItem[] }) {
   if (!items.length) return null;
@@ -46,7 +83,9 @@ export default function FaqAccordion({ items }: { items: FAQItem[] }) {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <p className="px-4 pb-4 text-sm leading-6 text-gray-600">{item.answer}</p>
+                  <p className="px-4 pb-4 text-sm leading-6 text-gray-600">
+                    {renderAnswerWithLinks(item.answer)}
+                  </p>
                 </div>
               </div>
             </article>
