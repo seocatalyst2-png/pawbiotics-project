@@ -428,10 +428,6 @@ export default async function BlogPostPage({ params }: PageProps) {
                 key={section.heading}
                 className={`rounded-2xl border p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${cardTones[index % cardTones.length]}`}
               >
-                <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-gray-700">
-                  <span aria-hidden>{sectionIcons[index % sectionIcons.length]}</span>
-                  Section {index + 1}
-                </div>
                 <h2 className="text-2xl font-semibold text-gray-900">{section.heading}</h2>
                 <div className="mt-3 space-y-3">
                   {section.paragraphs.map((paragraph) => (
@@ -465,8 +461,30 @@ export default async function BlogPostPage({ params }: PageProps) {
                   </div>
                 )}
                 {!!section.table && (
-                  <div className="mt-5 overflow-x-auto rounded-xl border border-white/80 bg-white/85 shadow-sm">
-                    <table className="min-w-full divide-y divide-gray-100 text-left text-sm">
+                  <div className="mt-5">
+                    <div className="grid gap-3 md:hidden">
+                      {section.table.rows.map((row) => (
+                        <div
+                          key={row.join("|")}
+                          className="rounded-xl border border-white/80 bg-white/90 p-4 shadow-sm"
+                        >
+                          {row.map((cell, cellIndex) => (
+                            <div
+                              key={`${row.join("|")}-${cellIndex}`}
+                              className={cellIndex === 0 ? "" : "mt-3 border-t border-gray-100 pt-3"}
+                            >
+                              <p className="text-xs font-semibold uppercase text-gray-500">
+                                {section.table?.headers[cellIndex]}
+                              </p>
+                              <p className="mt-1 text-sm leading-6 text-gray-700">
+                                {renderParagraphWithLinks(cell)}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                    <table className="hidden min-w-full divide-y divide-gray-100 rounded-xl border border-white/80 bg-white/85 text-left text-sm shadow-sm md:table">
                       <thead className="bg-gray-50/80 text-xs font-semibold uppercase text-gray-600">
                         <tr>
                           {section.table.headers.map((header) => (
