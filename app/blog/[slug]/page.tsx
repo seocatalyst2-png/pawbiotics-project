@@ -419,7 +419,9 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className="rounded-2xl border border-brand-100 bg-brand-50/50 p-4 text-sm text-brand-900">
             Educational guide only. This article does not replace a veterinary exam, diagnosis, or emergency care.
           </div>
-          {post.sections.map((section, index) => {
+          {post.sections
+            .filter((section) => section.heading.toLowerCase() !== "frequently asked questions")
+            .map((section, index) => {
             const sectionImages = getSectionImages(post, section.heading);
             return (
               <article
@@ -432,7 +434,6 @@ export default async function BlogPostPage({ params }: PageProps) {
                 </div>
                 <h2 className="text-2xl font-semibold text-gray-900">{section.heading}</h2>
                 <div className="mt-3 space-y-3">
-                  <h3 className="text-base font-semibold text-gray-800">What this means</h3>
                   {section.paragraphs.map((paragraph) => (
                     <p key={paragraph} className="text-sm leading-7 text-gray-600">
                       {renderParagraphWithLinks(paragraph)}
