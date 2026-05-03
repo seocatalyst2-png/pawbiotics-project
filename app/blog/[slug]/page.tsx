@@ -463,6 +463,32 @@ export default async function BlogPostPage({ params }: PageProps) {
                     ))}
                   </div>
                 )}
+                {!!section.table && (
+                  <div className="mt-5 overflow-x-auto rounded-xl border border-white/80 bg-white/85 shadow-sm">
+                    <table className="min-w-full divide-y divide-gray-100 text-left text-sm">
+                      <thead className="bg-gray-50/80 text-xs font-semibold uppercase text-gray-600">
+                        <tr>
+                          {section.table.headers.map((header) => (
+                            <th key={header} scope="col" className="px-4 py-3">
+                              {header}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-gray-100 text-gray-700">
+                        {section.table.rows.map((row) => (
+                          <tr key={row.join("|")}>
+                            {row.map((cell, cellIndex) => (
+                              <td key={`${row.join("|")}-${cellIndex}`} className="px-4 py-3 align-top leading-6">
+                                {renderParagraphWithLinks(cell)}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
                 {!!section.bullets?.length && (
                   <div className="mt-4">
                     <h3 className="text-base font-semibold text-gray-800">Checklist</h3>
