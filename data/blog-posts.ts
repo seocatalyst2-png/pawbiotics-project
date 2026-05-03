@@ -8320,38 +8320,133 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "bleeding-poop-dog",
-    title: "Blood in Dog Stool: Causes, Urgency, and What to Do",
-    metaTitle: "Blood in Dog Stool: When Bleeding Poop Is Urgent",
-    metaDescription:
-      "Learn what blood in dog stool can mean, red flag symptoms, what details to track, and when bleeding poop needs urgent veterinary care.",
+    title: "Blood in Dog Stool: Causes, Symptoms, and When to Call a Vet",
+    metaTitle: "Blood in Dog Stool: Causes, Symptoms, and When to Call a Vet",
+    metaDescription: "Blood in your dog\u0027s stool can be alarming. Learn the common causes, when it\u0027s an emergency, and what to do next — explained clearly by symptom type.",
     category: "Dogs",
     publishedDate: "2026-05-01",
     readingTime: "10 min read",
-    intro:
-      "Blood in a dog's poop is scary and should never be ignored. This guide explains common patterns, urgent warning signs, and what information helps your vet decide the next step.",
+    intro: "Finding blood in your dog\u0027s stool is alarming — but it doesn\u0027t always mean an emergency. The cause, urgency, and treatment depend on where the bleeding is occurring, what the stool looks like, and your dog\u0027s other symptoms. This guide breaks down everything you need to know: types of bloody stool, likely causes, red flags to watch for, and when to act immediately.",
     featuredImage: {
       src: "/images/blog/blood-in-dog-stool.png",
       alt: "Dog owner discussing blood in dog stool with a veterinarian in a non-graphic clinic scene",
       caption: "Blood in a dog's stool should be handled with careful monitoring and prompt veterinary guidance.",
     },
     sections: [
-      { heading: "Quick answer: bleeding poop in dogs", paragraphs: ["Blood in dog poop can come from irritation, parasites, dietary upset, colitis, infection, toxin exposure, foreign material, or more serious disease. Contact a veterinarian promptly, especially if blood is repeated, heavy, black, or paired with vomiting, weakness, pain, or dehydration."] },
-      { heading: "Safety note", paragraphs: ["This guide is educational only. Blood in stool can become urgent, and puppies, seniors, small dogs, and dogs with other symptoms should be evaluated quickly."] },
-      { heading: "What the blood may look like", paragraphs: ["Bright red blood often suggests bleeding closer to the lower digestive tract, while black or tarry stool can suggest digested blood from higher in the gut. Both patterns deserve veterinary guidance."], bullets: ["Bright red streaks", "Mucus with blood", "Bloody diarrhea", "Black tarry stool", "Blood with straining"] },
-      { heading: "Common causes", paragraphs: ["The cause cannot be confirmed by appearance alone. Your vet may ask about diet changes, trash access, parasites, medications, toxins, and vaccination history."], bullets: ["Sudden diet change or rich food", "Parasites or infection", "Colitis or gut inflammation", "Foreign material or bone fragments", "Medication reactions", "Toxin exposure or serious GI disease"] },
-      { heading: "What to do right now", paragraphs: ["Keep your dog hydrated, stop treats and unusual foods, and collect a fresh stool sample if your vet requests it. Do not give human anti-diarrhea medicine unless your veterinarian tells you to."], bullets: ["Take a photo of the stool", "Note frequency and amount of blood", "Watch energy and hydration", "Check for vomiting or pain", "Call your vet for triage"] },
-      { heading: "Common mistakes", paragraphs: ["Waiting too long is the biggest risk, especially when blood appears with other symptoms."], bullets: ["Assuming it is only something the dog ate", "Giving human medication", "Changing foods repeatedly", "Ignoring black stool", "Waiting through repeated bloody diarrhea"] },
-      { heading: "Practical checklist", paragraphs: ["Share these details with your vet."], bullets: ["Stool color and texture", "How many times blood appeared", "Vomiting, appetite, and energy changes", "Recent food, trash, bones, or toxins", "Medication and parasite prevention history"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call urgently for repeated blood, black stool, large amounts of blood, bloody diarrhea, vomiting, pale gums, belly pain, collapse, weakness, dehydration, or a puppy with any blood in stool."] },
-      { heading: "Key Takeaways", paragraphs: ["Blood in stool deserves careful action, not guesswork."], bullets: ["Track appearance and frequency", "Avoid human medicines", "Escalate quickly with vomiting or weakness", "Use vet guidance before diet or supplement changes"] },
+      {
+        heading: "Types of Blood in Dog Stool",
+        paragraphs: [
+          "The appearance of blood tells you a lot about its origin:",
+        ],
+      },
+      {
+        heading: "Hematochezia (Bright Red Blood)",
+        paragraphs: [
+          "Bright red blood in or around the stool indicates bleeding in the lower digestive tract — typically the colon, rectum, or anus. This is the most common type dog owners notice.",
+        ],
+      },
+      {
+        heading: "Melena (Dark, Tarry Stool)",
+        paragraphs: [
+          "Dark, black, or tarry stool (melena) signals bleeding higher up in the digestive tract — the stomach or small intestine. Blood has been digested by the time it exits, which darkens it. Melena is generally more serious and requires prompt veterinary attention.",
+        ],
+      },
+      {
+        heading: "Common Causes of Blood in Dog Stool",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "1. Dietary Indiscretion",
+        paragraphs: [
+          "Dogs eat things they shouldn\u0027t — garbage, table scraps, foreign objects. This can irritate the GI tract and cause temporary bloody stools. It\u0027s one of the most common reasons.",
+        ],
+      },
+      {
+        heading: "2. Intestinal Parasites",
+        paragraphs: [
+          "Worms such as hookworms, whipworms, and roundworms can cause intestinal bleeding. Puppies and unvaccinated dogs are especially vulnerable. A fecal exam can confirm parasites.",
+        ],
+      },
+      {
+        heading: "3. Parvovirus",
+        paragraphs: [
+          "Parvo is a serious, life-threatening viral infection most common in unvaccinated puppies. Bloody diarrhea, vomiting, lethargy, and loss of appetite are hallmark signs. This is a veterinary emergency.",
+        ],
+      },
+      {
+        heading: "4. Hemorrhagic Gastroenteritis (HGE)",
+        paragraphs: [
+          "HGE causes sudden, severe bloody diarrhea — often described as raspberry jam in consistency. It can lead to rapid dehydration. The cause isn\u0027t fully understood, but small and toy breeds are more susceptible.",
+        ],
+      },
+      {
+        heading: "5. Colitis",
+        paragraphs: [
+          "Inflammation of the colon, known as colitis, causes bloody, mucus-coated stools and urgency. It can be triggered by stress, dietary changes, infections, or inflammatory bowel disease (IBD).",
+        ],
+      },
+      {
+        heading: "6. Anal Gland Issues",
+        paragraphs: [
+          "Impacted or ruptured anal glands can cause blood to appear on the surface of the stool or around the anus. You may also notice your dog scooting or licking the area.",
+        ],
+      },
+      {
+        heading: "7. Intestinal Obstruction or Intussusception",
+        paragraphs: [
+          "A foreign object, tumor, or intestinal telescoping (intussusception) can cause bleeding. These situations are emergencies and often require surgery.",
+        ],
+      },
+      {
+        heading: "8. Medications and Toxins",
+        paragraphs: [
+          "NSAIDs, corticosteroids, and certain toxins (like rat poison) can cause GI bleeding. If your dog recently ingested a new medication or substance, mention it to your vet.",
+        ],
+      },
+      {
+        heading: "When Is Blood in Dog Stool an Emergency?",
+        paragraphs: [
+          "Go to a vet immediately if you observe any of the following:",
+          "A single episode of bright red blood in an otherwise healthy, active adult dog may not require an emergency visit, but should still be evaluated within 24 hours.",
+        ],
+        bullets: [
+          "Large amounts of blood in the stool",
+          "Dark, tarry, or black stool (melena)",
+          "Blood in stool combined with vomiting",
+          "Signs of pain, lethargy, or collapse",
+          "Pale gums — a sign of significant blood loss",
+          "Your dog is a puppy or senior dog",
+          "Blood in stool for more than 24–48 hours",
+        ],
+      },
+      {
+        heading: "What Will a Vet Do?",
+        paragraphs: [
+          "Diagnosis typically involves a physical exam, fecal parasite test, blood panel, and sometimes imaging (X-rays or ultrasound). Treatment varies based on cause and may include:",
+        ],
+        bullets: [
+          "Deworming medication for parasites",
+          "IV fluids for dehydration from HGE",
+          "Antibiotics for bacterial infections",
+          "Dietary changes and probiotics for colitis",
+          "Surgery for obstructions or serious internal issues",
+        ],
+      },
+      {
+        heading: "Home Care: Can You Treat It at Home?",
+        paragraphs: [
+          "Mild, isolated cases in healthy adult dogs may be managed temporarily with a bland diet (boiled chicken and white rice). However, home care should never replace a vet evaluation, especially if symptoms persist or worsen.",
+          "Do not give your dog human anti-diarrheal medications like Imodium without vet approval — some are toxic to dogs.",
+        ],
+      },
     ],
     faqs: [
-      { question: "Is blood in dog poop an emergency?", answer: "It can be. Repeated blood, heavy blood, black stool, vomiting, weakness, pale gums, belly pain, or dehydration should be treated as urgent." },
-      { question: "Can stress cause bloody stool in dogs?", answer: "Stress can contribute to colitis in some dogs, but blood still needs careful monitoring and veterinary guidance because other causes can look similar." },
-      { question: "What should I feed a dog with bloody poop?", answer: "Do not start major diet changes without calling your vet. Bloody stool can have causes that require medical care, and the wrong food or medication can make things worse." },
-      { question: "Should I bring a stool sample to the vet?", answer: "Often yes. A fresh stool sample can help your vet check for parasites or other clues. Ask your clinic how they want it collected." },
-      { question: "Can bones cause blood in dog poop?", answer: "Bones or sharp material can irritate or injure the digestive tract. If your dog ate bones and has blood in stool, contact your veterinarian promptly." },
-      { question: "Which page should I read next?", answer: "Read [dog probiotics for diarrhea](/blog/dog-probiotics-for-diarrhea) for mild diarrhea support context, but seek vet help first when blood is present." },
+      { question: "Is blood in dog stool always serious?", answer: "Not always. A small amount of bright red blood from a one-time GI upset may resolve on its own. But any recurring, increasing, or accompanied-by-other-symptoms blood warrants a vet visit." },
+      { question: "What does parvo blood in stool look like?", answer: "Parvo stools are typically very bloody, watery, and have a foul, distinctive odor. Infected dogs are also severely lethargic and vomiting. It is a medical emergency." },
+      { question: "Can stress cause blood in a dog\u0027s stool?", answer: "Yes. Stress-induced colitis is common in dogs and can result in bloody, mucus-coated stools. Major life changes, travel, or anxiety can trigger it." },
+      { question: "What should I feed a dog with blood in their stool?", answer: "A bland diet of boiled chicken and plain white rice can help settle the GI tract. Avoid rich or fatty foods. Always confirm with your vet before making dietary changes." },
+      { question: "How quickly should I see a vet for blood in my dog\u0027s stool?", answer: "If accompanied by vomiting, lethargy, pale gums, or large amounts of blood — go immediately. For a single, isolated episode in an otherwise healthy dog, a same-day or next-day appointment is recommended." },
     ],
     internalLinks: [
       { label: "Dog probiotics for diarrhea", href: "/blog/dog-probiotics-for-diarrhea" },
@@ -8360,13 +8455,6 @@ const blogPosts: BlogPost[] = [
       { label: "Dog health guides", href: "/dogs" },
       { label: "Talk to Houston vets", href: "/vets/houston-tx" },
       { label: "Contact Pawbiotics", href: "/contact" },
-    ],
-    relatedGuidesTitle: "Related Dog Digestive Guides",
-    relatedGuides: [
-      { label: "Dog probiotics for diarrhea", href: "/blog/dog-probiotics-for-diarrhea", description: "Gut support basics after non-urgent cases are assessed." },
-      { label: "My dog is having diarrhea", href: "/blog/my-dog-is-having-diarrhea", description: "Diarrhea warning signs and monitoring." },
-      { label: "Diarrhea condition guide", href: "/health-conditions/diarrhea", description: "Digestive symptom overview." },
-      { label: "Dog health guides", href: "/dogs", description: "Browse more dog care articles." },
     ],
   },
   {
@@ -8726,38 +8814,108 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "what-do-turtles-eat",
-    title: "What Do Turtles Eat? Safe Foods, Feeding Tips, and Common Mistakes",
-    metaTitle: "What Do Turtles Eat? Safe Turtle Food Guide for Beginners",
-    metaDescription:
-      "Learn what turtles eat, safe foods for aquatic and box turtles, feeding frequency basics, foods to avoid, and when appetite changes need exotic-vet help.",
+    title: "What Do Turtles Eat? A Complete Diet Guide by Species",
+    metaTitle: "What Do Turtles Eat? A Complete Diet Guide by Species",
+    metaDescription: "Discover what turtles eat in the wild and in captivity. A complete guide to turtle diet by species — aquatic, land, and box turtles.",
     category: "Health Conditions",
     publishedDate: "2026-05-03",
     readingTime: "10 min read",
-    intro:
-      "Turtle feeding depends on species, age, size, and habitat. This guide explains safe food categories in simple English so owners can avoid the most common diet mistakes.",
+    intro: "Turtles have been on Earth for over 200 million years — and their diets are just as diverse as their habitats. Whether you own a pet turtle or are simply curious, understanding what turtles eat is essential for their health and longevity. This guide covers the diet of aquatic turtles, land turtles, and box turtles, along with foods to avoid and feeding tips backed by veterinary guidance.",
     featuredImage: {
       src: "/images/blog/what-do-turtles-eat.png",
       alt: "Aquatic turtle near leafy greens, pellets, and safe vegetables for a turtle feeding guide",
       caption: "Turtles need species-appropriate variety, clean water, and careful portion control.",
     },
     sections: [
-      { heading: "Quick answer: what do turtles eat?", paragraphs: ["Many pet turtles eat a mix of commercial turtle pellets, leafy greens, vegetables, and appropriate animal protein. Aquatic turtles often become more plant-focused as adults, while box turtles may need a balanced mix of plant and animal foods."] },
-      { heading: "Safety note", paragraphs: ["This guide is educational. Turtle diets vary by species, and reptiles can become ill from incorrect lighting, temperature, calcium balance, or water quality even when food seems correct."] },
-      { heading: "Aquatic turtle basics", paragraphs: ["Aquatic turtles usually eat in water. Offer a varied diet and remove leftovers so the tank stays clean."], bullets: ["Quality turtle pellets", "Romaine, collards, mustard greens, dandelion greens", "Green beans, squash, bell pepper, and safe aquatic plants", "Earthworms or insects when appropriate", "Calcium support such as cuttlebone when advised"] },
-      { heading: "Box turtle basics", paragraphs: ["Box turtles are omnivores, but the exact balance depends on age and species. Many adults need mostly vegetables with carefully chosen protein."], bullets: ["Dark leafy greens", "Chopped vegetables", "Small amounts of fruit", "Earthworms, crickets, or other safe insects", "Veterinary guidance for supplements"] },
-      { heading: "Foods to avoid", paragraphs: ["Unsafe or unbalanced foods can cause long-term health issues."], bullets: ["Bread, processed meat, and salty human foods", "Dog or cat food as a regular diet", "Wild-caught insects from treated lawns", "Too much fruit", "Raw grocery meat as a staple"] },
-      { heading: "Feeding frequency", paragraphs: ["Young turtles often eat more often than adults. Adult feeding may be daily or every few days depending on species, body condition, and veterinary advice. Watch weight, shell quality, appetite, and stool."] },
-      { heading: "Common mistakes", paragraphs: ["Most turtle diet problems come from low variety, poor calcium support, or dirty water."], bullets: ["Feeding only dried shrimp", "Skipping UVB and calcium planning", "Leaving food to rot in the tank", "Offering the same food every day", "Ignoring appetite changes"] },
-      { heading: "When to Call a Vet", paragraphs: ["Contact an exotic veterinarian for appetite loss, swollen eyes, soft shell, shell cracks, floating problems, mouth discharge, weight loss, or unusual lethargy."] },
-      { heading: "Key Takeaways", paragraphs: ["Turtles need more than one food type."], bullets: ["Match diet to species and age", "Use variety and clean feeding habits", "Do not rely on human foods", "Use an exotic vet for appetite or shell concerns"] },
+      {
+        heading: "What Do Turtles Eat in the Wild?",
+        paragraphs: [
+          "Wild turtles are opportunistic feeders. Their diet depends heavily on species, habitat, and age. Most turtles fall into one of three dietary categories:",
+          "Younger turtles tend to lean more carnivorous for protein to support growth, while adults of many species shift toward plant-based diets.",
+        ],
+        bullets: [
+          "Herbivores – primarily eat plants, grasses, and vegetables",
+          "Carnivores – eat insects, fish, worms, and small animals",
+          "Omnivores – eat both plant and animal matter",
+        ],
+      },
+      {
+        heading: "What Do Aquatic Turtles Eat?",
+        paragraphs: [
+          "Aquatic turtles like red-eared sliders, painted turtles, and map turtles are primarily omnivores. In the wild, they consume:",
+          "In captivity, a balanced diet for aquatic turtles includes commercial turtle pellets (40–50%), leafy greens like kale and romaine, and occasional protein sources like cooked chicken, feeder fish, or bloodworms.",
+        ],
+        bullets: [
+          "Small fish, tadpoles, and frogs",
+          "Aquatic insects and larvae",
+          "Worms and snails",
+          "Water plants and aquatic vegetation",
+        ],
+      },
+      {
+        heading: "What Do Box Turtles Eat?",
+        paragraphs: [
+          "Box turtles are true omnivores and one of the most varied eaters in the turtle world. Their diet includes:",
+          "In captivity, aim for a 50/50 split between protein and plant matter. Variety is key — rotating foods prevents nutritional deficiencies.",
+        ],
+        bullets: [
+          "Earthworms, beetles, and caterpillars",
+          "Strawberries, blueberries, and melons",
+          "Leafy greens and mushrooms",
+          "Carrion (occasionally in the wild)",
+        ],
+      },
+      {
+        heading: "What Do Land Turtles (Tortoises) Eat?",
+        paragraphs: [
+          "Land turtles, commonly called tortoises, are largely herbivores. Species like the sulcata tortoise, Russian tortoise, and Hermann\u0027s tortoise thrive on:",
+          "Tortoises should rarely eat fruit due to its high sugar content. Protein from animal sources is generally not recommended for most tortoise species.",
+        ],
+        bullets: [
+          "Timothy hay and grasses",
+          "Dandelion greens, plantain leaves, and clover",
+          "Cactus pads (for desert species)",
+          "Occasional vegetables like squash and bell peppers",
+        ],
+      },
+      {
+        heading: "Foods Turtles Should Never Eat",
+        paragraphs: [
+          "Not all foods are safe for turtles. Avoid the following regardless of species:",
+        ],
+        bullets: [
+          "Dairy products — turtles are lactose intolerant",
+          "Onions, garlic, and chives — toxic to reptiles",
+          "Rhubarb and avocado — toxic",
+          "Processed or salty foods",
+          "Iceberg lettuce — low in nutrients",
+        ],
+      },
+      {
+        heading: "How Often Should You Feed a Turtle?",
+        paragraphs: [
+          "Feeding frequency varies by age and species. As a general guideline:",
+          "Always remove uneaten food from the tank within 30 minutes to prevent water contamination and bacterial growth.",
+        ],
+        bullets: [
+          "Hatchlings and juveniles: feed daily",
+          "Adult aquatic turtles: feed every other day",
+          "Adult tortoises: feed daily, with hay available at all times",
+        ],
+      },
+      {
+        heading: "Do Turtles Need Supplements?",
+        paragraphs: [
+          "Yes. Captive turtles often lack calcium and vitamin D3 — both critical for shell and bone health. Dust food with calcium powder 2–3 times per week. UVB lighting is also essential for vitamin D3 synthesis in turtles that cannot get natural sunlight.",
+        ],
+      },
     ],
     faqs: [
-      { question: "Can turtles eat lettuce?", answer: "Some leafy greens are useful, but iceberg lettuce has little nutrition. Better options often include romaine, collards, mustard greens, and dandelion greens when suitable for the species." },
-      { question: "Do turtles eat every day?", answer: "Young turtles often eat more frequently than adults. Adult schedules vary by species, size, temperature, and body condition." },
-      { question: "Can turtles eat fruit?", answer: "Some turtles can have small amounts of fruit, but fruit should not dominate the diet because it is sugary and less balanced than vegetables and species-appropriate staples." },
-      { question: "Can turtles eat dog food?", answer: "Dog food is not a good regular turtle diet because it is not balanced for reptiles. Use turtle-specific and species-appropriate foods instead." },
-      { question: "Why is my turtle not eating?", answer: "Poor water temperature, stress, illness, wrong lighting, poor water quality, or unsuitable food can reduce appetite. Ongoing appetite loss needs exotic-vet help." },
-      { question: "Which page should I read next?", answer: "Read [what do axolotls eat](/blog/what-do-axolotls-eat) for another exotic aquatic feeding guide." },
+      { question: "Can turtles eat lettuce?", answer: "Yes, but avoid iceberg lettuce. Opt for nutrient-dense options like romaine, red leaf lettuce, endive, or dandelion greens." },
+      { question: "Can turtles eat fruit?", answer: "Aquatic turtles and box turtles can eat fruit in moderation — berries, melons, and mangoes are good options. Tortoises should rarely eat fruit due to sugar content." },
+      { question: "What do baby turtles eat?", answer: "Baby turtles need more protein than adults. Feed hatchlings small insects, worms, and protein-rich pellets daily. Add finely chopped greens as they grow." },
+      { question: "Can turtles eat meat?", answer: "Omnivorous and carnivorous turtles can eat cooked, unseasoned meat, feeder fish, or insects. Avoid processed meats with salt or additives." },
+      { question: "How long can a turtle go without food?", answer: "Healthy adult turtles can survive several weeks without food, especially during brumation (winter dormancy). However, regular feeding is necessary for captive turtles\u0027 long-term health." },
     ],
     internalLinks: [
       { label: "What do axolotls eat?", href: "/blog/what-do-axolotls-eat" },
@@ -8766,47 +8924,125 @@ const blogPosts: BlogPost[] = [
       { label: "Local vet directory", href: "/vets" },
       { label: "Contact Pawbiotics", href: "/contact" },
     ],
-    relatedGuidesTitle: "Related Exotic Pet Guides",
-    relatedGuides: [
-      { label: "What do axolotls eat?", href: "/blog/what-do-axolotls-eat", description: "Aquatic pet feeding and water-quality basics." },
-      { label: "Red eyed green tree frog care", href: "/blog/red-eyed-green-tree-frog-care", description: "Habitat and feeding care for another exotic pet." },
-      { label: "Local vet directory", href: "/vets", description: "Find local veterinary support." },
-      { label: "Health conditions hub", href: "/health-conditions", description: "Browse symptom and care guides." },
-    ],
   },
   {
     slug: "coconut-oil-for-dogs",
-    title: "Coconut Oil for Dogs: Uses, Risks, and When to Avoid It",
-    metaTitle: "Coconut Oil for Dogs: Benefits, Risks, and Safe Use Questions",
-    metaDescription:
-      "Learn whether coconut oil is safe for dogs, possible uses, risks like extra fat and calories, and when to ask your vet before using it.",
+    title: "Coconut Oil for Dogs: Benefits, Risks, and How to Use It Safely",
+    metaTitle: "Coconut Oil for Dogs: Benefits, Risks, and How to Use It Safely",
+    metaDescription: "Is coconut oil safe for dogs? Learn the benefits, risks, correct dosage, and how to use coconut oil for your dog\u0027s skin, coat, and health.",
     category: "Dogs",
     publishedDate: "2026-05-03",
     readingTime: "10 min read",
-    intro:
-      "Coconut oil is popular online, but it is not a cure-all. This guide explains what it may and may not do for dogs, plus the situations where it is better to avoid it.",
+    intro: "Coconut oil has become a popular wellness supplement for dogs — and for good reason. From shiny coats to digestive support, it offers real benefits. But like any supplement, it comes with caveats that every dog owner should know. Here\u0027s a comprehensive, vet-aligned breakdown of coconut oil for dogs: what it does, how to use it, and when to skip it.",
     featuredImage: {
       src: "/images/blog/coconut-oil-for-dogs.png",
       alt: "Dog beside a small jar of coconut oil and a veterinary care checklist",
       caption: "Coconut oil should be treated as an optional high-fat add-on, not a medical treatment.",
     },
     sections: [
-      { heading: "Quick answer: is coconut oil good for dogs?", paragraphs: ["Coconut oil may be tolerated by some healthy dogs in tiny amounts, but it is high in fat and calories. It should not replace balanced food, veterinary skin care, or prescribed treatment."] },
-      { heading: "Safety note", paragraphs: ["Ask your veterinarian before using coconut oil if your dog has pancreatitis history, obesity risk, chronic digestive problems, skin disease, allergies, or a prescription diet."] },
-      { heading: "Why owners use it", paragraphs: ["People often try coconut oil for dry skin, coat shine, paw dryness, or as a food topper. Evidence and results vary, so expectations should stay realistic."], bullets: ["Occasional food topper", "Dry paw or nose support when vet-approved", "Coat-conditioning attempts", "Pill-hiding in tiny amounts"] },
-      { heading: "Risks and side effects", paragraphs: ["Too much coconut oil can upset the stomach or add unneeded calories. High-fat additions can be risky for some dogs."], bullets: ["Diarrhea or vomiting", "Weight gain", "Pancreatitis risk in sensitive dogs", "Greasy coat if overused topically", "Delayed care if used instead of treatment"] },
-      { heading: "Topical use", paragraphs: ["If your vet approves topical use, keep it minimal and prevent heavy licking. Red, infected, painful, or open skin needs medical care, not oil alone."] },
-      { heading: "Common mistakes", paragraphs: ["Coconut oil becomes a problem when owners treat it like medicine."], bullets: ["Using large spoonfuls", "Applying it to infected skin", "Ignoring itch causes", "Adding it daily without calorie planning", "Using it during active vomiting or diarrhea"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call your vet if your dog has skin odor, redness, open sores, severe itch, vomiting, diarrhea, belly pain, or any history of pancreatitis before using coconut oil."] },
-      { heading: "Key Takeaways", paragraphs: ["Coconut oil is optional and easy to overdo."], bullets: ["Use tiny amounts only if appropriate", "Avoid high-fat additions for sensitive dogs", "Do not use oil as a treatment substitute", "Ask your vet for skin or GI symptoms"] },
+      {
+        heading: "Is Coconut Oil Safe for Dogs?",
+        paragraphs: [
+          "Yes — coconut oil is generally safe for dogs in moderate amounts. It is non-toxic and consumed regularly by dogs without adverse effects when given in appropriate doses. However, it is high in saturated fat, which means overuse can lead to weight gain, diarrhea, or pancreatitis in sensitive dogs.",
+          "Always consult your vet before starting any new supplement, particularly if your dog has a history of pancreatitis, obesity, or digestive issues.",
+        ],
+      },
+      {
+        heading: "Benefits of Coconut Oil for Dogs",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "1. Skin and Coat Health",
+        paragraphs: [
+          "Coconut oil contains medium-chain fatty acids (MCFAs), particularly lauric acid, which has moisturizing and antimicrobial properties. Applied topically, it can:",
+          "It also acts as a natural conditioning treatment when massaged into the fur before bathing.",
+        ],
+        bullets: [
+          "Soothe dry, flaky, or itchy skin",
+          "Reduce hot spots and minor skin irritations",
+          "Add shine and moisture to a dull coat",
+        ],
+      },
+      {
+        heading: "2. Digestive Support",
+        paragraphs: [
+          "Small amounts of coconut oil added to food may help improve digestion, especially in dogs with constipation or irregular stools. Its antimicrobial properties may also help balance gut bacteria.",
+        ],
+      },
+      {
+        heading: "3. Antimicrobial and Antifungal Properties",
+        paragraphs: [
+          "Lauric acid — the primary fatty acid in coconut oil — has documented antimicrobial activity. It may help fight yeast infections, particularly on the paws and ears when applied topically.",
+        ],
+      },
+      {
+        heading: "4. Joint and Mobility Support",
+        paragraphs: [
+          "Some dog owners report improvements in mobility for senior dogs using coconut oil regularly. While research is limited, the anti-inflammatory properties of MCFAs may contribute to reduced joint discomfort.",
+        ],
+      },
+      {
+        heading: "5. Oral Health",
+        paragraphs: [
+          "Coconut oil is a popular ingredient in homemade dog toothpaste. Its antibacterial properties can help reduce plaque and freshen breath when used as part of a dental hygiene routine.",
+        ],
+      },
+      {
+        heading: "How Much Coconut Oil Should You Give a Dog?",
+        paragraphs: [
+          "Start small and increase gradually. A general guideline used by many holistic vets:",
+          "Begin with 1/4 of the recommended dose and increase over 2–4 weeks to allow the digestive system to adjust. Too much too fast can cause loose stools or diarrhea.",
+        ],
+        bullets: [
+          "Small dogs (under 10 lbs): 1/4 teaspoon per day",
+          "Medium dogs (10–30 lbs): 1/2 teaspoon per day",
+          "Large dogs (30–60 lbs): 1 teaspoon per day",
+          "Giant breeds (60+ lbs): up to 2 teaspoons per day",
+        ],
+      },
+      {
+        heading: "How to Use Coconut Oil for Dogs",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Orally (as a supplement)",
+        paragraphs: [
+          "Mix into food or let your dog lick it off a spoon. Use unrefined, virgin coconut oil — refined versions undergo processing that strips some beneficial compounds.",
+        ],
+      },
+      {
+        heading: "Topically (on skin or coat)",
+        paragraphs: [
+          "Warm a small amount between your palms and massage into affected areas. Monitor to ensure your dog doesn\u0027t lick it off excessively before it absorbs.",
+        ],
+      },
+      {
+        heading: "As a paw balm",
+        paragraphs: [
+          "Apply a thin layer to cracked or dry paw pads. Cover with a sock for 10–15 minutes if your dog tends to lick.",
+        ],
+      },
+      {
+        heading: "When to Avoid Coconut Oil for Dogs",
+        paragraphs: [
+          "Coconut oil is not suitable for every dog. Avoid or use with caution if your dog:",
+        ],
+        bullets: [
+          "Is overweight or obese — high fat content can worsen weight issues",
+          "Has a history of pancreatitis — high-fat foods are a trigger",
+          "Has a known fat intolerance or sensitive stomach",
+          "Is on a low-fat prescription diet",
+        ],
+      },
     ],
     faqs: [
-      { question: "Can dogs eat coconut oil?", answer: "Some healthy dogs may tolerate tiny amounts, but it is high in fat and not necessary. Ask your vet if your dog has any medical history." },
-      { question: "Can coconut oil help dog itchy skin?", answer: "It may moisturize mildly dry areas, but itchy skin often has medical causes like allergies or infection. Persistent itch needs veterinary guidance." },
-      { question: "Can coconut oil cause diarrhea in dogs?", answer: "Yes. Too much fat or a sudden new food can cause loose stool or vomiting in some dogs." },
-      { question: "Is coconut oil safe for dogs with pancreatitis?", answer: "Dogs with pancreatitis history should avoid high-fat add-ons unless a veterinarian gives specific approval." },
-      { question: "Can I put coconut oil on my dog's paws?", answer: "Only if the skin is intact and your vet approves. Prevent heavy licking and seek care for cracks, bleeding, swelling, or odor." },
-      { question: "Which page should I read next?", answer: "Read [home remedies for dogs with itchy skin](/blog/home-remedies-for-dogs-with-itchy-skin) and [dog food calculator](/tools/dog-food-calculator)." },
+      { question: "Can I put coconut oil on my dog\u0027s skin every day?", answer: "You can apply coconut oil topically as often as needed for dry skin or irritation. Monitor for any signs of skin reaction. For oral use, daily is fine within the recommended dosage." },
+      { question: "What type of coconut oil is best for dogs?", answer: "Use unrefined, virgin (or extra-virgin) coconut oil. Avoid hydrogenated or refined varieties, which offer fewer nutritional benefits." },
+      { question: "Can coconut oil help a dog\u0027s itchy skin?", answer: "Yes. Coconut oil\u0027s moisturizing and anti-inflammatory properties can soothe itchy, dry skin. However, if itching is severe or persistent, consult a vet to rule out allergies or infections." },
+      { question: "Can puppies have coconut oil?", answer: "Yes, in very small amounts. Start with just a tiny bit and observe for any digestive upset before increasing the dose." },
+      { question: "Does coconut oil kill fleas on dogs?", answer: "Coconut oil is not an effective flea treatment. While lauric acid may repel some insects temporarily, it should not replace veterinarian-approved flea prevention products." },
     ],
     internalLinks: [
       { label: "Home remedies for dogs with itchy skin", href: "/blog/home-remedies-for-dogs-with-itchy-skin" },
@@ -8818,37 +9054,134 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "average-cat-lifespan",
-    title: "Average Cat Lifespan: Indoor vs Outdoor Cats and How to Support Longevity",
-    metaTitle: "Average Cat Lifespan: Indoor, Outdoor, Senior Care, and Vet Tips",
-    metaDescription:
-      "Learn the average cat lifespan, why indoor and outdoor cats differ, what affects longevity, and simple habits that support a longer healthier life.",
+    title: "Average Cat Lifespan: How Long Do Cats Live?",
+    metaTitle: "Average Cat Lifespan: How Long Do Cats Live?",
+    metaDescription: "What is the average cat lifespan? Learn how long cats live by breed, indoor vs outdoor factors, and science-backed tips to help your cat live longer.",
     category: "Cats",
     publishedDate: "2026-05-03",
     readingTime: "10 min read",
-    intro:
-      "Cat lifespan depends on lifestyle, genetics, preventive care, nutrition, and how early health changes are noticed. This guide gives practical longevity steps without making unrealistic promises.",
+    intro: "The average lifespan of a domestic cat is 12 to 18 years — but many cats live well into their 20s with the right care. Understanding what affects feline longevity helps you make informed decisions that can add years to your cat\u0027s life. This guide covers average lifespans by breed and lifestyle, the biggest lifespan factors, and practical steps to support a long, healthy life for your cat.",
     featuredImage: {
       src: "/images/blog/average-cat-lifespan.png",
       alt: "Healthy adult cat and senior cat resting near a calendar for a cat lifespan guide",
       caption: "Routine care, indoor safety, and early symptom checks can support healthier aging in cats.",
     },
     sections: [
-      { heading: "Quick answer: average cat lifespan", paragraphs: ["Many indoor cats live into their teens, and some live longer with good care. Outdoor cats often face more risks from trauma, disease exposure, parasites, weather, and toxins, which can reduce average lifespan."] },
-      { heading: "Safety note", paragraphs: ["This page is educational. Lifespan estimates are general, and sudden weight loss, appetite change, thirst change, vomiting, or behavior shifts should be discussed with a vet."] },
-      { heading: "Indoor vs outdoor lifespan", paragraphs: ["Indoor life reduces many major risks, but indoor cats still need exercise, enrichment, dental care, vaccines, parasite prevention when appropriate, and regular exams."], bullets: ["Indoor safety reduces trauma risk", "Outdoor access increases exposure risks", "Enrichment prevents boredom and weight gain", "Senior cats need closer monitoring"] },
-      { heading: "What affects longevity", paragraphs: ["No single habit guarantees a long life, but daily routines add up."], bullets: ["Body weight control", "Dental health", "Hydration and kidney monitoring", "Vaccines and parasite prevention", "Early treatment for chronic disease"] },
-      { heading: "Senior cat checks", paragraphs: ["Older cats often hide illness. Track weight, appetite, drinking, urination, grooming, jumping, and social behavior. Small changes can matter."] },
-      { heading: "Common mistakes", paragraphs: ["Lifespan is not only about food or genetics."], bullets: ["Skipping yearly exams", "Ignoring weight loss", "Calling frequent vomiting normal", "Letting dental disease progress", "Missing increased thirst"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call for appetite loss, weight loss, increased thirst, repeated vomiting, hiding, breathing changes, mouth pain, litter box changes, or sudden behavior shifts."] },
-      { heading: "Key Takeaways", paragraphs: ["Healthy aging is built through prevention and early action."], bullets: ["Indoor cats often live longer", "Senior changes deserve quick attention", "Weight and dental care matter", "Routine vet visits support longevity"] },
+      {
+        heading: "How Long Do Cats Live on Average?",
+        paragraphs: [
+          "Domestic cats (Felis catus) have an average lifespan of 12–18 years. To put it in human years: a 15-year-old cat is roughly equivalent to a 76-year-old human. Some key benchmarks:",
+        ],
+        bullets: [
+          "Median lifespan for pet cats: 12–15 years",
+          "Senior cat threshold: 11 years and older",
+          "Cats considered geriatric: 15 years and older",
+          "World\u0027s oldest recorded cat: Creme Puff, who lived to 38 years",
+        ],
+      },
+      {
+        heading: "Indoor vs. Outdoor Cats: Lifespan Differences",
+        paragraphs: [
+          "One of the biggest factors affecting cat lifespan is whether they live indoors or outdoors:",
+        ],
+      },
+      {
+        heading: "Indoor Cats",
+        paragraphs: [
+          "Indoor cats live significantly longer — typically 12–18 years. They are protected from traffic, predators, infectious disease, parasites, extreme weather, and toxins. Indoor-only cats also have lower rates of trauma and injury.",
+        ],
+      },
+      {
+        heading: "Outdoor / Free-Roaming Cats",
+        paragraphs: [
+          "Outdoor cats face significantly more risks and have an estimated average lifespan of 5–7 years. Feral cats (with no human care) often live only 2–5 years in the wild.",
+        ],
+      },
+      {
+        heading: "Indoor/Outdoor Cats",
+        paragraphs: [
+          "Supervised outdoor access (leash walks, enclosed catios) offers enrichment without the full risks of free roaming, generally supporting a lifespan closer to the indoor range.",
+        ],
+      },
+      {
+        heading: "Cat Lifespan by Breed",
+        paragraphs: [
+          "Genetics and breed characteristics affect longevity. Smaller breeds and mixed-breed cats tend to live longer than some large or heavily bred purebreds.",
+          "Mixed-breed cats, also called domestic shorthairs or longhairs, often benefit from hybrid vigor and tend to have broader lifespans that reach the higher end of the average range.",
+        ],
+        bullets: [
+          "Siamese: 15–20 years",
+          "Ragdoll: 12–17 years",
+          "Maine Coon: 10–15 years",
+          "Persian: 10–17 years",
+          "Burmese: 16–18 years",
+          "Domestic Shorthair (mixed): 12–20 years",
+          "Sphynx: 9–15 years",
+        ],
+      },
+      {
+        heading: "Key Factors That Affect Cat Lifespan",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "1. Nutrition",
+        paragraphs: [
+          "Diet is one of the most impactful variables. Cats are obligate carnivores — they require high animal protein and specific nutrients like taurine, arachidonic acid, and vitamin A. A high-quality, species-appropriate diet reduces the risk of obesity, kidney disease, and urinary tract issues — all top causes of early death in cats.",
+        ],
+      },
+      {
+        heading: "2. Veterinary Care",
+        paragraphs: [
+          "Regular wellness exams, vaccinations, dental cleanings, and early disease detection significantly extend lifespan. Cats over age 7 should have biannual vet visits to catch age-related changes early.",
+        ],
+      },
+      {
+        heading: "3. Spaying and Neutering",
+        paragraphs: [
+          "Spayed and neutered cats live longer. Spaying eliminates the risk of uterine infections (pyometra) and reduces mammary cancer risk. Neutering reduces roaming behavior, fights, and certain cancers.",
+        ],
+      },
+      {
+        heading: "4. Weight Management",
+        paragraphs: [
+          "Obesity is a leading driver of diabetes, arthritis, and heart disease in cats. Maintaining a healthy body weight through measured feeding and play is essential for longevity.",
+        ],
+      },
+      {
+        heading: "5. Dental Health",
+        paragraphs: [
+          "Periodontal disease is extremely common in cats and leads to systemic issues including kidney and heart disease. Regular brushing or dental treats, combined with professional cleanings, add measurable years to a cat\u0027s life.",
+        ],
+      },
+      {
+        heading: "6. Mental and Environmental Enrichment",
+        paragraphs: [
+          "Boredom and stress contribute to behavioral and physical health issues. Cats benefit from climbing structures, interactive play, window perches, and predictable routines.",
+        ],
+      },
+      {
+        heading: "Signs of Aging in Cats",
+        paragraphs: [
+          "Senior cats (11+) commonly show:",
+          "These signs don\u0027t necessarily indicate disease, but any sudden changes warrant a vet visit.",
+        ],
+        bullets: [
+          "Decreased activity and increased sleeping",
+          "Changes in appetite or weight",
+          "Drinking more water (potential kidney or diabetes indicator)",
+          "Cloudiness in eyes or vision changes",
+          "Changes in coat quality",
+          "Behavioral changes or confusion",
+        ],
+      },
     ],
     faqs: [
-      { question: "How long do indoor cats live?", answer: "Many indoor cats live into their teens, and some live longer. Individual lifespan depends on genetics, care, weight, disease prevention, and early treatment." },
-      { question: "Do outdoor cats live shorter lives?", answer: "Outdoor cats often face more risks such as injury, infectious disease, parasites, toxins, and weather exposure, which can reduce average lifespan." },
-      { question: "At what age is a cat considered senior?", answer: "Many cats are considered senior around age 10, though aging signs vary. Your vet can recommend exam and lab-check timing." },
-      { question: "Can diet increase a cat's lifespan?", answer: "A balanced diet and healthy weight support longevity, but diet alone cannot prevent every disease. Routine veterinary care still matters." },
-      { question: "What signs of aging should I watch?", answer: "Watch weight, appetite, drinking, urination, grooming, vomiting frequency, jumping ability, and behavior. Changes should be checked early." },
-      { question: "Which page should I read next?", answer: "Read [best food for elderly cats](/blog/best-food-for-elderly-cats) and [symptoms of kidney disease in cats](/blog/symptoms-of-kidney-disease-in-cats)." },
+      { question: "What is the oldest a cat has ever lived?", answer: "The Guinness World Record is held by Creme Puff of Austin, Texas, who lived to 38 years and 3 days." },
+      { question: "Do indoor cats really live longer than outdoor cats?", answer: "Yes — significantly. Indoor cats average 12–18 years while outdoor cats average just 5–7 years due to greater exposure to hazards, disease, and injury." },
+      { question: "How old is my cat in human years?", answer: "The first two cat years equal about 24 human years. Each year after that is roughly 4 human years. So a 10-year-old cat is approximately 56 in human years." },
+      { question: "What health issues shorten cat lifespan the most?", answer: "Chronic kidney disease (CKD), heart disease, hyperthyroidism, diabetes, and cancer are the leading age-related conditions that affect cat longevity." },
+      { question: "How can I help my cat live longer?", answer: "Feed a high-protein, species-appropriate diet, keep your cat indoors, schedule regular vet checkups, maintain a healthy weight, provide enrichment, and stay on top of dental health." },
     ],
     internalLinks: [
       { label: "Best food for elderly cats", href: "/blog/best-food-for-elderly-cats" },
@@ -8919,37 +9252,106 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "dogs-and-down-syndrome",
-    title: "Dogs and Down Syndrome: Can Dogs Have It?",
-    metaTitle: "Dogs and Down Syndrome: Similar Signs, Genetics, and Vet Guidance",
-    metaDescription:
-      "Can dogs have Down syndrome? Learn why the human condition does not translate directly to dogs, what similar signs may mean, and when to see a vet.",
+    title: "Can Dogs Have Down Syndrome? The Science Explained",
+    metaTitle: "Can Dogs Have Down Syndrome? The Science Explained",
+    metaDescription: "Can dogs have Down syndrome? Learn the science behind canine chromosomes, what conditions mimic Down syndrome in dogs, and how to care for affected pets.",
     category: "Dogs",
     publishedDate: "2026-05-03",
     readingTime: "10 min read",
-    intro:
-      "People sometimes search this when a dog looks or develops differently. This guide gives a respectful, simple explanation and focuses on practical veterinary next steps.",
+    intro: "You may have seen viral videos or posts about dogs described as having \"Down syndrome\" — and wondered if that\u0027s actually possible. The short answer: dogs cannot technically have Down syndrome. But they can have genetic and developmental conditions that produce similar-looking characteristics. Here\u0027s what the science actually says, and what those conditions really are.",
     featuredImage: {
       src: "/images/blog/dogs-and-down-syndrome.png",
       alt: "Veterinarian gently examining a dog for a respectful dog genetics and health guide",
       caption: "Dogs can have congenital or genetic conditions, but human Down syndrome does not map directly to dogs.",
     },
     sections: [
-      { heading: "Quick answer: can dogs have Down syndrome?", paragraphs: ["Dogs do not have Down syndrome in the same way humans do. Down syndrome is a human chromosomal condition involving chromosome 21. Dogs have a different chromosome structure, but they can have congenital, genetic, developmental, or hormonal conditions that create unusual appearance or behavior."] },
-      { heading: "Safety note", paragraphs: ["This article is educational and uses respectful language. If your dog has developmental delays, unusual facial features, poor growth, seizures, vision issues, or behavior changes, a veterinarian should evaluate the cause."] },
-      { heading: "Why the term is confusing", paragraphs: ["Owners may use the phrase because they notice a dog looks different, learns slowly, or has unusual movement. Those signs deserve care, but they do not confirm a human-style diagnosis."] },
-      { heading: "Possible explanations", paragraphs: ["Many medical and developmental issues can overlap visually."], bullets: ["Congenital defects", "Genetic syndromes", "Hormonal disease", "Neurologic conditions", "Vision or hearing problems", "Past injury or illness"] },
-      { heading: "What to track", paragraphs: ["Clear notes help your vet decide which exam or tests make sense."], bullets: ["Growth pattern", "Walking or balance", "Learning and behavior", "Vision and hearing clues", "Appetite and weight", "Seizure-like episodes"] },
-      { heading: "Common mistakes", paragraphs: ["Labels can delay useful care when owners stop at a search term."], bullets: ["Assuming the cause from appearance", "Skipping a full exam", "Ignoring seizures or weakness", "Using human labels as diagnosis", "Missing pain or sensory problems"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call your vet for poor growth, abnormal movement, seizures, vision or hearing concerns, trouble eating, severe behavior changes, or any decline in comfort or quality of life."] },
-      { heading: "Key Takeaways", paragraphs: ["Use the search term as a starting point, not a diagnosis."], bullets: ["Dogs do not have human Down syndrome exactly", "Similar signs can have many causes", "A vet exam is the useful next step", "Respectful supportive care matters most"] },
+      {
+        heading: "What Is Down Syndrome?",
+        paragraphs: [
+          "Down syndrome (Trisomy 21) is a chromosomal condition in humans caused by the presence of a full or partial extra copy of chromosome 21. Humans have 23 pairs of chromosomes — 46 total. People with Down syndrome have 47.",
+          "It causes a recognizable set of physical features and cognitive characteristics, including a flattened facial profile, almond-shaped eyes, and intellectual developmental differences.",
+        ],
+      },
+      {
+        heading: "Why Dogs Can\u0027t Have Down Syndrome",
+        paragraphs: [
+          "Dogs have 39 pairs of chromosomes — 78 total. Humans have 23 pairs. Because chromosome numbers and structures differ completely between species, the specific condition \"Trisomy 21\" as it occurs in humans cannot occur in dogs.",
+          "Even if a dog had an extra copy of one of its 39 chromosome pairs, it would not be the same condition as human Down syndrome — biologically or genetically.",
+        ],
+      },
+      {
+        heading: "What Conditions Can Mimic Down Syndrome in Dogs?",
+        paragraphs: [
+          "While Down syndrome itself doesn\u0027t apply, dogs can have genetic, developmental, or health conditions that produce similar features. These are sometimes informally (and inaccurately) called \"dog Down syndrome.\"",
+        ],
+      },
+      {
+        heading: "Congenital Hypothyroidism",
+        paragraphs: [
+          "An underactive thyroid gland from birth can cause stunted growth, a broad flat face, widely spaced eyes, a large protruding tongue, and cognitive slowness — features that closely resemble human Down syndrome. It can be diagnosed with a blood test and treated with thyroid hormone supplementation.",
+        ],
+      },
+      {
+        heading: "Pituitary Dwarfism",
+        paragraphs: [
+          "Caused by growth hormone deficiency, pituitary dwarfism results in a puppy that stays abnormally small with delayed development. It\u0027s most common in German Shepherds and can include features like a flattened face and wide-set eyes.",
+        ],
+      },
+      {
+        heading: "Congenital Heart Disease",
+        paragraphs: [
+          "Some dogs are born with heart defects that restrict oxygen and blood flow, affecting development. This can manifest as physical and cognitive differences.",
+        ],
+      },
+      {
+        heading: "Portosystemic Shunt (Liver Shunt)",
+        paragraphs: [
+          "A congenital blood vessel abnormality that allows blood to bypass the liver, causing toxin buildup in the brain. Affected dogs may show behavioral changes, confusion, and delayed development.",
+        ],
+      },
+      {
+        heading: "Other Chromosomal Abnormalities",
+        paragraphs: [
+          "While not Trisomy 21, dogs can experience other chromosomal errors — particularly during cell division in early development. These can produce a range of physical and neurological differences, though research in this area is still limited.",
+        ],
+      },
+      {
+        heading: "Physical and Behavioral Signs That May Be Noticed",
+        paragraphs: [
+          "Dogs with the above conditions may display:",
+          "These signs alone don\u0027t confirm any diagnosis. A veterinarian must evaluate the dog and run appropriate tests.",
+        ],
+        bullets: [
+          "Unusually broad or flat face",
+          "Wide-set or upward-slanting eyes",
+          "Small stature or stunted growth",
+          "Large or protruding tongue",
+          "Cognitive slowness or difficulty learning commands",
+          "Poor muscle tone",
+          "Hearing or vision issues",
+        ],
+      },
+      {
+        heading: "How to Care for a Dog With Developmental Differences",
+        paragraphs: [
+          "Dogs with genetic or developmental conditions often live full, happy lives with appropriate support:",
+          "Many owners of dogs with developmental differences report deep bonds and joyful lives with their pets.",
+        ],
+        bullets: [
+          "Regular veterinary monitoring for any underlying conditions",
+          "Patient, positive reinforcement-based training",
+          "Safe, enriched home environment without hazards",
+          "Adjusted exercise and nutrition based on their specific needs",
+          "Extra supervision, especially around stairs and outdoor hazards",
+        ],
+      },
     ],
     faqs: [
-      { question: "Can dogs be born with chromosomal disorders?", answer: "Dogs can have genetic and congenital problems, but they are not the same as human Down syndrome. A veterinarian can evaluate signs and recommend testing if needed." },
-      { question: "Why does my dog look like it has Down syndrome?", answer: "Different facial features, eye shape, size, movement, or behavior can come from many causes, including breed traits, congenital issues, injury, or illness." },
-      { question: "Can a dog with developmental issues live a good life?", answer: "Many dogs with special needs can have good quality of life with proper diagnosis, routine, pain control when needed, and supportive care." },
-      { question: "Should I use human medical labels for my dog?", answer: "It is better to describe the signs you see and let your veterinarian evaluate the cause. Human labels may not fit canine biology." },
-      { question: "What should I bring to the vet?", answer: "Bring videos, growth history, behavior notes, appetite and weight changes, and any breeder or adoption medical records." },
-      { question: "Which page should I read next?", answer: "Read [early neurological symptoms in dogs](/blog/early-neurological-symptoms-in-dogs) for warning signs that need faster review." },
+      { question: "Can dogs have chromosomal abnormalities?", answer: "Yes, dogs can have chromosomal abnormalities, though research into canine genetics is still evolving. These are not the same as human Down syndrome but can cause physical and developmental differences." },
+      { question: "What breeds are most likely to have Down syndrome-like features?", answer: "Certain breeds are predisposed to related conditions — German Shepherds are prone to pituitary dwarfism, and Beagles are more susceptible to congenital hypothyroidism. However, any dog can present with these conditions." },
+      { question: "How is a developmental condition diagnosed in a dog?", answer: "A vet will conduct a physical exam, blood work (including thyroid panels), genetic testing in some cases, imaging, and behavioral assessment to reach a diagnosis." },
+      { question: "Can a dog with Down syndrome-like features live a normal life?", answer: "With appropriate care, many dogs with developmental or genetic differences live comfortable, happy lives. The prognosis depends on the specific condition and its severity." },
+      { question: "Is it ethical to breed dogs with developmental conditions?", answer: "Responsible breeding practices should include health screening and genetic testing to avoid perpetuating heritable conditions. Breeding affected animals is generally not recommended by veterinary organizations." },
     ],
     internalLinks: [
       { label: "Early neurological symptoms in dogs", href: "/blog/early-neurological-symptoms-in-dogs" },
@@ -8961,37 +9363,87 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "can-cats-have-peanut-butter",
-    title: "Can Cats Have Peanut Butter? Safety, Risks, and Better Treat Choices",
-    metaTitle: "Can Cats Have Peanut Butter? Safe or Risky for Cats?",
-    metaDescription:
-      "Can cats have peanut butter? Learn why it is not ideal, choking and ingredient risks, xylitol warnings, and safer treat habits.",
+    title: "Can Cats Have Peanut Butter? What Every Cat Owner Should Know",
+    metaTitle: "Can Cats Have Peanut Butter? What Every Cat Owner Should Know",
+    metaDescription: "Can cats eat peanut butter? Learn whether it\u0027s safe, what the risks are, how much is too much, and which ingredients to avoid for your cat\u0027s safety.",
     category: "Cats",
     publishedDate: "2026-05-03",
     readingTime: "9 min read",
-    intro:
-      "Peanut butter is common in dog treat tips, but cats are different. This guide explains why peanut butter is usually unnecessary and what risks to check first.",
+    intro: "Peanut butter is a beloved treat for dogs — but what about cats? If your feline has shown interest in a spoonful, you\u0027ve probably wondered whether it\u0027s safe to share. The short answer: peanut butter is not toxic to cats, but it\u0027s not a good idea either. Here\u0027s why — and what to watch for.",
     featuredImage: {
       src: "/images/blog/can-cats-have-peanut-butter.png",
       alt: "Cat sniffing a tiny spoon of peanut butter beside a caution checklist",
       caption: "Peanut butter is not toxic in tiny plain amounts for many cats, but it is not a good routine treat.",
     },
     sections: [
-      { heading: "Quick answer: can cats have peanut butter?", paragraphs: ["A tiny lick of plain peanut butter may not harm many healthy cats, but peanut butter is not recommended as a regular treat. It is sticky, calorie-dense, and may contain unsafe ingredients."] },
-      { heading: "Safety note", paragraphs: ["Never give peanut butter with xylitol or birch sugar. Ask your vet before offering it to cats with obesity risk, diabetes, digestive disease, food allergies, or swallowing problems."] },
-      { heading: "Why it is not ideal", paragraphs: ["Cats do not need peanut butter. It adds fat and calories without meaningful feline nutrition and can be hard for some cats to swallow."] },
-      { heading: "Ingredient risks", paragraphs: ["Read labels carefully before any pet gets peanut butter."], bullets: ["Xylitol or birch sugar", "Chocolate mix-ins", "High salt", "Added sugar", "Oils and flavorings"] },
-      { heading: "When owners use it", paragraphs: ["Some owners try peanut butter for pills, but cats may reject it. Ask your vet or pharmacist about better pill-giving options."] },
-      { heading: "Common mistakes", paragraphs: ["Most problems come from product choice and portion size."], bullets: ["Using sweetened peanut butter", "Letting a cat eat a spoonful", "Using it daily", "Ignoring choking or gagging", "Trying it during stomach upset"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call urgently if xylitol exposure is possible. Also call for choking, repeated vomiting, diarrhea, weakness, swelling, hives, or breathing changes."] },
-      { heading: "Key Takeaways", paragraphs: ["Peanut butter is usually more trouble than it is worth for cats."], bullets: ["Not needed for feline nutrition", "Check for xylitol", "Avoid large sticky portions", "Use cat-specific treats instead"] },
+      {
+        heading: "Is Peanut Butter Safe for Cats?",
+        paragraphs: [
+          "Peanut butter is not considered toxic to cats, but that doesn\u0027t make it a safe or appropriate food. Cats are obligate carnivores — their digestive systems are designed to process animal protein, not plant-based fats and sugars.",
+          "The ASPCA does not list peanut butter as toxic to cats, but several characteristics make it problematic:",
+        ],
+        bullets: [
+          "High fat content — can cause digestive upset and contribute to obesity",
+          "High caloric density — even a small amount is a significant calorie load for a cat",
+          "Added sugar and salt — many commercial varieties contain both",
+          "Xylitol risk — some brands contain this artificial sweetener, which is highly toxic to pets",
+          "Texture hazard — thick, sticky consistency can be a choking risk",
+        ],
+      },
+      {
+        heading: "The Xylitol Danger",
+        paragraphs: [
+          "This is the most critical safety concern. Xylitol is an artificial sweetener found in some \"natural\" or \"reduced sugar\" peanut butter brands. It is extremely toxic to animals — even small amounts can cause severe hypoglycemia (low blood sugar), seizures, liver failure, and death.",
+          "Always check the ingredient label before giving any peanut butter product to a cat or dog. Brands that have used xylitol include some \"no-sugar-added\" varieties. If xylitol is listed, keep the product away from all pets.",
+        ],
+      },
+      {
+        heading: "Why Cats Don\u0027t Really Like Peanut Butter",
+        paragraphs: [
+          "Cats lack the taste receptor for sweetness — a biological fact confirmed by genetics research. They are one of the few mammals that cannot taste sweet flavors at all. So while a curious cat might investigate peanut butter, it\u0027s unlikely to be genuinely appealing to them the way it is to dogs.",
+          "Any interest is usually driven by the fat smell and novelty rather than flavor enjoyment.",
+        ],
+      },
+      {
+        heading: "What Happens If a Cat Eats Peanut Butter?",
+        paragraphs: [
+          "A small lick of plain, xylitol-free peanut butter is unlikely to cause harm in a healthy adult cat. However, larger amounts can lead to:",
+          "If the peanut butter contained xylitol and your cat consumed any, contact your veterinarian or the ASPCA Animal Poison Control Center immediately.",
+        ],
+        bullets: [
+          "Vomiting and diarrhea from fat overload",
+          "Stomach upset or gas",
+          "Choking from the sticky texture",
+          "Weight gain with repeated feeding",
+        ],
+      },
+      {
+        heading: "Better Treat Alternatives for Cats",
+        paragraphs: [
+          "Cats derive no meaningful nutritional benefit from peanut butter. If you\u0027re looking for healthy treat options:",
+          "Any treat should make up no more than 10% of your cat\u0027s daily caloric intake.",
+        ],
+        bullets: [
+          "Cooked, plain chicken or turkey — high protein, no additives",
+          "Cooked salmon or tuna — occasional treat, high in omega-3s",
+          "Commercial cat treats designed for feline nutrition",
+          "Plain cooked eggs — a good protein source",
+          "Small pieces of cooked liver — nutrient-dense but give sparingly",
+        ],
+      },
+      {
+        heading: "Can Kittens Have Peanut Butter?",
+        paragraphs: [
+          "Kittens have more sensitive digestive systems than adult cats. You should not give peanut butter to kittens. Their nutritional needs during development are precise, and introducing high-fat, nutrient-poor foods is particularly risky.",
+        ],
+      },
     ],
     faqs: [
-      { question: "Is peanut butter toxic to cats?", answer: "Plain peanut butter is not considered toxic in tiny amounts for many cats, but unsafe ingredients and the sticky texture can create risk." },
-      { question: "Can cats have peanut butter with xylitol?", answer: "No. Xylitol, also called birch sugar, is dangerous for pets and should be treated as urgent exposure." },
-      { question: "Can peanut butter help give cats pills?", answer: "Sometimes owners try it, but many cats dislike it and safer options may exist. Ask your vet for pill-giving methods." },
-      { question: "Can kittens eat peanut butter?", answer: "No practical reason exists to give peanut butter to kittens. They should focus on complete kitten food." },
-      { question: "What treats are better for cats?", answer: "Species-appropriate cat treats or tiny portions of vet-approved foods are usually better than sugary or fatty human foods." },
-      { question: "Which page should I read next?", answer: "Read [can cats eat blueberries](/blog/can-cats-eat-blueberries) and [can cats eat banana](/blog/can-cats-eat-banana)." },
+      { question: "Can cats eat peanut butter as a treat?", answer: "Occasionally and in tiny amounts (less than half a teaspoon), plain xylitol-free peanut butter is unlikely to harm a healthy adult cat. But it offers no nutritional value and better cat-appropriate treats exist." },
+      { question: "What peanut butter brands are safe for cats?", answer: "Only plain peanut butter with no xylitol, no added sugar, and no artificial sweeteners. Always read the label. When in doubt, skip it." },
+      { question: "Is peanut butter toxic to cats?", answer: "Plain peanut butter is not toxic. However, peanut butter containing xylitol is extremely toxic. The texture also poses a choking risk." },
+      { question: "My cat licked peanut butter — what should I do?", answer: "If it was xylitol-free and only a small amount, monitor for digestive upset. If you\u0027re unsure whether it contained xylitol, or if your cat ate a large amount, call your vet immediately." },
+      { question: "Can cats be allergic to peanuts?", answer: "Yes, cats can have food allergies, including to peanuts. Signs include vomiting, diarrhea, skin itching, and hair loss. If you suspect an allergy, discontinue the food and consult a vet." },
     ],
     internalLinks: [
       { label: "Can cats eat blueberries?", href: "/blog/can-cats-eat-blueberries" },
@@ -9003,38 +9455,149 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "dog-injection-schedule",
-    title: "Dog Injection Schedule: Puppy Shots, Adult Boosters, and Vet Timing",
-    metaTitle: "Dog Injection Schedule: Puppy Vaccine Timing and Adult Boosters",
-    metaDescription:
-      "See a simple dog injection schedule guide covering puppy shots, core vaccines, adult boosters, lifestyle vaccines, and when timing may vary.",
+    title: "Dog Injection Schedule: Complete Vaccination Guide for Puppies and Adults",
+    metaTitle: "Dog Injection Schedule: Complete Vaccination Guide for Puppies and Adults",
+    metaDescription: "A complete dog vaccination schedule from puppy to adult. Learn which vaccines are core, when boosters are due, and how to keep your dog protected year-round.",
     category: "Dogs",
     publishedDate: "2026-05-03",
     readingTime: "10 min read",
-    intro:
-      "Dog injection schedules are planned around age, vaccine history, lifestyle, local law, and disease risk. This guide explains the basic structure without replacing your veterinarian's plan.",
+    intro: "Vaccinations are one of the most important investments in your dog\u0027s long-term health. A proper injection schedule protects your dog from serious and sometimes fatal diseases — and helps protect the broader pet population through herd immunity. This guide covers the complete dog vaccination schedule from puppy shots through adult boosters, including core and non-core vaccines.",
     featuredImage: {
       src: "/images/blog/dog-injection-schedule.png",
       alt: "Puppy at a gentle veterinary visit for a dog injection schedule guide",
       caption: "Puppy and adult vaccine timing should be confirmed with your veterinarian.",
     },
     sections: [
-      { heading: "Quick answer: dog injection schedule", paragraphs: ["Puppies usually receive a series of core vaccines over several visits, then adult dogs receive boosters based on vaccine type, local law, lifestyle, and veterinary guidance. Rabies timing is also controlled by local rules."] },
-      { heading: "Safety note", paragraphs: ["This guide is educational. Your veterinarian should set the exact schedule because timing depends on age, health, vaccine brand, exposure risk, and local legal requirements."] },
-      { heading: "Core vaccine idea", paragraphs: ["Core vaccines are generally recommended for dogs because they protect against serious diseases. Your vet may discuss distemper, parvovirus, adenovirus, and rabies as core planning topics."] },
-      { heading: "Puppy schedule structure", paragraphs: ["Puppies need a series because maternal antibodies and age affect protection. Missing boosters can leave gaps."], bullets: ["Start based on age and history", "Repeat boosters at vet-set intervals", "Finish the puppy series before high-risk exposure", "Keep records for boarding and grooming"] },
-      { heading: "Adult booster planning", paragraphs: ["Adult boosters are not one-size-fits-all. Some vaccines are given yearly, while others may follow longer intervals depending on product and law."] },
-      { heading: "Lifestyle vaccines", paragraphs: ["Non-core vaccines depend on exposure risk."], bullets: ["Bordetella for boarding or daycare risk", "Leptospirosis based on local risk", "Lyme where tick exposure matters", "Canine influenza for social or outbreak risk"] },
-      { heading: "Common mistakes", paragraphs: ["Schedule problems usually happen when records are missing or appointments are delayed."], bullets: ["Assuming one puppy shot is enough", "Skipping rabies law requirements", "Forgetting boarding vaccine rules", "Not asking about local risks", "Losing vaccine records"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call if your puppy missed shots, vaccine records are unknown, your dog reacts after a vaccine, or you need boarding, travel, grooming, or daycare records."] },
-      { heading: "Key Takeaways", paragraphs: ["Use the schedule as a conversation guide."], bullets: ["Puppies need a series", "Adults need booster planning", "Rabies rules vary by location", "Lifestyle risk changes vaccine choices"] },
+      {
+        heading: "Core vs. Non-Core Dog Vaccines",
+        paragraphs: [
+          "Dog vaccines are divided into two categories:",
+        ],
+      },
+      {
+        heading: "Core Vaccines",
+        paragraphs: [
+          "Core vaccines are recommended for all dogs regardless of lifestyle or location. They protect against diseases that are widespread, severe, or transmissible to humans:",
+          "These are often given as combination shots — the DHPP or DA2PP vaccine covers distemper, adenovirus, parvovirus, and parainfluenza in one injection.",
+        ],
+        bullets: [
+          "Distemper",
+          "Adenovirus (Hepatitis)",
+          "Parvovirus",
+          "Rabies",
+        ],
+      },
+      {
+        heading: "Non-Core Vaccines",
+        paragraphs: [
+          "Non-core vaccines are given based on risk factors including geographic location, lifestyle, and exposure potential:",
+        ],
+        bullets: [
+          "Bordetella (Kennel Cough) — for dogs that board, visit dog parks, or groomers",
+          "Leptospirosis — for dogs exposed to wildlife or standing water",
+          "Lyme Disease — for dogs in tick-endemic areas",
+          "Canine Influenza — for dogs with high social exposure",
+        ],
+      },
+      {
+        heading: "Puppy Vaccination Schedule",
+        paragraphs: [
+          "Puppies receive maternal antibodies through their mother\u0027s milk, which gradually wane. Vaccinations begin at 6–8 weeks to build the puppy\u0027s own immunity before this protection fades.",
+        ],
+      },
+      {
+        heading: "6–8 Weeks",
+        paragraphs: [
+        ],
+        bullets: [
+          "DHPP (first dose)",
+          "Bordetella (if going to daycare, boarding, or dog parks)",
+        ],
+      },
+      {
+        heading: "10–12 Weeks",
+        paragraphs: [
+        ],
+        bullets: [
+          "DHPP (second dose)",
+          "Leptospirosis (first dose, if recommended by vet)",
+          "Lyme disease (first dose, if in endemic area)",
+        ],
+      },
+      {
+        heading: "14–16 Weeks",
+        paragraphs: [
+        ],
+        bullets: [
+          "DHPP (third dose)",
+          "Rabies (first dose — required by law in most regions)",
+          "Leptospirosis (second dose, if applicable)",
+          "Lyme disease (second dose, if applicable)",
+        ],
+      },
+      {
+        heading: "12–16 Months",
+        paragraphs: [
+          "Note: Some vets use a 3-year DHPP protocol after the initial series is complete. Always follow your vet\u0027s guidance based on your dog\u0027s risk profile.",
+        ],
+        bullets: [
+          "DHPP booster",
+          "Rabies booster",
+          "All applicable non-core vaccine boosters",
+        ],
+      },
+      {
+        heading: "Adult Dog Vaccination Schedule",
+        paragraphs: [
+          "After the puppy series and 12-month boosters, adult dogs follow a maintenance schedule:",
+        ],
+      },
+      {
+        heading: "Every 1 Year",
+        paragraphs: [
+        ],
+        bullets: [
+          "Rabies (some states/countries allow a 3-year vaccine after the first booster)",
+          "Bordetella (annually or every 6 months for high-exposure dogs)",
+          "Leptospirosis",
+          "Canine Influenza (if at risk)",
+        ],
+      },
+      {
+        heading: "Every 3 Years",
+        paragraphs: [
+        ],
+        bullets: [
+          "DHPP (distemper, adenovirus, parvovirus combo) — per WSAVA guidelines, after the initial series",
+          "Rabies (if using the 3-year formulation — check local law)",
+        ],
+      },
+      {
+        heading: "Important Notes on Vaccine Timing",
+        paragraphs: [
+          "Puppies must complete the full series for immunity to be reliable. Missing doses or spacing them incorrectly leaves a window of vulnerability to parvovirus and distemper — two diseases with high mortality in puppies.",
+          "Adult dogs that are overdue for vaccines may need their series restarted depending on how long the gap has been. Your vet can run titer tests to measure current antibody levels if you\u0027re unsure of vaccination history.",
+        ],
+      },
+      {
+        heading: "Side Effects and Vaccine Safety",
+        paragraphs: [
+          "Vaccines are generally safe. Mild side effects are normal and include:",
+          "Serious reactions are rare but can include facial swelling, hives, vomiting, or collapse (anaphylaxis). Contact your vet immediately if your dog shows these signs within a few hours of vaccination.",
+        ],
+        bullets: [
+          "Soreness at the injection site",
+          "Low-grade fever",
+          "Mild lethargy for 24–48 hours",
+        ],
+      },
     ],
     faqs: [
-      { question: "When do puppies start injections?", answer: "Many puppies start vaccines when they are young, but exact timing depends on age, health, and history. Your vet should set the schedule." },
-      { question: "What injections do dogs need every year?", answer: "Some vaccines may be yearly and others may follow longer intervals. Lifestyle, vaccine product, and local law determine timing." },
-      { question: "Is rabies required for dogs?", answer: "Rabies vaccination is legally required in many places. Your veterinarian can explain local timing and certificate rules." },
-      { question: "What if I do not know my dog's vaccine history?", answer: "Call your vet. They may recommend restarting or updating vaccines based on risk and medical history." },
-      { question: "Can dogs react to vaccines?", answer: "Mild tiredness can happen, but facial swelling, vomiting, collapse, breathing trouble, or severe weakness needs urgent veterinary care." },
-      { question: "Which page should I read next?", answer: "Read [puppy vaccination schedule chart](/blog/puppy-vaccination-schedule-chart) and [puppy feeding schedule](/tools/puppy-feeding-schedule)." },
+      { question: "When do puppies get their first shots?", answer: "Puppy vaccinations begin at 6–8 weeks of age. The DHPP series is typically given every 3–4 weeks until 16 weeks, followed by a booster at 12 months." },
+      { question: "Is the rabies vaccine required by law?", answer: "Yes, in most U.S. states and many countries, rabies vaccination is legally required. Requirements vary on frequency — check your local regulations." },
+      { question: "How often does an adult dog need shots?", answer: "Core vaccines like DHPP are typically given every 3 years after the puppy series is complete. Rabies and some non-core vaccines are given annually. Your vet will tailor a schedule to your dog." },
+      { question: "Can I delay my puppy\u0027s vaccines?", answer: "Delays increase the window during which your puppy is vulnerable to serious disease. If a vaccine is missed, reschedule as soon as possible and inform your vet." },
+      { question: "Do indoor dogs still need vaccines?", answer: "Yes. Even indoor dogs can be exposed to airborne disease (like distemper), parasites, or rabies if they ever go outside. Core vaccines are recommended for all dogs regardless of lifestyle." },
     ],
     internalLinks: [
       { label: "Puppy vaccination schedule chart", href: "/blog/puppy-vaccination-schedule-chart" },
@@ -9046,37 +9609,113 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "can-cats-eat-eggs",
-    title: "Can Cats Eat Eggs? Cooked Egg Safety, Portions, and Risks",
-    metaTitle: "Can Cats Eat Eggs? Safe Cooked Egg Guide for Cats",
-    metaDescription:
-      "Can cats eat eggs safely? Learn cooked vs raw egg risks, safe portions, when to avoid eggs, and what symptoms mean you should call a vet.",
+    title: "Can Cats Eat Eggs? Benefits, Risks, and How to Feed Them Safely",
+    metaTitle: "Can Cats Eat Eggs? Benefits, Risks, and How to Feed Them Safely",
+    metaDescription: "Can cats eat eggs safely? Learn how to feed eggs to cats, how much is too much, raw vs cooked, and the nutritional benefits for your feline companion.",
     category: "Cats",
     publishedDate: "2026-05-03",
     readingTime: "9 min read",
-    intro:
-      "Eggs can be safe for some healthy cats in tiny cooked portions, but they are not needed for a balanced feline diet. This guide explains how to avoid common mistakes.",
+    intro: "Eggs are among the most nutritionally complete foods available — high in protein, rich in amino acids, and packed with vitamins. But are they safe and appropriate for cats? The answer is yes, with some important conditions. Here\u0027s everything you need to know about feeding eggs to cats.",
     featuredImage: {
       src: "/images/blog/can-cats-eat-eggs.png",
       alt: "Cat near a small plain cooked egg portion in a dish",
       caption: "Plain cooked egg can be an occasional tiny treat for some healthy cats.",
     },
     sections: [
-      { heading: "Quick answer: can cats eat eggs?", paragraphs: ["Yes, many healthy cats can eat a tiny amount of plain cooked egg. Eggs should be fully cooked, unseasoned, and treated as an occasional treat, not a meal replacement."] },
-      { heading: "Safety note", paragraphs: ["Ask your vet first if your cat has pancreatitis risk, obesity, diabetes, food allergies, kidney disease, digestive sensitivity, or a prescription diet."] },
-      { heading: "Cooked vs raw eggs", paragraphs: ["Cooked eggs are safer than raw eggs because raw eggs can carry bacteria and create avoidable food-safety risk. Do not add butter, salt, onion, garlic, cheese, or spices."] },
-      { heading: "How much is okay?", paragraphs: ["Portions should be tiny. Start with a pea-sized amount and monitor stool, appetite, and vomiting for the next day."] },
-      { heading: "When to avoid eggs", paragraphs: ["Eggs are not ideal for every cat."], bullets: ["Active vomiting or diarrhea", "Weight-loss plan", "Known egg sensitivity", "Prescription diet", "History of pancreatitis or fat sensitivity"] },
-      { heading: "Common mistakes", paragraphs: ["Eggs can cause problems when portions or preparation are wrong."], bullets: ["Feeding raw egg", "Adding seasoning", "Giving large portions", "Using eggs during GI upset", "Replacing balanced cat food"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call if your cat vomits repeatedly, has diarrhea, stops eating, seems weak, develops swelling or itch, or reacts after any new food."] },
-      { heading: "Key Takeaways", paragraphs: ["Eggs are optional."], bullets: ["Cook plain", "Use tiny portions", "Avoid raw egg", "Skip for medically sensitive cats unless vet-approved"] },
+      {
+        heading: "Are Eggs Safe for Cats?",
+        paragraphs: [
+          "Cooked eggs are safe for cats and can be a nutritious occasional treat. Cats are obligate carnivores — their bodies are built to derive nutrition from animal protein — and eggs fit that biological profile well.",
+          "The American Society for the Prevention of Cruelty to Animals (ASPCA) does not list eggs as toxic to cats. However, they should be given in moderation as a treat rather than a dietary staple.",
+        ],
+      },
+      {
+        heading: "Nutritional Benefits of Eggs for Cats",
+        paragraphs: [
+          "Eggs offer several nutrients that are beneficial to cats:",
+          "Given that protein is the cornerstone of a cat\u0027s diet, eggs are one of the better human foods cats can eat — in appropriate quantities.",
+        ],
+        bullets: [
+          "Complete protein — eggs contain all essential amino acids cats need",
+          "Taurine — critical for feline heart and eye health (found in egg yolks)",
+          "Vitamin B12 — supports nerve function and red blood cells",
+          "Riboflavin (B2) — aids energy metabolism",
+          "Selenium — antioxidant that supports immune function",
+          "Healthy fats — egg yolks contain fats that support coat health",
+        ],
+      },
+      {
+        heading: "Raw vs. Cooked Eggs: Which Is Better?",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Cooked Eggs: Recommended",
+        paragraphs: [
+          "Cooked eggs are the safest option for cats. Cooking eliminates two key risks:",
+          "Scrambled, boiled, or poached eggs with no added butter, oil, salt, or seasoning are ideal.",
+        ],
+        bullets: [
+          "Salmonella — raw eggs can carry Salmonella bacteria, which causes serious GI illness in cats",
+          "Avidin — raw egg whites contain avidin, a protein that blocks biotin (vitamin B7) absorption. Chronic consumption of raw egg whites can lead to biotin deficiency",
+        ],
+      },
+      {
+        heading: "Raw Eggs: Not Recommended",
+        paragraphs: [
+          "While some raw feeders include raw eggs in their cats\u0027 diets, the standard veterinary recommendation is to avoid raw eggs due to bacterial contamination risk and the avidin issue, particularly with egg whites.",
+        ],
+      },
+      {
+        heading: "How Much Egg Can a Cat Eat?",
+        paragraphs: [
+          "Eggs should be treated as an occasional treat, not a regular meal. General guidelines:",
+          "The average cat needs about 200–250 calories per day. One whole egg contains approximately 70–80 calories — that\u0027s a large portion of a cat\u0027s daily calorie budget from a single treat.",
+        ],
+        bullets: [
+          "A full egg is too much — cats are small and a whole egg represents a significant caloric load",
+          "A few small bites of cooked egg a couple of times per week is appropriate",
+          "Treats (including eggs) should not exceed 10% of a cat\u0027s daily caloric intake",
+        ],
+      },
+      {
+        heading: "How to Prepare Eggs for Cats",
+        paragraphs: [
+          "Preparation matters. Follow these guidelines:",
+        ],
+        bullets: [
+          "Cook thoroughly — scrambled, hard-boiled, or poached all work",
+          "No added salt, pepper, butter, oil, garlic, onion, or any seasoning",
+          "Allow to cool to room temperature before serving",
+          "Cut into small, bite-sized pieces",
+          "Serve plain — no cheese, no milk, no other additions",
+        ],
+      },
+      {
+        heading: "Can Kittens Eat Eggs?",
+        paragraphs: [
+          "Kittens can eat small amounts of cooked egg as a protein supplement. However, their primary nutrition should come from high-quality kitten food formulated for growth. Avoid making eggs a regular food for kittens — their nutritional requirements are carefully calibrated, and irregular additions can unbalance their diet.",
+        ],
+      },
+      {
+        heading: "Signs of Egg Intolerance in Cats",
+        paragraphs: [
+          "While rare, some cats may not tolerate eggs well. Watch for:",
+          "If you notice any of these signs, discontinue eggs and consult your vet.",
+        ],
+        bullets: [
+          "Vomiting or diarrhea after eating egg",
+          "Lethargy",
+          "Skin irritation or itching (possible allergy)",
+        ],
+      },
     ],
     faqs: [
-      { question: "Can cats eat scrambled eggs?", answer: "Yes, some cats can eat a tiny amount of plain scrambled egg with no butter, oil, salt, cheese, onion, or garlic." },
-      { question: "Can cats eat boiled eggs?", answer: "Plain boiled egg can be safe in tiny portions for many healthy cats. Keep it rare and small." },
-      { question: "Can cats eat raw eggs?", answer: "Raw eggs are not recommended because of bacterial risk and avoidable food-safety concerns." },
-      { question: "Can kittens eat eggs?", answer: "Kittens should focus on complete kitten food. Egg treats are unnecessary and may upset digestion." },
-      { question: "Can eggs help cats with diarrhea?", answer: "Do not use eggs as a diarrhea treatment. New foods or extra fat may worsen stomach upset." },
-      { question: "Which page should I read next?", answer: "Read [cats that puke](/blog/cats-that-puke) and [cat gut health guide](/blog/cat-gut-health-guide)." },
+      { question: "Can cats eat scrambled eggs?", answer: "Yes — plain scrambled eggs cooked without butter, oil, or seasoning are a safe treat for cats. Avoid any additives like cheese or milk." },
+      { question: "Can cats eat egg yolks?", answer: "Yes. Egg yolks are actually the more nutritious part for cats — they contain taurine, healthy fats, and fat-soluble vitamins. Still, limit portion sizes." },
+      { question: "Can cats eat egg whites?", answer: "Cooked egg whites are safe. Raw egg whites should be avoided due to avidin, which can lead to biotin deficiency with repeated exposure." },
+      { question: "How often can I give my cat egg?", answer: "Two to three times per week in small amounts is a reasonable frequency. Don\u0027t make eggs a daily food — variety and balance matter." },
+      { question: "Is egg a good source of taurine for cats?", answer: "Eggs contain some taurine, but cats\u0027 primary taurine needs should be met through their main diet — a quality commercial cat food formulated with adequate taurine levels. Eggs are a supplement, not a replacement." },
     ],
     internalLinks: [
       { label: "Cats that puke", href: "/blog/cats-that-puke" },
@@ -9088,38 +9727,127 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "fip-cats",
-    title: "FIP in Cats: Symptoms, Diagnosis, Treatment Questions, and Hope",
-    metaTitle: "FIP in Cats: Symptoms, Wet vs Dry FIP, and Treatment Questions",
-    metaDescription:
-      "Learn what FIP in cats means, common symptoms, wet vs dry patterns, diagnosis basics, newer treatment questions, and when to seek urgent veterinary care.",
+    title: "FIP in Cats: Symptoms, Diagnosis, and Treatment Options",
+    metaTitle: "FIP in Cats: Symptoms, Diagnosis, and Treatment Options",
+    metaDescription: "Learn what FIP in cats is, the symptoms by form, how it\u0027s diagnosed, and the latest antiviral treatment options available for feline infectious peritonitis.",
     category: "Cats",
     publishedDate: "2026-05-03",
     readingTime: "11 min read",
-    intro:
-      "FIP can be frightening, but treatment options and veterinary guidance have changed in recent years. This guide explains the basics in simple language and helps owners prepare better questions.",
+    intro: "Feline Infectious Peritonitis (FIP) was once considered a near-certain death sentence for cats. That has changed. Thanks to antiviral treatments, FIP is now treatable — and many cats are surviving and thriving. This guide explains what FIP is, how to recognize it, how it\u0027s diagnosed, and what treatment looks like today.",
     featuredImage: {
       src: "/images/blog/fip-cats.png",
       alt: "Concerned cat owner with a cat during a veterinary exam for FIP guidance",
       caption: "Suspected FIP needs prompt veterinary evaluation and careful follow-up.",
     },
     sections: [
-      { heading: "Quick answer: what is FIP in cats?", paragraphs: ["FIP stands for feline infectious peritonitis. It is a serious disease linked to feline coronavirus changes inside some cats. FIP can cause fluid buildup, fever, weight loss, eye or neurologic signs, and severe illness."] },
-      { heading: "Safety note", paragraphs: ["FIP is a serious condition. This article is educational and should not be used to diagnose or treat your cat at home. Contact your veterinarian quickly if FIP is suspected."] },
-      { heading: "Wet vs dry FIP", paragraphs: ["FIP patterns are often described as wet or dry, but real cases can overlap."], bullets: ["Wet FIP may cause fluid in the belly or chest", "Dry FIP may cause inflammation in organs", "Eye changes can occur", "Neurologic signs can occur", "Fever and weight loss are common concerns"] },
-      { heading: "Common signs", paragraphs: ["Symptoms can be vague at first and may look like other diseases."], bullets: ["Persistent fever", "Low appetite", "Weight loss", "Swollen belly", "Breathing effort", "Eye changes", "Wobbliness or seizures"] },
-      { heading: "Diagnosis basics", paragraphs: ["There is no single simple home test. Vets use history, exam findings, bloodwork, imaging, fluid analysis, and sometimes specialist input to build a diagnosis."] },
-      { heading: "Treatment conversations", paragraphs: ["Veterinary treatment discussions have changed as antiviral options have become more accessible in some settings. Your vet is the right person to discuss legal, safe, and case-specific options."] },
-      { heading: "Common mistakes", paragraphs: ["Fast action matters."], bullets: ["Waiting through weight loss or fever", "Trying unverified products", "Skipping diagnostics", "Assuming all coronavirus exposure means FIP", "Stopping follow-up too soon"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call urgently for persistent fever, belly swelling, breathing effort, severe lethargy, not eating, eye changes, neurologic signs, or rapid weight loss."] },
-      { heading: "Key Takeaways", paragraphs: ["FIP is serious, but prompt veterinary care matters."], bullets: ["Symptoms can be vague", "Wet and dry patterns may overlap", "Diagnosis needs a vet", "Ask about current treatment options quickly"] },
+      {
+        heading: "What Is FIP in Cats?",
+        paragraphs: [
+          "FIP is a serious, systemic disease caused by a mutated form of the feline coronavirus (FCoV). Most cats that encounter feline coronavirus experience mild gastrointestinal symptoms or none at all. In a small percentage of cases — estimated at 5–10% — the virus mutates within the body into a form that causes FIP.",
+          "FIP affects the immune system and can damage multiple organs. It is not directly contagious — FIP itself cannot be spread from cat to cat. The underlying feline coronavirus (which can trigger FIP) can spread through feces and shared litter boxes.",
+        ],
+      },
+      {
+        heading: "Forms of FIP",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Wet (Effusive) FIP",
+        paragraphs: [
+          "The wet form is characterized by fluid accumulation in body cavities:",
+          "Wet FIP typically progresses faster than the dry form. It is more visually apparent and often how FIP is first suspected.",
+        ],
+        bullets: [
+          "Abdominal fluid buildup (distended, fluid-filled belly)",
+          "Chest cavity fluid (causing breathing difficulty)",
+        ],
+      },
+      {
+        heading: "Dry (Non-Effusive) FIP",
+        paragraphs: [
+          "The dry form involves granulomas (inflammatory cell clusters) forming in organs — particularly the kidneys, liver, eyes, brain, and lymph nodes. Symptoms depend on which organs are affected and may include:",
+          "Dry FIP is harder to diagnose because symptoms vary widely and mimic other diseases.",
+        ],
+        bullets: [
+          "Weight loss and muscle wasting",
+          "Fever that doesn\u0027t respond to antibiotics",
+          "Neurological signs — seizures, wobbling, behavior changes",
+          "Eye inflammation (uveitis)",
+          "Jaundice (yellow tinge to gums, eyes, or skin)",
+        ],
+      },
+      {
+        heading: "Mixed FIP",
+        paragraphs: [
+          "Some cats have elements of both wet and dry FIP, and the forms can transition from one to the other.",
+        ],
+      },
+      {
+        heading: "Which Cats Are Most at Risk?",
+        paragraphs: [
+          "FIP most commonly affects:",
+        ],
+        bullets: [
+          "Young cats (under 2 years) and senior cats (over 10 years)",
+          "Cats in multi-cat households, shelters, or catteries",
+          "Purebred cats — certain breeds including Bengals, Raguamuffins, Abyssinians, and Birmans appear more susceptible",
+          "Immunocompromised cats",
+        ],
+      },
+      {
+        heading: "Symptoms of FIP in Cats",
+        paragraphs: [
+          "FIP can present differently depending on the form and organs involved. Common signs include:",
+          "Because these symptoms overlap with many diseases, FIP is not always the first diagnosis considered.",
+        ],
+        bullets: [
+          "Persistent fever unresponsive to antibiotics",
+          "Progressive weight loss and loss of appetite",
+          "Lethargy and weakness",
+          "Pot-bellied appearance (wet form — fluid in abdomen)",
+          "Difficulty breathing (wet form — fluid in chest)",
+          "Neurological symptoms — seizures, incoordination, paralysis (dry form)",
+          "Eye changes — cloudiness, inflammation, unequal pupil sizes",
+        ],
+      },
+      {
+        heading: "How Is FIP Diagnosed?",
+        paragraphs: [
+          "FIP diagnosis is challenging because there is no single definitive test in routine clinical use. Vets typically use a combination of:",
+          "A definitive diagnosis traditionally required biopsy, but with the availability of antiviral treatments, some vets now treat presumptively based on strong clinical evidence.",
+        ],
+        bullets: [
+          "Physical exam and clinical signs",
+          "Blood tests — low albumin-to-globulin ratio, elevated globulins, anemia, elevated bilirubin",
+          "Fluid analysis — FIP fluid is typically yellow, viscous, and high in protein",
+          "Coronavirus antibody titers — elevated levels support but don\u0027t confirm FIP",
+          "Immunohistochemistry or PCR testing on tissue or fluid samples — more definitive",
+          "Advanced: Rivalta test for abdominal fluid",
+        ],
+      },
+      {
+        heading: "FIP Treatment: GS-441524 and Antivirals",
+        paragraphs: [
+          "The landscape for FIP treatment changed dramatically with the discovery that nucleoside analogues — particularly GS-441524 and molnupiravir — are highly effective against the FIP virus.",
+          "GS-441524, a precursor to the antiviral remdesivir, has shown remission rates exceeding 80% in clinical and field studies when given for 84+ days (12 weeks). In 2023, Bova Pharmaceuticals received approval for Mutian and later Xraphconn for FIP treatment in several markets.",
+          "Treatment involves daily injections or oral tablets for a minimum of 84 days, followed by an observation period. Cats that remain symptom-free for 12+ weeks after completing treatment are considered to be in remission.",
+          "Neurological and ocular FIP typically require higher doses and longer treatment. Work closely with a vet experienced in FIP treatment — dosing protocols vary by form and severity.",
+        ],
+      },
+      {
+        heading: "Cost and Access",
+        paragraphs: [
+          "FIP treatment can be expensive — full treatment courses range from hundreds to thousands of dollars depending on the drug source, cat weight, and disease form. Licensed veterinary formulations are now available in several countries, including the USA, Australia, and parts of Europe. Patient assistance programs and rescue groups sometimes help offset costs.",
+        ],
+      },
     ],
     faqs: [
-      { question: "Is FIP always fatal in cats?", answer: "FIP was historically considered almost always fatal, but treatment options have changed. Prognosis depends on the cat, disease pattern, timing, and veterinary treatment access." },
-      { question: "What are early signs of FIP?", answer: "Early signs may include fever, low appetite, weight loss, tiredness, or vague illness. Some cats later develop fluid, eye signs, or neurologic signs." },
-      { question: "Is FIP contagious between cats?", answer: "FIP itself is not usually considered contagious in the simple way owners fear, but feline coronavirus can spread among cats. Ask your vet about household risk and hygiene." },
-      { question: "How is FIP diagnosed?", answer: "Diagnosis usually uses a combination of exam findings, bloodwork, imaging, fluid tests, and overall pattern. Your vet may recommend referral or additional testing." },
-      { question: "Can FIP be treated now?", answer: "In many regions, veterinarians can discuss antiviral treatment options that were not previously available through standard paths. Ask your vet about current legal and safe options." },
-      { question: "Which page should I read next?", answer: "Read [symptoms of kidney disease in cats](/blog/symptoms-of-kidney-disease-in-cats) and [why is my cat breathing heavy](/blog/why-is-my-cat-breathing-heavy)." },
+      { question: "Is FIP in cats contagious to other cats?", answer: "FIP itself is not directly contagious. The underlying feline coronavirus (FCoV) can spread between cats, but most cats that get FCoV don\u0027t develop FIP. Separate litter boxes and good hygiene reduce FCoV transmission." },
+      { question: "What is the survival rate for FIP with treatment?", answer: "With antiviral treatment (GS-441524), remission rates are reported to exceed 80–85% for wet and dry FIP. Neurological FIP has a somewhat lower but still significant response rate." },
+      { question: "How long does FIP treatment last?", answer: "The standard protocol is at least 84 days (12 weeks) of antiviral treatment, followed by a 12-week observation period. Total process: approximately 6 months." },
+      { question: "Can FIP come back after treatment?", answer: "Relapse is possible but uncommon when treatment is completed properly. Some cats that relapse respond to retreatment. Regular monitoring after completing the course is important." },
+      { question: "What is the difference between wet and dry FIP?", answer: "Wet FIP causes fluid accumulation in body cavities (abdomen or chest), causing visible swelling and breathing issues. Dry FIP involves granulomas forming in organs with variable symptoms depending on what\u0027s affected — often harder to diagnose." },
     ],
     internalLinks: [
       { label: "Why is my cat breathing heavy?", href: "/blog/why-is-my-cat-breathing-heavy" },
@@ -9131,38 +9859,156 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "why-do-dogs-eat-poop",
-    title: "Why Do Dogs Eat Poop? Causes, Prevention, and When to Call a Vet",
-    metaTitle: "Why Do Dogs Eat Poop? Coprophagia Causes and Training Tips",
-    metaDescription:
-      "Learn why dogs eat poop, common behavior and medical causes, how to prevent access, training tips, and when coprophagia needs veterinary care.",
+    title: "Why Do Dogs Eat Poop? Causes and How to Stop It",
+    metaTitle: "Why Do Dogs Eat Poop? Causes and How to Stop It",
+    metaDescription: "Why do dogs eat poop? Learn the medical, behavioral, and nutritional causes of coprophagia in dogs — and proven strategies to stop it for good.",
     category: "Dogs",
     publishedDate: "2026-05-03",
     readingTime: "10 min read",
-    intro:
-      "Poop eating is unpleasant, but it is also common enough that vets and behavior professionals have a name for it: coprophagia. This guide explains practical next steps.",
+    intro: "Few things are as off-putting to dog owners as watching their dog eat poop. Technically called coprophagia, this behavior is more common than most people realize — and it\u0027s rarely a sign of a serious problem. Understanding why dogs do it is the first step to stopping it. This guide breaks down every known cause and the most effective strategies to address the behavior.",
     featuredImage: {
       src: "/images/blog/why-do-dogs-eat-poop.png",
       alt: "Dog owner redirecting a dog outdoors with a leash and cleanup bag for a poop eating guide",
       caption: "Fast cleanup, supervision, and enrichment are often the first steps for dogs that eat poop.",
     },
     sections: [
-      { heading: "Quick answer: why do dogs eat poop?", paragraphs: ["Dogs may eat poop because of curiosity, scavenging, habit, boredom, confinement, stress, attention-seeking, hunger, diet issues, or medical problems. Puppies may explore this behavior, but repeated coprophagia deserves a plan."] },
-      { heading: "Safety note", paragraphs: ["Poop can carry parasites, bacteria, or medication residues. If the habit is new, intense, or paired with appetite, weight, stool, or behavior changes, call your vet."] },
-      { heading: "Common behavior causes", paragraphs: ["Many dogs repeat the behavior because access is easy and the habit becomes rewarding."], bullets: ["Puppy exploration", "Scavenging habit", "Boredom or low enrichment", "Attention from owners", "Stress or confinement", "Learning from repeated access"] },
-      { heading: "Possible medical causes", paragraphs: ["Medical causes are less common than simple access, but they matter."], bullets: ["Digestive disease", "Increased appetite from illness or medication", "Poor nutrient absorption", "Parasites", "Diet mismatch"] },
-      { heading: "How to stop access", paragraphs: ["Management is the first treatment because a dog cannot practice a habit it cannot reach."], bullets: ["Pick up stool immediately", "Supervise yard time", "Use leash walks for control", "Teach leave it", "Reward coming away", "Keep litter boxes blocked"] },
-      { heading: "Training and enrichment", paragraphs: ["Punishment can make dogs secretive. Use redirection, reward-based training, puzzle feeders, exercise, and predictable routines."] },
-      { heading: "Common mistakes", paragraphs: ["The habit often persists when cleanup and supervision are inconsistent."], bullets: ["Yelling after the fact", "Letting the dog rehearse the behavior", "Ignoring hunger or stool changes", "Skipping parasite checks", "Expecting supplements to fix everything"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call for sudden poop eating, weight loss, diarrhea, vomiting, increased hunger or thirst, poor coat, stool changes, or if your dog may have eaten feces from another sick animal."] },
-      { heading: "Key Takeaways", paragraphs: ["Coprophagia usually needs both management and investigation."], bullets: ["Remove access quickly", "Use reward-based redirection", "Rule out medical causes when signs change", "Improve enrichment and routine"] },
+      {
+        heading: "What Is Coprophagia?",
+        paragraphs: [
+          "Coprophagia is the consumption of feces — either the dog\u0027s own (autocoprophagia) or another animal\u0027s (allocoprophagia). Dogs may eat their own stool, another dog\u0027s stool, cat feces, or the droppings of wildlife like deer or rabbits.",
+          "Studies suggest that roughly 16–23% of dogs eat feces at least occasionally. It\u0027s considered normal in certain contexts (like mother dogs cleaning up after newborns) but problematic when it becomes a consistent habit.",
+        ],
+      },
+      {
+        heading: "Why Do Dogs Eat Poop? The Main Causes",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "1. Nutritional Deficiency",
+        paragraphs: [
+          "One of the most common medical explanations is that a dog isn\u0027t absorbing enough nutrients from their food. This can result from:",
+          "In these cases, feces may still contain undigested nutrients the dog is instinctively drawn to.",
+        ],
+        bullets: [
+          "Poor-quality diet with inadequate nutrient density",
+          "Enzyme deficiency — the dog lacks enzymes needed to properly digest food",
+          "Malabsorption disorders — conditions where nutrients pass through without being absorbed",
+        ],
+      },
+      {
+        heading: "2. Parasites",
+        paragraphs: [
+          "Intestinal parasites compete for nutrients in the gut, leaving a dog nutritionally depleted and potentially driving coprophagia. A fecal exam can rule this out quickly.",
+        ],
+      },
+      {
+        heading: "3. Hunger",
+        paragraphs: [
+          "Dogs that are underfed, fed infrequently, or fed a low-calorie diet may eat feces out of genuine hunger. This is especially common in rescue dogs from food-insecure backgrounds.",
+        ],
+      },
+      {
+        heading: "4. Learned Behavior",
+        paragraphs: [
+          "Dogs learn by observing. A puppy may see another dog eat feces and mimic the behavior. Puppies also explore the world with their mouths and sometimes eat feces simply out of curiosity — a phase many grow out of.",
+        ],
+      },
+      {
+        heading: "5. Attention-Seeking",
+        paragraphs: [
+          "If a dog has learned that eating poop gets a strong reaction from their owner — even a negative one — they may repeat the behavior for the attention it generates. Dogs that are bored or under-stimulated are particularly prone to this.",
+        ],
+      },
+      {
+        heading: "6. Stress and Anxiety",
+        paragraphs: [
+          "Dogs under stress — due to confinement, punishment, or anxiety — sometimes eat feces. It may be a self-soothing behavior or a response to stress-induced hyperactivity.",
+        ],
+      },
+      {
+        heading: "7. Medical Conditions",
+        paragraphs: [
+          "Certain health conditions increase the likelihood of coprophagia:",
+        ],
+        bullets: [
+          "Cushing\u0027s disease (hyperadrenocorticism) — increases appetite significantly",
+          "Diabetes or thyroid conditions — can drive increased hunger",
+          "Steroid medication — known to increase appetite and food-seeking behavior",
+        ],
+      },
+      {
+        heading: "8. Instinct",
+        paragraphs: [
+          "Wolves and wild dogs sometimes consume feces to clean their den and protect pups from predators who track scent. While domestic dogs don\u0027t face this pressure, remnants of this instinct may persist, particularly in females with puppies.",
+        ],
+      },
+      {
+        heading: "Is Eating Poop Dangerous for Dogs?",
+        paragraphs: [
+          "The risks depend on what was eaten:",
+          "Additionally, a dog that eats poop and then licks your face exposes you to those same pathogens. For immunocompromised individuals or young children, this is a hygiene concern.",
+        ],
+        bullets: [
+          "Own feces (healthy dog): Generally low risk",
+          "Another dog\u0027s feces: Possible transmission of intestinal parasites or bacterial pathogens",
+          "Cat feces: Risk of Toxoplasma and intestinal parasites — cat litter boxes should be inaccessible to dogs",
+          "Wildlife feces: Higher risk of parasites (giardia, cryptosporidium), bacteria, and toxins",
+        ],
+      },
+      {
+        heading: "How to Stop a Dog From Eating Poop",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Step 1: Rule Out Medical Causes",
+        paragraphs: [
+          "See your vet first. A fecal exam, blood panel, and dietary assessment can identify nutritional deficiencies, parasites, or underlying health conditions driving the behavior.",
+        ],
+      },
+      {
+        heading: "Step 2: Improve Diet Quality",
+        paragraphs: [
+          "Switch to a high-protein, digestible diet. Consider adding a digestive enzyme supplement if malabsorption is suspected. Some vets recommend adding pineapple, pumpkin, or specific deterrent supplements to the diet — the theory is they alter the taste of feces.",
+        ],
+      },
+      {
+        heading: "Step 3: Management and Environment",
+        paragraphs: [
+        ],
+        bullets: [
+          "Pick up stool immediately after your dog eliminates",
+          "Keep cat litter boxes in a location inaccessible to your dog",
+          "Supervise outdoor time until the behavior is under control",
+          "Use baby gates or covered litter boxes",
+        ],
+      },
+      {
+        heading: "Step 4: Training",
+        paragraphs: [
+          "Teach and reinforce a strong \"leave it\" command. Reward your dog heavily for ignoring feces. Avoid scolding or overreacting — this can inadvertently reinforce the behavior.",
+        ],
+      },
+      {
+        heading: "Step 5: Address Boredom and Anxiety",
+        paragraphs: [
+          "Increase exercise, play, and mental stimulation. Dogs that are well-exercised and mentally engaged are less likely to engage in problematic behaviors. If anxiety is the root cause, work with a veterinary behaviorist.",
+        ],
+      },
+      {
+        heading: "Deterrent Products: Do They Work?",
+        paragraphs: [
+          "Products like For-Bid or Deter contain ingredients (often monosodium glutamate or plant-based bitter compounds) meant to make feces taste unpleasant. Results are mixed — they work for some dogs and not at all for others. They\u0027re worth trying as one component of a broader strategy, but rarely solve the issue alone.",
+        ],
+      },
     ],
     faqs: [
-      { question: "Is it normal for puppies to eat poop?", answer: "Some puppies explore poop as part of curiosity, but it should still be managed early so it does not become a habit." },
-      { question: "Can eating poop make dogs sick?", answer: "Yes. Dogs can be exposed to parasites, bacteria, viruses, or medication residues depending on the source." },
-      { question: "Does pineapple stop dogs from eating poop?", answer: "Home tricks are unreliable. Management, cleanup, training, enrichment, and veterinary review are more useful." },
-      { question: "Why does my dog eat cat poop?", answer: "Cat poop can smell food-like to dogs because of cat food protein content. Block litter box access and reward your dog for leaving it." },
-      { question: "Should I punish my dog for eating poop?", answer: "Punishment after the fact usually does not help and can increase sneaky behavior. Prevent access and reward better choices." },
-      { question: "Which page should I read next?", answer: "Read [my dog is having diarrhea](/blog/my-dog-is-having-diarrhea) and [dog probiotics for diarrhea](/blog/dog-probiotics-for-diarrhea)." },
+      { question: "Is it normal for dogs to eat poop?", answer: "It\u0027s common — studies show up to 23% of dogs do it at least occasionally. In puppies, it\u0027s especially common and often self-resolves. In adult dogs, it\u0027s worth investigating the cause." },
+      { question: "Why does my dog eat cat poop?", answer: "Cat feces often contain undigested protein from high-meat diets, making it appealing to dogs. This is sometimes called \"raiding the litter box\" and can be stopped by using covered boxes or relocating them out of the dog\u0027s reach." },
+      { question: "Can dogs get sick from eating poop?", answer: "Yes. Dogs can contract intestinal parasites, Salmonella, Campylobacter, giardia, and other pathogens from consuming feces — especially from wildlife or other animals. Regular deworming and vet checkups are important." },
+      { question: "Why does my puppy eat poop?", answer: "Puppies commonly eat poop out of curiosity and exploration. Most outgrow the behavior by 6–9 months. Keep the environment clean and supervise closely during this stage." },
+      { question: "What vitamin deficiency causes dogs to eat poop?", answer: "Thiamine (B1) deficiency and enzyme deficiencies have been associated with coprophagia, though research is ongoing. A complete diet and enzyme support often help reduce the behavior." },
     ],
     internalLinks: [
       { label: "My dog is having diarrhea", href: "/blog/my-dog-is-having-diarrhea" },
