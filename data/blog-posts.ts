@@ -8072,37 +8072,149 @@ const blogPosts: BlogPost[] = [
   {
     slug: "how-many-teeth-does-a-dog-have",
     title: "How Many Teeth Does a Dog Have?",
-    metaTitle: "How Many Teeth Does a Dog Have? Puppy vs Adult Tooth Count",
-    metaDescription:
-      "Learn how many teeth dogs have, puppy vs adult counts, teething timeline, and when tooth loss or oral signs need a vet.",
+    metaTitle: "How Many Teeth Does a Dog Have?",
+    metaDescription: "How many teeth does a dog have? Learn the full count for adult dogs and puppies, when teeth erupt, how dental disease develops, and how to keep your dog\u0027s teeth healthy.",
     category: "Dogs",
     publishedDate: "2026-04-29",
     readingTime: "9 min read",
-    intro:
-      "Dog tooth count questions are common for new pet parents. This guide explains puppy and adult counts, eruption timeline, and oral warning signs.",
+    intro: "Adult dogs have 42 teeth. Puppies have 28 baby teeth. That\u0027s the quick answer — but there\u0027s a lot more to know if you want your dog\u0027s mouth to stay healthy. Dental disease is the most common health condition in dogs. By age 3, most dogs show some signs of it. Understanding your dog\u0027s teeth is the first step to preventing it.",
     featuredImage: {
       src: "/images/blog/how-many-teeth-does-a-dog-have.png",
       alt: "Dog receiving a gentle veterinary dental checkup for a tooth count guide",
       caption: "Adult dogs typically have a different tooth count than puppies, so routine mouth checks help owners notice changes early.",
     },
     sections: [
-      { heading: "Quick answer: how many teeth does a dog have?", paragraphs: ["Puppies usually have 28 baby teeth. Adult dogs typically have 42 permanent teeth."] },
-      { heading: "Safety note", paragraphs: ["Tooth count is educational context only. Mouth pain, bleeding, or broken teeth should be examined by your veterinarian."] },
-      { heading: "Puppy teeth vs adult teeth", paragraphs: ["Puppy teeth are temporary and are replaced during development. Adult teeth should be complete by the end of teething stages."] },
-      { heading: "Teething timeline basics", paragraphs: ["Tooth eruption timing can vary slightly by dog. Monitoring chewing comfort and oral health is important during transitions."] },
-      { heading: "Real-world example", paragraphs: ["A puppy owner notices a missing tooth during teething. In many cases this is normal, but retained baby teeth need veterinary review."] },
-      { heading: "Common mistakes", paragraphs: ["Avoid these oral-care mistakes."], bullets: ["Ignoring retained baby teeth", "No routine oral checks", "Using unsafe chew items", "Waiting for severe odor or pain"] },
-      { heading: "Practical checklist", paragraphs: ["Use this for routine oral tracking."], bullets: ["Tooth count progress in puppies", "Chewing comfort", "Breath odor trend", "Gum redness/bleeding", "Any fractured tooth"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call for retained baby teeth, broken teeth, mouth pain, bleeding gums, foul odor, or appetite change from oral discomfort."] },
-      { heading: "Key Takeaways", paragraphs: ["Knowing tooth count helps spot abnormal patterns early."], bullets: ["Puppies and adults have different counts", "Teething transition needs observation", "Dental pain should not be delayed", "Routine checks improve long-term oral health"] },
+      {
+        heading: "Dog Teeth — The Full Count",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Adult Dogs: 42 Teeth",
+        paragraphs: [
+          "The 42 permanent teeth break down into four types:",
+        ],
+        bullets: [
+          "Incisors — 12 total (6 upper, 6 lower). Small front teeth used for nibbling and grooming.",
+          "Canines — 4 total (2 upper, 2 lower). The long, pointed fang-like teeth. Used for gripping and tearing.",
+          "Premolars — 16 total (8 upper, 8 lower). Located behind the canines. Used for shearing and chewing.",
+          "Molars — 10 total (4 upper, 6 lower). Flat teeth at the back. Used for grinding.",
+        ],
+      },
+      {
+        heading: "Puppies: 28 Baby Teeth",
+        paragraphs: [
+          "Puppies are born without teeth. The deciduous (baby) teeth start coming in around 3–4 weeks of age.",
+          "Puppies have no molars. Those only come in with the permanent teeth.",
+        ],
+        bullets: [
+          "Incisors — 12",
+          "Canines — 4",
+          "Premolars — 12",
+        ],
+      },
+      {
+        heading: "When Do Dogs Lose Their Baby Teeth?",
+        paragraphs: [
+          "The transition from 28 puppy teeth to 42 adult teeth happens between 3 and 7 months of age.",
+          "Eruption timeline:",
+          "By 7 months, most dogs have their full set of 42 permanent teeth.",
+        ],
+        bullets: [
+          "3–5 weeks: deciduous incisors erupt",
+          "5–6 weeks: deciduous canines erupt",
+          "6–8 weeks: deciduous premolars erupt",
+          "3–4 months: permanent incisors begin replacing baby teeth",
+          "4–5 months: permanent canines erupt",
+          "5–6 months: permanent premolars erupt",
+          "5–7 months: permanent molars erupt — the last adult teeth to come in",
+        ],
+      },
+      {
+        heading: "Retained Baby Teeth — A Common Problem",
+        paragraphs: [
+          "Sometimes a baby tooth doesn\u0027t fall out when the permanent tooth erupts beneath it. This is called a retained deciduous tooth.",
+          "It\u0027s most common in small and toy breeds — Chihuahuas, Yorkshire Terriers, Maltese, Pomeranians.",
+          "Retained teeth cause problems:",
+          "Retained baby teeth are surgically extracted — usually during the spay or neuter procedure to avoid a second anesthesia.",
+        ],
+        bullets: [
+          "Two teeth fighting for one socket misaligns the bite",
+          "Plaque and tartar accelerate between crowded teeth",
+          "Can cause pain and difficulty eating",
+        ],
+      },
+      {
+        heading: "Dog Dental Disease — Why It Matters",
+        paragraphs: [
+          "According to the American Veterinary Dental College, more than 80% of dogs show signs of periodontal disease by age 3.",
+          "It starts silently. Plaque forms on teeth after eating. Within 72 hours, plaque hardens into tartar. Tartar harbors bacteria that attack the gums.",
+          "The progression:",
+          "Bacteria from periodontal disease enter the bloodstream. Research links advanced dental disease to kidney, liver, and heart damage.",
+        ],
+        bullets: [
+          "Stage 1: Gingivitis — red, swollen gums. Fully reversible.",
+          "Stage 2: Early periodontal disease — mild attachment loss. Manageable.",
+          "Stage 3: Moderate periodontal disease — significant damage. Some tooth loss.",
+          "Stage 4: Advanced periodontal disease — severe bone loss, pain, systemic infection risk.",
+        ],
+      },
+      {
+        heading: "Signs of Dental Problems in Dogs",
+        paragraphs: [
+          "Dogs instinctively hide pain. By the time a dog stops eating, dental disease is often severe.",
+        ],
+        bullets: [
+          "Bad breath — the most common early sign",
+          "Brown or yellow tartar buildup on teeth",
+          "Red, swollen, or bleeding gums",
+          "Dropping food while eating",
+          "Pawing at the mouth",
+          "Reluctance to chew or eat hard food",
+          "Drooling more than usual",
+        ],
+      },
+      {
+        heading: "How to Keep Your Dog\u0027s Teeth Healthy",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Brush Daily",
+        paragraphs: [
+          "Daily brushing is the gold standard. Use a dog-specific toothbrush and enzymatic toothpaste. Never use human toothpaste — xylitol and fluoride are toxic to dogs.",
+          "Start young. Puppies that get used to brushing at 8–12 weeks accept it as adults.",
+        ],
+      },
+      {
+        heading: "Dental Chews",
+        paragraphs: [
+          "VOHC-approved (Veterinary Oral Health Council) dental chews have clinical evidence supporting plaque reduction. Look for the VOHC seal on packaging.",
+          "They don\u0027t replace brushing — but they help significantly when brushing isn\u0027t possible.",
+        ],
+      },
+      {
+        heading: "Professional Cleanings",
+        paragraphs: [
+          "Annual professional dental cleanings under anesthesia remove tartar that brushing can\u0027t reach. This is especially important for small breeds.",
+          "Don\u0027t accept anesthesia-free dental cleanings — they\u0027re not effective and leave subgingival (below the gumline) plaque untouched.",
+        ],
+      },
+      {
+        heading: "Dental Diets",
+        paragraphs: [
+          "Prescription dental diets (like Hill\u0027s t/d) have a kibble structure designed to scrub teeth as the dog chews. Effective but expensive as an everyday diet.",
+          "❓ Frequently Asked Questions",
+        ],
+      },
     ],
     faqs: [
-      { question: "How many baby teeth do puppies have?", answer: "Most puppies have 28 deciduous teeth before adult eruption completes." },
-      { question: "How many teeth should an adult dog have?", answer: "Most adult dogs have 42 permanent teeth." },
-      { question: "When do puppies lose baby teeth?", answer: "Teething usually occurs over several months, with some variation by dog." },
-      { question: "What are retained baby teeth?", answer: "Retained baby teeth are teeth that do not fall out when adult teeth erupt, and they often need veterinary attention." },
-      { question: "Can missing teeth be normal?", answer: "Some tooth loss patterns may be normal during teething, but unexplained adult tooth loss is concerning." },
-      { question: "Which page should I read next?", answer: "Read [canine-cavity](/blog/canine-cavity) for tooth-decay and gum disease guidance." },
+      { question: "How many teeth does an adult dog have?", answer: "Adult dogs have 42 permanent teeth — 12 incisors, 4 canines, 16 premolars, and 10 molars." },
+      { question: "How many teeth do puppies have?", answer: "Puppies have 28 deciduous (baby) teeth. They start coming in at 3–4 weeks and fall out between 3–7 months as permanent teeth replace them." },
+      { question: "When do puppies lose their baby teeth?", answer: "Between 3 and 7 months. The incisors go first, then canines, then premolars. Molars only exist as permanent teeth — puppies have none." },
+      { question: "What if my puppy still has baby teeth at 7 months?", answer: "Retained baby teeth need veterinary attention. They won\u0027t fall out on their own and will cause crowding and dental disease. A vet will extract them." },
+      { question: "How often should dogs get their teeth professionally cleaned?", answer: "Most vets recommend annual professional cleanings for average dogs. Small breeds, which are prone to dental disease, may need more frequent cleanings — every 6 months in some cases." },
+      { question: "Can dental disease shorten a dog\u0027s life?", answer: "Yes. Advanced periodontal disease causes chronic bacterial infection and systemic inflammation. Studies link it to kidney, liver, and cardiac disease. Good dental hygiene is genuinely life-extending." },
     ],
     internalLinks: [
       { label: "Canine cavity", href: "/blog/canine-cavity" },
@@ -8218,38 +8330,146 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "treatment-for-a-hot-spot-on-a-dog",
-    title: "Treatment for a Hot Spot on a Dog: What Helps and When to Call a Vet",
-    metaTitle: "Treatment for a Hot Spot on a Dog: Safe Steps and Vet Care",
-    metaDescription:
-      "Learn treatment basics for a hot spot on a dog, what you can do safely at home, what to avoid, and when a skin sore needs veterinary care.",
+    title: "Hot Spot on Dog: Causes, Treatment, and Prevention",
+    metaTitle: "Hot Spot on Dog: Causes, Treatment, and Prevention",
+    metaDescription: "Hot spots on dogs are painful, fast-spreading skin lesions. Learn the causes, symptoms, and step-by-step treatment — including when to see a vet.",
     category: "Dogs",
     publishedDate: "2026-05-01",
     readingTime: "10 min read",
-    intro:
-      "Hot spots can appear quickly and become painful fast. This guide explains what pet parents can do first, what usually needs veterinary help, and how to reduce licking while the skin heals.",
+    intro: "Your dog won\u0027t stop licking one spot. The fur is matted. The skin underneath is red, wet, and raw. That\u0027s a hot spot. And it needs attention fast. Hot spots can double in size within hours. Early treatment is the difference between a minor irritation and a deep skin infection.",
     featuredImage: {
       src: "/images/blog/treatment-for-a-hot-spot-on-a-dog.png",
       alt: "Dog with a mild non-graphic skin hot spot being cared for by an owner",
       caption: "Hot spots can worsen quickly when dogs keep licking or chewing the irritated skin.",
     },
     sections: [
-      { heading: "Quick answer: treatment for a hot spot on a dog", paragraphs: ["A dog hot spot should be kept clean, dry, and protected from licking. Mild irritation may improve with careful monitoring, but painful, spreading, wet, smelly, or bleeding hot spots need veterinary treatment."] },
-      { heading: "Safety note", paragraphs: ["This article is educational and is not a diagnosis. Do not apply human creams, essential oils, peroxide, or steroid products unless your veterinarian specifically recommends them for your dog."] },
-      { heading: "What a hot spot usually looks like", paragraphs: ["Hot spots are irritated skin patches that may look red, moist, raw, or crusted. Dogs often lick, scratch, chew, or rub the area because it feels itchy or painful."], bullets: ["Red or inflamed skin", "Moist or oozing surface", "Hair loss around the sore", "Strong licking or chewing", "Odor or crusting in worse cases"] },
-      { heading: "First steps you can take safely", paragraphs: ["Prevent licking first because repeated licking can make the sore larger. Use an e-collar or recovery collar if your dog keeps reaching the area. Keep the skin dry and avoid covering it tightly unless your vet gives bandage instructions."], bullets: ["Stop licking and chewing", "Keep the area dry", "Use only pet-safe cleaning guidance", "Take a clear photo to track spread", "Book a vet visit if pain or moisture is present"] },
-      { heading: "What your vet may do", paragraphs: ["Veterinary care may include clipping fur around the lesion, cleaning the skin, treating infection, controlling itch or pain, and looking for the trigger. Common triggers include allergies, fleas, ear problems, wet fur, and repeated friction."], bullets: ["Skin exam", "Safe clipping and cleaning", "Medication if infection or inflammation is present", "Flea or allergy plan when needed", "Follow-up instructions to prevent recurrence"] },
-      { heading: "Common mistakes", paragraphs: ["Most hot spot problems get worse when owners try too many products at once or wait while the lesion spreads."], bullets: ["Using alcohol, peroxide, or essential oils", "Letting the dog keep licking", "Covering a wet sore with an airtight bandage", "Assuming every sore is a simple hot spot", "Stopping treatment as soon as the skin looks slightly better"] },
-      { heading: "Practical checklist", paragraphs: ["Before calling your vet, gather details that help triage the issue."], bullets: ["Where the sore is located", "How quickly it appeared", "Whether it is wet, bleeding, or smelly", "How much your dog is licking", "Any flea exposure, bathing, swimming, or allergy history"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call your veterinarian promptly if the hot spot is painful, spreading, wet, bleeding, smelly, near the ear or face, or paired with low energy. Same-day care is safest for large or rapidly worsening lesions."] },
-      { heading: "Key Takeaways", paragraphs: ["Hot spots are common but can become painful infections quickly."], bullets: ["Stop licking early", "Avoid harsh home products", "Vet care is often needed for wet or painful sores", "Find the trigger to prevent repeat hot spots"] },
+      {
+        heading: "What Is a Hot Spot on a Dog?",
+        paragraphs: [
+          "A hot spot — also called acute moist dermatitis — is a localized area of inflamed, infected skin.",
+          "It develops when a dog scratches, licks, or chews one spot repeatedly. The constant moisture and trauma break down the skin barrier. Bacteria colonize the damaged tissue. The infection spreads.",
+          "Hot spots are painful. They itch intensely. And the more the dog licks, the worse it gets.",
+        ],
+      },
+      {
+        heading: "Common Causes",
+        paragraphs: [
+          "Anything that triggers itching can start a hot spot. The most frequent causes:",
+          "Golden Retrievers, Labrador Retrievers, German Shepherds, and Rottweilers are among the most commonly affected breeds.",
+        ],
+        bullets: [
+          "Flea bites — especially in flea-allergic dogs, a single bite can trigger an intense itch response",
+          "Environmental allergies — grass, pollen, mold",
+          "Food allergies — proteins like chicken or beef are common culprits",
+          "Ear infections — dogs scratch near the ear and jaw, creating a prime hot spot zone",
+          "Matted fur — traps heat and moisture against the skin",
+          "Poor grooming — especially in thick double-coated breeds",
+          "Boredom or anxiety — stress licking",
+          "Contact irritants — wet fur from swimming or bathing that doesn\u0027t dry fully",
+        ],
+      },
+      {
+        heading: "What Does a Hot Spot Look Like?",
+        paragraphs: [
+          "Hot spots appear suddenly. In one day, a small red patch can become a large, weeping sore.",
+          "Signs to look for:",
+          "Hot spots most commonly appear on the head (near ears), hip area, and sides of the chest.",
+        ],
+        bullets: [
+          "Red, moist, raw-looking skin",
+          "Defined edges — often circular",
+          "Matted or missing fur over the lesion",
+          "Sticky, yellowish discharge or crust",
+          "Dog constantly licking, chewing, or scratching the area",
+          "Foul odor from the skin",
+        ],
+      },
+      {
+        heading: "How to Treat a Hot Spot on a Dog",
+        paragraphs: [
+          "Start treatment the moment you notice it. Speed matters.",
+        ],
+      },
+      {
+        heading: "Step 1 — Clip the Area",
+        paragraphs: [
+          "Carefully clip the fur around and over the hot spot. Use blunt-nosed scissors or electric clippers.",
+          "You need to expose the skin to air. Fur traps moisture and feeds the infection.",
+          "Clip at least an inch beyond the visible edge of the sore.",
+        ],
+      },
+      {
+        heading: "Step 2 — Clean the Skin",
+        paragraphs: [
+          "Gently clean the area with a mild antiseptic solution — chlorhexidine 2% is ideal. Avoid alcohol or hydrogen peroxide. Both damage healing tissue.",
+          "Pat dry. Do not scrub.",
+        ],
+      },
+      {
+        heading: "Step 3 — Apply Topical Treatment",
+        paragraphs: [
+          "Over-the-counter options that help:",
+          "Apply 2–3 times per day. Keep the area dry between applications.",
+        ],
+        bullets: [
+          "Hydrocortisone spray (0.5–1%) — reduces inflammation and itching",
+          "Chlorhexidine spray — antibacterial, prevents infection spread",
+          "Colloidal oatmeal spray — soothes irritated skin",
+        ],
+      },
+      {
+        heading: "Step 4 — Stop the Licking",
+        paragraphs: [
+          "An e-collar (cone) is not optional. Without it, the dog will undo every treatment the moment you turn away.",
+          "Soft collars and inflatable alternatives work too — the key is preventing access to the site.",
+        ],
+      },
+      {
+        heading: "Step 5 — Monitor Daily",
+        paragraphs: [
+          "A properly treated hot spot should begin to look better within 3–5 days. The discharge stops. The redness fades. New skin forms at the edges.",
+          "If it\u0027s getting larger or the dog is in significant pain — see a vet.",
+        ],
+      },
+      {
+        heading: "When to See a Vet",
+        paragraphs: [
+          "Some hot spots need prescription treatment. Go to a vet if:",
+          "Vets typically prescribe oral antibiotics, short-term corticosteroids to stop itching, and medicated shampoos or sprays.",
+        ],
+        bullets: [
+          "The sore is larger than a golf ball",
+          "It\u0027s spreading rapidly — growing within hours",
+          "The dog is in visible pain",
+          "Thick yellow or green pus is present",
+          "The skin is breaking down or appears deeply infected",
+          "Home treatment hasn\u0027t improved it in 3–4 days",
+        ],
+      },
+      {
+        heading: "How to Prevent Hot Spots",
+        paragraphs: [
+          "Prevention focuses on eliminating the root cause.",
+          "Dogs that get recurring hot spots often have an underlying allergy driving them. Treating the allergy stops the cycle.",
+          "❓ Frequently Asked Questions",
+        ],
+        bullets: [
+          "Year-round flea prevention — the most impactful single step",
+          "Regular grooming — brush weekly, clip thick coats in summer",
+          "Dry your dog fully after swimming or bathing",
+          "Address allergies — work with your vet on a management plan",
+          "Keep ears clean and dry",
+          "Increase exercise for anxious or bored dogs",
+        ],
+      },
     ],
     faqs: [
-      { question: "Can I treat a dog hot spot at home?", answer: "You can prevent licking, keep the area dry, and monitor a very mild spot, but many hot spots need veterinary cleaning and medication. If it is wet, painful, spreading, smelly, or bleeding, call your vet." },
-      { question: "What should I not put on a dog hot spot?", answer: "Avoid peroxide, alcohol, essential oils, human antibiotic creams, and steroid creams unless your vet specifically approves them. These can irritate skin or be unsafe if licked." },
-      { question: "Why does my dog keep licking the hot spot?", answer: "Hot spots can itch, burn, or hurt. Licking temporarily soothes the feeling but usually worsens inflammation and infection risk." },
-      { question: "How long does a hot spot take to heal?", answer: "Healing time depends on size, infection, and the trigger. With proper treatment, many improve within days, but the skin and hair coat may take longer to fully recover." },
-      { question: "Can allergies cause hot spots in dogs?", answer: "Yes. Flea allergy, environmental allergies, food sensitivity, and skin irritation can all contribute to repeated licking and hot spot formation." },
-      { question: "Which page should I read next?", answer: "Read [why do dogs lick their paws](/blog/why-do-dogs-lick-their-paws) and [itchy skin condition guide](/health-conditions/itchy-skin) for related skin irritation patterns." },
+      { question: "How quickly do hot spots develop?", answer: "Very fast. A hot spot can grow from a small red patch to a large infected sore within 24 hours. The sooner you treat it, the smaller and more manageable it stays." },
+      { question: "Can I treat a dog hot spot at home?", answer: "Yes — mild cases respond well to home treatment. Clip the area, clean it with chlorhexidine, apply a topical antiseptic or hydrocortisone spray, and use an e-collar. If it\u0027s not improving in 3–4 days, see a vet." },
+      { question: "Are hot spots contagious to other dogs or humans?", answer: "No. Hot spots are not contagious. They\u0027re caused by the dog\u0027s own licking and scratching response, not an infectious agent that spreads between individuals." },
+      { question: "What breeds get hot spots most often?", answer: "Golden Retrievers, Labrador Retrievers, German Shepherds, Saint Bernards, and Rottweilers are most commonly affected. Thick coats and skin folds create a warm, moist environment where hot spots thrive." },
+      { question: "Do hot spots hurt dogs?", answer: "Yes. Hot spots are painful and intensely itchy. Dogs often cry or flinch when the area is touched. Pain management is part of vet treatment for severe cases." },
+      { question: "Can hot spots heal on their own?", answer: "Rarely. Without treatment, hot spots typically worsen because the dog keeps licking. The infection deepens. Left alone, a surface hot spot can become a deep pyoderma requiring weeks of antibiotics." },
     ],
     internalLinks: [
       { label: "Why do dogs lick their paws?", href: "/blog/why-do-dogs-lick-their-paws" },
@@ -8269,38 +8489,135 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "hypoallergenic-cat-breeds",
-    title: "Hypoallergenic Cat Breeds: What Allergy-Sensitive Owners Should Know",
-    metaTitle: "Hypoallergenic Cat Breeds: Best Cats for Allergy-Sensitive Homes",
-    metaDescription:
-      "Learn which cat breeds are often called hypoallergenic, why no cat is truly allergen-free, and how to choose more realistically.",
+    title: "Hypoallergenic Cat Breeds: What They Are and Which Ones to Consider",
+    metaTitle: "Hypoallergenic Cat Breeds: What They Are and Which Ones to Consider",
+    metaDescription: "Looking for hypoallergenic cat breeds? Discover which cats produce less Fel d 1 allergen, why no cat is truly allergy-free, and how to choose the right breed for allergy sufferers.",
     category: "Cats",
     publishedDate: "2026-05-01",
     readingTime: "10 min read",
-    intro:
-      "Hypoallergenic cat breed lists can be helpful, but they can also create unrealistic expectations. This guide explains the breeds people often consider, what actually causes reactions, and how to plan a safer adoption.",
+    intro: "Cat allergies affect roughly 10–20% of the global population. Yet millions of allergy sufferers still share their homes with cats. The reason: some cats cause fewer reactions than others. This guide explains the science, lists the lowest-allergen breeds, and gives you practical strategies to reduce reactions.",
     featuredImage: {
       src: "/images/blog/hypoallergenic-cat-breeds.png",
       alt: "Group of different cat breeds often discussed for allergy-sensitive homes",
       caption: "No cat breed is completely hypoallergenic, but some cats may trigger fewer symptoms for certain people.",
     },
     sections: [
-      { heading: "Quick answer: hypoallergenic cat breeds", paragraphs: ["No cat breed is completely hypoallergenic. Some breeds, including Siberian, Balinese, Russian Blue, Devon Rex, Cornish Rex, Oriental Shorthair, and Sphynx, are often discussed as lower-allergen options, but individual reactions vary."] },
-      { heading: "Safety note", paragraphs: ["This guide is educational and does not replace medical allergy advice. People with significant asthma or allergy symptoms should speak with a healthcare professional before bringing a cat home."] },
-      { heading: "Why no cat is truly allergy-free", paragraphs: ["Many cat allergies are linked to proteins found in saliva, skin, and dander. Fur length alone does not determine allergy risk because cats spread allergens while grooming."] },
-      { heading: "Breeds often called hypoallergenic", paragraphs: ["Breed labels can be a starting point, not a guarantee. Spend time around the individual cat before adoption whenever possible."], bullets: ["Siberian", "Balinese", "Russian Blue", "Devon Rex", "Cornish Rex", "Oriental Shorthair", "Sphynx", "Bengal"] },
-      { heading: "How to choose responsibly", paragraphs: ["The best choice is the cat you can tolerate in real life, not the breed that looks best on a list. Ask shelters, breeders, or rescues about trial visits, grooming needs, temperament, and return policies before committing."], bullets: ["Spend time with the cat first", "Track symptoms after exposure", "Plan bedroom boundaries", "Budget for grooming and cleaning", "Avoid impulse adoption based only on breed"] },
-      { heading: "Home strategies that help", paragraphs: ["Environmental control often matters as much as breed choice. Consistent cleaning, ventilation, and grooming routines can reduce allergen load in the home."], bullets: ["Use HEPA filtration where practical", "Keep sleeping areas lower-allergen", "Wash pet bedding frequently", "Vacuum with a suitable filter", "Brush or groom according to coat type"] },
-      { heading: "Common mistakes", paragraphs: ["Many allergy-sensitive households struggle because expectations are too absolute."], bullets: ["Assuming hypoallergenic means no symptoms", "Choosing by hair length only", "Skipping trial exposure", "Ignoring grooming requirements", "Letting allergens build up before creating a cleaning routine"] },
-      { heading: "When to Call a Vet", paragraphs: ["For the cat, call a vet for skin irritation, overgrooming, repeated sneezing, watery eyes, or breathing changes. These signs may be health issues rather than normal breed traits."] },
-      { heading: "Key Takeaways", paragraphs: ["Hypoallergenic is a practical search term, not a promise."], bullets: ["No breed is allergen-free", "Individual cat exposure matters", "Home routines reduce allergen load", "Choose with both health and lifestyle in mind"] },
+      {
+        heading: "Are Any Cats Truly Hypoallergenic?",
+        paragraphs: [
+          "No. No cat breed is 100% hypoallergenic.",
+          "All cats produce the Fel d 1 protein — the primary cat allergen. It\u0027s found in cat saliva, skin glands, and urine. When cats groom, Fel d 1 coats their fur. It then dries and becomes airborne.",
+          "What varies between breeds is how much Fel d 1 a cat produces. Some breeds produce significantly less. That\u0027s what makes certain cats more tolerable for allergy sufferers.",
+          "Hair length is mostly irrelevant. A short-haired cat that produces lots of Fel d 1 will trigger more reactions than a long-haired cat that produces little of it.",
+        ],
+      },
+      {
+        heading: "What Causes Cat Allergies?",
+        paragraphs: [
+          "The immune system mistakes Fel d 1 as a threat and mounts an immune response. Symptoms include:",
+          "Fel d 1 is sticky and lightweight. It clings to surfaces, furniture, clothing, and stays airborne for hours. Even a cat-free room can test positive for cat allergen.",
+        ],
+        bullets: [
+          "Sneezing and runny nose",
+          "Itchy, watery eyes",
+          "Skin rash or hives after contact",
+          "Asthma symptoms in sensitive individuals",
+        ],
+      },
+      {
+        heading: "Best Hypoallergenic Cat Breeds",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "1. Siberian",
+        paragraphs: [
+          "The Siberian cat produces unusually low levels of Fel d 1 — studies suggest some individuals produce 2–4x less than the average cat.",
+          "This is surprising given the Siberian\u0027s thick, semi-long triple coat. Many severe cat allergy sufferers live successfully with Siberians.",
+          "They\u0027re large, affectionate, and dog-like in temperament.",
+        ],
+      },
+      {
+        heading: "2. Balinese",
+        paragraphs: [
+          "Often called the \"long-haired Siamese,\" the Balinese produces lower Fel d 1 levels despite its silky, flowing coat.",
+          "They\u0027re vocal, social, and highly intelligent. Good choice for active households.",
+        ],
+      },
+      {
+        heading: "3. Sphynx",
+        paragraphs: [
+          "The Sphynx is hairless — but that\u0027s not why it\u0027s lower-allergen. Hairless cats still produce Fel d 1 through skin glands and saliva.",
+          "What changes is the absence of fur to carry and spread allergen around the home. Weekly bathing removes protein buildup from the skin.",
+          "Sphynx cats are warm, people-oriented, and mischievous.",
+        ],
+      },
+      {
+        heading: "4. Devon Rex",
+        paragraphs: [
+          "The Devon Rex has an unusually short, soft, wavy coat that sheds very little. Less shedding means less allergen distribution.",
+          "They\u0027re small, playful, and intensely bonded to their owners.",
+        ],
+      },
+      {
+        heading: "5. Cornish Rex",
+        paragraphs: [
+          "Similar to the Devon Rex, the Cornish Rex has a tight, curly, minimal undercoat. Very low shedding.",
+          "Active, social cats that love human interaction.",
+        ],
+      },
+      {
+        heading: "6. Russian Blue",
+        paragraphs: [
+          "The Russian Blue\u0027s dense, plush double coat traps allergens close to the body rather than releasing them freely into the air.",
+          "They also produce lower Fel d 1 levels on average. Calm, quiet, and gentle — a good choice for sensitive households.",
+        ],
+      },
+      {
+        heading: "7. Bengal",
+        paragraphs: [
+          "Bengals have a short, tight pelt-like coat that sheds minimally. Less grooming means less Fel d 1 spread.",
+          "Highly active and athletic. Needs significant stimulation and enrichment.",
+        ],
+      },
+      {
+        heading: "8. Oriental Shorthair",
+        paragraphs: [
+          "Very short, fine coat with minimal shedding. Produces less allergen than many other breeds.",
+          "Vocal, curious, and social — closely related to the Siamese.",
+        ],
+      },
+      {
+        heading: "Tips for Living With a Cat If You Have Allergies",
+        paragraphs: [
+          "Some allergy sufferers find that reactions diminish after 6–12 months of exposure as the immune system partially adapts.",
+        ],
+        bullets: [
+          "Choose a lower-Fel d 1 breed — Siberian is the top clinical pick",
+          "Keep cats out of the bedroom — 8 hours of allergen-free air matters",
+          "Use a HEPA air purifier in main living areas",
+          "Bathe your cat weekly — reduces surface allergen significantly",
+          "Vacuum with a HEPA filter vacuum 2–3x per week",
+          "Wash hands after every contact with the cat",
+          "Talk to your doctor about antihistamines or allergy immunotherapy",
+        ],
+      },
+      {
+        heading: "How to Test Before You Commit",
+        paragraphs: [
+          "Spend time with the specific cat (not just the breed) before adopting. Allergen production varies between individuals of the same breed.",
+          "Many breeders — especially Siberian breeders — will send a fur sample so you can test your reaction before visiting.",
+          "Spend at least 30–60 minutes with the cat in an enclosed space before making a decision.",
+          "❓ Frequently Asked Questions",
+        ],
+      },
     ],
     faqs: [
-      { question: "What cat breed is best for allergies?", answer: "There is no single best breed for everyone. Siberian, Balinese, Russian Blue, Rex breeds, Sphynx, and Oriental Shorthair are often considered, but personal exposure is the real test." },
-      { question: "Are Sphynx cats hypoallergenic?", answer: "Sphynx cats are not truly hypoallergenic. They have little hair, but allergens can still be present in skin oils and saliva, and they need regular skin care." },
-      { question: "Are short-haired cats better for allergies?", answer: "Not always. Allergens are not only in hair. Saliva, dander, and skin proteins matter, so some short-haired cats may still trigger symptoms." },
-      { question: "Can grooming reduce cat allergens?", answer: "Grooming and cleaning can reduce allergen buildup, but they do not remove allergy risk completely. Use a routine that fits the cat's coat and stress tolerance." },
-      { question: "Should I adopt a hypoallergenic cat without meeting it?", answer: "No. Trial exposure is strongly recommended because allergy response varies by person and by individual cat." },
-      { question: "Which page should I read next?", answer: "Read [best cats for allergies](/blog/best-cats-for-allergies) for home strategy details and [why is my cat sneezing a lot](/blog/why-is-my-cat-sneezing-a-lot) for cat respiratory signs." },
+      { question: "What is the most hypoallergenic cat breed?", answer: "The Siberian is widely considered the top choice based on documented low Fel d 1 production. The Balinese, Devon Rex, and Russian Blue are also consistently recommended." },
+      { question: "Do hypoallergenic cats shed?", answer: "Most hypoallergenic breeds shed less than average cats — but they do shed. The difference is in allergen levels and coat behavior, not zero shedding." },
+      { question: "Is the Sphynx truly hypoallergenic?", answer: "Not entirely. Sphynx cats produce Fel d 1 through saliva and skin glands. But the lack of fur significantly reduces how much allergen spreads around the home." },
+      { question: "Can cat allergy sufferers live with any cat?", answer: "Many do. Choosing a lower-allergen breed, combined with HEPA filtration, regular bathing, and bedroom boundaries, makes cat ownership manageable for many allergy sufferers." },
+      { question: "Does cat gender affect allergen levels?", answer: "Yes. Intact (unneutered) male cats produce the highest Fel d 1 levels. Females and neutered males produce significantly less. Spaying or neutering is recommended regardless of breed." },
     ],
     internalLinks: [
       { label: "Best cats for allergies", href: "/blog/best-cats-for-allergies" },
@@ -8320,13 +8637,13 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "bleeding-poop-dog",
-    title: "Blood in Dog Stool: Causes, Symptoms, and When to Call a Vet",
-    metaTitle: "Blood in Dog Stool: Causes, Symptoms, and When to Call a Vet",
-    metaDescription: "Blood in your dog\u0027s stool can be alarming. Learn the common causes, when it\u0027s an emergency, and what to do next — explained clearly by symptom type.",
+    title: "Bleeding Poop in Dogs: What It Means and What to Do",
+    metaTitle: "Bleeding Poop in Dogs: What It Means and What to Do",
+    metaDescription: "Blood in your dog\u0027s poop is alarming — but the cause ranges from minor to life-threatening. Learn what the color tells you, every possible cause, and exactly when to call a vet.",
     category: "Dogs",
     publishedDate: "2026-05-01",
     readingTime: "10 min read",
-    intro: "Finding blood in your dog\u0027s stool is alarming — but it doesn\u0027t always mean an emergency. The cause, urgency, and treatment depend on where the bleeding is occurring, what the stool looks like, and your dog\u0027s other symptoms. This guide breaks down everything you need to know: types of bloody stool, likely causes, red flags to watch for, and when to act immediately.",
+    intro: "You see blood in your dog\u0027s stool. Your stomach drops. Take a breath — then look closely. The appearance of the blood tells you a lot before you even call the vet. Here\u0027s how to read the signs, understand the causes, and know when to act immediately.",
     featuredImage: {
       src: "/images/blog/blood-in-dog-stool.png",
       alt: "Dog owner discussing blood in dog stool with a veterinarian in a non-graphic clinic scene",
@@ -8334,119 +8651,146 @@ const blogPosts: BlogPost[] = [
     },
     sections: [
       {
-        heading: "Types of Blood in Dog Stool",
-        paragraphs: [
-          "The appearance of blood tells you a lot about its origin:",
-        ],
-      },
-      {
-        heading: "Hematochezia (Bright Red Blood)",
-        paragraphs: [
-          "Bright red blood in or around the stool indicates bleeding in the lower digestive tract — typically the colon, rectum, or anus. This is the most common type dog owners notice.",
-        ],
-      },
-      {
-        heading: "Melena (Dark, Tarry Stool)",
-        paragraphs: [
-          "Dark, black, or tarry stool (melena) signals bleeding higher up in the digestive tract — the stomach or small intestine. Blood has been digested by the time it exits, which darkens it. Melena is generally more serious and requires prompt veterinary attention.",
-        ],
-      },
-      {
-        heading: "Common Causes of Blood in Dog Stool",
+        heading: "The Two Types of Blood in Dog Stool",
         paragraphs: [
         ],
       },
       {
-        heading: "1. Dietary Indiscretion",
+        heading: "Bright Red Blood — Hematochezia",
         paragraphs: [
-          "Dogs eat things they shouldn\u0027t — garbage, table scraps, foreign objects. This can irritate the GI tract and cause temporary bloody stools. It\u0027s one of the most common reasons.",
+          "Bright red blood means the bleeding is happening in the lower digestive tract. That\u0027s the colon, rectum, or anus.",
+          "It hasn\u0027t had time to digest. So it exits looking red and fresh.",
+          "This is the most common type. It\u0027s often visible on the surface of the stool or around the anus.",
         ],
       },
       {
-        heading: "2. Intestinal Parasites",
+        heading: "Dark Black or Tarry Stool — Melena",
         paragraphs: [
-          "Worms such as hookworms, whipworms, and roundworms can cause intestinal bleeding. Puppies and unvaccinated dogs are especially vulnerable. A fecal exam can confirm parasites.",
+          "Dark, coffee-ground-like, or tarry black stool means bleeding is happening higher up. That\u0027s the stomach or small intestine.",
+          "By the time blood travels through the full digestive system, it oxidizes and turns dark.",
+          "Melena is generally more serious. It warrants a vet visit the same day.",
         ],
       },
       {
-        heading: "3. Parvovirus",
+        heading: "Causes — From Least to Most Serious",
         paragraphs: [
-          "Parvo is a serious, life-threatening viral infection most common in unvaccinated puppies. Bloody diarrhea, vomiting, lethargy, and loss of appetite are hallmark signs. This is a veterinary emergency.",
         ],
       },
       {
-        heading: "4. Hemorrhagic Gastroenteritis (HGE)",
+        heading: "Dietary Indiscretion",
         paragraphs: [
-          "HGE causes sudden, severe bloody diarrhea — often described as raspberry jam in consistency. It can lead to rapid dehydration. The cause isn\u0027t fully understood, but small and toy breeds are more susceptible.",
+          "The dog ate something it shouldn\u0027t have. Table scraps, garbage, a dead bird in the yard.",
+          "GI irritation causes temporary bleeding. Usually resolves in 24–48 hours in an otherwise healthy dog.",
+          "Signs: single episode, dog still active and eating, no vomiting.",
         ],
       },
       {
-        heading: "5. Colitis",
+        heading: "Intestinal Parasites",
         paragraphs: [
-          "Inflammation of the colon, known as colitis, causes bloody, mucus-coated stools and urgency. It can be triggered by stress, dietary changes, infections, or inflammatory bowel disease (IBD).",
+          "Hookworms, whipworms, and roundworms all cause intestinal bleeding.",
+          "Hookworms are particularly aggressive — they attach to the intestinal wall and feed on blood. Heavy infestations in puppies can be life-threatening.",
+          "Confirmed with a fecal flotation test at the vet.",
         ],
       },
       {
-        heading: "6. Anal Gland Issues",
+        heading: "Colitis",
         paragraphs: [
-          "Impacted or ruptured anal glands can cause blood to appear on the surface of the stool or around the anus. You may also notice your dog scooting or licking the area.",
+          "Colitis means inflammation of the colon. The stool is often soft, covered in mucus, and streaked with bright red blood.",
+          "Common triggers: dietary changes, stress, food intolerance, infections, or IBD (inflammatory bowel disease).",
+          "Dogs often strain to defecate and go more frequently than normal.",
         ],
       },
       {
-        heading: "7. Intestinal Obstruction or Intussusception",
+        heading: "Anal Gland Issues",
         paragraphs: [
-          "A foreign object, tumor, or intestinal telescoping (intussusception) can cause bleeding. These situations are emergencies and often require surgery.",
+          "Impacted or ruptured anal glands produce blood that appears on the surface of the stool — not mixed through it.",
+          "Other signs: scooting across the floor, licking the anal area, visible swelling near the anus.",
         ],
       },
       {
-        heading: "8. Medications and Toxins",
+        heading: "Hemorrhagic Gastroenteritis (HGE)",
         paragraphs: [
-          "NSAIDs, corticosteroids, and certain toxins (like rat poison) can cause GI bleeding. If your dog recently ingested a new medication or substance, mention it to your vet.",
+          "HGE is sudden, severe, and alarming. It causes large volumes of bloody diarrhea — often described as raspberry jam in consistency.",
+          "Dogs with HGE deteriorate quickly. Severe dehydration within hours is common.",
+          "Small and toy breeds are overrepresented. Cause is not fully understood.",
+          "This is a veterinary emergency. Untreated HGE can be fatal.",
         ],
       },
       {
-        heading: "When Is Blood in Dog Stool an Emergency?",
+        heading: "Parvovirus",
         paragraphs: [
-          "Go to a vet immediately if you observe any of the following:",
-          "A single episode of bright red blood in an otherwise healthy, active adult dog may not require an emergency visit, but should still be evaluated within 24 hours.",
+          "Parvo causes bloody, foul-smelling, watery diarrhea combined with vomiting and severe lethargy.",
+          "It\u0027s most dangerous in unvaccinated puppies. Mortality without treatment is high.",
+          "If your puppy has these signs — go to an emergency vet immediately. Do not wait.",
+        ],
+      },
+      {
+        heading: "Ingestion of Toxins or Medications",
+        paragraphs: [
+          "Rat poison (anticoagulant rodenticides) prevents blood clotting. Internal bleeding causes melena.",
+          "NSAIDs like ibuprofen cause stomach ulcers. Ulcers bleed — producing dark, tarry stools.",
+          "If you suspect poisoning, this is an emergency.",
+        ],
+      },
+      {
+        heading: "Intestinal Obstruction or Tumor",
+        paragraphs: [
+          "A foreign object, intussusception (telescoped intestine), or tumor can all cause GI bleeding.",
+          "These require urgent veterinary diagnosis — often imaging and possibly surgery.",
+        ],
+      },
+      {
+        heading: "Emergency Warning Signs — Act Now",
+        paragraphs: [
+          "Call your vet or go to an emergency clinic if you see any of these:",
+          "Pale gums are a critical sign. They indicate significant blood loss and circulatory compromise. This is an emergency.",
         ],
         bullets: [
           "Large amounts of blood in the stool",
-          "Dark, tarry, or black stool (melena)",
-          "Blood in stool combined with vomiting",
-          "Signs of pain, lethargy, or collapse",
-          "Pale gums — a sign of significant blood loss",
-          "Your dog is a puppy or senior dog",
-          "Blood in stool for more than 24–48 hours",
+          "Black, tarry, or coffee-ground stool",
+          "Blood in stool + vomiting at the same time",
+          "Pale or white gums",
+          "Extreme lethargy or weakness",
+          "Your dog is a puppy or unvaccinated",
+          "Suspected poisoning or toxin exposure",
+          "Bloody stool recurring over more than 48 hours",
         ],
       },
       {
-        heading: "What Will a Vet Do?",
+        heading: "What You Can Do at Home — Mild Cases Only",
         paragraphs: [
-          "Diagnosis typically involves a physical exam, fecal parasite test, blood panel, and sometimes imaging (X-rays or ultrasound). Treatment varies based on cause and may include:",
+          "A single episode of bright red blood in an otherwise healthy, active adult dog with no other symptoms:",
+          "Do not give Imodium or any human anti-diarrheal. Some are toxic to dogs.",
+          "If symptoms return or worsen — see a vet.",
         ],
         bullets: [
-          "Deworming medication for parasites",
-          "IV fluids for dehydration from HGE",
-          "Antibiotics for bacterial infections",
-          "Dietary changes and probiotics for colitis",
-          "Surgery for obstructions or serious internal issues",
+          "Fast for 12–24 hours, then start a bland diet — boiled chicken and plain white rice",
+          "Ensure fresh water is available at all times",
+          "Watch closely for additional symptoms",
         ],
       },
       {
-        heading: "Home Care: Can You Treat It at Home?",
+        heading: "What the Vet Will Do",
         paragraphs: [
-          "Mild, isolated cases in healthy adult dogs may be managed temporarily with a bland diet (boiled chicken and white rice). However, home care should never replace a vet evaluation, especially if symptoms persist or worsen.",
-          "Do not give your dog human anti-diarrheal medications like Imodium without vet approval — some are toxic to dogs.",
+          "Diagnosis typically involves:",
+          "Treatment depends on the cause: IV fluids, antibiotics, dewormers, dietary changes, or surgery.",
+          "❓ Frequently Asked Questions",
+        ],
+        bullets: [
+          "Physical exam — checking hydration, abdominal pain, gum color",
+          "Fecal parasite test",
+          "Blood panel — checking for anemia, organ function, clotting",
+          "X-ray or ultrasound — for suspected obstruction or internal masses",
         ],
       },
     ],
     faqs: [
-      { question: "Is blood in dog stool always serious?", answer: "Not always. A small amount of bright red blood from a one-time GI upset may resolve on its own. But any recurring, increasing, or accompanied-by-other-symptoms blood warrants a vet visit." },
-      { question: "What does parvo blood in stool look like?", answer: "Parvo stools are typically very bloody, watery, and have a foul, distinctive odor. Infected dogs are also severely lethargic and vomiting. It is a medical emergency." },
-      { question: "Can stress cause blood in a dog\u0027s stool?", answer: "Yes. Stress-induced colitis is common in dogs and can result in bloody, mucus-coated stools. Major life changes, travel, or anxiety can trigger it." },
-      { question: "What should I feed a dog with blood in their stool?", answer: "A bland diet of boiled chicken and plain white rice can help settle the GI tract. Avoid rich or fatty foods. Always confirm with your vet before making dietary changes." },
-      { question: "How quickly should I see a vet for blood in my dog\u0027s stool?", answer: "If accompanied by vomiting, lethargy, pale gums, or large amounts of blood — go immediately. For a single, isolated episode in an otherwise healthy dog, a same-day or next-day appointment is recommended." },
+      { question: "Is it normal for a dog to poop blood?", answer: "It\u0027s not normal — but it\u0027s common, and it doesn\u0027t always mean something serious. A small amount of bright red blood from a mild GI upset often resolves quickly. Any recurring or heavy blood warrants a vet visit." },
+      { question: "What does parvo poop look like?", answer: "Parvo stools are watery, extremely bloody, and have a foul, distinctive smell. Affected dogs are also severely lethargic and vomiting. This combination is a veterinary emergency." },
+      { question: "Can stress cause blood in dog stool?", answer: "Yes. Stress-induced colitis is well-documented in dogs. Life changes, boarding, travel, fireworks — all can trigger bloody, mucusy stools. Usually resolves once the stressor is removed." },
+      { question: "Why is my dog\u0027s poop dark and tarry?", answer: "Dark, tarry stool (melena) means bleeding in the upper GI tract — stomach or small intestine. It\u0027s more serious than bright red blood. See a vet the same day." },
+      { question: "How much blood in dog stool is too much?", answer: "Any stool that is predominantly blood rather than feces is too much. Large volumes, repeated episodes, or blood combined with any other symptom require immediate veterinary care." },
+      { question: "Can food cause blood in dog stool?", answer: "Yes. Dietary indiscretion, food allergies, or sudden food changes can all irritate the GI lining and cause minor bleeding. Switching foods gradually over 7–10 days prevents this." },
     ],
     internalLinks: [
       { label: "Dog probiotics for diarrhea", href: "/blog/dog-probiotics-for-diarrhea" },
@@ -8459,38 +8803,151 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "what-do-axolotls-eat",
-    title: "What Do Axolotls Eat? Feeding Guide for Healthy Axolotl Care",
-    metaTitle: "What Do Axolotls Eat? Best Foods, Schedule, and Feeding Mistakes",
-    metaDescription:
-      "Learn what axolotls eat, safe staple foods, feeding frequency, foods to avoid, and when appetite changes need exotic-vet help.",
+    title: "What Do Axolotls Eat? A Complete Feeding Guide",
+    metaTitle: "What Do Axolotls Eat? A Complete Feeding Guide",
+    metaDescription: "What do axolotls eat in captivity and the wild? A complete feeding guide covering diet by age, food types, feeding frequency, and what to avoid for healthy axolotls.",
     category: "Health Conditions",
     publishedDate: "2026-05-01",
     readingTime: "10 min read",
-    intro:
-      "Axolotls need a protein-focused aquatic diet and clean water to stay healthy. This guide covers staple foods, feeding rhythm, and common mistakes for beginner keepers.",
+    intro: "Axolotls are fascinating — permanently larval salamanders that spend their entire lives underwater. Their feeding needs are specific and often misunderstood. Feed them the wrong food and they\u0027ll refuse to eat. Feed them too much and you\u0027ll foul the water. This guide covers everything you need to get it right.",
     featuredImage: {
       src: "/images/blog/what-do-axolotls-eat.png",
       alt: "Axolotl in a clean aquarium with safe feeding foods nearby",
       caption: "Axolotls need appropriately sized protein foods and stable water quality to feed well.",
     },
     sections: [
-      { heading: "Quick answer: what do axolotls eat?", paragraphs: ["Axolotls commonly eat earthworms, nightcrawlers, axolotl pellets, blackworms, and other appropriate aquatic protein foods. Food size, water quality, and feeding frequency matter as much as food choice."] },
-      { heading: "Safety note", paragraphs: ["This guide is educational. Axolotls are exotic aquatic animals, and illness can progress quickly. Contact an exotic veterinarian or experienced aquatic specialist for persistent appetite loss, floating, injury, or water-quality concerns."] },
-      { heading: "Best staple foods", paragraphs: ["Soft, protein-rich foods are usually the foundation. Earthworms and quality pellets are common staples because they are easier to balance than random feeder foods."], bullets: ["Earthworms or nightcrawlers cut to size", "High-quality axolotl pellets", "Blackworms where safely sourced", "Occasional appropriate frozen aquatic foods", "Juvenile foods sized for small mouths"] },
-      { heading: "Foods to avoid", paragraphs: ["Avoid foods that are too hard, too fatty, sharp, poorly sourced, or likely to foul the water. Uneaten food can quickly damage water quality."], bullets: ["Wild-caught insects from treated areas", "Large hard-shelled prey", "Feeder fish with disease risk", "Processed human foods", "Food pieces too large to swallow safely"] },
-      { heading: "Feeding frequency", paragraphs: ["Juveniles usually eat more often than adults. Adult axolotls may eat every few days depending on size, temperature, and condition. Remove leftovers promptly to protect water quality."] },
-      { heading: "Water quality and feeding", paragraphs: ["Poor water can reduce appetite and cause stress. If an axolotl refuses food, test water parameters and review temperature before assuming it is only picky eating."], bullets: ["Stable cool temperature", "Clean cycled tank", "Safe ammonia and nitrite levels", "Low stress hiding places", "Prompt removal of leftovers"] },
-      { heading: "Common mistakes", paragraphs: ["Most feeding problems come from food size, overfeeding, or water quality issues."], bullets: ["Offering pieces that are too large", "Leaving food to rot", "Using feeder fish routinely", "Feeding without checking water quality", "Ignoring appetite change"] },
-      { heading: "When to Call a Vet", paragraphs: ["Seek exotic-vet guidance for ongoing appetite loss, weight loss, floating, swelling, injury, fungus-like growth, repeated regurgitation, or abnormal behavior."] },
-      { heading: "Key Takeaways", paragraphs: ["Axolotl feeding is simple when the basics are stable."], bullets: ["Use safe protein staples", "Match food size to the animal", "Protect water quality", "Treat appetite change as a care signal"] },
+      {
+        heading: "What Do Axolotls Eat in the Wild?",
+        paragraphs: [
+          "In the wild, axolotls live in Mexico\u0027s Lake Xochimilco and its connected canals. They\u0027re carnivorous predators.",
+          "Wild axolotls eat:",
+          "They hunt using suction feeding — they create a rapid vacuum with their mouths and inhale prey whole. Their teeth are small and not built for tearing.",
+          "This is critical for captive feeding: food needs to be an appropriate swallowable size.",
+        ],
+        bullets: [
+          "Small fish and fish fry",
+          "Worms — earthworms, bloodworms, tubifex worms",
+          "Aquatic insects and larvae",
+          "Small crustaceans",
+          "Mollusks — snails and small shellfish",
+          "Tadpoles and small amphibians",
+        ],
+      },
+      {
+        heading: "What to Feed Axolotls in Captivity",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "1. Earthworms — The Best Staple Food",
+        paragraphs: [
+          "Earthworms (nightcrawlers) are widely considered the best primary food for captive axolotls.",
+          "They\u0027re nutritionally complete. High in protein. Easy to find in bait shops or online. Soft enough to digest easily.",
+          "Cut them to an appropriate size — roughly equal to the width of the axolotl\u0027s head. Adults can handle larger pieces or full worms. Juveniles need small segments.",
+          "Avoid worms from your garden unless you\u0027re certain they haven\u0027t been exposed to pesticides.",
+        ],
+      },
+      {
+        heading: "2. Bloodworms",
+        paragraphs: [
+          "Bloodworms (frozen or freeze-dried) are a popular supplement, especially for younger axolotls.",
+          "They\u0027re high in protein and trigger a strong feeding response. However, they\u0027re not nutritionally complete enough to be the sole diet.",
+          "Use frozen bloodworms over freeze-dried when possible — they retain more nutritional value and are easier to digest.",
+        ],
+      },
+      {
+        heading: "3. Axolotl Pellets",
+        paragraphs: [
+          "High-quality sinking pellets designed for axolotls (or large carnivorous fish like salmon) make feeding easy and mess-free.",
+          "Look for pellets with 40%+ protein from animal sources. Repashy Grub Pie and NLS Thera+A are popular with axolotl keepers.",
+          "Pellets sink immediately — important because axolotls are bottom dwellers. Floating food is largely ignored.",
+        ],
+      },
+      {
+        heading: "4. Blackworms",
+        paragraphs: [
+          "Live blackworms are an excellent high-protein food. They can be kept alive in cold water in the fridge for weeks.",
+          "Many axolotl keepers use blackworms as a daily staple because they stay alive in the tank, triggering the axolotl\u0027s natural hunting response.",
+        ],
+      },
+      {
+        heading: "5. Brine Shrimp",
+        paragraphs: [
+          "Good for juvenile and baby axolotls. Adults need larger prey to feel satisfied.",
+          "Use as a supplement, not a staple. Nutritional value is lower than earthworms or pellets.",
+        ],
+      },
+      {
+        heading: "6. Feeder Fish — Use Caution",
+        paragraphs: [
+          "Feeder guppies or goldfish are sometimes used but come with significant risks:",
+          "If using feeder fish, quarantine them first and avoid goldfish entirely.",
+        ],
+        bullets: [
+          "Goldfish carry parasites that can infect axolotls",
+          "Feeder fish from pet stores often carry diseases",
+          "Small fish bones can cause impaction",
+        ],
+      },
+      {
+        heading: "What Axolotls Should NOT Eat",
+        paragraphs: [
+        ],
+        bullets: [
+          "Red wigglers (red worms) — contain compounds that can be toxic to axolotls",
+          "Superworms and mealworms — tough chitin exoskeleton is hard to digest",
+          "Processed human food",
+          "Beef heart or chicken — too fatty, poor long-term nutrition",
+          "Waxworms — too high in fat for regular feeding",
+          "Any food larger than the axolotl\u0027s head width — impaction risk",
+        ],
+      },
+      {
+        heading: "Feeding by Age",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Baby Axolotls (Under 3 cm)",
+        paragraphs: [
+          "Baby axolotls are difficult to feed. They need live food that moves and triggers their hunting instinct.",
+          "Best options: baby brine shrimp, micro worms, daphnia. Feed twice daily.",
+        ],
+      },
+      {
+        heading: "Juvenile Axolotls (3–10 cm)",
+        paragraphs: [
+          "At this stage, small bloodworm portions, earthworm segments, and small pellets all work well.",
+          "Feed daily or every other day.",
+        ],
+      },
+      {
+        heading: "Adult Axolotls (10 cm+)",
+        paragraphs: [
+          "Adults can eat full-sized earthworms, nightcrawlers, large pellets, and blackworms.",
+          "Feed every 2–3 days. Overfeeding pollutes the tank and leads to obesity.",
+        ],
+      },
+      {
+        heading: "Feeding Tips",
+        paragraphs: [
+          "❓ Frequently Asked Questions",
+        ],
+        bullets: [
+          "Feed at night or dim the lights — axolotls are crepuscular and more active in low light",
+          "Use feeding tongs or tweezers to offer worms — reduces accidental gravel ingestion",
+          "Remove uneaten food within 20–30 minutes to protect water quality",
+          "Fast for 1 day per week — gives the digestive system time to clear",
+          "Never tap the glass to make them eat — stress reduces appetite",
+        ],
+      },
     ],
     faqs: [
-      { question: "Can axolotls eat worms?", answer: "Yes, earthworms and nightcrawlers are common staple foods when appropriately sourced and cut to size." },
-      { question: "Can axolotls eat fish food?", answer: "Most general fish flakes are not ideal as a staple. Use quality axolotl pellets or species-appropriate foods instead." },
-      { question: "How often should I feed an axolotl?", answer: "Frequency depends on age and condition. Juveniles usually eat more often, while adults may eat every few days. Monitor body condition and water quality." },
-      { question: "Why is my axolotl not eating?", answer: "Appetite loss can be linked to stress, water quality, temperature, illness, or unsuitable food. Check tank conditions and seek specialist help if it continues." },
-      { question: "Can axolotls eat mealworms?", answer: "Mealworms are generally not a preferred staple because the outer shell can be difficult. Softer foods like earthworms are usually better." },
-      { question: "Which page should I read next?", answer: "Read [red eyed green tree frog care](/blog/red-eyed-green-tree-frog-care) for another exotic pet care routine guide." },
+      { question: "How often should I feed my axolotl?", answer: "Adults: every 2–3 days. Juveniles: daily or every other day. Baby axolotls: twice daily with live food. Remove all uneaten food within 30 minutes." },
+      { question: "Can axolotls eat frozen food?", answer: "Yes. Frozen bloodworms and frozen brine shrimp are both good options. Thaw in tank water before feeding. Never feed directly from frozen." },
+      { question: "Why is my axolotl not eating?", answer: "Common reasons: water temperature too warm (axolotls prefer 60–68°F), stress from poor water quality, recent handling, or tank mates. New axolotls often take 1–2 weeks to settle in and begin eating." },
+      { question: "Can axolotls eat pellets as their only food?", answer: "High-quality sinking pellets can form the backbone of the diet, but variety is better. Rotate with earthworms and occasional blackworms for nutritional completeness." },
+      { question: "Do axolotls eat plants?", answer: "No. Axolotls are obligate carnivores. They do not eat plant matter. Live plants in the tank are for enrichment and water quality — not food." },
     ],
     internalLinks: [
       { label: "Red eyed green tree frog care", href: "/blog/red-eyed-green-tree-frog-care" },
@@ -8509,38 +8966,170 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "why-do-dogs-lick-their-paws",
-    title: "Why Do Dogs Lick Their Paws? Causes, Fixes, and Warning Signs",
-    metaTitle: "Why Do Dogs Lick Their Paws? Allergy, Pain, Skin, and Habit Causes",
-    metaDescription:
-      "Learn why dogs lick their paws, including allergies, injury, skin infection, anxiety, and when paw licking needs veterinary care.",
+    title: "Why Do Dogs Lick Their Paws? Causes and Treatments",
+    metaTitle: "Why Do Dogs Lick Their Paws? Causes and Treatments",
+    metaDescription: "Why do dogs lick their paws? Learn every cause — from allergies to anxiety — how to identify the root problem, and the most effective treatments to stop it.",
     category: "Dogs",
     publishedDate: "2026-05-01",
     readingTime: "10 min read",
-    intro:
-      "A little paw licking can be normal grooming, but repeated licking often means something is bothering your dog. This guide helps you separate routine behavior from allergy, pain, infection, or stress patterns.",
+    intro: "Occasional paw licking is normal. Dogs clean themselves. A quick lick here and there means nothing. But constant, obsessive licking? That\u0027s your dog telling you something is wrong. Here\u0027s how to figure out what — and fix it.",
     featuredImage: {
       src: "/images/blog/why-do-dogs-lick-their-paws.png",
       alt: "Dog licking a paw while an owner gently checks for irritation",
       caption: "Repeated paw licking can point to itch, pain, infection, allergies, or stress.",
     },
     sections: [
-      { heading: "Quick answer: why do dogs lick their paws?", paragraphs: ["Dogs lick their paws because of itch, allergies, skin irritation, injury, pain, infection, parasites, anxiety, or habit. Repeated licking, redness, swelling, odor, limping, or sores should be checked by a veterinarian."] },
-      { heading: "Safety note", paragraphs: ["This article is educational and does not replace an exam. Paw problems can look similar at home, so persistent licking needs proper diagnosis."] },
-      { heading: "Common medical causes", paragraphs: ["Paw licking often starts because the paw itches or hurts. Allergies are common, but injuries, foreign objects, yeast, bacteria, and nail problems can also trigger licking."], bullets: ["Environmental or food allergies", "Yeast or bacterial skin infection", "Thorns, grass awns, or cuts", "Nail injury", "Parasites", "Joint or paw pain"] },
-      { heading: "Behavior and stress causes", paragraphs: ["Some dogs lick more when bored, anxious, or stressed. Behavior can also continue after an original skin problem has started healing, especially if licking became a habit."] },
-      { heading: "What to check at home", paragraphs: ["Look gently without forcing the paw. Stop if your dog seems painful or defensive, and ask your vet for help."], bullets: ["Redness between toes", "Swelling or heat", "Broken nail", "Odor or discharge", "Cuts or stuck debris", "Limping or sensitivity"] },
-      { heading: "How to reduce damage", paragraphs: ["Prevent repeated licking while you arrange proper care. A recovery collar, clean dry paws, and limiting exposure to triggers can help reduce worsening."], bullets: ["Use a cone if licking is intense", "Dry paws after wet walks", "Avoid harsh cleaners", "Do not wrap tightly without vet guidance", "Track when licking happens"] },
-      { heading: "Common mistakes", paragraphs: ["Paw licking becomes harder to solve when the skin is allowed to stay wet and inflamed."], bullets: ["Ignoring redness until sores form", "Using human creams", "Assuming it is only anxiety", "Skipping flea prevention", "Letting the dog lick after applying products"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call your vet for limping, swelling, bleeding, odor, discharge, open sores, constant licking, pain, or licking that keeps returning. Same-day care is best for severe pain or rapidly worsening skin."] },
-      { heading: "Key Takeaways", paragraphs: ["Paw licking is a clue, not a diagnosis."], bullets: ["Check for itch, pain, and infection signs", "Stop licking damage early", "Allergies are common but not the only cause", "Recurring licking needs a trigger plan"] },
+      {
+        heading: "Normal vs. Concerning Licking",
+        paragraphs: [
+          "Normal: brief grooming after a walk, after eating, occasionally before sleep.",
+          "Concerning: licking that goes on for minutes, returns frequently throughout the day, causes red or raw skin, or creates brown staining on the fur (saliva stains).",
+          "Brown staining between the toes is often the first visible sign of chronic paw licking.",
+        ],
+      },
+      {
+        heading: "Causes — Every Possibility",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "1. Environmental Allergies",
+        paragraphs: [
+          "The most common cause. Also called atopic dermatitis.",
+          "Dogs react to grass, pollen, mold, dust mites, and other airborne allergens. Unlike humans who sneeze, dogs with allergies itch. Their paws — which contact the ground constantly — are a primary target.",
+          "Signs: licking is seasonal (spring/fall pollen peaks), affects all four paws, often accompanied by itchy ears, belly, and armpits.",
+        ],
+      },
+      {
+        heading: "2. Food Allergies",
+        paragraphs: [
+          "Food allergies cause year-round itching that doesn\u0027t respond to seasonal treatments.",
+          "Common culprits: beef, chicken, dairy, wheat, corn. A protein your dog has been eating for years can suddenly trigger an immune response.",
+          "The only reliable way to diagnose a food allergy is an elimination diet — a strict 8–12 week trial with a novel protein source or hydrolyzed protein diet.",
+        ],
+      },
+      {
+        heading: "3. Contact Dermatitis",
+        paragraphs: [
+          "Direct skin irritation from something the paws touch.",
+          "Common triggers: lawn chemicals and fertilizers, road salt in winter, cleaning products on floors, new flooring materials.",
+          "Signs: licking starts suddenly after a walk or floor cleaning, affects only the feet (not other body parts), improves when the irritant is removed.",
+        ],
+      },
+      {
+        heading: "4. Yeast Infection",
+        paragraphs: [
+          "Yeast (Malassezia) thrives in warm, moist environments — like the skin between dog toes.",
+          "Symptoms: musty or corn-chip-like odor from the paws, reddish-brown discoloration of fur between toes, itching and swelling.",
+          "Yeast infections are often secondary to allergies. The allergy disrupts the skin barrier, yeast moves in.",
+        ],
+      },
+      {
+        heading: "5. Bacterial Infection",
+        paragraphs: [
+          "Broken skin from chronic licking allows bacteria to enter. The resulting infection causes more itching, which causes more licking.",
+          "Signs: visible sores, crusting, discharge, swelling, foul smell.",
+          "Requires antibiotics — topical or systemic depending on severity.",
+        ],
+      },
+      {
+        heading: "6. Injury or Pain",
+        paragraphs: [
+          "A thorn, splinter, small cut, cracked pad, or broken nail.",
+          "Check the affected paw closely. Part the fur between toes. Examine the pads for cuts or cracking.",
+          "Signs: licking is localized to one paw only, dog may limp.",
+        ],
+      },
+      {
+        heading: "7. Dry or Cracked Paw Pads",
+        paragraphs: [
+          "Hot pavement in summer, cold concrete in winter, and rough terrain all crack paw pads.",
+          "Dry, cracked pads itch and irritate. Licking follows.",
+          "Treat with a veterinary paw balm or coconut oil. Avoid human lotions — some ingredients are harmful.",
+        ],
+      },
+      {
+        heading: "8. Parasites",
+        paragraphs: [
+          "Fleas, mites (mange), and ticks can all drive paw licking. Even a flea allergy reaction — triggered by a single flea bite — can cause intense, generalized itching that focuses on the paws.",
+          "Demodicosis (demodex mites) causes hair loss and crusty skin between the toes.",
+        ],
+      },
+      {
+        heading: "9. Anxiety and Boredom",
+        paragraphs: [
+          "Dogs lick to self-soothe. It\u0027s repetitive. Calming. Similar to humans biting nails.",
+          "Signs: licking happens primarily when the dog is alone, unstimulated, or during stressful events. No visible skin problems initially — but chronic anxious licking causes real skin damage over time.",
+        ],
+      },
+      {
+        heading: "How to Diagnose the Root Cause",
+        paragraphs: [
+          "Ask yourself:",
+          "Your vet will examine the skin, potentially run skin scrapes, cultures, or allergy tests to confirm.",
+        ],
+        bullets: [
+          "Is it one paw or all paws? One paw suggests injury or local irritant. All paws suggest systemic issue.",
+          "Is it seasonal? Points to environmental allergy.",
+          "Did it start after a dietary change? Food allergy.",
+          "After a specific product use? Contact dermatitis.",
+          "Is there odor between the toes? Yeast infection.",
+        ],
+      },
+      {
+        heading: "Treatments",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "For Allergies",
+        paragraphs: [
+        ],
+        bullets: [
+          "Antihistamines — first line for mild cases",
+          "Apoquel or Cytopoint — prescription medications that specifically target itch signals. Highly effective.",
+          "Allergy immunotherapy — the only long-term solution for environmental allergies",
+          "Elimination diet trial — for food allergy identification",
+        ],
+      },
+      {
+        heading: "For Infections",
+        paragraphs: [
+        ],
+        bullets: [
+          "Antibiotics (bacterial) — topical or oral depending on depth",
+          "Antifungals (yeast) — medicated shampoos, wipes, or oral medication",
+        ],
+      },
+      {
+        heading: "For Contact Irritation",
+        paragraphs: [
+        ],
+        bullets: [
+          "Wipe paws after every walk with a damp cloth or pet-safe wipes",
+          "Use dog booties during winter or on treated surfaces",
+          "Switch to pet-safe floor cleaners",
+        ],
+      },
+      {
+        heading: "For Anxiety",
+        paragraphs: [
+          "❓ Frequently Asked Questions",
+        ],
+        bullets: [
+          "Increase daily exercise and mental stimulation",
+          "Puzzle feeders and enrichment toys",
+          "Calming supplements — L-theanine, melatonin",
+          "Behavioral consultation or veterinary prescription anti-anxiety medication for severe cases",
+        ],
+      },
     ],
     faqs: [
-      { question: "Is it normal for dogs to lick their paws?", answer: "Occasional grooming can be normal. Frequent licking, chewing, redness, odor, swelling, or limping is not something to ignore." },
-      { question: "Can allergies make dogs lick their paws?", answer: "Yes. Paw licking is a common allergy-related sign, especially when it happens seasonally or with itchy ears, skin redness, or repeated infections." },
-      { question: "How do I stop my dog from licking paws raw?", answer: "Use a recovery collar to stop damage and contact your vet to identify the cause. Raw skin may need medical treatment." },
-      { question: "Can anxiety cause paw licking?", answer: "Yes, stress can contribute, but medical causes should be ruled out first because itch and pain are very common triggers." },
-      { question: "Should I wash my dog's paws after walks?", answer: "Gentle cleaning and drying can help some dogs, especially after allergens or mud exposure. Avoid harsh soaps and keep paws dry." },
-      { question: "Which page should I read next?", answer: "Read [treatment for a hot spot on a dog](/blog/treatment-for-a-hot-spot-on-a-dog) and [itchy skin condition guide](/health-conditions/itchy-skin)." },
+      { question: "Why does my dog lick his paws at night?", answer: "Night licking often points to allergies (itching intensifies when activity stops) or anxiety (quiet environment amplifies restlessness). If it\u0027s happening daily, have your vet evaluate for underlying allergy or behavioral cause." },
+      { question: "How do I stop my dog from licking their paws?", answer: "Treat the root cause. No deterrent spray stops a dog that\u0027s in genuine discomfort. Identify whether it\u0027s allergies, infection, injury, or anxiety — then treat that specifically." },
+      { question: "What does a yeast infection on dog paws look like?", answer: "Red, irritated skin between the toes, reddish-brown staining of fur, a distinct musty or corn-chip odor, and swelling. Often accompanied by ear yeast infections." },
+      { question: "Can I put anything on my dog\u0027s paws to stop licking?", answer: "Apple cider vinegar or bitter apple spray may deter licking temporarily. But these don\u0027t treat the cause. A paw balm can help dry, cracked pads. For infections or allergies, veterinary treatment is needed." },
+      { question: "Is paw licking a sign of pain?", answer: "Yes — it can be. Localized licking of one paw often means injury, splinter, broken nail, or a sting. Check the paw carefully and see a vet if you can\u0027t identify or remove the cause." },
     ],
     internalLinks: [
       { label: "Treatment for a hot spot on a dog", href: "/blog/treatment-for-a-hot-spot-on-a-dog" },
@@ -8560,38 +9149,126 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "melatonin-for-dogs",
-    title: "Melatonin for Dogs: Uses, Safety, Dosage Questions, and Vet Warnings",
-    metaTitle: "Melatonin for Dogs: Safety, Uses, Side Effects, and Vet Advice",
-    metaDescription:
-      "Learn what melatonin for dogs may be used for, safety concerns, side effects, xylitol risks, and why dosing should be discussed with a vet.",
+    title: "Melatonin for Dogs: Safety, Dosage, and What It Actually Helps",
+    metaTitle: "Melatonin for Dogs: Safety, Dosage, and What It Actually Helps",
+    metaDescription: "Is melatonin safe for dogs? Learn correct dosage by weight, what conditions it helps, risks to watch for, and which brands to avoid. Vet-aligned guidance.",
     category: "Dogs",
     publishedDate: "2026-05-01",
     readingTime: "10 min read",
-    intro:
-      "Melatonin is commonly discussed for dog sleep and anxiety, but it is still a supplement that needs careful use. This guide explains when owners ask about it, what risks matter, and why product labels deserve close attention.",
+    intro: "Melatonin is one of the most commonly used supplements for dogs. It\u0027s accessible, affordable, and generally safe. But the dose matters. The ingredients matter. And it doesn\u0027t work for every problem. Here\u0027s what you need to know before giving it to your dog.",
     featuredImage: {
       src: "/images/blog/melatonin-for-dogs.png",
       alt: "Calm dog resting near a pet-safe supplement bottle in a nighttime setting",
       caption: "Melatonin should only be considered with careful ingredient checks and veterinary guidance.",
     },
     sections: [
-      { heading: "Quick answer: melatonin for dogs", paragraphs: ["Melatonin may be used for some dogs under veterinary guidance, often for sleep, anxiety-related situations, or specific medical plans. Do not give it without checking ingredients, because some human products contain xylitol or other additives that are dangerous for dogs."] },
-      { heading: "Safety note", paragraphs: ["This article is educational and does not provide a dose. Your dog's safe plan depends on weight, health history, medications, reason for use, and product ingredients."] },
-      { heading: "Why pet parents ask about melatonin", paragraphs: ["Owners often ask about melatonin for nighttime restlessness, travel stress, noise sensitivity, or sleep-wake changes in older dogs. The right answer depends on the cause of the behavior."], bullets: ["Sleep schedule disruption", "Short-term situational stress", "Noise or travel concerns", "Senior dog restlessness", "Vet-directed medical use"] },
-      { heading: "Ingredient risks", paragraphs: ["The biggest avoidable risk is using the wrong product. Human gummies, liquids, and flavored tablets may contain sweeteners or additives that are not safe for dogs."], bullets: ["Xylitol or birch sugar", "Combination sleep aids", "Essential oils", "High sugar gummies", "Unknown herbal blends"] },
-      { heading: "Possible side effects", paragraphs: ["Side effects can vary by dog and dose. Sedation is possible, but paradoxical restlessness, digestive upset, or interaction concerns can also happen."], bullets: ["Sleepiness", "Digestive upset", "Behavior change", "Hormonal considerations", "Medication interactions"] },
-      { heading: "Questions to ask your vet", paragraphs: ["A vet can help decide whether melatonin matches the problem or whether pain, cognitive changes, anxiety, or illness needs a different plan."], bullets: ["Is the behavior medical or situational?", "Is this product ingredient-safe?", "What timing is appropriate?", "Could current medication interact?", "What signs mean stop and call?"] },
-      { heading: "Common mistakes", paragraphs: ["Melatonin can seem simple, but supplement mistakes are common."], bullets: ["Using human gummies without checking ingredients", "Guessing dose from the internet", "Using it instead of diagnosing pain or anxiety", "Combining with other calming products", "Continuing despite side effects"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call your vet before use if your dog is pregnant, very young, elderly, medically complex, on medication, or showing new anxiety, confusion, pain, seizures, vomiting, or behavior change. Call poison control or emergency care if xylitol exposure is possible."] },
-      { heading: "Key Takeaways", paragraphs: ["Melatonin is not a casual one-size-fits-all fix."], bullets: ["Check every ingredient", "Ask your vet about dosing", "Look for the cause of sleep or anxiety signs", "Avoid human combination sleep products"] },
+      {
+        heading: "What Is Melatonin?",
+        paragraphs: [
+          "Melatonin is a hormone naturally produced by the pineal gland. It regulates the sleep-wake cycle in response to light and darkness.",
+          "In supplement form, it has a calming, sedative-adjacent effect that benefits dogs with anxiety, sleep disruption, and certain other conditions.",
+          "It\u0027s not a sedative. It doesn\u0027t knock dogs out. It reduces arousal and promotes calmness.",
+        ],
+      },
+      {
+        heading: "Is Melatonin Safe for Dogs?",
+        paragraphs: [
+          "Yes — in appropriate doses, for most dogs.",
+          "Melatonin has a wide safety margin. It\u0027s not toxic at commonly used doses. Side effects are generally mild.",
+          "However, there are important caveats:",
+          "Always check the ingredient list for xylitol before purchasing.",
+        ],
+        bullets: [
+          "Avoid any melatonin product containing xylitol — this sweetener is toxic to dogs and found in some gummy formulations",
+          "Use with caution in dogs on other medications — melatonin can interact with sedatives, corticosteroids, and some blood pressure medications",
+          "Consult your vet before giving to pregnant dogs, nursing females, or dogs with liver disease",
+        ],
+      },
+      {
+        heading: "What Conditions Does Melatonin Help in Dogs?",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Anxiety",
+        paragraphs: [
+          "Noise phobia — thunderstorms, fireworks — is the most common use. Melatonin reduces the physiological arousal response.",
+          "It\u0027s also used for separation anxiety, travel stress, grooming anxiety, and vet visit nerves.",
+          "Give 30–60 minutes before the anticipated stressor for best effect.",
+        ],
+      },
+      {
+        heading: "Sleep Disorders",
+        paragraphs: [
+          "Senior dogs often develop circadian rhythm disruption — a condition similar to sundowning in humans. They sleep during the day and pace at night.",
+          "Evening melatonin helps reset the sleep-wake cycle. Many owners see improvement within 1–2 weeks of consistent use.",
+        ],
+      },
+      {
+        heading: "Hair Loss (Alopecia)",
+        paragraphs: [
+          "This is a less-known use: melatonin has been clinically used to treat certain types of hair loss in dogs, particularly seasonal flank alopecia — a benign, cyclical hair loss condition common in Northern breeds.",
+          "The mechanism isn\u0027t fully understood, but results are documented. Vets typically use it for 3–4 months at a time.",
+        ],
+      },
+      {
+        heading: "Cushing\u0027s Disease",
+        paragraphs: [
+          "Melatonin is sometimes used as part of a complementary management protocol for Cushing\u0027s disease, often alongside lignans. It does not replace pharmaceutical treatment but may support it.",
+          "This use requires explicit veterinary guidance and monitoring.",
+        ],
+      },
+      {
+        heading: "Melatonin Dosage for Dogs",
+        paragraphs: [
+          "Dosage is based on body weight. General guidelines used by many vets:",
+          "Maximum frequency: once every 8 hours. For anxiety, a single pre-event dose is typically sufficient.",
+          "These are general guidelines — always confirm dosing with your vet, especially for ongoing use.",
+        ],
+        bullets: [
+          "Under 10 lbs: 1 mg",
+          "10–25 lbs: 1.5 mg",
+          "26–100 lbs: 3 mg",
+          "Over 100 lbs: 3–6 mg",
+        ],
+      },
+      {
+        heading: "What Form Should You Buy?",
+        paragraphs: [
+          "Melatonin comes in tablets, capsules, liquids, and gummies.",
+          "Avoid gummies unless you\u0027ve confirmed zero xylitol. Gummies are the most common format that contains xylitol.",
+          "Plain melatonin tablets (1 mg or 3 mg) with no added ingredients are the safest option. Break them to adjust dose for smaller dogs.",
+          "The supplement is not FDA-regulated for veterinary use — quality varies between brands. Choose reputable human-grade supplements with third-party testing.",
+        ],
+      },
+      {
+        heading: "When Melatonin Won\u0027t Work",
+        paragraphs: [
+          "Melatonin doesn\u0027t help every anxious dog. Dogs with severe anxiety — separation anxiety that involves destruction or self-harm — often need a proper behavioral modification program and possibly prescription medication like fluoxetine or trazodone.",
+          "If melatonin isn\u0027t making a noticeable difference within 2–4 uses, tell your vet. There may be a better option.",
+        ],
+      },
+      {
+        heading: "Side Effects to Watch For",
+        paragraphs: [
+          "Generally mild and uncommon:",
+          "If your dog seems unusually sedated or develops GI symptoms, reduce the dose or discontinue.",
+          "❓ Frequently Asked Questions",
+        ],
+        bullets: [
+          "Drowsiness or excessive sedation",
+          "Digestive upset — loose stool or stomach upset",
+          "Changes in fertility — not recommended for breeding dogs",
+          "Insulin resistance with long-term use — monitor diabetic dogs closely",
+        ],
+      },
     ],
     faqs: [
-      { question: "Can dogs take melatonin?", answer: "Some dogs may take melatonin under veterinary guidance, but it depends on the dog, reason for use, medications, and product ingredients." },
-      { question: "What melatonin ingredients are unsafe for dogs?", answer: "Xylitol, also called birch sugar, is especially dangerous. Avoid combination sleep products, essential oils, and unclear herbal blends unless your vet approves them." },
-      { question: "Can melatonin help dog anxiety?", answer: "It may help some situational cases, but anxiety often needs behavior planning, environmental changes, or different medication. Ask your vet before relying on it." },
-      { question: "Can melatonin make dogs sleepy?", answer: "Yes, sedation can occur. If your dog seems overly sedated, confused, restless, vomiting, or abnormal, contact your veterinarian." },
-      { question: "Can I give my dog human melatonin gummies?", answer: "Do not give human gummies unless your vet confirms the exact product is safe. Many contain sweeteners or additives that are risky for dogs." },
-      { question: "Which page should I read next?", answer: "Read [dog health guides](/dogs) and [how to choose a vet in Houston](/blog/how-to-choose-a-vet-in-houston) for care planning support." },
+      { question: "Can I give my dog human melatonin?", answer: "Yes — as long as it contains no xylitol and no added ingredients. Plain melatonin tablets used by humans are fine for dogs at appropriate doses. Always check the label." },
+      { question: "How long does melatonin last in dogs?", answer: "Effects typically last 4–8 hours in dogs. For storm anxiety, give 30–60 minutes before the event. For sleep issues, give 30 minutes before the dog\u0027s typical bedtime." },
+      { question: "Can I give melatonin to my dog every day?", answer: "Short-term daily use for acute issues (travel, fireworks season) is generally fine. For ongoing conditions like chronic anxiety or seasonal alopecia, consult your vet — long-term use should be supervised." },
+      { question: "What is the fastest-acting calming option for dogs?", answer: "Melatonin works in 30–60 minutes. For immediate, severe anxiety, prescription medications like trazodone act faster. Talk to your vet about situational anxiety medication if melatonin isn\u0027t fast enough." },
+      { question: "Does melatonin help dogs with noise phobia?", answer: "Yes — it\u0027s one of the most common uses and one of the better-documented ones. Give it 45–60 minutes before a storm or fireworks event. Combine with a safe, dark hiding space for best results." },
     ],
     internalLinks: [
       { label: "Dog health guides", href: "/dogs" },
@@ -8611,38 +9288,119 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "are-eggs-good-for-dogs",
-    title: "Are Eggs Good for Dogs? Benefits, Risks, and Safe Serving Tips",
-    metaTitle: "Are Eggs Good for Dogs? Safe Feeding Guide for Pet Parents",
-    metaDescription:
-      "Learn whether eggs are good for dogs, how to serve them safely, when to avoid eggs, and what portion mistakes to watch for.",
+    title: "Are Eggs Good for Dogs? Benefits, Risks, and How to Feed Them",
+    metaTitle: "Are Eggs Good for Dogs? Benefits, Risks, and How to Feed Them",
+    metaDescription: "Are eggs good for dogs? Yes — but preparation and quantity matter. Learn the nutritional benefits, how to serve eggs safely, how many to give, and what to avoid.",
     category: "Dogs",
     publishedDate: "2026-05-01",
     readingTime: "10 min read",
-    intro:
-      "Eggs can be a useful occasional food for many dogs, but they are not magic and they are easy to overdo. This guide covers safe preparation, portion thinking, and when eggs are not the right choice.",
+    intro: "Eggs are one of the most nutritionally complete foods on the planet. And yes — dogs can eat them. But there\u0027s a right way and a wrong way. Here\u0027s everything you need to know.",
     featuredImage: {
       src: "/images/blog/are-eggs-good-for-dogs.png",
       alt: "Plain cooked egg served safely in a dog bowl beside a happy dog",
       caption: "Plain cooked eggs can be an occasional extra for many healthy dogs when portions stay modest.",
     },
     sections: [
-      { heading: "Quick answer: are eggs good for dogs?", paragraphs: ["Plain cooked eggs can be safe and nutritious for many healthy dogs when served in moderation. They should not replace a balanced diet, and dogs with pancreatitis history, obesity risk, food allergies, or medical diets should follow veterinary guidance."] },
-      { heading: "Safety note", paragraphs: ["This article is educational. Ask your veterinarian before adding eggs if your dog has chronic disease, digestive sensitivity, weight concerns, or a prescription diet."] },
-      { heading: "Potential benefits", paragraphs: ["Eggs provide protein, fat, vitamins, and minerals. For healthy dogs, small portions can work as an occasional topper or treat."], bullets: ["High-quality protein", "Palatable meal topper", "Useful for some picky eaters", "Easy to prepare plainly", "Small training-treat option when portioned"] },
-      { heading: "How to serve eggs safely", paragraphs: ["Cook eggs plain without oil, butter, salt, garlic, onion, cheese, or seasoning. Start small and watch stool and appetite for the next day."], bullets: ["Boiled or scrambled plain", "No seasoning", "No onion or garlic", "Start with a small amount", "Count it as extra calories"] },
-      { heading: "Raw egg concerns", paragraphs: ["Raw eggs carry bacterial risk and can create avoidable food safety concerns. Cooked eggs are a more practical choice for most households."] },
-      { heading: "When eggs are not a good idea", paragraphs: ["Some dogs should avoid eggs or only eat them with a vet-approved plan. Extra fat and calories can matter for dogs with certain histories."], bullets: ["Pancreatitis history", "Obesity or strict weight-loss plan", "Known egg allergy", "Active vomiting or diarrhea", "Prescription diet without vet approval"] },
-      { heading: "Common mistakes", paragraphs: ["Most egg problems come from portion size or preparation."], bullets: ["Feeding eggs daily without calorie planning", "Adding butter, salt, or cheese", "Using eggs to replace balanced meals", "Trying eggs during active GI illness", "Ignoring allergy or stool changes"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call your vet if your dog vomits, develops diarrhea, has hives, facial swelling, itch, belly pain, lethargy, or repeated digestive upset after eating eggs."] },
-      { heading: "Key Takeaways", paragraphs: ["Eggs can be safe, but moderation matters."], bullets: ["Cook plain eggs", "Use small portions", "Avoid during active stomach upset", "Ask your vet for dogs with medical conditions"] },
+      {
+        heading: "Are Eggs Safe for Dogs?",
+        paragraphs: [
+          "Yes. Cooked eggs are safe for dogs and considered a healthy treat when given in appropriate amounts.",
+          "Eggs are not on any toxic food list for dogs. The ASPCA does not flag them as harmful. Most vets consider them a beneficial, protein-rich supplement.",
+        ],
+      },
+      {
+        heading: "Nutritional Benefits of Eggs for Dogs",
+        paragraphs: [
+          "Eggs are nutritionally dense. For dogs, the key benefits:",
+          "The egg yolk contains fat-soluble vitamins (A, D, E, K) and most of the micronutrient content. The white is primarily protein.",
+        ],
+        bullets: [
+          "Complete protein — all 10 essential amino acids dogs require",
+          "Highly digestible — protein bioavailability from eggs is among the highest of any food source",
+          "Vitamin A — supports skin, coat, and immune function",
+          "Vitamin B12 — essential for nerve health and red blood cell production",
+          "Riboflavin (B2) — energy metabolism",
+          "Folate — cell growth and function",
+          "Iron and selenium — immune support and antioxidant function",
+          "Healthy fats — supports coat health and energy",
+        ],
+      },
+      {
+        heading: "Cooked vs. Raw Eggs",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Cooked Eggs — The Right Choice",
+        paragraphs: [
+          "Cooked eggs are the recommended form for dogs. Two important reasons:",
+          "First: raw eggs carry Salmonella. Dogs can get Salmonella infections. Symptoms include vomiting, diarrhea, lethargy, and fever. Cooking eliminates the risk.",
+          "Second: raw egg whites contain avidin — a protein that binds to biotin (vitamin B7) and blocks its absorption. Feeding raw egg whites regularly causes biotin deficiency. Symptoms include coat and skin deterioration, lethargy.",
+          "Cooking denatures avidin. The biotin issue disappears entirely with cooked eggs.",
+        ],
+      },
+      {
+        heading: "Raw Eggs — What You Need to Know",
+        paragraphs: [
+          "Some raw feeders include whole raw eggs (with the shell) in their dogs\u0027 diets. The argument: dogs in the wild would eat eggs raw.",
+          "The risk is real: Salmonella contamination, and biotin depletion from regular raw white consumption.",
+          "If you choose to give raw eggs occasionally, use fresh eggs from trusted sources, and monitor your dog\u0027s digestion and coat quality.",
+        ],
+      },
+      {
+        heading: "How to Prepare Eggs for Dogs",
+        paragraphs: [
+          "Keep it simple. Dogs don\u0027t need seasoning.",
+          "Never add: butter, oil, salt, pepper, garlic, onion, cheese, or any seasoning.",
+          "Garlic and onion are toxic to dogs. Dairy can cause digestive upset in many dogs. Salt is harmful in excess.",
+        ],
+        bullets: [
+          "Scrambled — cook in a dry non-stick pan with no butter, oil, or salt",
+          "Hard-boiled — peel fully, cut into pieces appropriate for your dog\u0027s size",
+          "Poached — plain, no added vinegar or salt",
+        ],
+      },
+      {
+        heading: "How Many Eggs Can a Dog Eat?",
+        paragraphs: [
+          "Eggs are calorie-dense. One large egg is approximately 70–80 calories.",
+          "A rough guideline based on size:",
+          "Treats — including eggs — should not exceed 10% of daily caloric intake. Overfeeding eggs adds excessive fat and can contribute to weight gain.",
+        ],
+        bullets: [
+          "Small dogs (under 20 lbs): half an egg, 2–3 times per week",
+          "Medium dogs (20–50 lbs): one egg, 2–3 times per week",
+          "Large dogs (50+ lbs): one to two eggs, 3–4 times per week",
+        ],
+      },
+      {
+        heading: "Can Dogs Eat Eggshells?",
+        paragraphs: [
+          "Yes — eggshells are a natural calcium source. Calcium carbonate makes up approximately 95% of an eggshell.",
+          "To feed eggshells: dry them, grind into a fine powder, and sprinkle on food. Don\u0027t give large shell fragments — they can be sharp.",
+          "Particularly useful for dogs on homemade diets that may lack calcium. One half-teaspoon of ground eggshell powder provides roughly 1,000 mg of calcium.",
+        ],
+      },
+      {
+        heading: "Dogs That Should Limit Eggs",
+        paragraphs: [
+          "Eggs aren\u0027t ideal for every dog:",
+          "If you\u0027ve never given your dog eggs before, start with a small amount and observe for 48 hours.",
+          "❓ Frequently Asked Questions",
+        ],
+        bullets: [
+          "Overweight or obese dogs — too many calories from the yolk fat",
+          "Dogs with pancreatitis — high fat content can trigger flares",
+          "Dogs with egg allergies — rare but possible. Signs: skin itching, ear infections, vomiting, loose stool",
+        ],
+      },
     ],
     faqs: [
-      { question: "Can dogs eat scrambled eggs?", answer: "Yes, many dogs can eat plain scrambled eggs without butter, oil, salt, cheese, onion, or garlic. Keep portions small." },
-      { question: "Can dogs eat boiled eggs?", answer: "Plain boiled egg can be safe for many healthy dogs. Remove the shell unless your vet has given a specific plan." },
-      { question: "Are raw eggs safe for dogs?", answer: "Raw eggs carry bacterial risk and are not the practical choice for most dogs. Cooked plain eggs are safer." },
-      { question: "Can eggs help a dog with diarrhea?", answer: "Do not use eggs as a treatment for diarrhea without vet guidance. Some dogs with GI upset may worsen with extra fat or new foods." },
-      { question: "How often can dogs eat eggs?", answer: "Frequency depends on size, calorie needs, and health status. Treat eggs as occasional extras, not a daily replacement for balanced food." },
-      { question: "Which page should I read next?", answer: "Read [dog food calculator](/tools/dog-food-calculator) for calorie context and [bleeding poop dog](/blog/bleeding-poop-dog) if stool symptoms include blood." },
+      { question: "Can dogs eat eggs every day?", answer: "Small amounts daily are fine for most dogs. But eggs are calorie-dense — daily feeding should stay within the 10% treat allowance. For large dogs, one egg per day is usually manageable. For small dogs, half an egg or less." },
+      { question: "Are scrambled eggs good for sick dogs?", answer: "Yes — plain scrambled eggs (no butter, no salt) are easy to digest and are a common vet recommendation for dogs recovering from vomiting or diarrhea. The protein is gentle on an irritated GI tract." },
+      { question: "Is the egg yolk or white better for dogs?", answer: "Both are nutritious. Yolks contain fat-soluble vitamins and healthy fats. Whites are lean protein. For cooked eggs, the whole egg is beneficial. Never feed raw egg whites regularly due to avidin content." },
+      { question: "Can puppies eat eggs?", answer: "Yes. Cooked eggs are a good protein supplement for puppies. Start with small amounts — a few bites — and make sure the primary nutrition comes from a balanced puppy food." },
+      { question: "What is the best way to give a dog an egg?", answer: "Plain hard-boiled or scrambled egg, no added ingredients, cut into bite-sized pieces appropriate for your dog\u0027s size. That\u0027s it. Simple is better." },
     ],
     internalLinks: [
       { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
@@ -8662,38 +9420,126 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "are-cats-nocturnal",
-    title: "Are Cats Nocturnal? Understanding Cat Sleep and Night Activity",
-    metaTitle: "Are Cats Nocturnal? Cat Sleep, Night Zoomies, and Behavior Tips",
-    metaDescription:
-      "Learn whether cats are nocturnal, why they are active at dawn and dusk, and how to manage nighttime energy without hurting natural behavior.",
+    title: "Are Cats Nocturnal? The Truth About Cat Sleep Cycles",
+    metaTitle: "Are Cats Nocturnal? The Truth About Cat Sleep Cycles",
+    metaDescription: "Are cats nocturnal? Not exactly. Learn why cats are crepuscular, why your cat is active at 3am, and science-backed strategies to help your cat sleep through the night.",
     category: "Cats",
     publishedDate: "2026-05-01",
     readingTime: "9 min read",
-    intro:
-      "Cats are famous for nighttime activity, but the word nocturnal is not quite right for most house cats. This guide explains their natural rhythm and how to make nights easier at home.",
+    intro: "Your cat crashes all day. Then at 2am it sounds like a horse running laps through your apartment. You\u0027ve probably assumed cats are nocturnal. But that\u0027s not quite right — and understanding what\u0027s actually happening makes it much easier to fix.",
     featuredImage: {
       src: "/images/blog/are-cats-nocturnal.png",
       alt: "Cat sitting near a window at dusk with indoor enrichment toys nearby",
       caption: "Cats are often most active around dawn and dusk rather than being strictly nocturnal.",
     },
     sections: [
-      { heading: "Quick answer: are cats nocturnal?", paragraphs: ["Cats are usually crepuscular, not strictly nocturnal. That means many cats are naturally most active around dawn and dusk, although indoor routines can shift their behavior."] },
-      { heading: "Safety note", paragraphs: ["This guide is educational. Sudden nighttime restlessness, vocalizing, confusion, appetite change, or litter box changes can be medical and should be discussed with a vet."] },
-      { heading: "Why cats wake up at night", paragraphs: ["Cats sleep many hours across the day, then become active when their instincts and household routine line up. Hunger, boredom, hunting play, and attention patterns can all reinforce night activity."], bullets: ["Dawn and dusk energy rhythm", "Daytime under-stimulation", "Late hunger", "Attention-seeking habits", "Stress or household changes"] },
-      { heading: "Normal behavior vs a problem", paragraphs: ["Play bursts and quiet exploring can be normal. Sudden crying, pacing, confusion, hiding, aggression, or litter box changes are more concerning."] },
-      { heading: "How to reduce night disruptions", paragraphs: ["The goal is not to eliminate cat instincts. Instead, move activity and feeding into a rhythm that fits the household better."], bullets: ["Use interactive play before bedtime", "Offer a measured evening meal", "Create daytime enrichment", "Avoid rewarding 3 a.m. wakeups", "Keep a predictable routine"] },
-      { heading: "Senior cats and nighttime changes", paragraphs: ["Older cats may become restless at night because of pain, thyroid disease, blood pressure issues, vision changes, or cognitive changes. New night behavior in seniors deserves a vet check."] },
-      { heading: "Common mistakes", paragraphs: ["Night activity often continues when the household accidentally rewards it."], bullets: ["Feeding after every wakeup", "Skipping daytime play", "Punishing normal activity", "Ignoring sudden behavior changes", "Assuming senior yowling is only habit"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call your vet if night activity is sudden, intense, paired with weight loss, increased thirst, appetite change, litter box changes, pain signs, confusion, or repeated loud vocalizing."] },
-      { heading: "Key Takeaways", paragraphs: ["Most cats are dawn-and-dusk active, not truly nocturnal."], bullets: ["Crepuscular is the better term", "Routine shapes indoor behavior", "Enrichment can improve sleep harmony", "Sudden changes need medical review"] },
+      {
+        heading: "Are Cats Nocturnal or Diurnal?",
+        paragraphs: [
+          "Neither — technically.",
+          "Cats are crepuscular. That means they\u0027re most naturally active at dawn and dusk.",
+          "In the wild, their prey — small rodents and birds — is most active at these transitional light periods. Cats evolved to match that schedule.",
+          "True nocturnal animals (like owls) have peak activity during deep nighttime hours with adaptations for complete darkness. Cats aren\u0027t built that way.",
+          "Their eyes are adapted for low light — not pure darkness. The tapetum lucidum layer behind their retina amplifies available light, making them highly effective hunters at dusk and dawn.",
+        ],
+      },
+      {
+        heading: "Why Does Your Cat Act Nocturnal?",
+        paragraphs: [
+          "If your cat is crashing around at 3am, it\u0027s not because cats are nocturnal by nature. It\u0027s because of how your cat has adapted to your specific household environment.",
+        ],
+      },
+      {
+        heading: "You\u0027re Not Home During the Day",
+        paragraphs: [
+          "A cat alone in a quiet house often sleeps for most of the day — conserving energy and staying calm.",
+          "By the time you go to bed, they\u0027ve had 10+ hours of rest and are fully recharged. That energy has to go somewhere.",
+        ],
+      },
+      {
+        heading: "Insufficient Stimulation",
+        paragraphs: [
+          "Cats need mental and physical stimulation. A cat that spends the entire day sleeping and unstimulated will have pent-up energy that explodes at night.",
+          "This is especially common in indoor-only cats without enrichment.",
+        ],
+      },
+      {
+        heading: "Feeding Schedule",
+        paragraphs: [
+          "If the cat\u0027s last meal is at 6pm, they\u0027ll be hungry again around midnight. A hungry cat is a vocal, active cat.",
+        ],
+      },
+      {
+        heading: "Medical Issues",
+        paragraphs: [
+          "In senior cats, sudden nocturnal activity — especially combined with yowling — can signal cognitive dysfunction syndrome (similar to dementia), hyperthyroidism, or pain.",
+          "If the behavior is new and your cat is over 10 years old, see a vet.",
+        ],
+      },
+      {
+        heading: "How Much Do Cats Sleep?",
+        paragraphs: [
+          "Adult cats sleep 12–16 hours per day on average. Senior cats can sleep up to 20 hours.",
+          "This isn\u0027t laziness — it\u0027s biology. Cats are ambush predators. Hunting requires explosive short bursts of energy. The rest of the time, energy conservation is the strategy.",
+          "Cat sleep is also different from human sleep. Cats move through lighter sleep cycles more frequently. The deepest REM sleep makes up a smaller proportion of their total sleep time.",
+        ],
+      },
+      {
+        heading: "How to Shift Your Cat\u0027s Activity to Daytime",
+        paragraphs: [
+          "You can influence your cat\u0027s schedule. It takes consistency and a couple of weeks.",
+        ],
+      },
+      {
+        heading: "Increase Daytime Play",
+        paragraphs: [
+          "Two dedicated play sessions per day — 10–15 minutes each — using a wand toy, feather toy, or laser pointer.",
+          "This expends physical and mental energy. A tired cat sleeps more at night.",
+        ],
+      },
+      {
+        heading: "Feed the Last Meal Late",
+        paragraphs: [
+          "Shift the last feeding to 30–60 minutes before your own bedtime. A cat that has just eaten is likely to groom and sleep.",
+          "Some owners use a timed automatic feeder for a small late-night or early-morning meal — this addresses hunger-driven 3am wake-ups without you having to get up.",
+        ],
+      },
+      {
+        heading: "Enrich the Environment",
+        paragraphs: [
+          "Puzzle feeders, window bird feeders, climbing trees, and interactive toys all stimulate cats during the day.",
+          "A cat that\u0027s mentally engaged during daylight hours will sleep more soundly at night.",
+        ],
+      },
+      {
+        heading: "Don\u0027t Reward Night Behavior",
+        paragraphs: [
+          "Getting up to feed or play with a cat that\u0027s meowing at 2am teaches them that making noise gets results.",
+          "Ignore the nighttime behavior consistently. It gets worse for a few days before it gets better. Stay the course.",
+        ],
+      },
+      {
+        heading: "Confine at Night If Necessary",
+        paragraphs: [
+          "For cats that are truly disruptive, keeping them in a comfortable room with food, water, litter, and a cozy bed can break the cycle while you implement other changes.",
+        ],
+      },
+      {
+        heading: "Do Cats See in Complete Darkness?",
+        paragraphs: [
+          "No — this is a common myth. Cats cannot see in total darkness.",
+          "What they can do: see approximately 6x better than humans in low-light conditions. Their pupils dilate to nearly the full eye width. The tapetum lucidum reflects light back through the retina for a second pass.",
+          "In a pitch-dark room with no ambient light at all, a cat is as blind as a human.",
+          "❓ Frequently Asked Questions",
+        ],
+      },
     ],
     faqs: [
-      { question: "Are indoor cats nocturnal?", answer: "Most indoor cats are not strictly nocturnal. They often show crepuscular activity around dawn and dusk, but indoor schedules can shift patterns." },
-      { question: "Why does my cat get zoomies at night?", answer: "Night zoomies can come from stored energy, hunting instincts, boredom, or routine. More daytime play and a bedtime play session can help." },
-      { question: "Should I ignore my cat meowing at night?", answer: "If the behavior is familiar and attention-seeking, avoiding rewards may help. If meowing is new, intense, or paired with other changes, call your vet." },
-      { question: "Do older cats become more active at night?", answer: "Some do, but new nighttime vocalizing or restlessness in senior cats can signal medical issues and should be checked." },
-      { question: "How much do cats sleep?", answer: "Many cats sleep for much of the day in multiple naps. Age, health, and activity level affect the exact amount." },
-      { question: "Which page should I read next?", answer: "Read [cat health guides](/cats) and [why is my cat drinking so much water](/blog/why-is-my-cat-drinking-so-much-water) if night changes come with thirst or appetite shifts." },
+      { question: "Why is my cat so active at night?", answer: "Most likely because they\u0027ve slept most of the day. Increase daytime play and stimulation, shift the last meal to late evening, and be consistent about not rewarding nighttime behavior." },
+      { question: "Are cats more active at night or day?", answer: "Naturally, cats are most active at dawn and dusk (crepuscular). Indoors, they often adapt to a semi-nocturnal schedule that reflects when their owners are home and active." },
+      { question: "Should I let my cat sleep in my bed?", answer: "Personal choice — but if nighttime sleep disruption is a problem, keeping the cat out of the bedroom may help. Cats move, groom, and settle repeatedly throughout the night." },
+      { question: "Why does my cat yowl at night?", answer: "In unspayed females, nighttime yowling is often heat cycles. In senior cats, it signals pain, cognitive dysfunction, or hyperthyroidism. In younger cats, hunger or attention-seeking. Rule out medical causes first." },
+      { question: "Can I train my cat to sleep at night?", answer: "Yes. Consistent scheduled play before bed, late-night feeding, and not reinforcing nighttime behavior gradually shifts most cats to a more compatible schedule. Expect 2–4 weeks of consistency before significant improvement." },
     ],
     internalLinks: [
       { label: "Cat health guides", href: "/cats" },
@@ -8713,38 +9559,152 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "cats-that-puke",
-    title: "Cats That Puke: Common Causes, Home Clues, and When to Call a Vet",
-    metaTitle: "Cats That Puke: Vomiting Causes, Red Flags, and Care Steps",
-    metaDescription:
-      "Learn why cats puke, how to tell occasional vomiting from a problem, what details to track, and when vomiting needs urgent veterinary care.",
+    title: "Why Do Cats Puke? Normal Vomiting vs. When to Worry",
+    metaTitle: "Why Do Cats Puke? Normal Vomiting vs. When to Worry",
+    metaDescription: "Why do cats vomit so often? Learn the difference between normal and concerning cat vomiting, every cause from hairballs to IBD, and when it becomes a vet emergency.",
     category: "Cats",
     publishedDate: "2026-05-01",
     readingTime: "10 min read",
-    intro:
-      "Many cat owners are told vomiting is normal, but frequent puking should not be brushed off. This guide explains common causes, what to track, and when to seek veterinary help.",
+    intro: "Cats vomit. A lot. More than almost any other common pet. Some of it is normal. Some of it isn\u0027t. Knowing the difference could save your cat\u0027s life.",
     featuredImage: {
       src: "/images/blog/cats-that-puke.png",
       alt: "Concerned cat owner tracking vomiting symptoms with a calm cat nearby",
       caption: "Frequent cat vomiting deserves tracking and veterinary guidance, even when hairballs seem likely.",
     },
     sections: [
-      { heading: "Quick answer: cats that puke", paragraphs: ["Occasional isolated vomiting may happen, but repeated cat puking is not normal. Causes can include hairballs, eating too fast, diet sensitivity, parasites, toxins, foreign material, pancreatitis, kidney disease, thyroid disease, or other illness."] },
-      { heading: "Safety note", paragraphs: ["This guide is educational only. Cats can become dehydrated quickly, and repeated vomiting should be discussed with a veterinarian."] },
-      { heading: "Vomiting vs hairballs", paragraphs: ["Hairballs are often blamed for vomiting, but frequent hairball-like episodes can still signal overgrooming, skin disease, digestive disease, or motility problems."], bullets: ["Actual hair tube or clump", "Food vomit", "Foam or bile", "Liquid vomit", "Vomiting with diarrhea or appetite loss"] },
-      { heading: "Common causes", paragraphs: ["The pattern matters. Your vet will want to know frequency, timing, food relationship, appetite, weight trend, and litter box changes."], bullets: ["Eating too fast", "Hairballs or overgrooming", "Food change or sensitivity", "Parasites", "Toxins or plants", "Chronic disease in older cats"] },
-      { heading: "What to track before calling", paragraphs: ["Clear notes help your vet triage the situation and decide whether testing is needed."], bullets: ["How many times vomiting happened", "What it looked like", "Eating and drinking changes", "Weight or energy changes", "Any plant, string, toxin, or medication exposure"] },
-      { heading: "What not to do", paragraphs: ["Do not give human nausea medicine or repeatedly change foods without guidance. Some vomiting causes need urgent care, not trial-and-error feeding."], bullets: ["Do not give human medication", "Do not wait through repeated vomiting", "Do not ignore string or plant exposure", "Do not assume hairballs explain everything", "Do not force food if the cat seems unwell"] },
-      { heading: "Common mistakes", paragraphs: ["Vomiting becomes riskier when owners normalize it for months."], bullets: ["Calling weekly vomiting normal", "Ignoring weight loss", "Missing dehydration signs", "Delaying senior cat bloodwork", "Changing diets too fast"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call urgently for repeated vomiting, blood, suspected toxin or string ingestion, severe lethargy, dehydration, belly pain, no appetite, weight loss, or vomiting in kittens or medically fragile cats."] },
-      { heading: "Key Takeaways", paragraphs: ["Frequent vomiting is a health signal."], bullets: ["Track frequency and appearance", "Do not assume all puking is hairballs", "Escalate quickly with appetite or energy changes", "Older cats need prompt review for new vomiting"] },
+      {
+        heading: "How Often Is Too Often?",
+        paragraphs: [
+          "Occasional vomiting — once or twice a month — is considered within normal range for many cats.",
+          "But vomiting more than once a week is not normal. It needs investigation.",
+          "Any vomiting accompanied by lethargy, weight loss, blood, or a change in eating habits is a vet visit — regardless of frequency.",
+        ],
+      },
+      {
+        heading: "Normal Reasons Cats Vomit",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Hairballs",
+        paragraphs: [
+          "The most well-known reason. Cats groom constantly. Loose fur swallows. Most passes through the digestive system — but some forms a compacted mass in the stomach.",
+          "When the mass becomes too large, the cat vomits it up. It comes out as a wet, tubular clump — not a ball, despite the name.",
+          "Hairball vomiting is normal for cats with longer coats or heavy shedding. Once or twice a month is typical.",
+          "More frequent hairballs can be reduced with: regular brushing, hairball-reducing diets, petroleum-based hairball remedies, or increased fiber.",
+        ],
+      },
+      {
+        heading: "Eating Too Fast",
+        paragraphs: [
+          "Some cats eat like they\u0027re in a competition. Food goes down fast. The stomach sends it back up almost immediately.",
+          "The vomit looks like undigested or barely digested food — often still kibble-shaped.",
+          "Solutions: slow feeder bowls, puzzle feeders, spreading kibble on a flat tray, or feeding smaller portions more frequently.",
+        ],
+      },
+      {
+        heading: "Dietary Indiscretion",
+        paragraphs: [
+          "A cat that ate something unusual — a bug, a plant, a piece of string, a bite of human food — may vomit it up.",
+          "Usually a single episode with no follow-up symptoms. The cat bounces back within an hour.",
+        ],
+      },
+      {
+        heading: "Medical Causes of Cat Vomiting",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Food Allergy or Intolerance",
+        paragraphs: [
+          "Chronic vomiting that\u0027s happening multiple times per week, with no other clear cause, is often food-related.",
+          "Common allergens: beef, chicken, fish, dairy, grains. Cats can develop sensitivities to proteins they\u0027ve eaten for years.",
+          "Diagnosis requires an elimination diet trial with a novel or hydrolyzed protein diet — strict for 8–12 weeks.",
+        ],
+      },
+      {
+        heading: "Inflammatory Bowel Disease (IBD)",
+        paragraphs: [
+          "IBD is one of the most common causes of chronic vomiting in middle-aged and senior cats.",
+          "The GI tract becomes chronically inflamed. Vomiting is frequent. Diarrhea may alternate with constipation. Weight loss follows.",
+          "Diagnosis requires biopsy. Treatment includes diet change, prednisolone (steroid), and sometimes chlorambucil.",
+        ],
+      },
+      {
+        heading: "Hyperthyroidism",
+        paragraphs: [
+          "The thyroid gland overproduces thyroid hormone. Everything speeds up — metabolism, heart rate, GI motility.",
+          "Hyperthyroid cats vomit frequently and lose weight despite eating more. Most common in cats over 10 years old.",
+          "Confirmed with a blood test. Very treatable with medication, radioactive iodine therapy, or surgery.",
+        ],
+      },
+      {
+        heading: "Chronic Kidney Disease (CKD)",
+        paragraphs: [
+          "As the kidneys fail, toxins build up in the blood — a condition called uremia. Uremia causes nausea and vomiting.",
+          "CKD cats also drink more water, urinate more, and gradually lose weight.",
+          "CKD is the leading cause of death in older cats. Blood and urine testing at annual (or biannual for seniors) vet visits catches it early.",
+        ],
+      },
+      {
+        heading: "Gastrointestinal Obstruction",
+        paragraphs: [
+          "String, toys, rubber bands, bones, or any swallowed foreign object can obstruct the GI tract.",
+          "Signs: repeated vomiting, inability to keep anything down, lethargy, abdominal pain, stopping eating.",
+          "This is an emergency. A GI obstruction can kill within 24–48 hours without treatment.",
+        ],
+      },
+      {
+        heading: "Pancreatitis",
+        paragraphs: [
+          "Inflammation of the pancreas. Harder to diagnose in cats than in dogs — symptoms are vague.",
+          "Vomiting, lethargy, decreased appetite, hiding. Often concurrent with IBD and cholangiohepatitis in a feline triad.",
+          "Requires blood testing (fPLI) and supportive treatment.",
+        ],
+      },
+      {
+        heading: "Toxin Ingestion",
+        paragraphs: [
+          "Lilies are the most dangerous. All parts of true lilies (Easter lily, tiger lily, Asiatic lily) are lethal to cats — even pollen on fur causes acute kidney failure.",
+          "Other toxins: antifreeze, human medications (especially ibuprofen and acetaminophen), certain houseplants.",
+          "Sudden onset vomiting with no other obvious cause — especially in a cat that has access to plants or the outdoors — warrants emergency care.",
+        ],
+      },
+      {
+        heading: "What Vomit Looks Like — What It Tells You",
+        paragraphs: [
+        ],
+        bullets: [
+          "Yellow or greenish bile — stomach is empty, cat vomited on an empty stomach. May indicate infrequent feeding or IBD.",
+          "Undigested kibble — eating too fast. Usually vomited within 30 minutes of eating.",
+          "Tubular clump of fur — hairball. Normal.",
+          "Foamy white vomit — bile and stomach fluid. Can indicate nausea from various causes.",
+          "Blood in vomit — upper GI bleeding. Vet visit today.",
+          "Brown, foul-smelling vomit — possible intestinal obstruction. Emergency.",
+        ],
+      },
+      {
+        heading: "When Is Cat Vomiting an Emergency?",
+        paragraphs: [
+          "Go to the vet immediately if:",
+          "❓ Frequently Asked Questions",
+        ],
+        bullets: [
+          "Blood is present in the vomit",
+          "The cat is vomiting repeatedly and cannot keep water down",
+          "The cat is lethargic, not responding normally",
+          "You suspect toxin ingestion",
+          "The abdomen feels hard, distended, or the cat shows pain when touched",
+          "Vomiting is accompanied by labored breathing",
+        ],
+      },
     ],
     faqs: [
-      { question: "Is it normal for cats to puke often?", answer: "No. Occasional isolated vomiting may happen, but frequent vomiting should be discussed with a veterinarian." },
-      { question: "Why does my cat puke after eating?", answer: "Possible reasons include eating too fast, food sensitivity, digestive disease, or regurgitation. Pattern and frequency matter." },
-      { question: "Can hairballs make cats vomit?", answer: "Yes, but frequent hairball-like vomiting can still indicate a problem such as overgrooming, skin irritation, or digestive disease." },
-      { question: "When is cat vomiting an emergency?", answer: "Repeated vomiting, blood, toxin exposure, string ingestion, severe lethargy, dehydration, pain, or no appetite should be treated as urgent." },
-      { question: "Should I change my cat's food after vomiting?", answer: "Do not make repeated sudden diet changes. Call your vet, especially if vomiting repeats or your cat has other symptoms." },
-      { question: "Which page should I read next?", answer: "Read [cat gut health guide](/blog/cat-gut-health-guide) and [cat not drinking water](/blog/cat-not-drinking-water) for related digestive and hydration context." },
+      { question: "Why does my cat vomit every day?", answer: "Daily vomiting is not normal and needs veterinary investigation. The most common causes are food allergies or intolerance, IBD, hyperthyroidism, and CKD. A blood panel and physical exam are the starting point." },
+      { question: "Is it normal for cats to vomit hairballs?", answer: "Occasionally — yes. Once or twice a month is within normal range for cats with longer coats. More frequent hairball vomiting can be reduced with regular grooming, hairball formula foods, and fiber supplements." },
+      { question: "Why does my cat vomit after eating?", answer: "Usually eating too fast. Vomit appears within 30 minutes of eating and looks like undigested food. Use a slow feeder bowl or spread kibble across a flat tray to slow intake." },
+      { question: "What color vomit is bad for cats?", answer: "Blood (red or dark brown/coffee ground appearance) is always serious. Repeated clear or white foamy vomit in a cat that can\u0027t keep anything down is an emergency. Bile (yellow/green) in a cat that vomits regularly signals a chronic issue worth investigating." },
+      { question: "When should I take my cat to the vet for vomiting?", answer: "Go immediately if there\u0027s blood, the cat can\u0027t hold down water, you suspect poisoning, or the cat is lethargic and in pain. Otherwise, any vomiting that happens more than once or twice a week deserves a vet appointment within a few days." },
     ],
     internalLinks: [
       { label: "Cat gut health guide", href: "/blog/cat-gut-health-guide" },
@@ -8764,38 +9724,132 @@ const blogPosts: BlogPost[] = [
   },
   {
     slug: "how-long-are-dogs-in-heat",
-    title: "How Long Are Dogs in Heat? Cycle Stages, Signs, and Care Tips",
-    metaTitle: "How Long Are Dogs in Heat? Timeline, Stages, and Vet Warning Signs",
-    metaDescription:
-      "Learn how long dogs are in heat, what signs to expect, cycle stages, care tips, pregnancy prevention, and when to call a vet.",
+    title: "How Long Are Dogs in Heat? The Complete Heat Cycle Explained",
+    metaTitle: "How Long Are Dogs in Heat? The Complete Heat Cycle Explained",
+    metaDescription: "How long are dogs in heat? Learn the full 4-stage heat cycle, what to expect at each stage, signs your dog is fertile, and how to manage the heat period safely.",
     category: "Dogs",
     publishedDate: "2026-05-01",
     readingTime: "10 min read",
-    intro:
-      "A dog's heat cycle can be confusing the first time it happens. This guide explains the usual timeline, signs to monitor, and how to keep your dog safe and comfortable.",
+    intro: "A dog\u0027s heat cycle — called estrus — typically lasts 2 to 4 weeks. But \"in heat\" is more nuanced than a single on/off state. There are four distinct stages. The fertile window is shorter than most owners realize. And the behaviors and physical changes at each stage vary significantly. Here\u0027s everything you need to know.",
     featuredImage: {
       src: "/images/blog/how-long-are-dogs-in-heat.png",
       alt: "Dog owner using a calendar to track a female dog's heat cycle",
       caption: "Many dogs show visible heat signs for about 2 to 4 weeks, but timing varies.",
     },
     sections: [
-      { heading: "Quick answer: how long are dogs in heat?", paragraphs: ["Many dogs are in heat for about 2 to 4 weeks, though timing varies by dog. Bleeding often starts early, fertility usually rises after the first stage, and behavior changes can continue through the cycle."] },
-      { heading: "Safety note", paragraphs: ["This guide is educational. Contact your veterinarian for abnormal bleeding, illness signs, suspected pregnancy, mismating concerns, or spay timing questions."] },
-      { heading: "Heat cycle stages", paragraphs: ["The visible heat period is part of a larger reproductive cycle. Owners usually notice swelling, bleeding, behavior changes, and male dog interest."], bullets: ["Proestrus: swelling and bleeding often begin", "Estrus: fertility and receptivity may increase", "Diestrus: body transitions after heat", "Anestrus: resting period between cycles"] },
-      { heading: "Common signs", paragraphs: ["Signs vary by breed and individual dog. Some dogs bleed noticeably, while others keep themselves clean and show subtler changes."], bullets: ["Swollen vulva", "Bloody or straw-colored discharge", "Frequent urination", "Flagging or posture changes", "Restlessness or clinginess", "Male dogs showing interest"] },
-      { heading: "Care during heat", paragraphs: ["Supervision is the priority. Dogs can become pregnant during the fertile window, and determined males may travel or escape to reach a female in heat."], bullets: ["Use leash-only outdoor time", "Avoid dog parks", "Keep doors and gates secure", "Use dog diapers if helpful", "Keep bedding clean", "Monitor appetite and behavior"] },
-      { heading: "Pregnancy prevention", paragraphs: ["Do not rely on bleeding as a sign that pregnancy is impossible. Fertility timing can vary, so separation from intact males should continue through the full heat period."] },
-      { heading: "Common mistakes", paragraphs: ["Heat-cycle mistakes usually come from underestimating fertility or dismissing abnormal symptoms."], bullets: ["Thinking bleeding means not fertile", "Allowing off-leash time", "Ending precautions too early", "Ignoring foul discharge", "Delaying vet help for illness signs"] },
-      { heading: "When to Call a Vet", paragraphs: ["Call your vet for heavy bleeding, foul-smelling discharge, severe lethargy, vomiting, fever-like behavior, pain, appetite loss, suspected mismating, or heat signs that seem unusually prolonged."] },
-      { heading: "Key Takeaways", paragraphs: ["Heat cycles need planning, supervision, and clean monitoring."], bullets: ["Most visible heats last about 2 to 4 weeks", "Fertility timing varies", "Avoid intact male contact throughout heat", "Abnormal discharge or illness signs need vet care"] },
+      {
+        heading: "The Four Stages of the Dog Heat Cycle",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Stage 1 — Proestrus (7–10 Days)",
+        paragraphs: [
+          "The beginning of the cycle. The vulva swells noticeably. Bloody vaginal discharge appears — ranging from bright red to light pink.",
+          "The dog is not yet fertile. She attracts males but will actively reject mounting attempts. Behavioral changes: clinginess, restlessness, more frequent urination (to spread scent).",
+          "Duration: 7–10 days on average. Can range from 3–17 days.",
+        ],
+      },
+      {
+        heading: "Stage 2 — Estrus (5–9 Days)",
+        paragraphs: [
+          "This is the fertile window. The discharge lightens in color — straw-colored, pinkish, or nearly clear.",
+          "The female becomes receptive to males. She may \"flag\" — holding the tail to the side when touched near the base. This is a clear sign she is ready to mate.",
+          "Ovulation typically occurs 2–3 days into estrus. Eggs remain viable for 2–5 days after ovulation.",
+          "This is the window in which pregnancy can occur.",
+        ],
+      },
+      {
+        heading: "Stage 3 — Diestrus (60–90 Days)",
+        paragraphs: [
+          "The post-fertile phase. The dog is no longer receptive to males. Discharge decreases and stops.",
+          "If the dog is pregnant, diestrus lasts through the approximately 63-day gestation period.",
+          "If the dog is not pregnant, the body still goes through hormonal changes similar to pregnancy. This is called false pregnancy (pseudopregnancy) and can cause nesting behavior, mammary gland development, and even milk production.",
+        ],
+      },
+      {
+        heading: "Stage 4 — Anestrus (4–5 Months)",
+        paragraphs: [
+          "The resting phase. Hormonal inactivity. No signs of heat. The body prepares for the next cycle.",
+          "In most dogs, the full cycle from one heat to the next is approximately 6 months (two cycles per year). Some breeds cycle only once a year, particularly Nordic breeds like the Basenji and Tibetan Mastiff.",
+        ],
+      },
+      {
+        heading: "How Long Is a Dog \"In Heat\" Total?",
+        paragraphs: [
+          "The heat cycle (proestrus + estrus combined) typically lasts 2–4 weeks.",
+          "The fertile window (estrus only) is 5–9 days within that period.",
+          "Most owners notice the onset of heat (bleeding, swelling) and assume the fertile window is immediate. It\u0027s not — the dog becomes receptive and fertile only in stage 2, after the first week of proestrus.",
+        ],
+      },
+      {
+        heading: "When Does a Dog First Go Into Heat?",
+        paragraphs: [
+          "Most dogs have their first heat between 6 and 24 months of age.",
+          "Small breeds typically start earlier — as young as 6 months.",
+          "Large and giant breeds may not have their first heat until 18–24 months.",
+          "The first heat is often irregular and may be shorter or lighter than subsequent cycles.",
+        ],
+      },
+      {
+        heading: "Signs a Dog Is in Heat",
+        paragraphs: [
+          "Some female dogs are fastidious groomers and clean the discharge — making it easy for owners to miss the early stages.",
+        ],
+        bullets: [
+          "Swollen vulva — often the first visible sign",
+          "Bloody vaginal discharge — color ranges from red to pink to straw",
+          "Increased urination — instinctive scent marking",
+          "Behavioral changes — clingier, anxious, or restless",
+          "Excessive licking of the genital area",
+          "Flagging — tail raised or held to the side when approached",
+          "Increased attention from intact male dogs",
+        ],
+      },
+      {
+        heading: "Managing a Dog in Heat",
+        paragraphs: [
+        ],
+      },
+      {
+        heading: "Prevent Unwanted Pregnancy",
+        paragraphs: [
+          "An intact male dog can detect a female in heat from extraordinary distances. During the fertile window (estrus), do not leave your dog unattended outdoors even for minutes.",
+          "Walk on a leash at all times. Avoid dog parks.",
+          "Males will breach fences and gates to reach a female in estrus. Treat containment as if it\u0027s a potential emergency.",
+        ],
+      },
+      {
+        heading: "Hygiene",
+        paragraphs: [
+          "Dog heat diapers (also called dog pants) absorb discharge and protect furniture. Change regularly to prevent skin irritation.",
+          "Avoid full baths during heat — bathing can introduce bacteria. Use warm cloths to clean the vulval area.",
+        ],
+      },
+      {
+        heading: "Behavioral Management",
+        paragraphs: [
+          "Increased rest, shorter walks during peak discharge days, consistent routine, and calm management help dogs through the hormonal changes.",
+          "Some dogs become anxious or attention-seeking. Extra affection and predictable routine helps.",
+        ],
+      },
+      {
+        heading: "Spaying — The Permanent Solution",
+        paragraphs: [
+          "Spaying (ovariohysterectomy) ends the heat cycle permanently.",
+          "Vets recommend spaying before the first heat in many cases — it dramatically reduces the risk of mammary tumors and eliminates the risk of pyometra (a life-threatening uterine infection).",
+          "Optimal spay timing varies by breed size. Discuss timing with your vet — there are nuances, particularly for large and giant breeds where early spaying may affect musculoskeletal development.",
+          "❓ Frequently Asked Questions",
+        ],
+      },
     ],
     faqs: [
-      { question: "How many days does a dog stay in heat?", answer: "Many dogs show heat signs for about 2 to 4 weeks, but individual timing varies. Ask your vet if the cycle seems unusually long or abnormal." },
-      { question: "How long does a dog bleed in heat?", answer: "Bleeding often lasts around the early part of heat but varies. Discharge may change color and amount through the cycle." },
-      { question: "Can a dog get pregnant while bleeding?", answer: "Yes, pregnancy risk can still exist during the heat cycle. Do not use bleeding alone to judge fertility." },
-      { question: "How often do dogs go into heat?", answer: "Many dogs cycle about twice a year, but timing varies by breed, age, and individual health." },
-      { question: "Should I spay my dog before or after heat?", answer: "Spay timing should be discussed with your veterinarian. Age, breed, health, and cycle timing all matter." },
-      { question: "Which page should I read next?", answer: "Read [female dog peeing blood](/blog/female-dog-peeing-blood) if you are unsure whether blood is urinary or reproductive." },
+      { question: "How long does a dog stay in heat?", answer: "The full heat period (proestrus + estrus) typically lasts 2–4 weeks. The fertile window is shorter — approximately 5–9 days during the estrus stage, usually in the second week." },
+      { question: "How often do dogs go into heat?", answer: "Most dogs cycle twice per year — approximately every 6 months. Small breeds may cycle 3 times per year. Large and giant breeds often cycle only once per year. Basenjis are notable for a single annual cycle." },
+      { question: "How do I know when my dog\u0027s heat is over?", answer: "Heat is ending when the vulva returns to normal size, discharge stops, and the dog no longer flags or shows interest in males. This typically happens by day 18–25 of the cycle." },
+      { question: "Can a dog get pregnant in her first heat?", answer: "Yes — a dog is biologically capable of getting pregnant in her first heat. However, breeding at the first heat is generally not recommended. The body is still maturing, particularly in larger breeds." },
+      { question: "What is a silent heat in dogs?", answer: "A silent heat occurs when the dog goes through the hormonal changes of estrus with minimal external signs — little to no discharge or vulvar swelling. The dog is still fertile. Common in young dogs during their first cycles." },
+      { question: "Do female dogs in heat feel pain?", answer: "Dogs may experience discomfort during heat — cramping similar to menstruation has been suggested, though it\u0027s difficult to assess in animals. Behavioral changes like restlessness and clinginess likely reflect this discomfort. Most dogs manage without any intervention." },
     ],
     internalLinks: [
       { label: "Female dog peeing blood", href: "/blog/female-dog-peeing-blood" },
