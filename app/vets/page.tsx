@@ -14,16 +14,16 @@ import type { FAQItem } from "@/lib/seo";
 const SITE_URL = "https://pawbiotics.us";
 
 export const metadata: Metadata = {
-  title: "Find Local Vets Near You | Pawbiotics City Vet Guides",
+  title: "Local Vet Directory | Find Vets Near You by City - Pawbiotics",
   description:
-    "Browse Pawbiotics local vet guides by city. Compare veterinary clinics, emergency vet access, affordable care questions, and pet-care planning tips.",
+    "Browse Pawbiotics' local vet directory by city. Compare veterinary clinics and animal hospitals, get emergency-planning tips, and know what to ask before you book.",
   alternates: {
     canonical: `${SITE_URL}/vets`,
   },
   openGraph: {
-    title: "Find Local Vets Near You",
+    title: "Local Vet Directory | Find Vets Near You by City",
     description:
-      "Browse city vet guides for clinic comparison, emergency planning, and local pet-care questions.",
+      "Browse Pawbiotics' local vet directory by city for clinic comparison, emergency planning, and booking questions.",
     url: `${SITE_URL}/vets`,
     type: "website",
   },
@@ -109,6 +109,16 @@ const localVetFaqs: FAQItem[] = [
   },
 ];
 
+function buildLocalVetFaqs(cityCount: number): FAQItem[] {
+  return [
+    ...localVetFaqs,
+    {
+      question: "How many cities does Pawbiotics cover?",
+      answer: `Pawbiotics maintains local vet guides for ${cityCount} U.S. cities, grouped by state below. If your city isn't listed yet, use the same comparison checklist with any nearby clinic, or contact us and we'll consider adding it.`,
+    },
+  ];
+}
+
 function buildCityItems(): CityItem[] {
   return getSupportedCitySlugs()
     .map((slug) => {
@@ -139,6 +149,7 @@ export default function VetsHubPage() {
     .map((slug) => cities.find((city) => city.slug === slug))
     .filter((city): city is CityItem => Boolean(city));
   const groupedCities = groupCitiesByState(cities);
+  const pageFaqs = buildLocalVetFaqs(cities.length);
   const breadcrumbs = [
     { label: "Home", href: `${SITE_URL}/` },
     { label: "Local Vets", href: `${SITE_URL}/vets` },
@@ -147,12 +158,12 @@ export default function VetsHubPage() {
   return (
     <>
       <WebPageSchema
-        title="Find Local Vets Near You"
-        description="Browse Pawbiotics city vet guides for clinic comparison, emergency planning, and local pet-care questions."
+        title="Local Vet Directory | Find Vets Near You by City"
+        description="Browse Pawbiotics' local vet directory by city for clinic comparison, emergency planning, and booking questions."
         pageUrl={`${SITE_URL}/vets`}
       />
       <BreadcrumbSchema items={breadcrumbs} />
-      <FAQSchema faqs={localVetFaqs} />
+      <FAQSchema faqs={pageFaqs} />
 
       <section className="border-b border-gray-100 bg-gradient-to-b from-brand-50/60 to-white py-14">
         <Container>
@@ -172,12 +183,13 @@ export default function VetsHubPage() {
             Local Vet Directory
           </p>
           <h1 className="mt-4 max-w-4xl text-3xl font-bold text-gray-900 sm:text-4xl">
-            Find Local Vets Near You
+            Find a Local Vet Near You, City by City
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-8 text-gray-600">
-            Browse Pawbiotics city guides to compare veterinary clinics, emergency vet
-            access, affordable care questions, and practical booking details before your
-            pet needs urgent help.
+            Search our local vet directory to compare veterinary clinics and animal
+            hospitals in your city. Every guide covers what to ask before booking with a
+            pet clinic, how to plan for emergencies, and how to weigh cost against care
+            quality.
           </p>
           <div className="mt-6 flex flex-wrap gap-3 text-sm text-gray-700">
             <span className="rounded-full border border-brand-100 bg-white px-4 py-2">
@@ -196,10 +208,10 @@ export default function VetsHubPage() {
       <section className="py-12">
         <Container>
           <div className="max-w-3xl">
-            <h2 className="text-2xl font-semibold text-gray-900">Popular City Vet Guides</h2>
+            <h2 className="text-2xl font-semibold text-gray-900">Popular Vet Guides by City</h2>
             <p className="mt-2 text-sm leading-7 text-gray-600">
-              Start with major metro areas that usually have a mix of general clinics,
-              emergency hospitals, specialty centers, and affordable preventive care options.
+              Start with a major metro guide below, or browse the full local vet directory
+              by state further down the page.
             </p>
           </div>
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -299,7 +311,14 @@ export default function VetsHubPage() {
 
       <section className="border-t border-gray-100 bg-gray-50 py-12">
         <Container>
-          <FaqAccordion items={localVetFaqs} />
+          <FaqAccordion items={pageFaqs} />
+          <p className="mt-6 text-sm text-gray-600">
+            Don&apos;t see your city yet?{" "}
+            <Link href="/contact" className="font-medium text-brand-700 hover:underline">
+              Contact us
+            </Link>{" "}
+            and we&apos;ll consider adding a local vet guide for it.
+          </p>
         </Container>
       </section>
     </>
