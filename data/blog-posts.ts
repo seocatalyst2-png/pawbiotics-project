@@ -13566,6 +13566,210 @@ const blogPosts: BlogPost[] = [
       },
     ],
   },
+{
+    slug: "what-can-i-give-my-dog-for-an-upset-stomach",
+    title: "Dog Upset Stomach Home Remedies: Bland Diets, Acid Reflux, and When to See a Vet",
+    metaTitle: "What Can I Give My Dog for an Upset Stomach? Vet Remedies | Pawbiotics",
+    metaDescription:
+      "Wondering what to give a dog for an upset stomach? Discover safe home remedies, 2:1 bland diet recipe, pumpkin dosing, and dangerous human medications to avoid.",
+    category: "Dogs",
+    publishedDate: "2026-08-31",
+    readingTime: "11 min read",
+    intro:
+      "Waking up to the sound of your dog retching, finding pools of yellow bile on the rug, or watching your pup eat grass frantically and refuse their breakfast is distressing for any pet parent. Acute gastrointestinal upset (acute gastroenteritis) is one of the most common reasons dogs visit the veterinary clinic. Dietary indiscretion ('garbage gut'), rapid food transitions, mild viral irritation, stress, or morning acid reflux can all cause sudden nausea, abdominal cramping, and diarrhea. Fortunately, mild cases can often be effectively managed at home using evidence-based veterinary remedies such as brief gut rest, a 2:1 bland diet of boiled chicken and white rice, pure canned pumpkin, and bone broth. However, knowing what human medications are strictly toxic (like Pepto-Bismol and ibuprofen) and recognizing life-threatening emergencies like canine bloat (GDV) or pancreatitis is critical to protecting your dog's health.",
+    featuredImage: {
+      src: "/images/blog/dog-upset-stomach-hero.png",
+      alt: "What Can I Give My Dog for an Upset Stomach? Safe Home Remedies & Relief",
+      caption:
+        "Safe home remedies like gut rest, plain boiled chicken with white rice, and pure pumpkin puree help soothe acute canine stomach irritation.",
+    },
+    sectionImages: [
+      {
+        src: "/images/blog/dog-upset-stomach-guide.png",
+        alt: "Dog Upset Stomach: Safe Home Remedies vs Emergency Red Flags Infographic",
+        caption:
+          "Veterinary triage guide: 4 proven home remedies (fasting, 2:1 bland diet, pure pumpkin, bone broth), toxic human medications to avoid (Pepto-Bismol, NSAIDs), and emergency ER red flags.",
+        sectionHeadingIncludes: "5 Safe Vet-Approved Home Remedies for a Dog's Upset Stomach",
+      },
+    ],
+    sections: [
+      {
+        heading: "Quick Summary: What to Give a Dog with an Upset Stomach",
+        paragraphs: [
+          "When a dog experiences mild vomiting or loose stool but remains otherwise alert, active, and hydrated, a short period of gastrointestinal rest followed by an easily digestible bland diet is the safest first-line veterinary protocol.",
+          "Never give over-the-counter human medications like Pepto-Bismol, Imodium, Advil, or Tylenol without explicit veterinary instruction, as several contain compounds (such as subsalicylate and NSAIDs) that cause life-threatening internal bleeding and organ failure in dogs.",
+        ],
+        bullets: [
+          "Step 1 (Gut Rest): Fast adult dogs for 12 hours (water only) to allow the inflamed gastric mucosa to settle. Never fast puppies under 6 months.",
+          "Step 2 (The 2:1 Bland Diet): Feed small, frequent meals of 2 parts cooked plain white rice to 1 part boiled, skinless, boneless chicken breast.",
+          "Step 3 (Fiber & Hydration): Add 1 tablespoon of 100% pure canned pumpkin puree or cooled, unsalted bone broth.",
+          "Emergency Warning: If your dog is dry heaving without vomiting anything, has a swollen tight abdomen, pale gums, or blood in their stool, seek 24/7 ER vet care immediately for life-threatening Bloat (GDV) or Pancreatitis.",
+        ],
+      },
+      {
+        heading: "Recognizing the Signs: Is Your Dog Nauseous or in Pain?",
+        paragraphs: [
+          "Dogs cannot verbally express nausea, so they communicate gastrointestinal discomfort through distinct behavioral cues:",
+        ],
+        bullets: [
+          "Repetitive Lip Licking & Smacking: Excessive salivation and swallowing indicate active nausea caused by gastric acid reflux or mucosal irritation.",
+          "Frantic Grass Eating (Pica): Dogs often ingest large mouthfuls of long grass to stimulate the gastric mechanoreceptors and trigger vomiting to purge gastric irritants.",
+          "Loud Stomach Gurgling (Borborygmi): Hyperactive intestinal motility and gas fermentation produce loud, audible rumbles across the room.",
+          "The 'Prayer Position' (Abdominal Guarding): Standing with front elbows on the floor and hindquarters elevated in the air is a classic sign of severe abdominal pain or pancreatitis, as the posture stretches the diaphragm and relieves pressure on the inflamed stomach.",
+          "Lethargy & Food Aversion: Turning their head away from favorite treats or hiding in quiet corners.",
+        ],
+      },
+      {
+        heading: "5 Safe Vet-Approved Home Remedies for a Dog's Upset Stomach",
+        paragraphs: [
+          "For uncomplicated mild stomach upset, implement these evidence-based supportive home care measures:",
+        ],
+        bullets: [
+          "1. 12-Hour Gut Rest (Adult Dogs Only): Withholding food for 12 hours gives the inflamed gastric epithelium time to repair without being forced to secrete digestive acids and enzymes. Provide small sips of fresh water or ice cubes to prevent dehydration.",
+          "2. The 2:1 Bland Diet (White Rice & Boiled Chicken): Plain boiled white rice is low in fiber and easily absorbed, providing fast glucose while resting the bowels. Skinless, boneless chicken breast provides lean protein without fat. Ratio: 2 parts white rice to 1 part shredded chicken, boiled with ZERO oil, butter, salt, garlic, or onions.",
+          "3. 100% Pure Canned Pumpkin: Rich in soluble prebiotic fiber (pectin), plain pumpkin slows rapid gut motility during diarrhea and adds soothing bulk. Dose: 1 teaspoon for small dogs, 1 to 2 tablespoons for medium/large dogs mixed into the bland meal.",
+          "4. Unsalted Bone Broth: Simmered beef or chicken bone broth (made without onions or garlic) delivers vital electrolytes, collagen, and the amino acid glycine, which strengthens the intestinal mucosal barrier.",
+          "5. Slippery Elm Bark & Canine Probiotics: Slippery elm powder forms a slick mucilage gel that coats and soothes inflamed stomach linings. Pairing it with a multi-strain canine probiotic restores beneficial gut flora depleted during diarrhea.",
+        ],
+      },
+      {
+        heading: "Clinical Comparison Table: Home Remedy Dosages & Feeding Protocol",
+        paragraphs: [
+          "Use this veterinary reference guide to calculate safe portions and preparation methods for an upset canine stomach:",
+        ],
+        table: {
+          headers: ["Remedy / Bland Food", "Portion by Dog Weight", "Primary Clinical Benefit", "Best Preparation Method", "Max Home Duration"],
+          rows: [
+            ["12-Hour Fasting", "Water / Ice Cubes Only", "Rests gastric mucosa & stops acid trigger", "Adult dogs only (withhold food 12 hrs)", "12-24 hours max"],
+            ["2:1 White Rice & Chicken", "Toy: 1/4 cup | Med: 1 cup | Large: 2 cups", "Highly digestible calories without dietary fat", "Boil plain; feed 3-4 small meals daily", "3 to 5 days max"],
+            ["100% Pure Pumpkin Puree", "Small: 1 tsp | Med: 1 tbsp | Large: 2 tbsp", "Soluble pectin firms stool & absorbs toxins", "Mix plain puree directly into bland food", "Ongoing as needed"],
+            ["Unsalted Bone Broth", "1 to 3 tablespoons over food", "Rehydration, electrolyte replacement & glycine", "Warm gently; ensure 0% onions/garlic/salt", "3 to 7 days"],
+            ["Canine Probiotics", "Per manufacturer label dose", "Restores microbiome & suppresses pathogens", "Sprinkle powder or chew with bland meal", "Daily maintenance"],
+          ],
+        },
+      },
+      {
+        heading: "Dangerous Human Medications to NEVER Give Your Dog",
+        paragraphs: [
+          "Reaching into your home medicine cabinet for human stomach relief can have catastrophic, fatal consequences for your dog:",
+          "1. Pepto-Bismol (Bismuth Subsalicylate - TOXIC HAZARD): Pepto-Bismol contains subsalicylate, which is chemically related to aspirin. In dogs, salicylates cause severe gastric ulceration, internal gastrointestinal hemorrhage, and platelet dysfunction. It also turns stool black, mimicking melena (internal bleeding) and complicating veterinary diagnosis.",
+          "2. Imodium (Loperamide - MDR1 GENE DANGER): While occasionally prescribed by vets in strictly controlled doses, Imodium is extremely dangerous in herding breeds (Collies, Australian Shepherds, Shetland Sheepdogs, Whippets) carrying the MDR1 gene mutation. In these dogs, loperamide crosses the blood-brain barrier, causing severe neurotoxicity, ataxia, respiratory failure, and comas. Furthermore, if diarrhea is caused by bacterial toxins (Salmonella, Clostridium), Imodium paralyses the gut, trapping deadly endotoxins inside.",
+          "3. NSAIDs & Pain Relievers (Ibuprofen, Advil, Aleve, Tylenol): Human non-steroidal anti-inflammatory drugs and acetaminophen cause rapid acute renal failure, massive stomach perforations, and fatal hepatic necrosis.",
+        ],
+      },
+      {
+        heading: "Dog Vomiting Yellow Bile in the Morning: Bilious Vomiting Syndrome",
+        paragraphs: [
+          "If your dog frequently vomits yellow, frothy bile early in the morning on an empty stomach but acts completely normal, energetic, and hungry shortly afterward, they likely suffer from Bilious Vomiting Syndrome (BVS).",
+          "What Causes Bilious Vomiting: When a dog's stomach remains empty for an extended period overnight (e.g., 10 to 12 hours between dinner and breakfast), alkaline bile from the duodenum refluxes backward through the pyloric sphincter into the stomach. This corrosive bile irritates the gastric lining, triggering nausea and morning bile vomiting.",
+          "The Simple Bedtime Fix: Give your dog a small bedtime snack right before sleep (such as a plain dog biscuit, a spoonful of cottage cheese, or a tablespoon of canned pumpkin and kibble). This keeps the stomach lightly occupied overnight, preventing retrograde bile pooling — learn more in our [Dog Vomiting Yellow Bile Guide](/blog/dog-vomiting-yellow-bile) and [Dog Vomiting Yellow in the Morning](/blog/dog-vomiting-yellow-in-the-morning).",
+        ],
+      },
+      {
+        heading: "When an Upset Stomach Is an Emergency: Bloat (GDV) & Pancreatitis",
+        paragraphs: [
+          "Never attempt home remedies if you observe any of the following life-threatening red flags:",
+          "1. Unproductive Dry Heaving & Distended Abdomen (BLOAT / GDV): If your dog is pacing, drooling, trying desperately to vomit but bringing up only white foam or nothing at all, and their stomach appears swollen, assume Gastric Dilatation-Volvulus (Bloat). The stomach has twisted on its axis, cutting off blood flow to the spleen and heart. This is a 100% fatal emergency without immediate surgical untwisting within 1 to 2 hours — read our [Dog Bloat Guide](/blog/bloat-in-dogs).",
+          "2. Severe Abdominal Pain & Fever (ACUTE PANCREATITIS): Eating high-fat table scraps (bacon, turkey skin, butter) can trigger acute pancreatic inflammation, causing intractable vomiting, severe cramping, and systemic shock.",
+          "3. Blood in Vomit or Stool: Bright red blood (hematochezia/hematemesis) or black tarry stools (melena) indicates severe ulceration, hemorrhagic gastroenteritis (HGE), or foreign body perforation.",
+          "4. Lethargy Lasting > 24 Hours or Pale White Gums: Indicates circulatory shock, severe dehydration, or sepsis requiring immediate IV fluid resuscitation at an [Emergency Veterinary Hospital](/vets).",
+        ],
+      },
+      {
+        heading: "Long-Term Digestive Resilience: Transitioning Back to Regular Food & Probiotics",
+        paragraphs: [
+          "Once your dog has gone 24 to 48 hours without vomiting and their stool begins to firm up on the bland diet, gradually transition them back to their normal commercial food to prevent a rebound upset:",
+          "4-Day Transition Protocol:",
+          "- Day 1: 75% bland diet (chicken/rice) + 25% regular food.",
+          "- Day 2: 50% bland diet + 50% regular food.",
+          "- Day 3: 25% bland diet + 75% regular food.",
+          "- Day 4: 100% regular food.",
+          "Support the Gut Microbiome: Acute diarrhea and stomach upset wash out healthy commensal bacteria. Adding a veterinary-strength canine probiotic to their daily meal reinforces gut immunity and prevents future dysbiosis — see our [Dog Probiotics for Digestion Guide](/dogs/probiotics/digestion). To calculate exact daily feeding amounts tailored to your dog's ideal weight, use our [Dog Food Portion Calculator](/tools/dog-food-calculator).",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "How long should I fast my dog for an upset stomach?",
+        answer:
+          "Fast adult dogs for 12 hours (water permitted) to allow the gastric lining to rest. Never fast puppies under 6 months or toy breeds prone to hypoglycemia; instead, switch them directly to small portions of bland food.",
+      },
+      {
+        question: "Can I give my dog white rice and chicken every day?",
+        answer:
+          "A chicken and white rice bland diet is nutritionally incomplete and lacks essential vitamins, minerals, and fatty acids. It should only be fed short-term for 3 to 5 days during acute stomach upset.",
+      },
+      {
+        question: "Why is my dog eating grass when their stomach hurts?",
+        answer:
+          "Eating grass is an instinctual behavior in dogs. The long blades tickle the stomach wall and esophagus, inducing vomiting to help expel bile, foreign material, or gastric irritants.",
+      },
+      {
+        question: "Can I give my dog yogurt for an upset stomach?",
+        answer:
+          "Plain, unflavored, non-fat Greek yogurt containing live cultures can be given in small amounts (1 tsp to 1 tbsp). However, many adult dogs are lactose intolerant, which can worsen diarrhea. Specialized canine probiotics are much safer.",
+      },
+      {
+        question: "What should I give my dog for acid reflux?",
+        answer:
+          "For mild acid reflux, feed smaller, more frequent meals, elevate their food bowl slightly, and give a late-night bedtime snack to prevent bile pooling. For severe chronic cases, vets may prescribe omeprazole or famotidine.",
+      },
+      {
+        question: "Is baby food safe for a sick dog?",
+        answer:
+          "Plain meat-based baby food (chicken, turkey, or beef puree) is safe and gentle on a dog's stomach, provided it contains ZERO onion powder, garlic powder, or added salt.",
+      },
+      {
+        question: "How do I know if my dog's upset stomach is pancreatitis?",
+        answer:
+          "Pancreatitis causes severe, relentless vomiting, severe abdominal pain (crying or assuming the prayer position), extreme lethargy, fever, and yellow greasy diarrhea, often triggered by eating high-fat human foods.",
+      },
+      {
+        question: "Can puppies be fasted for an upset stomach?",
+        answer:
+          "No. Puppies have minimal glycogen reserves and can develop dangerous hypoglycemia (low blood sugar) if fasted. Contact your veterinarian immediately if a puppy has vomiting or diarrhea.",
+      },
+    ],
+    internalLinks: [
+      { label: "Dog food portion calculator", href: "/tools/dog-food-calculator" },
+      { label: "Dog probiotics for digestive health", href: "/dogs/probiotics/digestion" },
+      { label: "Dog vomiting yellow bile guide", href: "/blog/dog-vomiting-yellow-bile" },
+      { label: "Dog throwing up yellow foam in the morning", href: "/blog/dog-vomiting-yellow-in-the-morning" },
+      { label: "Dog bloat early warning signs", href: "/blog/bloat-in-dogs" },
+      { label: "What happens if a dog eats chocolate", href: "/blog/what-happens-if-a-dog-eats-chocolate" },
+      { label: "Can dogs eat Brussels sprouts guide", href: "/blog/can-dogs-eat-brussel-sprouts" },
+      { label: "Find local emergency veterinary hospitals", href: "/vets" },
+    ],
+    relatedGuides: [
+      {
+        label: "Dog Bloat (GDV) Life-Saving Guide",
+        href: "/blog/bloat-in-dogs",
+        description: "Recognizing early symptoms of deadly canine stomach twisting and emergency surgery.",
+      },
+      {
+        label: "Dog Vomiting Yellow Bile & Foam",
+        href: "/blog/dog-vomiting-yellow-bile",
+        description: "Understanding bilious vomiting syndrome, acid reflux, and late-night snacks.",
+      },
+      {
+        label: "Dog Food Portion Calculator",
+        href: "/tools/dog-food-calculator",
+        description: "Calculate precise daily calories, macronutrients, and feeding guidelines for dogs.",
+      },
+    ],
+    relatedConditions: [
+      {
+        label: "Diarrhea Condition Hub",
+        href: "/health-conditions/diarrhea",
+        description: "Managing acute canine diarrhea, hydration, and bland diet recovery.",
+      },
+      {
+        label: "Gut Health Hub",
+        href: "/health-conditions/gut-health",
+        description: "Restoring the canine microbiome, mucosal barriers, and digestive flora.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
