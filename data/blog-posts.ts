@@ -12952,6 +12952,209 @@ const blogPosts: BlogPost[] = [
       },
     ],
   },
+{
+    slug: "can-dogs-eat-brussel-sprouts",
+    title: "Can Dogs Eat Brussels Sprouts & Broccoli? Benefits, Gas Risks, and Safe Portions",
+    metaTitle: "Can Dogs Eat Brussels Sprouts & Broccoli? Vet Portion Guide | Pawbiotics",
+    metaDescription:
+      "Can dogs eat Brussels sprouts and broccoli safely? Discover the powerful health benefits of sulforaphane, the 10% isothiocyanate gas rule, and safe portion sizes.",
+    category: "Dogs",
+    publishedDate: "2026-08-30",
+    readingTime: "9 min read",
+    intro:
+      "Yes, dogs can safely eat Brussels sprouts and broccoli in moderation. These cruciferous vegetables are loaded with essential canine nutrients, including sulforaphane, vitamin K, vitamin C, potassium, and beneficial prebiotic fiber that support cellular longevity, bone density, and gut health. However, cruciferous veggies also contain isothiocyanates and complex carbohydrates like raffinose. If fed raw, unchopped, or in large quantities, they can trigger severe gastrointestinal irritation, foul flatulence, abdominal cramping, and even intestinal obstruction. Understanding how to properly steam, portion, and introduce Brussels sprouts and broccoli ensures your dog gains the superfood benefits without the painful digestive distress.",
+    featuredImage: {
+      src: "/images/blog/dog-brussels-sprouts-clean-hero.png",
+      alt: "Can Dogs Eat Brussels Sprouts? The Gas & Safety Truth",
+      caption:
+        "Brussels sprouts and broccoli offer valuable antioxidants for dogs, but must be cooked and strictly portioned to prevent excessive gas and stomach upset.",
+    },
+    sectionImages: [
+      {
+        src: "/images/blog/dog-cruciferous-portion-guide.png",
+        alt: "Brussels Sprouts and Broccoli for Dogs: Benefits, Portions, and Gas Safety Guide",
+        caption:
+          "Cruciferous feeding guidelines: Steaming reduces harsh isothiocyanates while preserving sulforaphane. Keep portions under 10% of daily calories according to your dog's weight.",
+        sectionHeadingIncludes: "Safe Portion Guidelines: How Many Brussels Sprouts Can a Dog Eat?",
+      },
+    ],
+    sections: [
+      {
+        heading: "Quick Summary: Are Brussels Sprouts & Broccoli Safe for Dogs?",
+        paragraphs: [
+          "Brussels sprouts and broccoli are non-toxic, nutrient-dense vegetables that make fantastic low-calorie treats when prepared correctly. They provide potent plant antioxidants and dietary fiber that nourish beneficial gut bacteria.",
+          "However, cruciferous vegetables must be introduced gradually and fed in strict moderation. The natural sulfur compounds and isothiocyanates that give sprouts their distinct aroma cause intense gas and loose stools if overfed. Following the 10% dietary rule and always steaming them plain ensures maximum digestibility.",
+        ],
+        bullets: [
+          "Safety Verdict: 100% Non-Toxic and Safe when steamed plain and chopped.",
+          "Superfood Nutrients: High in Sulforaphane, Vitamin K, Vitamin C, Folate, and Prebiotic Soluble Fiber.",
+          "The Flatulence Hazard: Contains raffinose and isothiocyanates that ferment into sulfur gas in the large intestine.",
+          "Preparation Rule: Always steam or boil until soft; never feed with butter, oils, salt, garlic, or onions.",
+          "Portion Limit: Veggies should never exceed 10% of your dog's total daily caloric intake.",
+        ],
+      },
+      {
+        heading: "Nutritional Superpowers: Why Cruciferous Vegetables Benefit Canines",
+        paragraphs: [
+          "When fed in sensible portions, Brussels sprouts and broccoli deliver remarkable biochemical benefits for canine health:",
+        ],
+        bullets: [
+          "Sulforaphane & Cellular Longevity: Sulforaphane is a potent isothiocyanate that activates the Nrf2 genetic pathway, stimulating natural antioxidant defenses, reducing systemic inflammation, and supporting cellular health.",
+          "Vitamin K for Bone & Blood Health: Essential for hepatic synthesis of blood clotting factors and proper calcium absorption in canine bones and joints.",
+          "Vitamin C & Beta-Carotene: Powerful free-radical scavengers that support canine immune resilience, ocular health, and skin barrier function.",
+          "Prebiotic Dietary Fiber: Soluble and insoluble plant fibers nourish beneficial microbiome species (*Bifidobacterium* and *Lactobacillus*), which ferment fiber into Short-Chain Fatty Acids (SCFAs) like butyrate to strengthen the colon wall.",
+          "Low-Calorie Weight Management: With less than 10 calories per sprout, they are an ideal high-volume, crunchy snack for overweight dogs on strict calorie management.",
+        ],
+      },
+      {
+        heading: "The Downside: Isothiocyanates, Raffinose & Extreme Canine Gas",
+        paragraphs: [
+          "Why do Brussels sprouts and broccoli have a notorious reputation for causing explosive flatulence in dogs?",
+          "The science comes down to two specific compounds: isothiocyanates and raffinose.",
+          "1. Raffinose Fermentation: Raffinose is a complex trisaccharide sugar that dogs cannot digest in their stomach or small intestine due to a lack of the enzyme alpha-galactosidase. When raffinose enters the large intestine intact, colonic bacteria eagerly ferment it, producing significant volumes of hydrogen, methane, and foul-smelling hydrogen sulfide gas.",
+          "2. Isothiocyanate Gastrointestinal Irritation: While isothiocyanates provide anticancer benefits in small doses, excessive amounts irritate the gastric mucosa. According to veterinary toxicologists, if cruciferous vegetables comprise more than 10% of a dog's daily diet, isothiocyanates can trigger acute gastroenteritis, abdominal cramping, and watery diarrhea. In extreme cases (exceeding 25% of diet), toxicity can occur.",
+        ],
+      },
+      {
+        heading: "Safe Portion Guidelines: How Many Brussels Sprouts Can a Dog Eat?",
+        paragraphs: [
+          "To avoid digestive upset while capturing the nutritional benefits, use this veterinary portion guide based on your dog's body weight:",
+        ],
+        table: {
+          headers: ["Dog Body Weight", "Max Daily Brussels Sprouts", "Max Daily Broccoli Florets", "Recommended Preparation", "Feeding Frequency"],
+          rows: [
+            ["Toy Breeds (< 10 lbs / 4.5 kg)", "1/4 to 1/2 sprout", "1 small bite-sized floret", "Steamed soft & finely minced", "1 to 2 times weekly"],
+            ["Small Dogs (10-25 lbs / 4.5-11 kg)", "1/2 to 1 sprout", "1 to 2 bite-sized florets", "Steamed & chopped", "2 to 3 times weekly"],
+            ["Medium Dogs (25-50 lbs / 11-23 kg)", "1 to 2 sprouts", "2 to 3 chopped florets", "Steamed & chopped into quarters", "2 to 3 times weekly"],
+            ["Large Dogs (50-80 lbs / 23-36 kg)", "2 to 3 sprouts", "3 to 4 chopped florets", "Steamed or lightly boiled", "3 to 4 times weekly"],
+            ["Giant Breeds (80+ lbs / 36+ kg)", "3 to 4 sprouts", "4 to 5 chopped florets", "Steamed or lightly boiled", "3 to 4 times weekly"],
+          ],
+        },
+      },
+      {
+        heading: "How to Cook Brussels Sprouts & Broccoli for Dogs (Step-by-Step)",
+        paragraphs: [
+          "Follow this safe, 5-step preparation protocol to maximize nutrient availability while minimizing flatulence:",
+          "Step 1: Thoroughly Wash & Inspect: Rinse under cold running water to remove dirt, debris, and pesticide residues.",
+          "Step 2: Trim Woody Stems: Cut off the tough, fibrous bottom stem of Brussels sprouts and the thick fibrous stalks of broccoli, which are difficult for canine digestive enzymes to break down.",
+          "Step 3: Chop into Bite-Sized Quarters: Never feed whole Brussels sprouts. Their round, dense shape poses a severe choking hazard and can create a foreign body obstruction in small dogs.",
+          "Step 4: Steam or Boil Until Fork-Tender: Steam for 6 to 8 minutes or boil for 5 minutes. Gentle cooking breaks down tough cellulose cell walls and reduces harsh isothiocyanates while preserving valuable vitamins.",
+          "Step 5: Cool Completely & Serve 100% Plain: Serve plain without butter, oils, salt, black pepper, cheese, bacon, or seasonings. Never cook with garlic or onions, which contain toxic thiosulfates that destroy canine red blood cells.",
+        ],
+      },
+      {
+        heading: "Raw vs. Cooked vs. Frozen: Which Is Best for Canines?",
+        paragraphs: [
+          "How you prepare cruciferous vegetables dramatically affects your dog's digestive comfort:",
+        ],
+        bullets: [
+          "Steamed or Boiled (Best Choice): The optimal preparation method. Softens the fibrous matrix, deactivates excessive sulfur enzymes, prevents choking, and improves nutrient absorption.",
+          "Raw Brussels Sprouts (Not Recommended): Raw sprouts are extremely hard, dense, and difficult to chew. They pass largely undigested into the colon, causing severe flatulence and stomach cramps.",
+          "Raw Broccoli Florets (Acceptable in Tiny Amounts): Dogs can eat tiny pieces of raw broccoli floret, but tough raw stems must always be avoided to prevent esophageal choking.",
+          "Frozen Steamed Pieces (Great Summer Treat): Steaming sprouts or broccoli, chopping them, and freezing them creates a crunchy, low-calorie cooling snack for hot summer days.",
+          "Roasted or Sautéed (Dangerous if Seasoned): Restaurant or dinner-table roasted Brussels sprouts are typically drenched in oils, butter, salt, garlic, and bacon fats—a recipe for acute canine pancreatitis.",
+        ],
+      },
+      {
+        heading: "Potential Risks: Choking, Pancreatitis, and Thyroid Interference (Goitrogens)",
+        paragraphs: [
+          "Before adding cruciferous veggies to your dog's bowl, be mindful of these clinical considerations:",
+          "1. Esophageal & Intestinal Choking Hazard: Dense, whole Brussels sprouts can become lodged in the esophagus or ileocecal valve, especially in greedy eaters that swallow treats whole.",
+          "2. High-Fat Seasoning & Pancreatitis Risk: If a dog ingests Brussels sprouts prepared with heavy butter or bacon grease, the high fat load can trigger acute inflammation of the pancreas (pancreatitis).",
+          "3. Goitrogens & Hypothyroidism: Cruciferous vegetables contain goitrogens—compounds that can interfere with iodine uptake by the thyroid gland. While a few steamed sprouts per week are completely harmless, dogs with diagnosed hypothyroidism should not consume large amounts of cruciferous vegetables.",
+        ],
+      },
+      {
+        heading: "Digestive Balance: Probiotics and Bland Meal Integration",
+        paragraphs: [
+          "Incorporating steamed vegetables into your dog's regular meals is a great way to boost micronutrient density and add healthy roughage:",
+          "1. Balanced Meal Pairing: Mix 1 or 2 tablespoons of chopped steamed Brussels sprouts or broccoli into lean boiled chicken and white rice for dogs recovering from mild stomach upset.",
+          "2. Calculate Exact Caloric Allowance: Use our [Dog Food Portion Calculator](/tools/dog-food-calculator) to ensure that vegetable treats stay well under 10% of your dog's daily maintenance calories.",
+          "3. Support Gut Microbiome Balance: If your dog experiences mild gas or digestive sensitivity when trying new foods, adding a high-potency canine probiotic provides the beneficial bacteria needed to break down dietary fiber smoothly — learn more in our [Dog Probiotics for Digestion Guide](/dogs/probiotics/digestion).",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can dogs eat raw Brussels sprouts?",
+        answer:
+          "It is not recommended. Raw Brussels sprouts are very hard to digest, pose a severe choking risk, and cause intense gas and stomach cramps. Always steam or boil them until tender before serving.",
+      },
+      {
+        question: "Why do Brussels sprouts give dogs bad gas?",
+        answer:
+          "Brussels sprouts contain raffinose (an indigestible complex sugar) and isothiocyanates (sulfur-containing compounds). When colonic bacteria ferment raffinose in the large intestine, they produce large amounts of hydrogen sulfide gas.",
+      },
+      {
+        question: "How many Brussels sprouts can I give my dog?",
+        answer:
+          "Small dogs should have no more than 1/2 to 1 sprout per serving, medium dogs can have 1 to 2, and large dogs can safely eat 2 to 3 sprouts, fed 2 to 3 times per week.",
+      },
+      {
+        question: "Can dogs eat broccoli stems and stalks?",
+        answer:
+          "Broccoli stalks are safe only if peeled, chopped into tiny pieces, and steamed soft. Thick, raw broccoli stalks are a major choking and intestinal blockage hazard for dogs.",
+      },
+      {
+        question: "Can Brussels sprouts cause pancreatitis in dogs?",
+        answer:
+          "Plain steamed Brussels sprouts do not cause pancreatitis because they are naturally low in fat. However, Brussels sprouts cooked with butter, bacon fat, olive oil, or heavy seasonings can easily trigger acute pancreatitis in dogs.",
+      },
+      {
+        question: "What should I do if my dog ate seasoned Brussels sprouts with garlic or butter?",
+        answer:
+          "If your dog ate sprouts cooked with garlic, onions, or heavy grease, monitor them closely for signs of toxicity (pale gums, weakness, vomiting) or pancreatitis (abdominal pain, vomiting). Call your vet or pet poison control if large amounts of garlic or onion were consumed.",
+      },
+      {
+        question: "Can puppies eat broccoli and Brussels sprouts?",
+        answer:
+          "Puppies have very sensitive digestive tracts and immature chewing habits. While non-toxic, they should only receive tiny, finely minced, steamed portions to avoid diarrhea and choking.",
+      },
+      {
+        question: "Are there any dogs that should avoid cruciferous vegetables?",
+        answer:
+          "Dogs with diagnosed hypothyroidism should avoid eating large amounts of cruciferous vegetables due to goitrogens, which can interfere with thyroid hormone synthesis. Dogs with severe chronic bowel disease may also need to limit high-fiber veggies.",
+      },
+    ],
+    internalLinks: [
+      { label: "Dog food portion calculator", href: "/tools/dog-food-calculator" },
+      { label: "Dog probiotics for digestive health", href: "/dogs/probiotics/digestion" },
+      { label: "Dog bloat early warning signs", href: "/blog/bloat-in-dogs" },
+      { label: "Dog reverse sneezing causes and relief", href: "/blog/dog-reverse-coughing-and-sneezing" },
+      { label: "What happens if a dog eats chocolate", href: "/blog/what-happens-if-a-dog-eats-chocolate" },
+      { label: "Dog vomiting yellow bile guide", href: "/blog/dog-vomiting-yellow-bile" },
+      { label: "Find local emergency veterinary hospitals", href: "/vets" },
+    ],
+    relatedGuides: [
+      {
+        label: "Dog Food Portion Calculator",
+        href: "/tools/dog-food-calculator",
+        description: "Calculate precise daily calories, macronutrients, and feeding guidelines for dogs.",
+      },
+      {
+        label: "Dog Bloat Emergency Guide",
+        href: "/blog/bloat-in-dogs",
+        description: "Recognizing GDV signs, stomach torsion, and emergency protocols.",
+      },
+      {
+        label: "Dog Reverse Sneezing Guide",
+        href: "/blog/dog-reverse-coughing-and-sneezing",
+        description: "What reverse sneezing sounds like, causes, and how to stop an episode fast.",
+      },
+    ],
+    relatedConditions: [
+      {
+        label: "Diarrhea Health Hub",
+        href: "/health-conditions/diarrhea",
+        description: "Managing acute digestive upset and hydration recovery in pets.",
+      },
+      {
+        label: "Gut Health Hub",
+        href: "/health-conditions/gut-health",
+        description: "Restoring mucosal integrity and microflora after dietary changes.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
