@@ -12134,7 +12134,7 @@ const blogPosts: BlogPost[] = [
         heading: "Quick Summary: What Every Cat Owner Must Know About a 'Blocked Cat'",
         paragraphs: [
           "Feline urethral obstruction is a life-threatening medical crisis that occurs almost exclusively in male cats due to their exceptionally long, narrow, and tapering penile urethra. When the urethra becomes plugged by crystalline sediment (struvite or calcium oxalate), proteinaceous mucus, or severe muscular spasm, the bladder continuously fills but cannot void.",
-          "Every hour counts. As urine backs up, pressure damages the kidneys and prevents the excretion of potassium. Toxic potassium levels (hyperkalemia) disrupt the heart's electrical conduction system, leading to bradycardia, arrhythmias, and cardiac arrest within 24 to 48 hours. If your cat is straining in the litter box and producing no urine, transport them to an emergency veterinary hospital immediately.",
+          "Every hour counts. As urine backs up, pressure damages the kidneys and prevents the excretion of potassium. Toxic potassium levels (hyperkalemia) disrupt the heart's electrical conduction system, leading to bradycardia, arrhythmias, and cardiac arrest within 24 to 48 hours. If your cat is straining in the litter box and producing no urine, transport them to an emergency veterinary hospital immediately. For rapid clinic access and first-aid steps, check our [Cat Urinary Blockage Triage Hub](/health-conditions/urinary-blockage-cats).",
         ],
         bullets: [
           "Emergency Status: A fully blocked cat will die within 24 to 48 hours without professional veterinary de-obstruction.",
@@ -12275,6 +12275,7 @@ const blogPosts: BlogPost[] = [
       },
     ],
     internalLinks: [
+      { label: "Cat urinary blockage emergency triage hub", href: "/health-conditions/urinary-blockage-cats" },
       { label: "Cat gut health guide", href: "/blog/cat-gut-health-guide" },
       { label: "Cat not drinking water guide", href: "/blog/cat-not-drinking-water" },
       { label: "Why is my cat drinking so much water?", href: "/blog/why-is-my-cat-drinking-so-much-water" },
@@ -12301,6 +12302,11 @@ const blogPosts: BlogPost[] = [
       },
     ],
     relatedConditions: [
+      {
+        label: "Cat Urinary Blockage Triage Hub",
+        href: "/health-conditions/urinary-blockage-cats",
+        description: "Emergency symptoms, triage steps, and 24/7 local vet finder for blocked cats.",
+      },
       {
         label: "Gut Health Condition Hub",
         href: "/health-conditions/gut-health",
