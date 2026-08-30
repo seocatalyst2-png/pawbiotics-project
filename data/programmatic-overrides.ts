@@ -557,5 +557,100 @@ export const programmaticContentOverrides: OverrideBuckets = {
         { label: "Pet immunity guide", href: "/health-conditions/immunity" },
       ],
     },
+    "urinary-blockage-cats": {
+      title: "Urinary Blockage in Cats (FLUTD Emergency)",
+      metaTitle: "Feline Urinary Blockage | Emergency Care & Vet Directory",
+      metaDescription:
+        "Urgent guide to feline urinary blockage and FLUTD: identify emergency signs in the litter box, transport safely, find 24/7 vets, and read our in-depth medical guide.",
+      intro:
+        "A urinary blockage in cats is a life-threatening veterinary emergency affecting mostly male cats. When a cat cannot urinate due to crystalline plugs or spasms, toxins build up within hours. Immediate emergency care is required.",
+      quickAnswer: {
+        title: "Emergency Triage: Is my cat experiencing a urinary blockage?",
+        answer:
+          "Yes, if your cat is repeatedly straining in the litter box, crying in pain, or producing zero urine, this is an immediate medical emergency. Fatal cardiac arrest and acute kidney failure can occur in 24 to 48 hours. Transport your cat to an emergency veterinarian immediately.",
+        bullets: [
+          "Zero or drop-only urine output in the litter box is a critical red flag",
+          "Never attempt home remedies or bladder squeezing — transport to an ER hospital now",
+          "Read our complete medical breakdown: [In-Depth Cat Urinary Blockage Guide](/blog/urinary-tract-blockage-in-cats)",
+        ],
+      },
+      bulletPoints: [
+        "Urinary blockage is a critical 24-48 hour life-threatening emergency",
+        "Male cats with narrow urethras are at highest statistical risk",
+        "Immediate catheterization and IV diuresis save feline lives",
+      ],
+      sections: [
+        {
+          title: "Critical Warning Signs & Emergency Triage",
+          body: [
+            "Feline urethral obstruction prevents the excretion of potassium and nitrogenous waste. If your cat shows any of the following signs, seek immediate emergency veterinary intervention.",
+            "For an exhaustive medical walkthrough of feline penile anatomy, hyperkalemic crisis, and PU surgery, consult our [Complete Cat Urinary Blockage Guide](/blog/urinary-tract-blockage-in-cats).",
+          ],
+          bullets: [
+            "Frequent, frantic trips to the litter box with zero urine output",
+            "Painful howling, crying, or growling while in a squatting posture",
+            "Obsessive licking of the penis or genital area",
+            "Hard, swollen, painful grapefruit-like lower abdomen",
+            "Vomiting, profound weakness, hypothermia, or collapse",
+          ],
+        },
+        {
+          title: "Why Male Cats Are at Highest Risk (FLUTD & FIC)",
+          body: [
+            "Male cats possess a long, narrow penile urethra that easily becomes obstructed by struvite or calcium oxalate crystals, proteinaceous mucus plugs, or acute urethral muscle spasms triggered by feline idiopathic cystitis (FIC).",
+            "Chronic dehydration from exclusive dry kibble feeding exacerbates crystal formation. Transitioning to wet canned food with fresh water fountains is a key long-term preventative measure.",
+          ],
+        },
+        {
+          title: "Immediate Emergency Actions Before Leaving Home",
+          body: [
+            "Follow these essential first-aid transport protocols while heading to the emergency clinic:",
+          ],
+          bullets: [
+            "Call the nearest 24/7 emergency veterinary hospital to alert their triage team",
+            "Place your cat in a secure, dark carrier lined with dry towels to minimize stress",
+            "Do NOT offer food, milk, or oral home remedies (sedation will be required immediately)",
+            "NEVER attempt to press or express the bladder manually, which risks fatal bladder rupture",
+          ],
+        },
+      ],
+      faqs: [
+        {
+          question: "How long can a cat survive with a urinary blockage?",
+          answer:
+            "A completely blocked cat can develop fatal cardiac arrest from hyperkalemia (toxic blood potassium) in as little as 24 to 48 hours. Emergency veterinary catheterization must be performed immediately.",
+        },
+        {
+          question: "Is straining in the litter box always a urinary blockage?",
+          answer:
+            "While straining can sometimes indicate constipation, in male cats it is most frequently a life-threatening urinary blockage. Because a blockage is rapidly fatal while constipation is not, veterinarians always treat straining as an urgent urinary emergency until proven otherwise.",
+        },
+        {
+          question: "Where can I find an emergency vet for a blocked cat?",
+          answer:
+            "Use our [Find a Vet Directory](/vets) to locate 24-hour emergency animal hospitals and veterinary trauma centers near your city.",
+        },
+        {
+          question: "How do I read the full medical and surgical guide for blocked cats?",
+          answer:
+            "You can read our comprehensive [Cat Urinary Blockage Guide](/blog/urinary-tract-blockage-in-cats), which covers catheterization, IV fluid therapy, Perineal Urethrostomy (PU) surgery, and post-recovery diet management.",
+        },
+      ],
+      internalLinks: [
+        { label: "Cat urinary blockage medical guide", href: "/blog/urinary-tract-blockage-in-cats" },
+        { label: "Find emergency vets near you", href: "/vets" },
+        { label: "Cat gut health guide", href: "/blog/cat-gut-health-guide" },
+        { label: "Cat not drinking water guide", href: "/blog/cat-not-drinking-water" },
+        { label: "Signs of kidney failure in cats", href: "/blog/signs-of-kidney-failure-in-cats" },
+        { label: "Dog UTI symptoms and care guide", href: "/blog/uti-in-dogs" },
+      ],
+      keywordVariations: [
+        "feline urinary blockage emergency",
+        "cat urinary blockage care",
+        "emergency vet for blocked cat",
+        "blocked cat symptoms",
+        "feline urethral obstruction guide",
+      ],
+    },
   },
 };

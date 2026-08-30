@@ -82,13 +82,17 @@ function buildConditionKeywordVariations(
   condition: string,
   audience: "dogs" | "cats" | "pets"
 ): string[] {
-  const baseAudience = audience === "pets" ? "dogs and cats" : audience;
+  const isCatSpecific = /cats?$/i.test(condition) || /feline/i.test(condition);
+  const isDogSpecific = /dogs?$/i.test(condition) || /canine/i.test(condition);
+  const cleanAudience = isCatSpecific ? "cats" : isDogSpecific ? "dogs" : audience === "pets" ? "dogs and cats" : audience;
+  const cleanCondition = condition.replace(/\s*(in\s+)?(cats?|dogs?|pets?)\s*$/i, "").trim();
+
   return [
-    `${condition} in ${baseAudience}`,
-    `how to help ${baseAudience} with ${condition}`,
-    `best treatment support for ${condition} in ${baseAudience}`,
-    `when to see a vet for ${condition} in ${baseAudience}`,
-    `${condition} symptoms in ${baseAudience}`,
+    `${cleanCondition} in ${cleanAudience}`,
+    `how to help ${cleanAudience} with ${cleanCondition}`,
+    `best treatment support for ${cleanCondition} in ${cleanAudience}`,
+    `when to see a vet for ${cleanCondition} in ${cleanAudience}`,
+    `${cleanCondition} symptoms in ${cleanAudience}`,
   ];
 }
 

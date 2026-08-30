@@ -278,13 +278,18 @@ export function generateHealthConditionMeta(
   condition: string,
   overrides?: GeneratorOverrides
 ): GeneratedPageMeta {
-  const conditionLabel = titleFromSlug(condition);
+  const isCat = /cats?$/i.test(condition) || /feline/i.test(condition);
+  const isDog = /dogs?$/i.test(condition) || /canine/i.test(condition);
+  const cleanLabel = titleFromSlug(condition).replace(/\s+(Cats?|Dogs?|Pets?)$/i, "").trim();
+  const audiencePhrase = isCat ? "in Cats" : isDog ? "in Dogs" : "in Dogs and Cats";
+  const audiencePetPhrase = isCat ? "in cats" : isDog ? "in dogs" : "in pets";
+
   const canonical = createCanonicalUrl(
     overrides?.canonicalPath ?? `/health-conditions/${condition.toLowerCase()}`
   );
 
   const title = createMetaTitle({
-    primaryKeyword: `${conditionLabel} in Dogs and Cats`,
+    primaryKeyword: `${cleanLabel} ${audiencePhrase}`,
     benefit: "Practical Symptom and Care Guide",
     trustModifier: "Vet-Informed",
     manualTitle: overrides?.manualTitle,
@@ -292,9 +297,9 @@ export function generateHealthConditionMeta(
   });
 
   const description = createMetaDescription({
-    primaryKeyword: `${conditionLabel} in pets`,
-    userBenefit: "Get practical home-care steps, symptom guidance, and escalation cues for dog and cat families.",
-    keywordVariation: "Beginner-friendly support for shared pet health concerns.",
+    primaryKeyword: `${cleanLabel} ${audiencePetPhrase}`,
+    userBenefit: "Get practical home-care steps, symptom guidance, and escalation cues for pet parents.",
+    keywordVariation: "Vet-informed support and emergency triage.",
     manualDescription: overrides?.manualDescription,
   });
 
@@ -303,7 +308,7 @@ export function generateHealthConditionMeta(
     description,
     canonical,
     openGraph: createOpenGraphMeta({
-      title: overrides?.openGraphTitle ?? `${conditionLabel} in Dogs and Cats`,
+      title: overrides?.openGraphTitle ?? `${cleanLabel} ${audiencePhrase}`,
       description,
       url: canonical,
       type: overrides?.openGraphType ?? "article",
