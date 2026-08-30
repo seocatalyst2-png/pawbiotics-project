@@ -13155,6 +13155,210 @@ const blogPosts: BlogPost[] = [
       },
     ],
   },
+{
+    slug: "can-cats-eat-pumpkin",
+    title: "Pumpkin for Cats: How Pure Pumpkin Puree Helps Constipation, Diarrhea & Hairballs",
+    metaTitle: "Pumpkin for Cats: Constipation, Diarrhea & Hairball Vet Guide | Pawbiotics",
+    metaDescription:
+      "Can cats eat pumpkin? Discover how pure pumpkin puree regulates constipation, soothes diarrhea, and prevents hairballs. Includes exact daily dosages and safety rules.",
+    category: "Cats",
+    publishedDate: "2026-08-30",
+    readingTime: "10 min read",
+    intro:
+      "Yes, cats can safely eat plain, 100% pure pumpkin puree. In fact, veterinary gastroenterologists frequently recommend pumpkin as one of the most effective natural home remedies for common feline digestive ailments, including chronic constipation, acute loose stools, and persistent hairballs. Pumpkin is a unique digestive regulator because it contains a balanced blend of soluble and insoluble dietary fibers along with essential moisture, potassium, and vitamins A, C, and E. However, feeding pumpkin correctly requires understanding the critical distinction between 100% pure canned pumpkin and toxic spiced pumpkin pie filling, calculating exact teaspoon portions to prevent diarrhea, and knowing when digestive symptoms indicate a deeper medical issue like megacolon or feline urinary blockage.",
+    featuredImage: {
+      src: "/images/blog/cat-pumpkin-clean-hero.png",
+      alt: "Can Cats Eat Pumpkin? The Constipation and Hairball Remedy",
+      caption:
+        "Pure canned pumpkin puree is a safe, fiber-rich supplement that helps cats pass hard stools, resolve mild diarrhea, and eliminate trapped hairballs.",
+    },
+    sectionImages: [
+      {
+        src: "/images/blog/cat-pumpkin-benefits-dosing.png",
+        alt: "Pumpkin for Cats: Digestive Benefits, Dosing, and Safety Rules Infographic",
+        caption:
+          "Feline pumpkin dosing guide: Dual-action soluble and insoluble fibers regulate both constipation and diarrhea. Administer 1/2 to 1 teaspoon mixed into wet food daily.",
+        sectionHeadingIncludes: "How Much Pumpkin to Give a Cat: Veterinary Dosing Guidelines",
+      },
+    ],
+    sections: [
+      {
+        heading: "Quick Summary: Why Pumpkin Is a Feline Digestive Superfood",
+        paragraphs: [
+          "Plain pumpkin puree is one of the most versatile, gentle dietary supplements for felines. Because pumpkin is over 90% water and naturally packed with soluble fiber (pectin) and insoluble fiber (cellulose), it acts as a bi-directional bowel regulator—softening hard, dry stools during constipation while absorbing excess liquid during bouts of diarrhea.",
+          "However, pumpkin must be fed strictly plain. Pre-seasoned pumpkin pie mix containing nutmeg, cloves, allspice, or artificial sweeteners (xylitol) is highly toxic to cats. When used correctly, just 1/2 to 1 teaspoon mixed into wet food once or twice daily provides noticeable digestive relief within 24 to 48 hours.",
+        ],
+        bullets: [
+          "Primary Benefits: Relieves mild constipation, firms watery stool, and lubricates swallowed hairballs through the GI tract.",
+          "The Safe Product: 100% Pure Canned Pumpkin Puree (Ingredient: Pumpkin only).",
+          "The Toxic Hazard: Canned Pumpkin Pie Mix (Contains toxic nutmeg, cinnamon, cloves, sugars, and xylitol).",
+          "Standard Daily Dose: 1/2 to 1 teaspoon per meal for adult cats (start with 1/4 teaspoon for kittens).",
+          "Emergency Red Flag: If a male cat is straining in the litter box with zero urine or stool, assume a fatal urinary blockage and seek 24/7 ER care immediately.",
+        ],
+      },
+      {
+        heading: "The Dual-Action Mechanism: How Pumpkin Treats Both Constipation & Diarrhea",
+        paragraphs: [
+          "How can a single plant food resolve two completely opposite digestive problems? The answer lies in the unique ratio of soluble versus insoluble dietary fibers found in pumpkin flesh:",
+        ],
+        bullets: [
+          "1. For Constipation (Insoluble Fiber + Hydration): Insoluble fiber does not dissolve in water; instead, it acts like a sponge, drawing water into the colon to bulk and soften hard, impacted fecal matter. This stimulates peristaltic contractions in the intestinal wall, allowing cats to pass stool comfortably without straining.",
+          "2. For Diarrhea (Soluble Prebiotic Fiber / Pectin): Soluble fiber dissolves in the gut to form a soothing, viscous gel. This gel absorbs excess fluid in the intestinal lumen, slowing down rapid transit time, firming up watery stool, and coating irritated mucosal linings.",
+          "3. Microbiome Fuel (Prebiotic Fermentation): Colonic microflora ferment soluble pumpkin fiber into beneficial Short-Chain Fatty Acids (SCFAs) like butyrate, acetate, and propionate. SCFAs lower colonic pH, inhibit pathogenic bacterial overgrowth, and provide the primary energy source for colonocytes.",
+        ],
+      },
+      {
+        heading: "Pumpkin for Hairballs: Natural Intestinal Lubrication",
+        paragraphs: [
+          "Cats spend up to 30% to 50% of their waking hours grooming, inevitably swallowing loose fur with their barbed papillae. While some swallowed hair passes naturally, excess fur frequently coalesces in the stomach into trichobezoars (hairballs), causing retching, vomiting, and loss of appetite.",
+          "How Pumpkin Prevents Hairballs:",
+          "1. Mechanical Trapping: Insoluble fiber strands intertwine with free-floating stomach fur, creating a fibrous matrix that prevents hair from clumping into large dense mats.",
+          "2. Peristaltic Propulsion: Pumpkin fiber stimulates gastric emptying and smooth intestinal transit, gently sweeping swallowed fur through the pyloric sphincter and into the colon, where it is eliminated harmlessly in the litter box.",
+          "3. Replacing Petroleum Gels: Commercial hairball pastes often rely on mineral oil and petroleum jelly, which can interfere with fat-soluble vitamin absorption (Vitamins A, D, E, K). Pumpkin provides a 100% natural, nutrient-dense alternative that enhances nutrient uptake.",
+        ],
+      },
+      {
+        heading: "How Much Pumpkin to Give a Cat: Veterinary Dosing Guidelines",
+        paragraphs: [
+          "When introducing pumpkin to your cat's diet, always start low and increase gradually. Too much fiber too fast can cause transient bloating or loose stools:",
+        ],
+        table: {
+          headers: ["Cat Life Stage / Weight", "Starting Daily Dose", "Standard Target Dose", "Feeding Frequency", "Best Administration Method"],
+          rows: [
+            ["Kittens (< 5 lbs / 2.3 kg)", "1/8 teaspoon", "1/4 teaspoon daily", "1 time daily", "Mixed thoroughly into wet kitten food"],
+            ["Small Adult Cats (5-9 lbs / 2.3-4 kg)", "1/4 teaspoon", "1/2 teaspoon daily", "1 to 2 times daily", "Mixed into canned food or lickable puree"],
+            ["Medium/Large Cats (10-15 lbs / 4.5-6.8 kg)", "1/2 teaspoon", "1 teaspoon daily", "1 to 2 times daily", "Mixed into wet food or bone broth"],
+            ["Extra-Large Cats (15+ lbs / 6.8+ kg)", "1/2 teaspoon", "1 to 1.5 teaspoons daily", "1 to 2 times daily", "Mixed into canned food"],
+          ],
+        },
+      },
+      {
+        heading: "Pure Pumpkin vs. Pumpkin Pie Mix: The Deadly Spice Hazard",
+        paragraphs: [
+          "This is the single most critical safety distinction for cat owners purchasing canned pumpkin at the grocery store:",
+          "1. 100% Pure Canned Pumpkin (SAFE): Look at the ingredient list on the back of the can. The ONLY ingredient should be 'Pumpkin' or 'Pumpkin Puree'. There should be no added sugars, salt, preservatives, or spices.",
+          "2. Canned Pumpkin Pie Mix (LETHAL HAZARD): Canned pumpkin pie filling contains added spices and sweeteners that are toxic to felines:",
+          "- Nutmeg: Contains myristicin, a psychoactive compound that causes severe central nervous system depression, hallucinations, tremors, and seizures in cats.",
+          "- Cloves & Allspice: Rich in eugenols that cause feline liver toxicity and acute gastric mucosal ulceration.",
+          "- Cinnamon: In concentrated amounts, cinnamon causes mouth blisters, liver strain, and respiratory irritation.",
+          "- Sugar & High-Fructose Corn Syrup: Triggers acute osmotic diarrhea and pancreatic stress.",
+          "- Xylitol (Birch Bark Extract): A sugar alcohol sometimes found in sugar-free pumpkin mixes that causes rapid hypoglycemia and acute hepatic necrosis.",
+        ],
+      },
+      {
+        heading: "How to Feed Pumpkin to a Picky Cat (Vet-Approved Methods)",
+        paragraphs: [
+          "While many cats enjoy the mild, sweet earthy flavor of pumpkin, obligate carnivores can be notoriously suspicious of new textures and plant foods. Use these veterinary hacks:",
+          "1. Blend with Savory Wet Food: Mix 1/2 teaspoon of pumpkin thoroughly into your cat's favorite pate, gravy, or shredded meat. The meat aroma easily masks the vegetable texture.",
+          "2. Warm Slightly (Body Temperature): Cats are stimulated by warmth. Gently warming the pumpkin-food mixture to 98°F–100°F releases aromatic volatile fatty acids that encourage eating.",
+          "3. Mix with Low-Sodium Tuna Juice or Bone Broth: Stir a spoonful of water drained from canned tuna in water (no salt added) or pet-safe bone broth into the pumpkin puree.",
+          "4. Freeze Single-Serving Cubes: Once opened, canned pumpkin spoils in the refrigerator after 5 to 7 days. Spoon the puree into silicone mini ice cube trays (1/2 tsp portions) and freeze. Pop out one cube daily, thaw, and serve.",
+        ],
+      },
+      {
+        heading: "Constipation vs. Urinary Blockage: A Critical Emergency Diagnostic",
+        paragraphs: [
+          "Pet parents frequently make a dangerous mistake: assuming a cat straining in the litter box is simply constipated and attempting to treat it at home with pumpkin.",
+          "In male cats, urethral obstruction (a 'blocked cat') is a life-threatening crisis that presents identically to constipation. Both conditions cause:",
+          "- Repeatedly entering and leaving the litter box.",
+          "- Straining in a crouched posture with little to no output.",
+          "- Crying, howling, or vocalizing in pain.",
+          "- Licking the genital area excessively.",
+          "How to Tell the Difference: If your cat is producing small, hard, dry fecal pellets and their bladder is soft and empty, they are likely constipated. However, if your cat is straining and passing ZERO urine, and their lower abdomen feels like a hard, tense golf ball, transport them immediately to a 24/7 veterinary emergency hospital. A blocked cat can die within 24 to 48 hours from hyperkalemic cardiac arrest — learn more in our [Cat Urinary Blockage Medical Guide](/blog/urinary-tract-blockage-in-cats) and [Cat Urinary Blockage Triage Hub](/health-conditions/urinary-blockage-cats).",
+        ],
+      },
+      {
+        heading: "Long-Term Feline Gut Health: Hydration, Prebiotics, and Probiotics",
+        paragraphs: [
+          "While pumpkin is an exceptional acute rescue remedy, long-term feline gastrointestinal stability requires a multi-layered wellness approach:",
+          "1. Optimize Daily Moisture: Chronic constipation in cats is almost always driven by subclinical dehydration from dry kibble diets. Transitioning to moisture-rich canned food or adding a feline drinking fountain drastically improves bowel regularity — see our [Cat Not Drinking Water Guide](/blog/cat-not-drinking-water).",
+          "2. Restore Beneficial Microbiome Flora: Chronic digestive instability, frequent hairballs, or loose stools indicate dysbiosis. Adding a clinically targeted feline probiotic restores mucosal barrier integrity and improves nutrient absorption — learn more in our [Cat Gut Health Guide](/blog/cat-gut-health-guide).",
+          "3. When to Involve Your Veterinarian: If constipation lasts longer than 48 hours, if your cat vomits repeatedly, refuses food, or has bloody stool, schedule a physical exam and abdominal radiographs to rule out megacolon, foreign body obstruction, or inflammatory bowel disease (IBD).",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can cats eat pumpkin every day?",
+        answer:
+          "Yes, plain pumpkin puree can be given daily in small maintenance doses (1/4 to 1/2 teaspoon) to cats prone to chronic hairballs or mild sluggish digestion. However, it should not exceed 10% of their daily diet.",
+      },
+      {
+        question: "How fast does pumpkin work for cat constipation?",
+        answer:
+          "Pumpkin typically produces bowel movement results within 24 to 48 hours of administration by drawing moisture into the colon and stimulating peristalsis.",
+      },
+      {
+        question: "Can pumpkin make a cat's diarrhea worse?",
+        answer:
+          "If given in excessive amounts (more than 1 to 2 tablespoons), the excess fiber can accelerate bowel motility and exacerbate diarrhea. Always stick to 1/2 to 1 teaspoon doses.",
+      },
+      {
+        question: "Can I give my cat pumpkin seeds?",
+        answer:
+          "Plain, unsalted, raw or roasted pumpkin seeds can be ground into a fine powder and sprinkled on food in tiny amounts (1/4 tsp) as a source of zinc and fatty acids. Never feed whole seeds, which are a choking hazard.",
+      },
+      {
+        question: "What kind of canned pumpkin is safe for cats?",
+        answer:
+          "Only 100% pure canned pumpkin puree with zero additives or seasonings. Never feed pumpkin pie filling, which contains toxic spices like nutmeg and cloves.",
+      },
+      {
+        question: "How do I store leftover canned pumpkin for my cat?",
+        answer:
+          "Refrigerate opened cans in an airtight glass or plastic container for up to 5 to 7 days, or freeze tablespoon portions into silicone ice cube trays for up to 3 months.",
+      },
+      {
+        question: "Can kittens eat pumpkin?",
+        answer:
+          "Yes, weaned kittens over 8 weeks old can have 1/8 to 1/4 teaspoon of plain pumpkin mixed into wet kitten food to help resolve mild loose stools or constipation.",
+      },
+      {
+        question: "What should I do if pumpkin doesn't relieve my cat's constipation?",
+        answer:
+          "If your cat has not passed stool in more than 48 hours, is straining painfully, or begins vomiting, contact your veterinarian immediately. They may require prescription laxatives (lactulose), micro-enemas, or fluid therapy.",
+      },
+    ],
+    internalLinks: [
+      { label: "Cat gut health guide", href: "/blog/cat-gut-health-guide" },
+      { label: "Signs of kidney failure in cats", href: "/blog/signs-of-kidney-failure-in-cats" },
+      { label: "Cat not drinking water guide", href: "/blog/cat-not-drinking-water" },
+      { label: "Why is my cat drinking so much water?", href: "/blog/why-is-my-cat-drinking-so-much-water" },
+      { label: "Cat safe flowers and plants guide", href: "/blog/cat-safe-flowers" },
+      { label: "Cat urinary blockage medical guide", href: "/blog/urinary-tract-blockage-in-cats" },
+      { label: "Cat urinary blockage emergency triage hub", href: "/health-conditions/urinary-blockage-cats" },
+      { label: "Find local emergency veterinary hospitals", href: "/vets" },
+    ],
+    relatedGuides: [
+      {
+        label: "Cat Gut Health Guide",
+        href: "/blog/cat-gut-health-guide",
+        description: "Understanding feline digestive wellness, hydration, and microbiome balance.",
+      },
+      {
+        label: "Cat Safe Flowers & Houseplants",
+        href: "/blog/cat-safe-flowers",
+        description: "Discover which bouquet flowers and indoor plants are 100% feline-safe.",
+      },
+      {
+        label: "Signs of Kidney Failure in Cats",
+        href: "/blog/signs-of-kidney-failure-in-cats",
+        description: "Recognizing acute and chronic renal disease warning signs in felines.",
+      },
+    ],
+    relatedConditions: [
+      {
+        label: "Diarrhea Health Hub",
+        href: "/health-conditions/diarrhea",
+        description: "Managing acute feline digestive upset and hydration recovery.",
+      },
+      {
+        label: "Gut Health Hub",
+        href: "/health-conditions/gut-health",
+        description: "Explore the feline microbiome and prebiotic fiber nourishment.",
+      },
+    ],
+  },
 ];
 
 export function getAllBlogPosts(): BlogPost[] {
