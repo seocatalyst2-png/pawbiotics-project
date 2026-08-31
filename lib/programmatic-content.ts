@@ -2251,6 +2251,7 @@ export function generateVetCityPageContent(citySlug: string): SEOPageData {
   const merged = mergeOverride(enrichedBase, override);
   return {
     ...merged,
+    featuredImage: override?.featuredImage ?? merged.featuredImage,
     bulletPoints: override?.bulletPoints ?? merged.bulletPoints,
     sections: override?.sections ?? enrichedBase.sections,
     faqs: override?.faqs ?? enrichedBase.faqs,
