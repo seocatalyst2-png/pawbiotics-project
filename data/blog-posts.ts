@@ -10692,7 +10692,7 @@ const blogPosts: BlogPost[] = [
       { question: "Does coconut oil kill fleas on dogs?", answer: "Coconut oil is not an effective flea treatment. While lauric acid may repel some insects temporarily, it should not replace veterinarian-approved flea prevention products." },
     ],
     internalLinks: [
-      { label: "Home remedies for dogs with itchy skin", href: "/blog/home-remedies-for-dogs-with-itchy-skin" },
+      { label: "Home remedies for dogs with itchy skin", href: "/blog/home-remedy-for-a-dog-with-itchy-skin" },
       { label: "Why do dogs lick their paws?", href: "/blog/why-do-dogs-lick-their-paws" },
       { label: "Itchy skin condition guide", href: "/health-conditions/itchy-skin" },
       { label: "Dog food calculator", href: "/tools/dog-food-calculator" },
@@ -11001,7 +11001,7 @@ const blogPosts: BlogPost[] = [
       { question: "Is it ethical to breed dogs with developmental conditions?", answer: "Responsible breeding practices should include health screening and genetic testing to avoid perpetuating heritable conditions. Breeding affected animals is generally not recommended by veterinary organizations." },
     ],
     internalLinks: [
-      { label: "Early neurological symptoms in dogs", href: "/blog/early-neurological-symptoms-in-dogs" },
+      { label: "Early neurological symptoms in dogs", href: "/blog/neurological-symptoms-in-dogs" },
       { label: "Dog chattering teeth", href: "/blog/dog-chattering-teeth" },
       { label: "Dog health guides", href: "/dogs" },
       { label: "Local vet directory", href: "/vets" },
