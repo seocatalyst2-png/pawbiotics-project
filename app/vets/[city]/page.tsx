@@ -18,7 +18,6 @@ type PageProps = {
 };
 
 export const dynamicParams = false;
-export const dynamic = "force-dynamic";
 
 export async function generateStaticParams() {
   return getSupportedCitySlugs().map((city) => ({ city }));
