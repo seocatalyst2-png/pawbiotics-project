@@ -2213,6 +2213,26 @@ export function generateVetCityPageContent(citySlug: string): SEOPageData {
   };
 
   const override = programmaticContentOverrides.vets[slug];
+  if (override) {
+    return {
+      slug,
+      title: override.title ?? base.title,
+      metaTitle: override.metaTitle ?? base.metaTitle,
+      metaDescription: override.metaDescription ?? base.metaDescription,
+      h1: override.h1 ?? base.h1,
+      intro: override.intro ?? base.intro,
+      featuredImage: override.featuredImage,
+      quickAnswer: override.quickAnswer ?? base.quickAnswer,
+      bulletPoints: override.bulletPoints ?? base.bulletPoints,
+      sections: override.sections ?? base.sections,
+      faqs: override.faqs ?? base.faqs,
+      keywordVariations: override.keywordVariations ?? base.keywordVariations,
+      internalLinks: override.internalLinks ?? base.internalLinks,
+      schemaType: "local-business",
+      mainKeyword: override.keywordVariations?.[0] ?? base.mainKeyword,
+    };
+  }
+
   const prioritySections = buildPriorityVetCitySections(cityName, priorityProfile);
   const priorityFaqs = buildPriorityVetCityFaqs(cityName, priorityProfile);
   const regionalSections = priorityProfile ? [] : buildRegionalVetCitySections(cityName, regionalProfile);
@@ -2248,21 +2268,7 @@ export function generateVetCityPageContent(citySlug: string): SEOPageData {
       nearbyLinks
     ),
   };
-  const merged = mergeOverride(enrichedBase, override);
-  return {
-    ...merged,
-    featuredImage: override?.featuredImage ?? merged.featuredImage,
-    bulletPoints: override?.bulletPoints ?? merged.bulletPoints,
-    sections: override?.sections ?? enrichedBase.sections,
-    faqs: override?.faqs ?? enrichedBase.faqs,
-    keywordVariations: override?.keywordVariations ?? merged.keywordVariations,
-    internalLinks: override?.internalLinks
-      ? mergeUniqueLinks(override.internalLinks, enrichedBase.internalLinks)
-      : merged.internalLinks,
-    mainKeyword:
-      (override?.keywordVariations ? override.keywordVariations[0] : undefined) ??
-      merged.mainKeyword,
-  };
+  return enrichedBase;
 }
 
 export function generateDogProbioticConditionContent(
