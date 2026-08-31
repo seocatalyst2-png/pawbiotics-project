@@ -237,7 +237,7 @@ export default function VetsHubPage() {
             Verified Local Directory • 100 U.S. Metro Areas
           </span>
           <h1 className="mt-4 max-w-4xl font-serif text-3xl font-bold tracking-tight text-[#2c1f0e] sm:text-5xl">
-            Find Top-Rated Veterinarians & Emergency Animal Hospitals Near You
+            Find Top-Rated Veterinarians and Emergency Animal Hospitals Near You
           </h1>
           <p className="mt-5 max-w-3xl text-base leading-8 text-[#5a4535] sm:text-lg">
             Finding reliable, compassionate healthcare for your pet shouldn&apos;t be stressful.
@@ -343,7 +343,7 @@ export default function VetsHubPage() {
                 Canine Health Standards
               </span>
               <h2 className="font-serif text-2xl font-bold text-gray-900 sm:text-3xl">
-                Comprehensive Dog Veterinary Care: Preventive Wellness & Emergency Preparedness
+                Comprehensive Dog Veterinary Care: Preventive Wellness and Emergency Preparedness
               </h2>
               <p className="text-sm leading-7 text-gray-600">
                 Dogs require regular veterinary oversight tailored to their breed size, lifestyle, and life stage.
@@ -388,7 +388,7 @@ export default function VetsHubPage() {
                 Feline-Friendly Practices
               </span>
               <h2 className="font-serif text-2xl font-bold text-gray-900 sm:text-3xl">
-                Cat-Friendly Veterinary Medicine: Low-Stress Care & Early Diagnostics
+                Cat-Friendly Veterinary Medicine: Low-Stress Care and Early Diagnostics
               </h2>
               <p className="text-sm leading-7 text-gray-600">
                 Cats are notorious for hiding illness until disease processes are advanced. Because trips to the veterinary
