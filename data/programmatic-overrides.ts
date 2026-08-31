@@ -29,6 +29,11 @@ export const programmaticContentOverrides: OverrideBuckets = {
       metaDescription:
         "Compare the top 3 verified veterinary clinics in Anchorage, AK. Find 24/7 emergency pet hospitals, routine wellness clinics, clinic timings, pricing, and FAQs.",
       h1: "Top 3 Veterinary Clinics in Anchorage, AK",
+      featuredImage: {
+        src: "/images/vets/anchorage/anchorage-hero.png",
+        alt: "Top 3 Vets in Anchorage, AK - Veterinary Hospital Guide",
+        caption: "Comprehensive Anchorage Veterinary Care: 24/7 Emergency Trauma, Routine Wellness & Cold-Climate Health Protection",
+      },
       intro:
         "Finding the right veterinarian in Anchorage requires balancing convenient clinic hours, routine wellness expertise, and immediate 24/7 emergency trauma capabilities. Whether you need an urgent after-hours animal hospital near Tudor or Dowling Road, a gentle Fear-Free clinic on Abbott Road, or routine vaccinations and dental care, this guide breaks down Anchorage's top 3 veterinary clinics with verified ratings, hours, and direct contact details.",
       quickAnswer: {
@@ -68,6 +73,10 @@ export const programmaticContentOverrides: OverrideBuckets = {
                 "Toxin Antidote Protocol",
               ],
               rating: "4.5 / 5.0 (AAHA Accredited 24-Hour Hospital)",
+              image: "/images/vets/anchorage/pet-emergency-treatment.png",
+              badge: "24/7 Emergency & ICU",
+              hours: "Open 24 Hours / 365 Days",
+              phone: "(907) 274-5636",
               viewHref:
                 "https://maps.google.com/?q=Pet+Emergency+Treatment+2320+E+Dowling+Rd+Anchorage+AK+99507",
               callHref: "tel:9072745636",
@@ -86,6 +95,10 @@ export const programmaticContentOverrides: OverrideBuckets = {
                 "Senior Pet Care",
               ],
               rating: "4.6 / 5.0 (190+ Google Reviews)",
+              image: "/images/vets/anchorage/cornerstone-animal-hospital.png",
+              badge: "General Practice & Surgery",
+              hours: "Mon–Fri 7:00 AM – 7:00 PM | Sat 8:00 AM – 5:00 PM",
+              phone: "(907) 569-7277",
               viewHref:
                 "https://maps.google.com/?q=Cornerstone+Animal+Hospital+1600+E+Tudor+Rd+Anchorage+AK+99507",
               callHref: "tel:9075697277",
@@ -104,6 +117,10 @@ export const programmaticContentOverrides: OverrideBuckets = {
                 "Exotic Pet Care",
               ],
               rating: "4.8 / 5.0 (Hundreds of Google Reviews)",
+              image: "/images/vets/anchorage/hillside-pet-clinic.png",
+              badge: "Fear-Free Wellness & Exotics",
+              hours: "Mon–Fri 7:30 AM – 6:00 PM | Sat 8:00 AM – 4:00 PM",
+              phone: "(907) 344-7913",
               viewHref:
                 "https://maps.google.com/?q=Hillside+Pet+Clinic+2011+Abbott+Rd+Suite+B+Anchorage+AK+99507",
               callHref: "tel:9073447913",

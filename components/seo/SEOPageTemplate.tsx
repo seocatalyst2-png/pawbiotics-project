@@ -10,6 +10,7 @@ import {
 import type { InternalLink } from "@/lib/programmatic-content";
 import { ContentSection, FAQItem, QuickAnswer, VetClinicListing } from "@/lib/seo";
 import Link from "next/link";
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 type SEOPageTemplateProps = {
@@ -18,6 +19,11 @@ type SEOPageTemplateProps = {
   mainKeyword: string;
   h1: string;
   intro: string;
+  featuredImage?: {
+    src: string;
+    alt: string;
+    caption?: string;
+  };
   bulletPoints: string[];
   keywordVariations: string[];
   internalLinks: InternalLink[];
@@ -41,10 +47,10 @@ const sectionCardClasses = [
 ];
 
 const listingCardClasses = [
-  "border-teal-100 bg-teal-50/70",
-  "border-amber-100 bg-amber-50/70",
-  "border-violet-100 bg-violet-50/70",
-  "border-rose-100 bg-rose-50/70",
+  "border-teal-100 bg-white shadow-sm",
+  "border-amber-100 bg-white shadow-sm",
+  "border-violet-100 bg-white shadow-sm",
+  "border-rose-100 bg-white shadow-sm",
 ];
 
 function getSectionIcon(title: string): string {
@@ -63,42 +69,85 @@ function ListingCard({ listing, index }: { listing: VetClinicListing; index: num
   const cardClass = listingCardClasses[index % listingCardClasses.length];
   return (
     <article
-      className={`rounded-3xl border p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${cardClass}`}
+      className={`overflow-hidden rounded-3xl border transition-all duration-300 hover:-translate-y-1 hover:shadow-md ${cardClass}`}
     >
-      <h3 className="font-serif text-xl font-semibold text-gray-900">{listing.name}</h3>
-      <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-gray-500">{listing.area}</p>
-      <p className="mt-3 text-sm leading-7 text-gray-700">{listing.description}</p>
-
-      <div className="mt-3">
-        <p className="text-xs font-semibold uppercase tracking-wide text-gray-500">Services</p>
-        <div className="mt-2 flex flex-wrap gap-2">
-          {listing.services.map((service) => (
-            <span
-              key={service}
-              className="rounded-full border border-white/80 bg-white px-3 py-1 text-xs font-medium text-gray-700"
-            >
-              {service}
+      {listing.image ? (
+        <div className="relative h-52 w-full overflow-hidden bg-gray-100">
+          <Image
+            src={listing.image}
+            alt={`${listing.name} storefront`}
+            width={480}
+            height={320}
+            className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+          />
+          {listing.badge && (
+            <span className="absolute top-3 left-3 rounded-full bg-[#2c1f0e]/90 px-3 py-1 text-xs font-bold text-white shadow-sm backdrop-blur-xs">
+              {listing.badge}
             </span>
-          ))}
+          )}
         </div>
-      </div>
+      ) : null}
 
-      <p className="mt-3 text-sm font-semibold text-gray-800">⭐ {listing.rating}</p>
-      <div className="mt-4 flex flex-wrap gap-2">
-        <Link
-          href={listing.viewHref}
-          target={listing.viewHref.startsWith("http") ? "_blank" : undefined}
-          rel={listing.viewHref.startsWith("http") ? "noopener noreferrer" : undefined}
-          className="rounded-full border border-gray-300 bg-white px-4 py-2 text-xs font-bold text-gray-800 transition-all duration-300 hover:border-brand-300 hover:text-brand-700 hover:shadow-xs"
-        >
-          📍 View on Maps
-        </Link>
-        <Link
-          href={listing.callHref}
-          className="rounded-full border border-brand-200 bg-brand-50/80 px-4 py-2 text-xs font-bold text-brand-800 transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-100 hover:shadow-xs"
-        >
-          📞 Call Clinic
-        </Link>
+      <div className="p-5">
+        <div className="flex items-start justify-between gap-2">
+          <h3 className="font-serif text-xl font-bold text-gray-900">{listing.name}</h3>
+          <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 border border-emerald-200 px-2 py-0.5 text-xs font-semibold text-emerald-800">
+            <span className="h-1.5 w-1.5 rounded-full bg-emerald-600"></span> Verified
+          </span>
+        </div>
+
+        {listing.hours && (
+          <p className="mt-2 flex items-center gap-1.5 text-xs font-semibold text-gray-700">
+            <span className="text-emerald-600 font-bold">🕒</span> {listing.hours}
+          </p>
+        )}
+        {listing.phone && (
+          <p className="mt-1 flex items-center gap-1.5 text-xs font-semibold text-gray-700">
+            <span className="text-brand-600 font-bold">📞</span> {listing.phone}
+          </p>
+        )}
+        <p className="mt-1 text-xs font-medium text-gray-500">
+          📍 {listing.area}
+        </p>
+
+        <p className="mt-3 text-xs leading-6 text-gray-600">{listing.description}</p>
+
+        <div className="mt-3">
+          <p className="text-[11px] font-bold uppercase tracking-wide text-gray-400">Core Services</p>
+          <div className="mt-1.5 flex flex-wrap gap-1.5">
+            {listing.services.map((service) => (
+              <span
+                key={service}
+                className="rounded-full border border-gray-100 bg-[#faf6f0] px-2.5 py-0.5 text-[11px] font-medium text-gray-700"
+              >
+                {service}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-3 flex items-center gap-2">
+          <span className="flex items-center gap-1 rounded-lg bg-amber-50 border border-amber-200 px-2.5 py-1 text-xs font-bold text-amber-900">
+            ⭐ {listing.rating}
+          </span>
+        </div>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          <Link
+            href={listing.viewHref}
+            target={listing.viewHref.startsWith("http") ? "_blank" : undefined}
+            rel={listing.viewHref.startsWith("http") ? "noopener noreferrer" : undefined}
+            className="flex-1 text-center rounded-xl border border-gray-300 bg-white px-3 py-2 text-xs font-bold text-gray-800 transition-all duration-300 hover:border-brand-300 hover:text-brand-700 hover:shadow-xs"
+          >
+            📍 Directions / Maps
+          </Link>
+          <Link
+            href={listing.callHref}
+            className="flex-1 text-center rounded-xl bg-[#2c1f0e] px-3 py-2 text-xs font-bold text-white transition-all duration-300 hover:bg-brand-600 hover:shadow-xs"
+          >
+            📞 Call Clinic
+          </Link>
+        </div>
       </div>
     </article>
   );
@@ -110,6 +159,7 @@ export default function SEOPageTemplate({
   mainKeyword,
   h1,
   intro,
+  featuredImage,
   bulletPoints,
   keywordVariations: _keywordVariations,
   internalLinks,
@@ -161,6 +211,25 @@ export default function SEOPageTemplate({
           </p>
           <h1 className="mt-4 font-serif text-3xl font-bold text-gray-900 sm:text-4xl">{h1}</h1>
           <p className="mt-5 max-w-3xl text-base leading-8 text-gray-600">{intro}</p>
+
+          {featuredImage ? (
+            <figure className="mt-8 overflow-hidden rounded-3xl border border-brand-100 bg-white p-2.5 shadow-md">
+              <Image
+                src={featuredImage.src}
+                alt={featuredImage.alt}
+                width={1200}
+                height={675}
+                priority
+                className="h-auto w-full rounded-2xl object-cover"
+              />
+              {featuredImage.caption ? (
+                <figcaption className="px-3 py-2 text-center text-xs text-[#5a4535]">
+                  {featuredImage.caption}
+                </figcaption>
+              ) : null}
+            </figure>
+          ) : null}
+
           {disclaimer ? (
             <p className="mt-5 max-w-3xl rounded-2xl border border-brand-100 bg-white px-4 py-3 text-sm leading-7 text-gray-700 shadow-sm">
               {disclaimer}

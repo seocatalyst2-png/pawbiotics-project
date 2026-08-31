@@ -38,6 +38,11 @@ export type SEOPageData = {
   metaDescription: string;
   h1: string;
   intro: string;
+  featuredImage?: {
+    src: string;
+    alt: string;
+    caption?: string;
+  };
   quickAnswer: QuickAnswer;
   bulletPoints: string[];
   sections: ContentSection[];
@@ -67,6 +72,7 @@ function mergeOverride(base: SEOPageData, override?: ContentOverride): SEOPageDa
   return {
     ...base,
     ...override,
+    featuredImage: override.featuredImage ?? base.featuredImage,
     quickAnswer: override.quickAnswer ?? base.quickAnswer,
     bulletPoints: override.bulletPoints ?? base.bulletPoints,
     sections: override.sections ?? base.sections,
