@@ -2251,15 +2251,13 @@ export function generateVetCityPageContent(citySlug: string): SEOPageData {
   const merged = mergeOverride(enrichedBase, override);
   return {
     ...merged,
-    bulletPoints: override?.bulletPoints
-      ? Array.from(new Set([...enrichedBase.bulletPoints, ...override.bulletPoints])).slice(0, 6)
-      : merged.bulletPoints,
-    sections: mergeUniqueSections(enrichedBase.sections, override?.sections),
-    faqs: mergeUniqueFaqs(enrichedBase.faqs, override?.faqs),
-    keywordVariations: override?.keywordVariations
-      ? Array.from(new Set([...enrichedBase.keywordVariations, ...override.keywordVariations])).slice(0, 8)
-      : merged.keywordVariations,
-    internalLinks: mergeUniqueLinks(enrichedBase.internalLinks, override?.internalLinks),
+    bulletPoints: override?.bulletPoints ?? merged.bulletPoints,
+    sections: override?.sections ?? enrichedBase.sections,
+    faqs: override?.faqs ?? enrichedBase.faqs,
+    keywordVariations: override?.keywordVariations ?? merged.keywordVariations,
+    internalLinks: override?.internalLinks
+      ? mergeUniqueLinks(override.internalLinks, enrichedBase.internalLinks)
+      : merged.internalLinks,
     mainKeyword:
       (override?.keywordVariations ? override.keywordVariations[0] : undefined) ??
       merged.mainKeyword,

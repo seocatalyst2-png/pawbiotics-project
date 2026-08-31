@@ -58,6 +58,10 @@ export default async function VetCityPage({ params }: PageProps) {
   const data = generateVetCityPageContent(citySlug);
   const initialVetListings = await getVetListingsForCity(citySlug);
 
+  const hasCustomListings = data.sections.some(
+    (s) => s.listings && s.listings.length > 0
+  );
+
   return (
     <>
       <SEOPageTemplate
@@ -73,11 +77,13 @@ export default async function VetCityPage({ params }: PageProps) {
         pageUrl={`https://pawbiotics.us/vets/${data.slug}`}
         disclaimer="Listings are for informational purposes and should be verified directly with each clinic before booking."
         afterQuickAnswer={
-          <LiveVetListings
-            citySlug={citySlug}
-            fallbackCityName={cityName}
-            initialData={initialVetListings}
-          />
+          hasCustomListings ? null : (
+            <LiveVetListings
+              citySlug={citySlug}
+              fallbackCityName={cityName}
+              initialData={initialVetListings}
+            />
+          )
         }
       />
     </>
