@@ -22,6 +22,10 @@ export type VetClinicListing = {
   rating: string;
   viewHref: string;
   callHref: string;
+  image?: string;
+  badge?: string;
+  hours?: string;
+  phone?: string;
 };
 
 export type QuickAnswer = {
