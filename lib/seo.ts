@@ -8,6 +8,10 @@ export type ContentSection = {
   body: string[];
   bullets?: string[];
   listings?: VetClinicListing[];
+  table?: {
+    headers: string[];
+    rows: string[][];
+  };
 };
 
 export type VetClinicListing = {

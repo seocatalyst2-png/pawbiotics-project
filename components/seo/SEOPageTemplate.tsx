@@ -83,19 +83,21 @@ function ListingCard({ listing, index }: { listing: VetClinicListing; index: num
         </div>
       </div>
 
-      <p className="mt-3 text-sm font-semibold text-gray-800">Rating: {listing.rating}</p>
+      <p className="mt-3 text-sm font-semibold text-gray-800">⭐ {listing.rating}</p>
       <div className="mt-4 flex flex-wrap gap-2">
         <Link
           href={listing.viewHref}
-          className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-semibold text-gray-700 transition-all duration-300 hover:border-brand-200 hover:text-brand-700"
+          target={listing.viewHref.startsWith("http") ? "_blank" : undefined}
+          rel={listing.viewHref.startsWith("http") ? "noopener noreferrer" : undefined}
+          className="rounded-full border border-gray-300 bg-white px-4 py-2 text-xs font-bold text-gray-800 transition-all duration-300 hover:border-brand-300 hover:text-brand-700 hover:shadow-xs"
         >
-          View
+          📍 View on Maps
         </Link>
         <Link
           href={listing.callHref}
-          className="rounded-full border border-brand-200 bg-brand-50/70 px-4 py-2 text-sm font-semibold text-brand-700 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-sm"
+          className="rounded-full border border-brand-200 bg-brand-50/80 px-4 py-2 text-xs font-bold text-brand-800 transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-100 hover:shadow-xs"
         >
-          Call
+          📞 Call Clinic
         </Link>
       </div>
     </article>
@@ -238,6 +240,39 @@ export default function SEOPageTemplate({
                   </p>
                 ))}
               </div>
+              {!!section.table && (
+                <div className="mt-5 overflow-hidden rounded-2xl border border-gray-200 shadow-xs">
+                  <div className="overflow-x-auto">
+                    <table className="min-w-full divide-y divide-gray-200 bg-white text-left text-sm">
+                      <thead className="bg-gray-50 text-xs font-bold uppercase text-gray-700">
+                        <tr>
+                          {section.table.headers.map((header) => (
+                            <th key={header} className="px-4 py-3">
+                              {header}
+                            </th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-gray-100 text-gray-700">
+                        {section.table.rows.map((row, rIdx) => (
+                          <tr key={rIdx} className="hover:bg-gray-50/70">
+                            {row.map((cell, cIdx) => (
+                              <td
+                                key={cIdx}
+                                className={`px-4 py-3.5 ${
+                                  cIdx === 0 ? "font-bold text-gray-900" : ""
+                                }`}
+                              >
+                                {cell}
+                              </td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
               {!!section.listings?.length && (
                 <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                   {section.listings.map((listing, listingIndex) => (

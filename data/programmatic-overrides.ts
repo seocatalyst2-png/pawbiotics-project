@@ -23,6 +23,211 @@ type OverrideBuckets = {
  */
 export const programmaticContentOverrides: OverrideBuckets = {
   vets: {
+    "anchorage-ak": {
+      title: "Top 3 Veterinary Clinics in Anchorage, AK",
+      metaTitle: "Top 3 Veterinary Clinics in Anchorage, AK | 24/7 Emergency & Pet Care",
+      metaDescription:
+        "Compare the top 3 verified veterinary clinics in Anchorage, AK. Find 24/7 emergency pet hospitals, routine wellness clinics, clinic timings, pricing, and FAQs.",
+      h1: "Top 3 Veterinary Clinics in Anchorage, AK",
+      intro:
+        "Finding the right veterinarian in Anchorage requires balancing convenient clinic hours, routine wellness expertise, and immediate 24/7 emergency trauma capabilities. Whether you need an urgent after-hours animal hospital near Tudor or Dowling Road, a gentle Fear-Free clinic on Abbott Road, or routine vaccinations and dental care, this guide breaks down Anchorage's top 3 veterinary clinics with verified ratings, hours, and direct contact details.",
+      quickAnswer: {
+        title: "Quick Answer: Finding the Best Vet in Anchorage, AK",
+        answer:
+          "For life-threatening emergencies or after-hours trauma, go directly to Pet Emergency Treatment (PET) on Dowling Rd (open 24/7/365). For routine wellness, dental scaling, and preventive vaccines, Cornerstone Animal Hospital (Midtown) and Hillside Pet Clinic (South Anchorage) offer top-rated, compassionate care with convenient weekday and Saturday appointment hours.",
+        bullets: [
+          "Emergency & Overnight Care: Pet Emergency Treatment (2320 E Dowling Rd) — Open 24 Hours / 365 Days",
+          "Top-Rated General Care: Cornerstone Animal Hospital (1600 E Tudor Rd) — Mon–Fri 7am–7pm, Sat 8am–5pm",
+          "Fear-Free Wellness & Exotics: Hillside Pet Clinic (2011 Abbott Rd) — Mon–Fri 7:30am–6pm, Sat 8am–4pm",
+          "Alaska Climate Prep: Keep a 24-hour emergency vet contact saved for winter frostbite, moose encounters, and porcupine quills",
+        ],
+      },
+      bulletPoints: [
+        "Anchor your pet care with one dedicated routine clinic and save a 24/7 emergency hospital in your phone",
+        "Anchorage vet exam fees average $65–$115 for routine checkups and $140–$240 for emergency triage",
+        "Specialized northern care (salmon poisoning, cold paw frostbite, moose kicks) requires rapid local vet intervention",
+      ],
+      sections: [
+        {
+          title: "Top 3 Verified Veterinary Clinics in Anchorage, AK",
+          body: [
+            "We evaluated Anchorage veterinary practices based on verified Google reviews, clinical diagnostic equipment, emergency availability, and staff certifications. Here are the top 3 veterinary clinics serving Anchorage, Eagle River, and surrounding Southcentral Alaska:",
+          ],
+          listings: [
+            {
+              name: "Pet Emergency Treatment (PET) Inc.",
+              area: "2320 E Dowling Rd, Anchorage, AK 99507",
+              description:
+                "Anchorage's premier AAHA-accredited 24-hour emergency and critical care hospital equipped with intensive care units (ICU), oxygen cages, urgent blood transfusion capabilities, and emergency trauma surgery teams.",
+              services: [
+                "24/7 Emergency Care",
+                "Critical Care ICU",
+                "Trauma Surgery",
+                "Digital Radiography",
+                "Oxygen Therapy",
+                "Toxin Antidote Protocol",
+              ],
+              rating: "4.5 / 5.0 (AAHA Accredited 24-Hour Hospital)",
+              viewHref:
+                "https://maps.google.com/?q=Pet+Emergency+Treatment+2320+E+Dowling+Rd+Anchorage+AK+99507",
+              callHref: "tel:9072745636",
+            },
+            {
+              name: "Cornerstone Animal Hospital",
+              area: "1600 E Tudor Rd, Anchorage, AK 99507",
+              description:
+                "Highly rated full-service veterinary hospital in Midtown Anchorage known for thorough wellness exams, advanced dental scaling, soft-tissue surgeries, and compassionate care by Dr. Rapp and team.",
+              services: [
+                "Routine Wellness Exams",
+                "Core Vaccinations",
+                "Ultrasonic Dental Scaling",
+                "Soft Tissue Surgery",
+                "Digital In-House Labs",
+                "Senior Pet Care",
+              ],
+              rating: "4.6 / 5.0 (190+ Google Reviews)",
+              viewHref:
+                "https://maps.google.com/?q=Cornerstone+Animal+Hospital+1600+E+Tudor+Rd+Anchorage+AK+99507",
+              callHref: "tel:9075697277",
+            },
+            {
+              name: "Hillside Pet Clinic",
+              area: "2011 Abbott Rd, Suite B, Anchorage, AK 99507",
+              description:
+                "Top-rated Fear-Free small animal and exotic clinic in South Anchorage offering compassionate routine care, puppy/kitten wellness programs, and specialized geriatric arthritis care.",
+              services: [
+                "Fear-Free Wellness Exams",
+                "Puppy & Kitten Health Plans",
+                "Geriatric Arthritis Support",
+                "Preventative Care",
+                "In-House Pharmacy",
+                "Exotic Pet Care",
+              ],
+              rating: "4.8 / 5.0 (Hundreds of Google Reviews)",
+              viewHref:
+                "https://maps.google.com/?q=Hillside+Pet+Clinic+2011+Abbott+Rd+Suite+B+Anchorage+AK+99507",
+              callHref: "tel:9073447913",
+            },
+          ],
+        },
+        {
+          title: "Comparing Anchorage Top 3 Vet Clinics: Services, Hours & Pricing",
+          body: [
+            "Compare operating hours, base fees, and primary care capabilities across Anchorage's top veterinary providers to match your pet's current medical need:",
+          ],
+          table: {
+            headers: [
+              "Clinic Name",
+              "Care Category",
+              "Operating Hours & Timing",
+              "Base Exam Fee",
+              "Emergency Protocol",
+              "Best Suited For",
+            ],
+            rows: [
+              [
+                "Pet Emergency Treatment (PET)",
+                "24/7 Trauma & Critical Care ICU",
+                "Open 24/7 / 365 Days",
+                "$140 – $240 (Emergency Triage)",
+                "On-site ICU & trauma surgery around the clock",
+                "Life-threatening trauma, bloat, seizures, toxicities, overnight oxygen",
+              ],
+              [
+                "Cornerstone Animal Hospital",
+                "Full-Service General Practice & Surgery",
+                "Mon–Fri: 7am–7pm, Sat: 8am–5pm",
+                "$70 – $105 (Routine Wellness)",
+                "Urgent slots during business hours; refers to PET after-hours",
+                "Comprehensive checkups, dental cleanings, spay/neuter, soft tissue surgery",
+              ],
+              [
+                "Hillside Pet Clinic",
+                "Fear-Free Small Animal & Geriatric Care",
+                "Mon–Fri: 7:30am–6pm, Sat: 8am–4pm",
+                "$75 – $115 (Wellness Exam)",
+                "Daytime urgent triage; refers after-hours emergencies to PET",
+                "Low-stress exams, puppy/kitten packages, arthritis care, nervous pets",
+              ],
+            ],
+          },
+        },
+        {
+          title: "Anchorage Pet Health: Winter Cold, Wildlife & Environmental Hazards",
+          body: [
+            "Pet parenting in Alaska comes with unique environmental risks that lower-48 veterinary guides rarely mention. Anchorage veterinarians frequently treat four critical regional conditions:",
+          ],
+          bullets: [
+            "Porcupine Quill Removal: Never cut or pull quills at home. Quills have microscopic backward-facing barbs that splinter and migrate inward. Seek immediate veterinary sedation and surgical extraction.",
+            "Salmon Poisoning Disease (SPD): Ingestion of raw Pacific salmon or trout carrying Nanophyetus salmincola flukes and Neorickettsia bacteria is lethal if untreated. Symptoms include high fever, severe diarrhea, and swollen lymph nodes within 5–14 days.",
+            "Sub-Zero Hypothermia & Frostbite: Protect paws from chemical de-icers and sub-zero ice pack build-up using musher wax or booties. Limping, pale grey ear tips, or shivering requires warm indoor shelter and vet review.",
+            "Moose & Wildlife Trauma: Moose kicks and collisions cause severe internal hemorrhaging, fractured ribs, and pneumothorax. Transport immediately to an emergency trauma hospital.",
+          ],
+        },
+        {
+          title: "6 Critical Questions to Ask Before Your First Vet Appointment",
+          body: [
+            "When calling an Anchorage veterinary clinic for the first time, use this quick checklist to confirm quality, pricing transparency, and diagnostic capabilities:",
+          ],
+          bullets: [
+            "Do you provide itemized written fee estimates before starting diagnostic tests or dental procedures?",
+            "What is your exact protocol when an existing patient experiences an urgent medical crisis after closing hours?",
+            "Can you process in-house digital radiographs (X-rays) and comprehensive blood chemistry panels on the same day?",
+            "Do your veterinary technicians practice Fear-Free or low-stress handling methods for anxious dogs and cats?",
+            "What are your payment policies, and do you accept CareCredit or pet insurance direct-pay claims?",
+            "Do you have experience managing common Alaska health issues such as raw fish toxicity, cold-weather joint stiffness, and wildlife trauma?",
+          ],
+        },
+      ],
+      faqs: [
+        {
+          question: "What is the best 24-hour emergency vet in Anchorage, AK?",
+          answer:
+            "Pet Emergency Treatment (PET) Inc., located at 2320 E Dowling Rd (phone: 907-274-5636), is Anchorage's premier AAHA-accredited 24-hour emergency animal hospital. They operate 24 hours a day, 365 days a year, with full ICU monitoring, emergency surgery, oxygen support, and acute trauma care.",
+        },
+        {
+          question: "How much does an average vet visit cost in Anchorage, AK?",
+          answer:
+            "A standard routine wellness examination in Anchorage typically ranges from $65 to $115. Core annual vaccines cost between $28 and $50 each, routine blood panels range from $110 to $240, and digital X-rays cost $160 to $350. Emergency triage examination fees at 24/7 hospitals generally start between $140 and $240 before treatments or medications.",
+        },
+        {
+          question: "What should I do if my dog gets porcupine quills in Anchorage?",
+          answer:
+            "Do not attempt to pull the quills out at home and never cut the tips. Porcupine quills have microscopic backward-facing barbs; pulling them while the dog is awake causes severe pain, breaks the quills, and allows barbs to migrate into deep tissue or vital organs. Keep your dog calm and take them immediately to a veterinary clinic for heavy sedation, local anesthesia, and sterile surgical removal.",
+        },
+        {
+          question: "What are standard vet clinic hours and appointment timings in Anchorage?",
+          answer:
+            "Most general practice clinics in Anchorage (such as Cornerstone Animal Hospital and Hillside Pet Clinic) open between 7:00 AM and 7:30 AM and close between 6:00 PM and 7:00 PM Monday through Friday. Many offer Saturday hours from 8:00 AM to 4:00 PM or 5:00 PM. For after-hours, overnight, or Sunday care, Pet Emergency Treatment on Dowling Rd remains open 24/7.",
+        },
+        {
+          question: "What is Salmon Poisoning Disease in Alaska dogs?",
+          answer:
+            "Salmon Poisoning Disease (SPD) occurs when a dog eats raw or undercooked Pacific salmon, trout, or steelhead infected with a fluke parasite carrying Neorickettsia helminthoeca bacteria. Without rapid antibiotic and anti-parasitic treatment, SPD has a mortality rate exceeding 90%. If your dog eats raw fish and develops fever, vomiting, diarrhea, and weakness within 5 to 14 days, seek veterinary treatment immediately.",
+        },
+        {
+          question: "Do dogs and cats in Anchorage need year-round parasite prevention?",
+          answer:
+            "While Alaska's harsh winters kill outdoor fleas and active adult ticks during sub-zero months, indoor parasites, tapeworms, roundworms, and summer mosquito vectors (carrying heartworm disease) remain active threats. Anchorage veterinarians recommend year-round intestinal deworming and mosquito/flea protection throughout spring, summer, and fall.",
+        },
+      ],
+      internalLinks: [
+        { label: "Find Vets Nationwide", href: "/vets" },
+        { label: "Dog Bloat Emergency Guide", href: "/blog/bloat-in-dogs" },
+        { label: "Cat Urinary Blockage Guide", href: "/blog/urinary-tract-blockage-in-cats" },
+        { label: "Dog Upset Stomach Home Remedies", href: "/blog/what-can-i-give-my-dog-for-an-upset-stomach" },
+        { label: "Pet Health Tools & Calculators", href: "/tools" },
+      ],
+      keywordVariations: [
+        "top 3 veterinary clinics in anchorage",
+        "vets in anchorage ak",
+        "vet near me",
+        "emergency vet anchorage",
+        "veterinary clinics near me",
+        "vet timing and hours anchorage",
+        "best veterinary hospital anchorage alaska",
+      ],
+    },
     "houston-tx": {
       title: "Best Vets in Houston, TX",
       metaTitle: "Vets in Houston, TX | Best Veterinary Clinics and Pet Care",
